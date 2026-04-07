@@ -283,6 +283,11 @@ Hooks.once("init", () => {
     requiresReload: false
   });
 
+  // Register "Fairy Tail" as a source book so it appears in the compendium browser filters
+  if (CONFIG.DND5E?.sourceBooks) {
+    CONFIG.DND5E.sourceBooks["Fairy Tail"] = "Fairy Tail";
+  }
+
   console.log("Fairy Tail 5e | Mana Points system registered.");
 });
 

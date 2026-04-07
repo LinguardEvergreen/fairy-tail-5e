@@ -1260,7 +1260,7 @@ function enrichRazze() {
     r.system = {
       identifier: toKebab(r.name),
       source: {
-        custom: "Fairy Tail",
+        custom: "",
         book: "Fairy Tail",
         page: "",
         license: "",
@@ -1601,7 +1601,7 @@ function enrichClassi() {
     c.system = {
       identifier: config.identifier,
       source: {
-        custom: "Fairy Tail",
+        custom: "",
         book: "Fairy Tail",
         page: "",
         license: "",
@@ -1659,7 +1659,7 @@ function enrichIncantesimi() {
       level: meta.level ?? 0,
       school: meta.school || "evo",
       source: {
-        custom: "Fairy Tail",
+        custom: "",
         book: "Fairy Tail",
         page: "",
         license: "",
@@ -1832,7 +1832,7 @@ function enrichMagie(spells) {
       identifier: toKebab(m.name),
       classIdentifier: "",
       source: {
-        custom: "Fairy Tail",
+        custom: "",
         book: "Fairy Tail",
         page: "",
         license: "",
@@ -1921,7 +1921,7 @@ function enrichBackground() {
     bg.system = {
       identifier: toKebab(bg.name),
       source: {
-        custom: "Fairy Tail",
+        custom: "",
         book: "Fairy Tail",
         page: "",
         license: "",
@@ -1957,7 +1957,7 @@ function enrichTalenti() {
       requirements: prereq,
       identifier: toKebab(t.name),
       source: {
-        custom: "Fairy Tail",
+        custom: "",
         book: "Fairy Tail",
         page: "",
         license: "",
@@ -2057,7 +2057,7 @@ function enrichEquipaggiamento() {
     item._id = stableId(`equipaggiamento:${item.name}`);
     const data = EQUIP_DATA[item.name];
     if (!data) {
-      item.system = { source: { custom: "Fairy Tail", book: "Fairy Tail" } };
+      item.system = { source: { custom: "", book: "Fairy Tail" } };
       continue;
     }
     enriched++;
@@ -2074,7 +2074,7 @@ function enrichEquipaggiamento() {
         stealth: data.stealth || false,
         weight: { value: data.weight, units: "kg" },
         price: { value: data.cost, denomination: "" },
-        source: { custom: "Fairy Tail", book: "Fairy Tail" }
+        source: { custom: "", book: "Fairy Tail" }
       };
     } else if (data.weapon) {
       const dmgParts = data.dmg ? data.dmg.match(/(\d+)d(\d+)/) : null;
@@ -2089,14 +2089,14 @@ function enrichEquipaggiamento() {
         price: { value: data.cost, denomination: "" },
         properties: data.props,
         proficient: true,
-        source: { custom: "Fairy Tail", book: "Fairy Tail" }
+        source: { custom: "", book: "Fairy Tail" }
       };
     } else if (data.ammo) {
       item.system = {
         type: { value: "ammo", baseItem: "" },
         weight: { value: data.weight, units: "kg" },
         price: { value: data.cost, denomination: "" },
-        source: { custom: "Fairy Tail", book: "Fairy Tail" }
+        source: { custom: "", book: "Fairy Tail" }
       };
     }
   }
@@ -2118,7 +2118,7 @@ function enrichStiliCombattimento() {
       requirements: "",
       identifier: toKebab(s.name),
       source: {
-        custom: "Fairy Tail",
+        custom: "",
         book: "Fairy Tail",
         page: "",
         license: "",
@@ -2298,6 +2298,8 @@ function assignImages() {
     },
   ];
 
+  const FT_SOURCE = { custom: "", book: "Fairy Tail", page: "", license: "", rules: "2014" };
+
   let total = 0, assigned = 0;
   for (const { file, getImg } of files) {
     const filePath = path.join(SRC_DIR, file);
@@ -2310,10 +2312,15 @@ function assignImages() {
         item.img = img;
         assigned++;
       }
+      // Ensure source is set on all items
+      if (!item.system) item.system = {};
+      if (!item.system.source || item.system.source.custom !== "" || item.system.source.book !== "Fairy Tail") {
+        item.system.source = { ...FT_SOURCE };
+      }
     }
     fs.writeFileSync(filePath, JSON.stringify(items, null, 2), "utf-8");
   }
-  console.log(`  ✓ Images assigned: ${assigned}/${total} items`);
+  console.log(`  ✓ Images & source assigned: ${assigned}/${total} items`);
 }
 
 // ── Main ────────────────────────────────────────────────────────────────────
