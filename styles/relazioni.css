@@ -180,3 +180,143 @@
   border-color: #27ae60;
   box-shadow: 0 0 4px rgba(39, 174, 96, 0.3);
 }
+
+.ft5e-growth-input:disabled {
+  opacity: 0.9;
+  cursor: default;
+  background: rgba(39, 174, 96, 0.06);
+}
+
+/* ── Spend Button ── */
+
+.ft5e-growth-spend-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #27ae60, #2ecc71);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.ft5e-growth-spend-btn:hover {
+  background: linear-gradient(135deg, #219a52, #27ae60);
+  box-shadow: 0 2px 8px rgba(39, 174, 96, 0.4);
+  transform: translateY(-1px);
+}
+
+.ft5e-growth-spend-btn:active {
+  transform: translateY(0);
+}
+
+.ft5e-growth-spend-btn i {
+  font-size: 11px;
+}
+
+/* ── Growth Dialog ── */
+
+.ft5e-growth-dialog {
+  padding: 4px 0;
+}
+
+.ft5e-gd-info {
+  font-size: 14px;
+  margin: 0 0 4px 0;
+}
+
+.ft5e-gd-info i {
+  color: #27ae60;
+  margin-right: 4px;
+}
+
+.ft5e-gd-info-sub {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}
+
+.ft5e-gd-category {
+  font-size: 13px;
+  font-weight: 700;
+  color: #27ae60;
+  margin: 12px 0 6px 0;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(39, 174, 96, 0.2);
+}
+
+.ft5e-gd-option {
+  padding: 6px 8px;
+  margin: 4px 0;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.5);
+  transition: background 0.15s ease;
+}
+
+.ft5e-gd-option:hover {
+  background: rgba(39, 174, 96, 0.06);
+}
+
+.ft5e-gd-option-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.ft5e-gd-option-label input[type="radio"] {
+  accent-color: #27ae60;
+}
+
+.ft5e-gd-option-desc {
+  margin: 4px 0 0 24px;
+  font-size: 11px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.ft5e-gd-option-input {
+  margin: 6px 0 0 24px;
+  width: calc(100% - 24px);
+  padding: 4px 8px;
+  font-size: 12px;
+  border: 1px solid rgba(39, 174, 96, 0.3);
+  border-radius: 4px;
+}
+
+.ft5e-gd-notes {
+  margin-top: 4px;
+}
+
+.ft5e-gd-notes label {
+  font-size: 12px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.ft5e-gd-notes-input {
+  width: 100%;
+  padding: 6px 8px;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+/* ── Growth Chat Message ── */
+
+.ft5e-growth-chat {
+  padding: 6px;
+  border-left: 3px solid #27ae60;
+  background: rgba(39, 174, 96, 0.05);
+  border-radius: 0 4px 4px 0;
+}

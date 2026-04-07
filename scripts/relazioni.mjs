@@ -3,7 +3,8 @@
  *
  * Adds a "Punti di Relazione" section to the character biography tab
  * showing all PCs in the campaign with editable relationship values.
- * Also tracks Growth Tokens assignable by the GM.
+ * Also tracks Growth Tokens assignable by the GM only.
+ * Players can spend tokens via a dialog with all available options.
  *
  * Relationship points are used for Attacchi Combo and Unison Raid.
  */
@@ -11,50 +12,226 @@
 const MODULE_ID = "fairy-tail-5e";
 const FLAG_RELAZIONI = "relazioni";
 const FLAG_GROWTH = "growthTokens";
+const FLAG_GROWTH_LOG = "growthLog";
 
 /* -------------------------------------------------- */
 /*  Data Helpers                                      */
 /* -------------------------------------------------- */
 
-/**
- * Get relationship points for an actor toward all other PCs.
- * Returns an object { actorId: pointsNumber, ... }
- */
 function getRelazioni(actor) {
   return actor.getFlag(MODULE_ID, FLAG_RELAZIONI) || {};
 }
 
-/**
- * Set relationship points toward a specific actor.
- */
 async function setRelazione(actor, targetId, points) {
   const current = getRelazioni(actor);
   current[targetId] = Math.max(0, parseInt(points) || 0);
   await actor.setFlag(MODULE_ID, FLAG_RELAZIONI, current);
 }
 
-/**
- * Get Growth Token count for an actor.
- */
 function getGrowthTokens(actor) {
   return actor.getFlag(MODULE_ID, FLAG_GROWTH) ?? 0;
 }
 
-/**
- * Set Growth Token count.
- */
 async function setGrowthTokens(actor, count) {
   await actor.setFlag(MODULE_ID, FLAG_GROWTH, Math.max(0, parseInt(count) || 0));
+}
+
+function getGrowthLog(actor) {
+  return actor.getFlag(MODULE_ID, FLAG_GROWTH_LOG) || [];
+}
+
+async function addGrowthLog(actor, entry) {
+  const log = getGrowthLog(actor);
+  log.push({ ...entry, date: Date.now() });
+  await actor.setFlag(MODULE_ID, FLAG_GROWTH_LOG, log);
+}
+
+/* -------------------------------------------------- */
+/*  Growth Token Dialog                               */
+/* -------------------------------------------------- */
+
+const GROWTH_OPTIONS = [
+  {
+    category: "Ottenere nuove magie",
+    options: [
+      {
+        id: "nuova-magia",
+        label: "Nuova Magia",
+        desc: "Prendi 1 caratteristica da una nuova magia, seguendo l'ordine dei livelli: 1, 3, 6, 11, 18.",
+        needsInput: true,
+        placeholder: "Nome della magia e caratteristica scelta..."
+      }
+    ]
+  },
+  {
+    category: "Raffinare magia esistente (scegli 2 opzioni per token)",
+    options: [
+      {
+        id: "gittata-doppia",
+        label: "Gittata Doppia",
+        desc: "La durata è aumentata della metà, e metà dei dadi di danno viene aggiunta di nuovo."
+      },
+      {
+        id: "riduzione-mp",
+        label: "Riduzione Costo MP",
+        desc: "Riduci il costo in MP della caratteristica di 1 per ogni rango della stessa (lv.1 = -1, lv.3 = -2, lv.6 = -3, ecc.). Minimo 1 MP."
+      },
+      {
+        id: "tecnica-gratis",
+        label: "Tecnica Livello 1 Gratis",
+        desc: "Una tecnica di livello 1 può costare 0 una sola volta (non può essere un'abilità definitiva)."
+      },
+      {
+        id: "altra-caratteristica",
+        label: "Altra Caratteristica",
+        desc: "Prendi un'altra caratteristica dalla magia, seguendo l'ordine dei livelli."
+      },
+      {
+        id: "bonus-ca",
+        label: "+1 CA (+2 se Lv.11+)",
+        desc: "Aggiungere +1 alla CA (o +2 se Livello 11 o alta caratteristica)."
+      },
+      {
+        id: "resistenza",
+        label: "Resistenza Aggiuntiva",
+        desc: "Aggiungere una resistenza aggiuntiva o trasformarla in danno magico (se Livello 11+)."
+      },
+      {
+        id: "bonus-attacco",
+        label: "+1 Tiro per Colpire / +2 Danni",
+        desc: "Aggiungere +1 al tiro per colpire o +2 ai danni."
+      },
+      {
+        id: "multi-potenziamento",
+        label: "Potenziamenti Multipli",
+        desc: "Se la caratteristica fa più cose, selezionare massimo 2 potenziamenti (3 se Livello 11)."
+      }
+    ]
+  }
+];
+
+/**
+ * Open the Growth Token spending dialog for the actor.
+ */
+async function openGrowthDialog(actor) {
+  const tokens = getGrowthTokens(actor);
+  if (tokens <= 0) {
+    ui.notifications.warn("Nessun Growth Token disponibile!");
+    return;
+  }
+
+  // Build options HTML
+  let optionsHtml = "";
+  for (const cat of GROWTH_OPTIONS) {
+    optionsHtml += `<h3 class="ft5e-gd-category">${cat.category}</h3>`;
+    for (const opt of cat.options) {
+      optionsHtml += `
+        <div class="ft5e-gd-option">
+          <label class="ft5e-gd-option-label">
+            <input type="radio" name="growth-choice" value="${opt.id}" />
+            <strong>${opt.label}</strong>
+          </label>
+          <p class="ft5e-gd-option-desc">${opt.desc}</p>
+          ${opt.needsInput ? `<input type="text" class="ft5e-gd-option-input" data-for="${opt.id}" placeholder="${opt.placeholder}" style="display:none;" />` : ""}
+        </div>
+      `;
+    }
+  }
+
+  const dialogContent = `
+    <div class="ft5e-growth-dialog">
+      <p class="ft5e-gd-info">
+        <i class="fas fa-seedling"></i>
+        <strong>${actor.name}</strong> ha <strong>${tokens}</strong> Growth Token disponibil${tokens === 1 ? "e" : "i"}.
+      </p>
+      <p class="ft5e-gd-info-sub">Seleziona come vuoi utilizzare 1 Growth Token:</p>
+      <hr>
+      <div class="ft5e-gd-options">
+        ${optionsHtml}
+      </div>
+      <hr>
+      <div class="ft5e-gd-notes">
+        <label><strong>Note aggiuntive:</strong></label>
+        <textarea class="ft5e-gd-notes-input" rows="2" placeholder="Dettagli sulla scelta (es. quale magia, quale caratteristica...)"></textarea>
+      </div>
+    </div>
+  `;
+
+  const dialog = new Dialog({
+    title: `Growth Token — ${actor.name}`,
+    content: dialogContent,
+    buttons: {
+      spend: {
+        icon: '<i class="fas fa-check"></i>',
+        label: "Spendi Token",
+        callback: async (html) => {
+          const choice = html.find('input[name="growth-choice"]:checked').val();
+          if (!choice) {
+            ui.notifications.warn("Seleziona un'opzione prima di spendere il token!");
+            return;
+          }
+
+          const notes = html.find('.ft5e-gd-notes-input').val() || "";
+          const extraInput = html.find(`.ft5e-gd-option-input[data-for="${choice}"]`).val() || "";
+
+          // Find the label for the chosen option
+          let choiceLabel = choice;
+          for (const cat of GROWTH_OPTIONS) {
+            const found = cat.options.find(o => o.id === choice);
+            if (found) { choiceLabel = found.label; break; }
+          }
+
+          // Decrement token
+          await setGrowthTokens(actor, tokens - 1);
+
+          // Log the spend
+          await addGrowthLog(actor, {
+            choice: choice,
+            label: choiceLabel,
+            notes: notes,
+            extraInput: extraInput,
+            tokensRemaining: tokens - 1
+          });
+
+          // Notify in chat
+          const chatContent = `
+            <div class="ft5e-growth-chat">
+              <strong>${actor.name}</strong> ha speso 1 Growth Token!<br>
+              <em>${choiceLabel}</em>${notes ? `<br><small>${notes}</small>` : ""}${extraInput ? `<br><small>${extraInput}</small>` : ""}
+              <br><small>Token rimanenti: ${tokens - 1}</small>
+            </div>
+          `;
+          ChatMessage.create({ content: chatContent, speaker: ChatMessage.getSpeaker({ actor }) });
+
+          ui.notifications.info(`Growth Token speso: ${choiceLabel}. Rimanenti: ${tokens - 1}`);
+        }
+      },
+      cancel: {
+        icon: '<i class="fas fa-times"></i>',
+        label: "Annulla"
+      }
+    },
+    default: "cancel",
+    render: (html) => {
+      // Show/hide text input when "nuova-magia" is selected
+      html.find('input[name="growth-choice"]').on("change", (ev) => {
+        html.find('.ft5e-gd-option-input').hide();
+        const val = ev.currentTarget.value;
+        html.find(`.ft5e-gd-option-input[data-for="${val}"]`).show();
+      });
+    }
+  }, {
+    width: 520,
+    height: "auto",
+    classes: ["ft5e-growth-dialog-window"]
+  });
+  dialog.render(true);
 }
 
 /* -------------------------------------------------- */
 /*  UI Injection                                      */
 /* -------------------------------------------------- */
 
-/**
- * Inject Punti di Relazione + Growth Token section into
- * the character biography tab.
- */
 function injectRelazioniUI(app, html, data) {
   const actor = app.actor ?? app.document;
   if (!actor || actor.type !== "character") return;
@@ -107,7 +284,11 @@ function injectRelazioniUI(app, html, data) {
     }
   }
 
-  // Build full section HTML
+  // Growth Token: input only editable by GM, spend button for owner (when tokens > 0)
+  const spendButton = (isOwner && growthTokens > 0)
+    ? `<button type="button" class="ft5e-growth-spend-btn" title="Spendi Growth Token"><i class="fas fa-hand-sparkles"></i> Spendi</button>`
+    : "";
+
   const sectionHtml = `
     <div class="ft5e-relazioni-section">
       <div class="ft5e-section-header">
@@ -129,7 +310,8 @@ function injectRelazioniUI(app, html, data) {
       <div class="ft5e-growth-tracker">
         <label class="ft5e-growth-label">Token disponibili:</label>
         <input type="number" class="ft5e-growth-input" value="${growthTokens}" min="0"
-          ${!isGM && !isOwner ? "disabled" : ""} title="Growth Token" />
+          ${!isGM ? "disabled" : ""} title="Growth Token — solo il GM può modificare" />
+        ${spendButton}
       </div>
     </div>
   `;
@@ -147,13 +329,20 @@ function injectRelazioniUI(app, html, data) {
     }
   });
 
-  // Bind growth token change events
+  // Bind growth token input (GM only)
   jqHtml.find(".ft5e-growth-input").on("change", async (ev) => {
     ev.preventDefault();
+    if (!game.user.isGM) return;
     const newVal = parseInt(ev.currentTarget.value);
     if (!isNaN(newVal)) {
       await setGrowthTokens(actor, newVal);
     }
+  });
+
+  // Bind spend button
+  jqHtml.find(".ft5e-growth-spend-btn").on("click", (ev) => {
+    ev.preventDefault();
+    openGrowthDialog(actor);
   });
 }
 
