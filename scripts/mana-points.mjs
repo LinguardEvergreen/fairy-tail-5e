@@ -423,6 +423,209 @@ async function promptMagiaSelection(classItem, actor) {
 }
 
 /* -------------------------------------------------- */
+/*  Talent Selection Dialog (Jack Of All, etc.)       */
+/* -------------------------------------------------- */
+
+/**
+ * Races that grant a talent choice at character creation.
+ * Identifier (kebab-case) → { count, title, hint }
+ */
+const RACES_WITH_TALENT = {
+  "umani":                     { count: 1, title: "Jack Of All",  hint: "Inizi con un Talento extra a tua scelta." },
+  "ibrido-demone-di-galuna":   { count: 1, title: "Talento",      hint: "Ottieni un talento a tua scelta dal capitolo Talenti." }
+};
+
+/**
+ * Show a custom talent picker dialog.
+ * Lists every feat from both the FT5e and dnd5e SRD compendiums,
+ * with an option to hide those whose prerequisites aren't met.
+ */
+async function promptTalentSelection(actor, config) {
+  // ── 1. Gather feats from all compendiums ──────────────────────
+  const feats = [];
+
+  // FT5e talents
+  const ft5ePack = game.packs.get("fairy-tail-5e.ft5e-talenti");
+  if (ft5ePack) {
+    const docs = await ft5ePack.getDocuments();
+    for (const d of docs) {
+      feats.push({
+        id: d.id,
+        packId: ft5ePack.collection,
+        name: d.name,
+        img: d.img || "icons/svg/book.svg",
+        source: "Fairy Tail",
+        requirements: d.system?.requirements || "",
+        doc: d
+      });
+    }
+  }
+
+  // dnd5e SRD feats — scan all system compendiums for type "feat"
+  for (const pack of game.packs) {
+    if (pack.collection === ft5ePack?.collection) continue;           // skip FT5e
+    if (pack.documentName !== "Item") continue;
+    try {
+      const idx = await pack.getIndex({ fields: ["system.type.value", "system.type.subtype", "system.requirements", "system.source"] });
+      for (const entry of idx) {
+        if (entry.system?.type?.value !== "feat") continue;
+        feats.push({
+          id: entry._id,
+          packId: pack.collection,
+          name: entry.name,
+          img: entry.img || "icons/svg/book.svg",
+          source: entry.system?.source?.book || pack.metadata?.label || "D&D 5e",
+          requirements: entry.system?.requirements || "",
+          doc: null  // lazy-loaded on selection
+        });
+      }
+    } catch { /* skip locked packs */ }
+  }
+
+  // Sort alphabetically
+  feats.sort((a, b) => a.name.localeCompare(b.name, "it"));
+
+  // ── 2. Prerequisite checking helper ───────────────────────────
+  function meetsPrereqs(feat) {
+    const req = feat.requirements?.toLowerCase() || "";
+    if (!req) return true;  // no prerequisite → always ok
+    const level = actor.system?.details?.level ?? 0;
+    const abilities = actor.system?.abilities ?? {};
+
+    // Level check: "livello X" or "X° livello"
+    const lvlMatch = req.match(/livello\s+(\d+)|(\d+)°?\s*livello/);
+    if (lvlMatch) {
+      const needed = parseInt(lvlMatch[1] || lvlMatch[2]);
+      if (level < needed) return false;
+    }
+
+    // Ability score check: "Forza 13", "Destrezza 15", etc.
+    const abilityMap = { forza: "str", destrezza: "dex", costituzione: "con", intelligenza: "int", saggezza: "wis", carisma: "cha" };
+    for (const [itName, key] of Object.entries(abilityMap)) {
+      const abiMatch = req.match(new RegExp(itName + "\\s+(\\d+)", "i"));
+      if (abiMatch) {
+        const needed = parseInt(abiMatch[1]);
+        if ((abilities[key]?.value ?? 10) < needed) return false;
+      }
+    }
+
+    // Modifier check: "Modificatore Incantatore pari o superiore a X" or "Modificatore Incantatore X"
+    const modMatch = req.match(/modificatore\s+incantatore\s+(?:pari\s+o\s+superiore\s+a\s+)?(\d+)/i);
+    if (modMatch) {
+      const needed = parseInt(modMatch[1]);
+      const spellAbility = actor.system?.attributes?.spellcasting;
+      const mod = spellAbility ? (abilities[spellAbility]?.mod ?? 0) : 0;
+      // For "20 in Modificatore Incantatore" → compare ability score, not mod
+      if (needed >= 10) {
+        const score = spellAbility ? (abilities[spellAbility]?.value ?? 10) : 10;
+        if (score < needed) return false;
+      } else {
+        if (mod < needed) return false;
+      }
+    }
+
+    // Feature/talent prerequisite: check if actor has an item with that name
+    const talentMatch = req.match(/talento\s+(.+?)(?:,|$)/i);
+    if (talentMatch) {
+      const needed = talentMatch[1].trim().toLowerCase();
+      const has = actor.items.some(i => i.type === "feat" && i.name?.toLowerCase().includes(needed));
+      if (!has) return false;
+    }
+
+    return true;  // can't parse further → assume ok
+  }
+
+  // ── 3. Build dialog HTML ──────────────────────────────────────
+  function buildFeatListHtml(filterPrereqs, searchText) {
+    const search = searchText.toLowerCase();
+    let html = "";
+    for (const feat of feats) {
+      // Search filter
+      if (search && !feat.name.toLowerCase().includes(search)) continue;
+      // Prerequisite filter
+      const ok = meetsPrereqs(feat);
+      if (filterPrereqs && !ok) continue;
+
+      const badge = feat.source === "Fairy Tail"
+        ? '<span style="background:#e74c3c;color:#fff;padding:1px 6px;border-radius:3px;font-size:0.75em;margin-right:4px;">FT</span>'
+        : '<span style="background:#3498db;color:#fff;padding:1px 6px;border-radius:3px;font-size:0.75em;margin-right:4px;">5e</span>';
+      const reqText = feat.requirements ? `<span style="color:#888;font-size:0.85em;"> — ${feat.requirements}</span>` : "";
+      const dimStyle = !ok ? ' style="opacity:0.45;"' : "";
+
+      html += `<label class="ft5e-talent-row"${dimStyle}>
+        <input type="radio" name="ft5e-talent-pick" value="${feat.packId}|||${feat.id}">
+        <img src="${feat.img}" width="24" height="24" style="margin:0 6px;vertical-align:middle;border:0;">
+        ${badge}<strong>${feat.name}</strong>${reqText}
+      </label>`;
+    }
+    return html || '<p style="color:#888;text-align:center;">Nessun talento trovato.</p>';
+  }
+
+  // ── 4. Render dialog ──────────────────────────────────────────
+  return new Promise((resolve) => {
+    let filterPrereqs = true;
+    let searchText = "";
+
+    const dlg = new Dialog({
+      title: `${config.title} — Scegli un Talento`,
+      content: `
+        <p>${config.hint}</p>
+        <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px;">
+          <input type="text" id="ft5e-talent-search" placeholder="Cerca talento..." style="flex:1;">
+          <label style="white-space:nowrap;font-size:0.9em;">
+            <input type="checkbox" id="ft5e-talent-filter" checked> Solo con prerequisiti
+          </label>
+        </div>
+        <div id="ft5e-talent-list" style="max-height:400px;overflow-y:auto;border:1px solid #999;border-radius:4px;padding:4px;">
+          ${buildFeatListHtml(true, "")}
+        </div>
+        <style>
+          .ft5e-talent-row { display:flex; align-items:center; padding:4px 6px; cursor:pointer; border-bottom:1px solid #eee; }
+          .ft5e-talent-row:hover { background:rgba(123,104,238,0.1); }
+          .ft5e-talent-row input[type="radio"] { margin-right:4px; }
+        </style>`,
+      buttons: {
+        ok: {
+          label: "Conferma",
+          icon: '<i class="fas fa-check"></i>',
+          callback: async (html) => {
+            const val = html.find('input[name="ft5e-talent-pick"]:checked').val();
+            if (!val) { resolve(null); return; }
+            const [packId, itemId] = val.split("|||");
+            try {
+              const pack = game.packs.get(packId);
+              const doc = await pack.getDocument(itemId);
+              if (!doc) { resolve(null); return; }
+              const data = doc.toObject();
+              delete data._id;
+              const created = await actor.createEmbeddedDocuments("Item", [data]);
+              ui.notifications.info(`${actor.name} ottiene il talento: ${doc.name}!`);
+              resolve(created[0]);
+            } catch (err) {
+              console.error("Fairy Tail 5e | Error adding talent:", err);
+              resolve(null);
+            }
+          }
+        }
+      },
+      default: "ok",
+      close: () => resolve(null),
+      render: (html) => {
+        // Live search + filter
+        const refresh = () => {
+          searchText = html.find("#ft5e-talent-search").val() || "";
+          filterPrereqs = html.find("#ft5e-talent-filter").prop("checked");
+          html.find("#ft5e-talent-list").html(buildFeatListHtml(filterPrereqs, searchText));
+        };
+        html.find("#ft5e-talent-search").on("input", refresh);
+        html.find("#ft5e-talent-filter").on("change", refresh);
+      }
+    }, { width: 520, height: "auto" });
+    dlg.render(true);
+  });
+}
+
+/* -------------------------------------------------- */
 /*  Hooks — Init & Settings                           */
 /* -------------------------------------------------- */
 
@@ -757,6 +960,43 @@ Hooks.on("createItem", async (item, options, userId) => {
     actor.setFlag(MODULE_ID, FLAG_MANA, { value: max, override: null });
   }
 });
+
+/* -------------------------------------------------- */
+/*  Hooks — Race talent choice (Jack Of All, etc.)    */
+/* -------------------------------------------------- */
+
+Hooks.on("createItem", async (item, options, userId) => {
+  if (game.user.id !== userId) return;
+  if (item.type !== "race") return;
+  const actor = item.parent;
+  if (!actor || actor.type !== "character") return;
+
+  // Check if this race grants talent choices
+  const identifier = item.system?.identifier || toKebabRuntime(item.name);
+  const talentConfig = RACES_WITH_TALENT[identifier];
+  if (!talentConfig) return;
+
+  // Small delay so the race advancements finish processing first
+  await new Promise(r => setTimeout(r, 500));
+
+  for (let i = 0; i < talentConfig.count; i++) {
+    await promptTalentSelection(actor, talentConfig);
+  }
+});
+
+/** Convert a name to kebab-case (runtime version for matching race names) */
+function toKebabRuntime(name) {
+  return (name || "")
+    .toLowerCase()
+    .replace(/[àáâ]/g, "a").replace(/[èéê]/g, "e")
+    .replace(/[ìíî]/g, "i").replace(/[òóô]/g, "o").replace(/[ùúû]/g, "u")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+/* -------------------------------------------------- */
+/*  Hooks — Class level changes                       */
+/* -------------------------------------------------- */
 
 Hooks.on("updateItem", (item, changes, options, userId) => {
   if (!isEnabled()) return;

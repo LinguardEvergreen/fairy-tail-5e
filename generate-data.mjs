@@ -1202,31 +1202,9 @@ function buildAdvancement(raceName, config, featureItems) {
     }
   }
 
-  // 5. ItemChoice for talent grants (race features that let player choose a talent)
-  // pool is empty + allowDrops true → Foundry shows the full feat compendium browser
-  // (both Fairy Tail and D&D 5e feats visible, filterable by source)
-  if (config.talentChoices) {
-    for (const tc of config.talentChoices) {
-      adv.push({
-        _id: stableId(`adv:${raceName}:talent:${tc.level}:${tc.title}`),
-        type: "ItemChoice",
-        level: tc.level,
-        title: tc.title,
-        hint: tc.hint || "",
-        icon: null,
-        classRestriction: null,
-        configuration: {
-          choices: { [String(tc.level)]: { count: tc.count, replacement: false } },
-          allowDrops: true,
-          type: "feat",
-          pool: [],
-          restriction: {},
-          spell: null
-        },
-        value: { added: {}, replaced: {} }
-      });
-    }
-  }
+  // 5. Talent choices (Jack Of All, etc.) are handled at RUNTIME by mana-points.mjs
+  // via a custom dialog that shows both FT5e and D&D 5e feats with prerequisite filtering.
+  // No ItemChoice advancement is created here.
 
   return adv;
 }

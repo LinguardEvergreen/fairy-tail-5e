@@ -116,32 +116,6 @@
             "spell": null
           },
           "value": {}
-        },
-        {
-          "_id": "a11f25b8d56f5d1f",
-          "type": "ItemChoice",
-          "level": 0,
-          "title": "Jack Of All",
-          "hint": "Inizi con un Talento extra a tua scelta.",
-          "icon": null,
-          "classRestriction": null,
-          "configuration": {
-            "choices": {
-              "0": {
-                "count": 1,
-                "replacement": false
-              }
-            },
-            "allowDrops": true,
-            "type": "feat",
-            "pool": [],
-            "restriction": {},
-            "spell": null
-          },
-          "value": {
-            "added": {},
-            "replaced": {}
-          }
         }
       ]
     },
@@ -733,32 +707,6 @@
             "spell": null
           },
           "value": {}
-        },
-        {
-          "_id": "78eb94185a57762a",
-          "type": "ItemChoice",
-          "level": 0,
-          "title": "Talento",
-          "hint": "Ottieni un talento a tua scelta dal capitolo Talenti.",
-          "icon": null,
-          "classRestriction": null,
-          "configuration": {
-            "choices": {
-              "0": {
-                "count": 1,
-                "replacement": false
-              }
-            },
-            "allowDrops": true,
-            "type": "feat",
-            "pool": [],
-            "restriction": {},
-            "spell": null
-          },
-          "value": {
-            "added": {},
-            "replaced": {}
-          }
         }
       ]
     },
