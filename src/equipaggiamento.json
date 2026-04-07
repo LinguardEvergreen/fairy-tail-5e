@@ -1,0 +1,258 @@
+[
+  {
+    "name": "Armatura imbottita",
+    "description": "<p>Armatura</p>"
+  },
+  {
+    "name": "Armatura di cuoio",
+    "description": "<p>Armatura</p>"
+  },
+  {
+    "name": "Armatura di cuoio borchiato",
+    "description": "<p>Armatura</p>"
+  },
+  {
+    "name": "Armatura in pelle",
+    "description": "<p>Armatura</p>"
+  },
+  {
+    "name": "Giaco di Maglia",
+    "description": "<p>Armatura</p>"
+  },
+  {
+    "name": "Corazza di Scaglie",
+    "description": "<p>Armatura</p>"
+  },
+  {
+    "name": "Corazza di Piastre",
+    "description": "<p>Armatura</p>"
+  },
+  {
+    "name": "Mezza Armatura",
+    "description": "<p>Armatura</p>"
+  },
+  {
+    "name": "Corazza di Anelli",
+    "description": "<p>Armatura</p>"
+  },
+  {
+    "name": "Cotta di maglia",
+    "description": "<p>Armatura</p>"
+  },
+  {
+    "name": "Corazza a strisce",
+    "description": "<p>Armatura</p>"
+  },
+  {
+    "name": "Armatura Completa",
+    "description": "<p>Armatura</p>"
+  },
+  {
+    "name": "Scudo",
+    "description": "<p>Armatura</p>"
+  },
+  {
+    "name": "Ascia",
+    "description": "<p>Arma da mischia semplice</p>"
+  },
+  {
+    "name": "Bastone ferrato",
+    "description": "<p>Arma da mischia semplice</p>"
+  },
+  {
+    "name": "Clava",
+    "description": "<p>Arma da mischia semplice</p>"
+  },
+  {
+    "name": "Falcetto",
+    "description": "<p>Arma da mischia semplice</p>"
+  },
+  {
+    "name": "Giavellotto",
+    "description": "<p>Arma da mischia semplice</p>"
+  },
+  {
+    "name": "Lancia",
+    "description": "<p>Arma da mischia semplice</p>"
+  },
+  {
+    "name": "Martello leggero",
+    "description": "<p>Arma da mischia semplice</p>"
+  },
+  {
+    "name": "Mazza",
+    "description": "<p>Arma da mischia semplice</p>"
+  },
+  {
+    "name": "Pugnale",
+    "description": "<p>Arma da mischia semplice</p>"
+  },
+  {
+    "name": "Alabarda",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Ascia Bipenne",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Ascia da battaglia",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Falcione",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Frusta",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Lancia da Cavaliere",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Maglio",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Martello da guerra",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Mazzafrusto",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Morning Star",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Picca",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Piccone da guerra",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Scimitarra",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Spada corta",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Spada lunga",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Spadone",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Stocco",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Tridente",
+    "description": "<p>Arma marziale da mischia</p>"
+  },
+  {
+    "name": "Arco corto",
+    "description": "<p>Arma a distanza semplice</p>"
+  },
+  {
+    "name": "Balestra leggera",
+    "description": "<p>Arma a distanza semplice</p>"
+  },
+  {
+    "name": "Dardo",
+    "description": "<p>Arma a distanza semplice</p>"
+  },
+  {
+    "name": "Fionda",
+    "description": "<p>Arma a distanza semplice</p>"
+  },
+  {
+    "name": "Arco lungo",
+    "description": "<p>Arma marziale a distanza</p>"
+  },
+  {
+    "name": "Balestra a mano",
+    "description": "<p>Arma marziale a distanza</p>"
+  },
+  {
+    "name": "Balestra pesante",
+    "description": "<p>Arma marziale a distanza</p>"
+  },
+  {
+    "name": "Rete",
+    "description": "<p>Arma marziale a distanza</p>"
+  },
+  {
+    "name": "Archibugio",
+    "description": "<p>Arma da fuoco</p>"
+  },
+  {
+    "name": "Pistola",
+    "description": "<p>Arma da fuoco</p>"
+  },
+  {
+    "name": "Rivoltella",
+    "description": "<p>Arma da fuoco</p>"
+  },
+  {
+    "name": "DMR",
+    "description": "<p>Arma da fuoco</p>"
+  },
+  {
+    "name": "Fucile a canne mozze",
+    "description": "<p>Arma da fuoco</p>"
+  },
+  {
+    "name": "Fucile a pompa",
+    "description": "<p>Arma da fuoco</p>"
+  },
+  {
+    "name": "Fucile d'Assalto",
+    "description": "<p>Arma da fuoco</p>"
+  },
+  {
+    "name": "Fucile da cecchino Bolt Action",
+    "description": "<p>Arma da fuoco</p>"
+  },
+  {
+    "name": "Fucile da cecchino (semi)",
+    "description": "<p>Arma da fuoco</p>"
+  },
+  {
+    "name": "Fucile semi-automatico",
+    "description": "<p>Arma da fuoco</p>"
+  },
+  {
+    "name": "Mitraglietta",
+    "description": "<p>Arma da fuoco</p>"
+  },
+  {
+    "name": "Cartuccia a palla",
+    "description": "<p>Munizione</p>"
+  },
+  {
+    "name": "Cartuccia sfondaporte",
+    "description": "<p>Munizione</p>"
+  },
+  {
+    "name": "Pallini",
+    "description": "<p>Munizione</p>"
+  },
+  {
+    "name": "Pallettoni",
+    "description": "<p>Munizione</p>"
+  },
+  {
+    "name": "Respiro del Drago",
+    "description": "<p>Munizione</p>"
+  }
+]

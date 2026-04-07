@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Pugni Devastanti",
+    "description": "<h3>Pugni Devastanti</h3>\n<p>*I tuoi pugni sono armi letali, temprati dall'addestramento e dal mana che scorre nel tuo corpo.*</p>\n<li>*Ottieni +2 ai tiri per i danni dei tuoi colpi senz'armi.*</li>\n<li>*Quando colpisci con un colpo senz'armi, puoi spendere 1 MP per infliggere 1d6 danni extra dello stesso tipo.*</li>"
+  },
+  {
+    "name": "Lama Infusa",
+    "description": "<h3>Lama Infusa</h3>\n<p>*Il mana fluisce naturalmente nella tua arma, potenziandone ogni fendente.*</p>\n<li>*Quando colpisci con un attacco con arma da mischia, puoi spendere 1 MP per infliggere 1d6 danni da forza aggiuntivi.*</li>\n<li>*Al 10° livello, i danni aggiuntivi aumentano a 1d8.*</li>"
+  },
+  {
+    "name": "Difensore Arcano",
+    "description": "<h3>Difensore Arcano</h3>\n<p>*Hai imparato a creare sottili barriere di mana per proteggere te stesso e i tuoi compagni.*</p>\n<li>*Come reazione, quando tu o un alleato entro 1,5 metri subite danno da un attacco, puoi spendere 1 MP per ridurre il danno di 1d8 + il tuo modificatore di Costituzione.*</li>"
+  },
+  {
+    "name": "Combattente Agile",
+    "description": "<h3>Combattente Agile</h3>\n<p>*Ti muovi come il vento, schivando i colpi con grazia soprannaturale.*</p>\n<li>*Mentre non indossi armatura pesante, ottieni +1 alla CA.*</li>\n<li>*Ottieni +1 ai tiri salvezza su Destrezza.*</li>"
+  },
+  {
+    "name": "Contrattaccante",
+    "description": "<h3>Contrattaccante</h3>\n<p>*Sfrutti ogni errore del nemico per colpire con precisione letale.*</p>\n<li>*Quando una creatura entro la tua portata ti manca con un attacco in mischia, puoi usare la tua reazione per effettuare un attacco con arma da mischia o un colpo senz'armi contro di essa.*</li>"
+  },
+  {
+    "name": "Furia Marziale",
+    "description": "<h3>Furia Marziale</h3>\n<p>*Ti lanci in battaglia con ferocia inarrestabile, sacrificando prudenza per potenza devastante.*</p>\n<li>*Quando effettui l'azione Attacco, puoi subire una penalità di -2 alla CA fino all'inizio del tuo prossimo turno per ottenere +4 ai danni di tutti i tuoi attacchi in mischia durante quel turno.*</li>"
+  },
+  {
+    "name": "Duellante",
+    "description": "<h3>Duellante</h3>\n<p>*La tua maestria con una singola arma è impareggiabile, ogni colpo è preciso e mortale.*</p>\n<li>*Quando impugni un'arma da mischia in una mano e nessun'altra arma, ottieni +2 ai tiri per i danni con quell'arma.*</li>"
+  },
+  {
+    "name": "Maestro d'Armi",
+    "description": "<h3>Maestro d'Armi</h3>\n<p>*Sfrutti al massimo la potenza bruta delle armi pesanti, trasformando ogni fendente in un colpo devastante.*</p>\n<li>*Quando tiri 1 o 2 su un dado danno di un attacco con un'arma da mischia impugnata a due mani, puoi ritirare il dado. Devi usare il nuovo risultato. L'arma deve possedere la proprietà a due mani o versatile.*</li>"
+  },
+  {
+    "name": "Combattente a Due Armi",
+    "description": "<h3>Combattente a Due Armi</h3>\n<p>*La tua destrezza nel maneggiare due armi simultaneamente è letale, ogni mano colpisce con la stessa forza dell'altra.*</p>\n<li>*Quando combatti con due armi, puoi aggiungere il tuo modificatore di caratteristica al danno del secondo attacco.*</li>"
+  },
+  {
+    "name": "Spirito Combattivo",
+    "description": "<h3>Spirito Combattivo</h3>\n<p>*Lo spirito indomabile che arde dentro di te si risveglia quando sei messo alle strette, trasformando la disperazione in forza devastante.*</p>\n<li>*Quando sei sotto la metà dei tuoi PF massimi, ottieni +2 ai tiri per colpire in mischia.*</li>\n<li>*Una volta per riposo lungo, quando scendi a 0 PF, puoi spendere 2 MP per rimanere a 1 PF e effettuare immediatamente un attacco in mischia come reazione.*</li>"
+  }
+]
