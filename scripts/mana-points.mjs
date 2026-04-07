@@ -407,7 +407,7 @@ async function promptMagiaSelection(classItem, actor) {
 
               // Add to actor — use AdvancementManager if item has advancements
               const AdvManager = dnd5e.applications.advancement?.AdvancementManager;
-              if (AdvManager && magiaData.system?.advancement?.length) {
+              if (AdvManager && !foundry.utils.isEmpty(magiaData.system?.advancement)) {
                 const manager = AdvManager.forNewItem(actor, magiaData);
                 if (manager.steps.length) {
                   manager.render(true);
@@ -615,7 +615,7 @@ async function promptTalentSelection(actor, config) {
 
               // Use AdvancementManager if item has advancements (e.g. ASI)
               const AdvManager = dnd5e.applications.advancement?.AdvancementManager;
-              if (AdvManager && data.system?.advancement?.length) {
+              if (AdvManager && !foundry.utils.isEmpty(data.system?.advancement)) {
                 const manager = AdvManager.forNewItem(actor, data);
                 if (manager.steps.length) {
                   manager.render(true);
