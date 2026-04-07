@@ -63,7 +63,7 @@ async function buildPack({ pack, src, type }) {
       name: item.name,
       type: type,
       img: item.img || "icons/svg/item-bag.svg",
-      system: item.system || {},
+      system: { ...(item.system || {}) },
       effects: item.effects || [],
       flags: {
         [MODULE_ID]: {
@@ -82,25 +82,12 @@ async function buildPack({ pack, src, type }) {
       }
     };
 
-    // Add description if present
+    // Merge description into system (preserving existing system fields)
     if (item.description) {
-      if (type === "spell") {
-        doc.system.description = { value: item.description };
-      } else if (type === "race") {
-        doc.system.description = { value: item.description };
-      } else if (type === "class") {
-        doc.system.description = { value: item.description };
-      } else if (type === "subclass") {
-        doc.system.description = { value: item.description };
-      } else if (type === "background") {
-        doc.system.description = { value: item.description };
-      } else if (type === "feat") {
-        doc.system.description = { value: item.description };
-      } else if (type === "equipment") {
-        doc.system.description = { value: item.description };
-      } else {
-        doc.system.description = { value: item.description };
-      }
+      doc.system.description = {
+        ...(doc.system.description || {}),
+        value: item.description
+      };
     }
 
     await db.put(`!items!${id}`, doc);

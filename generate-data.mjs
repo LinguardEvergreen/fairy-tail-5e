@@ -7,7 +7,9 @@
 
 import fs from "fs";
 import path from "path";
+import { createHash } from "crypto";
 
+const MODULE_ID = "fairy-tail-5e";
 const SOURCE_FILE = process.argv[2] || "D:/D&D/Fairy Tail/Homebrewery/Manuale Homebrewery Fairy Tail_it - VS FINAL.txt";
 const SRC_DIR = path.resolve("src");
 
@@ -779,6 +781,291 @@ function extractFeatureMagie() {
   writeJson("feature-magie.json", items);
 }
 
+// ── ENRICHMENT: Razze + Feature Razze ──────────────────────────────────────
+
+/** Generate a deterministic 16-char hex ID from a seed string */
+function stableId(seed) {
+  return createHash("md5").update(seed).digest("hex").slice(0, 16);
+}
+
+/** Convert a name to kebab-case identifier */
+function toKebab(name) {
+  return name
+    .toLowerCase()
+    .replace(/[°:()]/g, "")
+    .replace(/[àáâ]/g, "a").replace(/[èéê]/g, "e")
+    .replace(/[ìíî]/g, "i").replace(/[òóô]/g, "o").replace(/[ùúû]/g, "u")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
+/**
+ * Mechanical configuration for each race.
+ * - asi: AbilityScoreImprovement advancement config
+ * - skills: Trait advancement for skill proficiencies
+ * - movement: base movement speeds
+ * - senses: darkvision etc.
+ * - size: creature size ("sm", "med", etc.)
+ * - featureLevels: map level → array of feature names to grant via ItemGrant
+ */
+const RACE_CONFIG = {
+  "Umani": {
+    movement: { walk: 9, units: "m" },
+    senses: {},
+    size: "med",
+    asi: { points: 3, fixed: {}, cap: 2 },
+    skills: { grants: ["skills:his"] },
+    featureLevels: {
+      0: ["Jack Of All", "Controllo magico"]
+    }
+  },
+  "Exceed": {
+    movement: { walk: 12, units: "m" },
+    senses: {},
+    size: "sm",
+    asi: { points: 2, fixed: { dex: 2 }, cap: 2 },
+    skills: { grants: [] },
+    featureLevels: {
+      0: ["Ali magiche", "Le Ali Ti Sostengono", "Riserva di mana"]
+    }
+  },
+  "Ibrido Gatto": {
+    movement: { walk: 12, units: "m" },
+    senses: {},
+    size: "med",
+    asi: { points: 1, fixed: { dex: 2 }, cap: 2 },
+    skills: { grants: ["skills:sur"] },
+    featureLevels: {
+      0: ["Sensi acuti", "Sensi felini", "Artigli del felino"]
+    }
+  },
+  "Ibrido Lucertola": {
+    movement: { walk: 9, units: "m" },
+    senses: {},
+    size: "med",
+    asi: { points: 1, fixed: { con: 1, str: 1 }, cap: 1 },
+    skills: {
+      grants: [],
+      choices: [{ count: 1, pool: ["skills:itm", "skills:sur"] }]
+    },
+    featureLevels: {
+      0: ["Corpo avvelenato", "Frusta coda avvelenata", "Corpo resistente"]
+    }
+  },
+  "Ibrido Lupo": {
+    movement: { walk: 12, units: "m" },
+    senses: {},
+    size: "med",
+    asi: { points: 0, fixed: { str: 2, wis: 1 }, cap: 2 },
+    skills: { grants: ["skills:prc"] },
+    featureLevels: {
+      0: ["Udito e olfatto acuti", "Tattiche di branco", "Ululato del branco"]
+    }
+  },
+  "Ibrido Demone di Galuna": {
+    movement: { walk: 9, units: "m" },
+    senses: { darkvision: 18, units: "m" },
+    size: "med",
+    asi: { points: 0, fixed: { cha: 2, con: 1 }, cap: 2 },
+    skills: { grants: [] },
+    featureLevels: {
+      0: ["Talento", "Resistenza Demoniaca", "Trasformazione demoniaca"]
+    }
+  },
+  "Dragon Slayer": {
+    movement: { walk: 9, units: "m" },
+    senses: {},
+    size: "med",
+    asi: { points: 1, fixed: { con: 2 }, cap: 2 },
+    skills: {
+      grants: [],
+      choices: [{ count: 1, pool: ["skills:ath", "skills:acr"] }]
+    },
+    featureLevels: {
+      0: ["Magia Focalizzata", "Potere del Drago"],
+      1: ["Anima del drago 1° livello"],
+      3: ["Tecniche del Dragon Slayer 3° livello"],
+      6: ["Dragon Mode 6° livello", "Buff in Dual Dragon Mode"],
+      11: ["Tecniche segrete del dragon slayer 11° livello"],
+      18: ["Dragon Force 18° Livello"]
+    }
+  },
+  "Devil Slayer": {
+    movement: { walk: 9, units: "m" },
+    senses: {},
+    size: "med",
+    asi: { points: 0, fixed: { wis: 2, con: 1 }, cap: 2 },
+    skills: { grants: ["skills:rel"] },
+    featureLevels: {
+      0: ["Preda"],
+      1: ["1° livello: Demonizzazione"],
+      3: ["3° livello: Esorcismo"],
+      6: ["6° Livello: Osservazione Demoniaca"],
+      11: ["11° livello: Yama"],
+      18: ["18° livello: Post Mortem"]
+    }
+  }
+};
+
+/** Build the advancement array for a race */
+function buildAdvancement(raceName, config, featureItems) {
+  const adv = [];
+  const PACK = `ft5e-feature-razze`;
+
+  // 1. AbilityScoreImprovement
+  adv.push({
+    _id: stableId(`adv:${raceName}:asi`),
+    type: "AbilityScoreImprovement",
+    level: 0,
+    title: "",
+    hint: "",
+    icon: null,
+    classRestriction: null,
+    configuration: {
+      points: config.asi.points,
+      fixed: {
+        str: config.asi.fixed.str || 0,
+        dex: config.asi.fixed.dex || 0,
+        con: config.asi.fixed.con || 0,
+        int: config.asi.fixed.int || 0,
+        wis: config.asi.fixed.wis || 0,
+        cha: config.asi.fixed.cha || 0
+      },
+      cap: config.asi.cap || 2,
+      locked: []
+    },
+    value: {}
+  });
+
+  // 2. Size
+  adv.push({
+    _id: stableId(`adv:${raceName}:size`),
+    type: "Size",
+    level: 1,
+    title: "",
+    hint: "",
+    icon: null,
+    classRestriction: null,
+    configuration: { sizes: [config.size] },
+    value: { size: "" }
+  });
+
+  // 3. Trait (skill proficiencies)
+  if ((config.skills.grants && config.skills.grants.length) ||
+      (config.skills.choices && config.skills.choices.length)) {
+    adv.push({
+      _id: stableId(`adv:${raceName}:skills`),
+      type: "Trait",
+      level: 0,
+      title: "",
+      hint: "",
+      icon: null,
+      classRestriction: null,
+      configuration: {
+        mode: "default",
+        allowReplacements: false,
+        grants: config.skills.grants || [],
+        choices: config.skills.choices || []
+      },
+      value: { chosen: [] }
+    });
+  }
+
+  // 4. ItemGrant per level
+  for (const [level, featureNames] of Object.entries(config.featureLevels)) {
+    const items = [];
+    for (const fname of featureNames) {
+      const feat = featureItems.find(
+        f => f.name === fname &&
+        f.description.includes(`Razza: ${raceName}`)
+      );
+      if (feat && feat._id) {
+        items.push({
+          uuid: `Compendium.${MODULE_ID}.${PACK}.${feat._id}`
+        });
+      }
+    }
+    if (items.length > 0) {
+      adv.push({
+        _id: stableId(`adv:${raceName}:grant:${level}`),
+        type: "ItemGrant",
+        level: parseInt(level),
+        title: "",
+        hint: "",
+        icon: null,
+        classRestriction: null,
+        configuration: {
+          items: items,
+          optional: false,
+          spell: null
+        },
+        value: {}
+      });
+    }
+  }
+
+  return adv;
+}
+
+/** Post-process: enrich razze and feature-razze with mechanical data */
+function enrichRazze() {
+  const razzePath = path.join(SRC_DIR, "razze.json");
+  const featPath = path.join(SRC_DIR, "feature-razze.json");
+
+  const razze = JSON.parse(fs.readFileSync(razzePath, "utf-8"));
+  const features = JSON.parse(fs.readFileSync(featPath, "utf-8"));
+
+  // Assign stable IDs + metadata to features
+  for (const f of features) {
+    const race = f.description.match(/Razza: ([^<]+)/)?.[1] || "";
+    f._id = stableId(`feature-razze:${race}:${f.name}`);
+    f.system = {
+      type: { value: "race", subtype: "" },
+      requirements: race,
+      identifier: toKebab(f.name)
+    };
+  }
+
+  // Enrich races
+  for (const r of razze) {
+    const config = RACE_CONFIG[r.name];
+    if (!config) {
+      console.warn(`  ⚠ No config for race: ${r.name}`);
+      continue;
+    }
+
+    r._id = stableId(`razze:${r.name}`);
+    r.system = {
+      identifier: toKebab(r.name),
+      movement: {
+        walk: config.movement.walk,
+        burrow: null,
+        climb: null,
+        fly: config.movement.fly || null,
+        swim: null,
+        units: config.movement.units || "m",
+        hover: false
+      },
+      senses: {
+        darkvision: config.senses.darkvision || null,
+        blindsight: null,
+        tremorsense: null,
+        truesight: null,
+        units: config.senses.units || "m",
+        special: ""
+      },
+      type: { value: "humanoid", subtype: "", custom: "" },
+      advancement: buildAdvancement(r.name, config, features)
+    };
+  }
+
+  // Write back
+  fs.writeFileSync(razzePath, JSON.stringify(razze, null, 2), "utf-8");
+  console.log(`  ✓ razze.json: enriched ${razze.length} items with advancement`);
+  fs.writeFileSync(featPath, JSON.stringify(features, null, 2), "utf-8");
+  console.log(`  ✓ feature-razze.json: enriched ${features.length} items with metadata`);
+}
+
 // ── Main ────────────────────────────────────────────────────────────────────
 console.log("Generating JSON data files from Homebrewery source...\n");
 console.log(`Source: ${SOURCE_FILE}`);
@@ -795,5 +1082,8 @@ extractStiliCombattimento();
 extractFeatureRazze();
 extractFeatureClassi();
 extractFeatureMagie();
+
+console.log("\nEnriching race data...");
+enrichRazze();
 
 console.log("\nAll JSON files generated in src/");

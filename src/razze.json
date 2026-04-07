@@ -1,34 +1,1091 @@
 [
   {
     "name": "Umani",
-    "description": "<h2>Umani</h2>\n<p>*Gli umani rappresentano il 90% della popolazione di questo mondo. Tra loro, coloro che sono in grado di usare la magia ottengono il Controllo Magico, ma non tutti nascono con questo dono: solo il 10% degli umani ne è capace!*</p>\n<br>\n<p>**Incremento dei punteggi di caratteristica:** +1 a una caratteristica a tua scelta e +2 alla tua caratteristica magica **(Intelligenza, Saggezza o Carisma)**.</p>\n<br>\n<p>**Competenza nelle abilità:** Storia, grazie al tuo naturale desiderio di apprendere e di trarre insegnamenti dal passato per utilizzarli nel futuro.</p>\n<br>\n<p>**Jack Of All:** Inizi con un Talento extra a tua scelta.</p>\n<br>\n<p>**Controllo magico:** Grazie al tuo controllo innato sulla magia, ottieni un bonus di +2 al Mana Massimo. Ottieni un ulteriore +2 al Mana Massimo al livello 8 e di nuovo al livello 16.</p>"
+    "description": "<h2>Umani</h2>\n<p>*Gli umani rappresentano il 90% della popolazione di questo mondo. Tra loro, coloro che sono in grado di usare la magia ottengono il Controllo Magico, ma non tutti nascono con questo dono: solo il 10% degli umani ne è capace!*</p>\n<br>\n<p>**Incremento dei punteggi di caratteristica:** +1 a una caratteristica a tua scelta e +2 alla tua caratteristica magica **(Intelligenza, Saggezza o Carisma)**.</p>\n<br>\n<p>**Competenza nelle abilità:** Storia, grazie al tuo naturale desiderio di apprendere e di trarre insegnamenti dal passato per utilizzarli nel futuro.</p>\n<br>\n<p>**Jack Of All:** Inizi con un Talento extra a tua scelta.</p>\n<br>\n<p>**Controllo magico:** Grazie al tuo controllo innato sulla magia, ottieni un bonus di +2 al Mana Massimo. Ottieni un ulteriore +2 al Mana Massimo al livello 8 e di nuovo al livello 16.</p>",
+    "_id": "ad98c6e0ec17d379",
+    "system": {
+      "identifier": "umani",
+      "movement": {
+        "walk": 9,
+        "burrow": null,
+        "climb": null,
+        "fly": null,
+        "swim": null,
+        "units": "m",
+        "hover": false
+      },
+      "senses": {
+        "darkvision": null,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null,
+        "units": "m",
+        "special": ""
+      },
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "custom": ""
+      },
+      "advancement": [
+        {
+          "_id": "ac0da9acade1fed2",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 3,
+            "fixed": {
+              "str": 0,
+              "dex": 0,
+              "con": 0,
+              "int": 0,
+              "wis": 0,
+              "cha": 0
+            },
+            "cap": 2,
+            "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "557478f465274612",
+          "type": "Size",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "sizes": [
+              "med"
+            ]
+          },
+          "value": {
+            "size": ""
+          }
+        },
+        {
+          "_id": "9f186c52b9ffc43d",
+          "type": "Trait",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "skills:his"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": []
+          }
+        },
+        {
+          "_id": "54594cd719ae57b2",
+          "type": "ItemGrant",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.1e187b9b1fbc5cf5"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.30eeb04eb79f0b40"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        }
+      ]
+    }
   },
   {
     "name": "Exceed",
-    "description": "<h2>Exceed</h2>\n<p>*Gli Exceed sono piccole creature simili a gatti, nate con ali angeliche sulla schiena. A differenza degli umani, tutti gli Exceed nascono capaci di usare la magia, ma la maggior parte di loro è in grado di utilizzare solo le Magie delle Ali. Come giocatore, tuttavia, fai eccezione: sei capace di apprendere altre magie, ma devi avere un partner umano.*</p>\n<br>\n<p>**Incremento dei punteggi di caratteristica:** +2 a Destrezza e +2 alla tua caratteristica magica scelta.</p>\n<br>\n<p>**Velocità di movimento:** 12 metri</p>\n<br>\n<p>**Ali magiche:** Puoi volare alla tua velocità di movimento +3 metri ai livelli 3, 6, 9, 12, 15 e 18.</p>\n<br>\n<p>**Le Ali Ti Sostengono:** Puoi trasportare una creatura senza dover effettuare prove per sostenerla. Se tenti di trasportare due creature, devi avere Forza 14 o superiore. Se la tua Forza è inferiore a 16, tutte le prove per sostenere due creature vengono effettuate con svantaggio.</p>\n<br>\n<p>**Riserva di mana:** la tua riserva di mana è molto più ridotta rispetto alla media. Subisci una penalità di –1 MP per livello. Questo effetto può essere rimosso tramite il talento “Relazioni di Mana”, che può essere scelto solo dagli Exceed. Non subisci questa penalità se, al passaggio di livello, ottieni solo 1 MP.</p>"
+    "description": "<h2>Exceed</h2>\n<p>*Gli Exceed sono piccole creature simili a gatti, nate con ali angeliche sulla schiena. A differenza degli umani, tutti gli Exceed nascono capaci di usare la magia, ma la maggior parte di loro è in grado di utilizzare solo le Magie delle Ali. Come giocatore, tuttavia, fai eccezione: sei capace di apprendere altre magie, ma devi avere un partner umano.*</p>\n<br>\n<p>**Incremento dei punteggi di caratteristica:** +2 a Destrezza e +2 alla tua caratteristica magica scelta.</p>\n<br>\n<p>**Velocità di movimento:** 12 metri</p>\n<br>\n<p>**Ali magiche:** Puoi volare alla tua velocità di movimento +3 metri ai livelli 3, 6, 9, 12, 15 e 18.</p>\n<br>\n<p>**Le Ali Ti Sostengono:** Puoi trasportare una creatura senza dover effettuare prove per sostenerla. Se tenti di trasportare due creature, devi avere Forza 14 o superiore. Se la tua Forza è inferiore a 16, tutte le prove per sostenere due creature vengono effettuate con svantaggio.</p>\n<br>\n<p>**Riserva di mana:** la tua riserva di mana è molto più ridotta rispetto alla media. Subisci una penalità di –1 MP per livello. Questo effetto può essere rimosso tramite il talento “Relazioni di Mana”, che può essere scelto solo dagli Exceed. Non subisci questa penalità se, al passaggio di livello, ottieni solo 1 MP.</p>",
+    "_id": "3d89e3a8f429bc86",
+    "system": {
+      "identifier": "exceed",
+      "movement": {
+        "walk": 12,
+        "burrow": null,
+        "climb": null,
+        "fly": null,
+        "swim": null,
+        "units": "m",
+        "hover": false
+      },
+      "senses": {
+        "darkvision": null,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null,
+        "units": "m",
+        "special": ""
+      },
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "custom": ""
+      },
+      "advancement": [
+        {
+          "_id": "501c656eba9a3164",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 2,
+            "fixed": {
+              "str": 0,
+              "dex": 2,
+              "con": 0,
+              "int": 0,
+              "wis": 0,
+              "cha": 0
+            },
+            "cap": 2,
+            "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "fcc1198b848b8141",
+          "type": "Size",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "sizes": [
+              "sm"
+            ]
+          },
+          "value": {
+            "size": ""
+          }
+        },
+        {
+          "_id": "e0e1b5b25f6d6b06",
+          "type": "ItemGrant",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.92b5db35c34a15a3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.13f722a0b4125544"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.cbf8d81e158b3364"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        }
+      ]
+    }
   },
   {
     "name": "Ibrido Gatto",
-    "description": "<h2>Ibrido Gatto</h2>\n<p>*L’Ibrido Gatto, originario delle vivaci città e dei tranquilli villaggi di Fiore, incarna la grazia e l’agilità del felino. Alcuni mostrano solo tratti sottili della loro natura—pupille fessurate, un atteggiamento giocoso o una coda che si muove nervosamente—mentre altri abbracciano pienamente la loro eredità felina, apparendo come maestose tigri o leoni che camminano eretti, con corpi possenti e sguardi concentrati da predatori. Indipendentemente dall’aspetto esteriore, tutti gli Ibridi Gatto condividono un profondo legame con i propri istinti, sensi acuti e movimenti fluidi. Sono noti per la loro indipendenza e curiosità, ma anche per una lealtà incrollabile verso coloro che considerano parte del proprio branco.*</p>\n<br>\n<p>**Incremento dei punteggi di caratteristica:** Il tuo punteggio di Destrezza aumenta di 2, e uno a tua scelta tra Intelligenza, Saggezza o Carisma aumenta di 1.</p>\n<br>\n<p>**Velocità:** La velocità di camminata base è di 12 metri. Aumentando di 3 metri al livello 6 e di altri 3 metri al livello 12.</p>\n<br>\n<p>**Competenza nelle abilità:** Ottieni competenza nell'abilità Sopravvivenza.</p>\n<br>\n<p>**Sensi acuti:** Hai vantaggio a tutte le prove di Saggezza (Percezione) e Saggezza (Sopravvivenza) basate sulla vista o sull’olfatto. Inoltre, non puoi essere sorpreso finché sei cosciente e ti trovi entro 3 metri da una creatura ostile.</p>\n<br>\n<p>**Sensi felini:** Qualsiasi danno da caduta che subisci viene ridotto di 2d6 dal danno totale prima del tiro.</p>\n<br>\n<p>**Artigli del felino:** Come azione bonus, puoi spendere 1 punto mana per manifestare artigli di mana, aumentando il danno dei tuoi colpi senz’armi a 1d6 danni taglienti per 1 round.</p>\n<p>A partire dal livello 4, puoi spendere 1 punto mana aggiuntivo per abbassarti su quattro zampe e manifestare artigli su tutti gli arti, permettendoti di effettuare due attacchi senz’armi come parte dell’azione Attacco.</p>"
+    "description": "<h2>Ibrido Gatto</h2>\n<p>*L’Ibrido Gatto, originario delle vivaci città e dei tranquilli villaggi di Fiore, incarna la grazia e l’agilità del felino. Alcuni mostrano solo tratti sottili della loro natura—pupille fessurate, un atteggiamento giocoso o una coda che si muove nervosamente—mentre altri abbracciano pienamente la loro eredità felina, apparendo come maestose tigri o leoni che camminano eretti, con corpi possenti e sguardi concentrati da predatori. Indipendentemente dall’aspetto esteriore, tutti gli Ibridi Gatto condividono un profondo legame con i propri istinti, sensi acuti e movimenti fluidi. Sono noti per la loro indipendenza e curiosità, ma anche per una lealtà incrollabile verso coloro che considerano parte del proprio branco.*</p>\n<br>\n<p>**Incremento dei punteggi di caratteristica:** Il tuo punteggio di Destrezza aumenta di 2, e uno a tua scelta tra Intelligenza, Saggezza o Carisma aumenta di 1.</p>\n<br>\n<p>**Velocità:** La velocità di camminata base è di 12 metri. Aumentando di 3 metri al livello 6 e di altri 3 metri al livello 12.</p>\n<br>\n<p>**Competenza nelle abilità:** Ottieni competenza nell'abilità Sopravvivenza.</p>\n<br>\n<p>**Sensi acuti:** Hai vantaggio a tutte le prove di Saggezza (Percezione) e Saggezza (Sopravvivenza) basate sulla vista o sull’olfatto. Inoltre, non puoi essere sorpreso finché sei cosciente e ti trovi entro 3 metri da una creatura ostile.</p>\n<br>\n<p>**Sensi felini:** Qualsiasi danno da caduta che subisci viene ridotto di 2d6 dal danno totale prima del tiro.</p>\n<br>\n<p>**Artigli del felino:** Come azione bonus, puoi spendere 1 punto mana per manifestare artigli di mana, aumentando il danno dei tuoi colpi senz’armi a 1d6 danni taglienti per 1 round.</p>\n<p>A partire dal livello 4, puoi spendere 1 punto mana aggiuntivo per abbassarti su quattro zampe e manifestare artigli su tutti gli arti, permettendoti di effettuare due attacchi senz’armi come parte dell’azione Attacco.</p>",
+    "_id": "96b5b87bea3f9986",
+    "system": {
+      "identifier": "ibrido-gatto",
+      "movement": {
+        "walk": 12,
+        "burrow": null,
+        "climb": null,
+        "fly": null,
+        "swim": null,
+        "units": "m",
+        "hover": false
+      },
+      "senses": {
+        "darkvision": null,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null,
+        "units": "m",
+        "special": ""
+      },
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "custom": ""
+      },
+      "advancement": [
+        {
+          "_id": "532bfb31bf106ce5",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 1,
+            "fixed": {
+              "str": 0,
+              "dex": 2,
+              "con": 0,
+              "int": 0,
+              "wis": 0,
+              "cha": 0
+            },
+            "cap": 2,
+            "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "c0691940b2ae8fef",
+          "type": "Size",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "sizes": [
+              "med"
+            ]
+          },
+          "value": {
+            "size": ""
+          }
+        },
+        {
+          "_id": "ae625efc740cf210",
+          "type": "Trait",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "skills:sur"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": []
+          }
+        },
+        {
+          "_id": "0f9edd5976281397",
+          "type": "ItemGrant",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.8e9eef17a63b12ee"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.f30a37467db575ff"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.e1664193212de3f8"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        }
+      ]
+    }
   },
   {
     "name": "Ibrido Lucertola",
-    "description": "<h2>Ibrido Lucertola</h2>\n<p>*L’Ibrido Lucertola, originario delle soffocanti giungle e dei deserti di Fiore, incarna la resistenza e l’adattabilità dei rettili. Alcuni mostrano solo lievi segni della loro discendenza—chiazze di squame, pupille fessurate o una lingua che guizza—mentre altri abbracciano completamente la loro eredità rettiliana, con corpi ricoperti di squame e volti che ricordano diverse specie di lucertole. Qualunque sia il loro aspetto, tutti gli Ibridi Lucertola condividono un profondo legame con il mondo naturale, sensi affinati e corpi straordinariamente resistenti. Sono noti per il loro atteggiamento calmo e controllato anche di fronte alle avversità, e la loro capacità di sopportare condizioni estreme è senza pari.*</p>\n<br>\n<p>**Incremento dei punteggi di caratteristica:** il tuo punteggio di Costituzione aumenta di 1 e quello di Forza aumenta di 1. Inoltre, uno a tua scelta tra Intelligenza, Saggezza o Carisma aumenta di 1.</p>\n<br>\n<p>**Competenza nelle abilità:** Ottieni competenza in Intimidire o Sopravvivenza (a tua scelta).</p>\n<br>\n<p>**Corpo avvelenato:** Hai vantaggio ai tiri salvezza contro il veleno e resistenza ai danni da veleno.</p>\n<br>\n<p>**Frusta coda avvelenata:** Come azione bonus, puoi spendere 1 punto mana per ricoprire la tua coda di mana velenoso. Il tuo prossimo attacco senz’armi infligge 1d4 danni da veleno aggiuntivi, e il bersaglio deve superare un tiro salvezza su Costituzione (CD = 8 + bonus di competenza + modificatore di Costituzione) o ottenere 1 grado di avvelenato.</p>\n<p>Il primo grado applica la condizione Avvelenato base di D&D 5e. Alla fine di ogni suo turno, il bersaglio può ripetere il tiro salvezza, rimuovendo 1 grado in caso di successo.</p>\n<p>Dopo il primo grado, ogni grado aggiuntivo infligge Xd4 danni da veleno all’inizio del turno del bersaglio, dove X = grado – 1 (ad esempio, con 3 gradi, il bersaglio subisce 2d4 danni da veleno).</p>\n<br>\n<p>**Corpo resistente:** Hai vantaggio ai tiri salvezza contro le condizioni paralizzato, avvelenato e stordito. Come reazione, quando vieni colpito da un effetto che imporrebbe una di queste condizioni, puoi spendere 1 punto mana per superare automaticamente il tiro salvezza.</p>"
+    "description": "<h2>Ibrido Lucertola</h2>\n<p>*L’Ibrido Lucertola, originario delle soffocanti giungle e dei deserti di Fiore, incarna la resistenza e l’adattabilità dei rettili. Alcuni mostrano solo lievi segni della loro discendenza—chiazze di squame, pupille fessurate o una lingua che guizza—mentre altri abbracciano completamente la loro eredità rettiliana, con corpi ricoperti di squame e volti che ricordano diverse specie di lucertole. Qualunque sia il loro aspetto, tutti gli Ibridi Lucertola condividono un profondo legame con il mondo naturale, sensi affinati e corpi straordinariamente resistenti. Sono noti per il loro atteggiamento calmo e controllato anche di fronte alle avversità, e la loro capacità di sopportare condizioni estreme è senza pari.*</p>\n<br>\n<p>**Incremento dei punteggi di caratteristica:** il tuo punteggio di Costituzione aumenta di 1 e quello di Forza aumenta di 1. Inoltre, uno a tua scelta tra Intelligenza, Saggezza o Carisma aumenta di 1.</p>\n<br>\n<p>**Competenza nelle abilità:** Ottieni competenza in Intimidire o Sopravvivenza (a tua scelta).</p>\n<br>\n<p>**Corpo avvelenato:** Hai vantaggio ai tiri salvezza contro il veleno e resistenza ai danni da veleno.</p>\n<br>\n<p>**Frusta coda avvelenata:** Come azione bonus, puoi spendere 1 punto mana per ricoprire la tua coda di mana velenoso. Il tuo prossimo attacco senz’armi infligge 1d4 danni da veleno aggiuntivi, e il bersaglio deve superare un tiro salvezza su Costituzione (CD = 8 + bonus di competenza + modificatore di Costituzione) o ottenere 1 grado di avvelenato.</p>\n<p>Il primo grado applica la condizione Avvelenato base di D&D 5e. Alla fine di ogni suo turno, il bersaglio può ripetere il tiro salvezza, rimuovendo 1 grado in caso di successo.</p>\n<p>Dopo il primo grado, ogni grado aggiuntivo infligge Xd4 danni da veleno all’inizio del turno del bersaglio, dove X = grado – 1 (ad esempio, con 3 gradi, il bersaglio subisce 2d4 danni da veleno).</p>\n<br>\n<p>**Corpo resistente:** Hai vantaggio ai tiri salvezza contro le condizioni paralizzato, avvelenato e stordito. Come reazione, quando vieni colpito da un effetto che imporrebbe una di queste condizioni, puoi spendere 1 punto mana per superare automaticamente il tiro salvezza.</p>",
+    "_id": "66def426104ce5b0",
+    "system": {
+      "identifier": "ibrido-lucertola",
+      "movement": {
+        "walk": 9,
+        "burrow": null,
+        "climb": null,
+        "fly": null,
+        "swim": null,
+        "units": "m",
+        "hover": false
+      },
+      "senses": {
+        "darkvision": null,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null,
+        "units": "m",
+        "special": ""
+      },
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "custom": ""
+      },
+      "advancement": [
+        {
+          "_id": "4d4bc6672544615e",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 1,
+            "fixed": {
+              "str": 1,
+              "dex": 0,
+              "con": 1,
+              "int": 0,
+              "wis": 0,
+              "cha": 0
+            },
+            "cap": 1,
+            "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "40699c4a2a3093d0",
+          "type": "Size",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "sizes": [
+              "med"
+            ]
+          },
+          "value": {
+            "size": ""
+          }
+        },
+        {
+          "_id": "656172ba5eaad185",
+          "type": "Trait",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [],
+            "choices": [
+              {
+                "count": 1,
+                "pool": [
+                  "skills:itm",
+                  "skills:sur"
+                ]
+              }
+            ]
+          },
+          "value": {
+            "chosen": []
+          }
+        },
+        {
+          "_id": "6c725dc6e02a7051",
+          "type": "ItemGrant",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.680b37fe8116d005"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.8ddbb4cecbd96b35"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.512f4eefb6b1a53f"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        }
+      ]
+    }
   },
   {
     "name": "Ibrido Lupo",
-    "description": "<h2>Ibrido Lupo</h2>\n<p>*L’Ibrido Lupo, proveniente dalle terre selvagge ai margini di Fiore, incarna lo spirito indomito del lupo. Alcuni nascono con tratti lupeschi appena accennati—orecchie appuntite, canini affilati o una coda che guizza—mentre altri abbracciano completamente la loro eredità, apparendo come lupi che camminano eretti, avvolti da un folto manto di pelliccia e con il muso fiero tipico del predatore. A prescindere dall’aspetto esteriore, tutti gli Ibridi Lupo condividono un profondo legame con il mondo naturale, sensi acuti e istinti affinati. Sono ferocemente leali al proprio branco, che si tratti di famiglia, amici o compagni di gilda, e il loro coraggio di fronte al pericolo non vacilla mai.*</p>\n<br>\n<p>**Incremento dei punteggi di caratteristica:** Il tuo punteggio di Forza aumenta di 2 e il tuo punteggio di Saggezza aumenta di 1.</p>\n<br>\n<p>**Velocità:** La velocità di camminata base è di 12 metri.</p>\n<br>\n<p>**Competenza nelle abilità:** Ottieni competenza in Percezione.</p>\n<br>\n<p>**Udito e olfatto acuti:** Hai vantaggio alle prove di Saggezza (Percezione) basate sull’udito o sull’olfatto.</p>\n<br>\n<p>**Tattiche di branco:** Quando ti trovi entro 1,5 metri (1,5 metri) da un alleato che possiede anch’esso questo tratto, hai vantaggio ai tiri per colpire contro una creatura se almeno uno dei tuoi alleati che è un PG (Personaggio Giocante) si trova entro 1,5 metri (1,5 metri) dal bersaglio e non è incapacitato.</p>\n<br>\n<p>**Ululato del branco:** Come azione, puoi spendere 1 punto mana per emettere un ululato terrificante. Ogni creatura ostile entro 9 metri da te deve superare un tiro salvezza su Saggezza (CD = 8 + bonus di competenza + modificatore di Saggezza) o essere spaventata da te fino alla fine del tuo prossimo turno.</p>\n<p>Inoltre, l’ululato conferisce a te e a tutti gli alleati entro 9 metri che possono sentirti vantaggio ai tiri per colpire contro le creature spaventate fino alla fine del tuo prossimo turno.</p>"
+    "description": "<h2>Ibrido Lupo</h2>\n<p>*L’Ibrido Lupo, proveniente dalle terre selvagge ai margini di Fiore, incarna lo spirito indomito del lupo. Alcuni nascono con tratti lupeschi appena accennati—orecchie appuntite, canini affilati o una coda che guizza—mentre altri abbracciano completamente la loro eredità, apparendo come lupi che camminano eretti, avvolti da un folto manto di pelliccia e con il muso fiero tipico del predatore. A prescindere dall’aspetto esteriore, tutti gli Ibridi Lupo condividono un profondo legame con il mondo naturale, sensi acuti e istinti affinati. Sono ferocemente leali al proprio branco, che si tratti di famiglia, amici o compagni di gilda, e il loro coraggio di fronte al pericolo non vacilla mai.*</p>\n<br>\n<p>**Incremento dei punteggi di caratteristica:** Il tuo punteggio di Forza aumenta di 2 e il tuo punteggio di Saggezza aumenta di 1.</p>\n<br>\n<p>**Velocità:** La velocità di camminata base è di 12 metri.</p>\n<br>\n<p>**Competenza nelle abilità:** Ottieni competenza in Percezione.</p>\n<br>\n<p>**Udito e olfatto acuti:** Hai vantaggio alle prove di Saggezza (Percezione) basate sull’udito o sull’olfatto.</p>\n<br>\n<p>**Tattiche di branco:** Quando ti trovi entro 1,5 metri (1,5 metri) da un alleato che possiede anch’esso questo tratto, hai vantaggio ai tiri per colpire contro una creatura se almeno uno dei tuoi alleati che è un PG (Personaggio Giocante) si trova entro 1,5 metri (1,5 metri) dal bersaglio e non è incapacitato.</p>\n<br>\n<p>**Ululato del branco:** Come azione, puoi spendere 1 punto mana per emettere un ululato terrificante. Ogni creatura ostile entro 9 metri da te deve superare un tiro salvezza su Saggezza (CD = 8 + bonus di competenza + modificatore di Saggezza) o essere spaventata da te fino alla fine del tuo prossimo turno.</p>\n<p>Inoltre, l’ululato conferisce a te e a tutti gli alleati entro 9 metri che possono sentirti vantaggio ai tiri per colpire contro le creature spaventate fino alla fine del tuo prossimo turno.</p>",
+    "_id": "a9d899cc708f8d3c",
+    "system": {
+      "identifier": "ibrido-lupo",
+      "movement": {
+        "walk": 12,
+        "burrow": null,
+        "climb": null,
+        "fly": null,
+        "swim": null,
+        "units": "m",
+        "hover": false
+      },
+      "senses": {
+        "darkvision": null,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null,
+        "units": "m",
+        "special": ""
+      },
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "custom": ""
+      },
+      "advancement": [
+        {
+          "_id": "c9e6b3359f4a1866",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 0,
+            "fixed": {
+              "str": 2,
+              "dex": 0,
+              "con": 0,
+              "int": 0,
+              "wis": 1,
+              "cha": 0
+            },
+            "cap": 2,
+            "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "f3fd36ec8a8414e1",
+          "type": "Size",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "sizes": [
+              "med"
+            ]
+          },
+          "value": {
+            "size": ""
+          }
+        },
+        {
+          "_id": "5ca2a9ba23bf3d8f",
+          "type": "Trait",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "skills:prc"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": []
+          }
+        },
+        {
+          "_id": "4faecc661bd4d1e2",
+          "type": "ItemGrant",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.9b327ec1dac6343e"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.372864b7cdbddc82"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.e1151d464e167410"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        }
+      ]
+    }
   },
   {
     "name": "Ibrido Demone di Galuna",
-    "description": "<h2>Ibrido Demone di Galuna</h2>\n<p>*Gli Ibridi dell’Isola di Galuna sono una razza unica, frutto della fusione tra tratti umani e demoniaci. Possiedono la straordinaria capacità di mutare a piacimento tra forma umana e forma demoniaca, ottenendo la capacità di volare nella loro manifestazione demoniaca. La loro duplice eredità concede loro scurovisione e la libertà di scegliere un talento per personalizzare ulteriormente le proprie capacità.*</p>\n<br>\n<p>**Incremento dei punteggi di caratteristica:** +2 a Carisma e +1 a Costituzione.</p>\n<br>\n<p>**Scurovisione:** Puoi vedere in luce fioca entro 18 metri come se fosse luce intensa, e nell’oscurità come se fosse luce fioca. Nell’oscurità non puoi distinguere i colori, ma solo sfumature di grigio.</p>\n<br>\n<p>**Talento:** ottieni un talento a tua scelta dal capitolo Talenti.</p>\n<br>\n<p>**Resistenza Demoniaca:** Grazie alla tua eredità demoniaca, in entrambe le forme, ottieni resistenza ai danni necrotici. Essendo un mezzosangue, la magia del Devil Slayer non si applica a te.</p>\n<br>\n<p>**Trasformazione demoniaca:** Come azione bonus, puoi trasformarti nella tua forma demoniaca o tornare alla forma umana. Non esiste alcun limite al numero di volte in cui puoi effettuare questa trasformazione. Le tue statistiche rimangono le stesse in entrambe le forme, fatta eccezione per il fatto che, nella forma demoniaca, ottieni una velocità di volo di 6 metri.</p>"
+    "description": "<h2>Ibrido Demone di Galuna</h2>\n<p>*Gli Ibridi dell’Isola di Galuna sono una razza unica, frutto della fusione tra tratti umani e demoniaci. Possiedono la straordinaria capacità di mutare a piacimento tra forma umana e forma demoniaca, ottenendo la capacità di volare nella loro manifestazione demoniaca. La loro duplice eredità concede loro scurovisione e la libertà di scegliere un talento per personalizzare ulteriormente le proprie capacità.*</p>\n<br>\n<p>**Incremento dei punteggi di caratteristica:** +2 a Carisma e +1 a Costituzione.</p>\n<br>\n<p>**Scurovisione:** Puoi vedere in luce fioca entro 18 metri come se fosse luce intensa, e nell’oscurità come se fosse luce fioca. Nell’oscurità non puoi distinguere i colori, ma solo sfumature di grigio.</p>\n<br>\n<p>**Talento:** ottieni un talento a tua scelta dal capitolo Talenti.</p>\n<br>\n<p>**Resistenza Demoniaca:** Grazie alla tua eredità demoniaca, in entrambe le forme, ottieni resistenza ai danni necrotici. Essendo un mezzosangue, la magia del Devil Slayer non si applica a te.</p>\n<br>\n<p>**Trasformazione demoniaca:** Come azione bonus, puoi trasformarti nella tua forma demoniaca o tornare alla forma umana. Non esiste alcun limite al numero di volte in cui puoi effettuare questa trasformazione. Le tue statistiche rimangono le stesse in entrambe le forme, fatta eccezione per il fatto che, nella forma demoniaca, ottieni una velocità di volo di 6 metri.</p>",
+    "_id": "69f459a9b260f13c",
+    "system": {
+      "identifier": "ibrido-demone-di-galuna",
+      "movement": {
+        "walk": 9,
+        "burrow": null,
+        "climb": null,
+        "fly": null,
+        "swim": null,
+        "units": "m",
+        "hover": false
+      },
+      "senses": {
+        "darkvision": 18,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null,
+        "units": "m",
+        "special": ""
+      },
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "custom": ""
+      },
+      "advancement": [
+        {
+          "_id": "036704414c79326c",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 0,
+            "fixed": {
+              "str": 0,
+              "dex": 0,
+              "con": 1,
+              "int": 0,
+              "wis": 0,
+              "cha": 2
+            },
+            "cap": 2,
+            "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "97f72af54bba0022",
+          "type": "Size",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "sizes": [
+              "med"
+            ]
+          },
+          "value": {
+            "size": ""
+          }
+        },
+        {
+          "_id": "7100bf854b2484d3",
+          "type": "ItemGrant",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.ab078c1989ec5885"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.11619d6a475cea2a"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.60926244a5abe5fe"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        }
+      ]
+    }
   },
   {
     "name": "Dragon Slayer",
-    "description": "<h2> Slayer </h2>\n<p>**Incremento dei punteggi di caratteristica:** +2 a Costituzione e +1 alla tua caratteristica magica scelta.</p>\n<br>\n<p>**Competenza nelle abilità:** Ottieni competenza in Atletica o Acrobazia.</p>\n<hr>\n<p>Inoltre scegli ulteriore abilità in cui essere competente in base alla tua Generazione di Dragon Slayer:</p>\n<li>*Sopravvivenza (Gen 1 o 3)*</li>\n<li>*Arcano (Gen 2)*</li>\n<li>*Intimidire (Gen 5)*</li>\n<hr>\n<p>**Magia Focalizzata:** I Dragon Slayer possono apprendere solo la magia insegnata loro dal drago, detta Elemento Dragon Slayer.</p>\n<br>\n<p>**Potere del Drago:** la tua magia infligge danni raddoppiati (x2) ai draghi. Questo effetto non si applica a capacità come Take Over del Drago.</p>\n<h3> Anima del drago 1° livello </h3>\n<p>*Di seguito sono elencati i benefici che ottieni per essere un Dragon Slayer dalla nascita, gli aspetti più naturali di questa condizione.*</p>\n<li>**Divora magia:** *Una volta scelta la tua magia, sei in grado di mangiare quell’elemento magico. Un Dragon Slayer del Fuoco può mangiare il fuoco, uno del Ferro può mangiare il ferro, uno delle Spade può mangiare le spade, e così via. Come reazione quando vieni colpito, oppure quando il tuo elemento ti viene fornito da un PG o PNG, divori tutta la magia presente, recuperando tutti i MP spesi per l’incantesimo.*</li>\n<li>*Al livello 6 ora aggiungi il tuo Bonus Competenza in Dadi Vita al tuo incantesimo direttamente dopo aver divorato.*</li>\n<li>*Al livello 12 ora guarisci gli HP pari agli MP guadagnati x2 quando divori la magia.*</li>\n<hr>\n<li>**Ruggito del drago:** *In base al tuo elemento, puoi eseguire un Ruggito del Drago: se sei delle spade, emergono spade; se sei del fuoco, sprigioni fuoco, e così via. Questa capacità non costa MP.  Quando utilizzi il tuo soffio, ogni creatura nell’area dell’esalazione deve effettuare un tiro salvezza destrezza se scegli come ruggito una linea di 1.5 x 9 metri oppure costituzione se scegli un cono di 4.5m. La CD del tiro salvezza è pari a 8 + modificatore di Costituzione + bonus di competenza.*</li>\n<li>*Danni: 2d6 con fallimento, metà con successo.*</li>\n<li>*Livello 6: 3d6*</li>\n<li>*Livello 11: 4d6*</li>\n<li>*Livello 16: 5d6*</li>\n<hr>\n<p>*Quando effettui l'azione Attacco nel tuo turno, puoi sostituire uno degli attacchi con un **Ruggito del drago***</p>\n<h3> Tecniche del Dragon Slayer 3° livello </h3>\n<p>*Raggiunto questo livello, puoi creare la tua prima Tecnica del Dragon Slayer. Queste tecniche devono essere incantesimi di 5° livello o inferiore, ma costano 1 MP in meno:*</p>\n<li>1° livello: Gratis</li>\n<li>2° livello: 1 MP</li>\n<li>3° livello: 2 MP</li>\n<li>4° livello: 3 MP</li>\n<li>5° livello: 4 MP</li>\n<hr>\n<p>*Puoi dare un nome a questa tecnica come **Tecnica Segreta**; in cambio, potrai utilizzarla come **Uso Supremo** nello stesso turno, pagando 2 MP aggiuntivi.*</p>\n<hr>\n<p>*Ottieni una nuova Tecnica del Dragon Slayer ai livelli 8 e 16.*</p>\n<hr>\n<p>*Puoi usare queste tecniche un numero di volte pari al tuo modificatore di caratteristica magica (minimo 1) per combattimento.*</p>\n<hr>\n<p>*Ottieni resistenza al tipo di danno della tua magia (fuoco per il fuoco, fulmine per il fulmine, ecc.).</p>\n<p>Questo beneficio non si applica alla magia degli God Slayers.*</p>\n<h3> Dragon Mode 6° livello </h3>\n<p>**Scegli tra la modalità Single Dragon o la modalità Dual Dragon**</p>\n<li>**Single Dragon Mode:** *Aver divorato ripetutamente il tuo elemento ti permette di entrare nello stato noto come Dragon Mode. In questa forma, il colore o la tonalità del tuo elemento spesso cambia visibilmente.*</li>\n<li>**Costo:** 10 Mana</li>\n<li>**Utilizzo:** Una volta per riposo lungo</li>\n<hr>\n<p>Quando entri in questa forma:</p>\n<li>I danni del tuo elemento aumentano di un valore pari al tuo Bonus di Competenza in Dadi Vita.</li>\n<li>Quando effettui l’azione Attacco, puoi attaccare due volte invece di una.</li>\n<li>Emani inoltre un effetto personalizzato minore legato al tuo elemento, per esempio:</li>\n<li>**Fuoco:** *Tutte le creature entro un raggio di 4,5 metri, alleate o nemiche, subiscono 1d8 danni da fuoco. Se una creatura termina il turno all’interno dell’area, ottiene 1 grado di bruciatura, subendo 1d4 danni per grado finché non supera un tiro salvezza su Destrezza o esce dal raggio*</li>\n<hr>\n<p>In questa forma:</p>\n<li>Le normali Resistenze vengono ignorate.</li>\n<li>Le Immunità vengono trattate come Resistenze.</li>\n<hr>\n<li>**Dual Dragon Mode:** *La Dual Dragon Mode ti permette di assorbire la magia di un altro Dragon Slayer e combinare il suo elemento con il tuo. Puoi farlo una seconda volta al livello 14.*</li>\n<li>**Costo:** 10 Mana</li>\n<li>**Durata:** 1 minuto</li>\n<li>**Aspetto:** Visivamente il tuo corpo cambia o emana energia dai due elementi combinati.</li>\n<li>**Limite:** Puoi combinare un solo elemento aggiuntivo alla volta con il tuo. Anche se conosci più combinazioni, puoi usarne solo una per volta.</li>\n<hr>\n<p>**Buff in Dual Dragon Mode:** Quando attivi la modalità:</p>\n<li>Ogni capacità legata agli elementi guadagna bonus secondo lo schema dei [Growth Token](#p170):</li>\n<li>Aumento dei danni</li>\n<li>Riduzione del costo in MP</li>\n<li>Maggiore durata o portata</li>\n<li>Bonus agli attacchi o al tiro per i danni</li>\n<li>L’entità dei buff segue il livello del personaggio:</li>\n<li>Livello 6 → 3 Bonus</li>\n<li>Livello 11 → 4 Bonus</li>\n<li>Livello 18 → 5 Bonus</li>\n<p>Quando esci da qualsiasi Dragon Mode, ottieni:</p>\n<li>2 livelli di esaurimento</li>\n<li>Livello 16: 1 livelli di esaurimento</li>\n<li>Livello 20+: 0 livello di esaurimento</li>\n<hr>\n<p>***Se utilizzi una Dragon Mode una seconda volta prima di aver recuperato, diventi incosciente per 1d4 round.***</p>\n<h3> Tecniche segrete del dragon slayer 11° livello </h3>\n<p>*Raggiunto l’11° livello, puoi creare una capacità magica personalizzata*</p>\n<hr>\n<p>*Questa è considerata la tua Tecnica Segreta del Dragon Slayer. Potrai apprenderne altre durante l’avventura, ma questa è quella da te creata. Essa è considerata una capacità magica secondaria e ha usi limitati pari al tuo bonus di competenza per riposo lungo. Al livello 15, crei un'ulteriori tecnica.*</p>\n<h3> Dragon Force 18° Livello </h3>\n<p>*La Dragon Force rappresenta il culmine della potenza di un Dragon Slayer. Al livello 18, il tuo corpo e la tua magia si fondono completamente con l’essenza del drago. La tua forza, resistenza e controllo elementale raggiungono livelli straordinari, permettendoti di superare qualsiasi limite. Visivamente, il tuo corpo emana energia elementale pura, con scaglie, ali, corna o aura luminosa (a seconda del tuo elemento), e i tuoi occhi brillano di potenza draconica.*</p>\n<br>\n<p>***Attivazione***</p>\n<li>**Costo:** Azione bonus, 15 MP</li>\n<li>**Durata:** Un minuto</li>\n<li>**Utilizzo:** 1 volta per riposo lungo</li>\n<li>**Aspetto Visivo:** Corpo che emana energia pura, scaglie, ali, corna o aura devastante</li>\n<hr>\n<p>*Quando entri in questa forma ottieni i seguenti benefici:*</p>\n<li>Tutti i tuoi attacchi elementali infliggono Bonus Competenza × Dado Vita della classe come danno extra</li>\n<li>Puoi scegliere 6 bonus dai **[Growth Token](#p170)**</li>\n<hr>\n<li>**Potenza Dragonica:**</li>\n<li>+2 Forza o Destrezza, +4 Costituzione</li>\n<li>+2 al tuo modificatore da inc</li>\n<li>**Mobilità del Drago:**</li>\n<li>Velocità aumentata di 6 metri</li>\n<li>Ignori effetti di rallentamento e terreno difficile</li>\n<hr>\n<li>**Aura di Dominio:**</li>\n<li>Nemici entro 6 metri devono superare un tiro salvezza su Saggezza (DC 8 + PB + modificatore di Saggezza) o essere terrorizzati per 1 turno e subire svantaggio ai tiri per colpire e ai Tiri Salvezza su Attacchi)</li>\n<li>Gli alleati entro 4,5 metri ottengono vantaggio a tutti i tiri per colpire contro nemici spaventati</li>\n<hr>\n<li>**Resistenze e Immunità:**</li>\n<li>*Immunità al tuo tipo di danno elementale*</li>\n<li>*Immunità a paralisi, paura, stordimento*</li>\n<li>*Le normali Resistenze vengono ignorate.*</li>\n<li>*Le Immunità vengono trattate come Resistenze.*</li>\n<hr>\n<li>**Ruggito del Drago Migliorato:** *Area del ruggito aumentata del 50%*</li>\n<hr>\n<li>**Potenziamento delle Tecniche del Drago:** *Durante Dragon Force, tutte le Tecniche del Drago e le Tecniche Segrete costano 2 MP in meno*</li>\n<hr>\n<li>**Limitazioni:**  *All’uscita: 2 livello di esaurimento (1 a livello 20+)*</li>"
+    "description": "<h2> Slayer </h2>\n<p>**Incremento dei punteggi di caratteristica:** +2 a Costituzione e +1 alla tua caratteristica magica scelta.</p>\n<br>\n<p>**Competenza nelle abilità:** Ottieni competenza in Atletica o Acrobazia.</p>\n<hr>\n<p>Inoltre scegli ulteriore abilità in cui essere competente in base alla tua Generazione di Dragon Slayer:</p>\n<li>*Sopravvivenza (Gen 1 o 3)*</li>\n<li>*Arcano (Gen 2)*</li>\n<li>*Intimidire (Gen 5)*</li>\n<hr>\n<p>**Magia Focalizzata:** I Dragon Slayer possono apprendere solo la magia insegnata loro dal drago, detta Elemento Dragon Slayer.</p>\n<br>\n<p>**Potere del Drago:** la tua magia infligge danni raddoppiati (x2) ai draghi. Questo effetto non si applica a capacità come Take Over del Drago.</p>\n<h3> Anima del drago 1° livello </h3>\n<p>*Di seguito sono elencati i benefici che ottieni per essere un Dragon Slayer dalla nascita, gli aspetti più naturali di questa condizione.*</p>\n<li>**Divora magia:** *Una volta scelta la tua magia, sei in grado di mangiare quell’elemento magico. Un Dragon Slayer del Fuoco può mangiare il fuoco, uno del Ferro può mangiare il ferro, uno delle Spade può mangiare le spade, e così via. Come reazione quando vieni colpito, oppure quando il tuo elemento ti viene fornito da un PG o PNG, divori tutta la magia presente, recuperando tutti i MP spesi per l’incantesimo.*</li>\n<li>*Al livello 6 ora aggiungi il tuo Bonus Competenza in Dadi Vita al tuo incantesimo direttamente dopo aver divorato.*</li>\n<li>*Al livello 12 ora guarisci gli HP pari agli MP guadagnati x2 quando divori la magia.*</li>\n<hr>\n<li>**Ruggito del drago:** *In base al tuo elemento, puoi eseguire un Ruggito del Drago: se sei delle spade, emergono spade; se sei del fuoco, sprigioni fuoco, e così via. Questa capacità non costa MP.  Quando utilizzi il tuo soffio, ogni creatura nell’area dell’esalazione deve effettuare un tiro salvezza destrezza se scegli come ruggito una linea di 1.5 x 9 metri oppure costituzione se scegli un cono di 4.5m. La CD del tiro salvezza è pari a 8 + modificatore di Costituzione + bonus di competenza.*</li>\n<li>*Danni: 2d6 con fallimento, metà con successo.*</li>\n<li>*Livello 6: 3d6*</li>\n<li>*Livello 11: 4d6*</li>\n<li>*Livello 16: 5d6*</li>\n<hr>\n<p>*Quando effettui l'azione Attacco nel tuo turno, puoi sostituire uno degli attacchi con un **Ruggito del drago***</p>\n<h3> Tecniche del Dragon Slayer 3° livello </h3>\n<p>*Raggiunto questo livello, puoi creare la tua prima Tecnica del Dragon Slayer. Queste tecniche devono essere incantesimi di 5° livello o inferiore, ma costano 1 MP in meno:*</p>\n<li>1° livello: Gratis</li>\n<li>2° livello: 1 MP</li>\n<li>3° livello: 2 MP</li>\n<li>4° livello: 3 MP</li>\n<li>5° livello: 4 MP</li>\n<hr>\n<p>*Puoi dare un nome a questa tecnica come **Tecnica Segreta**; in cambio, potrai utilizzarla come **Uso Supremo** nello stesso turno, pagando 2 MP aggiuntivi.*</p>\n<hr>\n<p>*Ottieni una nuova Tecnica del Dragon Slayer ai livelli 8 e 16.*</p>\n<hr>\n<p>*Puoi usare queste tecniche un numero di volte pari al tuo modificatore di caratteristica magica (minimo 1) per combattimento.*</p>\n<hr>\n<p>*Ottieni resistenza al tipo di danno della tua magia (fuoco per il fuoco, fulmine per il fulmine, ecc.).</p>\n<p>Questo beneficio non si applica alla magia degli God Slayers.*</p>\n<h3> Dragon Mode 6° livello </h3>\n<p>**Scegli tra la modalità Single Dragon o la modalità Dual Dragon**</p>\n<li>**Single Dragon Mode:** *Aver divorato ripetutamente il tuo elemento ti permette di entrare nello stato noto come Dragon Mode. In questa forma, il colore o la tonalità del tuo elemento spesso cambia visibilmente.*</li>\n<li>**Costo:** 10 Mana</li>\n<li>**Utilizzo:** Una volta per riposo lungo</li>\n<hr>\n<p>Quando entri in questa forma:</p>\n<li>I danni del tuo elemento aumentano di un valore pari al tuo Bonus di Competenza in Dadi Vita.</li>\n<li>Quando effettui l’azione Attacco, puoi attaccare due volte invece di una.</li>\n<li>Emani inoltre un effetto personalizzato minore legato al tuo elemento, per esempio:</li>\n<li>**Fuoco:** *Tutte le creature entro un raggio di 4,5 metri, alleate o nemiche, subiscono 1d8 danni da fuoco. Se una creatura termina il turno all’interno dell’area, ottiene 1 grado di bruciatura, subendo 1d4 danni per grado finché non supera un tiro salvezza su Destrezza o esce dal raggio*</li>\n<hr>\n<p>In questa forma:</p>\n<li>Le normali Resistenze vengono ignorate.</li>\n<li>Le Immunità vengono trattate come Resistenze.</li>\n<hr>\n<li>**Dual Dragon Mode:** *La Dual Dragon Mode ti permette di assorbire la magia di un altro Dragon Slayer e combinare il suo elemento con il tuo. Puoi farlo una seconda volta al livello 14.*</li>\n<li>**Costo:** 10 Mana</li>\n<li>**Durata:** 1 minuto</li>\n<li>**Aspetto:** Visivamente il tuo corpo cambia o emana energia dai due elementi combinati.</li>\n<li>**Limite:** Puoi combinare un solo elemento aggiuntivo alla volta con il tuo. Anche se conosci più combinazioni, puoi usarne solo una per volta.</li>\n<hr>\n<p>**Buff in Dual Dragon Mode:** Quando attivi la modalità:</p>\n<li>Ogni capacità legata agli elementi guadagna bonus secondo lo schema dei [Growth Token](#p170):</li>\n<li>Aumento dei danni</li>\n<li>Riduzione del costo in MP</li>\n<li>Maggiore durata o portata</li>\n<li>Bonus agli attacchi o al tiro per i danni</li>\n<li>L’entità dei buff segue il livello del personaggio:</li>\n<li>Livello 6 → 3 Bonus</li>\n<li>Livello 11 → 4 Bonus</li>\n<li>Livello 18 → 5 Bonus</li>\n<p>Quando esci da qualsiasi Dragon Mode, ottieni:</p>\n<li>2 livelli di esaurimento</li>\n<li>Livello 16: 1 livelli di esaurimento</li>\n<li>Livello 20+: 0 livello di esaurimento</li>\n<hr>\n<p>***Se utilizzi una Dragon Mode una seconda volta prima di aver recuperato, diventi incosciente per 1d4 round.***</p>\n<h3> Tecniche segrete del dragon slayer 11° livello </h3>\n<p>*Raggiunto l’11° livello, puoi creare una capacità magica personalizzata*</p>\n<hr>\n<p>*Questa è considerata la tua Tecnica Segreta del Dragon Slayer. Potrai apprenderne altre durante l’avventura, ma questa è quella da te creata. Essa è considerata una capacità magica secondaria e ha usi limitati pari al tuo bonus di competenza per riposo lungo. Al livello 15, crei un'ulteriori tecnica.*</p>\n<h3> Dragon Force 18° Livello </h3>\n<p>*La Dragon Force rappresenta il culmine della potenza di un Dragon Slayer. Al livello 18, il tuo corpo e la tua magia si fondono completamente con l’essenza del drago. La tua forza, resistenza e controllo elementale raggiungono livelli straordinari, permettendoti di superare qualsiasi limite. Visivamente, il tuo corpo emana energia elementale pura, con scaglie, ali, corna o aura luminosa (a seconda del tuo elemento), e i tuoi occhi brillano di potenza draconica.*</p>\n<br>\n<p>***Attivazione***</p>\n<li>**Costo:** Azione bonus, 15 MP</li>\n<li>**Durata:** Un minuto</li>\n<li>**Utilizzo:** 1 volta per riposo lungo</li>\n<li>**Aspetto Visivo:** Corpo che emana energia pura, scaglie, ali, corna o aura devastante</li>\n<hr>\n<p>*Quando entri in questa forma ottieni i seguenti benefici:*</p>\n<li>Tutti i tuoi attacchi elementali infliggono Bonus Competenza × Dado Vita della classe come danno extra</li>\n<li>Puoi scegliere 6 bonus dai **[Growth Token](#p170)**</li>\n<hr>\n<li>**Potenza Dragonica:**</li>\n<li>+2 Forza o Destrezza, +4 Costituzione</li>\n<li>+2 al tuo modificatore da inc</li>\n<li>**Mobilità del Drago:**</li>\n<li>Velocità aumentata di 6 metri</li>\n<li>Ignori effetti di rallentamento e terreno difficile</li>\n<hr>\n<li>**Aura di Dominio:**</li>\n<li>Nemici entro 6 metri devono superare un tiro salvezza su Saggezza (DC 8 + PB + modificatore di Saggezza) o essere terrorizzati per 1 turno e subire svantaggio ai tiri per colpire e ai Tiri Salvezza su Attacchi)</li>\n<li>Gli alleati entro 4,5 metri ottengono vantaggio a tutti i tiri per colpire contro nemici spaventati</li>\n<hr>\n<li>**Resistenze e Immunità:**</li>\n<li>*Immunità al tuo tipo di danno elementale*</li>\n<li>*Immunità a paralisi, paura, stordimento*</li>\n<li>*Le normali Resistenze vengono ignorate.*</li>\n<li>*Le Immunità vengono trattate come Resistenze.*</li>\n<hr>\n<li>**Ruggito del Drago Migliorato:** *Area del ruggito aumentata del 50%*</li>\n<hr>\n<li>**Potenziamento delle Tecniche del Drago:** *Durante Dragon Force, tutte le Tecniche del Drago e le Tecniche Segrete costano 2 MP in meno*</li>\n<hr>\n<li>**Limitazioni:**  *All’uscita: 2 livello di esaurimento (1 a livello 20+)*</li>",
+    "_id": "2ec2c253d3d426ec",
+    "system": {
+      "identifier": "dragon-slayer",
+      "movement": {
+        "walk": 9,
+        "burrow": null,
+        "climb": null,
+        "fly": null,
+        "swim": null,
+        "units": "m",
+        "hover": false
+      },
+      "senses": {
+        "darkvision": null,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null,
+        "units": "m",
+        "special": ""
+      },
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "custom": ""
+      },
+      "advancement": [
+        {
+          "_id": "b1cfb4376582db33",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 1,
+            "fixed": {
+              "str": 0,
+              "dex": 0,
+              "con": 2,
+              "int": 0,
+              "wis": 0,
+              "cha": 0
+            },
+            "cap": 2,
+            "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "bd9a8a112ac3bbde",
+          "type": "Size",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "sizes": [
+              "med"
+            ]
+          },
+          "value": {
+            "size": ""
+          }
+        },
+        {
+          "_id": "48ab62f33df4e25d",
+          "type": "Trait",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [],
+            "choices": [
+              {
+                "count": 1,
+                "pool": [
+                  "skills:ath",
+                  "skills:acr"
+                ]
+              }
+            ]
+          },
+          "value": {
+            "chosen": []
+          }
+        },
+        {
+          "_id": "066bfa3ecd28874d",
+          "type": "ItemGrant",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.d941951080c37eb2"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.211dd128cb6749da"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "169c17a34eb5023b",
+          "type": "ItemGrant",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.db92aab0ed9f2d7c"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "d9cad36873da4522",
+          "type": "ItemGrant",
+          "level": 3,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.619062702b19adad"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "e10a78d6d0787377",
+          "type": "ItemGrant",
+          "level": 6,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.b79b11f756fe9b87"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.9f406e00c1b2f179"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "5c7c68a12ec44bde",
+          "type": "ItemGrant",
+          "level": 11,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.601d7dca82f631c9"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "8d40e61425eb9cf9",
+          "type": "ItemGrant",
+          "level": 18,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.e0358172bb95edec"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        }
+      ]
+    }
   },
   {
     "name": "Devil Slayer",
-    "description": "<h2> Slayer </h2>\n<p>**Incremento dei Punteggi di Caratteristica:** +2 Saggezza, +1 Costituzione</p>\n<br>\n<p>**Competenza nelle competenze:** Religione</p>\n<br>\n<p>**Preda:** Contro i Demoni tutto il danno è x2.</p>\n<h3> 1° livello: Demonizzazione </h3>\n<p>Ogni volta che utilizzi Mana, ottieni Punti Demoniaci (DP) pari a 10 volte il Mana speso.</p>\n<p>Tutti i benefici si accumulano, ma ottieni Punti Demoniaci automatici solo in base alla soglia più alta di Demonizzazione raggiunta.</p>\n<p>La durata è di 1 minuto non può essere disattivata</p>\n<h5>Parte 1</h5>\n<p>| Demonizzazione | Buff | DP guadagnato|</p>\n<p>|:----:|:----:|:----:|</p>\n<p>| 10 punti demone, (1%)| La velocità di movimento aumenta di 3 metri | Ottieni 1 Punto Demone alla fine del tuo turno |</p>\n<p>|20 Punti Demone, (2%)|  Puoi alzarti dalla posizione prona solo utilizzando 1.5m | Ottieni 2 Punti Demone alla fine del tuo turno</p>\n<p>|30 Punti Demone, (3%)| +1 a tutti i TxC | Ottieni 3 Punti Demone alla fine del tuo turno |</p>\n<p>| 40 punti demone, (4%)| +1 CA | Ottieni 4 Punti Demone alla fine del tuo turno</p>\n<br>\n<h5>Parte 2</h5>\n<p>| Demonizzazione | Buff | DP guadagnato |</p>\n<p>|:------------:|:----:|:---------:|</p>\n<p>| 50 punti demone, (5%)| Resistenza a tutti i danni provenienti da Maledizioni, Magia delle Maledizioni, Magia Demoniaca, o qualsiasi danno la cui fonte sia un demone o una maledizione | Ottieni 5 Punti Demone alla fine del tuo turno |</p>\n<p>| 60 punti demone, (6%)| Vantaggio sui Tiri Salvezza su Saggezza | Ottieni 6 Punti Demone alla fine del tuo turno</p>\n<p>|70 punti demone, (7%)| Puoi vedere normalmente nell’oscurità, sia magica che non magica, fino a 36 metri | Ottieni 7 Punti Demone alla fine del tuo turno |</p>\n<p>| 80 punti demone, (8%)| Quando colpisci una creatura con la tua Magia Devil Slayer, infliggi danni da Forza extra pari al tuo modificatore di Saggezza (minimo 1) | Ottieni 8 Punti Demone alla fine del tuo turno |</p>\n<p>| 90 punti demone, (9%)| La soglia di critico aumenta di +1; se stai combattendo un demone, il dado di danno dei tuoi attacchi aumenta di una categoria | Ottieni 9 Punti Demone alla fine del tuo turno |</p>\n<p>| 100 punti demone, 10%)| +1 CA | Ottieni 10 Punti Demone alla fine del tuo turno |</p>\n<p>| 200 punti demone, (20%)| Puoi leggere qualsiasi scrittura collegata a Maledizioni, Magia delle Maledizioni, Magia Demoniaca, Demoni, Angeli, Magia Angelica, ecc. | Ottieni 20 Punti Demone alla fine del tuo turno |</p>\n<p>| 300 punti demone, (30%)| La soglia di critico aumenta di +1; se stai combattendo un demone, il dado di danno dei tuoi attacchi aumenta di una categoria | Guadagna 30 Punti Demone alla fine del tuo turno |</p>\n<p>| 400 punti demone, (40%)| Immunità alle condizioni Ammaliato e Spaventato | Ottieni 40 Punti Demone alla fine del tuo turno |</p>\n<p>| 500 punti demone, (50%)| Non ottieni la condizione Incosciente finché i tuoi punti ferita non raggiungono un valore negativo pari a livello del personaggio × 2. Solo a quel punto diventi incosciente e inizi a effettuare i tiri salvezza contro morte | Ottieni 50 Demoni | Punti alla fine del tuo turno</p>\n<h5>Parte 3</h5>\n<p>| Demonizzazione | Buff | DP guadagnato |</p>\n<p>|:------------:|:----:|:---------:|</p>\n<p>|600 Punti Demone, (60%)|La soglia di critico aumenta di +1; se stai combattendo un demone, la dimensione del dado di danno dei tuoi attacchi aumenta di 1| Guadagna 60 Punti Demone alla fine del tuo turno</p>\n<p>|700 Punti Demone, (70%) | Immunità alle maledizioni, alla magia maledetta e alla magia demoniaca| Guadagna 70 Punti Demone alla fine del tuo turno |</p>\n<p>|800 punti demone, (80%)|Il tuo allineamento cambia in Legale Malvagio se non lo è già; la dimensione del dado di danno di tutti i tuoi attacchi aumenta di 2| il dado di danno di tutti gli attacchi Ottieni 80 Punti Demone alla fine del tuo turno |</p>\n<p>| 900 punti demone, (90%)|Il tuo allineamento cambia in Caotico Malvagio se non lo è già; tutti i tuoi attacchi infliggono danno massimo| Ottieni 90 Punti Demone alla fine del tuo turno |</p>\n<p>|1000 punti demone, (100%) | Diventi un demone (il personaggio giocante è ora effettivamente morto e diventa un PNG)| N/A|</p>\n<h3> 3° livello: Esorcismo </h3>\n<p>*Spendendo 3 Mana, come azione, azione bonus o reazione, puoi prendere di mira una Maledizione, Magia delle Maledizioni o Magia Demoniaca entro 150 metri per dissolverla.*</p>\n<li>Incantesimi e privilegi di 6° livello o inferiore vengono dissolti automaticamente, senza tiro.</li>\n<li>Incantesimi e privilegi di livello superiore richiedono una prova con CD su Religione pari a 10 + livello dell’incantesimo.</li>\n<hr>\n<p>*Ottieni resistenza al tuo tipo di danno magico(es. fuoco → danni da fuoco, fulmine → danni da fulmine). Questo beneficio non si applica alla magia dei God Slayer.*</p>\n<h3> 6° Livello: Osservazione Demoniaca </h3>\n<p>*Ogni volta che guardi un demone, conosci automaticamente le sue resistenze, immunità, hp, mana, la magia che usa, caratteristiche, azioni e incantesimi. Se guardi un utilizzatore di maledizione, un utilizzatore di magia maledizione o un utilizzatore di magia demoniaca, conosci automaticamente i suoi incantesimi e le sue caratteristiche*</p>\n<br>\n<p>**(Chiedi al DM il blocco delle statistiche del mostro demone e/o le funzionalità e gli incantesimi di Maledizione, Magia maledizione o Magia demoniaca)**</p>\n<br>\n<h3> 11° livello: Yama </h3>\n<p>*Ora puoi controllare la tua Demonizzazione.*</p>\n<br>\n<p>*Come azione, azione bonus o reazione all’iniziativa lanciata, puoi spendere X Mana, ottenendo 100 Punti Demone per ogni Mana speso.*</p>\n<br>\n<p>*Ora puoi scegliere di limitare la tua demonizzazione a 700. Puoi anche scegliere di disattivare la tua demonizzazione quando lo desideri.*</p>\n<p>::</p>\n<h3> 18° livello: Post Mortem </h3>\n<p>*Come reazione, quando stai per raggiungere il 100% di Demonizzazione, puoi invece scendere a 999 Punti Demone e successivamente perdi i sensi.</p>\n<br>\n<p>**(Scegli di non limitare la Demonizzazione, usi un turno per infliggere il danno massimo con un incantesimo di 7° livello, poi utilizzi la reazione per non trasformarti in un demone. Questo è solo un esempio di funzionamento.)**</p>"
+    "description": "<h2> Slayer </h2>\n<p>**Incremento dei Punteggi di Caratteristica:** +2 Saggezza, +1 Costituzione</p>\n<br>\n<p>**Competenza nelle competenze:** Religione</p>\n<br>\n<p>**Preda:** Contro i Demoni tutto il danno è x2.</p>\n<h3> 1° livello: Demonizzazione </h3>\n<p>Ogni volta che utilizzi Mana, ottieni Punti Demoniaci (DP) pari a 10 volte il Mana speso.</p>\n<p>Tutti i benefici si accumulano, ma ottieni Punti Demoniaci automatici solo in base alla soglia più alta di Demonizzazione raggiunta.</p>\n<p>La durata è di 1 minuto non può essere disattivata</p>\n<h5>Parte 1</h5>\n<p>| Demonizzazione | Buff | DP guadagnato|</p>\n<p>|:----:|:----:|:----:|</p>\n<p>| 10 punti demone, (1%)| La velocità di movimento aumenta di 3 metri | Ottieni 1 Punto Demone alla fine del tuo turno |</p>\n<p>|20 Punti Demone, (2%)|  Puoi alzarti dalla posizione prona solo utilizzando 1.5m | Ottieni 2 Punti Demone alla fine del tuo turno</p>\n<p>|30 Punti Demone, (3%)| +1 a tutti i TxC | Ottieni 3 Punti Demone alla fine del tuo turno |</p>\n<p>| 40 punti demone, (4%)| +1 CA | Ottieni 4 Punti Demone alla fine del tuo turno</p>\n<br>\n<h5>Parte 2</h5>\n<p>| Demonizzazione | Buff | DP guadagnato |</p>\n<p>|:------------:|:----:|:---------:|</p>\n<p>| 50 punti demone, (5%)| Resistenza a tutti i danni provenienti da Maledizioni, Magia delle Maledizioni, Magia Demoniaca, o qualsiasi danno la cui fonte sia un demone o una maledizione | Ottieni 5 Punti Demone alla fine del tuo turno |</p>\n<p>| 60 punti demone, (6%)| Vantaggio sui Tiri Salvezza su Saggezza | Ottieni 6 Punti Demone alla fine del tuo turno</p>\n<p>|70 punti demone, (7%)| Puoi vedere normalmente nell’oscurità, sia magica che non magica, fino a 36 metri | Ottieni 7 Punti Demone alla fine del tuo turno |</p>\n<p>| 80 punti demone, (8%)| Quando colpisci una creatura con la tua Magia Devil Slayer, infliggi danni da Forza extra pari al tuo modificatore di Saggezza (minimo 1) | Ottieni 8 Punti Demone alla fine del tuo turno |</p>\n<p>| 90 punti demone, (9%)| La soglia di critico aumenta di +1; se stai combattendo un demone, il dado di danno dei tuoi attacchi aumenta di una categoria | Ottieni 9 Punti Demone alla fine del tuo turno |</p>\n<p>| 100 punti demone, 10%)| +1 CA | Ottieni 10 Punti Demone alla fine del tuo turno |</p>\n<p>| 200 punti demone, (20%)| Puoi leggere qualsiasi scrittura collegata a Maledizioni, Magia delle Maledizioni, Magia Demoniaca, Demoni, Angeli, Magia Angelica, ecc. | Ottieni 20 Punti Demone alla fine del tuo turno |</p>\n<p>| 300 punti demone, (30%)| La soglia di critico aumenta di +1; se stai combattendo un demone, il dado di danno dei tuoi attacchi aumenta di una categoria | Guadagna 30 Punti Demone alla fine del tuo turno |</p>\n<p>| 400 punti demone, (40%)| Immunità alle condizioni Ammaliato e Spaventato | Ottieni 40 Punti Demone alla fine del tuo turno |</p>\n<p>| 500 punti demone, (50%)| Non ottieni la condizione Incosciente finché i tuoi punti ferita non raggiungono un valore negativo pari a livello del personaggio × 2. Solo a quel punto diventi incosciente e inizi a effettuare i tiri salvezza contro morte | Ottieni 50 Demoni | Punti alla fine del tuo turno</p>\n<h5>Parte 3</h5>\n<p>| Demonizzazione | Buff | DP guadagnato |</p>\n<p>|:------------:|:----:|:---------:|</p>\n<p>|600 Punti Demone, (60%)|La soglia di critico aumenta di +1; se stai combattendo un demone, la dimensione del dado di danno dei tuoi attacchi aumenta di 1| Guadagna 60 Punti Demone alla fine del tuo turno</p>\n<p>|700 Punti Demone, (70%) | Immunità alle maledizioni, alla magia maledetta e alla magia demoniaca| Guadagna 70 Punti Demone alla fine del tuo turno |</p>\n<p>|800 punti demone, (80%)|Il tuo allineamento cambia in Legale Malvagio se non lo è già; la dimensione del dado di danno di tutti i tuoi attacchi aumenta di 2| il dado di danno di tutti gli attacchi Ottieni 80 Punti Demone alla fine del tuo turno |</p>\n<p>| 900 punti demone, (90%)|Il tuo allineamento cambia in Caotico Malvagio se non lo è già; tutti i tuoi attacchi infliggono danno massimo| Ottieni 90 Punti Demone alla fine del tuo turno |</p>\n<p>|1000 punti demone, (100%) | Diventi un demone (il personaggio giocante è ora effettivamente morto e diventa un PNG)| N/A|</p>\n<h3> 3° livello: Esorcismo </h3>\n<p>*Spendendo 3 Mana, come azione, azione bonus o reazione, puoi prendere di mira una Maledizione, Magia delle Maledizioni o Magia Demoniaca entro 150 metri per dissolverla.*</p>\n<li>Incantesimi e privilegi di 6° livello o inferiore vengono dissolti automaticamente, senza tiro.</li>\n<li>Incantesimi e privilegi di livello superiore richiedono una prova con CD su Religione pari a 10 + livello dell’incantesimo.</li>\n<hr>\n<p>*Ottieni resistenza al tuo tipo di danno magico(es. fuoco → danni da fuoco, fulmine → danni da fulmine). Questo beneficio non si applica alla magia dei God Slayer.*</p>\n<h3> 6° Livello: Osservazione Demoniaca </h3>\n<p>*Ogni volta che guardi un demone, conosci automaticamente le sue resistenze, immunità, hp, mana, la magia che usa, caratteristiche, azioni e incantesimi. Se guardi un utilizzatore di maledizione, un utilizzatore di magia maledizione o un utilizzatore di magia demoniaca, conosci automaticamente i suoi incantesimi e le sue caratteristiche*</p>\n<br>\n<p>**(Chiedi al DM il blocco delle statistiche del mostro demone e/o le funzionalità e gli incantesimi di Maledizione, Magia maledizione o Magia demoniaca)**</p>\n<br>\n<h3> 11° livello: Yama </h3>\n<p>*Ora puoi controllare la tua Demonizzazione.*</p>\n<br>\n<p>*Come azione, azione bonus o reazione all’iniziativa lanciata, puoi spendere X Mana, ottenendo 100 Punti Demone per ogni Mana speso.*</p>\n<br>\n<p>*Ora puoi scegliere di limitare la tua demonizzazione a 700. Puoi anche scegliere di disattivare la tua demonizzazione quando lo desideri.*</p>\n<p>::</p>\n<h3> 18° livello: Post Mortem </h3>\n<p>*Come reazione, quando stai per raggiungere il 100% di Demonizzazione, puoi invece scendere a 999 Punti Demone e successivamente perdi i sensi.</p>\n<br>\n<p>**(Scegli di non limitare la Demonizzazione, usi un turno per infliggere il danno massimo con un incantesimo di 7° livello, poi utilizzi la reazione per non trasformarti in un demone. Questo è solo un esempio di funzionamento.)**</p>",
+    "_id": "79b8af4a7b86bc10",
+    "system": {
+      "identifier": "devil-slayer",
+      "movement": {
+        "walk": 9,
+        "burrow": null,
+        "climb": null,
+        "fly": null,
+        "swim": null,
+        "units": "m",
+        "hover": false
+      },
+      "senses": {
+        "darkvision": null,
+        "blindsight": null,
+        "tremorsense": null,
+        "truesight": null,
+        "units": "m",
+        "special": ""
+      },
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "custom": ""
+      },
+      "advancement": [
+        {
+          "_id": "796bb26245986784",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 0,
+            "fixed": {
+              "str": 0,
+              "dex": 0,
+              "con": 1,
+              "int": 0,
+              "wis": 2,
+              "cha": 0
+            },
+            "cap": 2,
+            "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "52b8ef8a38b0b413",
+          "type": "Size",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "sizes": [
+              "med"
+            ]
+          },
+          "value": {
+            "size": ""
+          }
+        },
+        {
+          "_id": "1b7a7ed8c2138f80",
+          "type": "Trait",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "skills:rel"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": []
+          }
+        },
+        {
+          "_id": "263464cc90a473c3",
+          "type": "ItemGrant",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.6c36c8a8e9868649"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "236db0094c7c8095",
+          "type": "ItemGrant",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.b663b237f244d570"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "81cee4ed8f553bce",
+          "type": "ItemGrant",
+          "level": 3,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.0fa3d28bfa6406e1"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "6492a53f0e8672e3",
+          "type": "ItemGrant",
+          "level": 6,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.496faa5712eb35d3"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "cc2f7c98e060235b",
+          "type": "ItemGrant",
+          "level": 11,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.db63ccb69eb0d921"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "d05ca7e129ecfa37",
+          "type": "ItemGrant",
+          "level": 18,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-razze.faa55180dd245772"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        }
+      ]
+    }
   }
 ]
