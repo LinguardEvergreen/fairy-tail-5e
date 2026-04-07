@@ -1037,6 +1037,13 @@ function enrichRazze() {
     r._id = stableId(`razze:${r.name}`);
     r.system = {
       identifier: toKebab(r.name),
+      source: {
+        custom: "Fairy Tail 5e",
+        book: "Fairy Tail",
+        page: "",
+        license: "",
+        rules: "2014"
+      },
       movement: {
         walk: config.movement.walk,
         burrow: null,

@@ -5,6 +5,13 @@
     "_id": "ad98c6e0ec17d379",
     "system": {
       "identifier": "umani",
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      },
       "movement": {
         "walk": 9,
         "burrow": null,
@@ -119,6 +126,13 @@
     "_id": "3d89e3a8f429bc86",
     "system": {
       "identifier": "exceed",
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      },
       "movement": {
         "walk": 12,
         "burrow": null,
@@ -216,6 +230,13 @@
     "_id": "96b5b87bea3f9986",
     "system": {
       "identifier": "ibrido-gatto",
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      },
       "movement": {
         "walk": 12,
         "burrow": null,
@@ -333,6 +354,13 @@
     "_id": "66def426104ce5b0",
     "system": {
       "identifier": "ibrido-lucertola",
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      },
       "movement": {
         "walk": 9,
         "burrow": null,
@@ -456,6 +484,13 @@
     "_id": "a9d899cc708f8d3c",
     "system": {
       "identifier": "ibrido-lupo",
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      },
       "movement": {
         "walk": 12,
         "burrow": null,
@@ -573,6 +608,13 @@
     "_id": "69f459a9b260f13c",
     "system": {
       "identifier": "ibrido-demone-di-galuna",
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      },
       "movement": {
         "walk": 9,
         "burrow": null,
@@ -670,6 +712,13 @@
     "_id": "2ec2c253d3d426ec",
     "system": {
       "identifier": "dragon-slayer",
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      },
       "movement": {
         "walk": 9,
         "burrow": null,
@@ -888,6 +937,13 @@
     "_id": "79b8af4a7b86bc10",
     "system": {
       "identifier": "devil-slayer",
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      },
       "movement": {
         "walk": 9,
         "burrow": null,
