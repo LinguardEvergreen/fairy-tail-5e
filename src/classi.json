@@ -12,6 +12,10 @@
         "license": "",
         "rules": "2014"
       },
+      "spellcasting": {
+        "ability": "",
+        "progression": "full"
+      },
       "advancement": [
         {
           "_id": "b89f75bf22a22dd8",
@@ -375,6 +379,10 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "spellcasting": {
+        "ability": "",
+        "progression": "full"
       },
       "advancement": [
         {
@@ -815,6 +823,10 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "spellcasting": {
+        "ability": "",
+        "progression": "full"
       },
       "advancement": [
         {
@@ -1297,6 +1309,10 @@
         "license": "",
         "rules": "2014"
       },
+      "spellcasting": {
+        "ability": "cha",
+        "progression": "full"
+      },
       "advancement": [
         {
           "_id": "9781fa67b5cdde9c",
@@ -1680,6 +1696,10 @@
         "license": "",
         "rules": "2014"
       },
+      "spellcasting": {
+        "ability": "",
+        "progression": "full"
+      },
       "advancement": [
         {
           "_id": "93f647cf6d3c1dce",
@@ -1967,6 +1987,10 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "spellcasting": {
+        "ability": "",
+        "progression": "full"
       },
       "advancement": [
         {
@@ -2566,6 +2590,10 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "spellcasting": {
+        "ability": "",
+        "progression": "full"
       },
       "advancement": [
         {

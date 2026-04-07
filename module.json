@@ -2,7 +2,7 @@
   "id": "fairy-tail-5e",
   "title": "Fairy Tail 5e",
   "description": "Modulo per Fairy Tail 5e - Razze, Classi, Magie, Background, Talenti, Equipaggiamento, Incantesimi e Stili di Combattimento per il sistema D&D 5e su FoundryVTT.",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "compatibility": {
     "minimum": "13",
     "verified": "13.351",

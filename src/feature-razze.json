@@ -9,14 +9,7 @@
         "subtype": ""
       },
       "requirements": "Umani",
-      "identifier": "incremento-dei-punteggi-di-caratteristica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "incremento-dei-punteggi-di-caratteristica"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/umani.webp"
   },
@@ -30,14 +23,7 @@
         "subtype": ""
       },
       "requirements": "Umani",
-      "identifier": "competenza-nelle-abilita",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "competenza-nelle-abilita"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/umani.webp"
   },
@@ -51,14 +37,7 @@
         "subtype": ""
       },
       "requirements": "Umani",
-      "identifier": "jack-of-all",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "jack-of-all"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/umani.webp"
   },
@@ -72,14 +51,7 @@
         "subtype": ""
       },
       "requirements": "Umani",
-      "identifier": "controllo-magico",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "controllo-magico"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/umani.webp"
   },
@@ -93,14 +65,7 @@
         "subtype": ""
       },
       "requirements": "Exceed",
-      "identifier": "incremento-dei-punteggi-di-caratteristica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "incremento-dei-punteggi-di-caratteristica"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/exceed.webp"
   },
@@ -114,14 +79,7 @@
         "subtype": ""
       },
       "requirements": "Exceed",
-      "identifier": "velocita-di-movimento",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "velocita-di-movimento"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/exceed.webp"
   },
@@ -135,14 +93,7 @@
         "subtype": ""
       },
       "requirements": "Exceed",
-      "identifier": "ali-magiche",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "ali-magiche"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/exceed.webp"
   },
@@ -156,14 +107,7 @@
         "subtype": ""
       },
       "requirements": "Exceed",
-      "identifier": "le-ali-ti-sostengono",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "le-ali-ti-sostengono"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/exceed.webp"
   },
@@ -177,14 +121,7 @@
         "subtype": ""
       },
       "requirements": "Exceed",
-      "identifier": "riserva-di-mana",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "riserva-di-mana"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/exceed.webp"
   },
@@ -198,14 +135,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Gatto",
-      "identifier": "incremento-dei-punteggi-di-caratteristica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "incremento-dei-punteggi-di-caratteristica"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-gatto.webp"
   },
@@ -219,14 +149,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Gatto",
-      "identifier": "velocita",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "velocita"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-gatto.webp"
   },
@@ -240,14 +163,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Gatto",
-      "identifier": "competenza-nelle-abilita",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "competenza-nelle-abilita"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-gatto.webp"
   },
@@ -261,14 +177,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Gatto",
-      "identifier": "sensi-acuti",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "sensi-acuti"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-gatto.webp"
   },
@@ -282,14 +191,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Gatto",
-      "identifier": "sensi-felini",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "sensi-felini"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-gatto.webp"
   },
@@ -303,14 +205,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Gatto",
-      "identifier": "artigli-del-felino",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "artigli-del-felino"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-gatto.webp"
   },
@@ -324,14 +219,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Lucertola",
-      "identifier": "incremento-dei-punteggi-di-caratteristica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "incremento-dei-punteggi-di-caratteristica"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lucertola.webp"
   },
@@ -345,14 +233,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Lucertola",
-      "identifier": "competenza-nelle-abilita",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "competenza-nelle-abilita"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lucertola.webp"
   },
@@ -366,14 +247,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Lucertola",
-      "identifier": "corpo-avvelenato",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "corpo-avvelenato"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lucertola.webp"
   },
@@ -387,14 +261,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Lucertola",
-      "identifier": "frusta-coda-avvelenata",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "frusta-coda-avvelenata"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lucertola.webp"
   },
@@ -408,14 +275,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Lucertola",
-      "identifier": "corpo-resistente",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "corpo-resistente"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lucertola.webp"
   },
@@ -429,14 +289,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Lupo",
-      "identifier": "incremento-dei-punteggi-di-caratteristica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "incremento-dei-punteggi-di-caratteristica"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lupo.webp"
   },
@@ -450,14 +303,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Lupo",
-      "identifier": "velocita",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "velocita"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lupo.webp"
   },
@@ -471,14 +317,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Lupo",
-      "identifier": "competenza-nelle-abilita",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "competenza-nelle-abilita"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lupo.webp"
   },
@@ -492,14 +331,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Lupo",
-      "identifier": "udito-e-olfatto-acuti",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "udito-e-olfatto-acuti"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lupo.webp"
   },
@@ -513,14 +345,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Lupo",
-      "identifier": "tattiche-di-branco",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "tattiche-di-branco"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lupo.webp"
   },
@@ -534,14 +359,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Lupo",
-      "identifier": "ululato-del-branco",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "ululato-del-branco"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lupo.webp"
   },
@@ -555,14 +373,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Demone di Galuna",
-      "identifier": "incremento-dei-punteggi-di-caratteristica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "incremento-dei-punteggi-di-caratteristica"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-demone-galuna.webp"
   },
@@ -576,14 +387,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Demone di Galuna",
-      "identifier": "scurovisione",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "scurovisione"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-demone-galuna.webp"
   },
@@ -597,14 +401,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Demone di Galuna",
-      "identifier": "talento",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "talento"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-demone-galuna.webp"
   },
@@ -618,14 +415,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Demone di Galuna",
-      "identifier": "resistenza-demoniaca",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "resistenza-demoniaca"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-demone-galuna.webp"
   },
@@ -639,14 +429,7 @@
         "subtype": ""
       },
       "requirements": "Ibrido Demone di Galuna",
-      "identifier": "trasformazione-demoniaca",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "trasformazione-demoniaca"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-demone-galuna.webp"
   },
@@ -660,14 +443,7 @@
         "subtype": ""
       },
       "requirements": "Dragon Slayer",
-      "identifier": "incremento-dei-punteggi-di-caratteristica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "incremento-dei-punteggi-di-caratteristica"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
@@ -681,14 +457,7 @@
         "subtype": ""
       },
       "requirements": "Dragon Slayer",
-      "identifier": "competenza-nelle-abilita",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "competenza-nelle-abilita"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
@@ -702,14 +471,7 @@
         "subtype": ""
       },
       "requirements": "Dragon Slayer",
-      "identifier": "magia-focalizzata",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "magia-focalizzata"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
@@ -723,14 +485,7 @@
         "subtype": ""
       },
       "requirements": "Dragon Slayer",
-      "identifier": "potere-del-drago",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "potere-del-drago"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
@@ -744,14 +499,7 @@
         "subtype": ""
       },
       "requirements": "Dragon Slayer",
-      "identifier": "anima-del-drago-1-livello",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "anima-del-drago-1-livello"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
@@ -765,14 +513,7 @@
         "subtype": ""
       },
       "requirements": "Dragon Slayer",
-      "identifier": "tecniche-del-dragon-slayer-3-livello",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "tecniche-del-dragon-slayer-3-livello"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
@@ -786,14 +527,7 @@
         "subtype": ""
       },
       "requirements": "Dragon Slayer",
-      "identifier": "dragon-mode-6-livello",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "dragon-mode-6-livello"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
@@ -807,14 +541,7 @@
         "subtype": ""
       },
       "requirements": "Dragon Slayer",
-      "identifier": "buff-in-dual-dragon-mode",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "buff-in-dual-dragon-mode"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
@@ -828,14 +555,7 @@
         "subtype": ""
       },
       "requirements": "Dragon Slayer",
-      "identifier": "tecniche-segrete-del-dragon-slayer-11-livello",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "tecniche-segrete-del-dragon-slayer-11-livello"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
@@ -849,14 +569,7 @@
         "subtype": ""
       },
       "requirements": "Dragon Slayer",
-      "identifier": "dragon-force-18-livello",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "dragon-force-18-livello"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
@@ -870,14 +583,7 @@
         "subtype": ""
       },
       "requirements": "Devil Slayer",
-      "identifier": "incremento-dei-punteggi-di-caratteristica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "incremento-dei-punteggi-di-caratteristica"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   },
@@ -891,14 +597,7 @@
         "subtype": ""
       },
       "requirements": "Devil Slayer",
-      "identifier": "competenza-nelle-competenze",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "competenza-nelle-competenze"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   },
@@ -912,14 +611,7 @@
         "subtype": ""
       },
       "requirements": "Devil Slayer",
-      "identifier": "preda",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "preda"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   },
@@ -933,14 +625,7 @@
         "subtype": ""
       },
       "requirements": "Devil Slayer",
-      "identifier": "1-livello-demonizzazione",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "1-livello-demonizzazione"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   },
@@ -954,14 +639,7 @@
         "subtype": ""
       },
       "requirements": "Devil Slayer",
-      "identifier": "3-livello-esorcismo",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "3-livello-esorcismo"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   },
@@ -975,14 +653,7 @@
         "subtype": ""
       },
       "requirements": "Devil Slayer",
-      "identifier": "6-livello-osservazione-demoniaca",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "6-livello-osservazione-demoniaca"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   },
@@ -996,14 +667,7 @@
         "subtype": ""
       },
       "requirements": "Devil Slayer",
-      "identifier": "11-livello-yama",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "11-livello-yama"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   },
@@ -1017,14 +681,7 @@
         "subtype": ""
       },
       "requirements": "Devil Slayer",
-      "identifier": "18-livello-post-mortem",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "18-livello-post-mortem"
     },
     "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   }

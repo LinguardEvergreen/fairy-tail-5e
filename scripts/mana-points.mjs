@@ -209,6 +209,54 @@ async function setManaOverride(actor, override) {
 }
 
 /* -------------------------------------------------- */
+/*  Spellcasting Ability Choice Dialog                */
+/* -------------------------------------------------- */
+
+/**
+ * Prompt the player to choose a spellcasting ability for a FT5e class.
+ * Opens a dialog with Int / Wis / Cha options.
+ */
+async function promptSpellcastingAbility(classItem) {
+  const className = classItem.name;
+  const abilities = {
+    int: CONFIG.DND5E?.abilities?.int?.label ?? "Intelligenza",
+    wis: CONFIG.DND5E?.abilities?.wis?.label ?? "Saggezza",
+    cha: CONFIG.DND5E?.abilities?.cha?.label ?? "Carisma"
+  };
+
+  const content = `
+    <p>Scegli la <strong>Caratteristica da Incantatore</strong> per <strong>${className}</strong>:</p>
+    <p><em>Questa determina il modificatore usato per i tiri per colpire e la CD degli incantesimi.</em></p>
+    <div style="display:flex; flex-direction:column; gap:4px; margin-top:8px;">
+      <label><input type="radio" name="ft5e-spell-ability" value="int" checked> ${abilities.int}</label>
+      <label><input type="radio" name="ft5e-spell-ability" value="wis"> ${abilities.wis}</label>
+      <label><input type="radio" name="ft5e-spell-ability" value="cha"> ${abilities.cha}</label>
+    </div>`;
+
+  return new Promise((resolve) => {
+    new Dialog({
+      title: `${className} — Caratteristica da Incantatore`,
+      content,
+      buttons: {
+        ok: {
+          label: "Conferma",
+          icon: '<i class="fas fa-check"></i>',
+          callback: async (html) => {
+            const chosen = html.find('input[name="ft5e-spell-ability"]:checked').val();
+            if (chosen) {
+              await classItem.update({ "system.spellcasting.ability": chosen });
+            }
+            resolve(chosen);
+          }
+        }
+      },
+      default: "ok",
+      close: () => resolve(null)
+    }, { width: 340 }).render(true);
+  });
+}
+
+/* -------------------------------------------------- */
 /*  Hooks — Init & Settings                           */
 /* -------------------------------------------------- */
 
@@ -510,14 +558,20 @@ Hooks.on("dnd5e.shortRest", (actor, result) => {
 /*  Hooks — Auto-initialize mana on class changes     */
 /* -------------------------------------------------- */
 
-Hooks.on("createItem", (item, options, userId) => {
-  if (!isEnabled()) return;
+Hooks.on("createItem", async (item, options, userId) => {
   if (game.user.id !== userId) return;
   if (item.type !== "class") return;
   const actor = item.parent;
   if (!actor || actor.type !== "character") return;
   const id = item.system?.identifier;
   if (!id || !CLASS_CONFIG[id]) return;
+
+  // If spellcasting ability is not set, prompt the player to choose
+  if (!item.system?.spellcasting?.ability) {
+    await promptSpellcastingAbility(item);
+  }
+
+  if (!isEnabled()) return;
 
   // Initialize mana if this is the first FT5e class
   const existing = actor.getFlag(MODULE_ID, FLAG_MANA);

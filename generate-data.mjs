@@ -1594,6 +1594,10 @@ function enrichClassi() {
     // Sort advancement by level
     advancement.sort((a, b) => a.level - b.level);
 
+    // Spellcasting configuration
+    // Mago di Strada uses Charisma fixed; all others choose between Int/Wis/Cha
+    const spellAbility = c.name === "Mago di Strada" ? "cha" : "";
+
     c.system = {
       identifier: config.identifier,
       source: {
@@ -1602,6 +1606,10 @@ function enrichClassi() {
         page: "",
         license: "",
         rules: "2014"
+      },
+      spellcasting: {
+        ability: spellAbility,
+        progression: "full"
       },
       advancement: advancement
     };
@@ -1945,7 +1953,7 @@ function enrichTalenti() {
     const prereq = parsePrerequisites(t.description);
 
     t.system = {
-      type: { value: "feat", subtype: "" },
+      type: { value: "feat", subtype: "general" },
       requirements: prereq,
       identifier: toKebab(t.name),
       source: {

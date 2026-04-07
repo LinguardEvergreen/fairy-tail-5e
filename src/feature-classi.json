@@ -9,14 +9,7 @@
         "subtype": ""
       },
       "requirements": "Mago Combattente",
-      "identifier": "magia",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "magia"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-combattente.webp"
   },
@@ -30,14 +23,7 @@
         "subtype": ""
       },
       "requirements": "Mago Combattente",
-      "identifier": "senza-freni",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "senza-freni"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-combattente.webp"
   },
@@ -51,14 +37,7 @@
         "subtype": ""
       },
       "requirements": "Mago Combattente",
-      "identifier": "risonanza-distruttiva",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "risonanza-distruttiva"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-combattente.webp"
   },
@@ -72,14 +51,7 @@
         "subtype": ""
       },
       "requirements": "Mago Combattente",
-      "identifier": "incremento-dei-punteggi-di-caratteristica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "incremento-dei-punteggi-di-caratteristica"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-combattente.webp"
   },
@@ -93,14 +65,7 @@
         "subtype": ""
       },
       "requirements": "Mago Combattente",
-      "identifier": "magia-potenziata",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "magia-potenziata"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-combattente.webp"
   },
@@ -114,14 +79,7 @@
         "subtype": ""
       },
       "requirements": "Mago Combattente",
-      "identifier": "incantesimo-personale",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "incantesimo-personale"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-combattente.webp"
   },
@@ -135,14 +93,7 @@
         "subtype": ""
       },
       "requirements": "Mago Difensore",
-      "identifier": "magia",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "magia"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
@@ -156,14 +107,7 @@
         "subtype": ""
       },
       "requirements": "Mago Difensore",
-      "identifier": "pelle-indotta-dal-mana",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "pelle-indotta-dal-mana"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
@@ -177,14 +121,7 @@
         "subtype": ""
       },
       "requirements": "Mago Difensore",
-      "identifier": "resilienza-del-baluardo",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "resilienza-del-baluardo"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
@@ -198,14 +135,7 @@
         "subtype": ""
       },
       "requirements": "Mago Difensore",
-      "identifier": "ritorsione-del-baluardo",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "ritorsione-del-baluardo"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
@@ -219,14 +149,7 @@
         "subtype": ""
       },
       "requirements": "Mago Difensore",
-      "identifier": "incremento-dei-punteggi-di-caratteristica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "incremento-dei-punteggi-di-caratteristica"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
@@ -240,14 +163,7 @@
         "subtype": ""
       },
       "requirements": "Mago Difensore",
-      "identifier": "attacco-extra",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "attacco-extra"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
@@ -261,14 +177,7 @@
         "subtype": ""
       },
       "requirements": "Mago Difensore",
-      "identifier": "provocazione",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "provocazione"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
@@ -282,14 +191,7 @@
         "subtype": ""
       },
       "requirements": "Mago Difensore",
-      "identifier": "maestro-dello-scudo",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "maestro-dello-scudo"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
@@ -303,14 +205,7 @@
         "subtype": ""
       },
       "requirements": "Mago Difensore",
-      "identifier": "baluardo-adamantino",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "baluardo-adamantino"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
@@ -324,14 +219,7 @@
         "subtype": ""
       },
       "requirements": "Mago Difensore",
-      "identifier": "posizione-inamovibile",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "posizione-inamovibile"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
@@ -345,14 +233,7 @@
         "subtype": ""
       },
       "requirements": "Mago Difensore",
-      "identifier": "posizione-difensiva",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "posizione-difensiva"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
@@ -366,14 +247,7 @@
         "subtype": ""
       },
       "requirements": "Mago Difensore",
-      "identifier": "posizione-inamovibile-potenziata",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "posizione-inamovibile-potenziata"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
@@ -387,14 +261,7 @@
         "subtype": ""
       },
       "requirements": "Mago Difensore",
-      "identifier": "corpo-di-guerriero",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "corpo-di-guerriero"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
@@ -408,14 +275,7 @@
         "subtype": ""
       },
       "requirements": "Mago Furtivo",
-      "identifier": "magia-nata-o-insegnata",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "magia-nata-o-insegnata"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
@@ -429,14 +289,7 @@
         "subtype": ""
       },
       "requirements": "Mago Furtivo",
-      "identifier": "maestria",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "maestria"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
@@ -450,14 +303,7 @@
         "subtype": ""
       },
       "requirements": "Mago Furtivo",
-      "identifier": "attacco-furtivo",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "attacco-furtivo"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
@@ -471,14 +317,7 @@
         "subtype": ""
       },
       "requirements": "Mago Furtivo",
-      "identifier": "azione-scaltra",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "azione-scaltra"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
@@ -492,14 +331,7 @@
         "subtype": ""
       },
       "requirements": "Mago Furtivo",
-      "identifier": "incantesimi-silenziosi",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "incantesimi-silenziosi"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
@@ -513,14 +345,7 @@
         "subtype": ""
       },
       "requirements": "Mago Furtivo",
-      "identifier": "miglioramento-del-punteggio-di-caratteristica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "miglioramento-del-punteggio-di-caratteristica"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
@@ -534,14 +359,7 @@
         "subtype": ""
       },
       "requirements": "Mago Furtivo",
-      "identifier": "schivata-prodigiosa",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "schivata-prodigiosa"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
@@ -555,14 +373,7 @@
         "subtype": ""
       },
       "requirements": "Mago Furtivo",
-      "identifier": "familiarita-magica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "familiarita-magica"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
@@ -576,14 +387,7 @@
         "subtype": ""
       },
       "requirements": "Mago Furtivo",
-      "identifier": "elusione",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "elusione"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
@@ -597,14 +401,7 @@
         "subtype": ""
       },
       "requirements": "Mago Furtivo",
-      "identifier": "innesco-accecante",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "innesco-accecante"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
@@ -618,14 +415,7 @@
         "subtype": ""
       },
       "requirements": "Mago Furtivo",
-      "identifier": "dote-affidabile",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "dote-affidabile"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
@@ -639,14 +429,7 @@
         "subtype": ""
       },
       "requirements": "Mago Furtivo",
-      "identifier": "innesco-silenziante",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "innesco-silenziante"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
@@ -660,14 +443,7 @@
         "subtype": ""
       },
       "requirements": "Mago Furtivo",
-      "identifier": "percezione-cieca",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "percezione-cieca"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
@@ -681,14 +457,7 @@
         "subtype": ""
       },
       "requirements": "Mago Furtivo",
-      "identifier": "mente-sfuggente",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "mente-sfuggente"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
@@ -702,14 +471,7 @@
         "subtype": ""
       },
       "requirements": "Mago Furtivo",
-      "identifier": "inafferrabile",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "inafferrabile"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
@@ -723,14 +485,7 @@
         "subtype": ""
       },
       "requirements": "Mago Furtivo",
-      "identifier": "colpo-di-fortuna",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "colpo-di-fortuna"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
@@ -744,14 +499,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Strada",
-      "identifier": "magia-nata-o-insegnata",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "magia-nata-o-insegnata"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
@@ -765,14 +513,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Strada",
-      "identifier": "performance-magica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "performance-magica"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
@@ -786,14 +527,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Strada",
-      "identifier": "miglioramento-della-performance",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "miglioramento-della-performance"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
@@ -807,14 +541,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Strada",
-      "identifier": "miglioramento-del-punteggio-di-caratteristica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "miglioramento-del-punteggio-di-caratteristica"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
@@ -828,14 +555,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Strada",
-      "identifier": "maestria-della-performance",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "maestria-della-performance"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
@@ -849,14 +569,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Strada",
-      "identifier": "spettacolo-mozzafiato",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "spettacolo-mozzafiato"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
@@ -870,14 +583,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Strada",
-      "identifier": "performance-ispirante",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "performance-ispirante"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
@@ -891,14 +597,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Strada",
-      "identifier": "riarmo-musicale",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "riarmo-musicale"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
@@ -912,14 +611,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Strada",
-      "identifier": "maestria-della-performance-potenziata",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "maestria-della-performance-potenziata"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
@@ -933,14 +625,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Strada",
-      "identifier": "performance-leggendaria",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "performance-leggendaria"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
@@ -954,14 +639,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Supporto",
-      "identifier": "magia-nata-o-insegnata",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "magia-nata-o-insegnata"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
@@ -975,14 +653,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Supporto",
-      "identifier": "determinazione-inestinguibile",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "determinazione-inestinguibile"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
@@ -996,14 +667,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Supporto",
-      "identifier": "armonia-protettiva",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "armonia-protettiva"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
@@ -1017,14 +681,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Supporto",
-      "identifier": "maestria",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "maestria"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
@@ -1038,14 +695,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Supporto",
-      "identifier": "crescendo-difensivo",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "crescendo-difensivo"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
@@ -1059,14 +709,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Supporto",
-      "identifier": "fonte-di-determinazione",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "fonte-di-determinazione"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
@@ -1080,14 +723,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Supporto",
-      "identifier": "risonanza",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "risonanza"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
@@ -1101,14 +737,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Supporto",
-      "identifier": "purificazione-armonica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "purificazione-armonica"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
@@ -1122,14 +751,7 @@
         "subtype": ""
       },
       "requirements": "Mago di Supporto",
-      "identifier": "cadenza-concertata",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "cadenza-concertata"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
@@ -1143,14 +765,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "magia-nata-o-insegnata",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "magia-nata-o-insegnata"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1164,14 +779,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "mente-tattica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "mente-tattica"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1185,14 +793,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "analisi-degli-incantesimi",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "analisi-degli-incantesimi"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1206,14 +807,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "lancio-rapido",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "lancio-rapido"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1227,14 +821,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "miglioramento-del-punteggio-di-caratteristica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "miglioramento-del-punteggio-di-caratteristica"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1248,14 +835,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "competenza-tattica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "competenza-tattica"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1269,14 +849,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "conservazione-del-mana",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "conservazione-del-mana"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1290,14 +863,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "maestria-degli-incantesimi",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "maestria-degli-incantesimi"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1311,14 +877,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "maestria-arcana",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "maestria-arcana"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1332,14 +891,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "maestro-tattico",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "maestro-tattico"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1353,14 +905,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "genio-tattico",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "genio-tattico"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1374,14 +919,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "sfrutta-i-punti-deboli",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "sfrutta-i-punti-deboli"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1395,14 +933,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "occhio-vigile",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "occhio-vigile"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1416,14 +947,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "movimenti-tattici",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "movimenti-tattici"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1437,14 +961,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "osservazione-acuta",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "osservazione-acuta"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1458,14 +975,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "coordinamento-strategico",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "coordinamento-strategico"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1479,14 +989,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "sinergia-arcana",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "sinergia-arcana"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1500,14 +1003,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "assalto-calcolato",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "assalto-calcolato"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1521,14 +1017,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "diversione-tattica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "diversione-tattica"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1542,14 +1031,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "precognizione",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "precognizione"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1563,14 +1045,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "interruzione-tattica",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "interruzione-tattica"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1584,14 +1059,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "via-di-fuga",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "via-di-fuga"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1605,14 +1073,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "cautela",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "cautela"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1626,14 +1087,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "offensiva-focalizzata",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "offensiva-focalizzata"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1647,14 +1101,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "efficienza-del-mana",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "efficienza-del-mana"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1668,14 +1115,7 @@
         "subtype": ""
       },
       "requirements": "Mago Tattico",
-      "identifier": "ritirata-calcolata",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "ritirata-calcolata"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
@@ -1689,14 +1129,7 @@
         "subtype": ""
       },
       "requirements": "Guerriero",
-      "identifier": "magia-nata-o-insegnata",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "magia-nata-o-insegnata"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
@@ -1710,14 +1143,7 @@
         "subtype": ""
       },
       "requirements": "Guerriero",
-      "identifier": "abilita-in-combattimento",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "abilita-in-combattimento"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
@@ -1731,14 +1157,7 @@
         "subtype": ""
       },
       "requirements": "Guerriero",
-      "identifier": "difesa-senza-armatura",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "difesa-senza-armatura"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
@@ -1752,14 +1171,7 @@
         "subtype": ""
       },
       "requirements": "Guerriero",
-      "identifier": "flusso-di-mana",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "flusso-di-mana"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
@@ -1773,14 +1185,7 @@
         "subtype": ""
       },
       "requirements": "Guerriero",
-      "identifier": "miglioramento-delle-caratteristiche",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "miglioramento-delle-caratteristiche"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
@@ -1794,14 +1199,7 @@
         "subtype": ""
       },
       "requirements": "Guerriero",
-      "identifier": "maestria-con-le-armi",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "maestria-con-le-armi"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
@@ -1815,14 +1213,7 @@
         "subtype": ""
       },
       "requirements": "Guerriero",
-      "identifier": "attacco-extra",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "attacco-extra"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
@@ -1836,14 +1227,7 @@
         "subtype": ""
       },
       "requirements": "Guerriero",
-      "identifier": "spirito-indomito",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "spirito-indomito"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
@@ -1857,14 +1241,7 @@
         "subtype": ""
       },
       "requirements": "Guerriero",
-      "identifier": "maestria-nel-combattimento-migliorata",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "maestria-nel-combattimento-migliorata"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
@@ -1878,14 +1255,7 @@
         "subtype": ""
       },
       "requirements": "Guerriero",
-      "identifier": "sinergia-con-le-armi",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "sinergia-con-le-armi"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
@@ -1899,14 +1269,7 @@
         "subtype": ""
       },
       "requirements": "Guerriero",
-      "identifier": "maestria-nel-critico",
-      "source": {
-        "custom": "Fairy Tail",
-        "book": "Fairy Tail",
-        "page": "",
-        "license": "",
-        "rules": "2014"
-      }
+      "identifier": "maestria-nel-critico"
     },
     "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   }

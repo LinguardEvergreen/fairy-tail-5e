@@ -6,7 +6,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "serbatoio-di-mana-naturale",
@@ -27,7 +27,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "incantesimi-caratteristici-modificato",
@@ -48,7 +48,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "efficienza-del-mana",
@@ -69,7 +69,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "ondata-di-mana-berserk",
@@ -90,7 +90,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "sensorialita-magica",
@@ -111,7 +111,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "lancio-migliorato-modificato",
@@ -132,7 +132,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "protezione-magica",
@@ -153,7 +153,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "connessione-eterea",
@@ -174,7 +174,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "magia-potenziata",
@@ -195,7 +195,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "infusione-di-mana",
@@ -216,7 +216,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "arma-di-mana",
@@ -237,7 +237,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "lanciatore-lontano",
@@ -258,7 +258,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "forza-di-volonta",
@@ -279,7 +279,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "mago-pieno-di-risorse",
@@ -300,7 +300,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "incantesimo-della-gilda",
@@ -321,7 +321,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "relazioni-di-mana",
@@ -342,7 +342,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "grande-magia",
@@ -363,7 +363,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "studente",
@@ -384,7 +384,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "cerchio-d-attacco-magico",
@@ -405,7 +405,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "cerchi-subdoli",
@@ -426,7 +426,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "condotto-del-mana",
@@ -447,7 +447,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "cerchi-magici-stratificati",
@@ -468,7 +468,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "ciclo-di-feedback-arcano",
@@ -489,7 +489,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "scultore-di-incantesimi",
@@ -510,7 +510,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "antica-affinita-magica",
@@ -531,7 +531,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dello Spazio Aereo",
       "identifier": "aria-concentrata",
@@ -552,7 +552,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dello Spazio Aereo, capacità Aerial",
       "identifier": "sfera-soffocante",
@@ -573,7 +573,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dello Spazio Aereo, capacità Zetsu",
       "identifier": "esplosione-concentrata",
@@ -594,7 +594,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dello Spazio Aereo, capacità Aerial Shot",
       "identifier": "sbarramento-a-ricerca",
@@ -615,7 +615,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dello Spazio Aereo, capacità Forma Aerea",
       "identifier": "forma-aerea-potenziata",
@@ -636,7 +636,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dello Spazio Aereo, capacità Aerial Phose",
       "identifier": "ciclone-schiacciante",
@@ -657,7 +657,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dello Spazio Aereo, capacità Metsu",
       "identifier": "risucchio-di-mana",
@@ -678,7 +678,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dello Spazio Aereo, capacità Padronanza dello Spazio Aereo, talento Aria Concentrata",
       "identifier": "ascesa-in-volo",
@@ -699,7 +699,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dello Spazio Aereo, funzionalità Aria Assoluta",
       "identifier": "soffocamento-assoluto",
@@ -720,7 +720,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia delle Carte",
       "identifier": "fortuna-raddoppiata",
@@ -741,7 +741,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia delle Carte",
       "identifier": "evocazione-di-carte",
@@ -762,7 +762,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia delle Carte, livello 3",
       "identifier": "finezza-del-bariere",
@@ -783,7 +783,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia delle Carte, livello 6",
       "identifier": "maestro-del-mazzo",
@@ -804,7 +804,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia delle Carte, Carte",
       "identifier": "potenziamento-delle-carte",
@@ -825,7 +825,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia delle Carte, livello 12",
       "identifier": "maestria-a-doppia-carta",
@@ -846,7 +846,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia delle Carte, livello 10, capacità Combinazione Divina delle Carte, capacità Abbraccio dei Tarocchi",
       "identifier": "rinnovo-dei-tarocchi",
@@ -867,7 +867,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Terra",
       "identifier": "clone-terrestre",
@@ -888,7 +888,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Terra, Costruttore di Golem o capacità Evoca Drago della Terra",
       "identifier": "evocatore-della-terra",
@@ -909,7 +909,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Terra, capacità Baluardo Terrestre",
       "identifier": "baluardo-di-pietra",
@@ -930,7 +930,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Terra, livello 6",
       "identifier": "terra-duratura",
@@ -951,7 +951,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Terra, Magia Suprema: capacità Schianto Tettonico, Limit Break",
       "identifier": "pugno-tettonico",
@@ -972,7 +972,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Terra, capacità Grande Alchimista della Terra",
       "identifier": "arsenale-dell-alchimista",
@@ -993,7 +993,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Terra, livello 11",
       "identifier": "bastione-della-terra",
@@ -1014,7 +1014,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fuoco, capacità Emberstrike",
       "identifier": "inferno-furioso",
@@ -1035,7 +1035,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fuoco",
       "identifier": "velocita-sfolgorante",
@@ -1056,7 +1056,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fuoco, capacità Scorching Burst",
       "identifier": "detonazione-controllata",
@@ -1077,7 +1077,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fuoco, capacità Searing Surge e Furia dell’Inferno",
       "identifier": "alimentato-dalla-fiamma",
@@ -1098,7 +1098,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fuoco, livello 5",
       "identifier": "aura-ardente",
@@ -1119,7 +1119,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fuoco, livello 10",
       "identifier": "carica-dell-inferno",
@@ -1140,7 +1140,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fuoco, capacità Furia della Fenice",
       "identifier": "fiamma-eterna",
@@ -1161,7 +1161,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fuoco, capacità Bagliore di Creazione",
       "identifier": "fiamma-dell-annientamento",
@@ -1182,7 +1182,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia degli Ingranaggi, capacità Gear Bind",
       "identifier": "colpo-d-ingranaggio",
@@ -1203,7 +1203,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia degli Ingranaggi, capacità Gear Boost",
       "identifier": "ingranaggio-di-potenziamento-personale",
@@ -1224,7 +1224,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia degli Ingranaggi, livello 3",
       "identifier": "risonanza-degli-ingranaggi",
@@ -1245,7 +1245,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia degli Ingranaggi, capacità Gear Field",
       "identifier": "distribuzione-strategica",
@@ -1266,7 +1266,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia degli Ingranaggi, capacità Gear Self",
       "identifier": "dono-del-forgiaingranaggi",
@@ -1287,7 +1287,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia degli Ingranaggi, capacità Marcia Fantasma",
       "identifier": "famiglia-fantasma",
@@ -1308,7 +1308,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia degli Ingranaggi, livello 18",
       "identifier": "maestria-dell-equipaggiamento",
@@ -1329,7 +1329,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia delle Armi da Fuoco, capacità Munizioni Personalizzate",
       "identifier": "maestria-dei-proiettili-di-mana",
@@ -1350,7 +1350,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia delle Armi da Fuoco, capacità Munizioni Personalizzate",
       "identifier": "tiratore-di-mana",
@@ -1371,7 +1371,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia delle Armi da Fuoco, capacità Tiri Elementali",
       "identifier": "fusione-elementale",
@@ -1392,7 +1392,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia delle Armi da Fuoco, capacità Uso Definitivo: Tiro a Ricerca",
       "identifier": "inseguimento-infallibile",
@@ -1413,7 +1413,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia delle Armi da Fuoco, capacità Tiro Tornado",
       "identifier": "vortice-persistente",
@@ -1434,7 +1434,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia delle Armi da Fuoco, capacità Espansione Omnidirezionale",
       "identifier": "arsenale-fantasma",
@@ -1455,7 +1455,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia delle Armi da Fuoco, capacità Wide Shot",
       "identifier": "esplosione-a-doppia-canna",
@@ -1476,7 +1476,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia delle Armi da Fuoco, capacità Blast Bullet",
       "identifier": "ordigni-esplosivi",
@@ -1497,7 +1497,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia delle Armi da Fuoco, capacità Sunlight Shot",
       "identifier": "eruzione-solare",
@@ -1518,7 +1518,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Corpo Celeste",
       "identifier": "fortuna-stellare",
@@ -1539,7 +1539,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Corpo Celeste, livello 4",
       "identifier": "maledizione-celeste",
@@ -1560,7 +1560,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Corpo Celeste, capacità Sintonizzazione Celestiale",
       "identifier": "echi-celesti",
@@ -1581,7 +1581,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Corpo Celeste, capacità Collezione Celeste",
       "identifier": "favore-celeste",
@@ -1602,7 +1602,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Corpo Celeste, capacità Meteora",
       "identifier": "chiamata-meteora",
@@ -1623,7 +1623,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Corpo Celeste, capacità Orion",
       "identifier": "guida-di-orione",
@@ -1644,7 +1644,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Corpo Celeste, capacità Sema",
       "identifier": "cuore-di-sema",
@@ -1665,7 +1665,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Corpo Celeste, capacità Altairis",
       "identifier": "abbraccio-della-gravita",
@@ -1686,7 +1686,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Corpo Celeste, capacità Grand Chariot",
       "identifier": "carica-del-carro",
@@ -1707,7 +1707,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Corpo Celeste, capacità Jiu Leixing",
       "identifier": "lame-persistenti",
@@ -1728,7 +1728,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fulmine",
       "identifier": "presenza-elettrificata",
@@ -1749,7 +1749,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fulmine, capacità Pugno del Fulmine",
       "identifier": "colpo-tonante",
@@ -1770,7 +1770,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fulmine, capacità Raggio ad Arco",
       "identifier": "arco-elettrizzante",
@@ -1791,7 +1791,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fulmine, capacità Velocità del Fulmine",
       "identifier": "riflessi-fulminei",
@@ -1812,7 +1812,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fulmine, capacità Catena di Fulmini",
       "identifier": "fulmine-divisore",
@@ -1833,7 +1833,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fulmine, capacità Armi Fulminanti",
       "identifier": "scarica-statica",
@@ -1854,7 +1854,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fulmine, capacità Fulmine Vero",
       "identifier": "furia-di-thunderhead",
@@ -1875,7 +1875,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fulmine, capacità Corpo del Fulmine",
       "identifier": "dono-del-fulmine",
@@ -1896,7 +1896,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fulmine, capacità Parafulmine",
       "identifier": "carapace-conduttivo",
@@ -1917,7 +1917,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fulmine, capacità Azione Impetuosa",
       "identifier": "slancio-del-fulmine",
@@ -1938,7 +1938,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fulmine, capacità Flusso di Fulmine",
       "identifier": "asta-della-tempesta",
@@ -1959,7 +1959,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fulmine, livello 11",
       "identifier": "colpo-del-tuono",
@@ -1980,7 +1980,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Fulmine, livello 18",
       "identifier": "passo-del-tuono",
@@ -2001,7 +2001,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Creazione",
       "identifier": "arsenale-ampliato",
@@ -2022,7 +2022,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Creazione, livello 3",
       "identifier": "casting-adattivo",
@@ -2043,7 +2043,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Creazione, livello 8, due diversi stili di lancio scelti al 3° livello",
       "identifier": "creazione-armoniosa",
@@ -2064,7 +2064,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Creazione, livello 5",
       "identifier": "magia-della-creazione-reattiva",
@@ -2085,7 +2085,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Capacità di usare la Magia della Creazione",
       "identifier": "costrutto-distintivo",
@@ -2106,7 +2106,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Capacità di lanciare Magia della Creazione",
       "identifier": "artigiano-degli-arcani",
@@ -2127,7 +2127,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Capacità di lanciare Magia della Creazione",
       "identifier": "duplice-creazione",
@@ -2148,7 +2148,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "12° livello, Magia della Creazione",
       "identifier": "impeto-elementale",
@@ -2169,7 +2169,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "5° livello, Magia della Creazione",
       "identifier": "divisione-elementale",
@@ -2190,7 +2190,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Creazione, livello 12",
       "identifier": "sigillo-eterno",
@@ -2211,7 +2211,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Cambio Stock, capacità Il Cavaliere",
       "identifier": "valore-del-cavaliere",
@@ -2232,7 +2232,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Cambio Stock, capacità Danza a Catena",
       "identifier": "arco-spazzante",
@@ -2253,7 +2253,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Cambio Stock, livello 3",
       "identifier": "versatilita-del-cambio-stock",
@@ -2274,7 +2274,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Cambio Stock, capacità Cambio Stock: I Cento",
       "identifier": "cento-colpi-mezza-precisione",
@@ -2295,7 +2295,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Cambio Stock, capacità Armatura del Campione",
       "identifier": "campione-incrollabile",
@@ -2316,7 +2316,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Cambio Stock, capacità Armatura Nakagami",
       "identifier": "ira-di-nakagami",
@@ -2337,7 +2337,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Cambio Stock, capacità Spada del Re",
       "identifier": "decreto-del-re",
@@ -2358,7 +2358,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Cambio Stock, capacità Arsenale del Maestro",
       "identifier": "asso-dell-arsenale",
@@ -2379,7 +2379,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Cambio Stock, capacità Armeria Infinita",
       "identifier": "ascesa-dell-arsenale",
@@ -2400,7 +2400,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Sabbia, capacità Sable Dance",
       "identifier": "abbraccio-della-tempesta-di-sabbia",
@@ -2421,7 +2421,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Sabbia, capacità Controllo della Sabbia",
       "identifier": "scultore-di-sabbia",
@@ -2442,7 +2442,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Sabbia, capacità Clone di Sabbia",
       "identifier": "miraggio-del-deserto",
@@ -2463,7 +2463,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Sabbia, capacità Sand Buster",
       "identifier": "maelstrom-vorticoso",
@@ -2484,7 +2484,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Sabbia, capacità Lancia di Sabbia",
       "identifier": "tempesta-di-sabbia-perforante",
@@ -2505,7 +2505,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Sabbia, capacità Forma di Sabbia",
       "identifier": "titano-della-sabbia",
@@ -2526,7 +2526,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Sabbia, capacità Sand Buster Migliorato",
       "identifier": "turbine-del-deserto",
@@ -2547,7 +2547,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Sabbia, capacità Raml Sayf",
       "identifier": "sbarramento-della-tempesta-di-sabbia",
@@ -2568,7 +2568,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Sabbia, capacità Esplosione di Sabbia",
       "identifier": "catastrofe-delle-sabbie-mobili",
@@ -2589,7 +2589,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia della Sabbia, capacità Mondo di Sabbia",
       "identifier": "avatar-della-tempesta-di-sabbia",
@@ -2610,7 +2610,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "1° livello in Magia del Solid Script, capacità Wordsmith",
       "identifier": "padronanza-linguistica",
@@ -2631,7 +2631,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Solid Script, capacità Orient Solid Script: Via della Spada",
       "identifier": "kanji-istantaneo",
@@ -2652,7 +2652,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Solid Script, 3° livello",
       "identifier": "precisione-del-wordsmith",
@@ -2673,7 +2673,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Solid Script, capacità Fioritura del Maestro di Spada",
       "identifier": "cascata-kanji",
@@ -2694,7 +2694,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Solid Script (Wordsmith), 9° livello",
       "identifier": "esperto-del-solid-script",
@@ -2715,7 +2715,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "3° livello in Magia del Solid Script, capacità Wordsmith",
       "identifier": "parole-runiche",
@@ -2736,7 +2736,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "3° livello in Magia del Solid Script, capacità Wordsmith",
       "identifier": "parole-veloci",
@@ -2757,7 +2757,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Solid Script, 3° livello, capacità Wordsmith",
       "identifier": "scrittura-silenziosa",
@@ -2778,7 +2778,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del Solid Script, capacità Orient Solid Script: Via della Spada, capacità Dominio Kanji",
       "identifier": "dominio-del-master",
@@ -2799,7 +2799,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del TakeOver",
       "identifier": "forma-feroce",
@@ -2820,7 +2820,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del TakeOver, livello 3, non puoi avere il talento Forma Feroce",
       "identifier": "trasformazione-sfrenata",
@@ -2841,7 +2841,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del TakeOver, livello 3",
       "identifier": "infusione-dell-anima",
@@ -2862,7 +2862,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del TakeOver, capacità Wild Adaptation",
       "identifier": "spirito-indomito",
@@ -2883,7 +2883,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del TakeOver, capacità TakeOver Parziale",
       "identifier": "cambio-reattivo",
@@ -2904,7 +2904,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del TakeOver, capacità TakeOver Parziale",
       "identifier": "vero-adattamento",
@@ -2925,7 +2925,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del TakeOver, livello 6",
       "identifier": "anima-espansa",
@@ -2946,7 +2946,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del TakeOver, capacità Fusione Primordiale",
       "identifier": "potenza-unificata",
@@ -2967,7 +2967,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del TakeOver, capacità Evoluzione Bestiale, livello 15",
       "identifier": "evoluzione-scatenata",
@@ -2988,7 +2988,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del TakeOver, capacità Risonanza dell’Anima",
       "identifier": "pinnacolo-dell-anima",
@@ -3009,7 +3009,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia del TakeOver, capacità King Soul Take Over",
       "identifier": "armamento-del-re",
@@ -3030,7 +3030,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dell'Acqua, caratteristica Forma Fluida",
       "identifier": "potenza-acquatica",
@@ -3051,7 +3051,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dell'Acqua, capacità Maestria delle Ondulazioni",
       "identifier": "hydro-fist",
@@ -3072,7 +3072,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dell'Acqua, caratteristica Forza Torrenziale",
       "identifier": "adattamento-acquatico",
@@ -3093,7 +3093,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dell'Acqua, caratteristica Ondata di Marea",
       "identifier": "controllo-delle-maree",
@@ -3114,7 +3114,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dell'Acqua, Livello 6",
       "identifier": "sosia-acquatico",
@@ -3135,7 +3135,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dell'Acqua, Livello 6",
       "identifier": "sbarramento-di-marea",
@@ -3156,7 +3156,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dell'Acqua, caratteristica Morte Abissale",
       "identifier": "l-abbraccio-della-profondita",
@@ -3177,7 +3177,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dell'Acqua, caratteristica Furia dell'Oceano",
       "identifier": "furia-delle-maree",
@@ -3198,7 +3198,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dell'Acqua, caratteristica Sovrano del Mare",
       "identifier": "dominio-del-sovrano",
@@ -3219,7 +3219,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "Magia dell'Acqua, caratteristica Ira del Leviatano",
       "identifier": "la-chiamata-del-leviatano",
@@ -3240,7 +3240,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "riflessi-potenziati",
@@ -3261,7 +3261,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "finezza-acrobatica",
@@ -3282,7 +3282,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "recupero-corporeo",
@@ -3303,7 +3303,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "volonta-di-ferro",
@@ -3324,7 +3324,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "maestria-nelle-armi",
@@ -3345,7 +3345,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "adattamento-ambientale",
@@ -3366,7 +3366,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "combattente-adattabile",
@@ -3387,7 +3387,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "sangue-di-drago",
@@ -3408,7 +3408,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "durabilita-migliorata",
@@ -3429,7 +3429,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "durabilita-avanzata",
@@ -3450,7 +3450,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "attaccabrighe",
@@ -3471,7 +3471,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "attaccabrighe-maestria",
@@ -3492,7 +3492,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "sentinale-a-distanza",
@@ -3513,7 +3513,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "arguto",
@@ -3534,7 +3534,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "comunicazione-telepatica",
@@ -3555,7 +3555,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "vera-telepatia",
@@ -3576,7 +3576,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "coreografia-magica",
@@ -3597,7 +3597,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "ballerina-eterea",
@@ -3618,7 +3618,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "magia-di-appiattimento",
@@ -3639,7 +3639,7 @@
     "system": {
       "type": {
         "value": "feat",
-        "subtype": ""
+        "subtype": "general"
       },
       "requirements": "",
       "identifier": "magia-del-portale",
