@@ -137,22 +137,36 @@ function calcMaxMana(actor) {
 }
 
 /**
- * Calculate mana bonus/penalty from race features.
+ * Calculate mana bonus/penalty from race features and talents.
+ *
+ * Race features:
  * - Umani "Controllo magico": +2 MP, +2 extra at lv8, +2 extra at lv16
  * - Exceed "Riserva di mana": -1 MP per character level
+ *
+ * Talents (flat mana bonuses):
+ * - Serbatoio di Mana Naturale: +proficiency bonus to max mana
+ * - Relazioni di Mana: +1 MP + removes Exceed -1/level penalty
+ * - Fortuna raddoppiata: +1 MP
+ * - Risonanza degli ingranaggi: +1 MP
+ * - Fortuna Stellare: +1 MP
+ * - Scarica statica: +2 MP
+ * - Passo del Tuono: +2 MP
  */
 function _getRaceManaBonus(actor) {
   if (!actor) return 0;
   let bonus = 0;
 
-  // Get the character's total level
   const totalLevel = actor.system?.details?.level ?? 0;
+  const prof = actor.system?.attributes?.prof ?? 0;
 
-  // Check for race features by scanning actor's items
+  let hasExceedPenalty = false;
+  let hasExceedFix = false;
+
   for (const item of actor.items) {
     if (item.type !== "feat") continue;
     const name = item.name?.toLowerCase() || "";
 
+    // ── Race features ──────────────────────────────
     // Umani: Controllo magico
     if (name.includes("controllo magico")) {
       bonus += 2;
@@ -161,9 +175,51 @@ function _getRaceManaBonus(actor) {
     }
 
     // Exceed: Riserva di mana
-    if (name.includes("riserva di mana")) {
-      bonus -= totalLevel;
+    if (name.includes("riserva di mana") && !name.includes("serbatoio")) {
+      hasExceedPenalty = true;
     }
+
+    // ── Talent mana bonuses (hardcoded) ────────────
+    // Serbatoio di Mana Naturale: +proficiency bonus to max mana
+    if (name.includes("serbatoio di mana naturale")) {
+      bonus += prof;
+    }
+
+    // Relazioni di Mana: +1 MP + cancels Exceed penalty
+    if (name.includes("relazioni di mana")) {
+      bonus += 1;
+      hasExceedFix = true;
+    }
+
+    // Fortuna raddoppiata: +1 MP
+    if (name.includes("fortuna raddoppiata")) {
+      bonus += 1;
+    }
+
+    // Risonanza degli ingranaggi: +1 MP
+    if (name.includes("risonanza degli ingranaggi")) {
+      bonus += 1;
+    }
+
+    // Fortuna Stellare: +1 MP
+    if (name.includes("fortuna stellare")) {
+      bonus += 1;
+    }
+
+    // Scarica statica: +2 MP
+    if (name.includes("scarica statica")) {
+      bonus += 2;
+    }
+
+    // Passo del Tuono: +2 MP
+    if (name.includes("passo del tuono")) {
+      bonus += 2;
+    }
+  }
+
+  // Apply Exceed penalty only if not fixed by Relazioni di Mana
+  if (hasExceedPenalty && !hasExceedFix) {
+    bonus -= totalLevel;
   }
 
   return bonus;

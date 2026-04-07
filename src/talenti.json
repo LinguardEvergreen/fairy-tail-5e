@@ -16,7 +16,25 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "advancement": [
+        {
+          "_id": "0ebb96ce8141cdf4",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 1,
+            "fixed": {},
+            "cap": 1
+          },
+          "value": {
+            "type": "asi"
+          }
+        }
+      ]
     },
     "img": "icons/svg/book.svg"
   },
@@ -102,6 +120,24 @@
         "rules": "2014"
       }
     },
+    "effects": [
+      {
+        "_id": "84d43998cf683953",
+        "name": "Sensorialità Magica",
+        "icon": "icons/svg/book.svg",
+        "origin": null,
+        "disabled": false,
+        "transfer": true,
+        "changes": [
+          {
+            "key": "system.attributes.init.bonus",
+            "mode": 2,
+            "value": "2",
+            "priority": 20
+          }
+        ]
+      }
+    ],
     "img": "icons/svg/book.svg"
   },
   {
@@ -331,7 +367,25 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "advancement": [
+        {
+          "_id": "157ef7b4893f036d",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 1,
+            "fixed": {},
+            "cap": 1
+          },
+          "value": {
+            "type": "asi"
+          }
+        }
+      ]
     },
     "img": "icons/svg/book.svg"
   },
@@ -436,7 +490,25 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "advancement": [
+        {
+          "_id": "4413c92dd94b6ac9",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 1,
+            "fixed": {},
+            "cap": 1
+          },
+          "value": {
+            "type": "asi"
+          }
+        }
+      ]
     },
     "img": "icons/svg/book.svg"
   },
@@ -499,7 +571,25 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "advancement": [
+        {
+          "_id": "6d817390bb1cb61e",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 1,
+            "fixed": {},
+            "cap": 1
+          },
+          "value": {
+            "type": "asi"
+          }
+        }
+      ]
     },
     "img": "icons/svg/book.svg"
   },
@@ -520,7 +610,25 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "advancement": [
+        {
+          "_id": "05ac10222bf266b4",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 1,
+            "fixed": {},
+            "cap": 1
+          },
+          "value": {
+            "type": "asi"
+          }
+        }
+      ]
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -604,7 +712,25 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "advancement": [
+        {
+          "_id": "2de0ac1dfe1b2bdc",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 1,
+            "fixed": {},
+            "cap": 1
+          },
+          "value": {
+            "type": "asi"
+          }
+        }
+      ]
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -625,7 +751,27 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "advancement": [
+        {
+          "_id": "98d0775b6964c54a",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 0,
+            "fixed": {
+              "dex": 1
+            },
+            "cap": 1
+          },
+          "value": {
+            "type": "asi"
+          }
+        }
+      ]
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -751,7 +897,25 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "advancement": [
+        {
+          "_id": "15f2be1c646df687",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 1,
+            "fixed": {},
+            "cap": 1
+          },
+          "value": {
+            "type": "asi"
+          }
+        }
+      ]
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -1110,6 +1274,24 @@
         "rules": "2014"
       }
     },
+    "effects": [
+      {
+        "_id": "e788eb5dd8021c16",
+        "name": "Aura Ardente",
+        "icon": "icons/svg/book.svg",
+        "origin": null,
+        "disabled": false,
+        "transfer": true,
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "mode": 2,
+            "value": "fire",
+            "priority": 20
+          }
+        ]
+      }
+    ],
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
@@ -1381,7 +1563,27 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "advancement": [
+        {
+          "_id": "56ba035ef7e77e83",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 0,
+            "fixed": {
+              "dex": 1
+            },
+            "cap": 1
+          },
+          "value": {
+            "type": "asi"
+          }
+        }
+      ]
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -2305,7 +2507,27 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "advancement": [
+        {
+          "_id": "ee2fe5dd011fc4f6",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 0,
+            "fixed": {
+              "con": 1
+            },
+            "cap": 1
+          },
+          "value": {
+            "type": "asi"
+          }
+        }
+      ]
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -2664,6 +2886,24 @@
         "rules": "2014"
       }
     },
+    "effects": [
+      {
+        "_id": "05e92c898b6e34a6",
+        "name": "Precisione del Wordsmith",
+        "icon": "icons/svg/book.svg",
+        "origin": null,
+        "disabled": false,
+        "transfer": true,
+        "changes": [
+          {
+            "key": "system.bonuses.spell.dc",
+            "mode": 2,
+            "value": "1",
+            "priority": 20
+          }
+        ]
+      }
+    ],
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
@@ -2704,7 +2944,25 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "advancement": [
+        {
+          "_id": "8799b4ddd73c0661",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 1,
+            "fixed": {},
+            "cap": 1
+          },
+          "value": {
+            "type": "asi"
+          }
+        }
+      ]
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -2809,7 +3067,27 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "advancement": [
+        {
+          "_id": "9e3ee461c3f3e360",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 0,
+            "fixed": {
+              "con": 1
+            },
+            "cap": 1
+          },
+          "value": {
+            "type": "asi"
+          }
+        }
+      ]
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -3250,8 +3528,46 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "advancement": [
+        {
+          "_id": "0daa835e53198f9f",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 0,
+            "fixed": {
+              "dex": 1
+            },
+            "cap": 1
+          },
+          "value": {
+            "type": "asi"
+          }
+        }
+      ]
     },
+    "effects": [
+      {
+        "_id": "078b8d620bf45a27",
+        "name": "Riflessi potenziati",
+        "icon": "icons/svg/book.svg",
+        "origin": null,
+        "disabled": false,
+        "transfer": true,
+        "changes": [
+          {
+            "key": "system.attributes.ac.bonus",
+            "mode": 2,
+            "value": "1",
+            "priority": 20
+          }
+        ]
+      }
+    ],
     "img": "icons/svg/book.svg"
   },
   {
@@ -3273,6 +3589,24 @@
         "rules": "2014"
       }
     },
+    "effects": [
+      {
+        "_id": "88ae3996b3fb7bb6",
+        "name": "Finezza acrobatica",
+        "icon": "icons/svg/book.svg",
+        "origin": null,
+        "disabled": false,
+        "transfer": true,
+        "changes": [
+          {
+            "key": "system.attributes.ac.bonus",
+            "mode": 2,
+            "value": "1",
+            "priority": 20
+          }
+        ]
+      }
+    ],
     "img": "icons/svg/book.svg"
   },
   {
@@ -3397,8 +3731,46 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "advancement": [
+        {
+          "_id": "564485db09c1ac15",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 0,
+            "fixed": {
+              "con": 1
+            },
+            "cap": 1
+          },
+          "value": {
+            "type": "asi"
+          }
+        }
+      ]
     },
+    "effects": [
+      {
+        "_id": "2a8650ee8ab04e7d",
+        "name": "Sangue di drago",
+        "icon": "icons/svg/book.svg",
+        "origin": null,
+        "disabled": false,
+        "transfer": true,
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "mode": 2,
+            "value": "poison",
+            "priority": 20
+          }
+        ]
+      }
+    ],
     "img": "icons/svg/book.svg"
   },
   {
@@ -3420,6 +3792,36 @@
         "rules": "2014"
       }
     },
+    "effects": [
+      {
+        "_id": "7c6fa8adb75f5274",
+        "name": "Durabilità migliorata",
+        "icon": "icons/svg/book.svg",
+        "origin": null,
+        "disabled": false,
+        "transfer": true,
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "mode": 2,
+            "value": "bludgeoning",
+            "priority": 20
+          },
+          {
+            "key": "system.traits.dr.value",
+            "mode": 2,
+            "value": "piercing",
+            "priority": 20
+          },
+          {
+            "key": "system.traits.dr.value",
+            "mode": 2,
+            "value": "slashing",
+            "priority": 20
+          }
+        ]
+      }
+    ],
     "img": "icons/svg/book.svg"
   },
   {
@@ -3502,7 +3904,27 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "advancement": [
+        {
+          "_id": "c1a730706526bebc",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 0,
+            "fixed": {
+              "dex": 1
+            },
+            "cap": 1
+          },
+          "value": {
+            "type": "asi"
+          }
+        }
+      ]
     },
     "img": "icons/svg/book.svg"
   },
@@ -3523,7 +3945,27 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "advancement": [
+        {
+          "_id": "193e2743bd8f4e39",
+          "type": "AbilityScoreImprovement",
+          "level": 0,
+          "title": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "points": 0,
+            "fixed": {
+              "int": 1
+            },
+            "cap": 1
+          },
+          "value": {
+            "type": "asi"
+          }
+        }
+      ]
     },
     "img": "icons/svg/book.svg"
   },

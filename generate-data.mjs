@@ -1106,7 +1106,7 @@ const RACE_CONFIG = {
 };
 
 /** Build the advancement array for a race */
-function buildAdvancement(raceName, config, featureItems, talentPool) {
+function buildAdvancement(raceName, config, featureItems) {
   const adv = [];
   const PACK = `ft5e-feature-razze`;
 
@@ -1203,6 +1203,8 @@ function buildAdvancement(raceName, config, featureItems, talentPool) {
   }
 
   // 5. ItemChoice for talent grants (race features that let player choose a talent)
+  // pool is empty + allowDrops true → Foundry shows the full feat compendium browser
+  // (both Fairy Tail and D&D 5e feats visible, filterable by source)
   if (config.talentChoices) {
     for (const tc of config.talentChoices) {
       adv.push({
@@ -1217,7 +1219,7 @@ function buildAdvancement(raceName, config, featureItems, talentPool) {
           choices: { [String(tc.level)]: { count: tc.count, replacement: false } },
           allowDrops: true,
           type: "feat",
-          pool: talentPool || [],
+          pool: [],
           restriction: {},
           spell: null
         },
@@ -1230,7 +1232,7 @@ function buildAdvancement(raceName, config, featureItems, talentPool) {
 }
 
 /** Post-process: enrich razze and feature-razze with mechanical data */
-function enrichRazze(talentPool) {
+function enrichRazze() {
   const razzePath = path.join(SRC_DIR, "razze.json");
   const featPath = path.join(SRC_DIR, "feature-razze.json");
 
@@ -1284,7 +1286,7 @@ function enrichRazze(talentPool) {
         special: ""
       },
       type: { value: "humanoid", subtype: "", custom: "" },
-      advancement: buildAdvancement(r.name, config, features, talentPool)
+      advancement: buildAdvancement(r.name, config, features)
     };
   }
 
@@ -2084,9 +2086,114 @@ function parsePrerequisites(desc) {
   return match[1].replace(/\*\*/g, "").replace(/<[^>]*>/g, "").trim();
 }
 
+/**
+ * Talent automation map.
+ * Each entry maps a talent name to its mechanical effects:
+ *   asi       — AbilityScoreImprovement: { fixed: {dex:1}, points:0, cap:1 } or { fixed:{}, points:1, cap:1 } for player choice
+ *   effects   — Active Effects array: [{ key, mode, value }]
+ *   mana      — flat mana bonus (handled by mana-points.mjs at runtime)
+ *   manaProf  — add proficiency bonus to mana (boolean)
+ *   manaExceedFix — remove Exceed -1/level penalty (boolean)
+ */
+const TALENT_AUTOMATION = {
+  // ── Generic / Mana talents ─────────────────────────────────
+  "Serbatoio di Mana Naturale": {
+    asi: { fixed: {}, points: 1, cap: 1 },  // +1 to spellcasting ability (player chooses)
+    manaProf: true  // adds proficiency bonus to max mana
+  },
+  "Condotto del Mana": {
+    asi: { fixed: {}, points: 1, cap: 1 }  // +1 to spellcasting modifier (player chooses)
+  },
+  "Scultore di incantesimi": {
+    asi: { fixed: {}, points: 1, cap: 1 }
+  },
+  "Antica affinità magica": {
+    asi: { fixed: {}, points: 1, cap: 1 }
+  },
+  "Relazioni di Mana": {
+    asi: { fixed: {}, points: 1, cap: 1 },
+    mana: 1,
+    manaExceedFix: true
+  },
+  "Sensorialità Magica": {
+    effects: [{ key: "system.attributes.init.bonus", mode: 2, value: "2" }]  // +2 initiative
+  },
+  "Precisione del Wordsmith": {
+    effects: [{ key: "system.bonuses.spell.dc", mode: 2, value: "1" }]  // +1 spell save DC
+  },
+
+  // ── Ability Score Increases (fixed) ────────────────────────
+  "Forma Aerea Potenziata": {
+    asi: { fixed: { dex: 1 }, points: 0, cap: 1 }
+  },
+  "Fusione Elementale": {
+    asi: { fixed: { dex: 1 }, points: 0, cap: 1 }
+  },
+  "Campione incrollabile": {
+    asi: { fixed: { con: 1 }, points: 0, cap: 1 }
+  },
+  "Forma Feroce": {
+    asi: { fixed: { con: 1 }, points: 0, cap: 1 }
+  },
+  "Sangue di drago": {
+    asi: { fixed: { con: 1 }, points: 0, cap: 1 },
+    effects: [
+      { key: "system.traits.dr.value", mode: 2, value: "poison" }  // resistance to poison
+    ]
+  },
+  "Riflessi potenziati": {
+    asi: { fixed: { dex: 1 }, points: 0, cap: 1 },
+    effects: [{ key: "system.attributes.ac.bonus", mode: 2, value: "1" }]  // +1 AC
+  },
+  "Sentinale a distanza": {
+    asi: { fixed: { dex: 1 }, points: 0, cap: 1 }
+  },
+  "Arguto": {
+    asi: { fixed: { int: 1 }, points: 0, cap: 1 }
+  },
+  "Esperto del Solid Script": {
+    asi: { fixed: {}, points: 1, cap: 1 }  // +1 Int or Wis (player chooses)
+  },
+
+  // ── AC / Defense ───────────────────────────────────────────
+  "Finezza acrobatica": {
+    effects: [{ key: "system.attributes.ac.bonus", mode: 2, value: "1" }]  // +1 AC
+  },
+  "Aura Ardente": {
+    effects: [{ key: "system.traits.dr.value", mode: 2, value: "fire" }]  // resistance to fire
+  },
+  "Durabilità migliorata": {
+    effects: [
+      { key: "system.traits.dr.value", mode: 2, value: "bludgeoning" },
+      { key: "system.traits.dr.value", mode: 2, value: "piercing" },
+      { key: "system.traits.dr.value", mode: 2, value: "slashing" }
+    ]
+  },
+
+  // ── Mana bonuses (flat) ────────────────────────────────────
+  "Fortuna raddoppiata": { mana: 1 },
+  "Risonanza degli ingranaggi": { mana: 1 },
+  "Fortuna Stellare": { mana: 1 },
+  "Scarica statica": { mana: 2 },
+  "Passo del Tuono": { mana: 2 },
+
+  // ── Spellcasting modifier bonus (via magic-specific talents) ──
+  "Sbarramento a Ricerca": {
+    asi: { fixed: {}, points: 1, cap: 1 }
+  },
+  "Evocazione di carte": {
+    asi: { fixed: {}, points: 1, cap: 1 }
+  },
+
+  // Note: "Adattamento ambientale" (ignore difficult terrain) and "Attaccabrighe" (+1d4 unarmed)
+  // have effects that require DM adjudication and can't be cleanly automated via Active Effects
+};
+
 function enrichTalenti() {
   const talPath = path.join(SRC_DIR, "talenti.json");
   const talenti = JSON.parse(fs.readFileSync(talPath, "utf-8"));
+
+  let automatedCount = 0;
 
   for (const t of talenti) {
     t._id = stableId(`talenti:${t.name}`);
@@ -2104,11 +2211,60 @@ function enrichTalenti() {
         rules: "2014"
       }
     };
+
+    // Apply automation if defined for this talent
+    const auto = TALENT_AUTOMATION[t.name];
+    if (auto) {
+      automatedCount++;
+
+      // AbilityScoreImprovement advancement
+      if (auto.asi) {
+        if (!t.system.advancement) t.system.advancement = [];
+        t.system.advancement.push({
+          _id: stableId(`adv:talenti:${t.name}:asi`),
+          type: "AbilityScoreImprovement",
+          level: 0,
+          title: "",
+          icon: null,
+          classRestriction: null,
+          configuration: {
+            points: auto.asi.points ?? 0,
+            fixed: auto.asi.fixed ?? {},
+            cap: auto.asi.cap ?? 1
+          },
+          value: {
+            type: "asi"
+          }
+        });
+      }
+
+      // Active Effects
+      if (auto.effects && auto.effects.length > 0) {
+        if (!t.effects) t.effects = [];
+        t.effects.push({
+          _id: stableId(`effect:talenti:${t.name}`),
+          name: t.name,
+          icon: t.img || "icons/svg/book.svg",
+          origin: null,
+          disabled: false,
+          transfer: true,
+          changes: auto.effects.map(e => ({
+            key: e.key,
+            mode: e.mode,
+            value: String(e.value),
+            priority: 20
+          }))
+        });
+      }
+
+      // Mana bonuses are handled at runtime by mana-points.mjs (hardcoded by talent name)
+      // No flags needed — the mana system scans actor items by name
+    }
   }
 
   const withPrereq = talenti.filter(t => t.system.requirements).length;
   fs.writeFileSync(talPath, JSON.stringify(talenti, null, 2), "utf-8");
-  console.log(`  ✓ talenti.json: enriched ${talenti.length} talents (${withPrereq} with prerequisites)`);
+  console.log(`  ✓ talenti.json: enriched ${talenti.length} talents (${withPrereq} with prerequisites, ${automatedCount} automated)`);
 }
 
 // ── ENRICHMENT: Equipaggiamento ───────────────────────────────────────────
@@ -2481,17 +2637,11 @@ extractFeatureClassi();
 extractFeatureMagie();
 
 console.log("\nEnriching data...");
-// Enrich talenti first so we have stable IDs for the talent pool
+// Enrich talenti first so we have stable IDs and automation
 enrichTalenti();
 
-// Build talent pool UUIDs for race talent choices (Jack Of All, etc.)
-const talentiData = JSON.parse(fs.readFileSync(path.join(SRC_DIR, "talenti.json"), "utf-8"));
-const talentPool = talentiData
-  .filter(t => t._id)
-  .map(t => ({ uuid: `Compendium.${MODULE_ID}.ft5e-talenti.${t._id}` }));
-console.log(`  ✓ Talent pool: ${talentPool.length} feats available for race choices`);
-
-enrichRazze(talentPool);
+// Talent selection now uses Foundry's native feat browser (no pool restriction)
+enrichRazze();
 enrichClassi();
 const enrichedSpells = enrichIncantesimi();
 enrichMagie(enrichedSpells);
