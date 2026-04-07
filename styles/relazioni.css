@@ -296,6 +296,21 @@
   margin-top: 4px;
 }
 
+.ft5e-gd-scrollable {
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.ft5e-gd-scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.ft5e-gd-scrollable::-webkit-scrollbar-thumb {
+  background: rgba(39, 174, 96, 0.3);
+  border-radius: 3px;
+}
+
 .ft5e-gd-notes label {
   font-size: 12px;
   display: block;

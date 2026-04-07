@@ -47,72 +47,173 @@ async function addGrowthLog(actor, entry) {
 }
 
 /* -------------------------------------------------- */
-/*  Growth Token Dialog                               */
+/*  Growth Token Dialog — Multi-step flow             */
 /* -------------------------------------------------- */
 
-const GROWTH_OPTIONS = [
-  {
-    category: "Ottenere nuove magie",
-    options: [
-      {
-        id: "nuova-magia",
-        label: "Nuova Magia",
-        desc: "Prendi 1 caratteristica da una nuova magia, seguendo l'ordine dei livelli: 1, 3, 6, 11, 18.",
-        needsInput: true,
-        placeholder: "Nome della magia e caratteristica scelta..."
-      }
-    ]
-  },
-  {
-    category: "Raffinare magia esistente (scegli 2 opzioni per token)",
-    options: [
-      {
-        id: "gittata-doppia",
-        label: "Gittata Doppia",
-        desc: "La durata è aumentata della metà, e metà dei dadi di danno viene aggiunta di nuovo."
-      },
-      {
-        id: "riduzione-mp",
-        label: "Riduzione Costo MP",
-        desc: "Riduci il costo in MP della caratteristica di 1 per ogni rango della stessa (lv.1 = -1, lv.3 = -2, lv.6 = -3, ecc.). Minimo 1 MP."
-      },
-      {
-        id: "tecnica-gratis",
-        label: "Tecnica Livello 1 Gratis",
-        desc: "Una tecnica di livello 1 può costare 0 una sola volta (non può essere un'abilità definitiva)."
-      },
-      {
-        id: "altra-caratteristica",
-        label: "Altra Caratteristica",
-        desc: "Prendi un'altra caratteristica dalla magia, seguendo l'ordine dei livelli."
-      },
-      {
-        id: "bonus-ca",
-        label: "+1 CA (+2 se Lv.11+)",
-        desc: "Aggiungere +1 alla CA (o +2 se Livello 11 o alta caratteristica)."
-      },
-      {
-        id: "resistenza",
-        label: "Resistenza Aggiuntiva",
-        desc: "Aggiungere una resistenza aggiuntiva o trasformarla in danno magico (se Livello 11+)."
-      },
-      {
-        id: "bonus-attacco",
-        label: "+1 Tiro per Colpire / +2 Danni",
-        desc: "Aggiungere +1 al tiro per colpire o +2 ai danni."
-      },
-      {
-        id: "multi-potenziamento",
-        label: "Potenziamenti Multipli",
-        desc: "Se la caratteristica fa più cose, selezionare massimo 2 potenziamenti (3 se Livello 11)."
-      }
-    ]
-  }
+const REFINE_OPTIONS = [
+  { id: "gittata-doppia",     label: "Gittata Doppia",                desc: "La durata è aumentata della metà, e metà dei dadi di danno viene aggiunta di nuovo." },
+  { id: "riduzione-mp",       label: "Riduzione Costo MP",            desc: "Riduci il costo in MP della caratteristica di 1 per ogni rango della stessa (lv.1 = -1, lv.3 = -2, lv.6 = -3, ecc.). Minimo 1 MP." },
+  { id: "tecnica-gratis",     label: "Tecnica Livello 1 Gratis",      desc: "Una feature di livello 1 può costare 0 una sola volta (non può essere un'abilità definitiva)." },
+  { id: "altra-caratteristica",label: "Altra Caratteristica",          desc: "Prendi un'altra feature dalla magia, seguendo l'ordine dei livelli." },
+  { id: "bonus-ca",           label: "+1 CA (+2 se Lv.11+)",          desc: "Aggiungere +1 alla CA (o +2 se Livello 11 o alta caratteristica)." },
+  { id: "resistenza",         label: "Resistenza Aggiuntiva",         desc: "Aggiungere una resistenza aggiuntiva o trasformarla in danno magico (se Livello 11+)." },
+  { id: "bonus-attacco",      label: "+1 Tiro per Colpire / +2 Danni",desc: "Aggiungere +1 al tiro per colpire o +2 ai danni." },
+  { id: "multi-potenziamento", label: "Potenziamenti Multipli",       desc: "Se la caratteristica fa più cose, selezionare massimo 2 potenziamenti (3 se Livello 11)." },
 ];
 
 /**
- * Open the Growth Token spending dialog for the actor.
+ * Load all magics and their features from the compendiums.
  */
+async function loadMagieAndFeatures() {
+  const magiePack = game.packs.get(`${MODULE_ID}.ft5e-magie`);
+  const featurePack = game.packs.get(`${MODULE_ID}.ft5e-feature-magie`);
+  if (!magiePack || !featurePack) return { magies: [], features: [] };
+
+  const magies = (await magiePack.getDocuments()).map(d => ({
+    id: d.id, name: d.name, img: d.img
+  }));
+  const features = (await featurePack.getDocuments()).map(d => ({
+    id: d.id, name: d.name, img: d.img,
+    magia: d.system?.requirements || ""
+  }));
+  return { magies, features };
+}
+
+/**
+ * Finalize: decrement token, log, notify chat.
+ */
+async function finalizeGrowthSpend(actor, tokens, choiceLabel, details) {
+  await setGrowthTokens(actor, tokens - 1);
+  await addGrowthLog(actor, {
+    label: choiceLabel,
+    ...details,
+    tokensRemaining: tokens - 1
+  });
+  const chatContent = `
+    <div class="ft5e-growth-chat">
+      <strong>${actor.name}</strong> ha speso 1 Growth Token!<br>
+      <em>${choiceLabel}</em>
+      ${details.magia ? `<br>Magia: <strong>${details.magia}</strong>` : ""}
+      ${details.feature ? `<br>Feature: <strong>${details.feature}</strong>` : ""}
+      ${details.notes ? `<br><small>${details.notes}</small>` : ""}
+      <br><small>Token rimanenti: ${tokens - 1}</small>
+    </div>
+  `;
+  ChatMessage.create({ content: chatContent, speaker: ChatMessage.getSpeaker({ actor }) });
+  ui.notifications.info(`Growth Token speso: ${choiceLabel}. Rimanenti: ${tokens - 1}`);
+}
+
+/* ── Step 3: Select feature from chosen magic ── */
+
+function openFeatureSelectDialog(actor, tokens, magiaName, features, choiceContext) {
+  const magiaFeatures = features.filter(f => f.magia === magiaName);
+  if (magiaFeatures.length === 0) {
+    ui.notifications.warn(`Nessuna feature trovata per ${magiaName}.`);
+    return;
+  }
+
+  let rowsHtml = magiaFeatures.map(f => `
+    <div class="ft5e-gd-option">
+      <label class="ft5e-gd-option-label">
+        <input type="radio" name="feature-choice" value="${f.name}" />
+        <img src="${f.img}" width="24" height="24" style="border-radius:4px; margin-right:4px;" />
+        <strong>${f.name}</strong>
+      </label>
+    </div>
+  `).join("");
+
+  new Dialog({
+    title: `Scegli Feature — ${magiaName}`,
+    content: `
+      <div class="ft5e-growth-dialog">
+        <p class="ft5e-gd-info"><i class="fas fa-scroll"></i> Seleziona la feature di <strong>${magiaName}</strong>:</p>
+        <hr>
+        <div class="ft5e-gd-options ft5e-gd-scrollable">${rowsHtml}</div>
+        <hr>
+        <div class="ft5e-gd-notes">
+          <label><strong>Note aggiuntive:</strong></label>
+          <textarea class="ft5e-gd-notes-input" rows="2" placeholder="Dettagli..."></textarea>
+        </div>
+      </div>
+    `,
+    buttons: {
+      confirm: {
+        icon: '<i class="fas fa-check"></i>',
+        label: "Conferma",
+        callback: async (html) => {
+          const featureName = html.find('input[name="feature-choice"]:checked').val();
+          if (!featureName) {
+            ui.notifications.warn("Seleziona una feature!");
+            return;
+          }
+          const notes = html.find('.ft5e-gd-notes-input').val() || "";
+          await finalizeGrowthSpend(actor, tokens, choiceContext.label, {
+            choice: choiceContext.id,
+            magia: magiaName,
+            feature: featureName,
+            notes
+          });
+        }
+      },
+      back: {
+        icon: '<i class="fas fa-arrow-left"></i>',
+        label: "Indietro",
+        callback: () => openMagiaSelectDialog(actor, tokens, choiceContext, features)
+      }
+    },
+    default: "confirm"
+  }, { width: 480, height: "auto", classes: ["ft5e-growth-dialog-window"] }).render(true);
+}
+
+/* ── Step 2: Select magic ── */
+
+function openMagiaSelectDialog(actor, tokens, choiceContext, features) {
+  // Use cached magies or load
+  const magieNames = [...new Set(features.map(f => f.magia).filter(Boolean))].sort();
+
+  let rowsHtml = magieNames.map(name => `
+    <div class="ft5e-gd-option">
+      <label class="ft5e-gd-option-label">
+        <input type="radio" name="magia-choice" value="${name}" />
+        <strong>${name}</strong>
+      </label>
+    </div>
+  `).join("");
+
+  new Dialog({
+    title: `Scegli Magia — ${choiceContext.label}`,
+    content: `
+      <div class="ft5e-growth-dialog">
+        <p class="ft5e-gd-info"><i class="fas fa-hat-wizard"></i> Seleziona la magia:</p>
+        <hr>
+        <div class="ft5e-gd-options">${rowsHtml}</div>
+      </div>
+    `,
+    buttons: {
+      next: {
+        icon: '<i class="fas fa-arrow-right"></i>',
+        label: "Avanti",
+        callback: (html) => {
+          const magiaName = html.find('input[name="magia-choice"]:checked').val();
+          if (!magiaName) {
+            ui.notifications.warn("Seleziona una magia!");
+            return;
+          }
+          openFeatureSelectDialog(actor, tokens, magiaName, features, choiceContext);
+        }
+      },
+      back: {
+        icon: '<i class="fas fa-arrow-left"></i>',
+        label: "Indietro",
+        callback: () => openGrowthDialog(actor)
+      }
+    },
+    default: "next"
+  }, { width: 480, height: "auto", classes: ["ft5e-growth-dialog-window"] }).render(true);
+}
+
+/* ── Step 1: Main Growth Token dialog ── */
+
 async function openGrowthDialog(actor) {
   const tokens = getGrowthTokens(actor);
   if (tokens <= 0) {
@@ -120,23 +221,19 @@ async function openGrowthDialog(actor) {
     return;
   }
 
+  // Pre-load features for later steps
+  const { features } = await loadMagieAndFeatures();
+
   // Build options HTML
-  let optionsHtml = "";
-  for (const cat of GROWTH_OPTIONS) {
-    optionsHtml += `<h3 class="ft5e-gd-category">${cat.category}</h3>`;
-    for (const opt of cat.options) {
-      optionsHtml += `
-        <div class="ft5e-gd-option">
-          <label class="ft5e-gd-option-label">
-            <input type="radio" name="growth-choice" value="${opt.id}" />
-            <strong>${opt.label}</strong>
-          </label>
-          <p class="ft5e-gd-option-desc">${opt.desc}</p>
-          ${opt.needsInput ? `<input type="text" class="ft5e-gd-option-input" data-for="${opt.id}" placeholder="${opt.placeholder}" style="display:none;" />` : ""}
-        </div>
-      `;
-    }
-  }
+  let refineRows = REFINE_OPTIONS.map(opt => `
+    <div class="ft5e-gd-option">
+      <label class="ft5e-gd-option-label">
+        <input type="radio" name="growth-choice" value="${opt.id}" />
+        <strong>${opt.label}</strong>
+      </label>
+      <p class="ft5e-gd-option-desc">${opt.desc}</p>
+    </div>
+  `).join("");
 
   const dialogContent = `
     <div class="ft5e-growth-dialog">
@@ -146,64 +243,41 @@ async function openGrowthDialog(actor) {
       </p>
       <p class="ft5e-gd-info-sub">Seleziona come vuoi utilizzare 1 Growth Token:</p>
       <hr>
-      <div class="ft5e-gd-options">
-        ${optionsHtml}
+      <h3 class="ft5e-gd-category">Ottenere nuove magie</h3>
+      <div class="ft5e-gd-option">
+        <label class="ft5e-gd-option-label">
+          <input type="radio" name="growth-choice" value="nuova-magia" />
+          <strong>Nuova Magia</strong>
+        </label>
+        <p class="ft5e-gd-option-desc">Prendi 1 feature da una nuova magia, seguendo l'ordine dei livelli: 1, 3, 6, 11, 18.</p>
       </div>
-      <hr>
-      <div class="ft5e-gd-notes">
-        <label><strong>Note aggiuntive:</strong></label>
-        <textarea class="ft5e-gd-notes-input" rows="2" placeholder="Dettagli sulla scelta (es. quale magia, quale caratteristica...)"></textarea>
-      </div>
+      <h3 class="ft5e-gd-category">Raffinare magia esistente (scegli 2 opzioni per token)</h3>
+      ${refineRows}
     </div>
   `;
 
-  const dialog = new Dialog({
+  new Dialog({
     title: `Growth Token — ${actor.name}`,
     content: dialogContent,
     buttons: {
-      spend: {
-        icon: '<i class="fas fa-check"></i>',
-        label: "Spendi Token",
+      next: {
+        icon: '<i class="fas fa-arrow-right"></i>',
+        label: "Avanti",
         callback: async (html) => {
           const choice = html.find('input[name="growth-choice"]:checked').val();
           if (!choice) {
-            ui.notifications.warn("Seleziona un'opzione prima di spendere il token!");
+            ui.notifications.warn("Seleziona un'opzione!");
             return;
           }
 
-          const notes = html.find('.ft5e-gd-notes-input').val() || "";
-          const extraInput = html.find(`.ft5e-gd-option-input[data-for="${choice}"]`).val() || "";
-
-          // Find the label for the chosen option
-          let choiceLabel = choice;
-          for (const cat of GROWTH_OPTIONS) {
-            const found = cat.options.find(o => o.id === choice);
-            if (found) { choiceLabel = found.label; break; }
+          if (choice === "nuova-magia") {
+            // → Step 2: select magic, then feature
+            openMagiaSelectDialog(actor, tokens, { id: "nuova-magia", label: "Nuova Magia" }, features);
+          } else {
+            // Refinement: also need to pick which magic/feature to refine
+            const opt = REFINE_OPTIONS.find(o => o.id === choice);
+            openMagiaSelectDialog(actor, tokens, { id: choice, label: opt?.label || choice }, features);
           }
-
-          // Decrement token
-          await setGrowthTokens(actor, tokens - 1);
-
-          // Log the spend
-          await addGrowthLog(actor, {
-            choice: choice,
-            label: choiceLabel,
-            notes: notes,
-            extraInput: extraInput,
-            tokensRemaining: tokens - 1
-          });
-
-          // Notify in chat
-          const chatContent = `
-            <div class="ft5e-growth-chat">
-              <strong>${actor.name}</strong> ha speso 1 Growth Token!<br>
-              <em>${choiceLabel}</em>${notes ? `<br><small>${notes}</small>` : ""}${extraInput ? `<br><small>${extraInput}</small>` : ""}
-              <br><small>Token rimanenti: ${tokens - 1}</small>
-            </div>
-          `;
-          ChatMessage.create({ content: chatContent, speaker: ChatMessage.getSpeaker({ actor }) });
-
-          ui.notifications.info(`Growth Token speso: ${choiceLabel}. Rimanenti: ${tokens - 1}`);
         }
       },
       cancel: {
@@ -211,21 +285,8 @@ async function openGrowthDialog(actor) {
         label: "Annulla"
       }
     },
-    default: "cancel",
-    render: (html) => {
-      // Show/hide text input when "nuova-magia" is selected
-      html.find('input[name="growth-choice"]').on("change", (ev) => {
-        html.find('.ft5e-gd-option-input').hide();
-        const val = ev.currentTarget.value;
-        html.find(`.ft5e-gd-option-input[data-for="${val}"]`).show();
-      });
-    }
-  }, {
-    width: 520,
-    height: "auto",
-    classes: ["ft5e-growth-dialog-window"]
-  });
-  dialog.render(true);
+    default: "cancel"
+  }, { width: 520, height: "auto", classes: ["ft5e-growth-dialog-window"] }).render(true);
 }
 
 /* -------------------------------------------------- */
