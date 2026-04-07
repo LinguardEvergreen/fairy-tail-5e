@@ -2096,71 +2096,841 @@ function parsePrerequisites(desc) {
  *   manaExceedFix — remove Exceed -1/level penalty (boolean)
  */
 const TALENT_AUTOMATION = {
-  // ── Generic / Mana talents ─────────────────────────────────
+  // ═══════════════════════════════════════════════════════════
+  //  GENERIC / MANA TALENTS
+  // ═══════════════════════════════════════════════════════════
   "Serbatoio di Mana Naturale": {
-    asi: { fixed: {}, points: 1, cap: 1 },  // +1 to spellcasting ability (player chooses)
-    manaProf: true  // adds proficiency bonus to max mana
+    asi: { fixed: {}, points: 1, cap: 1 },
+    manaProf: true
   },
-  "Condotto del Mana": {
-    asi: { fixed: {}, points: 1, cap: 1 }  // +1 to spellcasting modifier (player chooses)
+  "Incantesimi Caratteristici (Modificato)": {
+    mpCost: 2,
+    narrative: true  // choose 2 spells with DM
   },
-  "Scultore di incantesimi": {
+  "Efficienza del Mana": {
+    // per-combat: free casts ≤prof cost, prof times. +temp MP on init — handled at runtime
+  },
+  "Ondata di Mana Berserk": {
+    mpCost: 0,
+    damage: { parts: [["1d6", ""]] },
+    // on init with 0 MP: recover castMod. On spell dmg: spend MP for +1d6/MP — runtime
+  },
+  "Sensorialità Magica": {
+    effects: [{ key: "system.attributes.init.bonus", mode: 2, value: "2" }]
+  },
+  "Lancio Migliorato (Modificato)": {
+    activation: { type: "reaction", cost: 1, condition: "Quando lanci un incantesimo" }
+  },
+  "Protezione magica": {
+    activation: { type: "reaction", cost: 1, condition: "Quando tu o un alleato entro 9m subite danni" },
+    mpCost: 1,
+    actionType: "util",
+    target: { value: 1, type: "creature", units: "m" },
+    range: { value: 9, units: "m" }
+  },
+  "Connessione eterea": {
+    // passive: touch spells reach 6m, spend 2 MP for 12m
+  },
+  "Magia potenziata": {
+    mpCost: 2,
+    // spend 2 MP: +castMod to spell DC. spend 3 MP: maximize 1 die
+  },
+  "Infusione di mana": {
+    mpCost: 2,
+    damage: { parts: [["1d4", ""]] },
+    save: { ability: "con", scaling: "spell" },
+    actionType: "save"
+  },
+  "Arma di mana": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    actionType: "util",
+    target: { value: null, type: "self", units: "" },
+    range: { value: null, units: "self" }
+  },
+  "Lanciatore lontano": {
     asi: { fixed: {}, points: 1, cap: 1 }
+    // passive: double spell range
   },
-  "Antica affinità magica": {
-    asi: { fixed: {}, points: 1, cap: 1 }
+  "Forza di volontà": {
+    activation: { type: "bonus", cost: 1, condition: "" }
+    // charge combat actions, spend MP for extra dmg
+  },
+  "Mago pieno di risorse": {
+    narrative: true  // choose 2 more signature spells
+  },
+  "Incantesimo della Gilda": {
+    mpCost: 16,
+    narrative: true  // create guild spell
   },
   "Relazioni di Mana": {
     asi: { fixed: {}, points: 1, cap: 1 },
     mana: 1,
     manaExceedFix: true
   },
-  "Sensorialità Magica": {
-    effects: [{ key: "system.attributes.init.bonus", mode: 2, value: "2" }]  // +2 initiative
+  "Grande Magia": {
+    mpCost: 10,
+    narrative: true  // create unique spell
   },
-  "Precisione del Wordsmith": {
-    effects: [{ key: "system.bonuses.spell.dc", mode: 2, value: "1" }]  // +1 spell save DC
+  "Studente": {
+    narrative: true  // learn spells via study
   },
 
-  // ── Ability Score Increases (fixed) ────────────────────────
+  // ═══════════════════════════════════════════════════════════
+  //  MAGIC CIRCLE TALENTS
+  // ═══════════════════════════════════════════════════════════
+  "Cerchio d'attacco magico": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    mpCost: 1,
+    actionType: "util",
+    target: { value: null, type: "self", units: "" },
+    range: { value: null, units: "self" }
+  },
+  "Cerchi subdoli": {
+    // passive: disguise magic circles (Deception check)
+  },
+  "Condotto del Mana": {
+    asi: { fixed: {}, points: 1, cap: 1 },
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 2,
+    actionType: "util",
+    target: { value: 1, type: "creature", units: "m" },
+    range: { value: 9, units: "m" }
+  },
+  "Cerchi magici stratificati": {
+    mpCost: 2
+    // extra bonus action for magic circles
+  },
+  "Ciclo di feedback arcano": {
+    mpCost: 1
+    // on spell dmg: +1 temp MP. On self dmg: +1d4 next spell
+  },
+  "Scultore di incantesimi": {
+    asi: { fixed: {}, points: 1, cap: 1 },
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 1,
+    actionType: "util"
+  },
+  "Antica affinità magica": {
+    asi: { fixed: {}, points: 1, cap: 1 },
+    mpCost: 2
+    // learn 1 cantrip + 1 1st-level spell
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  //  AIR MAGIC (Magia dell'Aria)
+  // ═══════════════════════════════════════════════════════════
+  "Aria Concentrata": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    mpCost: 1,
+    enhances: "Manipolazione Spazio Aereo"
+  },
+  "Sfera Soffocante": {
+    enhances: "Aerial"
+    // reduce radius, +damage
+  },
+  "Esplosione Concentrata": {
+    mpCost: 1,
+    damage: { parts: [["5d4", "force"]] },
+    actionType: "rsak",
+    enhances: "Zetsu"
+  },
+  "Sbarramento a Ricerca": {
+    asi: { fixed: {}, points: 1, cap: 1 },
+    enhances: "Aerial Shot"
+  },
   "Forma Aerea Potenziata": {
-    asi: { fixed: { dex: 1 }, points: 0, cap: 1 }
+    asi: { fixed: { dex: 1 }, points: 0, cap: 1 },
+    enhances: "Forma Aerea"
+  },
+  "Ciclone Schiacciante": {
+    enhances: "Aerial Phose"
+    // radius 3m, stun on fail
+  },
+  "Risucchio di Mana": {
+    damage: { parts: [["1d8", "necrotic"]] },
+    actionType: "msak",
+    enhances: "Metsu"
+  },
+  "Ascesa in volo": {
+    activation: { type: "action", cost: 1, condition: "" },
+    damage: { parts: [["2d8", ""]] },
+    actionType: "msak",
+    effects: [{ key: "system.attributes.movement.fly", mode: 2, value: "9" }]
+  },
+  "Soffocamento assoluto": {
+    enhances: "Aria Assoluta"
+    // +necrotic damage in domain
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  //  CARD MAGIC (Magia delle Carte)
+  // ═══════════════════════════════════════════════════════════
+  "Fortuna raddoppiata": {
+    mana: 1,
+    mpCost: 1
+    // draw 2 cards choose 1
+  },
+  "Evocazione di carte": {
+    asi: { fixed: {}, points: 1, cap: 1 },
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 1,
+    actionType: "util"
+  },
+  "Finezza del bariere": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    actionType: "util"
+  },
+  "Maestro del mazzo": {
+    activation: { type: "bonus", cost: 1, condition: "" }
+    // cards 1-8 free. Bonus: 2 MP for card + spell combo
+  },
+  "Potenziamento delle carte": {
+    mpCost: 1,
+    enhances: "Card"
+  },
+  "Maestria a doppia carta": {
+    activation: { type: "action", cost: 1, condition: "" },
+    actionType: "util"
+  },
+  "Rinnovo dei Tarocchi": {
+    uses: { max: "1", per: "lr" }
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  //  EARTH MAGIC (Magia della Terra)
+  // ═══════════════════════════════════════════════════════════
+  "Clone terrestre": {
+    activation: { type: "reaction", cost: 1, condition: "Quando subisci un colpo" },
+    mpCost: 2,
+    actionType: "util"
+  },
+  "Evocatore della Terra": {
+    // passive: earth summons +HP, +dmg, +prof to DC
+  },
+  "Baluardo di Pietra": {
+    save: { ability: "str", scaling: "spell" },
+    actionType: "save",
+    enhances: "Baluardo Terrestre"
+  },
+  "Terra duratura": {
+    // passive: earth effects duration doubled. 2 MP for permanent
+  },
+  "Pugno tettonico": {
+    mpCost: 1,
+    damage: { parts: [["20d12", "bludgeoning"]] },
+    save: { ability: "str", scaling: "spell" },
+    actionType: "save",
+    enhances: "Schianto Tettonico"
+  },
+  "Arsenale dell'Alchimista": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    mpCost: 3,
+    damage: { parts: [["4d6", "slashing"]] },
+    save: { ability: "dex", scaling: "spell" },
+    actionType: "save",
+    target: { value: 1, type: "creature", units: "m" },
+    range: { value: 9, units: "m" }
+  },
+  "Bastione della Terra": {
+    // passive: summon CA +castMod/2, +temp HP = level
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  //  FIRE MAGIC (Magia del Fuoco)
+  // ═══════════════════════════════════════════════════════════
+  "Inferno furioso": {
+    mpCost: 1,
+    save: { ability: "dex", scaling: "spell" },
+    actionType: "save",
+    target: { value: 9, type: "cone", units: "m" },
+    range: { value: null, units: "self" },
+    enhances: "Emberstrike"
+  },
+  "Velocità sfolgorante": {
+    // passive: fire speed bonus +3m per spell level
+  },
+  "Detonazione controllata": {
+    mpCost: 1,
+    enhances: "Scorching Burst"
+  },
+  "Alimentato dalla Fiamma": {
+    enhances: "Searing Surge"
+  },
+  "Aura Ardente": {
+    effects: [{ key: "system.traits.dr.value", mode: 2, value: "fire" }]
+    // +castMod fire dmg to melee — runtime
+  },
+  "Carica dell'Inferno": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    actionType: "util",
+    duration: { value: 1, units: "round" }
+  },
+  "Fiamma Eterna": {
+    // passive: Furia della Fenice attacks -1 MP cost
+  },
+  "Fiamma dell'Annientamento": {
+    mpCost: 5,
+    damage: { parts: [["2d8", "fire"]] },
+    save: { ability: "con", scaling: "spell" },
+    actionType: "save",
+    enhances: "Bagliore di Creazione"
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  //  GEAR MAGIC (Magia degli Ingranaggi)
+  // ═══════════════════════════════════════════════════════════
+  "Colpo d'ingranaggio": {
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 2,
+    damage: { parts: [["2d8", "bludgeoning"]] },
+    actionType: "rsak",
+    target: { value: 1, type: "creature", units: "m" },
+    range: { value: 18, units: "m" }
+  },
+  "Ingranaggio di potenziamento personale": {
+    enhances: "Gear Boost"
+  },
+  "Risonanza degli ingranaggi": {
+    mana: 1,
+    mpCost: 1
+    // gear effects have area
+  },
+  "Distribuzione strategica": {
+    enhances: "Gear Field"
+  },
+  "Dono del Forgiaingranaggi": {
+    // passive: Gear Self no longer requires bonus action maintenance
+  },
+  "Famiglia Fantasma": {
+    enhances: "Marcia Fantasma"
+  },
+  "Maestria dell'equipaggiamento": {
+    // passive: maintain 3 gear effects instead of 2
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  //  GUN MAGIC (Magia dei Proiettili)
+  // ═══════════════════════════════════════════════════════════
+  "Maestria dei Proiettili di Mana": {
+    mpCost: 1
+    // passive: create ammo bonus action, basic ammo free
+  },
+  "Tiratore di Mana": {
+    activation: { type: "action", cost: 1, condition: "" }
+    // passive: Mana Bullet free + bonus action reload
   },
   "Fusione Elementale": {
-    asi: { fixed: { dex: 1 }, points: 0, cap: 1 }
+    asi: { fixed: { dex: 1 }, points: 0, cap: 1 },
+    activation: { type: "action", cost: 1, condition: "" },
+    actionType: "rsak"
+  },
+  "Inseguimento Infallibile": {
+    mpCost: 2,
+    enhances: "Tiro a Ricerca"
+  },
+  "Vortice Persistente": {
+    damage: { parts: [["1d8", "bludgeoning"]] },
+    save: { ability: "str", scaling: "spell" },
+    actionType: "save",
+    enhances: "Tiro Tornado"
+  },
+  "Arsenale Fantasma": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    mpCost: 1,
+    actionType: "rwak"
+  },
+  "Esplosione a Doppia Canna": {
+    mpCost: 3,
+    enhances: "Wide Shot"
+  },
+  "Ordigni Esplosivi": {
+    enhances: "Blast Bullet"
+  },
+  "Eruzione Solare": {
+    damage: { parts: [["2d6", "radiant"]] },
+    actionType: "rsak",
+    enhances: "Sunlight Shot"
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  //  CELESTIAL MAGIC (Magia Celeste)
+  // ═══════════════════════════════════════════════════════════
+  "Fortuna Stellare": {
+    mana: 1
+    // enh: celestial fragments enhanced
+  },
+  "Maledizione Celeste": {
+    mpCost: 1
+    // passive: fragments apply curse on enemy
+  },
+  "Echi Celesti": {
+    mpCost: 2,
+    damage: { parts: [["4d6", "force"]] },
+    save: { ability: "str", scaling: "spell" },
+    actionType: "save"
+  },
+  "Favore Celeste": {
+    mpCost: 1,
+    enhances: "Collezione Celeste"
+  },
+  "Chiamata Meteora": {
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 5,
+    damage: { parts: [["2d10", "bludgeoning"], ["2d10", "fire"]] },
+    save: { ability: "dex", scaling: "spell" },
+    actionType: "save",
+    target: { value: 6, type: "sphere", units: "m" },
+    range: { value: 90, units: "m" }
+  },
+  "Guida di Orione": {
+    save: { ability: "con", scaling: "spell" },
+    actionType: "save",
+    enhances: "Orion"
+  },
+  "Cuore di Sema": {
+    damage: { parts: [["6d10", "force"]] },
+    save: { ability: "dex", scaling: "spell" },
+    actionType: "save",
+    enhances: "Sema"
+  },
+  "Abbraccio della gravità": {
+    damage: { parts: [["2d6", "force"]] },
+    save: { ability: "str", scaling: "spell" },
+    actionType: "save",
+    enhances: "Altairis"
+  },
+  "Carica del carro": {
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 6,
+    damage: { parts: [["10d10", "force"]] },
+    save: { ability: "str", scaling: "spell" },
+    actionType: "save",
+    enhances: "Grand Chariot"
+  },
+  "Lame persistenti": {
+    duration: { value: 1, units: "minute" },
+    enhances: "Jiu Leixing"
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  //  LIGHTNING MAGIC (Magia del Fulmine)
+  // ═══════════════════════════════════════════════════════════
+  "Presenza Elettrificata": {
+    enhances: "Personal Cloud"
+  },
+  "Colpo Tonante": {
+    mpCost: 1,
+    damage: { parts: [["2d8", "lightning"]] },
+    save: { ability: "dex", scaling: "spell" },
+    actionType: "save",
+    enhances: "Pugno del Fulmine"
+  },
+  "Arco Elettrizzante": {
+    mpCost: 1,
+    damage: { parts: [["2d8", "lightning"]] },
+    save: { ability: "dex", scaling: "spell" },
+    actionType: "save",
+    enhances: "Raggio ad Arco"
+  },
+  "Riflessi Fulminei": {
+    enhances: "Velocità del Fulmine"
+  },
+  "Fulmine Divisore": {
+    mpCost: 2,
+    damage: { parts: [["8d6", "lightning"]] },
+    actionType: "msak",
+    enhances: "Catena di Fulmini"
+  },
+  "Scarica statica": {
+    mana: 2,
+    save: { ability: "dex", scaling: "spell" },
+    actionType: "save",
+    enhances: "Armi Fulminanti"
+  },
+  "Furia di Thunderhead": {
+    save: { ability: "dex", scaling: "spell" },
+    actionType: "save",
+    enhances: "Fulmine Vero"
+  },
+  "Dono del Fulmine": {
+    enhances: "Corpo del Fulmine"
+  },
+  "Carapace Conduttivo": {
+    damage: { parts: [["1d4", "lightning"]] },
+    enhances: "Parafulmine"
+  },
+  "Slancio del Fulmine": {
+    enhances: "Azione Impetuosa"
+  },
+  "Asta della Tempesta": {
+    save: { ability: "str", scaling: "spell" },
+    actionType: "save",
+    enhances: "Flusso di Fulmine"
+  },
+  "Colpo del Tuono": {
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 4,
+    damage: { parts: [["6d10", "lightning"]] },
+    save: { ability: "dex", scaling: "spell" },
+    actionType: "save",
+    target: { value: 6, type: "sphere", units: "m" },
+    range: { value: null, units: "self" }
+  },
+  "Passo del Tuono": {
+    mana: 2,
+    activation: { type: "reaction", cost: 1, condition: "Quando subisci danno" },
+    damage: { parts: [["3d8", "lightning"]] },
+    save: { ability: "dex", scaling: "spell" },
+    actionType: "save"
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  //  CREATION MAGIC (Magia della Creazione)
+  // ═══════════════════════════════════════════════════════════
+  "Arsenale ampliato": {
+    // passive: learn 2 extra base constructs
+  },
+  "Casting adattivo": {
+    // passive: choose 2nd casting style
+  },
+  "Creazione armoniosa": {
+    // passive: harmonize 2 casting styles
+  },
+  "Magia della Creazione reattiva": {
+    activation: { type: "reaction", cost: 1, condition: "Quando attacchi o sei attaccato" },
+    actionType: "util"
+  },
+  "Costrutto Distintivo": {
+    // passive: chosen construct bonuses
+  },
+  "Artigiano degli Arcani": {
+    // passive: create complex tools, imbue objects
+  },
+  "Duplice Creazione": {
+    activation: { type: "reaction", cost: 1, condition: "" },
+    mpCost: 2,
+    actionType: "util"
+  },
+  "Impeto Elementale": {
+    damage: { parts: [["4d6", ""]] },
+    actionType: "msak"
+  },
+  "Divisione Elementale": {
+    // passive: split construct damage between targets
+  },
+  "Sigillo Eterno": {
+    activation: { type: "action", cost: 1, condition: "" },
+    damage: { parts: [["10d10", ""]] },
+    save: { ability: "str", scaling: "spell" },
+    actionType: "save"
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  //  REQUIP / THE KNIGHT (Ri-equipaggiamento)
+  // ═══════════════════════════════════════════════════════════
+  "Valore del Cavaliere": {
+    effects: [
+      { key: "system.attributes.ac.bonus", mode: 2, value: "1" }
+    ]
+    // +1 AC from Armatura Cuore, +1 dmg from Arma Mente — dmg at runtime
+  },
+  "Arco Spezzante": {
+    mpCost: 1,
+    save: { ability: "dex", scaling: "spell" },
+    actionType: "save",
+    enhances: "Danza a Catena"
+  },
+  "Versatilità del Cambio Stock": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    damage: { parts: [["1d6", ""]] },
+    actionType: "mwak"
+  },
+  "Cento Colpi, Mezza Precisione": {
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 2,
+    actionType: "mwak"
+    // 5 attacks with advantage
   },
   "Campione incrollabile": {
-    asi: { fixed: { con: 1 }, points: 0, cap: 1 }
+    asi: { fixed: { con: 1 }, points: 0, cap: 1 },
+    enhances: "Armatura del Campione"
   },
+  "Ira di Nakagami": {
+    mpCost: 2,
+    damage: { parts: [["3d10", ""]] },
+    save: { ability: "dex", scaling: "spell" },
+    actionType: "save",
+    enhances: "Armatura Nakagami"
+  },
+  "Decreto del Re": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    mpCost: 2,
+    save: { ability: "dex", scaling: "spell" },
+    actionType: "save",
+    enhances: "Spada del Re"
+  },
+  "Asso dell'Arsenale": {
+    activation: { type: "reaction", cost: 1, condition: "Quando sei attaccato" },
+    damage: { parts: [["1d6", ""]] },
+    actionType: "mwak"
+  },
+  "Ascesa dell'Arsenale": {
+    // passive: Armeria Infinita peak
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  //  SAND MAGIC (Magia della Sabbia)
+  // ═══════════════════════════════════════════════════════════
+  "Abbraccio della Tempesta di Sabbia": {
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 2,
+    damage: { parts: [["2d8", "bludgeoning"]] },
+    actionType: "msak"
+  },
+  "Scultore di Sabbia": {
+    activation: { type: "reaction", cost: 1, condition: "Quando un alleato è attaccato" },
+    mpCost: 2,
+    actionType: "util"
+  },
+  "Miraggio del Deserto": {
+    enhances: "Clone di Sabbia"
+  },
+  "Maelstrom Vorticoso": {
+    save: { ability: "str", scaling: "spell" },
+    actionType: "save",
+    enhances: "Sand Buster"
+  },
+  "Tempesta di Sabbia Perforante": {
+    damage: { parts: [["4d8", "piercing"]] },
+    actionType: "msak",
+    enhances: "Lancia di Sabbia"
+  },
+  "Titano della Sabbia": {
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 5,
+    damage: { parts: [["1d10", "bludgeoning"]] },
+    actionType: "util",
+    duration: { value: 1, units: "minute" }
+  },
+  "Turbine del Deserto": {
+    save: { ability: "dex", scaling: "spell" },
+    actionType: "save",
+    enhances: "Sand Buster Migliorato"
+  },
+  "Sbarramento della Tempesta di Sabbia": {
+    mpCost: 1,
+    enhances: "Raml Sayf"
+  },
+  "Catastrofe delle Sabbie Mobili": {
+    damage: { parts: [["6d10", "bludgeoning"]] },
+    save: { ability: "dex", scaling: "spell" },
+    actionType: "save",
+    enhances: "Esplosione di Sabbia"
+  },
+  "Avatar della Tempesta di Sabbia": {
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 10,
+    damage: { parts: [["5d10", "bludgeoning"]] },
+    save: { ability: "str", scaling: "spell" },
+    actionType: "save",
+    duration: { value: 1, units: "minute" }
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  //  SOLID SCRIPT (Scrittura Solida)
+  // ═══════════════════════════════════════════════════════════
+  "Padronanza linguistica": {
+    mpCost: 1,
+    effects: [{ key: "system.skills.arc.value", mode: 4, value: "1" }]
+    // Arcana proficiency/expertise. Extended cast duration 1 MP
+  },
+  "Kanji istantaneo": {
+    mpCost: 2,
+    actionType: "msak",
+    enhances: "Orient Solid Script"
+  },
+  "Precisione del Wordsmith": {
+    effects: [{ key: "system.bonuses.spell.dc", mode: 2, value: "1" }]
+    // +1 spell DC. Reroll 1s on damage
+  },
+  "Cascata Kanji": {
+    mpCost: 2,
+    enhances: "Fioritura del Maestro"
+  },
+  "Esperto del Solid Script": {
+    asi: { fixed: {}, points: 1, cap: 1 },
+    activation: { type: "reaction", cost: 1, condition: "" },
+    mpCost: 1,
+    actionType: "util"
+  },
+  "Parole runiche": {
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 2,
+    actionType: "util",
+    duration: { value: 10, units: "minute" }
+  },
+  "Parole veloci": {
+    activation: { type: "bonus", cost: 1, condition: "" }
+    // passive: words ≤2 MP as bonus action
+  },
+  "Scrittura silenziosa": {
+    // passive: cast without verbal components
+  },
+  "Dominio del Master": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    enhances: "Dominio Kanji"
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  //  TAKE OVER (Possessione)
+  // ═══════════════════════════════════════════════════════════
   "Forma Feroce": {
     asi: { fixed: { con: 1 }, points: 0, cap: 1 }
+    // Form AC +1, reduced revert cost
+  },
+  "Trasformazione sfrenata": {
+    save: { ability: "wis", scaling: "spell" },
+    actionType: "save"
+    // passive: wild power with risk (WIS save to control)
+  },
+  "Infusione dell'Anima": {
+    save: { ability: "wis", scaling: "spell" },
+    actionType: "save"
+    // after defeating creature: WIS save to capture essence
+  },
+  "Spirito Indomito": {
+    mpCost: 4
+    // passive: double wild adaptation + 4 MP burst
+  },
+  "Cambio Reattivo": {
+    activation: { type: "reaction", cost: 1, condition: "Quando sei bersaglio di un attacco" },
+    actionType: "util"
+  },
+  "Vero Adattamento": {
+    mpCost: 2
+    // passive: 2 MP manifest 2 partial transforms
+  },
+  "Anima Espansa": {
+    // passive: choose 2nd beast soul creature
+  },
+  "Potenza Unificata": {
+    enhances: "Fusione Primordiale"
+  },
+  "Evoluzione Scatenata": {
+    // passive: extra abilities from beast souls
+  },
+  "Pinnacolo dell'Anima": {
+    // passive: transcendent form, +2 stat, higher CR
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  //  WATER MAGIC (Magia dell'Acqua)
+  // ═══════════════════════════════════════════════════════════
+  "Armamento del Re": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    mpCost: 5,
+    actionType: "util"
+  },
+  "Potenza acquatica": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    mpCost: 1,
+    damage: { parts: [["1d6", ""]] },
+    actionType: "util"
+  },
+  "Hydro Fist": {
+    mpCost: 2,
+    damage: { parts: [["1d6", "bludgeoning"]] },
+    actionType: "msak",
+    enhances: "Pugno d'Acqua"
+  },
+  "Adattamento acquatico": {
+    activation: { type: "reaction", cost: 1, condition: "" },
+    mpCost: 2,
+    damage: { parts: [["2d8", "slashing"]] },
+    actionType: "mwak"
+  },
+  "Controllo delle maree": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    mpCost: 2,
+    enhances: "Ondata di Marea"
+  },
+  "Sosia acquatico": {
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 12,
+    actionType: "util",
+    duration: { value: 1, units: "hour" }
+  },
+  "Sbarramento di marea": {
+    activation: { type: "action", cost: 1, condition: "" },
+    damage: { parts: [["1d4", "force"]] },
+    actionType: "msak"
+  },
+  "L'Abbraccio della Profondità": {
+    damage: { parts: [["1d8", ""]] },
+    save: { ability: "con", scaling: "spell" },
+    actionType: "save",
+    enhances: "Morte Abissale"
+  },
+  "Furia delle Maree": {
+    activation: { type: "reaction", cost: 1, condition: "" },
+    enhances: "Furia dell'Oceano"
+  },
+  "Dominio del Sovrano": {
+    damage: { parts: [["4d6", "force"]] },
+    save: { ability: "str", scaling: "spell" },
+    actionType: "save",
+    enhances: "Sovrano del Mare"
+  },
+  "La chiamata del Leviatano": {
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 5,
+    damage: { parts: [["5d8", "bludgeoning"]] },
+    save: { ability: "str", scaling: "spell" },
+    actionType: "save",
+    target: { value: 9, type: "sphere", units: "m" },
+    range: { value: 27, units: "m" }
+  },
+
+  // ═══════════════════════════════════════════════════════════
+  //  PHYSICAL / COMBAT TALENTS
+  // ═══════════════════════════════════════════════════════════
+  "Riflessi potenziati": {
+    asi: { fixed: { dex: 1 }, points: 0, cap: 1 },
+    effects: [{ key: "system.attributes.ac.bonus", mode: 2, value: "1" }]
+  },
+  "Finezza acrobatica": {
+    effects: [{ key: "system.attributes.ac.bonus", mode: 2, value: "1" }]
+  },
+  "Recupero corporeo": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    mpCost: 1,
+    actionType: "heal",
+    damage: { parts: [["1d10 + @abilities.con.mod", "healing"]] },
+    uses: { max: "@abilities.con.mod", per: "lr" },
+    target: { value: null, type: "self", units: "" },
+    range: { value: null, units: "self" }
+  },
+  "Volontà di Ferro": {
+    save: { ability: "con", scaling: "spell" },
+    actionType: "save"
+    // passive: advantage charm/fear, CON save concentration advantage
+  },
+  "Maestria nelle armi": {
+    damage: { parts: [["1d10", ""]] },
+    actionType: "mwak"
+    // passive: +1 attack chosen weapon, opportunity attack
+  },
+  "Adattamento ambientale": {
+    activation: { type: "bonus", cost: 1, condition: "" }
+    // passive: ignore difficult terrain, climb/swim normal
+  },
+  "Combattente adattabile": {
+    // passive: 2 skill profs, dodge as bonus
   },
   "Sangue di drago": {
     asi: { fixed: { con: 1 }, points: 0, cap: 1 },
-    effects: [
-      { key: "system.traits.dr.value", mode: 2, value: "poison" }  // resistance to poison
-    ]
-  },
-  "Riflessi potenziati": {
-    asi: { fixed: { dex: 1 }, points: 0, cap: 1 },
-    effects: [{ key: "system.attributes.ac.bonus", mode: 2, value: "1" }]  // +1 AC
-  },
-  "Sentinale a distanza": {
-    asi: { fixed: { dex: 1 }, points: 0, cap: 1 }
-  },
-  "Arguto": {
-    asi: { fixed: { int: 1 }, points: 0, cap: 1 }
-  },
-  "Esperto del Solid Script": {
-    asi: { fixed: {}, points: 1, cap: 1 }  // +1 Int or Wis (player chooses)
-  },
-
-  // ── AC / Defense ───────────────────────────────────────────
-  "Finezza acrobatica": {
-    effects: [{ key: "system.attributes.ac.bonus", mode: 2, value: "1" }]  // +1 AC
-  },
-  "Aura Ardente": {
-    effects: [{ key: "system.traits.dr.value", mode: 2, value: "fire" }]  // resistance to fire
+    effects: [{ key: "system.traits.dr.value", mode: 2, value: "poison" }],
+    uses: { max: "1", per: "sr" }  // 1/sr breath attack
   },
   "Durabilità migliorata": {
     effects: [
@@ -2169,24 +2939,67 @@ const TALENT_AUTOMATION = {
       { key: "system.traits.dr.value", mode: 2, value: "slashing" }
     ]
   },
-
-  // ── Mana bonuses (flat) ────────────────────────────────────
-  "Fortuna raddoppiata": { mana: 1 },
-  "Risonanza degli ingranaggi": { mana: 1 },
-  "Fortuna Stellare": { mana: 1 },
-  "Scarica statica": { mana: 2 },
-  "Passo del Tuono": { mana: 2 },
-
-  // ── Spellcasting modifier bonus (via magic-specific talents) ──
-  "Sbarramento a Ricerca": {
-    asi: { fixed: {}, points: 1, cap: 1 }
+  "Durabilità avanzata": {
+    // passive: immunity 1 phys type, temp HP on hit
   },
-  "Evocazione di carte": {
-    asi: { fixed: {}, points: 1, cap: 1 }
+  "Attaccabrighe": {
+    damage: { parts: [["1d4", "bludgeoning"]] },
+    actionType: "mwak"
+  },
+  "Attaccabrighe: Maestria": {
+    damage: { parts: [["1d8", "bludgeoning"]] },
+    save: { ability: "str", scaling: "spell" },
+    actionType: "mwak"
+    // stunning strike (STR save), extra attack
+  },
+  "Sentinale a distanza": {
+    asi: { fixed: { dex: 1 }, points: 0, cap: 1 }
+    // 1 MP: -3m speed on ranged hit
+  },
+  "Arguto": {
+    asi: { fixed: { int: 1 }, points: 0, cap: 1 }
+    // Use INT for initiative. Bonus action plan
   },
 
-  // Note: "Adattamento ambientale" (ignore difficult terrain) and "Attaccabrighe" (+1d4 unarmed)
-  // have effects that require DM adjudication and can't be cleanly automated via Active Effects
+  // ═══════════════════════════════════════════════════════════
+  //  UTILITY / SPECIAL TALENTS
+  // ═══════════════════════════════════════════════════════════
+  "Comunicazione Telepatica": {
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 1,
+    actionType: "util",
+    target: { value: 1, type: "creature", units: "m" },
+    range: { value: 18, units: "m" },
+    duration: { value: 10, units: "minute" }
+  },
+  "Vera Telepatia": {
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 3,
+    save: { ability: "wis", scaling: "spell" },
+    actionType: "save",
+    target: { value: 6, type: "creature", units: "m" },
+    range: { value: 18, units: "m" }
+  },
+  "Coreografia magica": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    mpCost: 1,
+    actionType: "util"
+  },
+  "Ballerina eterea": {
+    activation: { type: "action", cost: 1, condition: "" },
+    mpCost: 3,
+    damage: { parts: [["1d6", "force"]] },
+    actionType: "msak"
+  },
+  "Magia di appiattimento": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    mpCost: 1,
+    actionType: "util"
+  },
+  "Magia del Portale": {
+    activation: { type: "bonus", cost: 1, condition: "" },
+    actionType: "util"
+  }
 };
 
 function enrichTalenti() {
@@ -2215,6 +3028,11 @@ function enrichTalenti() {
     // Apply automation if defined for this talent
     const auto = TALENT_AUTOMATION[t.name];
     if (auto) {
+      // Skip narrative-only talents (they keep default feat data)
+      if (auto.narrative) {
+        automatedCount++;
+        continue;
+      }
       automatedCount++;
 
       // AbilityScoreImprovement advancement
@@ -2257,8 +3075,81 @@ function enrichTalenti() {
         });
       }
 
+      // Activation type (action, bonus, reaction)
+      if (auto.activation) {
+        t.system.activation = {
+          type: auto.activation.type || "",
+          cost: auto.activation.cost ?? 1,
+          condition: auto.activation.condition || ""
+        };
+      }
+
+      // Damage parts
+      if (auto.damage) {
+        t.system.damage = {
+          parts: auto.damage.parts || [],
+          versatile: ""
+        };
+      }
+
+      // Save DC
+      if (auto.save) {
+        t.system.save = {
+          ability: auto.save.ability || "",
+          dc: null,
+          scaling: auto.save.scaling || "spell"
+        };
+      }
+
+      // Action type
+      if (auto.actionType) {
+        t.system.actionType = auto.actionType;
+      }
+
+      // Target
+      if (auto.target) {
+        t.system.target = {
+          value: auto.target.value,
+          type: auto.target.type || "",
+          units: auto.target.units || ""
+        };
+      }
+
+      // Range
+      if (auto.range) {
+        t.system.range = {
+          value: auto.range.value,
+          long: null,
+          units: auto.range.units || ""
+        };
+      }
+
+      // Duration
+      if (auto.duration) {
+        t.system.duration = {
+          value: auto.duration.value,
+          units: auto.duration.units || ""
+        };
+      }
+
+      // Uses (limited uses per rest/combat)
+      if (auto.uses) {
+        t.system.uses = {
+          value: null,
+          max: auto.uses.max || "",
+          per: auto.uses.per || ""
+        };
+      }
+
+      // Flags for runtime systems (MP cost, enhancement linking)
+      if (auto.mpCost || auto.enhances) {
+        if (!t.flags) t.flags = {};
+        t.flags["fairy-tail-5e"] = {};
+        if (auto.mpCost) t.flags["fairy-tail-5e"].mpCost = auto.mpCost;
+        if (auto.enhances) t.flags["fairy-tail-5e"].enhances = auto.enhances;
+      }
+
       // Mana bonuses are handled at runtime by mana-points.mjs (hardcoded by talent name)
-      // No flags needed — the mana system scans actor items by name
     }
   }
 

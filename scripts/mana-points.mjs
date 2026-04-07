@@ -706,6 +706,173 @@ Hooks.on("updateItem", (item, changes, options, userId) => {
 });
 
 /* -------------------------------------------------- */
+/*  Hooks — Talent MP Consumption                     */
+/* -------------------------------------------------- */
+
+/**
+ * When a feat with fairy-tail-5e.mpCost flag is used, deduct MP and show chat message.
+ */
+Hooks.on("dnd5e.preUseActivity", (activity, usageConfig, dialogConfig, messageConfig) => {
+  if (!isEnabled()) return true;
+  const item = activity.item;
+  if (item?.type !== "feat") return true;
+  const actor = activity.actor;
+  if (!actor || actor.type !== "character") return true;
+
+  const mpCost = item.flags?.["fairy-tail-5e"]?.mpCost;
+  if (!mpCost || mpCost <= 0) return true;
+
+  const mana = getManaData(actor);
+  if (mpCost > mana.value) {
+    ui.notifications.warn(`Punti Mana insufficienti per ${item.name}! Costo: ${mpCost} PM, disponibili: ${mana.value} PM.`);
+    return false;
+  }
+
+  // Deduct mana
+  setManaValue(actor, mana.value - mpCost);
+
+  // Chat notification
+  ChatMessage.create({
+    content: `<div class="ft5e-mana-chat"><strong>${actor.name}</strong> usa <em>${item.name}</em>.<br><i class="fas fa-hat-wizard"></i> Mana: ${mana.value} \u2192 ${mana.value - mpCost} PM (\u2212${mpCost} PM)</div>`,
+    speaker: ChatMessage.getSpeaker({ actor }),
+    whisper: []
+  });
+
+  return true;
+});
+
+/* -------------------------------------------------- */
+/*  Hooks — Enhancement Talent Dialog                 */
+/* -------------------------------------------------- */
+
+/**
+ * When an ability is used, check if the actor has enhancement talents that
+ * match it and offer to activate them.
+ */
+Hooks.on("dnd5e.preUseActivity", (activity, usageConfig, dialogConfig, messageConfig) => {
+  if (!isEnabled()) return true;
+  const item = activity.item;
+  if (!item) return true;
+  const actor = activity.actor;
+  if (!actor || actor.type !== "character") return true;
+
+  // Find enhancement talents that match this ability
+  const itemName = item.name?.toLowerCase() || "";
+  const enhancements = [];
+
+  for (const feat of actor.items) {
+    if (feat.type !== "feat") continue;
+    const enhances = feat.flags?.["fairy-tail-5e"]?.enhances;
+    if (!enhances) continue;
+    // Check if this talent enhances the current ability
+    if (itemName.includes(enhances.toLowerCase())) {
+      enhancements.push({
+        talent: feat,
+        mpCost: feat.flags?.["fairy-tail-5e"]?.mpCost || 0
+      });
+    }
+  }
+
+  if (enhancements.length === 0) return true;
+
+  // Show enhancement dialog for each matching talent (non-blocking)
+  const mana = getManaData(actor);
+  for (const enh of enhancements) {
+    _showEnhancementDialog(actor, item, enh.talent, enh.mpCost, mana);
+  }
+
+  return true;
+});
+
+/**
+ * Display a dialog asking the player whether to activate an enhancement talent.
+ */
+async function _showEnhancementDialog(actor, baseItem, talentItem, mpCost, mana) {
+  const canAfford = mana.value >= mpCost;
+  const costText = mpCost > 0
+    ? `Costo aggiuntivo: ${mpCost} PM (${mana.value}/${mana.max} disponibili)`
+    : "Nessun costo aggiuntivo";
+
+  const desc = talentItem.system?.description?.value || "";
+  const cleanDesc = desc.replace(/<[^>]*>/g, "").replace(/\*\*/g, "").replace(/\*/g, "").substring(0, 200);
+
+  const result = await Dialog.confirm({
+    title: `${talentItem.name} \u2014 Potenziamento`,
+    content: `
+      <p>Vuoi attivare <strong>${talentItem.name}</strong> insieme a <strong>${baseItem.name}</strong>?</p>
+      <p><em>${costText}</em></p>
+      ${!canAfford ? '<p style="color:red;"><strong>Mana insufficiente!</strong></p>' : ''}
+    `,
+    yes: () => true,
+    no: () => false,
+    defaultYes: canAfford
+  });
+
+  if (result && canAfford && mpCost > 0) {
+    await setManaValue(actor, mana.value - mpCost);
+    ChatMessage.create({
+      content: `<div class="ft5e-mana-chat"><strong>${actor.name}</strong> attiva <em>${talentItem.name}</em> con <em>${baseItem.name}</em>!<br><i class="fas fa-hat-wizard"></i> Mana: ${mana.value} \u2192 ${mana.value - mpCost} PM (\u2212${mpCost} PM)</div>`,
+      speaker: ChatMessage.getSpeaker({ actor }),
+      whisper: []
+    });
+  }
+}
+
+/* -------------------------------------------------- */
+/*  Hooks — Per-Combat Tracking Reset                 */
+/* -------------------------------------------------- */
+
+/**
+ * Reset per-combat uses on initiative roll and trigger combat-start talents.
+ */
+Hooks.on("dnd5e.rollInitiative", (actor) => {
+  if (!isEnabled()) return;
+  if (!actor || actor.type !== "character") return;
+
+  // Reset uses for talents with per-combat tracking
+  for (const item of actor.items) {
+    if (item.type !== "feat") continue;
+    if (item.system?.uses?.per === "charges" && item.system?.uses?.max) {
+      const maxVal = item.system.uses.max;
+      item.update({ "system.uses.value": typeof maxVal === "number" ? maxVal : parseInt(maxVal) || 0 });
+    }
+  }
+
+  // Efficienza del Mana: grant temp mana on initiative
+  const hasEfficienza = actor.items.find(i => i.type === "feat" && i.name?.toLowerCase().includes("efficienza del mana"));
+  if (hasEfficienza) {
+    const prof = actor.system?.attributes?.prof ?? 0;
+    const tempMana = Math.ceil(prof / 2);
+    if (tempMana > 0) {
+      const mana = getManaData(actor);
+      setManaValue(actor, Math.min(mana.value + tempMana, mana.max));
+      ChatMessage.create({
+        content: `<div class="ft5e-mana-chat"><strong>${actor.name}</strong> ottiene ${tempMana} PM temporanei da <em>Efficienza del Mana</em>!</div>`,
+        speaker: ChatMessage.getSpeaker({ actor })
+      });
+    }
+  }
+
+  // Ondata di Mana Berserk: recover castMod MP when at 0
+  const hasBerserk = actor.items.find(i => i.type === "feat" && i.name?.toLowerCase().includes("ondata di mana berserk"));
+  if (hasBerserk) {
+    const mana = getManaData(actor);
+    if (mana.value === 0) {
+      const classes = getActorFT5eClasses(actor);
+      if (classes.length) {
+        const mod = _getCastingMod(actor, classes[0].classItem, classes[0].config);
+        const recovery = Math.max(1, mod);
+        setManaValue(actor, recovery);
+        ChatMessage.create({
+          content: `<div class="ft5e-mana-chat"><strong>${actor.name}</strong> recupera ${recovery} PM da <em>Ondata di Mana Berserk</em>!</div>`,
+          speaker: ChatMessage.getSpeaker({ actor })
+        });
+      }
+    }
+  }
+});
+
+/* -------------------------------------------------- */
 /*  Public API (exposed on the module)                */
 /* -------------------------------------------------- */
 
