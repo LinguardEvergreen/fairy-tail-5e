@@ -429,6 +429,162 @@ function extractEquipaggiamento() {
 }
 
 // ── INCANTESIMI (pages 180-226) ─────────────────────────────────────────────
+
+/** Map section header keywords to magia names */
+const SPELL_SECTION_MAP = [
+  { keywords: ["Spazio Aereo"], magia: "Magia dello Spazio Aereo" },
+  { keywords: ["magia delle carte", "carte"], magia: "Magia delle Carte" },
+  { keywords: ["magia della terra", "della terra"], magia: "Magia della Terra" },
+  { keywords: ["magia del fuoco", "del fuoco"], magia: "Magia del Fuoco" },
+  { keywords: ["ingranaggio", "Ingranaggi"], magia: "Magia degli Ingranaggi" },
+  { keywords: ["pistola", "Armi da Fuoco"], magia: "Magia delle Armi da Fuoco" },
+  { keywords: ["Corpo Celeste", "corpo celeste"], magia: "Magia del Corpo Celeste" },
+  { keywords: ["Fulmine", "fulmine"], magia: "Magia del Fulmine" },
+  { keywords: ["Creazione", "creazione"], magia: "Magia della Creazione" },
+  { keywords: ["Cambio Stock", "cambio stock"], magia: "Magia del Cambio Stock" },
+  { keywords: ["Sabbia", "sabbia"], magia: "Magia della Sabbia" },
+  { keywords: ["Solid Script", "solid script"], magia: "Magia del Solid Script" },
+  { keywords: ["Take Over", "take over"], magia: "Magia di Take Over" },
+  { keywords: ["acqua", "Acqua"], magia: "Magia dell'Acqua" },
+];
+
+function matchSpellSection(line) {
+  for (const entry of SPELL_SECTION_MAP) {
+    for (const kw of entry.keywords) {
+      if (line.includes(kw)) return entry.magia;
+    }
+  }
+  return null;
+}
+
+/** Parse spell level and school from the italic metadata line */
+function parseSpellLevelSchool(text) {
+  const clean = text.replace(/^\*+|\*+$/g, "").trim().toLowerCase();
+  let level = null;
+  let school = null;
+  let ritual = false;
+
+  // Check ritual
+  if (clean.includes("rituale") || clean.includes("ritual")) ritual = true;
+
+  // Cantrip detection
+  if (clean.includes("trucco") || clean.includes("trucchetto") || clean.includes("cantrip")) {
+    level = 0;
+  }
+
+  // Level number
+  const lvlMatch = clean.match(/(\d+)°?\s*livello/);
+  if (lvlMatch) level = parseInt(lvlMatch[1]);
+
+  // School detection
+  const schools = {
+    "evocazione": "evo", "abiurazione": "abj", "trasmutazione": "trs",
+    "divinazione": "div", "necromanzia": "nec", "ammaliamento": "enc",
+    "illusione": "ill", "invocazione": "con", "conjuration": "con"
+  };
+  for (const [it, en] of Object.entries(schools)) {
+    if (clean.includes(it)) { school = en; break; }
+  }
+
+  return { level: level ?? 0, school: school || "evo", ritual };
+}
+
+/** Parse spell metadata fields from raw content lines */
+function parseSpellMeta(rawLines) {
+  const meta = { castTime: null, range: null, components: null, duration: null, manaCost: null };
+
+  for (const line of rawLines) {
+    const t = line.trim();
+    // Casting time
+    let m = t.match(/\*\*Tempo di lancio:\*\*\s*::?\s*(.+)/i);
+    if (m) { meta.castTime = m[1].trim(); continue; }
+    // Range
+    m = t.match(/\*\*(?:Portata|Intervallo):\*\*\s*::?\s*(.+)/i);
+    if (m) { meta.range = m[1].trim(); continue; }
+    // Components
+    m = t.match(/\*\*(?:Componenti?|Componente):\*\*\s*::?\s*(.+)/i);
+    if (m) { meta.components = m[1].trim(); continue; }
+    // Duration
+    m = t.match(/\*\*Durata:\*\*\s*::?\s*(.+)/i);
+    if (m) { meta.duration = m[1].trim(); continue; }
+    // Mana cost
+    m = t.match(/\*\*(?:Costo di mana|Punti mana):\*\*\s*::?\s*(\d+)\s*(?:MP|PM)/i);
+    if (m) { meta.manaCost = parseInt(m[1]); continue; }
+  }
+  return meta;
+}
+
+/** Parse casting time to dnd5e activation object */
+function parseActivation(castTime) {
+  if (!castTime) return { type: "action", cost: 1 };
+  const lower = castTime.toLowerCase();
+  if (lower.includes("bonus") || lower.includes("azione bonus")) return { type: "bonus", cost: 1 };
+  if (lower.includes("reazione") || lower.includes("reaction")) return { type: "reaction", cost: 1 };
+  if (lower.includes("minuto") || lower.includes("minuti")) {
+    const n = lower.match(/(\d+)/);
+    return { type: "minute", cost: n ? parseInt(n[1]) : 1 };
+  }
+  if (lower.includes("ora") || lower.includes("ore")) {
+    const n = lower.match(/(\d+)/);
+    return { type: "hour", cost: n ? parseInt(n[1]) : 1 };
+  }
+  return { type: "action", cost: 1 };
+}
+
+/** Parse range to dnd5e range object */
+function parseRange(rangeStr) {
+  if (!rangeStr) return { value: null, units: "" };
+  const lower = rangeStr.toLowerCase().trim();
+  if (lower.includes("sé") || lower.includes("se stesso") || lower === "sè" || lower === "personale")
+    return { value: null, units: "self" };
+  if (lower.includes("tocco") || lower.includes("contatto"))
+    return { value: null, units: "touch" };
+  const mMatch = lower.match(/(\d+)\s*(?:metr[io]|m\b)/);
+  if (mMatch) return { value: parseInt(mMatch[1]), units: "m" };
+  const kmMatch = lower.match(/(\d+)\s*(?:km|chilometr)/);
+  if (kmMatch) return { value: parseInt(kmMatch[1]) * 1000, units: "m" };
+  return { value: null, units: "" };
+}
+
+/** Parse duration to dnd5e duration object */
+function parseDuration(durStr) {
+  if (!durStr) return { value: null, units: "" };
+  const lower = durStr.toLowerCase().trim();
+  if (lower.includes("istantan")) return { value: null, units: "inst" };
+  if (lower.includes("concentrazione")) {
+    const minMatch = lower.match(/(\d+)\s*minut/);
+    if (minMatch) return { value: parseInt(minMatch[1]), units: "minute", concentration: true };
+    const hMatch = lower.match(/(\d+)\s*or[ae]/);
+    if (hMatch) return { value: parseInt(hMatch[1]), units: "hour", concentration: true };
+    const rMatch = lower.match(/(\d+)\s*round/);
+    if (rMatch) return { value: parseInt(rMatch[1]), units: "round", concentration: true };
+    return { value: 1, units: "minute", concentration: true };
+  }
+  const minMatch = lower.match(/(\d+)\s*minut/);
+  if (minMatch) return { value: parseInt(minMatch[1]), units: "minute" };
+  const hMatch = lower.match(/(\d+)\s*or[ae]/);
+  if (hMatch) return { value: parseInt(hMatch[1]), units: "hour" };
+  const rMatch = lower.match(/(\d+)\s*round/);
+  if (rMatch) return { value: parseInt(rMatch[1]), units: "round" };
+  const dMatch = lower.match(/(\d+)\s*giorn/);
+  if (dMatch) return { value: parseInt(dMatch[1]), units: "day" };
+  return { value: null, units: "" };
+}
+
+/** Parse components string */
+function parseComponents(compStr) {
+  if (!compStr) return { vocal: false, somatic: false, material: false, value: "" };
+  const upper = compStr.toUpperCase();
+  const vocal = upper.includes("V");
+  const somatic = upper.includes("S");
+  // Material: "M" or anything in parentheses
+  let material = upper.includes("M") || compStr.includes("(");
+  let matValue = "";
+  const matMatch = compStr.match(/\(([^)]+)\)/);
+  if (matMatch) { material = true; matValue = matMatch[1].trim(); }
+  return { vocal, somatic, material, value: matValue };
+}
+
 function extractIncantesimi() {
   const items = [];
   const seen = new Set();
@@ -437,53 +593,73 @@ function extractIncantesimi() {
 
   let currentSpell = null;
   let contentLines = [];
+  let rawLines = []; // original lines for metadata parsing
+  let currentMagia = null;
 
   // Skip section headers that contain these keywords
   const skipKeywords = [
-    "Come funzionano", "Incantesimi d", "Incantesimi m", "Elenco",
+    "Come funzionano", "Elenco",
     "Capitolo", "Equipaggiamento", "Nuove regole", "Sovraccarico",
-    "Limite", "Nuove Condizioni", "Incantesimi della",
-    "Incantesimi di", "Incantesimi dello"
+    "Limite", "Nuove Condizioni"
   ];
+
+  function pushSpell() {
+    if (!currentSpell || seen.has(currentSpell)) return;
+
+    // Parse the italic level/school line (first non-empty raw line after heading)
+    let levelSchool = { level: 0, school: "evo", ritual: false };
+    let meta = parseSpellMeta(rawLines);
+    for (const rl of rawLines) {
+      const t = rl.trim();
+      if (t.startsWith("*") && !t.startsWith("**")) {
+        levelSchool = parseSpellLevelSchool(t);
+        break;
+      }
+    }
+
+    items.push({
+      name: currentSpell,
+      description: mdToHtml(contentLines),
+      _magia: currentMagia,
+      _meta: { ...levelSchool, ...meta }
+    });
+    seen.add(currentSpell);
+  }
 
   for (const line of pageLines) {
     const trimmed = line.trim();
+
+    // Track magia sections: # headings with "Incantesimi"
+    if (trimmed.startsWith("# ") && !trimmed.startsWith("## ")) {
+      if (trimmed.toLowerCase().includes("incantesim")) {
+        const matched = matchSpellSection(trimmed);
+        if (matched) currentMagia = matched;
+      }
+      continue;
+    }
 
     // Spell headings: ## <span style="font-size:20px"> {{Color:XXX SpellName}} </span>
     const isSpellHeading = trimmed.startsWith("## ") && trimmed.includes("Color:") &&
         !trimmed.includes("ScalySansSmallCaps") && !trimmed.includes("NodestoCaps") &&
         !trimmed.includes("ScalySansRemake") && !trimmed.includes("BookInsanity");
 
-    // Also catch ## headings for spells that don't use Color: (some spell sections)
-    const isPlainSpellHeading = trimmed.startsWith("## ") && trimmed.includes("font-size:20px") &&
-        trimmed.includes("Color:");
-
-    if (isSpellHeading || isPlainSpellHeading) {
+    if (isSpellHeading) {
       const name = cleanName(trimmed);
-
-      // Skip section headers
       if (!name || name.length < 2 || skipKeywords.some(k => name.includes(k))) continue;
 
-      if (currentSpell && !seen.has(currentSpell)) {
-        items.push({ name: currentSpell, description: mdToHtml(contentLines) });
-        seen.add(currentSpell);
-      }
+      pushSpell();
       currentSpell = name;
       contentLines = [line];
+      rawLines = [];
       continue;
     }
 
-    // Skip H1 section headers (# Incantesimi di magia...)
-    if (trimmed.startsWith("# ") && !trimmed.startsWith("## ")) {
-      // This is a section header, don't add to current spell
-      continue;
+    if (currentSpell) {
+      contentLines.push(line);
+      rawLines.push(line);
     }
-
-    if (currentSpell) contentLines.push(line);
   }
-  if (currentSpell && !seen.has(currentSpell)) {
-    items.push({ name: currentSpell, description: mdToHtml(contentLines) });
-  }
+  pushSpell();
 
   writeJson("incantesimi.json", items);
 }
@@ -744,10 +920,26 @@ function extractFeatureMagie() {
   }
   if (curMagia) magiaSections.push({ name: curMagia, lines: curLines });
 
-  // Check Solid Script fallback
+  // Check Solid Script fallback — if missing, split it from Sabbia
   if (!magiaSections.find(s => s.name === "Magia del Solid Script")) {
     const ssPages = getPageRange(102, 106);
     magiaSections.splice(11, 0, { name: "Magia del Solid Script", lines: ssPages });
+
+    // Remove Solid Script lines from Sabbia section to avoid duplicates
+    const sabbiaSection = magiaSections.find(s => s.name === "Magia della Sabbia");
+    if (sabbiaSection) {
+      // Find the first Solid Script feature line in Sabbia and cut there
+      const cutIdx = sabbiaSection.lines.findIndex(l =>
+        l.trim().startsWith("### ") && (
+          cleanName(l).toLowerCase().includes("scrittura solida") ||
+          cleanName(l).toLowerCase().includes("solid script") ||
+          cleanName(l).toLowerCase().includes("forgiatore di parole")
+        )
+      );
+      if (cutIdx > 0) {
+        sabbiaSection.lines = sabbiaSection.lines.slice(0, cutIdx);
+      }
+    }
   }
 
   // Extract features from each magia section
@@ -1110,45 +1302,155 @@ const CLASS_CONFIG = {
     identifier: "mago-combattente",
     asiLevels: [4, 8, 12, 16, 19],
     asiFeatureKeyword: "Incremento dei Punteggi",
-    asiTitle: "Incremento dei Punteggi di Caratteristica"
+    asiTitle: "Incremento dei Punteggi di Caratteristica",
+    featureLevels: {
+      1: ["Magia", "Senza Freni"],
+      3: ["Risonanza Distruttiva"],
+      7: ["Magia Potenziata"],
+      10: ["Risonanza Distruttiva"],
+      14: ["Senza Freni"],
+      17: ["Risonanza Distruttiva"],
+      20: ["Incantesimo Personale"]
+    }
   },
   "Mago Difensore": {
     identifier: "mago-difensore",
     asiLevels: [4, 8, 12, 16, 19],
     asiFeatureKeyword: "Incremento dei Punteggi",
-    asiTitle: "Incremento dei Punteggi di Caratteristica"
+    asiTitle: "Incremento dei Punteggi di Caratteristica",
+    featureLevels: {
+      1: ["Magia", "Pelle Indotta dal Mana"],
+      2: ["Resilienza del Baluardo"],
+      3: ["Ritorsione del Baluardo"],
+      5: ["Attacco Extra"],
+      6: ["Provocazione"],
+      7: ["Maestro dello Scudo"],
+      10: ["Baluardo Adamantino"],
+      13: ["Posizione Inamovibile"],
+      14: ["Posizione Difensiva"],
+      17: ["Posizione Inamovibile Potenziata"],
+      18: ["Corpo di Guerriero"]
+    }
   },
   "Mago Furtivo": {
     identifier: "mago-furtivo",
     asiLevels: [4, 8, 12, 16, 19],
     asiFeatureKeyword: "Miglioramento del punteggio",
-    asiTitle: "Miglioramento del punteggio di caratteristica"
+    asiTitle: "Miglioramento del punteggio di caratteristica",
+    featureLevels: {
+      1: ["Magia nata o insegnata:", "Maestria", "Attacco Furtivo"],
+      2: ["Azione Scaltra"],
+      3: ["Incantesimi Silenziosi"],
+      5: ["Schivata Prodigiosa"],
+      6: ["Familiarità Magica"],
+      7: ["Elusione"],
+      9: ["Innesco Accecante"],
+      11: ["Dote Affidabile"],
+      13: ["Innesco Silenziante"],
+      14: ["Percezione Cieca"],
+      15: ["Mente Sfuggente"],
+      18: ["Inafferrabile"],
+      20: ["Colpo di Fortuna"]
+    }
   },
   "Mago di Strada": {
     identifier: "mago-di-strada",
     asiLevels: [4, 8, 12, 16, 19],
     asiFeatureKeyword: "Miglioramento del punteggio",
-    asiTitle: "Miglioramento del punteggio di caratteristica"
+    asiTitle: "Miglioramento del punteggio di caratteristica",
+    featureLevels: {
+      1: ["Magia nata o insegnata:", "Performance Magica"],
+      2: ["Miglioramento della Performance"],
+      5: ["Maestria della Performance"],
+      7: ["Spettacolo Mozzafiato"],
+      10: ["Performance Ispirante"],
+      13: ["Riarmo Musicale"],
+      15: ["Maestria della Performance Potenziata"],
+      18: ["Performance Leggendaria"]
+    }
   },
   "Mago di Supporto": {
     identifier: "mago-di-supporto",
     asiLevels: [4, 8, 12, 16, 19],
     asiFeatureKeyword: "Miglioramento",
-    asiTitle: "Miglioramento Punteggio Caratteristica"
+    asiTitle: "Miglioramento Punteggio Caratteristica",
+    featureLevels: {
+      1: ["Magia nata o insegnata:", "Determinazione Inestinguibile"],
+      2: ["Armonia Protettiva"],
+      3: ["Maestria"],
+      5: ["Crescendo Difensivo"],
+      6: ["Fonte di Determinazione"],
+      11: ["Risonanza"],
+      14: ["Purificazione Armonica"],
+      20: ["Cadenza Concertata"]
+    }
   },
   "Mago Tattico": {
     identifier: "mago-tattico",
     asiLevels: [4, 8, 12, 16, 19],
     asiFeatureKeyword: "Miglioramento del Punteggio",
-    asiTitle: "Miglioramento del Punteggio di Caratteristica"
+    asiTitle: "Miglioramento del Punteggio di Caratteristica",
+    featureLevels: {
+      1: ["Magia nata o insegnata:", "Mente Tattica"],
+      2: ["Analisi degli Incantesimi"],
+      3: ["Lancio Rapido"],
+      6: ["Conservazione del Mana"],
+      9: ["Maestria degli Incantesimi"],
+      10: ["Maestria Arcana"],
+      14: ["Maestro Tattico"],
+      20: ["Genio Tattico"],
+      // Piano Tattico sub-features granted as choices
+      _pianoTattico: {
+        levels: [6, 12, 18],
+        title: "Piano Tattico",
+        hint: "Scegli un Piano Tattico dalla lista.",
+        pool: [
+          "Sfrutta i punti deboli:", "Occhio vigile:", "Movimenti tattici:",
+          "Osservazione acuta:", "Coordinamento strategico:", "Sinergia arcana:",
+          "Assalto Calcolato:", "Diversione Tattica:", "Precognizione:",
+          "Interruzione Tattica:", "Via di Fuga:", "Cautela:",
+          "Offensiva Focalizzata:", "Efficienza del Mana:", "Ritirata Calcolata:"
+        ]
+      }
+    }
   },
   "Guerriero": {
     identifier: "guerriero",
     asiLevels: [4, 8, 12, 16, 19],
     asiFeatureKeyword: "Miglioramento delle Caratteristiche",
-    asiTitle: "Miglioramento delle Caratteristiche"
+    asiTitle: "Miglioramento delle Caratteristiche",
+    featureLevels: {
+      1: ["Magia nata o insegnata:", "Abilità in combattimento", "Difesa senza armatura"],
+      2: ["Flusso di Mana"],
+      4: ["Maestria con le armi"],
+      5: ["Attacco Extra"],
+      9: ["Spirito Indomito"],
+      10: ["Maestria nel Combattimento Migliorata"],
+      11: ["Attacco Extra"],
+      17: ["Maestria nel Critico"]
+    }
   }
 };
+
+/**
+ * Find a feature item by name for a specific class.
+ * Tries exact match first, then case-insensitive.
+ */
+function findClassFeature(features, featureName, className) {
+  // Exact match
+  let feat = features.find(
+    f => f.name === featureName && f.description.includes(`Classe: ${className}`)
+  );
+  if (feat) return feat;
+
+  // Case-insensitive match
+  const lower = featureName.toLowerCase().replace(/:$/, "");
+  feat = features.find(
+    f => f.name.toLowerCase().replace(/:$/, "") === lower &&
+    f.description.includes(`Classe: ${className}`)
+  );
+  return feat || null;
+}
 
 /** Post-process: enrich classi and feature-classi with mechanical data */
 function enrichClassi() {
@@ -1157,6 +1459,7 @@ function enrichClassi() {
 
   const classi = JSON.parse(fs.readFileSync(classiPath, "utf-8"));
   const features = JSON.parse(fs.readFileSync(featPath, "utf-8"));
+  const PACK = "ft5e-feature-classi";
 
   // Assign stable IDs and metadata to all class features
   for (const f of features) {
@@ -1170,6 +1473,9 @@ function enrichClassi() {
   }
 
   // Enrich classes
+  let totalGranted = 0;
+  let totalMissing = 0;
+
   for (const c of classi) {
     const config = CLASS_CONFIG[c.name];
     if (!config) {
@@ -1180,15 +1486,75 @@ function enrichClassi() {
     c._id = stableId(`classi:${c.name}`);
     const advancement = [];
 
-    // Find the ASI feature item for this class
+    // 1. ItemGrant for features at each level
+    for (const [level, featureNames] of Object.entries(config.featureLevels)) {
+      if (level.startsWith("_")) continue; // Skip special keys like _pianoTattico
+      const items = [];
+      for (const fname of featureNames) {
+        const feat = findClassFeature(features, fname, c.name);
+        if (feat && feat._id) {
+          items.push({ uuid: `Compendium.${MODULE_ID}.${PACK}.${feat._id}` });
+          totalGranted++;
+        } else {
+          console.warn(`    ⚠ ${c.name} lv${level}: feature "${fname}" non trovata`);
+          totalMissing++;
+        }
+      }
+      if (items.length > 0) {
+        advancement.push({
+          _id: stableId(`adv:${c.name}:grant:${level}`),
+          type: "ItemGrant",
+          level: parseInt(level),
+          title: "",
+          hint: "",
+          icon: null,
+          classRestriction: null,
+          configuration: { items, optional: false, spell: null },
+          value: {}
+        });
+      }
+    }
+
+    // 2. ItemChoice for Piano Tattico (Mago Tattico special)
+    const pianoTattico = config.featureLevels._pianoTattico;
+    if (pianoTattico) {
+      // Build pool of tactical plan UUIDs
+      const pool = [];
+      for (const planName of pianoTattico.pool) {
+        const feat = findClassFeature(features, planName, c.name);
+        if (feat && feat._id) {
+          pool.push({ uuid: `Compendium.${MODULE_ID}.${PACK}.${feat._id}` });
+        }
+      }
+      for (const level of pianoTattico.levels) {
+        advancement.push({
+          _id: stableId(`adv:${c.name}:piano-tattico:${level}`),
+          type: "ItemChoice",
+          level: level,
+          title: pianoTattico.title,
+          hint: pianoTattico.hint,
+          icon: null,
+          classRestriction: null,
+          configuration: {
+            choices: { [String(level)]: { count: 1, replacement: false } },
+            allowDrops: false,
+            type: "feat",
+            pool: pool,
+            restriction: {},
+            spell: null
+          },
+          value: { added: {}, replaced: {} }
+        });
+      }
+    }
+
+    // 3. ASI: AbilityScoreImprovement + ItemGrant at each ASI level
     const asiFeature = features.find(
       f => f.name.toLowerCase().includes(config.asiFeatureKeyword.toLowerCase()) &&
       f.description.includes(`Classe: ${c.name}`)
     );
 
-    // Add ASI advancement at each ASI level
     for (const level of config.asiLevels) {
-      // ItemGrant for the ASI feature description
       if (asiFeature) {
         advancement.push({
           _id: stableId(`adv:${c.name}:asi-grant:${level}`),
@@ -1199,7 +1565,7 @@ function enrichClassi() {
           icon: null,
           classRestriction: null,
           configuration: {
-            items: [{ uuid: `Compendium.${MODULE_ID}.ft5e-feature-classi.${asiFeature._id}` }],
+            items: [{ uuid: `Compendium.${MODULE_ID}.${PACK}.${asiFeature._id}` }],
             optional: false,
             spell: null
           },
@@ -1207,7 +1573,6 @@ function enrichClassi() {
         });
       }
 
-      // AbilityScoreImprovement (mechanical: +2 to one stat, or +1 to two, or a feat)
       advancement.push({
         _id: stableId(`adv:${c.name}:asi:${level}`),
         type: "AbilityScoreImprovement",
@@ -1226,6 +1591,9 @@ function enrichClassi() {
       });
     }
 
+    // Sort advancement by level
+    advancement.sort((a, b) => a.level - b.level);
+
     c.system = {
       identifier: config.identifier,
       source: {
@@ -1241,9 +1609,518 @@ function enrichClassi() {
 
   // Write back
   fs.writeFileSync(classiPath, JSON.stringify(classi, null, 2), "utf-8");
-  console.log(`  ✓ classi.json: enriched ${classi.length} items with ASI advancement`);
+  console.log(`  ✓ classi.json: enriched ${classi.length} classes (${totalGranted} features granted, ${totalMissing} missing)`);
   fs.writeFileSync(featPath, JSON.stringify(features, null, 2), "utf-8");
   console.log(`  ✓ feature-classi.json: enriched ${features.length} items with metadata`);
+}
+
+// ── ENRICHMENT: Magie + Feature Magie ─────────────────────────────────────
+
+/**
+ * Parse the level from a feature name.
+ * Handles patterns: "liv.X", "Lv.X", "lv.X", "Liv.X", "LV.X" anywhere in the name.
+ * Returns the level number, or 1 as default for features with no explicit level.
+ */
+function parseLevelFromName(name) {
+  // Match patterns like "liv.3", "Lv.6", "lv.10", "Liv.1"
+  const match = name.match(/[Ll][Ii]?[Vv]\.?\s*(\d+)/);
+  if (match) return parseInt(match[1]);
+  // Also try "livello X" or "livello: X"
+  const match2 = name.match(/livello[:\s]+(\d+)/i);
+  if (match2) return parseInt(match2[1]);
+  return 1; // Default: level 1 feature
+}
+
+// ── ENRICHMENT: Incantesimi ───────────────────────────────────────────────
+
+/** Post-process: enrich incantesimi with dnd5e mechanical data */
+function enrichIncantesimi() {
+  const spellPath = path.join(SRC_DIR, "incantesimi.json");
+  const spells = JSON.parse(fs.readFileSync(spellPath, "utf-8"));
+
+  for (const s of spells) {
+    const meta = s._meta || {};
+    s._id = stableId(`incantesimi:${s.name}`);
+
+    const activation = parseActivation(meta.castTime);
+    const range = parseRange(meta.range);
+    const duration = parseDuration(meta.duration);
+    const components = parseComponents(meta.components);
+
+    s.system = {
+      level: meta.level ?? 0,
+      school: meta.school || "evo",
+      source: {
+        custom: "Fairy Tail 5e",
+        book: "Fairy Tail",
+        page: "",
+        license: "",
+        rules: "2014"
+      },
+      activation: {
+        type: activation.type,
+        cost: activation.cost,
+        condition: ""
+      },
+      range: {
+        value: range.value,
+        units: range.units,
+        special: ""
+      },
+      duration: {
+        value: duration.value,
+        units: duration.units,
+        concentration: duration.concentration || false
+      },
+      components: {
+        vocal: components.vocal,
+        somatic: components.somatic,
+        material: components.material,
+        value: components.value,
+        ritual: meta.ritual || false
+      },
+      materials: {
+        value: components.value,
+        consumed: false,
+        cost: 0,
+        supply: 0
+      }
+    };
+  }
+
+  // Write back (keep _magia for enrichMagie to use, remove _meta)
+  const output = spells.map(s => {
+    const { _meta, ...rest } = s;
+    return rest;
+  });
+  fs.writeFileSync(spellPath, JSON.stringify(output, null, 2), "utf-8");
+
+  const cantrips = spells.filter(s => (s._meta?.level ?? 0) === 0).length;
+  const leveled = spells.length - cantrips;
+  console.log(`  ✓ incantesimi.json: enriched ${spells.length} spells (${cantrips} cantrips, ${leveled} leveled)`);
+
+  // Return the enriched spells (with _magia) for enrichMagie to use
+  return spells;
+}
+
+// ── ENRICHMENT: Magie + Feature Magie + Incantesimi ───────────────────────
+
+/**
+ * Spell level → class level mapping (full caster progression).
+ * Used to determine at which subclass level each spell tier is granted.
+ */
+const SPELL_LEVEL_TO_CLASS_LEVEL = {
+  0: 1,   // Cantrips at level 1
+  1: 1,   // 1st level spells
+  2: 3,   // 2nd level spells
+  3: 5,   // 3rd
+  4: 7,   // 4th
+  5: 9,   // 5th
+  6: 11,  // 6th
+  7: 13,  // 7th
+  8: 15,  // 8th
+  9: 17   // 9th
+};
+
+/** Post-process: enrich magie and feature-magie with mechanical data + spells */
+function enrichMagie(spells) {
+  const magiePath = path.join(SRC_DIR, "magie.json");
+  const featPath = path.join(SRC_DIR, "feature-magie.json");
+
+  const magie = JSON.parse(fs.readFileSync(magiePath, "utf-8"));
+  const features = JSON.parse(fs.readFileSync(featPath, "utf-8"));
+  const FEAT_PACK = "ft5e-feature-magie";
+  const SPELL_PACK = "ft5e-incantesimi";
+
+  // Assign stable IDs and metadata to all magie features
+  for (const f of features) {
+    const mag = f.description.match(/Magia: ([^<]+)/)?.[1] || "";
+    f._id = stableId(`feature-magie:${mag}:${f.name}`);
+    f.system = {
+      type: { value: "class", subtype: "" },
+      requirements: mag,
+      identifier: toKebab(f.name)
+    };
+  }
+
+  // Enrich magie (subclasses)
+  let totalFeaturesGranted = 0;
+  let totalSpellsGranted = 0;
+
+  for (const m of magie) {
+    m._id = stableId(`magie:${m.name}`);
+
+    // ── Features ──
+    const magFeatures = features.filter(
+      f => f.description.includes(`Magia: ${m.name}`)
+    );
+    const featByLevel = {};
+    for (const f of magFeatures) {
+      const level = parseLevelFromName(f.name);
+      if (!featByLevel[level]) featByLevel[level] = [];
+      featByLevel[level].push(f);
+    }
+
+    const advancement = [];
+
+    // Feature ItemGrants
+    for (const [level, feats] of Object.entries(featByLevel)) {
+      const items = feats
+        .filter(f => f._id)
+        .map(f => ({ uuid: `Compendium.${MODULE_ID}.${FEAT_PACK}.${f._id}` }));
+      if (items.length > 0) {
+        advancement.push({
+          _id: stableId(`adv:${m.name}:feat-grant:${level}`),
+          type: "ItemGrant",
+          level: parseInt(level),
+          title: "",
+          hint: "",
+          icon: null,
+          classRestriction: null,
+          configuration: { items, optional: false, spell: null },
+          value: {}
+        });
+        totalFeaturesGranted += items.length;
+      }
+    }
+
+    // ── Spells ──
+    const magSpells = spells.filter(s => s._magia === m.name);
+
+    // Group spells by spell level, then map to class level
+    const spellsByClassLevel = {};
+    for (const s of magSpells) {
+      const spellLvl = s._meta?.level ?? s.system?.level ?? 0;
+      const classLvl = SPELL_LEVEL_TO_CLASS_LEVEL[spellLvl] ?? 1;
+      if (!spellsByClassLevel[classLvl]) spellsByClassLevel[classLvl] = [];
+      spellsByClassLevel[classLvl].push(s);
+    }
+
+    // Spell ItemGrants per class level
+    for (const [classLevel, spellList] of Object.entries(spellsByClassLevel)) {
+      const items = spellList
+        .filter(s => s._id)
+        .map(s => ({ uuid: `Compendium.${MODULE_ID}.${SPELL_PACK}.${s._id}` }));
+      if (items.length > 0) {
+        advancement.push({
+          _id: stableId(`adv:${m.name}:spell-grant:${classLevel}`),
+          type: "ItemGrant",
+          level: parseInt(classLevel),
+          title: "Incantesimi",
+          hint: `Incantesimi della ${m.name} disponibili a questo livello.`,
+          icon: null,
+          classRestriction: null,
+          configuration: { items, optional: true, spell: { ability: [], preparation: "", uses: { max: "", per: "" } } },
+          value: {}
+        });
+        totalSpellsGranted += items.length;
+      }
+    }
+
+    // Sort advancement by level
+    advancement.sort((a, b) => a.level - b.level);
+
+    m.system = {
+      identifier: toKebab(m.name),
+      classIdentifier: "",
+      source: {
+        custom: "Fairy Tail 5e",
+        book: "Fairy Tail",
+        page: "",
+        license: "",
+        rules: "2014"
+      },
+      advancement: advancement
+    };
+  }
+
+  // Write back
+  fs.writeFileSync(magiePath, JSON.stringify(magie, null, 2), "utf-8");
+  console.log(`  ✓ magie.json: enriched ${magie.length} magie (${totalFeaturesGranted} features + ${totalSpellsGranted} spells granted)`);
+  fs.writeFileSync(featPath, JSON.stringify(features, null, 2), "utf-8");
+  console.log(`  ✓ feature-magie.json: enriched ${features.length} items with metadata`);
+}
+
+// ── ENRICHMENT: Background ────────────────────────────────────────────────
+
+const BG_CONFIG = {
+  "Background del mago della gilda": {
+    skills: { choices: [{ count: 2, pool: ["skills:arc", "skills:his", "skills:ins", "skills:per", "skills:prf"] }] },
+    toolProf: "Un tipo di strumenti da artigiano O un set da gioco",
+    languages: 1
+  },
+  "Background del mago errante": {
+    skills: { choices: [{ count: 2, pool: ["skills:arc", "skills:nat", "skills:sur", "skills:med", "skills:dec"] }] },
+    toolProf: "Kit da erborista, uno strumento musicale",
+    languages: 2
+  },
+  "Background dello studioso": {
+    skills: { choices: [{ count: 2, pool: ["skills:arc", "skills:his", "skills:inv", "skills:rel", "skills:nat"] }] },
+    toolProf: "Strumenti da calligrafo, un tipo di strumenti da artigiano",
+    languages: 2
+  },
+  "Background del mago da combattimento": {
+    skills: { choices: [{ count: 2, pool: ["skills:arc", "skills:ath", "skills:acr", "skills:itm", "skills:prc"] }] },
+    toolProf: "Un set da gioco, veicoli (terra)",
+    languages: 1
+  },
+  "Background del Mago Selvaggio": {
+    skills: { choices: [{ count: 2, pool: ["skills:arc", "skills:nat", "skills:sur", "skills:med", "skills:ani"] }] },
+    toolProf: "Kit da erborista, uno strumento musicale",
+    languages: 1
+  },
+  "Background del Minatore di Lacrima": {
+    skills: { choices: [{ count: 2, pool: ["skills:ath", "skills:prc", "skills:sur", "skills:inv", "skills:itm"] }] },
+    toolProf: "Strumenti da fabbro, un set da gioco",
+    languages: 1
+  },
+  "Background del Camminatore dello Specchio": {
+    skills: { choices: [{ count: 2, pool: ["skills:arc", "skills:his", "skills:inv", "skills:nat", "skills:rel"] }] },
+    toolProf: "Un tipo di strumenti da artigiano, strumenti da cartografo",
+    languages: 1
+  }
+};
+
+function enrichBackground() {
+  const bgPath = path.join(SRC_DIR, "background.json");
+  const bgs = JSON.parse(fs.readFileSync(bgPath, "utf-8"));
+
+  for (const bg of bgs) {
+    bg._id = stableId(`background:${bg.name}`);
+    const config = BG_CONFIG[bg.name];
+    const advancement = [];
+
+    if (config) {
+      // Trait advancement for skill choices
+      advancement.push({
+        _id: stableId(`adv:${bg.name}:skills`),
+        type: "Trait",
+        level: 0,
+        title: "",
+        hint: "",
+        icon: null,
+        classRestriction: null,
+        configuration: {
+          mode: "default",
+          allowReplacements: false,
+          grants: [],
+          choices: config.skills.choices || []
+        },
+        value: { chosen: [] }
+      });
+    }
+
+    bg.system = {
+      identifier: toKebab(bg.name),
+      source: {
+        custom: "Fairy Tail 5e",
+        book: "Fairy Tail",
+        page: "",
+        license: "",
+        rules: "2014"
+      },
+      advancement: advancement
+    };
+  }
+
+  fs.writeFileSync(bgPath, JSON.stringify(bgs, null, 2), "utf-8");
+  console.log(`  ✓ background.json: enriched ${bgs.length} backgrounds with skill advancement`);
+}
+
+// ── ENRICHMENT: Talenti ───────────────────────────────────────────────────
+
+/** Parse prerequisites from a talent description */
+function parsePrerequisites(desc) {
+  const match = desc.match(/\*\*Prerequisit[oi]?:\*\*\s*([^<]+)/i);
+  if (!match) return "";
+  return match[1].replace(/\*\*/g, "").replace(/<[^>]*>/g, "").trim();
+}
+
+function enrichTalenti() {
+  const talPath = path.join(SRC_DIR, "talenti.json");
+  const talenti = JSON.parse(fs.readFileSync(talPath, "utf-8"));
+
+  for (const t of talenti) {
+    t._id = stableId(`talenti:${t.name}`);
+    const prereq = parsePrerequisites(t.description);
+
+    t.system = {
+      type: { value: "feat", subtype: "" },
+      requirements: prereq,
+      identifier: toKebab(t.name),
+      source: {
+        custom: "Fairy Tail 5e",
+        book: "Fairy Tail",
+        page: "",
+        license: "",
+        rules: "2014"
+      }
+    };
+  }
+
+  const withPrereq = talenti.filter(t => t.system.requirements).length;
+  fs.writeFileSync(talPath, JSON.stringify(talenti, null, 2), "utf-8");
+  console.log(`  ✓ talenti.json: enriched ${talenti.length} talents (${withPrereq} with prerequisites)`);
+}
+
+// ── ENRICHMENT: Equipaggiamento ───────────────────────────────────────────
+
+const EQUIP_DATA = {
+  // ── Armature ──
+  "Armatura imbottita":          { armor: "light",  ac: 11, dexCap: null, str: 0,  stealth: true,  weight: 4,    cost: 500 },
+  "Armatura di cuoio":           { armor: "light",  ac: 11, dexCap: null, str: 0,  stealth: false, weight: 5,    cost: 1000 },
+  "Armatura di cuoio borchiato": { armor: "light",  ac: 12, dexCap: null, str: 0,  stealth: false, weight: 6.5,  cost: 4500 },
+  "Armatura in pelle":           { armor: "medium", ac: 12, dexCap: 2,   str: 0,  stealth: false, weight: 6,    cost: 1000 },
+  "Giaco di Maglia":             { armor: "medium", ac: 13, dexCap: 2,   str: 0,  stealth: false, weight: 10,   cost: 5000 },
+  "Corazza di Scaglie":          { armor: "medium", ac: 14, dexCap: 2,   str: 0,  stealth: true,  weight: 22.5, cost: 5000 },
+  "Corazza di Piastre":          { armor: "medium", ac: 14, dexCap: 2,   str: 0,  stealth: false, weight: 10,   cost: 4000 },
+  "Mezza Armatura":              { armor: "medium", ac: 15, dexCap: 2,   str: 0,  stealth: true,  weight: 20,   cost: 7500 },
+  "Corazza di Anelli":           { armor: "heavy",  ac: 14, dexCap: 0,   str: 0,  stealth: true,  weight: 20,   cost: 3000 },
+  "Cotta di maglia":             { armor: "heavy",  ac: 16, dexCap: 0,   str: 13, stealth: true,  weight: 27.5, cost: 7500 },
+  "Corazza a strisce":           { armor: "heavy",  ac: 17, dexCap: 0,   str: 15, stealth: true,  weight: 30,   cost: 20000 },
+  "Armatura Completa":           { armor: "heavy",  ac: 18, dexCap: 0,   str: 15, stealth: true,  weight: 32.5, cost: 150000 },
+  "Scudo":                       { armor: "shield", ac: 2,  dexCap: null,str: 0,  stealth: false, weight: 3,    cost: 1000 },
+  // ── Armi da mischia semplici ──
+  "Ascia":             { weapon: "simpleM", dmg: "1d6",  dmgType: "slashing",    props: ["lgt","thr"], range: [6,18],    weight: 1,   cost: 500 },
+  "Bastone ferrato":   { weapon: "simpleM", dmg: "1d6",  dmgType: "bludgeoning", props: ["ver"],       range: null,      weight: 2,   cost: 200 },
+  "Clava":             { weapon: "simpleM", dmg: "1d4",  dmgType: "bludgeoning", props: ["lgt"],       range: null,      weight: 1,   cost: 1000 },
+  "Falcetto":          { weapon: "simpleM", dmg: "1d4",  dmgType: "slashing",    props: ["lgt"],       range: null,      weight: 1,   cost: 500 },
+  "Giavellotto":       { weapon: "simpleM", dmg: "1d6",  dmgType: "piercing",    props: ["thr"],       range: [9,36],    weight: 1,   cost: 1500 },
+  "Lancia":            { weapon: "simpleM", dmg: "1d6",  dmgType: "piercing",    props: ["thr","ver"], range: [6,18],    weight: 1.5, cost: 500 },
+  "Martello leggero":  { weapon: "simpleM", dmg: "1d4",  dmgType: "bludgeoning", props: ["lgt","thr"], range: [6,18],    weight: 1,   cost: 1000 },
+  "Mazza":             { weapon: "simpleM", dmg: "1d6",  dmgType: "bludgeoning", props: [],            range: null,      weight: 2,   cost: 1000 },
+  "Pugnale":           { weapon: "simpleM", dmg: "1d4",  dmgType: "piercing",    props: ["fin","lgt","thr"], range: [6,18], weight: 0.5, cost: 1000 },
+  // ── Armi marziali da mischia ──
+  "Alabarda":          { weapon: "martialM", dmg: "1d10", dmgType: "slashing",    props: ["hvy","rch","two"], range: null, weight: 3,   cost: 2500 },
+  "Ascia Bipenne":     { weapon: "martialM", dmg: "1d12", dmgType: "slashing",    props: ["hvy","two"],       range: null, weight: 3.5, cost: 2500 },
+  "Ascia da battaglia": { weapon: "martialM", dmg: "1d8", dmgType: "slashing",    props: ["ver"],             range: null, weight: 2,   cost: 1000 },
+  "Falcione":          { weapon: "martialM", dmg: "1d10", dmgType: "slashing",    props: ["hvy","rch","two"], range: null, weight: 3,   cost: 2000 },
+  "Frusta":            { weapon: "martialM", dmg: "1d4",  dmgType: "slashing",    props: ["fin","rch"],       range: null, weight: 1.5, cost: 2000 },
+  "Lancia da Cavaliere": { weapon: "martialM", dmg: "1d12", dmgType: "piercing",  props: ["rch"],             range: null, weight: 3,   cost: 1000 },
+  "Maglio":            { weapon: "martialM", dmg: "2d6",  dmgType: "bludgeoning", props: ["hvy","two"],       range: null, weight: 5,   cost: 1000 },
+  "Martello da guerra": { weapon: "martialM", dmg: "1d8", dmgType: "bludgeoning", props: ["ver"],             range: null, weight: 1,   cost: 1500 },
+  "Mazzafrusto":       { weapon: "martialM", dmg: "1d8",  dmgType: "bludgeoning", props: [],                  range: null, weight: 1,   cost: 1000 },
+  "Morning Star":      { weapon: "martialM", dmg: "1d8",  dmgType: "piercing",    props: [],                  range: null, weight: 2,   cost: 1500 },
+  "Picca":             { weapon: "martialM", dmg: "1d10", dmgType: "piercing",    props: ["hvy","rch","two"], range: null, weight: 9,   cost: 500 },
+  "Piccone da guerra": { weapon: "martialM", dmg: "1d8",  dmgType: "piercing",    props: [],                  range: null, weight: 1,   cost: 1500 },
+  "Scimitarra":        { weapon: "martialM", dmg: "1d6",  dmgType: "slashing",    props: ["fin","lgt"],       range: null, weight: 1.5, cost: 2000 },
+  "Spada corta":       { weapon: "martialM", dmg: "1d6",  dmgType: "piercing",    props: ["fin","lgt"],       range: null, weight: 1,   cost: 1500 },
+  "Spada lunga":       { weapon: "martialM", dmg: "1d8",  dmgType: "slashing",    props: ["ver"],             range: null, weight: 1.5, cost: 1500 },
+  "Spadone":           { weapon: "martialM", dmg: "2d6",  dmgType: "slashing",    props: ["hvy","two"],       range: null, weight: 3,   cost: 5000 },
+  "Stocco":            { weapon: "martialM", dmg: "1d8",  dmgType: "piercing",    props: ["fin"],             range: null, weight: 1,   cost: 2500 },
+  "Tridente":          { weapon: "martialM", dmg: "1d6",  dmgType: "piercing",    props: ["thr","ver"],       range: [6,18], weight: 2, cost: 5000 },
+  // ── Armi a distanza semplici ──
+  "Arco corto":        { weapon: "simpleR", dmg: "1d6",  dmgType: "piercing",    props: ["amm","two"],       range: [24,96],  weight: 1,  cost: 2500 },
+  "Balestra leggera":  { weapon: "simpleR", dmg: "1d8",  dmgType: "piercing",    props: ["amm","lod","two"], range: [24,96],  weight: 2.5, cost: 2500 },
+  "Dardo":             { weapon: "simpleR", dmg: "1d4",  dmgType: "piercing",    props: ["fin","thr"],       range: [6,18],   weight: 0.1, cost: 100 },
+  "Fionda":            { weapon: "simpleR", dmg: "1d4",  dmgType: "bludgeoning", props: ["amm"],             range: [9,36],   weight: 0,   cost: 500 },
+  // ── Armi marziali a distanza ──
+  "Arco lungo":        { weapon: "martialR", dmg: "1d10", dmgType: "piercing",    props: ["amm","hvy","two"], range: [45,180], weight: 1, cost: 5000 },
+  "Balestra a mano":   { weapon: "martialR", dmg: "1d6",  dmgType: "piercing",    props: ["amm","lgt","lod"], range: [9,36],   weight: 1.5, cost: 7500 },
+  "Balestra pesante":  { weapon: "martialR", dmg: "1d10", dmgType: "piercing",    props: ["amm","hvy","lod","two"], range: [30,120], weight: 9, cost: 5000 },
+  "Rete":              { weapon: "martialR", dmg: null,   dmgType: null,           props: ["thr"],             range: [1.5,4.5], weight: 1.5, cost: 100 },
+  // ── Armi da fuoco semplici ──
+  "Archibugio":        { weapon: "simpleR",  dmg: "2d6",  dmgType: "bludgeoning", props: ["amm","lod","fir","two"], range: [6,9],    weight: 5, cost: 5000 },
+  "Pistola":           { weapon: "simpleR",  dmg: "1d8",  dmgType: "piercing",    props: ["amm","fir"],             range: [15,45],  weight: 1.5, cost: 2500 },
+  "Rivoltella":        { weapon: "simpleR",  dmg: "1d10", dmgType: "piercing",    props: ["amm","fir"],             range: [12,36],  weight: 1.5, cost: 2500 },
+  // ── Armi da fuoco marziali ──
+  "DMR":                           { weapon: "martialR", dmg: "1d12", dmgType: "piercing", props: ["amm","hvy","fir","two"], range: [45,180],  weight: 2, cost: 10000 },
+  "Fucile a canne mozze":          { weapon: "martialR", dmg: null,   dmgType: null,       props: ["amm","hvy","lod","fir","two"], range: [9,36], weight: 2, cost: 2500 },
+  "Fucile a pompa":                { weapon: "martialR", dmg: null,   dmgType: null,       props: ["amm","hvy","lod","fir","two"], range: [9,36], weight: 2, cost: 5000 },
+  "Fucile d'Assalto":              { weapon: "martialR", dmg: "2d4",  dmgType: "piercing", props: ["amm","fir","two"],             range: [27,60], weight: 2, cost: 7500 },
+  "Fucile da cecchino Bolt Action": { weapon: "martialR", dmg: "2d6", dmgType: "piercing", props: ["amm","hvy","lod","fir","two"], range: [90,360], weight: 3, cost: 12500 },
+  "Fucile da cecchino (semi)":     { weapon: "martialR", dmg: "2d6",  dmgType: "piercing", props: ["amm","hvy","fir","two"],       range: [90,360], weight: 2, cost: 15000 },
+  "Fucile semi-automatico":        { weapon: "martialR", dmg: null,   dmgType: null,       props: ["amm","hvy","fir","two"],       range: [9,36],   weight: 2, cost: 10000 },
+  "Mitraglietta":                  { weapon: "martialR", dmg: "1d8",  dmgType: "piercing", props: ["amm","fir"],                   range: [15,45],  weight: 2, cost: 5000 },
+  // ── Munizioni ──
+  "Cartuccia a palla":     { ammo: true, weight: 0.05, cost: 100 },
+  "Cartuccia sfondaporte": { ammo: true, weight: 0.05, cost: 200 },
+  "Pallini":               { ammo: true, weight: 0.05, cost: 100 },
+  "Pallettoni":            { ammo: true, weight: 0.05, cost: 200 },
+  "Respiro del Drago":     { ammo: true, weight: 0.05, cost: 300 },
+};
+
+function enrichEquipaggiamento() {
+  const eqPath = path.join(SRC_DIR, "equipaggiamento.json");
+  const items = JSON.parse(fs.readFileSync(eqPath, "utf-8"));
+
+  let enriched = 0;
+  for (const item of items) {
+    item._id = stableId(`equipaggiamento:${item.name}`);
+    const data = EQUIP_DATA[item.name];
+    if (!data) {
+      item.system = { source: { custom: "Fairy Tail 5e", book: "Fairy Tail" } };
+      continue;
+    }
+    enriched++;
+
+    if (data.armor) {
+      item.system = {
+        type: { value: data.armor === "shield" ? "shield" : data.armor, baseItem: "" },
+        armor: {
+          value: data.ac,
+          dex: data.dexCap,
+          magicalBonus: 0
+        },
+        strength: data.str || null,
+        stealth: data.stealth || false,
+        weight: { value: data.weight, units: "kg" },
+        price: { value: data.cost, denomination: "" },
+        source: { custom: "Fairy Tail 5e", book: "Fairy Tail" }
+      };
+    } else if (data.weapon) {
+      const dmgParts = data.dmg ? data.dmg.match(/(\d+)d(\d+)/) : null;
+      item.system = {
+        type: { value: data.weapon, baseItem: "" },
+        damage: {
+          parts: data.dmg ? [[data.dmg, data.dmgType]] : [],
+          versatile: data.props.includes("ver") ? data.dmg.replace(/d(\d+)/, (m,n) => `d${parseInt(n)+2}`) : ""
+        },
+        range: data.range ? { value: data.range[0], long: data.range[1], units: "m" } : { value: null, long: null, units: "m" },
+        weight: { value: data.weight, units: "kg" },
+        price: { value: data.cost, denomination: "" },
+        properties: data.props,
+        proficient: true,
+        source: { custom: "Fairy Tail 5e", book: "Fairy Tail" }
+      };
+    } else if (data.ammo) {
+      item.system = {
+        type: { value: "ammo", baseItem: "" },
+        weight: { value: data.weight, units: "kg" },
+        price: { value: data.cost, denomination: "" },
+        source: { custom: "Fairy Tail 5e", book: "Fairy Tail" }
+      };
+    }
+  }
+
+  fs.writeFileSync(eqPath, JSON.stringify(items, null, 2), "utf-8");
+  console.log(`  ✓ equipaggiamento.json: enriched ${enriched}/${items.length} items with mechanical data`);
+}
+
+// ── ENRICHMENT: Stili di Combattimento ────────────────────────────────────
+
+function enrichStiliCombattimento() {
+  const stPath = path.join(SRC_DIR, "stili-combattimento.json");
+  const stili = JSON.parse(fs.readFileSync(stPath, "utf-8"));
+
+  for (const s of stili) {
+    s._id = stableId(`stili:${s.name}`);
+    s.system = {
+      type: { value: "feat", subtype: "" },
+      requirements: "",
+      identifier: toKebab(s.name),
+      source: {
+        custom: "Fairy Tail 5e",
+        book: "Fairy Tail",
+        page: "",
+        license: "",
+        rules: "2014"
+      }
+    };
+  }
+
+  fs.writeFileSync(stPath, JSON.stringify(stili, null, 2), "utf-8");
+  console.log(`  ✓ stili-combattimento.json: enriched ${stili.length} fighting styles`);
 }
 
 // ── Main ────────────────────────────────────────────────────────────────────
@@ -1266,5 +2143,11 @@ extractFeatureMagie();
 console.log("\nEnriching data...");
 enrichRazze();
 enrichClassi();
+const enrichedSpells = enrichIncantesimi();
+enrichMagie(enrichedSpells);
+enrichBackground();
+enrichTalenti();
+enrichEquipaggiamento();
+enrichStiliCombattimento();
 
 console.log("\nAll JSON files generated in src/");

@@ -2,7 +2,7 @@
   "id": "fairy-tail-5e",
   "title": "Fairy Tail 5e",
   "description": "Modulo per Fairy Tail 5e - Razze, Classi, Magie, Background, Talenti, Equipaggiamento, Incantesimi e Stili di Combattimento per il sistema D&D 5e su FoundryVTT.",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "compatibility": {
     "minimum": "13",
     "verified": "13.351",
@@ -148,6 +148,19 @@
         "ASSISTANT": "OWNER"
       },
       "system": "dnd5e"
+    }
+  ],
+  "esmodules": [
+    "scripts/mana-points.mjs"
+  ],
+  "styles": [
+    "styles/mana-points.css"
+  ],
+  "languages": [
+    {
+      "lang": "it",
+      "name": "Italiano",
+      "path": "languages/it.json"
     }
   ],
   "url": "https://github.com/LinguardEvergreen/fairy-tail-5e",

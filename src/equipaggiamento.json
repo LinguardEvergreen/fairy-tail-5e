@@ -1,258 +1,2423 @@
 [
   {
     "name": "Armatura imbottita",
-    "description": "<p>Armatura</p>"
+    "description": "<p>Armatura</p>",
+    "_id": "b92b0d925ca2ca45",
+    "system": {
+      "type": {
+        "value": "light",
+        "baseItem": ""
+      },
+      "armor": {
+        "value": 11,
+        "dex": null,
+        "magicalBonus": 0
+      },
+      "strength": null,
+      "stealth": true,
+      "weight": {
+        "value": 4,
+        "units": "kg"
+      },
+      "price": {
+        "value": 500,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Armatura di cuoio",
-    "description": "<p>Armatura</p>"
+    "description": "<p>Armatura</p>",
+    "_id": "440f54c20dea1827",
+    "system": {
+      "type": {
+        "value": "light",
+        "baseItem": ""
+      },
+      "armor": {
+        "value": 11,
+        "dex": null,
+        "magicalBonus": 0
+      },
+      "strength": null,
+      "stealth": false,
+      "weight": {
+        "value": 5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1000,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Armatura di cuoio borchiato",
-    "description": "<p>Armatura</p>"
+    "description": "<p>Armatura</p>",
+    "_id": "1ad6b42d2b922e9a",
+    "system": {
+      "type": {
+        "value": "light",
+        "baseItem": ""
+      },
+      "armor": {
+        "value": 12,
+        "dex": null,
+        "magicalBonus": 0
+      },
+      "strength": null,
+      "stealth": false,
+      "weight": {
+        "value": 6.5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 4500,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Armatura in pelle",
-    "description": "<p>Armatura</p>"
+    "description": "<p>Armatura</p>",
+    "_id": "bdd5d3cab13deb73",
+    "system": {
+      "type": {
+        "value": "medium",
+        "baseItem": ""
+      },
+      "armor": {
+        "value": 12,
+        "dex": 2,
+        "magicalBonus": 0
+      },
+      "strength": null,
+      "stealth": false,
+      "weight": {
+        "value": 6,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1000,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Giaco di Maglia",
-    "description": "<p>Armatura</p>"
+    "description": "<p>Armatura</p>",
+    "_id": "78247acef0e4a778",
+    "system": {
+      "type": {
+        "value": "medium",
+        "baseItem": ""
+      },
+      "armor": {
+        "value": 13,
+        "dex": 2,
+        "magicalBonus": 0
+      },
+      "strength": null,
+      "stealth": false,
+      "weight": {
+        "value": 10,
+        "units": "kg"
+      },
+      "price": {
+        "value": 5000,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Corazza di Scaglie",
-    "description": "<p>Armatura</p>"
+    "description": "<p>Armatura</p>",
+    "_id": "2f9b12f2f6286648",
+    "system": {
+      "type": {
+        "value": "medium",
+        "baseItem": ""
+      },
+      "armor": {
+        "value": 14,
+        "dex": 2,
+        "magicalBonus": 0
+      },
+      "strength": null,
+      "stealth": true,
+      "weight": {
+        "value": 22.5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 5000,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Corazza di Piastre",
-    "description": "<p>Armatura</p>"
+    "description": "<p>Armatura</p>",
+    "_id": "812993df3f36e8ae",
+    "system": {
+      "type": {
+        "value": "medium",
+        "baseItem": ""
+      },
+      "armor": {
+        "value": 14,
+        "dex": 2,
+        "magicalBonus": 0
+      },
+      "strength": null,
+      "stealth": false,
+      "weight": {
+        "value": 10,
+        "units": "kg"
+      },
+      "price": {
+        "value": 4000,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Mezza Armatura",
-    "description": "<p>Armatura</p>"
+    "description": "<p>Armatura</p>",
+    "_id": "fcdb84cdb95ff008",
+    "system": {
+      "type": {
+        "value": "medium",
+        "baseItem": ""
+      },
+      "armor": {
+        "value": 15,
+        "dex": 2,
+        "magicalBonus": 0
+      },
+      "strength": null,
+      "stealth": true,
+      "weight": {
+        "value": 20,
+        "units": "kg"
+      },
+      "price": {
+        "value": 7500,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Corazza di Anelli",
-    "description": "<p>Armatura</p>"
+    "description": "<p>Armatura</p>",
+    "_id": "229afab00304195c",
+    "system": {
+      "type": {
+        "value": "heavy",
+        "baseItem": ""
+      },
+      "armor": {
+        "value": 14,
+        "dex": 0,
+        "magicalBonus": 0
+      },
+      "strength": null,
+      "stealth": true,
+      "weight": {
+        "value": 20,
+        "units": "kg"
+      },
+      "price": {
+        "value": 3000,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Cotta di maglia",
-    "description": "<p>Armatura</p>"
+    "description": "<p>Armatura</p>",
+    "_id": "0639ca7502dea683",
+    "system": {
+      "type": {
+        "value": "heavy",
+        "baseItem": ""
+      },
+      "armor": {
+        "value": 16,
+        "dex": 0,
+        "magicalBonus": 0
+      },
+      "strength": 13,
+      "stealth": true,
+      "weight": {
+        "value": 27.5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 7500,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Corazza a strisce",
-    "description": "<p>Armatura</p>"
+    "description": "<p>Armatura</p>",
+    "_id": "74f6e5d48eba4c36",
+    "system": {
+      "type": {
+        "value": "heavy",
+        "baseItem": ""
+      },
+      "armor": {
+        "value": 17,
+        "dex": 0,
+        "magicalBonus": 0
+      },
+      "strength": 15,
+      "stealth": true,
+      "weight": {
+        "value": 30,
+        "units": "kg"
+      },
+      "price": {
+        "value": 20000,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Armatura Completa",
-    "description": "<p>Armatura</p>"
+    "description": "<p>Armatura</p>",
+    "_id": "a913a3539f186131",
+    "system": {
+      "type": {
+        "value": "heavy",
+        "baseItem": ""
+      },
+      "armor": {
+        "value": 18,
+        "dex": 0,
+        "magicalBonus": 0
+      },
+      "strength": 15,
+      "stealth": true,
+      "weight": {
+        "value": 32.5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 150000,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Scudo",
-    "description": "<p>Armatura</p>"
+    "description": "<p>Armatura</p>",
+    "_id": "9566527d20cd1fb8",
+    "system": {
+      "type": {
+        "value": "shield",
+        "baseItem": ""
+      },
+      "armor": {
+        "value": 2,
+        "dex": null,
+        "magicalBonus": 0
+      },
+      "strength": null,
+      "stealth": false,
+      "weight": {
+        "value": 3,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1000,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Ascia",
-    "description": "<p>Arma da mischia semplice</p>"
+    "description": "<p>Arma da mischia semplice</p>",
+    "_id": "83b3c32872fa3033",
+    "system": {
+      "type": {
+        "value": "simpleM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "slashing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 6,
+        "long": 18,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1,
+        "units": "kg"
+      },
+      "price": {
+        "value": 500,
+        "denomination": ""
+      },
+      "properties": [
+        "lgt",
+        "thr"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Bastone ferrato",
-    "description": "<p>Arma da mischia semplice</p>"
+    "description": "<p>Arma da mischia semplice</p>",
+    "_id": "439ef95f9bbd70c2",
+    "system": {
+      "type": {
+        "value": "simpleM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": "1d8"
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 2,
+        "units": "kg"
+      },
+      "price": {
+        "value": 200,
+        "denomination": ""
+      },
+      "properties": [
+        "ver"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Clava",
-    "description": "<p>Arma da mischia semplice</p>"
+    "description": "<p>Arma da mischia semplice</p>",
+    "_id": "f050b1c1e0be72df",
+    "system": {
+      "type": {
+        "value": "simpleM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1000,
+        "denomination": ""
+      },
+      "properties": [
+        "lgt"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Falcetto",
-    "description": "<p>Arma da mischia semplice</p>"
+    "description": "<p>Arma da mischia semplice</p>",
+    "_id": "334479bb61e910bd",
+    "system": {
+      "type": {
+        "value": "simpleM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "slashing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1,
+        "units": "kg"
+      },
+      "price": {
+        "value": 500,
+        "denomination": ""
+      },
+      "properties": [
+        "lgt"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Giavellotto",
-    "description": "<p>Arma da mischia semplice</p>"
+    "description": "<p>Arma da mischia semplice</p>",
+    "_id": "93e96582b71de84b",
+    "system": {
+      "type": {
+        "value": "simpleM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 9,
+        "long": 36,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1500,
+        "denomination": ""
+      },
+      "properties": [
+        "thr"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Lancia",
-    "description": "<p>Arma da mischia semplice</p>"
+    "description": "<p>Arma da mischia semplice</p>",
+    "_id": "d46959a81baea837",
+    "system": {
+      "type": {
+        "value": "simpleM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "piercing"
+          ]
+        ],
+        "versatile": "1d8"
+      },
+      "range": {
+        "value": 6,
+        "long": 18,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1.5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 500,
+        "denomination": ""
+      },
+      "properties": [
+        "thr",
+        "ver"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Martello leggero",
-    "description": "<p>Arma da mischia semplice</p>"
+    "description": "<p>Arma da mischia semplice</p>",
+    "_id": "3eb87105683596d3",
+    "system": {
+      "type": {
+        "value": "simpleM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 6,
+        "long": 18,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1000,
+        "denomination": ""
+      },
+      "properties": [
+        "lgt",
+        "thr"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Mazza",
-    "description": "<p>Arma da mischia semplice</p>"
+    "description": "<p>Arma da mischia semplice</p>",
+    "_id": "7ce0af96cadb439f",
+    "system": {
+      "type": {
+        "value": "simpleM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 2,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1000,
+        "denomination": ""
+      },
+      "properties": [],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Pugnale",
-    "description": "<p>Arma da mischia semplice</p>"
+    "description": "<p>Arma da mischia semplice</p>",
+    "_id": "9fc169d75953ac09",
+    "system": {
+      "type": {
+        "value": "simpleM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 6,
+        "long": 18,
+        "units": "m"
+      },
+      "weight": {
+        "value": 0.5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1000,
+        "denomination": ""
+      },
+      "properties": [
+        "fin",
+        "lgt",
+        "thr"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Alabarda",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "ce38d6878d2804f5",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d10",
+            "slashing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 3,
+        "units": "kg"
+      },
+      "price": {
+        "value": 2500,
+        "denomination": ""
+      },
+      "properties": [
+        "hvy",
+        "rch",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Ascia Bipenne",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "138a2bc641aff345",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d12",
+            "slashing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 3.5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 2500,
+        "denomination": ""
+      },
+      "properties": [
+        "hvy",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Ascia da battaglia",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "4d74ebf0e2da9725",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "slashing"
+          ]
+        ],
+        "versatile": "1d10"
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 2,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1000,
+        "denomination": ""
+      },
+      "properties": [
+        "ver"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Falcione",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "42718ac04add0037",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d10",
+            "slashing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 3,
+        "units": "kg"
+      },
+      "price": {
+        "value": 2000,
+        "denomination": ""
+      },
+      "properties": [
+        "hvy",
+        "rch",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Frusta",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "00b74d7856f6892c",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "slashing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1.5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 2000,
+        "denomination": ""
+      },
+      "properties": [
+        "fin",
+        "rch"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Lancia da Cavaliere",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "8877fb437f7f7bc3",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d12",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 3,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1000,
+        "denomination": ""
+      },
+      "properties": [
+        "rch"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Maglio",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "c5d85a3bd78e816b",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1000,
+        "denomination": ""
+      },
+      "properties": [
+        "hvy",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Martello da guerra",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "ef7e23697e87b722",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": "1d10"
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1500,
+        "denomination": ""
+      },
+      "properties": [
+        "ver"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Mazzafrusto",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "c346e911286d5cfb",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1000,
+        "denomination": ""
+      },
+      "properties": [],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Morning Star",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "1a47e0fd48b179fa",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 2,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1500,
+        "denomination": ""
+      },
+      "properties": [],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Picca",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "329053843dc3726f",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d10",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 9,
+        "units": "kg"
+      },
+      "price": {
+        "value": 500,
+        "denomination": ""
+      },
+      "properties": [
+        "hvy",
+        "rch",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Piccone da guerra",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "6fc166dae63b678e",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1500,
+        "denomination": ""
+      },
+      "properties": [],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Scimitarra",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "b021f5e97f76b362",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "slashing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1.5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 2000,
+        "denomination": ""
+      },
+      "properties": [
+        "fin",
+        "lgt"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Spada corta",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "21269fa2c00b7cc3",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1500,
+        "denomination": ""
+      },
+      "properties": [
+        "fin",
+        "lgt"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Spada lunga",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "7a632823fdb96fc1",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "slashing"
+          ]
+        ],
+        "versatile": "1d10"
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1.5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 1500,
+        "denomination": ""
+      },
+      "properties": [
+        "ver"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Spadone",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "de9165bef23c27d0",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "slashing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 3,
+        "units": "kg"
+      },
+      "price": {
+        "value": 5000,
+        "denomination": ""
+      },
+      "properties": [
+        "hvy",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Stocco",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "c2bfd318fa72bb72",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": null,
+        "long": null,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1,
+        "units": "kg"
+      },
+      "price": {
+        "value": 2500,
+        "denomination": ""
+      },
+      "properties": [
+        "fin"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Tridente",
-    "description": "<p>Arma marziale da mischia</p>"
+    "description": "<p>Arma marziale da mischia</p>",
+    "_id": "59cf0262182f02ce",
+    "system": {
+      "type": {
+        "value": "martialM",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "piercing"
+          ]
+        ],
+        "versatile": "1d8"
+      },
+      "range": {
+        "value": 6,
+        "long": 18,
+        "units": "m"
+      },
+      "weight": {
+        "value": 2,
+        "units": "kg"
+      },
+      "price": {
+        "value": 5000,
+        "denomination": ""
+      },
+      "properties": [
+        "thr",
+        "ver"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Arco corto",
-    "description": "<p>Arma a distanza semplice</p>"
+    "description": "<p>Arma a distanza semplice</p>",
+    "_id": "d6d9bb5debbe9555",
+    "system": {
+      "type": {
+        "value": "simpleR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 24,
+        "long": 96,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1,
+        "units": "kg"
+      },
+      "price": {
+        "value": 2500,
+        "denomination": ""
+      },
+      "properties": [
+        "amm",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Balestra leggera",
-    "description": "<p>Arma a distanza semplice</p>"
+    "description": "<p>Arma a distanza semplice</p>",
+    "_id": "a0264e0ec7be9e15",
+    "system": {
+      "type": {
+        "value": "simpleR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 24,
+        "long": 96,
+        "units": "m"
+      },
+      "weight": {
+        "value": 2.5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 2500,
+        "denomination": ""
+      },
+      "properties": [
+        "amm",
+        "lod",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Dardo",
-    "description": "<p>Arma a distanza semplice</p>"
+    "description": "<p>Arma a distanza semplice</p>",
+    "_id": "03fdc8ceb948b32e",
+    "system": {
+      "type": {
+        "value": "simpleR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 6,
+        "long": 18,
+        "units": "m"
+      },
+      "weight": {
+        "value": 0.1,
+        "units": "kg"
+      },
+      "price": {
+        "value": 100,
+        "denomination": ""
+      },
+      "properties": [
+        "fin",
+        "thr"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Fionda",
-    "description": "<p>Arma a distanza semplice</p>"
+    "description": "<p>Arma a distanza semplice</p>",
+    "_id": "b5a66e6a32abb57f",
+    "system": {
+      "type": {
+        "value": "simpleR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 9,
+        "long": 36,
+        "units": "m"
+      },
+      "weight": {
+        "value": 0,
+        "units": "kg"
+      },
+      "price": {
+        "value": 500,
+        "denomination": ""
+      },
+      "properties": [
+        "amm"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Arco lungo",
-    "description": "<p>Arma marziale a distanza</p>"
+    "description": "<p>Arma marziale a distanza</p>",
+    "_id": "07ee7f5ed48886a1",
+    "system": {
+      "type": {
+        "value": "martialR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d10",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 45,
+        "long": 180,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1,
+        "units": "kg"
+      },
+      "price": {
+        "value": 5000,
+        "denomination": ""
+      },
+      "properties": [
+        "amm",
+        "hvy",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Balestra a mano",
-    "description": "<p>Arma marziale a distanza</p>"
+    "description": "<p>Arma marziale a distanza</p>",
+    "_id": "c5417ce3d8f2c64b",
+    "system": {
+      "type": {
+        "value": "martialR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 9,
+        "long": 36,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1.5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 7500,
+        "denomination": ""
+      },
+      "properties": [
+        "amm",
+        "lgt",
+        "lod"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Balestra pesante",
-    "description": "<p>Arma marziale a distanza</p>"
+    "description": "<p>Arma marziale a distanza</p>",
+    "_id": "67bd6b5cc492b287",
+    "system": {
+      "type": {
+        "value": "martialR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d10",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 30,
+        "long": 120,
+        "units": "m"
+      },
+      "weight": {
+        "value": 9,
+        "units": "kg"
+      },
+      "price": {
+        "value": 5000,
+        "denomination": ""
+      },
+      "properties": [
+        "amm",
+        "hvy",
+        "lod",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Rete",
-    "description": "<p>Arma marziale a distanza</p>"
+    "description": "<p>Arma marziale a distanza</p>",
+    "_id": "edd6d3b52f69ead1",
+    "system": {
+      "type": {
+        "value": "martialR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [],
+        "versatile": ""
+      },
+      "range": {
+        "value": 1.5,
+        "long": 4.5,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1.5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 100,
+        "denomination": ""
+      },
+      "properties": [
+        "thr"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Archibugio",
-    "description": "<p>Arma da fuoco</p>"
+    "description": "<p>Arma da fuoco</p>",
+    "_id": "667ec6965d075a2c",
+    "system": {
+      "type": {
+        "value": "simpleR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 6,
+        "long": 9,
+        "units": "m"
+      },
+      "weight": {
+        "value": 5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 5000,
+        "denomination": ""
+      },
+      "properties": [
+        "amm",
+        "lod",
+        "fir",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Pistola",
-    "description": "<p>Arma da fuoco</p>"
+    "description": "<p>Arma da fuoco</p>",
+    "_id": "7baf1a59c28b6704",
+    "system": {
+      "type": {
+        "value": "simpleR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 15,
+        "long": 45,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1.5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 2500,
+        "denomination": ""
+      },
+      "properties": [
+        "amm",
+        "fir"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Rivoltella",
-    "description": "<p>Arma da fuoco</p>"
+    "description": "<p>Arma da fuoco</p>",
+    "_id": "bf0c987945432750",
+    "system": {
+      "type": {
+        "value": "simpleR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d10",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 12,
+        "long": 36,
+        "units": "m"
+      },
+      "weight": {
+        "value": 1.5,
+        "units": "kg"
+      },
+      "price": {
+        "value": 2500,
+        "denomination": ""
+      },
+      "properties": [
+        "amm",
+        "fir"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "DMR",
-    "description": "<p>Arma da fuoco</p>"
+    "description": "<p>Arma da fuoco</p>",
+    "_id": "a509ddd99250071e",
+    "system": {
+      "type": {
+        "value": "martialR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d12",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 45,
+        "long": 180,
+        "units": "m"
+      },
+      "weight": {
+        "value": 2,
+        "units": "kg"
+      },
+      "price": {
+        "value": 10000,
+        "denomination": ""
+      },
+      "properties": [
+        "amm",
+        "hvy",
+        "fir",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Fucile a canne mozze",
-    "description": "<p>Arma da fuoco</p>"
+    "description": "<p>Arma da fuoco</p>",
+    "_id": "bd8f74968200c636",
+    "system": {
+      "type": {
+        "value": "martialR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [],
+        "versatile": ""
+      },
+      "range": {
+        "value": 9,
+        "long": 36,
+        "units": "m"
+      },
+      "weight": {
+        "value": 2,
+        "units": "kg"
+      },
+      "price": {
+        "value": 2500,
+        "denomination": ""
+      },
+      "properties": [
+        "amm",
+        "hvy",
+        "lod",
+        "fir",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Fucile a pompa",
-    "description": "<p>Arma da fuoco</p>"
+    "description": "<p>Arma da fuoco</p>",
+    "_id": "182f8cb1704536e5",
+    "system": {
+      "type": {
+        "value": "martialR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [],
+        "versatile": ""
+      },
+      "range": {
+        "value": 9,
+        "long": 36,
+        "units": "m"
+      },
+      "weight": {
+        "value": 2,
+        "units": "kg"
+      },
+      "price": {
+        "value": 5000,
+        "denomination": ""
+      },
+      "properties": [
+        "amm",
+        "hvy",
+        "lod",
+        "fir",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Fucile d'Assalto",
-    "description": "<p>Arma da fuoco</p>"
+    "description": "<p>Arma da fuoco</p>",
+    "_id": "ce31def410f778a4",
+    "system": {
+      "type": {
+        "value": "martialR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d4",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 27,
+        "long": 60,
+        "units": "m"
+      },
+      "weight": {
+        "value": 2,
+        "units": "kg"
+      },
+      "price": {
+        "value": 7500,
+        "denomination": ""
+      },
+      "properties": [
+        "amm",
+        "fir",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Fucile da cecchino Bolt Action",
-    "description": "<p>Arma da fuoco</p>"
+    "description": "<p>Arma da fuoco</p>",
+    "_id": "fb77405c21193fa5",
+    "system": {
+      "type": {
+        "value": "martialR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 90,
+        "long": 360,
+        "units": "m"
+      },
+      "weight": {
+        "value": 3,
+        "units": "kg"
+      },
+      "price": {
+        "value": 12500,
+        "denomination": ""
+      },
+      "properties": [
+        "amm",
+        "hvy",
+        "lod",
+        "fir",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Fucile da cecchino (semi)",
-    "description": "<p>Arma da fuoco</p>"
+    "description": "<p>Arma da fuoco</p>",
+    "_id": "76b4ffa6f3d442c1",
+    "system": {
+      "type": {
+        "value": "martialR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 90,
+        "long": 360,
+        "units": "m"
+      },
+      "weight": {
+        "value": 2,
+        "units": "kg"
+      },
+      "price": {
+        "value": 15000,
+        "denomination": ""
+      },
+      "properties": [
+        "amm",
+        "hvy",
+        "fir",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Fucile semi-automatico",
-    "description": "<p>Arma da fuoco</p>"
+    "description": "<p>Arma da fuoco</p>",
+    "_id": "1e5607f257086176",
+    "system": {
+      "type": {
+        "value": "martialR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [],
+        "versatile": ""
+      },
+      "range": {
+        "value": 9,
+        "long": 36,
+        "units": "m"
+      },
+      "weight": {
+        "value": 2,
+        "units": "kg"
+      },
+      "price": {
+        "value": 10000,
+        "denomination": ""
+      },
+      "properties": [
+        "amm",
+        "hvy",
+        "fir",
+        "two"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Mitraglietta",
-    "description": "<p>Arma da fuoco</p>"
+    "description": "<p>Arma da fuoco</p>",
+    "_id": "e17717192d5f045d",
+    "system": {
+      "type": {
+        "value": "martialR",
+        "baseItem": ""
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "range": {
+        "value": 15,
+        "long": 45,
+        "units": "m"
+      },
+      "weight": {
+        "value": 2,
+        "units": "kg"
+      },
+      "price": {
+        "value": 5000,
+        "denomination": ""
+      },
+      "properties": [
+        "amm",
+        "fir"
+      ],
+      "proficient": true,
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Cartuccia a palla",
-    "description": "<p>Munizione</p>"
+    "description": "<p>Munizione</p>",
+    "_id": "f2c39b350fbf40a5",
+    "system": {
+      "type": {
+        "value": "ammo",
+        "baseItem": ""
+      },
+      "weight": {
+        "value": 0.05,
+        "units": "kg"
+      },
+      "price": {
+        "value": 100,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Cartuccia sfondaporte",
-    "description": "<p>Munizione</p>"
+    "description": "<p>Munizione</p>",
+    "_id": "c65a481f2d1b1acb",
+    "system": {
+      "type": {
+        "value": "ammo",
+        "baseItem": ""
+      },
+      "weight": {
+        "value": 0.05,
+        "units": "kg"
+      },
+      "price": {
+        "value": 200,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Pallini",
-    "description": "<p>Munizione</p>"
+    "description": "<p>Munizione</p>",
+    "_id": "a3d891e68baa4fe2",
+    "system": {
+      "type": {
+        "value": "ammo",
+        "baseItem": ""
+      },
+      "weight": {
+        "value": 0.05,
+        "units": "kg"
+      },
+      "price": {
+        "value": 100,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Pallettoni",
-    "description": "<p>Munizione</p>"
+    "description": "<p>Munizione</p>",
+    "_id": "dd75435563a7299d",
+    "system": {
+      "type": {
+        "value": "ammo",
+        "baseItem": ""
+      },
+      "weight": {
+        "value": 0.05,
+        "units": "kg"
+      },
+      "price": {
+        "value": 200,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   },
   {
     "name": "Respiro del Drago",
-    "description": "<p>Munizione</p>"
+    "description": "<p>Munizione</p>",
+    "_id": "c9e9acaee5a5c28a",
+    "system": {
+      "type": {
+        "value": "ammo",
+        "baseItem": ""
+      },
+      "weight": {
+        "value": 0.05,
+        "units": "kg"
+      },
+      "price": {
+        "value": 300,
+        "denomination": ""
+      },
+      "source": {
+        "custom": "Fairy Tail 5e",
+        "book": "Fairy Tail"
+      }
+    }
   }
 ]

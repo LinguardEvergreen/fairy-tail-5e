@@ -1,0 +1,11 @@
+{
+  "FT5E.Settings.ManaEnabled.Name": "Abilita Punti Mana",
+  "FT5E.Settings.ManaEnabled.Hint": "Sostituisce gli slot incantesimi con i Punti Mana del manuale Fairy Tail 5e. Ogni classe ha la propria formula di progressione.",
+  "FT5E.Settings.ManaBarColor.Name": "Colore Barra Mana",
+  "FT5E.Settings.ManaBarColor.Hint": "Colore primario della barra Punti Mana nella scheda personaggio.",
+  "FT5E.Mana.NotEnough": "Punti Mana insufficienti! Costo: {cost} PM, disponibili: {current} PM.",
+  "FT5E.Mana.Recovered": "{name} recupera tutti i Punti Mana! ({max} PM)",
+  "FT5E.Mana.Label": "Punti Mana",
+  "FT5E.Mana.Cost": "Costo Mana",
+  "FT5E.Mana.Available": "Mana disponibile"
+}

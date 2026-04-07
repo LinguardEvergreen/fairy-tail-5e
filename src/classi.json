@@ -14,6 +14,47 @@
       },
       "advancement": [
         {
+          "_id": "b89f75bf22a22dd8",
+          "type": "ItemGrant",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.7f1893ce299dfd4c"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.ded26cbf97cff63f"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "a1ad8994a68983fd",
+          "type": "ItemGrant",
+          "level": 3,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.254f84ebc38806df"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
           "_id": "2c0f3dc46af72b24",
           "type": "ItemGrant",
           "level": 4,
@@ -52,6 +93,25 @@
             },
             "cap": 2,
             "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "4976851dbffe13f4",
+          "type": "ItemGrant",
+          "level": 7,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.36eddd8483b2868d"
+              }
+            ],
+            "optional": false,
+            "spell": null
           },
           "value": {}
         },
@@ -98,6 +158,25 @@
           "value": {}
         },
         {
+          "_id": "40d31f53e052fda6",
+          "type": "ItemGrant",
+          "level": 10,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.254f84ebc38806df"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
           "_id": "e02b453b1354403b",
           "type": "ItemGrant",
           "level": 12,
@@ -136,6 +215,25 @@
             },
             "cap": 2,
             "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "cb5004e935f834a6",
+          "type": "ItemGrant",
+          "level": 14,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.ded26cbf97cff63f"
+              }
+            ],
+            "optional": false,
+            "spell": null
           },
           "value": {}
         },
@@ -182,6 +280,25 @@
           "value": {}
         },
         {
+          "_id": "3d7c95165c0f3f0b",
+          "type": "ItemGrant",
+          "level": 17,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.254f84ebc38806df"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
           "_id": "b5de8b803589e237",
           "type": "ItemGrant",
           "level": 19,
@@ -222,6 +339,25 @@
             "locked": []
           },
           "value": {}
+        },
+        {
+          "_id": "95ebe33984a0732a",
+          "type": "ItemGrant",
+          "level": 20,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.bd197861daf3201a"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
         }
       ]
     }
@@ -240,6 +376,66 @@
         "rules": "2014"
       },
       "advancement": [
+        {
+          "_id": "5955076856c964a2",
+          "type": "ItemGrant",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.44f522253736f5e7"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.6092b16c50e7c0ed"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "9281840d023af0ce",
+          "type": "ItemGrant",
+          "level": 2,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.cd2fd4ff54982322"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "533acf40bd64ad68",
+          "type": "ItemGrant",
+          "level": 3,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.98b4a8cec6dd38d7"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
         {
           "_id": "fd76e01074bb63e0",
           "type": "ItemGrant",
@@ -279,6 +475,63 @@
             },
             "cap": 2,
             "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "73be17cc9a6c7ff4",
+          "type": "ItemGrant",
+          "level": 5,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.18699146b9367862"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "5b06d054d3a323a1",
+          "type": "ItemGrant",
+          "level": 6,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.7357a86868dab8d0"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "bff3133ddcbe01ba",
+          "type": "ItemGrant",
+          "level": 7,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.35da82291d628676"
+              }
+            ],
+            "optional": false,
+            "spell": null
           },
           "value": {}
         },
@@ -325,6 +578,25 @@
           "value": {}
         },
         {
+          "_id": "be7e1783874c4f57",
+          "type": "ItemGrant",
+          "level": 10,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.e86069471627680a"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
           "_id": "b11865a9a0c71875",
           "type": "ItemGrant",
           "level": 12,
@@ -367,6 +639,44 @@
           "value": {}
         },
         {
+          "_id": "6eda47049283b660",
+          "type": "ItemGrant",
+          "level": 13,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.d9c3f2a97a7971e7"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "0a04c6d3ba6f4daa",
+          "type": "ItemGrant",
+          "level": 14,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.5b1870b5d42f0044"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
           "_id": "05fb789a2338e3cd",
           "type": "ItemGrant",
           "level": 16,
@@ -405,6 +715,44 @@
             },
             "cap": 2,
             "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "1aeae83a03de3ed9",
+          "type": "ItemGrant",
+          "level": 17,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.99acb9b7b71c8b35"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "2cef3976bcbf201e",
+          "type": "ItemGrant",
+          "level": 18,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.045e5243b461902e"
+              }
+            ],
+            "optional": false,
+            "spell": null
           },
           "value": {}
         },
@@ -468,6 +816,69 @@
       },
       "advancement": [
         {
+          "_id": "3e55be623054ae2f",
+          "type": "ItemGrant",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.969606bd0fd1a371"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.63a51aef4a3514cc"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.f77e1002d74adb99"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "26d503ba314451ef",
+          "type": "ItemGrant",
+          "level": 2,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.0a686a8aafb508fd"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "57aa8472b0eb272e",
+          "type": "ItemGrant",
+          "level": 3,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.1fdfc3b6adb20ba8"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
           "_id": "08a6e43e4a35f1a4",
           "type": "ItemGrant",
           "level": 4,
@@ -506,6 +917,63 @@
             },
             "cap": 2,
             "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "78fca88fb0b74ba0",
+          "type": "ItemGrant",
+          "level": 5,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.5630397c9fea3f2d"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "d6d167e8b933e272",
+          "type": "ItemGrant",
+          "level": 6,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.b895363b13f654df"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "694c88ab231e2f3c",
+          "type": "ItemGrant",
+          "level": 7,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.9224a49e96706c01"
+              }
+            ],
+            "optional": false,
+            "spell": null
           },
           "value": {}
         },
@@ -552,6 +1020,44 @@
           "value": {}
         },
         {
+          "_id": "5dc17af63efc404a",
+          "type": "ItemGrant",
+          "level": 9,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.a6b5dc59d078e81c"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "1b2a133529886b7e",
+          "type": "ItemGrant",
+          "level": 11,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.b4c5c856e1ce7f42"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
           "_id": "8ad4e419ca4a434d",
           "type": "ItemGrant",
           "level": 12,
@@ -590,6 +1096,63 @@
             },
             "cap": 2,
             "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "f45c9a679ea9e12c",
+          "type": "ItemGrant",
+          "level": 13,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.aecdf617ee8adc10"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "0bcd9e0216c41180",
+          "type": "ItemGrant",
+          "level": 14,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.bbc91a7d46d96627"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "e502f4e1383733b2",
+          "type": "ItemGrant",
+          "level": 15,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.adf6fd47ffab015a"
+              }
+            ],
+            "optional": false,
+            "spell": null
           },
           "value": {}
         },
@@ -636,6 +1199,25 @@
           "value": {}
         },
         {
+          "_id": "cdab300953d3a4b7",
+          "type": "ItemGrant",
+          "level": 18,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.e40ec7bd882cbcbc"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
           "_id": "5c550e696bf75564",
           "type": "ItemGrant",
           "level": 19,
@@ -676,6 +1258,25 @@
             "locked": []
           },
           "value": {}
+        },
+        {
+          "_id": "a64196d2bbb07180",
+          "type": "ItemGrant",
+          "level": 20,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.37a8b9390cea8dd1"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
         }
       ]
     }
@@ -694,6 +1295,47 @@
         "rules": "2014"
       },
       "advancement": [
+        {
+          "_id": "9781fa67b5cdde9c",
+          "type": "ItemGrant",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.f8938e3e44f282b4"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.afdc74fa7e940670"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "0068cb27a2acefa7",
+          "type": "ItemGrant",
+          "level": 2,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.4e9833b04a9de857"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
         {
           "_id": "8cfb7ffd8813b542",
           "type": "ItemGrant",
@@ -733,6 +1375,44 @@
             },
             "cap": 2,
             "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "df9d1ddbc14d2df0",
+          "type": "ItemGrant",
+          "level": 5,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.372f65b152fe334c"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "7fa6ab965abe03eb",
+          "type": "ItemGrant",
+          "level": 7,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.eacfb2eb931fd59f"
+              }
+            ],
+            "optional": false,
+            "spell": null
           },
           "value": {}
         },
@@ -779,6 +1459,25 @@
           "value": {}
         },
         {
+          "_id": "f41bfa95fa5a0c93",
+          "type": "ItemGrant",
+          "level": 10,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.afe0456d6ad8c968"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
           "_id": "98d82cd3dd05b829",
           "type": "ItemGrant",
           "level": 12,
@@ -821,6 +1520,44 @@
           "value": {}
         },
         {
+          "_id": "ae8dfdc180f78fb8",
+          "type": "ItemGrant",
+          "level": 13,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.0a3f8b356948b3c6"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "e566e33209c7bfe4",
+          "type": "ItemGrant",
+          "level": 15,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.a32607777aba5705"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
           "_id": "6d101f6589bf8f13",
           "type": "ItemGrant",
           "level": 16,
@@ -859,6 +1596,25 @@
             },
             "cap": 2,
             "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "c07380949ecc1ca3",
+          "type": "ItemGrant",
+          "level": 18,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.2a3e9a6f6b27b108"
+              }
+            ],
+            "optional": false,
+            "spell": null
           },
           "value": {}
         },
@@ -922,6 +1678,66 @@
       },
       "advancement": [
         {
+          "_id": "93f647cf6d3c1dce",
+          "type": "ItemGrant",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.d3aa8210f518c171"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.79b4c57645e640d2"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "96b7ac2f132df1e2",
+          "type": "ItemGrant",
+          "level": 2,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.68533838c9b42fea"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "7a3f5fa1728169d3",
+          "type": "ItemGrant",
+          "level": 3,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.f97328ba39bc2089"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
           "_id": "dd2b02177b75fea4",
           "type": "AbilityScoreImprovement",
           "level": 4,
@@ -941,6 +1757,44 @@
             },
             "cap": 2,
             "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "befa978cdda7855f",
+          "type": "ItemGrant",
+          "level": 5,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.2213efa1343def2e"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "5f4a1642c902ec75",
+          "type": "ItemGrant",
+          "level": 6,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.4796de7230e44d82"
+              }
+            ],
+            "optional": false,
+            "spell": null
           },
           "value": {}
         },
@@ -968,6 +1822,25 @@
           "value": {}
         },
         {
+          "_id": "89dacb7b5ba3182f",
+          "type": "ItemGrant",
+          "level": 11,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.95891d4d7906ccc8"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
           "_id": "9bab8a222989ca1c",
           "type": "AbilityScoreImprovement",
           "level": 12,
@@ -987,6 +1860,25 @@
             },
             "cap": 2,
             "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "0ced65f48a8cb7ba",
+          "type": "ItemGrant",
+          "level": 14,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.d9c0e1b2b7b591d6"
+              }
+            ],
+            "optional": false,
+            "spell": null
           },
           "value": {}
         },
@@ -1035,6 +1927,25 @@
             "locked": []
           },
           "value": {}
+        },
+        {
+          "_id": "5ac4d2efe10f70c5",
+          "type": "ItemGrant",
+          "level": 20,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.6adf9581145f435e"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
         }
       ]
     }
@@ -1053,6 +1964,66 @@
         "rules": "2014"
       },
       "advancement": [
+        {
+          "_id": "18d97885009ef10f",
+          "type": "ItemGrant",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.0518708471de3af2"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.36cff07643fa2707"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "04b8a7515fe7b92b",
+          "type": "ItemGrant",
+          "level": 2,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.825a68585bfb57c2"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "d3ba5f5500e07797",
+          "type": "ItemGrant",
+          "level": 3,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.a5c458ddfd0284b1"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
         {
           "_id": "f0c9689dadcf31e6",
           "type": "ItemGrant",
@@ -1094,6 +2065,97 @@
             "locked": []
           },
           "value": {}
+        },
+        {
+          "_id": "460b2a560d7fd12e",
+          "type": "ItemGrant",
+          "level": 6,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.5a6000816747fa1d"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "ada274ab6fce15e7",
+          "type": "ItemChoice",
+          "level": 6,
+          "title": "Piano Tattico",
+          "hint": "Scegli un Piano Tattico dalla lista.",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "choices": {
+              "6": {
+                "count": 1,
+                "replacement": false
+              }
+            },
+            "allowDrops": false,
+            "type": "feat",
+            "pool": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.f6f578f8abe554b2"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.9ac6df3f0a47bb48"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.de7384a859b022e3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.12f6395f8ea8a3de"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.10b2aeb3573cd6ff"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.81d3a0951ddabae6"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.4db8faaeeb229be2"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.d180e5296f2c7dad"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.bddbe682c54dc77c"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.35536cc0b9f3a0ae"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.483006a079e3b2a1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.38fd4f870cc3b707"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.81b3d8ddd3f4b030"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.bdc01c09f1e912f6"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.9764e872c914ea74"
+              }
+            ],
+            "restriction": {},
+            "spell": null
+          },
+          "value": {
+            "added": {},
+            "replaced": {}
+          }
         },
         {
           "_id": "ca41a0db9dfbd15d",
@@ -1138,6 +2200,116 @@
           "value": {}
         },
         {
+          "_id": "f3af8960345adb3e",
+          "type": "ItemGrant",
+          "level": 9,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.ea33776549dbb858"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "acaa5ee4e83025ef",
+          "type": "ItemGrant",
+          "level": 10,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.21c30b262ca2d67d"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "6b433f834a2af4cb",
+          "type": "ItemChoice",
+          "level": 12,
+          "title": "Piano Tattico",
+          "hint": "Scegli un Piano Tattico dalla lista.",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "choices": {
+              "12": {
+                "count": 1,
+                "replacement": false
+              }
+            },
+            "allowDrops": false,
+            "type": "feat",
+            "pool": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.f6f578f8abe554b2"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.9ac6df3f0a47bb48"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.de7384a859b022e3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.12f6395f8ea8a3de"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.10b2aeb3573cd6ff"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.81d3a0951ddabae6"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.4db8faaeeb229be2"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.d180e5296f2c7dad"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.bddbe682c54dc77c"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.35536cc0b9f3a0ae"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.483006a079e3b2a1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.38fd4f870cc3b707"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.81b3d8ddd3f4b030"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.bdc01c09f1e912f6"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.9764e872c914ea74"
+              }
+            ],
+            "restriction": {},
+            "spell": null
+          },
+          "value": {
+            "added": {},
+            "replaced": {}
+          }
+        },
+        {
           "_id": "b18cea3672f6c60e",
           "type": "ItemGrant",
           "level": 12,
@@ -1176,6 +2348,25 @@
             },
             "cap": 2,
             "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "c18a686748c92cf5",
+          "type": "ItemGrant",
+          "level": 14,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.aee07364b062da7f"
+              }
+            ],
+            "optional": false,
+            "spell": null
           },
           "value": {}
         },
@@ -1222,6 +2413,78 @@
           "value": {}
         },
         {
+          "_id": "c2417f53df8ddab2",
+          "type": "ItemChoice",
+          "level": 18,
+          "title": "Piano Tattico",
+          "hint": "Scegli un Piano Tattico dalla lista.",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "choices": {
+              "18": {
+                "count": 1,
+                "replacement": false
+              }
+            },
+            "allowDrops": false,
+            "type": "feat",
+            "pool": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.f6f578f8abe554b2"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.9ac6df3f0a47bb48"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.de7384a859b022e3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.12f6395f8ea8a3de"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.10b2aeb3573cd6ff"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.81d3a0951ddabae6"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.4db8faaeeb229be2"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.d180e5296f2c7dad"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.bddbe682c54dc77c"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.35536cc0b9f3a0ae"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.483006a079e3b2a1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.38fd4f870cc3b707"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.81b3d8ddd3f4b030"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.bdc01c09f1e912f6"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.9764e872c914ea74"
+              }
+            ],
+            "restriction": {},
+            "spell": null
+          },
+          "value": {
+            "added": {},
+            "replaced": {}
+          }
+        },
+        {
           "_id": "086bb95ed7c3595b",
           "type": "ItemGrant",
           "level": 19,
@@ -1262,6 +2525,25 @@
             "locked": []
           },
           "value": {}
+        },
+        {
+          "_id": "bac0c6b42e5ed1b0",
+          "type": "ItemGrant",
+          "level": 20,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.32c94d5705054117"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
         }
       ]
     }
@@ -1280,6 +2562,69 @@
         "rules": "2014"
       },
       "advancement": [
+        {
+          "_id": "d07410571ecdd240",
+          "type": "ItemGrant",
+          "level": 1,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.5bdbca7f96e7d7bf"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.c5842d0087665e0f"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.05b177bde0b4aadf"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "13c5e85caa718e8f",
+          "type": "ItemGrant",
+          "level": 2,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.f8b9e5a9f1ba00ca"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "5bad6c56e73c0e1e",
+          "type": "ItemGrant",
+          "level": 4,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.8822a042c91b305a"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
         {
           "_id": "ee349cbb65abfd54",
           "type": "ItemGrant",
@@ -1323,6 +2668,25 @@
           "value": {}
         },
         {
+          "_id": "c21bf3fff3c9c66b",
+          "type": "ItemGrant",
+          "level": 5,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.4df727af9a1336fa"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
           "_id": "1bb80136495dbaba",
           "type": "ItemGrant",
           "level": 8,
@@ -1361,6 +2725,63 @@
             },
             "cap": 2,
             "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "b91c03f646847533",
+          "type": "ItemGrant",
+          "level": 9,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.a870d50230d0d85b"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "568d9f3aa236e9a0",
+          "type": "ItemGrant",
+          "level": 10,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.4b32a675f87a28a5"
+              }
+            ],
+            "optional": false,
+            "spell": null
+          },
+          "value": {}
+        },
+        {
+          "_id": "42a2edd0ac2b8b15",
+          "type": "ItemGrant",
+          "level": 11,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.4df727af9a1336fa"
+              }
+            ],
+            "optional": false,
+            "spell": null
           },
           "value": {}
         },
@@ -1445,6 +2866,25 @@
             },
             "cap": 2,
             "locked": []
+          },
+          "value": {}
+        },
+        {
+          "_id": "436e88b86b0d59fb",
+          "type": "ItemGrant",
+          "level": 17,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "items": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-feature-classi.05c0d1be123ba16e"
+              }
+            ],
+            "optional": false,
+            "spell": null
           },
           "value": {}
         },
