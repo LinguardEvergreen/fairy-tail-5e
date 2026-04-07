@@ -9,7 +9,14 @@
         "subtype": ""
       },
       "requirements": "Magia dello Spazio Aereo",
-      "identifier": "manipolazione-dello-spazio-aereo-liv-1"
+      "identifier": "manipolazione-dello-spazio-aereo-liv-1",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -23,7 +30,14 @@
         "subtype": ""
       },
       "requirements": "Magia dello Spazio Aereo",
-      "identifier": "antenna-liv-3"
+      "identifier": "antenna-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -37,7 +51,14 @@
         "subtype": ""
       },
       "requirements": "Magia dello Spazio Aereo",
-      "identifier": "zetsu-liv-3"
+      "identifier": "zetsu-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -51,7 +72,14 @@
         "subtype": ""
       },
       "requirements": "Magia dello Spazio Aereo",
-      "identifier": "lv-6-forma-aerea"
+      "identifier": "lv-6-forma-aerea",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -65,7 +93,14 @@
         "subtype": ""
       },
       "requirements": "Magia dello Spazio Aereo",
-      "identifier": "tiro-aereo-lv-6"
+      "identifier": "tiro-aereo-lv-6",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -79,7 +114,14 @@
         "subtype": ""
       },
       "requirements": "Magia dello Spazio Aereo",
-      "identifier": "lv-11-opzione-fase-arial"
+      "identifier": "lv-11-opzione-fase-arial",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -93,7 +135,14 @@
         "subtype": ""
       },
       "requirements": "Magia dello Spazio Aereo",
-      "identifier": "utilizzo-massimo-opzione-liv-11-metsu"
+      "identifier": "utilizzo-massimo-opzione-liv-11-metsu",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -107,7 +156,14 @@
         "subtype": ""
       },
       "requirements": "Magia dello Spazio Aereo",
-      "identifier": "opzione-liv-18-padronanza-dello-spazio-aereo"
+      "identifier": "opzione-liv-18-padronanza-dello-spazio-aereo",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -121,7 +177,14 @@
         "subtype": ""
       },
       "requirements": "Magia dello Spazio Aereo",
-      "identifier": "opzione-lv-20-aria-assoluta"
+      "identifier": "opzione-lv-20-aria-assoluta",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -135,7 +198,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Carte",
-      "identifier": "mazzo-delle-molte-cose-liv-1"
+      "identifier": "mazzo-delle-molte-cose-liv-1",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -149,7 +219,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Carte",
-      "identifier": "mazzo-utilita-liv-3"
+      "identifier": "mazzo-utilita-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -163,7 +240,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Carte",
-      "identifier": "carte-elementali-liv-3"
+      "identifier": "carte-elementali-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -177,7 +261,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Carte",
-      "identifier": "carte-personalizzate-liv-6"
+      "identifier": "carte-personalizzate-liv-6",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -191,7 +282,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Carte",
-      "identifier": "combinazione-personalizzata-liv-6"
+      "identifier": "combinazione-personalizzata-liv-6",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -205,7 +303,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Carte",
-      "identifier": "carte-combinazione-divine-liv-10"
+      "identifier": "carte-combinazione-divine-liv-10",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -219,7 +324,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Carte",
-      "identifier": "maestria-carta-liv-11"
+      "identifier": "maestria-carta-liv-11",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -233,7 +345,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Carte",
-      "identifier": "combinazioni-trascendenti-liv-18"
+      "identifier": "combinazioni-trascendenti-liv-18",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -247,7 +366,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Carte",
-      "identifier": "lv-20-abbraccio-dei-tarocchi"
+      "identifier": "lv-20-abbraccio-dei-tarocchi",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -261,7 +387,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Terra",
-      "identifier": "plasmatore-della-terra-liv-1"
+      "identifier": "plasmatore-della-terra-liv-1",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
@@ -275,7 +408,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Terra",
-      "identifier": "lv-1-titano-legato-alla-terra"
+      "identifier": "lv-1-titano-legato-alla-terra",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
@@ -289,7 +429,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Terra",
-      "identifier": "artigiano-golem-liv-3"
+      "identifier": "artigiano-golem-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
@@ -303,7 +450,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Terra",
-      "identifier": "baluardo-di-terra-liv-3"
+      "identifier": "baluardo-di-terra-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
@@ -317,7 +471,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Terra",
-      "identifier": "fusione-terra-liv-6"
+      "identifier": "fusione-terra-liv-6",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
@@ -331,7 +492,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Terra",
-      "identifier": "alchimia-della-terra-liv-6"
+      "identifier": "alchimia-della-terra-liv-6",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
@@ -345,7 +513,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Terra",
-      "identifier": "magia-definitiva-liv-10-colpo-tettonico"
+      "identifier": "magia-definitiva-liv-10-colpo-tettonico",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
@@ -359,7 +534,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Terra",
-      "identifier": "lv-11-evoca-drago-della-terra"
+      "identifier": "lv-11-evoca-drago-della-terra",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
@@ -373,7 +555,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Terra",
-      "identifier": "opzione-liv-18-esercito-di-terracotta"
+      "identifier": "opzione-liv-18-esercito-di-terracotta",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
@@ -387,7 +576,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Terra",
-      "identifier": "opzione-liv-20-grande-alchimista-della-terra"
+      "identifier": "opzione-liv-20-grande-alchimista-della-terra",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
@@ -401,7 +597,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fuoco",
-      "identifier": "guadagno-totale-controllo-brace"
+      "identifier": "guadagno-totale-controllo-brace",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -415,7 +618,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fuoco",
-      "identifier": "opzione-liv-1-colpobrace"
+      "identifier": "opzione-liv-1-colpobrace",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -429,7 +639,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fuoco",
-      "identifier": "opzione-liv-1-impeto-ustionante"
+      "identifier": "opzione-liv-1-impeto-ustionante",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -443,7 +660,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fuoco",
-      "identifier": "esplosione-rovente-liv-3"
+      "identifier": "esplosione-rovente-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -457,7 +681,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fuoco",
-      "identifier": "lv-3-furia-infernale"
+      "identifier": "lv-3-furia-infernale",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -471,7 +702,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fuoco",
-      "identifier": "abbraccio-inferno-liv-3"
+      "identifier": "abbraccio-inferno-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -485,7 +723,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fuoco",
-      "identifier": "cuore-ardente-liv-5"
+      "identifier": "cuore-ardente-liv-5",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -499,7 +744,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fuoco",
-      "identifier": "armatura-fusa-liv-6"
+      "identifier": "armatura-fusa-liv-6",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -513,7 +765,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fuoco",
-      "identifier": "tifone-con-prominenza-liv-6"
+      "identifier": "tifone-con-prominenza-liv-6",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -527,7 +786,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fuoco",
-      "identifier": "lv-10-rinascita-della-fenice"
+      "identifier": "lv-10-rinascita-della-fenice",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -541,7 +807,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fuoco",
-      "identifier": "lv-11-urlo-del-dio-del-fuoco"
+      "identifier": "lv-11-urlo-del-dio-del-fuoco",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -555,7 +828,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fuoco",
-      "identifier": "lv-11-terra-bruciata"
+      "identifier": "lv-11-terra-bruciata",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -569,7 +849,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fuoco",
-      "identifier": "lv-18-furia-della-fenice"
+      "identifier": "lv-18-furia-della-fenice",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -583,7 +870,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fuoco",
-      "identifier": "liv-20-utilizzo-definitivo-bagliore-di-creazione"
+      "identifier": "liv-20-utilizzo-definitivo-bagliore-di-creazione",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -597,7 +891,14 @@
         "subtype": ""
       },
       "requirements": "Magia degli Ingranaggi",
-      "identifier": "legame-equipaggiamento-liv-1"
+      "identifier": "legame-equipaggiamento-liv-1",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -611,7 +912,14 @@
         "subtype": ""
       },
       "requirements": "Magia degli Ingranaggi",
-      "identifier": "potenziamento-equipaggiamento-liv-1"
+      "identifier": "potenziamento-equipaggiamento-liv-1",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -625,7 +933,14 @@
         "subtype": ""
       },
       "requirements": "Magia degli Ingranaggi",
-      "identifier": "legame-equipaggiamento-liv-3-angoscia-mentale"
+      "identifier": "legame-equipaggiamento-liv-3-angoscia-mentale",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -639,7 +954,14 @@
         "subtype": ""
       },
       "requirements": "Magia degli Ingranaggi",
-      "identifier": "pot-equipaggiamento-liv-3-accelerazione-temporale"
+      "identifier": "pot-equipaggiamento-liv-3-accelerazione-temporale",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -653,7 +975,14 @@
         "subtype": ""
       },
       "requirements": "Magia degli Ingranaggi",
-      "identifier": "campo-equipaggiamento-liv-5"
+      "identifier": "campo-equipaggiamento-liv-5",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -667,7 +996,14 @@
         "subtype": ""
       },
       "requirements": "Magia degli Ingranaggi",
-      "identifier": "legame-ingranaggio-liv-6-detonazione-overdrive"
+      "identifier": "legame-ingranaggio-liv-6-detonazione-overdrive",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -681,7 +1017,14 @@
         "subtype": ""
       },
       "requirements": "Magia degli Ingranaggi",
-      "identifier": "potenziamento-equipaggiamento-liv-6-impeto-temporale"
+      "identifier": "potenziamento-equipaggiamento-liv-6-impeto-temporale",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -695,7 +1038,14 @@
         "subtype": ""
       },
       "requirements": "Magia degli Ingranaggi",
-      "identifier": "auto-equipaggiamento-liv-10"
+      "identifier": "auto-equipaggiamento-liv-10",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -709,7 +1059,14 @@
         "subtype": ""
       },
       "requirements": "Magia degli Ingranaggi",
-      "identifier": "legame-equipaggiamento-liv-11-marcia-fantasma"
+      "identifier": "legame-equipaggiamento-liv-11-marcia-fantasma",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -723,7 +1080,14 @@
         "subtype": ""
       },
       "requirements": "Magia degli Ingranaggi",
-      "identifier": "potenziamento-equipaggiamento-liv-11-infusione-di-mana"
+      "identifier": "potenziamento-equipaggiamento-liv-11-infusione-di-mana",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -737,7 +1101,14 @@
         "subtype": ""
       },
       "requirements": "Magia degli Ingranaggi",
-      "identifier": "legame-equipaggiamento-lv-18-spostamento-dimensionale"
+      "identifier": "legame-equipaggiamento-lv-18-spostamento-dimensionale",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -751,7 +1122,14 @@
         "subtype": ""
       },
       "requirements": "Magia degli Ingranaggi",
-      "identifier": "potenziamento-equipaggiamento-liv-20-accelerazione-definitiva"
+      "identifier": "potenziamento-equipaggiamento-liv-20-accelerazione-definitiva",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -765,7 +1143,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Armi da Fuoco",
-      "identifier": "munizioni-personalizzate-liv-1"
+      "identifier": "munizioni-personalizzate-liv-1",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -779,7 +1164,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Armi da Fuoco",
-      "identifier": "tiri-elementali-liv-3"
+      "identifier": "tiri-elementali-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -793,7 +1185,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Armi da Fuoco",
-      "identifier": "liv-3-utilizzo-definitivo-tiro-a-ricerca"
+      "identifier": "liv-3-utilizzo-definitivo-tiro-a-ricerca",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -807,7 +1206,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Armi da Fuoco",
-      "identifier": "tiro-con-pungiglione-liv-6"
+      "identifier": "tiro-con-pungiglione-liv-6",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -821,7 +1227,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Armi da Fuoco",
-      "identifier": "tiro-tornado-liv-6"
+      "identifier": "tiro-tornado-liv-6",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -835,7 +1248,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Armi da Fuoco",
-      "identifier": "proiettile-personalizzato-liv-10"
+      "identifier": "proiettile-personalizzato-liv-10",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -849,7 +1269,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Armi da Fuoco",
-      "identifier": "espansione-omnidirezionale-liv-11"
+      "identifier": "espansione-omnidirezionale-liv-11",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -863,7 +1290,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Armi da Fuoco",
-      "identifier": "lv-11-tiro-largo"
+      "identifier": "lv-11-tiro-largo",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -877,7 +1311,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Armi da Fuoco",
-      "identifier": "proiettile-esplosivo-liv-18"
+      "identifier": "proiettile-esplosivo-liv-18",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -891,7 +1332,14 @@
         "subtype": ""
       },
       "requirements": "Magia delle Armi da Fuoco",
-      "identifier": "lv-20-colpo-di-luce-solare"
+      "identifier": "lv-20-colpo-di-luce-solare",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -905,7 +1353,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Corpo Celeste",
-      "identifier": "potere-celestiale-liv-1"
+      "identifier": "potere-celestiale-liv-1",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
@@ -919,7 +1374,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Corpo Celeste",
-      "identifier": "sintonizzazione-celeste-liv-3"
+      "identifier": "sintonizzazione-celeste-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
@@ -933,7 +1395,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Corpo Celeste",
-      "identifier": "collezione-celestiale-liv-3"
+      "identifier": "collezione-celestiale-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
@@ -947,7 +1416,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Corpo Celeste",
-      "identifier": "meteora-liv-6"
+      "identifier": "meteora-liv-6",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
@@ -961,7 +1437,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Corpo Celeste",
-      "identifier": "lv-6-orione"
+      "identifier": "lv-6-orione",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
@@ -975,7 +1458,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Corpo Celeste",
-      "identifier": "lv-11-sema"
+      "identifier": "lv-11-sema",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
@@ -989,7 +1479,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Corpo Celeste",
-      "identifier": "lv-11-altairis"
+      "identifier": "lv-11-altairis",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
@@ -1003,7 +1500,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Corpo Celeste",
-      "identifier": "grande-carro-lv-18"
+      "identifier": "grande-carro-lv-18",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
@@ -1017,7 +1521,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Corpo Celeste",
-      "identifier": "lv-18-jiu-leixing"
+      "identifier": "lv-18-jiu-leixing",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
@@ -1031,7 +1542,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Corpo Celeste",
-      "identifier": "lv-20-pleiadi"
+      "identifier": "lv-20-pleiadi",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
@@ -1045,7 +1563,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fulmine",
-      "identifier": "tutti-i-guadagni-personal-cloud-modificato"
+      "identifier": "tutti-i-guadagni-personal-cloud-modificato",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -1059,7 +1584,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fulmine",
-      "identifier": "pugno-fulminante-liv-1"
+      "identifier": "pugno-fulminante-liv-1",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -1073,7 +1605,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fulmine",
-      "identifier": "raggio-ad-arco-liv-1"
+      "identifier": "raggio-ad-arco-liv-1",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -1087,7 +1626,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fulmine",
-      "identifier": "liv-1-velocita-della-luce"
+      "identifier": "liv-1-velocita-della-luce",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -1101,7 +1647,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fulmine",
-      "identifier": "armi-fulminanti-liv-3"
+      "identifier": "armi-fulminanti-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -1115,7 +1668,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fulmine",
-      "identifier": "liv-3-vero-fulmine"
+      "identifier": "liv-3-vero-fulmine",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -1129,7 +1689,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fulmine",
-      "identifier": "corpo-luminoso-liv-3"
+      "identifier": "corpo-luminoso-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -1143,7 +1710,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fulmine",
-      "identifier": "parafulmine-liv-5"
+      "identifier": "parafulmine-liv-5",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -1157,7 +1731,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fulmine",
-      "identifier": "impeto-d-azione-liv-5"
+      "identifier": "impeto-d-azione-liv-5",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -1171,7 +1752,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fulmine",
-      "identifier": "flusso-di-fulmini-liv-6"
+      "identifier": "flusso-di-fulmini-liv-6",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -1185,7 +1773,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fulmine",
-      "identifier": "lv-10-raikiri"
+      "identifier": "lv-10-raikiri",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -1199,7 +1794,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fulmine",
-      "identifier": "catena-di-fulmini-liv-10"
+      "identifier": "catena-di-fulmini-liv-10",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -1213,7 +1815,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fulmine",
-      "identifier": "mantello-del-fulmine-liv-11"
+      "identifier": "mantello-del-fulmine-liv-11",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -1227,7 +1836,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fulmine",
-      "identifier": "lv-18-calcio-fulminante"
+      "identifier": "lv-18-calcio-fulminante",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -1241,7 +1857,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fulmine",
-      "identifier": "liv-18-bestia-del-fulmine"
+      "identifier": "liv-18-bestia-del-fulmine",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -1255,7 +1878,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Fulmine",
-      "identifier": "lv-20-re-del-cielo"
+      "identifier": "lv-20-re-del-cielo",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -1269,7 +1899,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Creazione",
-      "identifier": "lv-1-tocco-dell-artigiano"
+      "identifier": "lv-1-tocco-dell-artigiano",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -1283,7 +1920,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Creazione",
-      "identifier": "lv-3-cast-con-una-sola-mano"
+      "identifier": "lv-3-cast-con-una-sola-mano",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -1297,7 +1941,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Creazione",
-      "identifier": "lv-3-casting-a-due-mani"
+      "identifier": "lv-3-casting-a-due-mani",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -1311,7 +1962,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Creazione",
-      "identifier": "lancio-senza-mani-lv-3"
+      "identifier": "lancio-senza-mani-lv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -1325,7 +1983,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Creazione",
-      "identifier": "lv-6-artigianato-magistrale"
+      "identifier": "lv-6-artigianato-magistrale",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -1339,7 +2004,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Creazione",
-      "identifier": "liv-6-muovere-i-costrutti"
+      "identifier": "liv-6-muovere-i-costrutti",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -1353,7 +2025,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Creazione",
-      "identifier": "condotto-elementale-liv-10"
+      "identifier": "condotto-elementale-liv-10",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -1367,7 +2046,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Creazione",
-      "identifier": "costrutti-definitivi-liv-10"
+      "identifier": "costrutti-definitivi-liv-10",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -1381,7 +2067,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Creazione",
-      "identifier": "costrutto-vivente-liv-11-forgia-di-titano"
+      "identifier": "costrutto-vivente-liv-11-forgia-di-titano",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -1395,7 +2088,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Creazione",
-      "identifier": "maestria-elementale-liv-18"
+      "identifier": "maestria-elementale-liv-18",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -1409,7 +2109,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Creazione",
-      "identifier": "corpo-elementale-liv-20"
+      "identifier": "corpo-elementale-liv-20",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -1423,7 +2130,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Cambio Stock",
-      "identifier": "tutti-guadagnano-inventario"
+      "identifier": "tutti-guadagnano-inventario",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -1437,7 +2151,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Cambio Stock",
-      "identifier": "lv-1-il-cavaliere"
+      "identifier": "lv-1-il-cavaliere",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -1451,7 +2172,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Cambio Stock",
-      "identifier": "danza-a-catena-liv-1"
+      "identifier": "danza-a-catena-liv-1",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -1465,7 +2193,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Cambio Stock",
-      "identifier": "guardiano-coraggioso-liv-3"
+      "identifier": "guardiano-coraggioso-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -1479,7 +2214,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Cambio Stock",
-      "identifier": "danza-della-spada-fantasma-liv-3"
+      "identifier": "danza-della-spada-fantasma-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -1493,7 +2235,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Cambio Stock",
-      "identifier": "arsenale-adattabile-liv-3"
+      "identifier": "arsenale-adattabile-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -1507,7 +2256,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Cambio Stock",
-      "identifier": "lv-5-richiesto-i-cento"
+      "identifier": "lv-5-richiesto-i-cento",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -1521,7 +2277,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Cambio Stock",
-      "identifier": "armatura-del-campione-liv-6"
+      "identifier": "armatura-del-campione-liv-6",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -1535,7 +2298,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Cambio Stock",
-      "identifier": "opzione-lv-10-richiesta-armatura-nakagami"
+      "identifier": "opzione-lv-10-richiesta-armatura-nakagami",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -1549,7 +2319,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Cambio Stock",
-      "identifier": "opzione-lv-11-spada-del-re"
+      "identifier": "opzione-lv-11-spada-del-re",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -1563,7 +2340,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Cambio Stock",
-      "identifier": "arsenale-del-maestro-delle-opzioni-liv-18"
+      "identifier": "arsenale-del-maestro-delle-opzioni-liv-18",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -1577,7 +2361,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Cambio Stock",
-      "identifier": "opzione-liv-20-armeria-infinita"
+      "identifier": "opzione-liv-20-armeria-infinita",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -1591,7 +2382,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Sabbia",
-      "identifier": "danza-di-zibellino-liv-1"
+      "identifier": "danza-di-zibellino-liv-1",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -1605,7 +2403,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Sabbia",
-      "identifier": "controllo-della-sabbia-liv-1"
+      "identifier": "controllo-della-sabbia-liv-1",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -1619,7 +2424,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Sabbia",
-      "identifier": "spaccasabbia-liv-3"
+      "identifier": "spaccasabbia-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -1633,7 +2445,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Sabbia",
-      "identifier": "clone-sabbia-liv-3"
+      "identifier": "clone-sabbia-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -1647,7 +2466,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Sabbia",
-      "identifier": "lancia-di-sabbia-liv-6"
+      "identifier": "lancia-di-sabbia-liv-6",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -1661,7 +2487,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Sabbia",
-      "identifier": "forma-di-sabbia-liv-6"
+      "identifier": "forma-di-sabbia-liv-6",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -1675,7 +2508,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Sabbia",
-      "identifier": "revisione-spaccasabbia-lv-10"
+      "identifier": "revisione-spaccasabbia-lv-10",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -1689,7 +2529,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Sabbia",
-      "identifier": "lv-11-raml-sayf"
+      "identifier": "lv-11-raml-sayf",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -1703,7 +2550,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Sabbia",
-      "identifier": "mondo-di-sabbia-liv-18"
+      "identifier": "mondo-di-sabbia-liv-18",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -1717,7 +2571,14 @@
         "subtype": ""
       },
       "requirements": "Magia della Sabbia",
-      "identifier": "esplosione-di-sabbia-lv-20"
+      "identifier": "esplosione-di-sabbia-lv-20",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -1731,7 +2592,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Solid Script",
-      "identifier": "lv-1-scrittura-solida-orientale-via-della-spada"
+      "identifier": "lv-1-scrittura-solida-orientale-via-della-spada",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
@@ -1745,7 +2613,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Solid Script",
-      "identifier": "forgiatore-di-parole-liv-1"
+      "identifier": "forgiatore-di-parole-liv-1",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
@@ -1759,7 +2634,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Solid Script",
-      "identifier": "fioritura-del-maestro-di-spada-lv-3"
+      "identifier": "fioritura-del-maestro-di-spada-lv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
@@ -1773,7 +2655,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Solid Script",
-      "identifier": "lv-3-parole-del-potere"
+      "identifier": "lv-3-parole-del-potere",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
@@ -1787,7 +2676,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Solid Script",
-      "identifier": "lv-6-script-solido-orientale-gambetto-del-maestro-d-armi"
+      "identifier": "lv-6-script-solido-orientale-gambetto-del-maestro-d-armi",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
@@ -1801,7 +2697,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Solid Script",
-      "identifier": "scrittura-solida-liv-6-fusione-parole"
+      "identifier": "scrittura-solida-liv-6-fusione-parole",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
@@ -1815,7 +2718,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Solid Script",
-      "identifier": "liv-11-utilizzo-della-magia-definitiva-parola-definitiva"
+      "identifier": "liv-11-utilizzo-della-magia-definitiva-parola-definitiva",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
@@ -1829,7 +2739,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Solid Script",
-      "identifier": "lv-11-scrittura-solida-orientale-kanji-prolungato"
+      "identifier": "lv-11-scrittura-solida-orientale-kanji-prolungato",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
@@ -1843,7 +2760,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Solid Script",
-      "identifier": "lv-18-parole-del-potere-linguis-arcano"
+      "identifier": "lv-18-parole-del-potere-linguis-arcano",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
@@ -1857,7 +2781,14 @@
         "subtype": ""
       },
       "requirements": "Magia del Solid Script",
-      "identifier": "lv-20-scrittura-solida-orientale-dominio-kanji"
+      "identifier": "lv-20-scrittura-solida-orientale-dominio-kanji",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
@@ -1871,7 +2802,14 @@
         "subtype": ""
       },
       "requirements": "Magia di Take Over",
-      "identifier": "anima-acquisizione-liv-1"
+      "identifier": "anima-acquisizione-liv-1",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -1885,7 +2823,14 @@
         "subtype": ""
       },
       "requirements": "Magia di Take Over",
-      "identifier": "adattamento-selvaggio-liv-3"
+      "identifier": "adattamento-selvaggio-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -1899,7 +2844,14 @@
         "subtype": ""
       },
       "requirements": "Magia di Take Over",
-      "identifier": "acquisizione-parziale-liv-3"
+      "identifier": "acquisizione-parziale-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -1913,7 +2865,14 @@
         "subtype": ""
       },
       "requirements": "Magia di Take Over",
-      "identifier": "arsenale-delle-anime-liv-5"
+      "identifier": "arsenale-delle-anime-liv-5",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -1927,7 +2886,14 @@
         "subtype": ""
       },
       "requirements": "Magia di Take Over",
-      "identifier": "potenziale-scatenato-liv-6"
+      "identifier": "potenziale-scatenato-liv-6",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -1941,7 +2907,14 @@
         "subtype": ""
       },
       "requirements": "Magia di Take Over",
-      "identifier": "anima-doppia-liv-6"
+      "identifier": "anima-doppia-liv-6",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -1955,7 +2928,14 @@
         "subtype": ""
       },
       "requirements": "Magia di Take Over",
-      "identifier": "lv-11-fusione-primordiale"
+      "identifier": "lv-11-fusione-primordiale",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -1969,7 +2949,14 @@
         "subtype": ""
       },
       "requirements": "Magia di Take Over",
-      "identifier": "evoluzione-bestiale-liv-11"
+      "identifier": "evoluzione-bestiale-liv-11",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -1983,7 +2970,14 @@
         "subtype": ""
       },
       "requirements": "Magia di Take Over",
-      "identifier": "risonanza-dell-anima-liv-18"
+      "identifier": "risonanza-dell-anima-liv-18",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -1997,7 +2991,14 @@
         "subtype": ""
       },
       "requirements": "Magia di Take Over",
-      "identifier": "lv-20-king-soul-take-over"
+      "identifier": "lv-20-king-soul-take-over",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -2011,7 +3012,14 @@
         "subtype": ""
       },
       "requirements": "Magia dell'Acqua",
-      "identifier": "forma-fluida-liv-1"
+      "identifier": "forma-fluida-liv-1",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
@@ -2025,7 +3033,14 @@
         "subtype": ""
       },
       "requirements": "Magia dell'Acqua",
-      "identifier": "maestria-ondulazione-liv-1"
+      "identifier": "maestria-ondulazione-liv-1",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
@@ -2039,7 +3054,14 @@
         "subtype": ""
       },
       "requirements": "Magia dell'Acqua",
-      "identifier": "forza-torrenziale-liv-3"
+      "identifier": "forza-torrenziale-liv-3",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
@@ -2053,7 +3075,14 @@
         "subtype": ""
       },
       "requirements": "Magia dell'Acqua",
-      "identifier": "lv-3-ondata-di-marea"
+      "identifier": "lv-3-ondata-di-marea",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
@@ -2067,7 +3096,14 @@
         "subtype": ""
       },
       "requirements": "Magia dell'Acqua",
-      "identifier": "lv-6-grazia-dell-acqua"
+      "identifier": "lv-6-grazia-dell-acqua",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
@@ -2081,7 +3117,14 @@
         "subtype": ""
       },
       "requirements": "Magia dell'Acqua",
-      "identifier": "lv-10-morte-abissale"
+      "identifier": "lv-10-morte-abissale",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
@@ -2095,7 +3138,14 @@
         "subtype": ""
       },
       "requirements": "Magia dell'Acqua",
-      "identifier": "lv-10-furia-degli-oceani"
+      "identifier": "lv-10-furia-degli-oceani",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
@@ -2109,7 +3159,14 @@
         "subtype": ""
       },
       "requirements": "Magia dell'Acqua",
-      "identifier": "lv-18-sovrano-del-mare"
+      "identifier": "lv-18-sovrano-del-mare",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
@@ -2123,7 +3180,14 @@
         "subtype": ""
       },
       "requirements": "Magia dell'Acqua",
-      "identifier": "lv-18-ira-del-leviatano"
+      "identifier": "lv-18-ira-del-leviatano",
+      "source": {
+        "custom": "Fairy Tail",
+        "book": "Fairy Tail",
+        "page": "",
+        "license": "",
+        "rules": "2014"
+      }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   }

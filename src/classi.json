@@ -6,7 +6,7 @@
     "system": {
       "identifier": "mago-combattente",
       "source": {
-        "custom": "Fairy Tail 5e",
+        "custom": "Fairy Tail",
         "book": "Fairy Tail",
         "page": "",
         "license": "",
@@ -370,7 +370,7 @@
     "system": {
       "identifier": "mago-difensore",
       "source": {
-        "custom": "Fairy Tail 5e",
+        "custom": "Fairy Tail",
         "book": "Fairy Tail",
         "page": "",
         "license": "",
@@ -810,7 +810,7 @@
     "system": {
       "identifier": "mago-furtivo",
       "source": {
-        "custom": "Fairy Tail 5e",
+        "custom": "Fairy Tail",
         "book": "Fairy Tail",
         "page": "",
         "license": "",
@@ -1291,7 +1291,7 @@
     "system": {
       "identifier": "mago-di-strada",
       "source": {
-        "custom": "Fairy Tail 5e",
+        "custom": "Fairy Tail",
         "book": "Fairy Tail",
         "page": "",
         "license": "",
@@ -1674,7 +1674,7 @@
     "system": {
       "identifier": "mago-di-supporto",
       "source": {
-        "custom": "Fairy Tail 5e",
+        "custom": "Fairy Tail",
         "book": "Fairy Tail",
         "page": "",
         "license": "",
@@ -1962,7 +1962,7 @@
     "system": {
       "identifier": "mago-tattico",
       "source": {
-        "custom": "Fairy Tail 5e",
+        "custom": "Fairy Tail",
         "book": "Fairy Tail",
         "page": "",
         "license": "",
@@ -2561,7 +2561,7 @@
     "system": {
       "identifier": "guerriero",
       "source": {
-        "custom": "Fairy Tail 5e",
+        "custom": "Fairy Tail",
         "book": "Fairy Tail",
         "page": "",
         "license": "",

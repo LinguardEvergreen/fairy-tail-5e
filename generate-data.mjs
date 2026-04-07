@@ -1260,7 +1260,7 @@ function enrichRazze() {
     r.system = {
       identifier: toKebab(r.name),
       source: {
-        custom: "Fairy Tail 5e",
+        custom: "Fairy Tail",
         book: "Fairy Tail",
         page: "",
         license: "",
@@ -1597,7 +1597,7 @@ function enrichClassi() {
     c.system = {
       identifier: config.identifier,
       source: {
-        custom: "Fairy Tail 5e",
+        custom: "Fairy Tail",
         book: "Fairy Tail",
         page: "",
         license: "",
@@ -1651,7 +1651,7 @@ function enrichIncantesimi() {
       level: meta.level ?? 0,
       school: meta.school || "evo",
       source: {
-        custom: "Fairy Tail 5e",
+        custom: "Fairy Tail",
         book: "Fairy Tail",
         page: "",
         license: "",
@@ -1824,7 +1824,7 @@ function enrichMagie(spells) {
       identifier: toKebab(m.name),
       classIdentifier: "",
       source: {
-        custom: "Fairy Tail 5e",
+        custom: "Fairy Tail",
         book: "Fairy Tail",
         page: "",
         license: "",
@@ -1913,7 +1913,7 @@ function enrichBackground() {
     bg.system = {
       identifier: toKebab(bg.name),
       source: {
-        custom: "Fairy Tail 5e",
+        custom: "Fairy Tail",
         book: "Fairy Tail",
         page: "",
         license: "",
@@ -1949,7 +1949,7 @@ function enrichTalenti() {
       requirements: prereq,
       identifier: toKebab(t.name),
       source: {
-        custom: "Fairy Tail 5e",
+        custom: "Fairy Tail",
         book: "Fairy Tail",
         page: "",
         license: "",
@@ -2049,7 +2049,7 @@ function enrichEquipaggiamento() {
     item._id = stableId(`equipaggiamento:${item.name}`);
     const data = EQUIP_DATA[item.name];
     if (!data) {
-      item.system = { source: { custom: "Fairy Tail 5e", book: "Fairy Tail" } };
+      item.system = { source: { custom: "Fairy Tail", book: "Fairy Tail" } };
       continue;
     }
     enriched++;
@@ -2066,7 +2066,7 @@ function enrichEquipaggiamento() {
         stealth: data.stealth || false,
         weight: { value: data.weight, units: "kg" },
         price: { value: data.cost, denomination: "" },
-        source: { custom: "Fairy Tail 5e", book: "Fairy Tail" }
+        source: { custom: "Fairy Tail", book: "Fairy Tail" }
       };
     } else if (data.weapon) {
       const dmgParts = data.dmg ? data.dmg.match(/(\d+)d(\d+)/) : null;
@@ -2081,14 +2081,14 @@ function enrichEquipaggiamento() {
         price: { value: data.cost, denomination: "" },
         properties: data.props,
         proficient: true,
-        source: { custom: "Fairy Tail 5e", book: "Fairy Tail" }
+        source: { custom: "Fairy Tail", book: "Fairy Tail" }
       };
     } else if (data.ammo) {
       item.system = {
         type: { value: "ammo", baseItem: "" },
         weight: { value: data.weight, units: "kg" },
         price: { value: data.cost, denomination: "" },
-        source: { custom: "Fairy Tail 5e", book: "Fairy Tail" }
+        source: { custom: "Fairy Tail", book: "Fairy Tail" }
       };
     }
   }
@@ -2110,7 +2110,7 @@ function enrichStiliCombattimento() {
       requirements: "",
       identifier: toKebab(s.name),
       source: {
-        custom: "Fairy Tail 5e",
+        custom: "Fairy Tail",
         book: "Fairy Tail",
         page: "",
         license: "",
