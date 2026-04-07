@@ -43,7 +43,8 @@
           }
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/background/mago-gilda.webp"
   },
   {
     "name": "Background del mago errante",
@@ -89,7 +90,8 @@
           }
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/background/mago-errante.webp"
   },
   {
     "name": "Background dello studioso",
@@ -135,7 +137,8 @@
           }
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/background/studioso.webp"
   },
   {
     "name": "Background del mago da combattimento",
@@ -181,7 +184,8 @@
           }
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/background/mago-combattimento.webp"
   },
   {
     "name": "Background del Mago Selvaggio",
@@ -227,7 +231,8 @@
           }
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/background/mago-selvaggio.webp"
   },
   {
     "name": "Background del Minatore di Lacrima",
@@ -273,7 +278,8 @@
           }
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/background/minatore-lacrima.webp"
   },
   {
     "name": "Background del Camminatore dello Specchio",
@@ -319,6 +325,7 @@
           }
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/background/camminatore-specchio.webp"
   }
 ]

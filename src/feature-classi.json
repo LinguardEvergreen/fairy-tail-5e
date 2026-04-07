@@ -10,7 +10,8 @@
       },
       "requirements": "Mago Combattente",
       "identifier": "magia"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-combattente.webp"
   },
   {
     "name": "Senza Freni",
@@ -23,7 +24,8 @@
       },
       "requirements": "Mago Combattente",
       "identifier": "senza-freni"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-combattente.webp"
   },
   {
     "name": "Risonanza Distruttiva",
@@ -36,7 +38,8 @@
       },
       "requirements": "Mago Combattente",
       "identifier": "risonanza-distruttiva"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-combattente.webp"
   },
   {
     "name": "Incremento dei Punteggi di Caratteristica:",
@@ -49,7 +52,8 @@
       },
       "requirements": "Mago Combattente",
       "identifier": "incremento-dei-punteggi-di-caratteristica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-combattente.webp"
   },
   {
     "name": "Magia Potenziata",
@@ -62,7 +66,8 @@
       },
       "requirements": "Mago Combattente",
       "identifier": "magia-potenziata"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-combattente.webp"
   },
   {
     "name": "Incantesimo Personale",
@@ -75,7 +80,8 @@
       },
       "requirements": "Mago Combattente",
       "identifier": "incantesimo-personale"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-combattente.webp"
   },
   {
     "name": "Magia",
@@ -88,7 +94,8 @@
       },
       "requirements": "Mago Difensore",
       "identifier": "magia"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
   {
     "name": "Pelle Indotta dal Mana",
@@ -101,7 +108,8 @@
       },
       "requirements": "Mago Difensore",
       "identifier": "pelle-indotta-dal-mana"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
   {
     "name": "Resilienza del Baluardo",
@@ -114,7 +122,8 @@
       },
       "requirements": "Mago Difensore",
       "identifier": "resilienza-del-baluardo"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
   {
     "name": "Ritorsione del Baluardo",
@@ -127,7 +136,8 @@
       },
       "requirements": "Mago Difensore",
       "identifier": "ritorsione-del-baluardo"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
   {
     "name": "Incremento dei Punteggi di Caratteristica:",
@@ -140,7 +150,8 @@
       },
       "requirements": "Mago Difensore",
       "identifier": "incremento-dei-punteggi-di-caratteristica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
   {
     "name": "Attacco Extra",
@@ -153,7 +164,8 @@
       },
       "requirements": "Mago Difensore",
       "identifier": "attacco-extra"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
   {
     "name": "Provocazione",
@@ -166,7 +178,8 @@
       },
       "requirements": "Mago Difensore",
       "identifier": "provocazione"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
   {
     "name": "Maestro dello Scudo",
@@ -179,7 +192,8 @@
       },
       "requirements": "Mago Difensore",
       "identifier": "maestro-dello-scudo"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
   {
     "name": "Baluardo Adamantino",
@@ -192,7 +206,8 @@
       },
       "requirements": "Mago Difensore",
       "identifier": "baluardo-adamantino"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
   {
     "name": "Posizione Inamovibile",
@@ -205,7 +220,8 @@
       },
       "requirements": "Mago Difensore",
       "identifier": "posizione-inamovibile"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
   {
     "name": "Posizione Difensiva",
@@ -218,7 +234,8 @@
       },
       "requirements": "Mago Difensore",
       "identifier": "posizione-difensiva"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
   {
     "name": "Posizione Inamovibile Potenziata",
@@ -231,7 +248,8 @@
       },
       "requirements": "Mago Difensore",
       "identifier": "posizione-inamovibile-potenziata"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
   {
     "name": "Corpo di Guerriero",
@@ -244,7 +262,8 @@
       },
       "requirements": "Mago Difensore",
       "identifier": "corpo-di-guerriero"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
   {
     "name": "Magia nata o insegnata:",
@@ -257,7 +276,8 @@
       },
       "requirements": "Mago Furtivo",
       "identifier": "magia-nata-o-insegnata"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Maestria",
@@ -270,7 +290,8 @@
       },
       "requirements": "Mago Furtivo",
       "identifier": "maestria"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Attacco Furtivo",
@@ -283,7 +304,8 @@
       },
       "requirements": "Mago Furtivo",
       "identifier": "attacco-furtivo"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Azione Scaltra",
@@ -296,7 +318,8 @@
       },
       "requirements": "Mago Furtivo",
       "identifier": "azione-scaltra"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Incantesimi Silenziosi",
@@ -309,7 +332,8 @@
       },
       "requirements": "Mago Furtivo",
       "identifier": "incantesimi-silenziosi"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Miglioramento del punteggio di caratteristica",
@@ -322,7 +346,8 @@
       },
       "requirements": "Mago Furtivo",
       "identifier": "miglioramento-del-punteggio-di-caratteristica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Schivata Prodigiosa",
@@ -335,7 +360,8 @@
       },
       "requirements": "Mago Furtivo",
       "identifier": "schivata-prodigiosa"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Familiarità Magica",
@@ -348,7 +374,8 @@
       },
       "requirements": "Mago Furtivo",
       "identifier": "familiarita-magica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Elusione",
@@ -361,7 +388,8 @@
       },
       "requirements": "Mago Furtivo",
       "identifier": "elusione"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Innesco Accecante",
@@ -374,7 +402,8 @@
       },
       "requirements": "Mago Furtivo",
       "identifier": "innesco-accecante"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Dote Affidabile",
@@ -387,7 +416,8 @@
       },
       "requirements": "Mago Furtivo",
       "identifier": "dote-affidabile"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Innesco Silenziante",
@@ -400,7 +430,8 @@
       },
       "requirements": "Mago Furtivo",
       "identifier": "innesco-silenziante"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Percezione Cieca",
@@ -413,7 +444,8 @@
       },
       "requirements": "Mago Furtivo",
       "identifier": "percezione-cieca"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Mente Sfuggente",
@@ -426,7 +458,8 @@
       },
       "requirements": "Mago Furtivo",
       "identifier": "mente-sfuggente"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Inafferrabile",
@@ -439,7 +472,8 @@
       },
       "requirements": "Mago Furtivo",
       "identifier": "inafferrabile"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Colpo di Fortuna",
@@ -452,7 +486,8 @@
       },
       "requirements": "Mago Furtivo",
       "identifier": "colpo-di-fortuna"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Magia nata o insegnata:",
@@ -465,7 +500,8 @@
       },
       "requirements": "Mago di Strada",
       "identifier": "magia-nata-o-insegnata"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
   {
     "name": "Performance Magica",
@@ -478,7 +514,8 @@
       },
       "requirements": "Mago di Strada",
       "identifier": "performance-magica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
   {
     "name": "Miglioramento della Performance",
@@ -491,7 +528,8 @@
       },
       "requirements": "Mago di Strada",
       "identifier": "miglioramento-della-performance"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
   {
     "name": "Miglioramento del punteggio di caratteristica",
@@ -504,7 +542,8 @@
       },
       "requirements": "Mago di Strada",
       "identifier": "miglioramento-del-punteggio-di-caratteristica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
   {
     "name": "Maestria della Performance",
@@ -517,7 +556,8 @@
       },
       "requirements": "Mago di Strada",
       "identifier": "maestria-della-performance"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
   {
     "name": "Spettacolo Mozzafiato",
@@ -530,7 +570,8 @@
       },
       "requirements": "Mago di Strada",
       "identifier": "spettacolo-mozzafiato"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
   {
     "name": "Performance Ispirante",
@@ -543,7 +584,8 @@
       },
       "requirements": "Mago di Strada",
       "identifier": "performance-ispirante"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
   {
     "name": "Riarmo Musicale",
@@ -556,7 +598,8 @@
       },
       "requirements": "Mago di Strada",
       "identifier": "riarmo-musicale"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
   {
     "name": "Maestria della Performance Potenziata",
@@ -569,7 +612,8 @@
       },
       "requirements": "Mago di Strada",
       "identifier": "maestria-della-performance-potenziata"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
   {
     "name": "Performance Leggendaria",
@@ -582,7 +626,8 @@
       },
       "requirements": "Mago di Strada",
       "identifier": "performance-leggendaria"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
   {
     "name": "Magia nata o insegnata:",
@@ -595,7 +640,8 @@
       },
       "requirements": "Mago di Supporto",
       "identifier": "magia-nata-o-insegnata"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
   {
     "name": "Determinazione Inestinguibile",
@@ -608,7 +654,8 @@
       },
       "requirements": "Mago di Supporto",
       "identifier": "determinazione-inestinguibile"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
   {
     "name": "Armonia Protettiva",
@@ -621,7 +668,8 @@
       },
       "requirements": "Mago di Supporto",
       "identifier": "armonia-protettiva"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
   {
     "name": "Maestria",
@@ -634,7 +682,8 @@
       },
       "requirements": "Mago di Supporto",
       "identifier": "maestria"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
   {
     "name": "Crescendo Difensivo",
@@ -647,7 +696,8 @@
       },
       "requirements": "Mago di Supporto",
       "identifier": "crescendo-difensivo"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
   {
     "name": "Fonte di Determinazione",
@@ -660,7 +710,8 @@
       },
       "requirements": "Mago di Supporto",
       "identifier": "fonte-di-determinazione"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
   {
     "name": "Risonanza",
@@ -673,7 +724,8 @@
       },
       "requirements": "Mago di Supporto",
       "identifier": "risonanza"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
   {
     "name": "Purificazione Armonica",
@@ -686,7 +738,8 @@
       },
       "requirements": "Mago di Supporto",
       "identifier": "purificazione-armonica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
   {
     "name": "Cadenza Concertata",
@@ -699,7 +752,8 @@
       },
       "requirements": "Mago di Supporto",
       "identifier": "cadenza-concertata"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
   {
     "name": "Magia nata o insegnata:",
@@ -712,7 +766,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "magia-nata-o-insegnata"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Mente Tattica",
@@ -725,7 +780,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "mente-tattica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Analisi degli Incantesimi",
@@ -738,7 +794,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "analisi-degli-incantesimi"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Lancio Rapido",
@@ -751,7 +808,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "lancio-rapido"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Miglioramento del Punteggio di Caratteristica",
@@ -764,7 +822,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "miglioramento-del-punteggio-di-caratteristica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Competenza Tattica",
@@ -777,7 +836,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "competenza-tattica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Conservazione del Mana",
@@ -790,7 +850,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "conservazione-del-mana"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Maestria degli Incantesimi",
@@ -803,7 +864,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "maestria-degli-incantesimi"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Maestria Arcana",
@@ -816,7 +878,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "maestria-arcana"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Maestro Tattico",
@@ -829,7 +892,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "maestro-tattico"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Genio Tattico",
@@ -842,7 +906,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "genio-tattico"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Sfrutta i punti deboli:",
@@ -855,7 +920,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "sfrutta-i-punti-deboli"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Occhio vigile:",
@@ -868,7 +934,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "occhio-vigile"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Movimenti tattici:",
@@ -881,7 +948,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "movimenti-tattici"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Osservazione acuta:",
@@ -894,7 +962,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "osservazione-acuta"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Coordinamento strategico:",
@@ -907,7 +976,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "coordinamento-strategico"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Sinergia arcana:",
@@ -920,7 +990,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "sinergia-arcana"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Assalto Calcolato:",
@@ -933,7 +1004,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "assalto-calcolato"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Diversione Tattica:",
@@ -946,7 +1018,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "diversione-tattica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Precognizione:",
@@ -959,7 +1032,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "precognizione"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Interruzione Tattica:",
@@ -972,7 +1046,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "interruzione-tattica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Via di Fuga:",
@@ -985,7 +1060,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "via-di-fuga"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Cautela:",
@@ -998,7 +1074,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "cautela"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Offensiva Focalizzata:",
@@ -1011,7 +1088,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "offensiva-focalizzata"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Efficienza del Mana:",
@@ -1024,7 +1102,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "efficienza-del-mana"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Ritirata Calcolata:",
@@ -1037,7 +1116,8 @@
       },
       "requirements": "Mago Tattico",
       "identifier": "ritirata-calcolata"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Magia nata o insegnata:",
@@ -1050,7 +1130,8 @@
       },
       "requirements": "Guerriero",
       "identifier": "magia-nata-o-insegnata"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
   {
     "name": "Abilità in combattimento",
@@ -1063,7 +1144,8 @@
       },
       "requirements": "Guerriero",
       "identifier": "abilita-in-combattimento"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
   {
     "name": "Difesa senza armatura",
@@ -1076,7 +1158,8 @@
       },
       "requirements": "Guerriero",
       "identifier": "difesa-senza-armatura"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
   {
     "name": "Flusso di Mana",
@@ -1089,7 +1172,8 @@
       },
       "requirements": "Guerriero",
       "identifier": "flusso-di-mana"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
   {
     "name": "Miglioramento delle Caratteristiche",
@@ -1102,7 +1186,8 @@
       },
       "requirements": "Guerriero",
       "identifier": "miglioramento-delle-caratteristiche"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
   {
     "name": "Maestria con le armi",
@@ -1115,7 +1200,8 @@
       },
       "requirements": "Guerriero",
       "identifier": "maestria-con-le-armi"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
   {
     "name": "Attacco Extra",
@@ -1128,7 +1214,8 @@
       },
       "requirements": "Guerriero",
       "identifier": "attacco-extra"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
   {
     "name": "Spirito Indomito",
@@ -1141,7 +1228,8 @@
       },
       "requirements": "Guerriero",
       "identifier": "spirito-indomito"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
   {
     "name": "Maestria nel Combattimento Migliorata",
@@ -1154,7 +1242,8 @@
       },
       "requirements": "Guerriero",
       "identifier": "maestria-nel-combattimento-migliorata"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
   {
     "name": "Sinergia con le Armi",
@@ -1167,7 +1256,8 @@
       },
       "requirements": "Guerriero",
       "identifier": "sinergia-con-le-armi"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   },
   {
     "name": "Maestria nel Critico",
@@ -1180,6 +1270,7 @@
       },
       "requirements": "Guerriero",
       "identifier": "maestria-nel-critico"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   }
 ]

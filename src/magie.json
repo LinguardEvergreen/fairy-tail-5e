@@ -266,7 +266,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Magia delle Carte",
@@ -577,7 +578,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Magia della Terra",
@@ -891,7 +893,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Magia del Fuoco",
@@ -1233,7 +1236,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Magia degli Ingranaggi",
@@ -1569,7 +1573,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Magia delle Armi da Fuoco",
@@ -1883,7 +1888,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
   {
     "name": "Magia del Corpo Celeste",
@@ -2181,7 +2187,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Magia del Fulmine",
@@ -2494,7 +2501,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Magia della Creazione",
@@ -2753,7 +2761,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Magia del Cambio Stock",
@@ -3025,7 +3034,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Magia della Sabbia",
@@ -3316,7 +3326,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Magia del Solid Script",
@@ -3614,7 +3625,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Magia di Take Over",
@@ -3928,7 +3940,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Magia dell'Acqua",
@@ -4210,6 +4223,7 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   }
 ]

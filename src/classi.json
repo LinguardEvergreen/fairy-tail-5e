@@ -360,7 +360,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-combattente.webp"
   },
   {
     "name": "Mago Difensore",
@@ -799,7 +800,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-difensore.webp"
   },
   {
     "name": "Mago Furtivo",
@@ -1279,7 +1281,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-furtivo.webp"
   },
   {
     "name": "Mago di Strada",
@@ -1661,7 +1664,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-strada.webp"
   },
   {
     "name": "Mago di Supporto",
@@ -1948,7 +1952,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-di-supporto.webp"
   },
   {
     "name": "Mago Tattico",
@@ -2546,7 +2551,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/mago-tattico.webp"
   },
   {
     "name": "Guerriero",
@@ -2931,6 +2937,7 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/classi/guerriero.webp"
   }
 ]

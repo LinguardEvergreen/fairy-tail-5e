@@ -10,7 +10,8 @@
       },
       "requirements": "Umani",
       "identifier": "incremento-dei-punteggi-di-caratteristica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/umani.webp"
   },
   {
     "name": "Competenza nelle abilità",
@@ -23,7 +24,8 @@
       },
       "requirements": "Umani",
       "identifier": "competenza-nelle-abilita"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/umani.webp"
   },
   {
     "name": "Jack Of All",
@@ -36,7 +38,8 @@
       },
       "requirements": "Umani",
       "identifier": "jack-of-all"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/umani.webp"
   },
   {
     "name": "Controllo magico",
@@ -49,7 +52,8 @@
       },
       "requirements": "Umani",
       "identifier": "controllo-magico"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/umani.webp"
   },
   {
     "name": "Incremento dei punteggi di caratteristica",
@@ -62,7 +66,8 @@
       },
       "requirements": "Exceed",
       "identifier": "incremento-dei-punteggi-di-caratteristica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/exceed.webp"
   },
   {
     "name": "Velocità di movimento",
@@ -75,7 +80,8 @@
       },
       "requirements": "Exceed",
       "identifier": "velocita-di-movimento"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/exceed.webp"
   },
   {
     "name": "Ali magiche",
@@ -88,7 +94,8 @@
       },
       "requirements": "Exceed",
       "identifier": "ali-magiche"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/exceed.webp"
   },
   {
     "name": "Le Ali Ti Sostengono",
@@ -101,7 +108,8 @@
       },
       "requirements": "Exceed",
       "identifier": "le-ali-ti-sostengono"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/exceed.webp"
   },
   {
     "name": "Riserva di mana",
@@ -114,7 +122,8 @@
       },
       "requirements": "Exceed",
       "identifier": "riserva-di-mana"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/exceed.webp"
   },
   {
     "name": "Incremento dei punteggi di caratteristica",
@@ -127,7 +136,8 @@
       },
       "requirements": "Ibrido Gatto",
       "identifier": "incremento-dei-punteggi-di-caratteristica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-gatto.webp"
   },
   {
     "name": "Velocità",
@@ -140,7 +150,8 @@
       },
       "requirements": "Ibrido Gatto",
       "identifier": "velocita"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-gatto.webp"
   },
   {
     "name": "Competenza nelle abilità",
@@ -153,7 +164,8 @@
       },
       "requirements": "Ibrido Gatto",
       "identifier": "competenza-nelle-abilita"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-gatto.webp"
   },
   {
     "name": "Sensi acuti",
@@ -166,7 +178,8 @@
       },
       "requirements": "Ibrido Gatto",
       "identifier": "sensi-acuti"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-gatto.webp"
   },
   {
     "name": "Sensi felini",
@@ -179,7 +192,8 @@
       },
       "requirements": "Ibrido Gatto",
       "identifier": "sensi-felini"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-gatto.webp"
   },
   {
     "name": "Artigli del felino",
@@ -192,7 +206,8 @@
       },
       "requirements": "Ibrido Gatto",
       "identifier": "artigli-del-felino"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-gatto.webp"
   },
   {
     "name": "Incremento dei punteggi di caratteristica",
@@ -205,7 +220,8 @@
       },
       "requirements": "Ibrido Lucertola",
       "identifier": "incremento-dei-punteggi-di-caratteristica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lucertola.webp"
   },
   {
     "name": "Competenza nelle abilità",
@@ -218,7 +234,8 @@
       },
       "requirements": "Ibrido Lucertola",
       "identifier": "competenza-nelle-abilita"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lucertola.webp"
   },
   {
     "name": "Corpo avvelenato",
@@ -231,7 +248,8 @@
       },
       "requirements": "Ibrido Lucertola",
       "identifier": "corpo-avvelenato"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lucertola.webp"
   },
   {
     "name": "Frusta coda avvelenata",
@@ -244,7 +262,8 @@
       },
       "requirements": "Ibrido Lucertola",
       "identifier": "frusta-coda-avvelenata"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lucertola.webp"
   },
   {
     "name": "Corpo resistente",
@@ -257,7 +276,8 @@
       },
       "requirements": "Ibrido Lucertola",
       "identifier": "corpo-resistente"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lucertola.webp"
   },
   {
     "name": "Incremento dei punteggi di caratteristica",
@@ -270,7 +290,8 @@
       },
       "requirements": "Ibrido Lupo",
       "identifier": "incremento-dei-punteggi-di-caratteristica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lupo.webp"
   },
   {
     "name": "Velocità",
@@ -283,7 +304,8 @@
       },
       "requirements": "Ibrido Lupo",
       "identifier": "velocita"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lupo.webp"
   },
   {
     "name": "Competenza nelle abilità",
@@ -296,7 +318,8 @@
       },
       "requirements": "Ibrido Lupo",
       "identifier": "competenza-nelle-abilita"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lupo.webp"
   },
   {
     "name": "Udito e olfatto acuti",
@@ -309,7 +332,8 @@
       },
       "requirements": "Ibrido Lupo",
       "identifier": "udito-e-olfatto-acuti"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lupo.webp"
   },
   {
     "name": "Tattiche di branco",
@@ -322,7 +346,8 @@
       },
       "requirements": "Ibrido Lupo",
       "identifier": "tattiche-di-branco"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lupo.webp"
   },
   {
     "name": "Ululato del branco",
@@ -335,7 +360,8 @@
       },
       "requirements": "Ibrido Lupo",
       "identifier": "ululato-del-branco"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lupo.webp"
   },
   {
     "name": "Incremento dei punteggi di caratteristica",
@@ -348,7 +374,8 @@
       },
       "requirements": "Ibrido Demone di Galuna",
       "identifier": "incremento-dei-punteggi-di-caratteristica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-demone-galuna.webp"
   },
   {
     "name": "Scurovisione",
@@ -361,7 +388,8 @@
       },
       "requirements": "Ibrido Demone di Galuna",
       "identifier": "scurovisione"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-demone-galuna.webp"
   },
   {
     "name": "Talento",
@@ -374,7 +402,8 @@
       },
       "requirements": "Ibrido Demone di Galuna",
       "identifier": "talento"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-demone-galuna.webp"
   },
   {
     "name": "Resistenza Demoniaca",
@@ -387,7 +416,8 @@
       },
       "requirements": "Ibrido Demone di Galuna",
       "identifier": "resistenza-demoniaca"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-demone-galuna.webp"
   },
   {
     "name": "Trasformazione demoniaca",
@@ -400,7 +430,8 @@
       },
       "requirements": "Ibrido Demone di Galuna",
       "identifier": "trasformazione-demoniaca"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-demone-galuna.webp"
   },
   {
     "name": "Incremento dei punteggi di caratteristica",
@@ -413,7 +444,8 @@
       },
       "requirements": "Dragon Slayer",
       "identifier": "incremento-dei-punteggi-di-caratteristica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
   {
     "name": "Competenza nelle abilità",
@@ -426,7 +458,8 @@
       },
       "requirements": "Dragon Slayer",
       "identifier": "competenza-nelle-abilita"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
   {
     "name": "Magia Focalizzata",
@@ -439,7 +472,8 @@
       },
       "requirements": "Dragon Slayer",
       "identifier": "magia-focalizzata"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
   {
     "name": "Potere del Drago",
@@ -452,7 +486,8 @@
       },
       "requirements": "Dragon Slayer",
       "identifier": "potere-del-drago"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
   {
     "name": "Anima del drago 1° livello",
@@ -465,7 +500,8 @@
       },
       "requirements": "Dragon Slayer",
       "identifier": "anima-del-drago-1-livello"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
   {
     "name": "Tecniche del Dragon Slayer 3° livello",
@@ -478,7 +514,8 @@
       },
       "requirements": "Dragon Slayer",
       "identifier": "tecniche-del-dragon-slayer-3-livello"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
   {
     "name": "Dragon Mode 6° livello",
@@ -491,7 +528,8 @@
       },
       "requirements": "Dragon Slayer",
       "identifier": "dragon-mode-6-livello"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
   {
     "name": "Buff in Dual Dragon Mode",
@@ -504,7 +542,8 @@
       },
       "requirements": "Dragon Slayer",
       "identifier": "buff-in-dual-dragon-mode"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
   {
     "name": "Tecniche segrete del dragon slayer 11° livello",
@@ -517,7 +556,8 @@
       },
       "requirements": "Dragon Slayer",
       "identifier": "tecniche-segrete-del-dragon-slayer-11-livello"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
   {
     "name": "Dragon Force 18° Livello",
@@ -530,7 +570,8 @@
       },
       "requirements": "Dragon Slayer",
       "identifier": "dragon-force-18-livello"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
   {
     "name": "Incremento dei Punteggi di Caratteristica",
@@ -543,7 +584,8 @@
       },
       "requirements": "Devil Slayer",
       "identifier": "incremento-dei-punteggi-di-caratteristica"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   },
   {
     "name": "Competenza nelle competenze",
@@ -556,7 +598,8 @@
       },
       "requirements": "Devil Slayer",
       "identifier": "competenza-nelle-competenze"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   },
   {
     "name": "Preda",
@@ -569,7 +612,8 @@
       },
       "requirements": "Devil Slayer",
       "identifier": "preda"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   },
   {
     "name": "1° livello: Demonizzazione",
@@ -582,7 +626,8 @@
       },
       "requirements": "Devil Slayer",
       "identifier": "1-livello-demonizzazione"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   },
   {
     "name": "3° livello: Esorcismo",
@@ -595,7 +640,8 @@
       },
       "requirements": "Devil Slayer",
       "identifier": "3-livello-esorcismo"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   },
   {
     "name": "6° Livello: Osservazione Demoniaca",
@@ -608,7 +654,8 @@
       },
       "requirements": "Devil Slayer",
       "identifier": "6-livello-osservazione-demoniaca"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   },
   {
     "name": "11° livello: Yama",
@@ -621,7 +668,8 @@
       },
       "requirements": "Devil Slayer",
       "identifier": "11-livello-yama"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   },
   {
     "name": "18° livello: Post Mortem",
@@ -634,6 +682,7 @@
       },
       "requirements": "Devil Slayer",
       "identifier": "18-livello-post-mortem"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   }
 ]

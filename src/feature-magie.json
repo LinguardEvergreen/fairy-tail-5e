@@ -10,7 +10,8 @@
       },
       "requirements": "Magia dello Spazio Aereo",
       "identifier": "manipolazione-dello-spazio-aereo-liv-1"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Antenna liv.3",
@@ -23,7 +24,8 @@
       },
       "requirements": "Magia dello Spazio Aereo",
       "identifier": "antenna-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Zetsu liv.3",
@@ -36,7 +38,8 @@
       },
       "requirements": "Magia dello Spazio Aereo",
       "identifier": "zetsu-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Lv.6 Forma aerea",
@@ -49,7 +52,8 @@
       },
       "requirements": "Magia dello Spazio Aereo",
       "identifier": "lv-6-forma-aerea"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Tiro aereo lv.6",
@@ -62,7 +66,8 @@
       },
       "requirements": "Magia dello Spazio Aereo",
       "identifier": "tiro-aereo-lv-6"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Lv.11 Opzione Fase Arial",
@@ -75,7 +80,8 @@
       },
       "requirements": "Magia dello Spazio Aereo",
       "identifier": "lv-11-opzione-fase-arial"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Utilizzo massimo opzione liv.11: Metsu",
@@ -88,7 +94,8 @@
       },
       "requirements": "Magia dello Spazio Aereo",
       "identifier": "utilizzo-massimo-opzione-liv-11-metsu"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Opzione liv.18 Padronanza dello Spazio Aereo",
@@ -101,7 +108,8 @@
       },
       "requirements": "Magia dello Spazio Aereo",
       "identifier": "opzione-liv-18-padronanza-dello-spazio-aereo"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Opzione Lv.20 Aria Assoluta",
@@ -114,7 +122,8 @@
       },
       "requirements": "Magia dello Spazio Aereo",
       "identifier": "opzione-lv-20-aria-assoluta"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Mazzo delle Molte Cose liv.1",
@@ -127,7 +136,8 @@
       },
       "requirements": "Magia delle Carte",
       "identifier": "mazzo-delle-molte-cose-liv-1"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Mazzo Utilità liv.3",
@@ -140,7 +150,8 @@
       },
       "requirements": "Magia delle Carte",
       "identifier": "mazzo-utilita-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Carte Elementali liv.3",
@@ -153,7 +164,8 @@
       },
       "requirements": "Magia delle Carte",
       "identifier": "carte-elementali-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Carte personalizzate liv.6",
@@ -166,7 +178,8 @@
       },
       "requirements": "Magia delle Carte",
       "identifier": "carte-personalizzate-liv-6"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Combinazione personalizzata liv.6",
@@ -179,7 +192,8 @@
       },
       "requirements": "Magia delle Carte",
       "identifier": "combinazione-personalizzata-liv-6"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Carte Combinazione Divine liv.10",
@@ -192,7 +206,8 @@
       },
       "requirements": "Magia delle Carte",
       "identifier": "carte-combinazione-divine-liv-10"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Maestria carta liv.11",
@@ -205,7 +220,8 @@
       },
       "requirements": "Magia delle Carte",
       "identifier": "maestria-carta-liv-11"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Combinazioni trascendenti liv.18",
@@ -218,7 +234,8 @@
       },
       "requirements": "Magia delle Carte",
       "identifier": "combinazioni-trascendenti-liv-18"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Lv.20 Abbraccio dei Tarocchi",
@@ -231,7 +248,8 @@
       },
       "requirements": "Magia delle Carte",
       "identifier": "lv-20-abbraccio-dei-tarocchi"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Plasmatore della terra liv.1",
@@ -244,7 +262,8 @@
       },
       "requirements": "Magia della Terra",
       "identifier": "plasmatore-della-terra-liv-1"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Lv.1 Titano legato alla Terra",
@@ -257,7 +276,8 @@
       },
       "requirements": "Magia della Terra",
       "identifier": "lv-1-titano-legato-alla-terra"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Artigiano Golem liv.3",
@@ -270,7 +290,8 @@
       },
       "requirements": "Magia della Terra",
       "identifier": "artigiano-golem-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Baluardo di terra liv.3",
@@ -283,7 +304,8 @@
       },
       "requirements": "Magia della Terra",
       "identifier": "baluardo-di-terra-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Fusione terra liv.6",
@@ -296,7 +318,8 @@
       },
       "requirements": "Magia della Terra",
       "identifier": "fusione-terra-liv-6"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Alchimia della Terra liv.6",
@@ -309,7 +332,8 @@
       },
       "requirements": "Magia della Terra",
       "identifier": "alchimia-della-terra-liv-6"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Magia definitiva liv.10: Colpo tettonico",
@@ -322,7 +346,8 @@
       },
       "requirements": "Magia della Terra",
       "identifier": "magia-definitiva-liv-10-colpo-tettonico"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Lv.11 Evoca Drago della Terra",
@@ -335,7 +360,8 @@
       },
       "requirements": "Magia della Terra",
       "identifier": "lv-11-evoca-drago-della-terra"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Opzione liv.18 Esercito di terracotta",
@@ -348,7 +374,8 @@
       },
       "requirements": "Magia della Terra",
       "identifier": "opzione-liv-18-esercito-di-terracotta"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Opzione liv.20 Grande Alchimista della Terra",
@@ -361,7 +388,8 @@
       },
       "requirements": "Magia della Terra",
       "identifier": "opzione-liv-20-grande-alchimista-della-terra"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Guadagno totale: Controllo brace",
@@ -374,7 +402,8 @@
       },
       "requirements": "Magia del Fuoco",
       "identifier": "guadagno-totale-controllo-brace"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Opzione liv.1 Colpobrace",
@@ -387,7 +416,8 @@
       },
       "requirements": "Magia del Fuoco",
       "identifier": "opzione-liv-1-colpobrace"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Opzione liv.1 Impeto Ustionante",
@@ -400,7 +430,8 @@
       },
       "requirements": "Magia del Fuoco",
       "identifier": "opzione-liv-1-impeto-ustionante"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Esplosione rovente liv.3",
@@ -413,7 +444,8 @@
       },
       "requirements": "Magia del Fuoco",
       "identifier": "esplosione-rovente-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Lv.3 Furia infernale",
@@ -426,7 +458,8 @@
       },
       "requirements": "Magia del Fuoco",
       "identifier": "lv-3-furia-infernale"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Abbraccio Inferno liv.3",
@@ -439,7 +472,8 @@
       },
       "requirements": "Magia del Fuoco",
       "identifier": "abbraccio-inferno-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Cuore ardente liv.5",
@@ -452,7 +486,8 @@
       },
       "requirements": "Magia del Fuoco",
       "identifier": "cuore-ardente-liv-5"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Armatura fusa liv.6",
@@ -465,7 +500,8 @@
       },
       "requirements": "Magia del Fuoco",
       "identifier": "armatura-fusa-liv-6"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Tifone con prominenza liv.6",
@@ -478,7 +514,8 @@
       },
       "requirements": "Magia del Fuoco",
       "identifier": "tifone-con-prominenza-liv-6"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Lv.10 Rinascita della Fenice",
@@ -491,7 +528,8 @@
       },
       "requirements": "Magia del Fuoco",
       "identifier": "lv-10-rinascita-della-fenice"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Lv.11 Urlo del dio del fuoco",
@@ -504,7 +542,8 @@
       },
       "requirements": "Magia del Fuoco",
       "identifier": "lv-11-urlo-del-dio-del-fuoco"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Lv.11 Terra bruciata",
@@ -517,7 +556,8 @@
       },
       "requirements": "Magia del Fuoco",
       "identifier": "lv-11-terra-bruciata"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Lv.18 Furia della Fenice",
@@ -530,7 +570,8 @@
       },
       "requirements": "Magia del Fuoco",
       "identifier": "lv-18-furia-della-fenice"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Liv.20 Utilizzo definitivo: Bagliore di creazione",
@@ -543,7 +584,8 @@
       },
       "requirements": "Magia del Fuoco",
       "identifier": "liv-20-utilizzo-definitivo-bagliore-di-creazione"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Legame equipaggiamento liv.1",
@@ -556,7 +598,8 @@
       },
       "requirements": "Magia degli Ingranaggi",
       "identifier": "legame-equipaggiamento-liv-1"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Potenziamento equipaggiamento liv.1",
@@ -569,7 +612,8 @@
       },
       "requirements": "Magia degli Ingranaggi",
       "identifier": "potenziamento-equipaggiamento-liv-1"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Legame equipaggiamento liv.3 - Angoscia mentale",
@@ -582,7 +626,8 @@
       },
       "requirements": "Magia degli Ingranaggi",
       "identifier": "legame-equipaggiamento-liv-3-angoscia-mentale"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Pot. equipaggiamento liv.3 - Accelerazione temporale",
@@ -595,7 +640,8 @@
       },
       "requirements": "Magia degli Ingranaggi",
       "identifier": "pot-equipaggiamento-liv-3-accelerazione-temporale"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Campo equipaggiamento liv.5",
@@ -608,7 +654,8 @@
       },
       "requirements": "Magia degli Ingranaggi",
       "identifier": "campo-equipaggiamento-liv-5"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Legame ingranaggio liv.6 - Detonazione overdrive",
@@ -621,7 +668,8 @@
       },
       "requirements": "Magia degli Ingranaggi",
       "identifier": "legame-ingranaggio-liv-6-detonazione-overdrive"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Potenziamento equipaggiamento liv.6 - Impeto temporale",
@@ -634,7 +682,8 @@
       },
       "requirements": "Magia degli Ingranaggi",
       "identifier": "potenziamento-equipaggiamento-liv-6-impeto-temporale"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Auto equipaggiamento liv.10",
@@ -647,7 +696,8 @@
       },
       "requirements": "Magia degli Ingranaggi",
       "identifier": "auto-equipaggiamento-liv-10"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Legame equipaggiamento liv.11 - Marcia Fantasma",
@@ -660,7 +710,8 @@
       },
       "requirements": "Magia degli Ingranaggi",
       "identifier": "legame-equipaggiamento-liv-11-marcia-fantasma"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Potenziamento equipaggiamento liv.11 - Infusione di mana",
@@ -673,7 +724,8 @@
       },
       "requirements": "Magia degli Ingranaggi",
       "identifier": "potenziamento-equipaggiamento-liv-11-infusione-di-mana"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Legame equipaggiamento lv.18 - Spostamento dimensionale",
@@ -686,7 +738,8 @@
       },
       "requirements": "Magia degli Ingranaggi",
       "identifier": "legame-equipaggiamento-lv-18-spostamento-dimensionale"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Potenziamento equipaggiamento liv.20 - Accelerazione definitiva",
@@ -699,7 +752,8 @@
       },
       "requirements": "Magia degli Ingranaggi",
       "identifier": "potenziamento-equipaggiamento-liv-20-accelerazione-definitiva"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Munizioni personalizzate liv.1",
@@ -712,7 +766,8 @@
       },
       "requirements": "Magia delle Armi da Fuoco",
       "identifier": "munizioni-personalizzate-liv-1"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
   {
     "name": "Tiri elementali liv.3",
@@ -725,7 +780,8 @@
       },
       "requirements": "Magia delle Armi da Fuoco",
       "identifier": "tiri-elementali-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
   {
     "name": "Liv.3 Utilizzo definitivo: Tiro a Ricerca",
@@ -738,7 +794,8 @@
       },
       "requirements": "Magia delle Armi da Fuoco",
       "identifier": "liv-3-utilizzo-definitivo-tiro-a-ricerca"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
   {
     "name": "Tiro con pungiglione liv.6",
@@ -751,7 +808,8 @@
       },
       "requirements": "Magia delle Armi da Fuoco",
       "identifier": "tiro-con-pungiglione-liv-6"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
   {
     "name": "Tiro tornado liv.6",
@@ -764,7 +822,8 @@
       },
       "requirements": "Magia delle Armi da Fuoco",
       "identifier": "tiro-tornado-liv-6"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
   {
     "name": "Proiettile personalizzato liv.10",
@@ -777,7 +836,8 @@
       },
       "requirements": "Magia delle Armi da Fuoco",
       "identifier": "proiettile-personalizzato-liv-10"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
   {
     "name": "Espansione omnidirezionale liv.11",
@@ -790,7 +850,8 @@
       },
       "requirements": "Magia delle Armi da Fuoco",
       "identifier": "espansione-omnidirezionale-liv-11"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
   {
     "name": "Lv.11 Tiro largo",
@@ -803,7 +864,8 @@
       },
       "requirements": "Magia delle Armi da Fuoco",
       "identifier": "lv-11-tiro-largo"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
   {
     "name": "Proiettile esplosivo liv.18",
@@ -816,7 +878,8 @@
       },
       "requirements": "Magia delle Armi da Fuoco",
       "identifier": "proiettile-esplosivo-liv-18"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
   {
     "name": "Lv.20 Colpo di luce solare",
@@ -829,7 +892,8 @@
       },
       "requirements": "Magia delle Armi da Fuoco",
       "identifier": "lv-20-colpo-di-luce-solare"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
   {
     "name": "Potere Celestiale liv.1",
@@ -842,7 +906,8 @@
       },
       "requirements": "Magia del Corpo Celeste",
       "identifier": "potere-celestiale-liv-1"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Sintonizzazione Celeste liv.3",
@@ -855,7 +920,8 @@
       },
       "requirements": "Magia del Corpo Celeste",
       "identifier": "sintonizzazione-celeste-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Collezione Celestiale liv.3",
@@ -868,7 +934,8 @@
       },
       "requirements": "Magia del Corpo Celeste",
       "identifier": "collezione-celestiale-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Meteora liv.6",
@@ -881,7 +948,8 @@
       },
       "requirements": "Magia del Corpo Celeste",
       "identifier": "meteora-liv-6"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Lv.6 Orione",
@@ -894,7 +962,8 @@
       },
       "requirements": "Magia del Corpo Celeste",
       "identifier": "lv-6-orione"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Lv.11 Sema",
@@ -907,7 +976,8 @@
       },
       "requirements": "Magia del Corpo Celeste",
       "identifier": "lv-11-sema"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Lv.11 Altairis",
@@ -920,7 +990,8 @@
       },
       "requirements": "Magia del Corpo Celeste",
       "identifier": "lv-11-altairis"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Grande carro lv.18",
@@ -933,7 +1004,8 @@
       },
       "requirements": "Magia del Corpo Celeste",
       "identifier": "grande-carro-lv-18"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Lv.18 Jiu Leixing",
@@ -946,7 +1018,8 @@
       },
       "requirements": "Magia del Corpo Celeste",
       "identifier": "lv-18-jiu-leixing"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Lv.20 Pleiadi",
@@ -959,7 +1032,8 @@
       },
       "requirements": "Magia del Corpo Celeste",
       "identifier": "lv-20-pleiadi"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Tutti i guadagni: Personal Cloud (modificato)",
@@ -972,7 +1046,8 @@
       },
       "requirements": "Magia del Fulmine",
       "identifier": "tutti-i-guadagni-personal-cloud-modificato"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Pugno fulminante liv.1",
@@ -985,7 +1060,8 @@
       },
       "requirements": "Magia del Fulmine",
       "identifier": "pugno-fulminante-liv-1"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Raggio ad arco liv.1",
@@ -998,7 +1074,8 @@
       },
       "requirements": "Magia del Fulmine",
       "identifier": "raggio-ad-arco-liv-1"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Liv.1 Velocità della luce",
@@ -1011,7 +1088,8 @@
       },
       "requirements": "Magia del Fulmine",
       "identifier": "liv-1-velocita-della-luce"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Armi fulminanti liv.3",
@@ -1024,7 +1102,8 @@
       },
       "requirements": "Magia del Fulmine",
       "identifier": "armi-fulminanti-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Liv.3 Vero Fulmine",
@@ -1037,7 +1116,8 @@
       },
       "requirements": "Magia del Fulmine",
       "identifier": "liv-3-vero-fulmine"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Corpo luminoso liv.3",
@@ -1050,7 +1130,8 @@
       },
       "requirements": "Magia del Fulmine",
       "identifier": "corpo-luminoso-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Parafulmine liv.5",
@@ -1063,7 +1144,8 @@
       },
       "requirements": "Magia del Fulmine",
       "identifier": "parafulmine-liv-5"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Impeto d'azione liv.5",
@@ -1076,7 +1158,8 @@
       },
       "requirements": "Magia del Fulmine",
       "identifier": "impeto-d-azione-liv-5"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Flusso di fulmini liv.6",
@@ -1089,7 +1172,8 @@
       },
       "requirements": "Magia del Fulmine",
       "identifier": "flusso-di-fulmini-liv-6"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Lv.10 Raikiri",
@@ -1102,7 +1186,8 @@
       },
       "requirements": "Magia del Fulmine",
       "identifier": "lv-10-raikiri"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Catena di fulmini liv.10",
@@ -1115,7 +1200,8 @@
       },
       "requirements": "Magia del Fulmine",
       "identifier": "catena-di-fulmini-liv-10"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Mantello del Fulmine liv.11",
@@ -1128,7 +1214,8 @@
       },
       "requirements": "Magia del Fulmine",
       "identifier": "mantello-del-fulmine-liv-11"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Lv.18 Calcio fulminante",
@@ -1141,7 +1228,8 @@
       },
       "requirements": "Magia del Fulmine",
       "identifier": "lv-18-calcio-fulminante"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Liv.18 Bestia del Fulmine",
@@ -1154,7 +1242,8 @@
       },
       "requirements": "Magia del Fulmine",
       "identifier": "liv-18-bestia-del-fulmine"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Lv.20 Re del Cielo",
@@ -1167,7 +1256,8 @@
       },
       "requirements": "Magia del Fulmine",
       "identifier": "lv-20-re-del-cielo"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Lv. 1 Tocco dell'artigiano",
@@ -1180,7 +1270,8 @@
       },
       "requirements": "Magia della Creazione",
       "identifier": "lv-1-tocco-dell-artigiano"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Lv. 3 Cast con una sola mano",
@@ -1193,7 +1284,8 @@
       },
       "requirements": "Magia della Creazione",
       "identifier": "lv-3-cast-con-una-sola-mano"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Lv. 3 Casting a due mani",
@@ -1206,7 +1298,8 @@
       },
       "requirements": "Magia della Creazione",
       "identifier": "lv-3-casting-a-due-mani"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Lancio senza mani lv.3",
@@ -1219,7 +1312,8 @@
       },
       "requirements": "Magia della Creazione",
       "identifier": "lancio-senza-mani-lv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Lv.6 Artigianato magistrale",
@@ -1232,7 +1326,8 @@
       },
       "requirements": "Magia della Creazione",
       "identifier": "lv-6-artigianato-magistrale"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Liv.6 Muovere i costrutti",
@@ -1245,7 +1340,8 @@
       },
       "requirements": "Magia della Creazione",
       "identifier": "liv-6-muovere-i-costrutti"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Condotto Elementale liv.10",
@@ -1258,7 +1354,8 @@
       },
       "requirements": "Magia della Creazione",
       "identifier": "condotto-elementale-liv-10"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Costrutti definitivi liv.10",
@@ -1271,7 +1368,8 @@
       },
       "requirements": "Magia della Creazione",
       "identifier": "costrutti-definitivi-liv-10"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Costrutto vivente liv.11 - Forgia di Titano",
@@ -1284,7 +1382,8 @@
       },
       "requirements": "Magia della Creazione",
       "identifier": "costrutto-vivente-liv-11-forgia-di-titano"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Maestria elementale liv.18",
@@ -1297,7 +1396,8 @@
       },
       "requirements": "Magia della Creazione",
       "identifier": "maestria-elementale-liv-18"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Corpo elementale liv.20",
@@ -1310,7 +1410,8 @@
       },
       "requirements": "Magia della Creazione",
       "identifier": "corpo-elementale-liv-20"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Tutti guadagnano inventario",
@@ -1323,7 +1424,8 @@
       },
       "requirements": "Magia del Cambio Stock",
       "identifier": "tutti-guadagnano-inventario"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Lv.1 Il Cavaliere",
@@ -1336,7 +1438,8 @@
       },
       "requirements": "Magia del Cambio Stock",
       "identifier": "lv-1-il-cavaliere"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Danza a catena liv.1",
@@ -1349,7 +1452,8 @@
       },
       "requirements": "Magia del Cambio Stock",
       "identifier": "danza-a-catena-liv-1"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Guardiano coraggioso liv.3",
@@ -1362,7 +1466,8 @@
       },
       "requirements": "Magia del Cambio Stock",
       "identifier": "guardiano-coraggioso-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Danza della spada fantasma liv.3",
@@ -1375,7 +1480,8 @@
       },
       "requirements": "Magia del Cambio Stock",
       "identifier": "danza-della-spada-fantasma-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Arsenale adattabile liv.3",
@@ -1388,7 +1494,8 @@
       },
       "requirements": "Magia del Cambio Stock",
       "identifier": "arsenale-adattabile-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Lv.5 Richiesto: I Cento",
@@ -1401,7 +1508,8 @@
       },
       "requirements": "Magia del Cambio Stock",
       "identifier": "lv-5-richiesto-i-cento"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Armatura del campione liv.6",
@@ -1414,7 +1522,8 @@
       },
       "requirements": "Magia del Cambio Stock",
       "identifier": "armatura-del-campione-liv-6"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Opzione lv.10 richiesta: Armatura Nakagami",
@@ -1427,7 +1536,8 @@
       },
       "requirements": "Magia del Cambio Stock",
       "identifier": "opzione-lv-10-richiesta-armatura-nakagami"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Opzione Lv.11 Spada del Re",
@@ -1440,7 +1550,8 @@
       },
       "requirements": "Magia del Cambio Stock",
       "identifier": "opzione-lv-11-spada-del-re"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Arsenale del Maestro delle opzioni liv.18",
@@ -1453,7 +1564,8 @@
       },
       "requirements": "Magia del Cambio Stock",
       "identifier": "arsenale-del-maestro-delle-opzioni-liv-18"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Opzione liv.20 Armeria infinita",
@@ -1466,7 +1578,8 @@
       },
       "requirements": "Magia del Cambio Stock",
       "identifier": "opzione-liv-20-armeria-infinita"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Danza di zibellino liv.1",
@@ -1479,7 +1592,8 @@
       },
       "requirements": "Magia della Sabbia",
       "identifier": "danza-di-zibellino-liv-1"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Controllo della Sabbia liv.1",
@@ -1492,7 +1606,8 @@
       },
       "requirements": "Magia della Sabbia",
       "identifier": "controllo-della-sabbia-liv-1"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Spaccasabbia liv.3",
@@ -1505,7 +1620,8 @@
       },
       "requirements": "Magia della Sabbia",
       "identifier": "spaccasabbia-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Clone sabbia liv.3",
@@ -1518,7 +1634,8 @@
       },
       "requirements": "Magia della Sabbia",
       "identifier": "clone-sabbia-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Lancia di sabbia liv.6",
@@ -1531,7 +1648,8 @@
       },
       "requirements": "Magia della Sabbia",
       "identifier": "lancia-di-sabbia-liv-6"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Forma di sabbia liv.6",
@@ -1544,7 +1662,8 @@
       },
       "requirements": "Magia della Sabbia",
       "identifier": "forma-di-sabbia-liv-6"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Revisione Spaccasabbia lv.10",
@@ -1557,7 +1676,8 @@
       },
       "requirements": "Magia della Sabbia",
       "identifier": "revisione-spaccasabbia-lv-10"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Lv.11 Raml Sayf",
@@ -1570,7 +1690,8 @@
       },
       "requirements": "Magia della Sabbia",
       "identifier": "lv-11-raml-sayf"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Mondo di sabbia liv.18",
@@ -1583,7 +1704,8 @@
       },
       "requirements": "Magia della Sabbia",
       "identifier": "mondo-di-sabbia-liv-18"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Esplosione di sabbia lv.20",
@@ -1596,7 +1718,8 @@
       },
       "requirements": "Magia della Sabbia",
       "identifier": "esplosione-di-sabbia-lv-20"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Lv.1 Scrittura solida orientale: Via della spada",
@@ -1609,7 +1732,8 @@
       },
       "requirements": "Magia del Solid Script",
       "identifier": "lv-1-scrittura-solida-orientale-via-della-spada"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Forgiatore di parole liv.1",
@@ -1622,7 +1746,8 @@
       },
       "requirements": "Magia del Solid Script",
       "identifier": "forgiatore-di-parole-liv-1"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Fioritura del maestro di spada lv.3",
@@ -1635,7 +1760,8 @@
       },
       "requirements": "Magia del Solid Script",
       "identifier": "fioritura-del-maestro-di-spada-lv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Lv.3 Parole del potere",
@@ -1648,7 +1774,8 @@
       },
       "requirements": "Magia del Solid Script",
       "identifier": "lv-3-parole-del-potere"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Lv.6 Script solido orientale: Gambetto del maestro d'armi",
@@ -1661,7 +1788,8 @@
       },
       "requirements": "Magia del Solid Script",
       "identifier": "lv-6-script-solido-orientale-gambetto-del-maestro-d-armi"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Scrittura solida liv.6: Fusione parole",
@@ -1674,7 +1802,8 @@
       },
       "requirements": "Magia del Solid Script",
       "identifier": "scrittura-solida-liv-6-fusione-parole"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Liv.11 Utilizzo della magia definitiva: Parola definitiva",
@@ -1687,7 +1816,8 @@
       },
       "requirements": "Magia del Solid Script",
       "identifier": "liv-11-utilizzo-della-magia-definitiva-parola-definitiva"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Lv.11 Scrittura solida orientale: Kanji prolungato (延)",
@@ -1700,7 +1830,8 @@
       },
       "requirements": "Magia del Solid Script",
       "identifier": "lv-11-scrittura-solida-orientale-kanji-prolungato"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Lv.18 Parole del potere: Linguis arcano",
@@ -1713,7 +1844,8 @@
       },
       "requirements": "Magia del Solid Script",
       "identifier": "lv-18-parole-del-potere-linguis-arcano"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Lv.20 Scrittura solida orientale: dominio Kanji )",
@@ -1726,7 +1858,8 @@
       },
       "requirements": "Magia del Solid Script",
       "identifier": "lv-20-scrittura-solida-orientale-dominio-kanji"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Anima acquisizione liv.1",
@@ -1739,7 +1872,8 @@
       },
       "requirements": "Magia di Take Over",
       "identifier": "anima-acquisizione-liv-1"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Adattamento selvaggio liv.3",
@@ -1752,7 +1886,8 @@
       },
       "requirements": "Magia di Take Over",
       "identifier": "adattamento-selvaggio-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Acquisizione parziale liv.3",
@@ -1765,7 +1900,8 @@
       },
       "requirements": "Magia di Take Over",
       "identifier": "acquisizione-parziale-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Arsenale delle anime liv.5",
@@ -1778,7 +1914,8 @@
       },
       "requirements": "Magia di Take Over",
       "identifier": "arsenale-delle-anime-liv-5"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Potenziale scatenato liv.6",
@@ -1791,7 +1928,8 @@
       },
       "requirements": "Magia di Take Over",
       "identifier": "potenziale-scatenato-liv-6"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Anima doppia liv.6",
@@ -1804,7 +1942,8 @@
       },
       "requirements": "Magia di Take Over",
       "identifier": "anima-doppia-liv-6"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Lv.11 Fusione primordiale",
@@ -1817,7 +1956,8 @@
       },
       "requirements": "Magia di Take Over",
       "identifier": "lv-11-fusione-primordiale"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Evoluzione bestiale liv.11",
@@ -1830,7 +1970,8 @@
       },
       "requirements": "Magia di Take Over",
       "identifier": "evoluzione-bestiale-liv-11"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Risonanza dell'anima liv.18",
@@ -1843,7 +1984,8 @@
       },
       "requirements": "Magia di Take Over",
       "identifier": "risonanza-dell-anima-liv-18"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Lv.20 King Soul Take Over",
@@ -1856,7 +1998,8 @@
       },
       "requirements": "Magia di Take Over",
       "identifier": "lv-20-king-soul-take-over"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Forma fluida liv.1",
@@ -1869,7 +2012,8 @@
       },
       "requirements": "Magia dell'Acqua",
       "identifier": "forma-fluida-liv-1"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
   {
     "name": "Maestria ondulazione liv.1",
@@ -1882,7 +2026,8 @@
       },
       "requirements": "Magia dell'Acqua",
       "identifier": "maestria-ondulazione-liv-1"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
   {
     "name": "Forza torrenziale liv.3",
@@ -1895,7 +2040,8 @@
       },
       "requirements": "Magia dell'Acqua",
       "identifier": "forza-torrenziale-liv-3"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
   {
     "name": "Lv.3 Ondata di marea",
@@ -1908,7 +2054,8 @@
       },
       "requirements": "Magia dell'Acqua",
       "identifier": "lv-3-ondata-di-marea"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
   {
     "name": "Lv.6 Grazia dell'acqua",
@@ -1921,7 +2068,8 @@
       },
       "requirements": "Magia dell'Acqua",
       "identifier": "lv-6-grazia-dell-acqua"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
   {
     "name": "Lv.10 Morte abissale",
@@ -1934,7 +2082,8 @@
       },
       "requirements": "Magia dell'Acqua",
       "identifier": "lv-10-morte-abissale"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
   {
     "name": "Lv.10 Furia degli oceani",
@@ -1947,7 +2096,8 @@
       },
       "requirements": "Magia dell'Acqua",
       "identifier": "lv-10-furia-degli-oceani"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
   {
     "name": "Lv.18 Sovrano del mare",
@@ -1960,7 +2110,8 @@
       },
       "requirements": "Magia dell'Acqua",
       "identifier": "lv-18-sovrano-del-mare"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
   {
     "name": "Lv.18 Ira del Leviatano",
@@ -1973,6 +2124,7 @@
       },
       "requirements": "Magia dell'Acqua",
       "identifier": "lv-18-ira-del-leviatano"
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   }
 ]

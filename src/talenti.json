@@ -17,7 +17,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Incantesimi Caratteristici (Modificato)",
@@ -37,7 +38,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Efficienza del Mana",
@@ -57,7 +59,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Ondata di Mana Berserk",
@@ -77,7 +80,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Sensorialità Magica",
@@ -97,7 +101,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Lancio Migliorato (Modificato)",
@@ -117,7 +122,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Protezione magica",
@@ -137,7 +143,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Connessione eterea",
@@ -157,7 +164,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Magia potenziata",
@@ -177,7 +185,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Infusione di mana",
@@ -197,7 +206,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Arma di mana",
@@ -217,7 +227,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Lanciatore lontano",
@@ -237,7 +248,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Forza di volontà",
@@ -257,7 +269,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Mago pieno di risorse",
@@ -277,7 +290,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Incantesimo della Gilda",
@@ -297,7 +311,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Relazioni di Mana",
@@ -317,7 +332,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Grande Magia",
@@ -337,7 +353,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Studente",
@@ -357,7 +374,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Cerchio d'attacco magico",
@@ -377,7 +395,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Cerchi subdoli",
@@ -397,7 +416,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Condotto del Mana",
@@ -417,7 +437,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Cerchi magici stratificati",
@@ -437,7 +458,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Ciclo di feedback arcano",
@@ -457,7 +479,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Scultore di incantesimi",
@@ -477,7 +500,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Antica affinità magica",
@@ -497,7 +521,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Aria Concentrata",
@@ -517,7 +542,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Sfera Soffocante",
@@ -537,7 +563,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Esplosione Concentrata",
@@ -557,7 +584,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Sbarramento a Ricerca",
@@ -577,7 +605,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Forma Aerea Potenziata",
@@ -597,7 +626,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Ciclone Schiacciante",
@@ -617,7 +647,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Risucchio di Mana",
@@ -637,7 +668,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Ascesa in volo",
@@ -657,7 +689,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Soffocamento assoluto",
@@ -677,7 +710,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
   {
     "name": "Fortuna raddoppiata",
@@ -697,7 +731,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Evocazione di carte",
@@ -717,7 +752,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Finezza del bariere",
@@ -737,7 +773,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Maestro del mazzo",
@@ -757,7 +794,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Potenziamento delle carte",
@@ -777,7 +815,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Maestria a doppia carta",
@@ -797,7 +836,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Rinnovo dei Tarocchi",
@@ -817,7 +857,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
   {
     "name": "Clone terrestre",
@@ -837,7 +878,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Evocatore della Terra",
@@ -857,7 +899,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Baluardo di Pietra",
@@ -877,7 +920,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Terra duratura",
@@ -897,7 +941,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Pugno tettonico",
@@ -917,7 +962,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Arsenale dell’Alchimista",
@@ -937,7 +983,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Bastione della Terra",
@@ -957,7 +1004,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Inferno furioso",
@@ -977,7 +1025,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Velocità sfolgorante",
@@ -997,7 +1046,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Detonazione controllata",
@@ -1017,7 +1067,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Alimentato dalla Fiamma",
@@ -1037,7 +1088,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Aura Ardente",
@@ -1057,7 +1109,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Carica dell’Inferno",
@@ -1077,7 +1130,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Fiamma Eterna",
@@ -1097,7 +1151,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Fiamma dell’Annientamento",
@@ -1117,7 +1172,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Colpo d'ingranaggio",
@@ -1137,7 +1193,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Ingranaggio di potenziamento personale",
@@ -1157,7 +1214,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Risonanza degli ingranaggi",
@@ -1177,7 +1235,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Distribuzione strategica",
@@ -1197,7 +1256,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Dono del Forgiaingranaggi",
@@ -1217,7 +1277,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Famiglia Fantasma",
@@ -1237,7 +1298,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
   {
     "name": "Maestria dell'equipaggiamento",
@@ -1257,7 +1319,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Maestria dei Proiettili di Mana",
@@ -1277,7 +1340,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Tiratore di Mana",
@@ -1297,7 +1361,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Fusione Elementale",
@@ -1317,7 +1382,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Inseguimento Infallibile",
@@ -1337,7 +1403,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Vortice Persistente",
@@ -1357,7 +1424,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Arsenale Fantasma",
@@ -1377,7 +1445,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Esplosione a Doppia Canna",
@@ -1397,7 +1466,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Ordigni Esplosivi",
@@ -1417,7 +1487,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Eruzione Solare",
@@ -1437,7 +1508,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Fortuna Stellare",
@@ -1457,7 +1529,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Maledizione Celeste",
@@ -1477,7 +1550,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Echi Celesti",
@@ -1497,7 +1571,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Favore Celeste",
@@ -1517,7 +1592,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Chiamata Meteora",
@@ -1537,7 +1613,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Guida di Orione",
@@ -1557,7 +1634,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Cuore di Sema",
@@ -1577,7 +1655,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Abbraccio della gravità",
@@ -1597,7 +1676,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Carica del carro",
@@ -1617,7 +1697,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Lame persistenti",
@@ -1637,7 +1718,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
   {
     "name": "Presenza Elettrificata",
@@ -1657,7 +1739,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Colpo Tonante",
@@ -1677,7 +1760,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Arco Elettrizzante",
@@ -1697,7 +1781,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Riflessi Fulminei",
@@ -1717,7 +1802,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Fulmine Divisore",
@@ -1737,7 +1823,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Scarica statica",
@@ -1757,7 +1844,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Furia di Thunderhead",
@@ -1777,7 +1865,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Dono del Fulmine",
@@ -1797,7 +1886,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Carapace Conduttivo",
@@ -1817,7 +1907,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Slancio del Fulmine",
@@ -1837,7 +1928,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Asta della Tempesta",
@@ -1857,7 +1949,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
   {
     "name": "Colpo del Tuono",
@@ -1877,7 +1970,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Passo del Tuono",
@@ -1897,7 +1991,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Arsenale ampliato",
@@ -1917,7 +2012,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Casting adattivo",
@@ -1937,7 +2033,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Creazione armoniosa",
@@ -1957,7 +2054,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Magia della Creazione reattiva",
@@ -1977,7 +2075,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Costrutto Distintivo",
@@ -1997,7 +2096,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Artigiano degli Arcani",
@@ -2017,7 +2117,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Duplice Creazione",
@@ -2037,7 +2138,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Impeto Elementale",
@@ -2057,7 +2159,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Divisione Elementale",
@@ -2077,7 +2180,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
   {
     "name": "Sigillo Eterno",
@@ -2097,7 +2201,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
   {
     "name": "Valore del Cavaliere",
@@ -2117,7 +2222,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Arco Spazzante",
@@ -2137,7 +2243,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Versatilità del Cambio Stock",
@@ -2157,7 +2264,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Cento Colpi, Mezza Precisione",
@@ -2177,7 +2285,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Campione incrollabile",
@@ -2197,7 +2306,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Ira di Nakagami",
@@ -2217,7 +2327,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Decreto del Re",
@@ -2237,7 +2348,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Asso dell’Arsenale",
@@ -2257,7 +2369,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Ascesa dell’Arsenale",
@@ -2277,7 +2390,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Abbraccio della Tempesta di Sabbia",
@@ -2297,7 +2411,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Scultore di Sabbia",
@@ -2317,7 +2432,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Miraggio del Deserto",
@@ -2337,7 +2453,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Maelstrom Vorticoso",
@@ -2357,7 +2474,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Tempesta di Sabbia Perforante",
@@ -2377,7 +2495,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Titano della Sabbia",
@@ -2397,7 +2516,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Turbine del Deserto",
@@ -2417,7 +2537,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Sbarramento della Tempesta di Sabbia",
@@ -2437,7 +2558,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
   {
     "name": "Catastrofe delle Sabbie Mobili",
@@ -2457,7 +2579,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "Avatar della Tempesta di Sabbia",
@@ -2477,7 +2600,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
   {
     "name": "Padronanza linguistica",
@@ -2497,7 +2621,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Kanji istantaneo",
@@ -2517,7 +2642,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Precisione del Wordsmith",
@@ -2537,7 +2663,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Cascata Kanji",
@@ -2557,7 +2684,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Esperto del Solid Script",
@@ -2577,7 +2705,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Parole runiche",
@@ -2597,7 +2726,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Parole veloci",
@@ -2617,7 +2747,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Scrittura silenziosa",
@@ -2637,7 +2768,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
   {
     "name": "Dominio del Master",
@@ -2657,7 +2789,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Forma Feroce",
@@ -2677,7 +2810,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Trasformazione sfrenata",
@@ -2697,7 +2831,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Infusione dell’Anima",
@@ -2717,7 +2852,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Spirito Indomito",
@@ -2737,7 +2873,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Cambio Reattivo",
@@ -2757,7 +2894,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Vero Adattamento",
@@ -2777,7 +2915,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Anima Espansa",
@@ -2797,7 +2936,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Potenza Unificata",
@@ -2817,7 +2957,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Evoluzione Scatenata",
@@ -2837,7 +2978,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Pinnacolo dell’Anima",
@@ -2857,7 +2999,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Armamento del Re",
@@ -2877,7 +3020,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Potenza acquatica",
@@ -2897,7 +3041,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
   {
     "name": "Hydro Fist",
@@ -2917,7 +3062,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
   {
     "name": "Adattamento acquatico",
@@ -2937,7 +3083,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
   {
     "name": "Controllo delle maree",
@@ -2957,7 +3104,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
   {
     "name": "Sosia acquatico",
@@ -2977,7 +3125,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
   {
     "name": "Sbarramento di marea",
@@ -2997,7 +3146,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
   {
     "name": "L'Abbraccio della Profondità",
@@ -3017,7 +3167,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
   {
     "name": "Furia delle Maree",
@@ -3037,7 +3188,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Dominio del Sovrano",
@@ -3057,7 +3209,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
   {
     "name": "La chiamata del Leviatano",
@@ -3077,7 +3230,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
   {
     "name": "Riflessi potenziati",
@@ -3097,7 +3251,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Finezza acrobatica",
@@ -3117,7 +3272,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Recupero corporeo",
@@ -3137,7 +3293,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Volontà di Ferro",
@@ -3157,7 +3314,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Maestria nelle armi",
@@ -3177,7 +3335,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
   {
     "name": "Adattamento ambientale",
@@ -3197,7 +3356,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Combattente adattabile",
@@ -3217,7 +3377,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Sangue di drago",
@@ -3237,7 +3398,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Durabilità migliorata",
@@ -3257,7 +3419,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Durabilità avanzata",
@@ -3277,7 +3440,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Attaccabrighe",
@@ -3297,7 +3461,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Attaccabrighe: Maestria",
@@ -3317,7 +3482,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Sentinale a distanza",
@@ -3337,7 +3503,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Arguto",
@@ -3357,7 +3524,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Comunicazione Telepatica",
@@ -3377,7 +3545,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Vera Telepatia",
@@ -3397,7 +3566,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Coreografia magica",
@@ -3417,7 +3587,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Ballerina eterea",
@@ -3437,7 +3608,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   },
   {
     "name": "Magia di appiattimento",
@@ -3457,7 +3629,8 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
   {
     "name": "Magia del Portale",
@@ -3477,6 +3650,7 @@
         "license": "",
         "rules": "2014"
       }
-    }
+    },
+    "img": "icons/svg/book.svg"
   }
 ]

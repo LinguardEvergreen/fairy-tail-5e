@@ -27,7 +27,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/armatura.webp"
   },
   {
     "name": "Armatura di cuoio",
@@ -57,7 +58,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/armatura.webp"
   },
   {
     "name": "Armatura di cuoio borchiato",
@@ -87,7 +89,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/armatura.webp"
   },
   {
     "name": "Armatura in pelle",
@@ -117,7 +120,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/armatura.webp"
   },
   {
     "name": "Giaco di Maglia",
@@ -147,7 +151,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/armatura.webp"
   },
   {
     "name": "Corazza di Scaglie",
@@ -177,7 +182,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/armatura.webp"
   },
   {
     "name": "Corazza di Piastre",
@@ -207,7 +213,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/armatura.webp"
   },
   {
     "name": "Mezza Armatura",
@@ -237,7 +244,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/armatura.webp"
   },
   {
     "name": "Corazza di Anelli",
@@ -267,7 +275,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/armatura.webp"
   },
   {
     "name": "Cotta di maglia",
@@ -297,7 +306,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/armatura.webp"
   },
   {
     "name": "Corazza a strisce",
@@ -327,7 +337,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/armatura.webp"
   },
   {
     "name": "Armatura Completa",
@@ -357,7 +368,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/armatura.webp"
   },
   {
     "name": "Scudo",
@@ -387,7 +399,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/scudo.webp"
   },
   {
     "name": "Ascia",
@@ -429,7 +442,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/ascia.webp"
   },
   {
     "name": "Bastone ferrato",
@@ -470,7 +484,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/bastone.webp"
   },
   {
     "name": "Clava",
@@ -511,7 +526,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/mazza.webp"
   },
   {
     "name": "Falcetto",
@@ -552,7 +568,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/pugnale.webp"
   },
   {
     "name": "Giavellotto",
@@ -593,7 +610,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/lancia.webp"
   },
   {
     "name": "Lancia",
@@ -635,7 +653,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/lancia.webp"
   },
   {
     "name": "Martello leggero",
@@ -677,7 +696,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/mazza.webp"
   },
   {
     "name": "Mazza",
@@ -716,7 +736,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/mazza.webp"
   },
   {
     "name": "Pugnale",
@@ -759,7 +780,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/pugnale.webp"
   },
   {
     "name": "Alabarda",
@@ -802,7 +824,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/ascia.webp"
   },
   {
     "name": "Ascia Bipenne",
@@ -844,7 +867,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/ascia.webp"
   },
   {
     "name": "Ascia da battaglia",
@@ -885,7 +909,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/ascia.webp"
   },
   {
     "name": "Falcione",
@@ -928,7 +953,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/spada.webp"
   },
   {
     "name": "Frusta",
@@ -970,7 +996,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/pugnale.webp"
   },
   {
     "name": "Lancia da Cavaliere",
@@ -1011,7 +1038,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/lancia.webp"
   },
   {
     "name": "Maglio",
@@ -1053,7 +1081,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/mazza.webp"
   },
   {
     "name": "Martello da guerra",
@@ -1094,7 +1123,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/mazza.webp"
   },
   {
     "name": "Mazzafrusto",
@@ -1133,7 +1163,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/mazza.webp"
   },
   {
     "name": "Morning Star",
@@ -1172,7 +1203,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/mazza.webp"
   },
   {
     "name": "Picca",
@@ -1215,7 +1247,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/lancia.webp"
   },
   {
     "name": "Piccone da guerra",
@@ -1254,7 +1287,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/mazza.webp"
   },
   {
     "name": "Scimitarra",
@@ -1296,7 +1330,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/spada.webp"
   },
   {
     "name": "Spada corta",
@@ -1338,7 +1373,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/spada.webp"
   },
   {
     "name": "Spada lunga",
@@ -1379,7 +1415,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/spada.webp"
   },
   {
     "name": "Spadone",
@@ -1421,7 +1458,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/spada.webp"
   },
   {
     "name": "Stocco",
@@ -1462,7 +1500,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/spada.webp"
   },
   {
     "name": "Tridente",
@@ -1504,7 +1543,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/lancia.webp"
   },
   {
     "name": "Arco corto",
@@ -1546,7 +1586,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/arco.webp"
   },
   {
     "name": "Balestra leggera",
@@ -1589,7 +1630,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/arco.webp"
   },
   {
     "name": "Dardo",
@@ -1631,7 +1673,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/arco.webp"
   },
   {
     "name": "Fionda",
@@ -1672,7 +1715,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/arco.webp"
   },
   {
     "name": "Arco lungo",
@@ -1715,7 +1759,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/arco.webp"
   },
   {
     "name": "Balestra a mano",
@@ -1758,7 +1803,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/arco.webp"
   },
   {
     "name": "Balestra pesante",
@@ -1802,7 +1848,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/arco.webp"
   },
   {
     "name": "Rete",
@@ -1838,7 +1885,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/pistola.webp"
   },
   {
     "name": "Archibugio",
@@ -1882,7 +1930,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/pistola.webp"
   },
   {
     "name": "Pistola",
@@ -1924,7 +1973,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/pistola.webp"
   },
   {
     "name": "Rivoltella",
@@ -1966,7 +2016,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/pistola.webp"
   },
   {
     "name": "DMR",
@@ -2010,7 +2061,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/pistola.webp"
   },
   {
     "name": "Fucile a canne mozze",
@@ -2050,7 +2102,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/pistola.webp"
   },
   {
     "name": "Fucile a pompa",
@@ -2090,7 +2143,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/pistola.webp"
   },
   {
     "name": "Fucile d'Assalto",
@@ -2133,7 +2187,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/pistola.webp"
   },
   {
     "name": "Fucile da cecchino Bolt Action",
@@ -2178,7 +2233,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/pistola.webp"
   },
   {
     "name": "Fucile da cecchino (semi)",
@@ -2222,7 +2278,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/pistola.webp"
   },
   {
     "name": "Fucile semi-automatico",
@@ -2261,7 +2318,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/pistola.webp"
   },
   {
     "name": "Mitraglietta",
@@ -2303,7 +2361,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/pistola.webp"
   },
   {
     "name": "Cartuccia a palla",
@@ -2326,7 +2385,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/lacrima.webp"
   },
   {
     "name": "Cartuccia sfondaporte",
@@ -2349,7 +2409,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/lacrima.webp"
   },
   {
     "name": "Pallini",
@@ -2372,7 +2433,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/lacrima.webp"
   },
   {
     "name": "Pallettoni",
@@ -2395,7 +2457,8 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/lacrima.webp"
   },
   {
     "name": "Respiro del Drago",
@@ -2418,6 +2481,7 @@
         "custom": "Fairy Tail 5e",
         "book": "Fairy Tail"
       }
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/equipaggiamento/lacrima.webp"
   }
 ]

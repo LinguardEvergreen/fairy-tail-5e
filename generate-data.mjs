@@ -2123,6 +2123,191 @@ function enrichStiliCombattimento() {
   console.log(`  ✓ stili-combattimento.json: enriched ${stili.length} fighting styles`);
 }
 
+// ── Image Assignment ──────────────────────────────────────────────────────
+const IMG_BASE = `modules/${MODULE_ID}/assets/images`;
+
+const RACE_IMG = {
+  "Umani": `${IMG_BASE}/razze/umani.webp`,
+  "Exceed": `${IMG_BASE}/razze/exceed.webp`,
+  "Ibrido Gatto": `${IMG_BASE}/razze/ibrido-gatto.webp`,
+  "Ibrido Lucertola": `${IMG_BASE}/razze/ibrido-lucertola.webp`,
+  "Ibrido Lupo": `${IMG_BASE}/razze/ibrido-lupo.webp`,
+  "Ibrido Demone di Galuna": `${IMG_BASE}/razze/ibrido-demone-galuna.webp`,
+  "Dragon Slayer": `${IMG_BASE}/razze/dragon-slayer.webp`,
+  "Devil Slayer": `${IMG_BASE}/razze/devil-slayer.webp`,
+};
+
+const CLASS_IMG = {
+  "Mago Combattente": `${IMG_BASE}/classi/mago-combattente.webp`,
+  "Mago Difensore": `${IMG_BASE}/classi/mago-difensore.webp`,
+  "Mago Furtivo": `${IMG_BASE}/classi/mago-furtivo.webp`,
+  "Mago di Strada": `${IMG_BASE}/classi/mago-di-strada.webp`,
+  "Mago di Supporto": `${IMG_BASE}/classi/mago-di-supporto.webp`,
+  "Mago Tattico": `${IMG_BASE}/classi/mago-tattico.webp`,
+  "Guerriero": `${IMG_BASE}/classi/guerriero.webp`,
+};
+
+const MAGIA_IMG = {
+  "Magia dello Spazio Aereo": `${IMG_BASE}/magie/spazio-aereo.webp`,
+  "Magia delle Carte": `${IMG_BASE}/magie/carte.webp`,
+  "Magia della Terra": `${IMG_BASE}/magie/terra.webp`,
+  "Magia del Fuoco": `${IMG_BASE}/magie/fuoco.webp`,
+  "Magia degli Ingranaggi": `${IMG_BASE}/magie/ingranaggi.webp`,
+  "Magia delle Armi da Fuoco": `${IMG_BASE}/magie/armi-da-fuoco.webp`,
+  "Magia del Corpo Celeste": `${IMG_BASE}/magie/corpo-celeste.webp`,
+  "Magia del Fulmine": `${IMG_BASE}/magie/fulmine.webp`,
+  "Magia della Creazione": `${IMG_BASE}/magie/creazione.webp`,
+  "Magia del Cambio Stock": `${IMG_BASE}/magie/cambio-stock.webp`,
+  "Magia della Sabbia": `${IMG_BASE}/magie/sabbia.webp`,
+  "Magia del Solid Script": `${IMG_BASE}/magie/solid-script.webp`,
+  "Magia di Take Over": `${IMG_BASE}/magie/take-over.webp`,
+  "Magia dell'Acqua": `${IMG_BASE}/magie/acqua.webp`,
+};
+
+const BG_IMG = {
+  "Background del mago della gilda": `${IMG_BASE}/background/mago-gilda.webp`,
+  "Background del mago errante": `${IMG_BASE}/background/mago-errante.webp`,
+  "Background dello studioso": `${IMG_BASE}/background/studioso.webp`,
+  "Background del mago da combattimento": `${IMG_BASE}/background/mago-combattimento.webp`,
+  "Background del Mago Selvaggio": `${IMG_BASE}/background/mago-selvaggio.webp`,
+  "Background del Minatore di Lacrima": `${IMG_BASE}/background/minatore-lacrima.webp`,
+  "Background del Camminatore dello Specchio": `${IMG_BASE}/background/camminatore-specchio.webp`,
+};
+
+const STILE_IMG = {
+  "Pugni Devastanti": `${IMG_BASE}/stili/pugni-devastanti.webp`,
+  "Lama Infusa": `${IMG_BASE}/stili/lama-infusa.webp`,
+  "Difensore Arcano": `${IMG_BASE}/stili/difensore-arcano.webp`,
+  "Combattente Agile": `${IMG_BASE}/stili/combattente-agile.webp`,
+  "Contrattaccante": `${IMG_BASE}/stili/contrattaccante.webp`,
+  "Furia Marziale": `${IMG_BASE}/stili/furia-marziale.webp`,
+  "Duellante": `${IMG_BASE}/stili/duellante.webp`,
+  "Maestro d'Armi": `${IMG_BASE}/stili/maestro-armi.webp`,
+  "Combattente a Due Armi": `${IMG_BASE}/stili/combattente-due-armi.webp`,
+  "Spirito Combattivo": `${IMG_BASE}/stili/spirito-combattivo.webp`,
+};
+
+/** Map equipment type to image file */
+function equipImg(item) {
+  const t = item.system?.type?.value || "";
+  const name = item.name.toLowerCase();
+  // Armor types
+  if (["light", "medium", "heavy"].includes(t))
+    return `${IMG_BASE}/equipaggiamento/armatura.webp`;
+  if (t === "shield" || name.includes("scudo"))
+    return `${IMG_BASE}/equipaggiamento/scudo.webp`;
+  // Ranged weapons
+  if (t === "simpleR" || t === "martialR") {
+    if (name.includes("arco")) return `${IMG_BASE}/equipaggiamento/arco.webp`;
+    if (name.includes("balestra") || name.includes("fionda") || name.includes("dardo"))
+      return `${IMG_BASE}/equipaggiamento/arco.webp`;
+    // Firearms
+    return `${IMG_BASE}/equipaggiamento/pistola.webp`;
+  }
+  // Ammo
+  if (t === "ammo") return `${IMG_BASE}/equipaggiamento/lacrima.webp`;
+  // Melee weapons
+  if (name.includes("spada") || name.includes("spadone") || name.includes("stocco") || name.includes("scimitarra") || name.includes("falcione"))
+    return `${IMG_BASE}/equipaggiamento/spada.webp`;
+  if (name.includes("ascia") || name.includes("alabarda"))
+    return `${IMG_BASE}/equipaggiamento/ascia.webp`;
+  if (name.includes("lancia") || name.includes("picca") || name.includes("tridente") || name.includes("giavellotto"))
+    return `${IMG_BASE}/equipaggiamento/lancia.webp`;
+  if (name.includes("mazza") || name.includes("clava") || name.includes("maglio") || name.includes("martello") || name.includes("mazzafrusto") || name.includes("morning") || name.includes("piccone"))
+    return `${IMG_BASE}/equipaggiamento/mazza.webp`;
+  if (name.includes("pugnale") || name.includes("falcetto") || name.includes("frusta"))
+    return `${IMG_BASE}/equipaggiamento/pugnale.webp`;
+  if (name.includes("bastone"))
+    return `${IMG_BASE}/equipaggiamento/bastone.webp`;
+  return "icons/svg/item-bag.svg";
+}
+
+/** Assign images to all items in all source files */
+function assignImages() {
+  const files = [
+    { file: "razze.json", getImg: item => RACE_IMG[item.name] },
+    { file: "classi.json", getImg: item => CLASS_IMG[item.name] },
+    { file: "magie.json", getImg: item => MAGIA_IMG[item.name] },
+    { file: "background.json", getImg: item => BG_IMG[item.name] },
+    { file: "stili-combattimento.json", getImg: item => STILE_IMG[item.name] },
+    { file: "equipaggiamento.json", getImg: item => equipImg(item) },
+    {
+      file: "talenti.json",
+      getImg: item => {
+        // Try to match talent to a magic type based on description keywords
+        const desc = (item.description || "").toLowerCase();
+        const name = item.name.toLowerCase();
+        const magiaKeywords = [
+          [/spazio aereo|aereo|aria concentrata|sfera soffocante|sbarramento a ricerca|forma aerea|ciclone|risucchio di mana|ascesa in volo|soffocamento/i, "Magia dello Spazio Aereo"],
+          [/carte|mazzo|tarocchi|bariere|doppia carta/i, "Magia delle Carte"],
+          [/terra|pietra|tettonico|terrestre|clone terrestre|baluardo|alchimista|bastione/i, "Magia della Terra"],
+          [/fuoco|fiamma|inferno|sfolgorante|detonazione|ardente|annientamento/i, "Magia del Fuoco"],
+          [/ingranaggi?|forgiaingranaggi|distribuzione strategica/i, "Magia degli Ingranaggi"],
+          [/armi da fuoco|proiettil|tiratore|doppia canna|ordigni|arsenale fantasma|inseguimento|vortice persistente|fusione elementale/i, "Magia delle Armi da Fuoco"],
+          [/corpo celeste|celest|stell|solar|meteor|orione|sema|gravità|carro/i, "Magia del Corpo Celeste"],
+          [/fulmine|tuon|elettr|scarica|thunderhead|conduttivo|tempesta|asta della tempesta/i, "Magia del Fulmine"],
+          [/creazione|arsenale ampliato|casting adattivo|creazione armoniosa|artigiano|duplice|impeto elementale|divisione elementale|sigillo eterno/i, "Magia della Creazione"],
+          [/cambio stock|cavaliere|spazzante|versatilità|cento colpi|incrollabile|nakagami|decreto del re|asso dell.arsenale|ascesa dell.arsenale/i, "Magia del Cambio Stock"],
+          [/sabbia|deserto|maelstrom|tempesta di sabbia|titano|turbine|sabbie mobili|avatar/i, "Magia della Sabbia"],
+          [/solid script|kanji|wordsmith|cascata|padronanza linguistica|parole runiche|parole veloci|scrittura silenziosa/i, "Magia del Solid Script"],
+          [/take over|forma feroce|trasformazione|infusione dell.anima|spirito indomito|cambio reattivo|adattamento|anima espansa|potenza unificata|evoluzione|pinnacolo|dominio del master/i, "Magia di Take Over"],
+          [/acqua|hydro|maree|acquatico|profondità|leviatano|sovrano/i, "Magia dell'Acqua"],
+        ];
+        const text = name + " " + desc;
+        for (const [regex, magia] of magiaKeywords) {
+          if (regex.test(text) && MAGIA_IMG[magia]) return MAGIA_IMG[magia];
+        }
+        return "icons/svg/book.svg";
+      }
+    },
+    {
+      file: "feature-razze.json",
+      getImg: item => {
+        const race = item.description?.match(/Razza: ([^<]+)/)?.[1]?.trim() || "";
+        return RACE_IMG[race] || "icons/svg/item-bag.svg";
+      }
+    },
+    {
+      file: "feature-classi.json",
+      getImg: item => {
+        const cls = item.description?.match(/Classe: ([^<]+)/)?.[1]?.trim() || "";
+        return CLASS_IMG[cls] || "icons/svg/item-bag.svg";
+      }
+    },
+    {
+      file: "feature-magie.json",
+      getImg: item => {
+        const magia = item.description?.match(/Magia: ([^<]+)/)?.[1]?.trim() || "";
+        return MAGIA_IMG[magia] || "icons/svg/item-bag.svg";
+      }
+    },
+    {
+      file: "incantesimi.json",
+      getImg: item => {
+        const magia = item._magia || "";
+        return MAGIA_IMG[magia] || "icons/svg/item-bag.svg";
+      }
+    },
+  ];
+
+  let total = 0, assigned = 0;
+  for (const { file, getImg } of files) {
+    const filePath = path.join(SRC_DIR, file);
+    if (!fs.existsSync(filePath)) continue;
+    const items = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+    for (const item of items) {
+      total++;
+      const img = getImg(item);
+      if (img) {
+        item.img = img;
+        assigned++;
+      }
+    }
+    fs.writeFileSync(filePath, JSON.stringify(items, null, 2), "utf-8");
+  }
+  console.log(`  ✓ Images assigned: ${assigned}/${total} items`);
+}
+
 // ── Main ────────────────────────────────────────────────────────────────────
 console.log("Generating JSON data files from Homebrewery source...\n");
 console.log(`Source: ${SOURCE_FILE}`);
@@ -2149,5 +2334,8 @@ enrichBackground();
 enrichTalenti();
 enrichEquipaggiamento();
 enrichStiliCombattimento();
+
+console.log("\nAssigning images...");
+assignImages();
 
 console.log("\nAll JSON files generated in src/");

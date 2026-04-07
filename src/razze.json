@@ -144,7 +144,8 @@
           }
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/umani.webp"
   },
   {
     "name": "Exceed",
@@ -248,7 +249,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/exceed.webp"
   },
   {
     "name": "Ibrido Gatto",
@@ -372,7 +374,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-gatto.webp"
   },
   {
     "name": "Ibrido Lucertola",
@@ -502,7 +505,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lucertola.webp"
   },
   {
     "name": "Ibrido Lupo",
@@ -626,7 +630,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-lupo.webp"
   },
   {
     "name": "Ibrido Demone di Galuna",
@@ -756,7 +761,8 @@
           }
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/ibrido-demone-galuna.webp"
   },
   {
     "name": "Dragon Slayer",
@@ -981,7 +987,8 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/dragon-slayer.webp"
   },
   {
     "name": "Devil Slayer",
@@ -1194,6 +1201,7 @@
           "value": {}
         }
       ]
-    }
+    },
+    "img": "modules/fairy-tail-5e/assets/images/razze/devil-slayer.webp"
   }
 ]
