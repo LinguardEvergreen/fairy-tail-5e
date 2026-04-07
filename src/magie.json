@@ -60,7 +60,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.3d824ab9f526c6d6"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -114,7 +114,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.a589668618ecf14c"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -143,7 +143,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.2eb200c263175e97"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -194,7 +194,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.556d06c43aef4637"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -331,7 +331,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.0513ba7800d4055c"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -385,7 +385,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.ab0cda69cb7c5bbd"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -414,7 +414,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.8ea0655709c32826"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -465,7 +465,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.f4e63cc59cfb6980"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -491,7 +491,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.0b9d83b3bc3729bb"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -647,7 +647,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.9ceb5b6d141ba909"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -701,7 +701,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.61d0196b4d13d379"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -730,7 +730,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.626a5c6a7bff82ca"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -781,7 +781,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.fe367f989cf908fa"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -807,7 +807,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.4b126c67eba2802a"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -966,7 +966,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.a01dc0195389cefe"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -1023,7 +1023,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.6f1b3a8748348cf5"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -1071,7 +1071,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.09475b5243aeb8d6"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -1122,7 +1122,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.6cce7d3be992ef75"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -1148,7 +1148,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.fcd90e65b3b9b7c4"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -1307,7 +1307,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.52a1631ae5b2f25b"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -1361,7 +1361,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.73408cda8b980af5"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -1409,7 +1409,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.2a3b7c0556d8ec4d"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -1460,7 +1460,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.f223ab3de71b7cdb"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -1486,7 +1486,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.67bdc8119d70234e"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -1642,7 +1642,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.5e7b89cd0c2d8a1f"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -1696,7 +1696,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.c81f7471c47d2f27"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -1725,7 +1725,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.57779b3b93dca573"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -1776,7 +1776,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.e7f601ebfa7b86a7"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -1802,7 +1802,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.2a3ea92c222ad063"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -1961,7 +1961,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.0efc0551459a6de6"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -2012,7 +2012,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.98677311d3c2df12"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -2041,7 +2041,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.8b6308679098e38e"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -2092,7 +2092,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.5c9236766844edfb"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -2118,7 +2118,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.c9f83cd10cb13c75"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -2270,7 +2270,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.2c24103b2ddf19ed"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -2321,7 +2321,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.73472e1a607fd50f"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -2369,7 +2369,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.7a8416c6e35756b1"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -2414,7 +2414,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.25fa99b396e1c630"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -2570,7 +2570,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.40ea7f12cea71e7c"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -2627,7 +2627,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.c29ec50bbbcb75a8"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -2656,7 +2656,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.7d0ddf884b137d01"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -2837,7 +2837,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.5074a861a0392613"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -2888,7 +2888,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.85669b590283eeec"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -2936,7 +2936,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.f9c677bf6b56cea6"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -3111,7 +3111,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.5342dbc66aba02ff"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -3165,7 +3165,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.df1e377768a573e0"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -3197,7 +3197,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.bb192388eb0a22d4"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -3248,7 +3248,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.51b922cf83ebf5bd"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -3404,7 +3404,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.aacab13a5a5cd06e"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -3458,7 +3458,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.d2316412bcc417ac"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -3487,7 +3487,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.49cc874999a531f7"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -3538,7 +3538,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.3cd798578cb36d8a"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -3564,7 +3564,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.d7eb7e19d7b40dac"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -3701,7 +3701,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.8c3b5ff17fa4d2c8"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -3755,7 +3755,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.0cd493cc78b9ba2a"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -3803,7 +3803,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.0ce743b825d4b5e8"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -3854,7 +3854,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.822b60aa858b32c3"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -3880,7 +3880,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.f6d490dc5250ae27"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -4020,7 +4020,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.7b890aa5b6aef9d7"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -4074,7 +4074,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.7ae5880f29704b5c"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -4103,7 +4103,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.d4863b82c473961e"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -4151,7 +4151,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.35f88b841bb27765"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
@@ -4180,7 +4180,7 @@
                 "uuid": "Compendium.fairy-tail-5e.ft5e-incantesimi.95116bd23c8aac43"
               }
             ],
-            "optional": true,
+            "optional": false,
             "spell": {
               "ability": [],
               "preparation": "prepared",
