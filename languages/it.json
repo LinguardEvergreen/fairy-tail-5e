@@ -7,5 +7,9 @@
   "FT5E.Mana.Recovered": "{name} recupera tutti i Punti Mana! ({max} PM)",
   "FT5E.Mana.Label": "Punti Mana",
   "FT5E.Mana.Cost": "Costo Mana",
-  "FT5E.Mana.Available": "Mana disponibile"
+  "FT5E.Mana.Available": "Mana disponibile",
+  "FT5E.Relazioni.Label": "Punti di Relazione",
+  "FT5E.Relazioni.Hint": "Usati per Attacchi Combo (4+) e Unison Raid (6+). Ottieni 1 punto per aumento di livello.",
+  "FT5E.Growth.Label": "Growth Token",
+  "FT5E.Growth.Hint": "Assegnati dal Master. Usali per ottenere nuove magie o raffinare quelle esistenti."
 }

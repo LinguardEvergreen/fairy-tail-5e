@@ -35,6 +35,7 @@ const PACKS = [
   { pack: "ft5e-feature-razze",       src: "feature-razze.json",       type: "feat" },
   { pack: "ft5e-feature-classi",      src: "feature-classi.json",      type: "feat" },
   { pack: "ft5e-feature-magie",       src: "feature-magie.json",       type: "feat" },
+  { pack: "ft5e-regole",              src: "regole.json",              type: "feat" },
 ];
 
 async function buildPack({ pack, src, type }) {
