@@ -405,10 +405,24 @@ async function promptMagiaSelection(classItem, actor) {
               // Remove _id so FoundryVTT generates a new one
               delete magiaData._id;
 
-              // Add to actor
-              const created = await actor.createEmbeddedDocuments("Item", [magiaData]);
-              ui.notifications.info(`${actor.name} ha scelto ${magiaDoc.name}!`);
-              resolve(created[0]);
+              // Add to actor — use AdvancementManager if item has advancements
+              const AdvManager = dnd5e.applications.advancement?.AdvancementManager;
+              if (AdvManager && magiaData.system?.advancement?.length) {
+                const manager = AdvManager.forNewItem(actor, magiaData);
+                if (manager.steps.length) {
+                  manager.render(true);
+                  ui.notifications.info(`${actor.name} ha scelto ${magiaDoc.name}!`);
+                  resolve(true);
+                } else {
+                  const created = await actor.createEmbeddedDocuments("Item", [magiaData]);
+                  ui.notifications.info(`${actor.name} ha scelto ${magiaDoc.name}!`);
+                  resolve(created[0]);
+                }
+              } else {
+                const created = await actor.createEmbeddedDocuments("Item", [magiaData]);
+                ui.notifications.info(`${actor.name} ha scelto ${magiaDoc.name}!`);
+                resolve(created[0]);
+              }
             } catch (err) {
               console.error("Fairy Tail 5e | Error adding magia:", err);
               resolve(null);
@@ -598,9 +612,25 @@ async function promptTalentSelection(actor, config) {
               if (!doc) { resolve(null); return; }
               const data = doc.toObject();
               delete data._id;
-              const created = await actor.createEmbeddedDocuments("Item", [data]);
-              ui.notifications.info(`${actor.name} ottiene il talento: ${doc.name}!`);
-              resolve(created[0]);
+
+              // Use AdvancementManager if item has advancements (e.g. ASI)
+              const AdvManager = dnd5e.applications.advancement?.AdvancementManager;
+              if (AdvManager && data.system?.advancement?.length) {
+                const manager = AdvManager.forNewItem(actor, data);
+                if (manager.steps.length) {
+                  manager.render(true);
+                  ui.notifications.info(`${actor.name} ottiene il talento: ${doc.name}!`);
+                  resolve(true);
+                } else {
+                  const created = await actor.createEmbeddedDocuments("Item", [data]);
+                  ui.notifications.info(`${actor.name} ottiene il talento: ${doc.name}!`);
+                  resolve(created[0]);
+                }
+              } else {
+                const created = await actor.createEmbeddedDocuments("Item", [data]);
+                ui.notifications.info(`${actor.name} ottiene il talento: ${doc.name}!`);
+                resolve(created[0]);
+              }
             } catch (err) {
               console.error("Fairy Tail 5e | Error adding talent:", err);
               resolve(null);
