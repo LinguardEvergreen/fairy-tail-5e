@@ -115,6 +115,39 @@
         "ASSISTANT": "OWNER"
       },
       "system": "dnd5e"
+    },
+    {
+      "name": "ft5e-feature-razze",
+      "label": "FT5e - Feature Razze",
+      "path": "packs/ft5e-feature-razze",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "ft5e-feature-classi",
+      "label": "FT5e - Feature Classi",
+      "path": "packs/ft5e-feature-classi",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
+    },
+    {
+      "name": "ft5e-feature-magie",
+      "label": "FT5e - Feature Magie",
+      "path": "packs/ft5e-feature-magie",
+      "type": "Item",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e"
     }
   ],
   "url": "https://github.com/LinguardEvergreen/fairy-tail-5e",

@@ -513,6 +513,272 @@ function extractStiliCombattimento() {
   writeJson("stili-combattimento.json", items);
 }
 
+// ── FEATURE RAZZE (pages 10-18) ────────────────────────────────────────────
+function extractFeatureRazze() {
+  const raceNames = [
+    "Umani", "Exceed", "Ibrido Gatto", "Ibrido Lucertola",
+    "Ibrido Lupo", "Ibrido Demone di Galuna", "Dragon Slayer", "Devil Slayer"
+  ];
+  const pageLines = getPageRange(10, 18);
+  const items = [];
+
+  /** Match a race name from a ## heading line */
+  function matchRace(line) {
+    const fontMatch = line.match(/font-family:\s*([^}]+)\}\}/);
+    if (fontMatch) {
+      const fontName = fontMatch[1].trim();
+      const match = raceNames.find(r => fontName === r || fontName.includes(r));
+      if (match) return match;
+    }
+    const name = cleanName(line);
+    let match = raceNames.find(r => name === r);
+    if (match) return match;
+    match = raceNames.find(r => name.includes(r) || r.includes(name));
+    return match || null;
+  }
+
+  // Split into race sections
+  const raceSections = [];
+  let curRace = null;
+  let curLines = [];
+
+  for (const line of pageLines) {
+    const trimmed = line.trim();
+    if (trimmed.startsWith("## ") && !trimmed.startsWith("### ")) {
+      const matched = matchRace(trimmed);
+      if (matched) {
+        if (curRace) raceSections.push({ name: curRace, lines: curLines });
+        curRace = matched;
+        curLines = [];
+        continue;
+      }
+    }
+    if (curRace) curLines.push(line);
+  }
+  if (curRace) raceSections.push({ name: curRace, lines: curLines });
+
+  // Deduplicate race sections
+  const seenRaces = new Set();
+  const uniqueRaceSections = raceSections.filter(s => {
+    if (seenRaces.has(s.name)) return false;
+    seenRaces.add(s.name);
+    return true;
+  });
+
+  // Extract features from each race section
+  for (const section of uniqueRaceSections) {
+    let currentFeature = null;
+    let featureLines = [];
+
+    function pushFeature() {
+      if (!currentFeature) return;
+      const desc = `<p><em>Razza: ${section.name}</em></p>\n` + mdToHtml(featureLines);
+      items.push({ name: currentFeature, description: desc });
+    }
+
+    for (const line of section.lines) {
+      const trimmed = line.trim();
+
+      // Skip images, style blocks, etc.
+      if (trimmed.startsWith("![") || trimmed.startsWith("<img") ||
+          trimmed.startsWith("{{") || trimmed.startsWith("}}") ||
+          trimmed.startsWith(":::") || trimmed.startsWith("<div") ||
+          trimmed.startsWith("</div")) continue;
+
+      // ### heading → level-based feature
+      if (trimmed.startsWith("### ")) {
+        pushFeature();
+        currentFeature = cleanName(trimmed);
+        featureLines = [line];
+        continue;
+      }
+
+      // **Name:** pattern → racial trait
+      const boldMatch = trimmed.match(/^\*\*([^*]+?):\*\*/);
+      if (boldMatch && boldMatch[1].length > 2 && boldMatch[1].length < 80) {
+        pushFeature();
+        currentFeature = boldMatch[1].trim();
+        featureLines = [line];
+        continue;
+      }
+
+      if (currentFeature) featureLines.push(line);
+    }
+    pushFeature();
+  }
+
+  writeJson("feature-razze.json", items);
+}
+
+// ── FEATURE CLASSI (pages 19-52) ───────────────────────────────────────────
+function extractFeatureClassi() {
+  const classNames = [
+    "Mago Combattente", "Mago Difensore", "Mago Furtivo",
+    "Mago di Strada", "Mago di Supporto", "Mago Tattico", "Guerriero"
+  ];
+  const classLines = [693, 884, 1048, 1230, 1407, 1553, 1848];
+  const items = [];
+
+  // #### headings that are proficiency/equipment info, NOT actual features
+  const skipH4Names = [
+    "Punti ferita", "Competenze", "Attrezzatura", "Equipaggiamento",
+    "Sistema Magico", "Capacità Massima", "Costo in Mana",
+    "Caratteristica da Incantatore", "Capacità di Incantesimo"
+  ];
+
+  function isSkippedH4(name) {
+    const lower = name.toLowerCase();
+    return skipH4Names.some(s => lower.includes(s.toLowerCase()));
+  }
+
+  for (let i = 0; i < classNames.length; i++) {
+    const startLine = classLines[i] - 1;
+    const endLine = i < classNames.length - 1 ? classLines[i + 1] - 1 : findPageStart(53);
+    const sectionLines = lines.slice(startLine, endLine === -1 ? startLine + 500 : endLine);
+
+    let currentFeature = null;
+    let featureLines = [];
+
+    function pushFeature() {
+      if (!currentFeature) return;
+      if (currentFeature.length < 2) return;
+      const desc = `<p><em>Classe: ${classNames[i]}</em></p>\n` + mdToHtml(featureLines);
+      items.push({ name: currentFeature, description: desc });
+    }
+
+    for (const line of sectionLines) {
+      const trimmed = line.trim();
+
+      // ### heading → class feature
+      if (trimmed.startsWith("### ") && !trimmed.startsWith("#### ")) {
+        const name = cleanName(trimmed);
+        if (!name || name.length < 3) continue;
+        pushFeature();
+        currentFeature = name;
+        featureLines = [line];
+        continue;
+      }
+
+      // #### heading → class feature (used by Guerriero and some sub-features)
+      // but skip proficiency/equipment info headings
+      if (trimmed.startsWith("#### ") && !trimmed.startsWith("##### ")) {
+        const name = cleanName(trimmed);
+        if (!name || name.length < 3) continue;
+        if (isSkippedH4(name)) continue;
+        pushFeature();
+        currentFeature = name;
+        featureLines = [line];
+        continue;
+      }
+
+      if (currentFeature) featureLines.push(line);
+    }
+    pushFeature();
+  }
+
+  writeJson("feature-classi.json", items);
+}
+
+// ── FEATURE MAGIE (pages 53-114) ───────────────────────────────────────────
+function extractFeatureMagie() {
+  const magieMap = [
+    { keywords: ["Spazio Aereo"], name: "Magia dello Spazio Aereo" },
+    { keywords: ["Card Magic", "Carte"], name: "Magia delle Carte" },
+    { keywords: ["Magia della Terra"], name: "Magia della Terra" },
+    { keywords: ["Magia del fuoco", "Magia del Fuoco"], name: "Magia del Fuoco" },
+    { keywords: ["Gear Magic", "Ingranaggi"], name: "Magia degli Ingranaggi" },
+    { keywords: ["pistola", "Armi da Fuoco"], name: "Magia delle Armi da Fuoco" },
+    { keywords: ["Corpo celeste", "Corpo Celeste"], name: "Magia del Corpo Celeste" },
+    { keywords: ["Fulmine"], name: "Magia del Fulmine" },
+    { keywords: ["Maker Magic", "Creazione"], name: "Magia della Creazione" },
+    { keywords: ["Re-Equip", "Cambio Stock"], name: "Magia del Cambio Stock" },
+    { keywords: ["Sabbia"], name: "Magia della Sabbia" },
+    { keywords: ["Solid Script"], name: "Magia del Solid Script" },
+    { keywords: ["Take Over"], name: "Magia di Take Over" },
+    { keywords: ["acqua", "Acqua"], name: "Magia dell'Acqua" },
+  ];
+
+  const pageLines = getPageRange(53, 114);
+  const items = [];
+
+  function matchMagia(lineText) {
+    for (const m of magieMap) {
+      for (const kw of m.keywords) {
+        if (lineText.includes(kw)) return m.name;
+      }
+    }
+    return null;
+  }
+
+  // Skip patterns for section headers (not actual features)
+  function isSkippedHeading(name) {
+    if (!name || name.length < 3) return true;
+    const lower = name.toLowerCase();
+    if (lower === "mana") return true;
+    if (lower === "azioni") return true;
+    if (lower.includes("opzion") && lower.includes("funzionalità")) return true;
+    if (lower.includes("opzion") && lower.includes("livello")) return true;
+    return false;
+  }
+
+  // Split into magia sections by # headings
+  const magiaSections = [];
+  let curMagia = null;
+  let curLines = [];
+
+  for (const line of pageLines) {
+    const trimmed = line.trim();
+    if (trimmed.startsWith("# ") && !trimmed.startsWith("## ")) {
+      if (trimmed.includes("Capitolo") || trimmed.includes("Magie}}")) continue;
+      const matched = matchMagia(trimmed);
+      if (matched) {
+        if (curMagia) magiaSections.push({ name: curMagia, lines: curLines });
+        curMagia = matched;
+        curLines = [];
+        continue;
+      }
+    }
+    if (curMagia) curLines.push(line);
+  }
+  if (curMagia) magiaSections.push({ name: curMagia, lines: curLines });
+
+  // Check Solid Script fallback
+  if (!magiaSections.find(s => s.name === "Magia del Solid Script")) {
+    const ssPages = getPageRange(102, 106);
+    magiaSections.splice(11, 0, { name: "Magia del Solid Script", lines: ssPages });
+  }
+
+  // Extract features from each magia section
+  for (const section of magiaSections) {
+    let currentFeature = null;
+    let featureLines = [];
+
+    function pushFeature() {
+      if (!currentFeature || isSkippedHeading(currentFeature)) return;
+      const desc = `<p><em>Magia: ${section.name}</em></p>\n` + mdToHtml(featureLines);
+      items.push({ name: currentFeature, description: desc });
+    }
+
+    for (const line of section.lines) {
+      const trimmed = line.trim();
+
+      // ### heading → magia feature
+      if (trimmed.startsWith("### ")) {
+        const name = cleanName(trimmed);
+        pushFeature();
+        currentFeature = name;
+        featureLines = [line];
+        continue;
+      }
+
+      if (currentFeature) featureLines.push(line);
+    }
+    pushFeature();
+  }
+
+  writeJson("feature-magie.json", items);
+}
+
 // ── Main ────────────────────────────────────────────────────────────────────
 console.log("Generating JSON data files from Homebrewery source...\n");
 console.log(`Source: ${SOURCE_FILE}`);
@@ -526,5 +792,8 @@ extractTalenti();
 extractEquipaggiamento();
 extractIncantesimi();
 extractStiliCombattimento();
+extractFeatureRazze();
+extractFeatureClassi();
+extractFeatureMagie();
 
 console.log("\nAll JSON files generated in src/");

@@ -11,7 +11,7 @@ Un modulo per **FoundryVTT** che importa il contenuto del manuale homebrew **Fai
 
 ## Contenuto
 
-Il modulo include **452 oggetti** suddivisi in 8 compendium:
+Il modulo include **754 oggetti** suddivisi in 11 compendium:
 
 | Compendium | Contenuto | Oggetti |
 |------------|-----------|---------|
@@ -23,6 +23,9 @@ Il modulo include **452 oggetti** suddivisi in 8 compendium:
 | FT5e - Equipaggiamento | Armature, armi, armi da fuoco e munizioni | 64 |
 | FT5e - Incantesimi | Incantesimi | 168 |
 | FT5e - Stili di Combattimento | Stili di combattimento | 10 |
+| FT5e - Feature Razze | Tratti razziali | 49 |
+| FT5e - Feature Classi | Feature di classe | 91 |
+| FT5e - Feature Magie | Feature delle magie (sottoclassi) | 162 |
 
 ## Installazione
 

@@ -32,6 +32,9 @@ const PACKS = [
   { pack: "ft5e-equipaggiamento",    src: "equipaggiamento.json",    type: "equipment" },
   { pack: "ft5e-incantesimi",        src: "incantesimi.json",        type: "spell" },
   { pack: "ft5e-stili-combattimento", src: "stili-combattimento.json", type: "feat" },
+  { pack: "ft5e-feature-razze",       src: "feature-razze.json",       type: "feat" },
+  { pack: "ft5e-feature-classi",      src: "feature-classi.json",      type: "feat" },
+  { pack: "ft5e-feature-magie",       src: "feature-magie.json",       type: "feat" },
 ];
 
 async function buildPack({ pack, src, type }) {
