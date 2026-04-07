@@ -1300,6 +1300,11 @@ function enrichRazze() {
 const CLASS_CONFIG = {
   "Mago Combattente": {
     identifier: "mago-combattente",
+    hitDice: "d8",
+    saves: ["int", "con"],
+    armor: [],
+    weapons: ["sim"],
+    skills: { count: 2, pool: ["arc", "his", "ins", "inv", "med", "rel"] },
     asiLevels: [4, 8, 12, 16, 19],
     asiFeatureKeyword: "Incremento dei Punteggi",
     asiTitle: "Incremento dei Punteggi di Caratteristica",
@@ -1315,6 +1320,11 @@ const CLASS_CONFIG = {
   },
   "Mago Difensore": {
     identifier: "mago-difensore",
+    hitDice: "d12",
+    saves: ["str", "con"],
+    armor: ["lgt", "med", "hvy", "shl"],
+    weapons: ["sim", "mar"],
+    skills: { count: 2, pool: ["ath", "itm", "his", "ins", "med", "sur"] },
     asiLevels: [4, 8, 12, 16, 19],
     asiFeatureKeyword: "Incremento dei Punteggi",
     asiTitle: "Incremento dei Punteggi di Caratteristica",
@@ -1334,6 +1344,11 @@ const CLASS_CONFIG = {
   },
   "Mago Furtivo": {
     identifier: "mago-furtivo",
+    hitDice: "d8",
+    saves: ["dex", "int"],
+    armor: ["lgt"],
+    weapons: ["sim"],
+    skills: { count: 4, pool: ["acr", "ath", "dec", "ins", "itm", "inv", "prc", "prf", "per", "slt", "ste"] },
     asiLevels: [4, 8, 12, 16, 19],
     asiFeatureKeyword: "Miglioramento del punteggio",
     asiTitle: "Miglioramento del punteggio di caratteristica",
@@ -1355,6 +1370,11 @@ const CLASS_CONFIG = {
   },
   "Mago di Strada": {
     identifier: "mago-di-strada",
+    hitDice: "d10",
+    saves: ["dex", "cha"],
+    armor: ["lgt"],
+    weapons: ["sim"],
+    skills: { count: 3, pool: ["acr", "dec", "prf", "per", "slt", "ste"] },
     asiLevels: [4, 8, 12, 16, 19],
     asiFeatureKeyword: "Miglioramento del punteggio",
     asiTitle: "Miglioramento del punteggio di caratteristica",
@@ -1371,6 +1391,11 @@ const CLASS_CONFIG = {
   },
   "Mago di Supporto": {
     identifier: "mago-di-supporto",
+    hitDice: "d8",
+    saves: ["dex", "wis"],
+    armor: ["lgt"],
+    weapons: ["sim"],
+    skills: { count: 2, pool: ["arc", "dec", "ins", "itm", "prf", "per", "ste"], fixed: ["med"] },
     asiLevels: [4, 8, 12, 16, 19],
     asiFeatureKeyword: "Miglioramento",
     asiTitle: "Miglioramento Punteggio Caratteristica",
@@ -1387,6 +1412,11 @@ const CLASS_CONFIG = {
   },
   "Mago Tattico": {
     identifier: "mago-tattico",
+    hitDice: "d6",
+    saves: ["int", "con"],
+    armor: ["lgt"],
+    weapons: ["sim"],
+    skills: { count: 3, pool: ["arc", "dec", "acr", "inv", "prc", "ste"] },
     asiLevels: [4, 8, 12, 16, 19],
     asiFeatureKeyword: "Miglioramento del Punteggio",
     asiTitle: "Miglioramento del Punteggio di Caratteristica",
@@ -1416,6 +1446,11 @@ const CLASS_CONFIG = {
   },
   "Guerriero": {
     identifier: "guerriero",
+    hitDice: "d10",
+    saves: ["str", "dex", "con"],
+    armor: ["lgt", "med", "hvy", "shl"],
+    weapons: ["sim", "mar"],
+    skills: { count: 2, pool: ["acr", "ani", "ath", "his", "ins", "itm", "prc", "sur"] },
     asiLevels: [4, 8, 12, 16, 19],
     asiFeatureKeyword: "Miglioramento delle Caratteristiche",
     asiTitle: "Miglioramento delle Caratteristiche",
@@ -1485,6 +1520,110 @@ function enrichClassi() {
 
     c._id = stableId(`classi:${c.name}`);
     const advancement = [];
+
+    // 0. HitPoints advancement (level 0 = every level)
+    advancement.push({
+      _id: stableId(`adv:${c.name}:hp`),
+      type: "HitPoints",
+      level: 0,
+      title: "",
+      hint: "",
+      icon: null,
+      classRestriction: null,
+      configuration: {},
+      value: {}
+    });
+
+    // 0b. Saving throw proficiencies (level 1)
+    if (config.saves?.length) {
+      const grants = config.saves.map(s => `saves:${s}`);
+      advancement.push({
+        _id: stableId(`adv:${c.name}:saves`),
+        type: "Trait",
+        level: 1,
+        title: "Tiri Salvezza",
+        hint: "",
+        icon: null,
+        classRestriction: null,
+        configuration: {
+          mode: "default",
+          allowReplacements: false,
+          grants,
+          choices: []
+        },
+        value: { chosen: grants }
+      });
+    }
+
+    // 0c. Armor proficiencies (level 1)
+    if (config.armor?.length) {
+      const grants = config.armor.map(a => `armor:${a}`);
+      advancement.push({
+        _id: stableId(`adv:${c.name}:armor`),
+        type: "Trait",
+        level: 1,
+        title: "Competenze nelle Armature",
+        hint: "",
+        icon: null,
+        classRestriction: null,
+        configuration: {
+          mode: "default",
+          allowReplacements: false,
+          grants,
+          choices: []
+        },
+        value: { chosen: grants }
+      });
+    }
+
+    // 0d. Weapon proficiencies (level 1)
+    if (config.weapons?.length) {
+      const grants = config.weapons.map(w => `weapon:${w}`);
+      advancement.push({
+        _id: stableId(`adv:${c.name}:weapons`),
+        type: "Trait",
+        level: 1,
+        title: "Competenze nelle Armi",
+        hint: "",
+        icon: null,
+        classRestriction: null,
+        configuration: {
+          mode: "default",
+          allowReplacements: false,
+          grants,
+          choices: []
+        },
+        value: { chosen: grants }
+      });
+    }
+
+    // 0e. Skill proficiencies (level 1)
+    if (config.skills) {
+      const fixedGrants = (config.skills.fixed || []).map(s => `skills:${s}`);
+      const choices = [];
+      if (config.skills.count > 0) {
+        choices.push({
+          count: config.skills.count,
+          pool: config.skills.pool.map(s => `skills:${s}`)
+        });
+      }
+      advancement.push({
+        _id: stableId(`adv:${c.name}:skills`),
+        type: "Trait",
+        level: 1,
+        title: "Competenze nelle Abilità",
+        hint: "",
+        icon: null,
+        classRestriction: null,
+        configuration: {
+          mode: "default",
+          allowReplacements: false,
+          grants: fixedGrants,
+          choices
+        },
+        value: { chosen: fixedGrants }
+      });
+    }
 
     // 1. ItemGrant for features at each level
     for (const [level, featureNames] of Object.entries(config.featureLevels)) {
@@ -1600,6 +1739,7 @@ function enrichClassi() {
 
     c.system = {
       identifier: config.identifier,
+      hitDice: config.hitDice,
       source: {
         custom: "",
         book: "Fairy Tail",

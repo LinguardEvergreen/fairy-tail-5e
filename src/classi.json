@@ -5,6 +5,7 @@
     "_id": "f449eca2d8f2a36b",
     "system": {
       "identifier": "mago-combattente",
+      "hitDice": "d8",
       "source": {
         "custom": "",
         "book": "Fairy Tail",
@@ -17,6 +18,93 @@
         "progression": "full"
       },
       "advancement": [
+        {
+          "_id": "17cde10716ab19e2",
+          "type": "HitPoints",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {},
+          "value": {}
+        },
+        {
+          "_id": "f6bdfb75149d930f",
+          "type": "Trait",
+          "level": 1,
+          "title": "Tiri Salvezza",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "saves:int",
+              "saves:con"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "saves:int",
+              "saves:con"
+            ]
+          }
+        },
+        {
+          "_id": "04458b8f064107e1",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Armi",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "weapon:sim"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "weapon:sim"
+            ]
+          }
+        },
+        {
+          "_id": "2adb4215046ccf92",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Abilità",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [],
+            "choices": [
+              {
+                "count": 2,
+                "pool": [
+                  "skills:arc",
+                  "skills:his",
+                  "skills:ins",
+                  "skills:inv",
+                  "skills:med",
+                  "skills:rel"
+                ]
+              }
+            ]
+          },
+          "value": {
+            "chosen": []
+          }
+        },
         {
           "_id": "b89f75bf22a22dd8",
           "type": "ItemGrant",
@@ -373,6 +461,7 @@
     "_id": "3167aa98d383f24b",
     "system": {
       "identifier": "mago-difensore",
+      "hitDice": "d12",
       "source": {
         "custom": "",
         "book": "Fairy Tail",
@@ -385,6 +474,123 @@
         "progression": "full"
       },
       "advancement": [
+        {
+          "_id": "6bfcfb1fb5b98c76",
+          "type": "HitPoints",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {},
+          "value": {}
+        },
+        {
+          "_id": "5684055ab58ee344",
+          "type": "Trait",
+          "level": 1,
+          "title": "Tiri Salvezza",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "saves:str",
+              "saves:con"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "saves:str",
+              "saves:con"
+            ]
+          }
+        },
+        {
+          "_id": "42c6df24abe973b0",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Armature",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "armor:lgt",
+              "armor:med",
+              "armor:hvy",
+              "armor:shl"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "armor:lgt",
+              "armor:med",
+              "armor:hvy",
+              "armor:shl"
+            ]
+          }
+        },
+        {
+          "_id": "603f8b3b67710a43",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Armi",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "weapon:sim",
+              "weapon:mar"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "weapon:sim",
+              "weapon:mar"
+            ]
+          }
+        },
+        {
+          "_id": "48b43003410d91f2",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Abilità",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [],
+            "choices": [
+              {
+                "count": 2,
+                "pool": [
+                  "skills:ath",
+                  "skills:itm",
+                  "skills:his",
+                  "skills:ins",
+                  "skills:med",
+                  "skills:sur"
+                ]
+              }
+            ]
+          },
+          "value": {
+            "chosen": []
+          }
+        },
         {
           "_id": "5955076856c964a2",
           "type": "ItemGrant",
@@ -817,6 +1023,7 @@
     "_id": "c909e58dd899dfbb",
     "system": {
       "identifier": "mago-furtivo",
+      "hitDice": "d8",
       "source": {
         "custom": "",
         "book": "Fairy Tail",
@@ -829,6 +1036,120 @@
         "progression": "full"
       },
       "advancement": [
+        {
+          "_id": "fc20a00fec0795c5",
+          "type": "HitPoints",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {},
+          "value": {}
+        },
+        {
+          "_id": "7e787b3a7451176b",
+          "type": "Trait",
+          "level": 1,
+          "title": "Tiri Salvezza",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "saves:dex",
+              "saves:int"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "saves:dex",
+              "saves:int"
+            ]
+          }
+        },
+        {
+          "_id": "2a6eda1ca1330ec9",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Armature",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "armor:lgt"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "armor:lgt"
+            ]
+          }
+        },
+        {
+          "_id": "91b4eaafc8a83157",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Armi",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "weapon:sim"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "weapon:sim"
+            ]
+          }
+        },
+        {
+          "_id": "95cef1b7e1fee783",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Abilità",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [],
+            "choices": [
+              {
+                "count": 4,
+                "pool": [
+                  "skills:acr",
+                  "skills:ath",
+                  "skills:dec",
+                  "skills:ins",
+                  "skills:itm",
+                  "skills:inv",
+                  "skills:prc",
+                  "skills:prf",
+                  "skills:per",
+                  "skills:slt",
+                  "skills:ste"
+                ]
+              }
+            ]
+          },
+          "value": {
+            "chosen": []
+          }
+        },
         {
           "_id": "3e55be623054ae2f",
           "type": "ItemGrant",
@@ -1302,6 +1623,7 @@
     "_id": "49075ecf457adb46",
     "system": {
       "identifier": "mago-di-strada",
+      "hitDice": "d10",
       "source": {
         "custom": "",
         "book": "Fairy Tail",
@@ -1314,6 +1636,115 @@
         "progression": "full"
       },
       "advancement": [
+        {
+          "_id": "48d64e0b242f4036",
+          "type": "HitPoints",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {},
+          "value": {}
+        },
+        {
+          "_id": "2bde2983106b4a9d",
+          "type": "Trait",
+          "level": 1,
+          "title": "Tiri Salvezza",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "saves:dex",
+              "saves:cha"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "saves:dex",
+              "saves:cha"
+            ]
+          }
+        },
+        {
+          "_id": "edf42c3605977d37",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Armature",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "armor:lgt"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "armor:lgt"
+            ]
+          }
+        },
+        {
+          "_id": "cb92f166d56bf013",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Armi",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "weapon:sim"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "weapon:sim"
+            ]
+          }
+        },
+        {
+          "_id": "f524b5af101def8f",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Abilità",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [],
+            "choices": [
+              {
+                "count": 3,
+                "pool": [
+                  "skills:acr",
+                  "skills:dec",
+                  "skills:prf",
+                  "skills:per",
+                  "skills:slt",
+                  "skills:ste"
+                ]
+              }
+            ]
+          },
+          "value": {
+            "chosen": []
+          }
+        },
         {
           "_id": "9781fa67b5cdde9c",
           "type": "ItemGrant",
@@ -1689,6 +2120,7 @@
     "_id": "e02c5b611887a4f8",
     "system": {
       "identifier": "mago-di-supporto",
+      "hitDice": "d8",
       "source": {
         "custom": "",
         "book": "Fairy Tail",
@@ -1701,6 +2133,120 @@
         "progression": "full"
       },
       "advancement": [
+        {
+          "_id": "b8763859baa51541",
+          "type": "HitPoints",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {},
+          "value": {}
+        },
+        {
+          "_id": "83d67f81bf03d9b4",
+          "type": "Trait",
+          "level": 1,
+          "title": "Tiri Salvezza",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "saves:dex",
+              "saves:wis"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "saves:dex",
+              "saves:wis"
+            ]
+          }
+        },
+        {
+          "_id": "9d7fbbff1465ce10",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Armature",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "armor:lgt"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "armor:lgt"
+            ]
+          }
+        },
+        {
+          "_id": "8fce2819eebd4618",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Armi",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "weapon:sim"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "weapon:sim"
+            ]
+          }
+        },
+        {
+          "_id": "cb664b9c21761de0",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Abilità",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "skills:med"
+            ],
+            "choices": [
+              {
+                "count": 2,
+                "pool": [
+                  "skills:arc",
+                  "skills:dec",
+                  "skills:ins",
+                  "skills:itm",
+                  "skills:prf",
+                  "skills:per",
+                  "skills:ste"
+                ]
+              }
+            ]
+          },
+          "value": {
+            "chosen": [
+              "skills:med"
+            ]
+          }
+        },
         {
           "_id": "93f647cf6d3c1dce",
           "type": "ItemGrant",
@@ -1981,6 +2527,7 @@
     "_id": "a13b9af16cd1bd60",
     "system": {
       "identifier": "mago-tattico",
+      "hitDice": "d6",
       "source": {
         "custom": "",
         "book": "Fairy Tail",
@@ -1993,6 +2540,115 @@
         "progression": "full"
       },
       "advancement": [
+        {
+          "_id": "3831eb80fd5193ca",
+          "type": "HitPoints",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {},
+          "value": {}
+        },
+        {
+          "_id": "60380e4b97d25767",
+          "type": "Trait",
+          "level": 1,
+          "title": "Tiri Salvezza",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "saves:int",
+              "saves:con"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "saves:int",
+              "saves:con"
+            ]
+          }
+        },
+        {
+          "_id": "2d4f94680eb744cf",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Armature",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "armor:lgt"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "armor:lgt"
+            ]
+          }
+        },
+        {
+          "_id": "dd82df1d20c7151f",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Armi",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "weapon:sim"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "weapon:sim"
+            ]
+          }
+        },
+        {
+          "_id": "9109043072f5e6bf",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Abilità",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [],
+            "choices": [
+              {
+                "count": 3,
+                "pool": [
+                  "skills:arc",
+                  "skills:dec",
+                  "skills:acr",
+                  "skills:inv",
+                  "skills:prc",
+                  "skills:ste"
+                ]
+              }
+            ]
+          },
+          "value": {
+            "chosen": []
+          }
+        },
         {
           "_id": "18d97885009ef10f",
           "type": "ItemGrant",
@@ -2584,6 +3240,7 @@
     "_id": "98b50f3e0a7b46d5",
     "system": {
       "identifier": "guerriero",
+      "hitDice": "d10",
       "source": {
         "custom": "",
         "book": "Fairy Tail",
@@ -2596,6 +3253,127 @@
         "progression": "full"
       },
       "advancement": [
+        {
+          "_id": "7de49a5a59f8c4e8",
+          "type": "HitPoints",
+          "level": 0,
+          "title": "",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {},
+          "value": {}
+        },
+        {
+          "_id": "f131fc5894369d89",
+          "type": "Trait",
+          "level": 1,
+          "title": "Tiri Salvezza",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "saves:str",
+              "saves:dex",
+              "saves:con"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "saves:str",
+              "saves:dex",
+              "saves:con"
+            ]
+          }
+        },
+        {
+          "_id": "2a82e0df1a047e16",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Armature",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "armor:lgt",
+              "armor:med",
+              "armor:hvy",
+              "armor:shl"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "armor:lgt",
+              "armor:med",
+              "armor:hvy",
+              "armor:shl"
+            ]
+          }
+        },
+        {
+          "_id": "ce8d2e7247838161",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Armi",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [
+              "weapon:sim",
+              "weapon:mar"
+            ],
+            "choices": []
+          },
+          "value": {
+            "chosen": [
+              "weapon:sim",
+              "weapon:mar"
+            ]
+          }
+        },
+        {
+          "_id": "47ffee23caefac1b",
+          "type": "Trait",
+          "level": 1,
+          "title": "Competenze nelle Abilità",
+          "hint": "",
+          "icon": null,
+          "classRestriction": null,
+          "configuration": {
+            "mode": "default",
+            "allowReplacements": false,
+            "grants": [],
+            "choices": [
+              {
+                "count": 2,
+                "pool": [
+                  "skills:acr",
+                  "skills:ani",
+                  "skills:ath",
+                  "skills:his",
+                  "skills:ins",
+                  "skills:itm",
+                  "skills:prc",
+                  "skills:sur"
+                ]
+              }
+            ]
+          },
+          "value": {
+            "chosen": []
+          }
+        },
         {
           "_id": "d07410571ecdd240",
           "type": "ItemGrant",

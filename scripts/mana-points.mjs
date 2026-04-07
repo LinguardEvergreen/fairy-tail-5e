@@ -129,7 +129,44 @@ function calcMaxMana(actor) {
     }
     total += Math.max(0, mp);
   }
-  return total;
+
+  // Apply race-based mana bonuses/penalties
+  total += _getRaceManaBonus(actor);
+
+  return Math.max(0, total);
+}
+
+/**
+ * Calculate mana bonus/penalty from race features.
+ * - Umani "Controllo magico": +2 MP, +2 extra at lv8, +2 extra at lv16
+ * - Exceed "Riserva di mana": -1 MP per character level
+ */
+function _getRaceManaBonus(actor) {
+  if (!actor) return 0;
+  let bonus = 0;
+
+  // Get the character's total level
+  const totalLevel = actor.system?.details?.level ?? 0;
+
+  // Check for race features by scanning actor's items
+  for (const item of actor.items) {
+    if (item.type !== "feat") continue;
+    const name = item.name?.toLowerCase() || "";
+
+    // Umani: Controllo magico
+    if (name.includes("controllo magico")) {
+      bonus += 2;
+      if (totalLevel >= 8) bonus += 2;
+      if (totalLevel >= 16) bonus += 2;
+    }
+
+    // Exceed: Riserva di mana
+    if (name.includes("riserva di mana")) {
+      bonus -= totalLevel;
+    }
+  }
+
+  return bonus;
 }
 
 /**
