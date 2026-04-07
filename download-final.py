@@ -12,6 +12,10 @@ ctx = ssl.create_default_context()
 ctx.check_hostname = False
 ctx.verify_mode = ssl.CERT_NONE
 HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+WIKI_HEADERS = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+    "Referer": "https://fairytail.fandom.com/",
+}
 
 # ── ALL IMAGE SOURCES ──
 # Magie: pngimg.com (confirmed real transparency)
@@ -68,14 +72,14 @@ SOURCES = {
     "gray-devil-slayer": "https://static.wikia.nocookie.net/topstrongest/images/7/7c/GrayDevilSlayerRender.png/revision/latest?cb=20210702091954",
     # Dragon Slayer: Natsu in Dragon Force (DeviantArt wixmp)
     "natsu-dragon-force": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/973c01c1-c4e4-45ee-bf9d-9b6fc849fae3/d7d84da-468d2898-5f5a-472f-b7a6-c839fc0aab89.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi85NzNjMDFjMS1jNGU0LTQ1ZWUtYmY5ZC05YjZmYzg0OWZhZTMvZDdkODRkYS00NjhkMjg5OC01ZjVhLTQ3MmYtYjdhNi1jODM5ZmMwYWFiODkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bKqYqnaHAx_LuQ35TAqUM9mDPHwMynBW7bkmYfARIrw",
-    # Ibrido Demone Galuna: demon (pngimg.com)
-    "demone-galuna": "https://pngimg.com/uploads/demon/demon_PNG17.png",
+    # Ibrido Demone Galuna: Galuna Island demon villagers (Fairy Tail Wiki)
+    "demone-galuna": "https://static.wikia.nocookie.net/fairytail/images/e/e5/The_villagers_become_demons.png/revision/latest",
     # Ibrido Gatto: Millianna (DeviantArt wixmp)
     "millianna": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6233922d-753c-4152-9afe-3b82ce990681/d89c6zv-1c33bc34-2d5e-4799-8177-b1c3e9c2f5ea.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi82MjMzOTIyZC03NTNjLTQxNTItOWFmZS0zYjgyY2U5OTA2ODEvZDg5YzZ6di0xYzMzYmMzNC0yZDVlLTQ3OTktODE3Ny1iMWMzZTljMmY1ZWEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Qa0GfSNg9XnSNSTGcRdWTerHIgwbO0hdxf-wtvn0qio",
-    # Ibrido Lucertola: lizard (pngimg.com)
-    "lucertola": "https://pngimg.com/d/lizard_PNG37.png",
-    # Ibrido Lupo: werewolf (pngimg.com)
-    "lupo": "https://pngimg.com/d/werewolf_PNG13.png",
+    # Ibrido Lucertola: Crocodile Lizardman (Fairy Tail Wiki)
+    "lucertola": "https://static.wikia.nocookie.net/fairytail/images/4/40/Crocodile_Lizardman.png/revision/latest",
+    # Ibrido Lupo: Beast Soul Sirius wolf form (Fairy Tail Wiki)
+    "lupo": "https://static.wikia.nocookie.net/fairytail/images/9/97/Beast_Soul_Sirius.jpg/revision/latest",
 }
 
 # ── Target mapping ──
@@ -117,7 +121,8 @@ def download(name, url):
     if os.path.exists(dest) and os.path.getsize(dest) > 1000:
         return True  # Already downloaded
     try:
-        req = urllib.request.Request(url, headers=HEADERS)
+        hdrs = WIKI_HEADERS if "wikia.nocookie.net" in url or "fandom.com" in url else HEADERS
+        req = urllib.request.Request(url, headers=hdrs)
         resp = urllib.request.urlopen(req, timeout=30, context=ctx)
         data = resp.read()
         if len(data) < 500 or data[:5] in (b'<!DOC', b'<html', b'<HTML'):
