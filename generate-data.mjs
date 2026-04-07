@@ -2107,7 +2107,7 @@ function enrichMagie(spells) {
           hint: `Incantesimi della ${m.name} disponibili a questo livello.`,
           icon: null,
           classRestriction: null,
-          configuration: { items, optional: true, spell: { ability: [], preparation: "", uses: { max: "", per: "" } } },
+          configuration: { items, optional: true, spell: { ability: [], preparation: "prepared", uses: { max: "", per: "" } } },
           value: {}
         });
         totalSpellsGranted += items.length;
