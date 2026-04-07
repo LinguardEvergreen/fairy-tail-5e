@@ -1,366 +1,1185 @@
 [
   {
     "name": "Magia",
-    "description": "<p><em>Classe: Mago Combattente</em></p>\n<h3>Magia</h3>\n<p>*A partire dal 1° livello, possiedi un’abilità magica innata oppure hai appreso la magia tramite un addestramento intensivo. Scegli una Magia. Questa scelta ti conferisce capacità ai livelli 1°, 3°, 6°, 11° e 18°. Anche se multiclasse, inizi sempre e comunque con una sola magia.*</p>\n<p>***Punti Mana (MP):** I tuoi Punti Mana massimi sono pari a livello da Mago Combattente × 2 + modificatore da incantatore. Recuperi tutti i Punti Mana spesi dopo un riposo lungo.*</p>\n<li>**Lancio degli Incantesimi:** *Man mano che sali di livello, ottieni accesso a incantesimi di livello superiore secondo la seguente progressione:*</li>\n<li>Livello 1: Trucchetti e incantesimi di 1° livello</li>\n<li>Livello 3: Incantesimi di 2° livello</li>\n<li>Livello 5: Incantesimi di 3° livello</li>\n<li>Livello 7: Incantesimi di 4° livello</li>\n<li>Livello 9: Incantesimi di 5° livello</li>\n<li>Livello 11: Incantesimi di 6° livello</li>\n<li>Livello 13: Incantesimi di 7° livello</li>\n<li>Livello 15: Incantesimi di 8° livello</li>\n<li>Livello 17: Incantesimi di 9° livello</li>\n<hr>\n<li>**Apprendimento degli Incantesimi:** *Ottieni 1 nuovo incantesimo a ogni passaggio di livello.*</li>\n<li>Puoi conoscere fino a 6 trucchetti</li>\n<li>Puoi conoscere fino a 4 incantesimi per ogni livello di incantesimo</li>\n<li>Trucchetti: 0 MP</li>\n<li>Incantesimi: Costano un numero di MP pari al loro livello (es. incantesimo di 1° livello = 1 MP, 2° livello = 2 MP, ecc.)</li>\n<p>*Quando scegli il **Mago Combattente**, selezioni una **Caratteristica da Incantatore** a tua scelta tra **Intelligenza, Saggezza o Carisma**, che rappresenta il modo in cui studi, comprendi o imponi la tua magia in combattimento.</p>\n<p>La **Costituzione** rimane invece la misura del tuo controllo sul mana e della potenza grezza dei tuoi incantesimi, riflettendo la tua resistenza fisica e la capacità di sostenere magie devastanti sul campo di battaglia.*</p>\n<li>**CD Tiro Salvezza Incantesimi:** 8 + Bonus di Competenza + Modificatore di **Costituzione**</li>\n<li>**Bonus al Tiro per Colpire con Incantesimi:** Bonus di Competenza + Modificatore della tua **Caratteristica da Incantatore scelta**</li>"
+    "description": "<p><em>Classe: Mago Combattente</em></p>\n<h3>Magia</h3>\n<p>*A partire dal 1° livello, possiedi un’abilità magica innata oppure hai appreso la magia tramite un addestramento intensivo. Scegli una Magia. Questa scelta ti conferisce capacità ai livelli 1°, 3°, 6°, 11° e 18°. Anche se multiclasse, inizi sempre e comunque con una sola magia.*</p>\n<p>***Punti Mana (MP):** I tuoi Punti Mana massimi sono pari a livello da Mago Combattente × 2 + modificatore da incantatore. Recuperi tutti i Punti Mana spesi dopo un riposo lungo.*</p>\n<li>**Lancio degli Incantesimi:** *Man mano che sali di livello, ottieni accesso a incantesimi di livello superiore secondo la seguente progressione:*</li>\n<li>Livello 1: Trucchetti e incantesimi di 1° livello</li>\n<li>Livello 3: Incantesimi di 2° livello</li>\n<li>Livello 5: Incantesimi di 3° livello</li>\n<li>Livello 7: Incantesimi di 4° livello</li>\n<li>Livello 9: Incantesimi di 5° livello</li>\n<li>Livello 11: Incantesimi di 6° livello</li>\n<li>Livello 13: Incantesimi di 7° livello</li>\n<li>Livello 15: Incantesimi di 8° livello</li>\n<li>Livello 17: Incantesimi di 9° livello</li>\n<hr>\n<li>**Apprendimento degli Incantesimi:** *Ottieni 1 nuovo incantesimo a ogni passaggio di livello.*</li>\n<li>Puoi conoscere fino a 6 trucchetti</li>\n<li>Puoi conoscere fino a 4 incantesimi per ogni livello di incantesimo</li>\n<li>Trucchetti: 0 MP</li>\n<li>Incantesimi: Costano un numero di MP pari al loro livello (es. incantesimo di 1° livello = 1 MP, 2° livello = 2 MP, ecc.)</li>\n<p>*Quando scegli il **Mago Combattente**, selezioni una **Caratteristica da Incantatore** a tua scelta tra **Intelligenza, Saggezza o Carisma**, che rappresenta il modo in cui studi, comprendi o imponi la tua magia in combattimento.</p>\n<p>La **Costituzione** rimane invece la misura del tuo controllo sul mana e della potenza grezza dei tuoi incantesimi, riflettendo la tua resistenza fisica e la capacità di sostenere magie devastanti sul campo di battaglia.*</p>\n<li>**CD Tiro Salvezza Incantesimi:** 8 + Bonus di Competenza + Modificatore di **Costituzione**</li>\n<li>**Bonus al Tiro per Colpire con Incantesimi:** Bonus di Competenza + Modificatore della tua **Caratteristica da Incantatore scelta**</li>",
+    "_id": "7f1893ce299dfd4c",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Combattente",
+      "identifier": "magia"
+    }
   },
   {
     "name": "Senza Freni",
-    "description": "<p><em>Classe: Mago Combattente</em></p>\n<h3>Senza Freni</h3>\n<p>*A partire dal 1° livello, la tua magia supera quella degli altri grazie alla tua potenza pura. Quando tiri i danni di un incantesimo o di una capacità di Magia Acquisita, puoi scegliere di spendere 1 MP prima di tirare i dadi di danno. Se lo fai, tutti i risultati di 1 sui dadi di danno vengono trattati come 2.*</p>\n<br>\n<p>*A partire dal 14° livello, quando subisci danni mentre stai concentrando un incantesimo, puoi usare la tua Reazione e spendere 1 MP per ottenere Vantaggio sul tiro salvezza di Costituzione per mantenere la concentrazione.*</p>\n<h5>Gildarts</h5>\n<p>[Gildarts XII](https://www.deviantart.com/kanomaru/art/Gildarts-XII-262285736)</p>"
+    "description": "<p><em>Classe: Mago Combattente</em></p>\n<h3>Senza Freni</h3>\n<p>*A partire dal 1° livello, la tua magia supera quella degli altri grazie alla tua potenza pura. Quando tiri i danni di un incantesimo o di una capacità di Magia Acquisita, puoi scegliere di spendere 1 MP prima di tirare i dadi di danno. Se lo fai, tutti i risultati di 1 sui dadi di danno vengono trattati come 2.*</p>\n<br>\n<p>*A partire dal 14° livello, quando subisci danni mentre stai concentrando un incantesimo, puoi usare la tua Reazione e spendere 1 MP per ottenere Vantaggio sul tiro salvezza di Costituzione per mantenere la concentrazione.*</p>\n<h5>Gildarts</h5>\n<p>[Gildarts XII](https://www.deviantart.com/kanomaru/art/Gildarts-XII-262285736)</p>",
+    "_id": "ded26cbf97cff63f",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Combattente",
+      "identifier": "senza-freni"
+    }
   },
   {
     "name": "Risonanza Distruttiva",
-    "description": "<p><em>Classe: Mago Combattente</em></p>\n<h3>Risonanza Distruttiva</h3>\n<p>*A partire dal 3° livello, impari a manipolare l’essenza stessa della tua magia, amplificandone il potenziale distruttivo. Ottieni accesso alle Modifiche di Risonanza.*</p>\n<br>\n<p>*Scegli due opzioni di Risonanza tra quelle elencate di seguito. Apprendi un’ulteriore opzione di Risonanza al 10° livello e un’altra al 17° livello.*</p>\n<br>\n<p>*Puoi applicare una sola opzione di Risonanza a un incantesimo quando lo lanci, salvo diversa indicazione.*</p>\n<li>**Reazione a Catena:** *Quando lanci un incantesimo o utilizzi una capacità magica che infligge danni, puoi spendere MP in base al costo dell’incantesimo o della capacità:*</li>\n<li>1 MP se il costo è 0–5 MP</li>\n<li>3 MP se il costo è 6–10 MP</li>\n<li>6 MP se il costo è 11 MP o superiore</li>\n<p>*Per far sì che l’energia dell’incantesimo salti*</p>\n<p>*su un’altra creatura a tua scelta entro 9 metri dal*</p>\n<p>*bersaglio originale. La seconda creatura subisce*</p>\n<p>*danni pari a quelli inflitti al bersaglio originale.*</p>\n<li>**Sbarramento Travolgente:** *Quando lanci un incantesimo che richiede un tiro per colpire, puoi spendere MP in base al costo dell’incantesimo o della capacità:*</li>\n<li>1 MP se il costo è 0–5 MP</li>\n<li>3 MP se il costo è 6–10 MP</li>\n<li>6 MP se il costo è 11 MP o superiore</li>\n<p>*Dividi i dadi di danno dell’incantesimo a metà*</p>\n<p>*(arrotondando per eccesso) ed effettui due tiri per*</p>\n<p>*colpire separati, ognuno contro una creatura diversa.*</p>\n<p>*Puoi usare questa opzione un numero di volte pari al*</p>\n<p>*tuo modificatore di Saggezza (minimo 1). Recuperi*</p>\n<p>*tutti gli usi spesi al termine di un riposo lungo.*</p>\n<li>**Esplosione Echeggiante:** *Quando lanci un incantesimo che impone un tiro salvezza, puoi spendere 1 MP per costringere tutte le creature entro 3 metri dal bersaglio originale a effettuare lo stesso tiro salvezza.*</li>\n<li>Fallimento: la creatura subisce metà dei danni inflitti al bersaglio originale</li>\n<li>Successo: nessun danno</li>\n<li>**Amplificazione Permanente del Danno:** *Scegli due incantesimi che conosci o due capacità di Magia Acquisita che infliggono danni. Aumenti permanentemente la dimensione dei dadi di danno di questi incantesimi o capacità di un grado (es. d6 → d8).*</li>\n<li>Non puoi mai scegliere lo stesso incantesimo o capacità più di una volta per questa Risonanza.</li>\n<li>Se l’incantesimo o la capacità infligge danni multipli, l’aumento si applica solo a una delle fonti di danno.</li>\n<li>**Caos Elementale:** *Scegli un tipo di danno: acido, freddo, fuoco, fulmine o tuono. Ogni volta che infliggi danni di quel tipo con un incantesimo, il bersaglio viene bombardato da quell’energia per un numero di round pari a livello da Mago Combattente ÷ 2 (arrotondato per difetto)*</li>\n<br>\n<p>*Per 2 MP, puoi aumentare la durata a un numero di round pari al tuo livello da Mago Combattente. All’inizio di ciascun round, il bersaglio subisce 1dX danni del tipo scelto. Il valore di X è pari a Bonus di Competenza + 2, arrotondato al numero pari superiore*</p>\n<br>\n<p>**Esempio:**</p>\n<li>PB 2 → 2 + 2 = 4 → 1d4</li>\n<li>PB 3 → 3 + 2 = 5 → arrotondato a 6 → 1d6</li>\n<li>**Potere Persistente:** *Quando lanci un incantesimo che infligge danni in un’area, puoi spendere 1 MP per far sì che l’effetto permanga per 1 round aggiuntivo. All’inizio del round successivo, le creature nell’area devono ripetere il tiro salvezza:*</li>\n<li>Fallimento: subiscono metà dei danni del round precedente</li>\n<li>Successo: nessun danno</li>"
+    "description": "<p><em>Classe: Mago Combattente</em></p>\n<h3>Risonanza Distruttiva</h3>\n<p>*A partire dal 3° livello, impari a manipolare l’essenza stessa della tua magia, amplificandone il potenziale distruttivo. Ottieni accesso alle Modifiche di Risonanza.*</p>\n<br>\n<p>*Scegli due opzioni di Risonanza tra quelle elencate di seguito. Apprendi un’ulteriore opzione di Risonanza al 10° livello e un’altra al 17° livello.*</p>\n<br>\n<p>*Puoi applicare una sola opzione di Risonanza a un incantesimo quando lo lanci, salvo diversa indicazione.*</p>\n<li>**Reazione a Catena:** *Quando lanci un incantesimo o utilizzi una capacità magica che infligge danni, puoi spendere MP in base al costo dell’incantesimo o della capacità:*</li>\n<li>1 MP se il costo è 0–5 MP</li>\n<li>3 MP se il costo è 6–10 MP</li>\n<li>6 MP se il costo è 11 MP o superiore</li>\n<p>*Per far sì che l’energia dell’incantesimo salti*</p>\n<p>*su un’altra creatura a tua scelta entro 9 metri dal*</p>\n<p>*bersaglio originale. La seconda creatura subisce*</p>\n<p>*danni pari a quelli inflitti al bersaglio originale.*</p>\n<li>**Sbarramento Travolgente:** *Quando lanci un incantesimo che richiede un tiro per colpire, puoi spendere MP in base al costo dell’incantesimo o della capacità:*</li>\n<li>1 MP se il costo è 0–5 MP</li>\n<li>3 MP se il costo è 6–10 MP</li>\n<li>6 MP se il costo è 11 MP o superiore</li>\n<p>*Dividi i dadi di danno dell’incantesimo a metà*</p>\n<p>*(arrotondando per eccesso) ed effettui due tiri per*</p>\n<p>*colpire separati, ognuno contro una creatura diversa.*</p>\n<p>*Puoi usare questa opzione un numero di volte pari al*</p>\n<p>*tuo modificatore di Saggezza (minimo 1). Recuperi*</p>\n<p>*tutti gli usi spesi al termine di un riposo lungo.*</p>\n<li>**Esplosione Echeggiante:** *Quando lanci un incantesimo che impone un tiro salvezza, puoi spendere 1 MP per costringere tutte le creature entro 3 metri dal bersaglio originale a effettuare lo stesso tiro salvezza.*</li>\n<li>Fallimento: la creatura subisce metà dei danni inflitti al bersaglio originale</li>\n<li>Successo: nessun danno</li>\n<li>**Amplificazione Permanente del Danno:** *Scegli due incantesimi che conosci o due capacità di Magia Acquisita che infliggono danni. Aumenti permanentemente la dimensione dei dadi di danno di questi incantesimi o capacità di un grado (es. d6 → d8).*</li>\n<li>Non puoi mai scegliere lo stesso incantesimo o capacità più di una volta per questa Risonanza.</li>\n<li>Se l’incantesimo o la capacità infligge danni multipli, l’aumento si applica solo a una delle fonti di danno.</li>\n<li>**Caos Elementale:** *Scegli un tipo di danno: acido, freddo, fuoco, fulmine o tuono. Ogni volta che infliggi danni di quel tipo con un incantesimo, il bersaglio viene bombardato da quell’energia per un numero di round pari a livello da Mago Combattente ÷ 2 (arrotondato per difetto)*</li>\n<br>\n<p>*Per 2 MP, puoi aumentare la durata a un numero di round pari al tuo livello da Mago Combattente. All’inizio di ciascun round, il bersaglio subisce 1dX danni del tipo scelto. Il valore di X è pari a Bonus di Competenza + 2, arrotondato al numero pari superiore*</p>\n<br>\n<p>**Esempio:**</p>\n<li>PB 2 → 2 + 2 = 4 → 1d4</li>\n<li>PB 3 → 3 + 2 = 5 → arrotondato a 6 → 1d6</li>\n<li>**Potere Persistente:** *Quando lanci un incantesimo che infligge danni in un’area, puoi spendere 1 MP per far sì che l’effetto permanga per 1 round aggiuntivo. All’inizio del round successivo, le creature nell’area devono ripetere il tiro salvezza:*</li>\n<li>Fallimento: subiscono metà dei danni del round precedente</li>\n<li>Successo: nessun danno</li>",
+    "_id": "254f84ebc38806df",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Combattente",
+      "identifier": "risonanza-distruttiva"
+    }
   },
   {
     "name": "Incremento dei Punteggi di Caratteristica:",
-    "description": "<p><em>Classe: Mago Combattente</em></p>\n<h3>Incremento dei Punteggi di Caratteristica:</h3>\n<p>*Quando raggiungi i livelli 4, 8, 12, 16 e 19, puoi aumentare una caratteristica a scelta di 2, oppure due caratteristiche a scelta di 1.*</p>\n<li>Come di consueto, non puoi aumentare una caratteristica oltre 20 usando questa capacità.</li>\n<li>In alternativa, puoi rinunciare al miglioramento per ottenere un Talento.</li>"
+    "description": "<p><em>Classe: Mago Combattente</em></p>\n<h3>Incremento dei Punteggi di Caratteristica:</h3>\n<p>*Quando raggiungi i livelli 4, 8, 12, 16 e 19, puoi aumentare una caratteristica a scelta di 2, oppure due caratteristiche a scelta di 1.*</p>\n<li>Come di consueto, non puoi aumentare una caratteristica oltre 20 usando questa capacità.</li>\n<li>In alternativa, puoi rinunciare al miglioramento per ottenere un Talento.</li>",
+    "_id": "325dc397eddc6d6f",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Combattente",
+      "identifier": "incremento-dei-punteggi-di-caratteristica"
+    }
   },
   {
     "name": "Magia Potenziata",
-    "description": "<p><em>Classe: Mago Combattente</em></p>\n<h3>Magia Potenziata</h3>\n<p>*A partire dal 7° livello, quando lanci un incantesimo o utilizzi una capacità magica contro un oggetto, edificio o altro bersaglio non vivente, puoi scegliere di spendere Punti Mana aggiuntivi per amplificarne il potere distruttivo.*</p>\n<p>*Se lo fai:*</p>\n<li>Spendi MP aggiuntivi pari al costo originale dell’incantesimo o della capacità</li>\n<li>Raddoppi tutti i dadi di danno inflitti</li>\n<hr>\n<p>*Questo privilegio:*</p>\n<li>Non può essere usato su oggetti magici di rarità Comune o superiore</li>\n<li>Può essere usato 1 volta per riposo lungo</li>\n<li>Diventa 2 volte per riposo lungo al 18° livello</li>\n<hr>\n<p>**Esempio:**</p>\n<hr>\n<p>*Se una capacità costa 5 MP e infligge 6d8 danni, puoi spendere altri 5 MP per infliggere 12d8 danni.*</p>"
+    "description": "<p><em>Classe: Mago Combattente</em></p>\n<h3>Magia Potenziata</h3>\n<p>*A partire dal 7° livello, quando lanci un incantesimo o utilizzi una capacità magica contro un oggetto, edificio o altro bersaglio non vivente, puoi scegliere di spendere Punti Mana aggiuntivi per amplificarne il potere distruttivo.*</p>\n<p>*Se lo fai:*</p>\n<li>Spendi MP aggiuntivi pari al costo originale dell’incantesimo o della capacità</li>\n<li>Raddoppi tutti i dadi di danno inflitti</li>\n<hr>\n<p>*Questo privilegio:*</p>\n<li>Non può essere usato su oggetti magici di rarità Comune o superiore</li>\n<li>Può essere usato 1 volta per riposo lungo</li>\n<li>Diventa 2 volte per riposo lungo al 18° livello</li>\n<hr>\n<p>**Esempio:**</p>\n<hr>\n<p>*Se una capacità costa 5 MP e infligge 6d8 danni, puoi spendere altri 5 MP per infliggere 12d8 danni.*</p>",
+    "_id": "36eddd8483b2868d",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Combattente",
+      "identifier": "magia-potenziata"
+    }
   },
   {
     "name": "Incantesimo Personale",
-    "description": "<p><em>Classe: Mago Combattente</em></p>\n<h3>Incantesimo Personale</h3>\n<p>*A partire dal 20° livello, hai perfezionato alcune delle tue magie e capacità al punto da renderle più semplici da usare e devastanti.*</p>\n<li>*Scegli due incantesimi di 3° livello oppure due capacità magiche di 3° livello o inferiore appartenenti alla tua Magia Acquisita. Puoi ora lanciare questi incantesimi gratuitamente al 3° livello oppure al loro livello base. Se lanci uno di questi incantesimi a un livello superiore, devi comunque spendere i MP normalmente.*</li>\n<li>*Se scegli una capacità magica invece di un incantesimo, applica i seguenti benefici:*</li>\n<li>*Il costo in MP della capacità è ridotto di un valore pari al tuo Bonus di Competenza, fino a una riduzione massima di 5 MP.*</li>\n<li>*Se la capacità prevede un costo del tipo “spendi X MP”, essa viene considerata come se il costo fosse automaticamente ridotto di un valore pari a Bonus di Competenza − 2, fino a una riduzione massima di 4 MP.*</li>\n<p>*Puoi comunque scegliere di spendere MP aggiuntivi*</p>\n<p>*per potenziare ulteriormente la capacità.*</p>"
+    "description": "<p><em>Classe: Mago Combattente</em></p>\n<h3>Incantesimo Personale</h3>\n<p>*A partire dal 20° livello, hai perfezionato alcune delle tue magie e capacità al punto da renderle più semplici da usare e devastanti.*</p>\n<li>*Scegli due incantesimi di 3° livello oppure due capacità magiche di 3° livello o inferiore appartenenti alla tua Magia Acquisita. Puoi ora lanciare questi incantesimi gratuitamente al 3° livello oppure al loro livello base. Se lanci uno di questi incantesimi a un livello superiore, devi comunque spendere i MP normalmente.*</li>\n<li>*Se scegli una capacità magica invece di un incantesimo, applica i seguenti benefici:*</li>\n<li>*Il costo in MP della capacità è ridotto di un valore pari al tuo Bonus di Competenza, fino a una riduzione massima di 5 MP.*</li>\n<li>*Se la capacità prevede un costo del tipo “spendi X MP”, essa viene considerata come se il costo fosse automaticamente ridotto di un valore pari a Bonus di Competenza − 2, fino a una riduzione massima di 4 MP.*</li>\n<p>*Puoi comunque scegliere di spendere MP aggiuntivi*</p>\n<p>*per potenziare ulteriormente la capacità.*</p>",
+    "_id": "bd197861daf3201a",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Combattente",
+      "identifier": "incantesimo-personale"
+    }
   },
   {
     "name": "Magia",
-    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Magia</h3>\n<p>*A partire dal 1° livello, possiedi un’abilità magica innata oppure hai appreso la magia tramite un addestramento intensivo. Scegli una Magia. Questa scelta ti conferisce capacità ai livelli 1°, 3°, 6°, 11° e 18°. Anche se multiclasse, inizi sempre e comunque con una sola magia.*</p>\n<p>**Punti Mana (MP):** *I tuoi Punti Mana massimi sono pari al tuo livello da Mago Difensore. Recuperi tutti i Punti Mana spesi dopo un riposo lungo.*</p>\n<li>**Lancio degli Incantesimi:** *Accedi agli incantesimi man mano che sali di livello, seguendo la progressione:*</li>\n<li>**Livello 1:** Trucchetti</li>\n<li>**Livello 3:** Incantesimi di 1° livello</li>\n<li>**Livello 7:** Incantesimi di 2° livello</li>\n<li>**Livello 9:** Incantesimi di 3° livello</li>\n<li>**Livello 13:** Incantesimi di 4° livello</li>\n<li>**Livello 17:** Incantesimi di 5° livello</li>\n<li>**Acquisizione di Incantesimi:** *Ottieni un nuovo incantesimo ogni due livelli: 1, 3, 5, 7, 9, 11, 13, 15, 17 e 19.*</li>\n<li>*Puoi apprendere fino a un massimo di 6 trucchetti.*</li>\n<li>*Puoi apprendere fino a 4 incantesimi per ciascun livello.*</li>\n<hr>\n<li>*I trucchetti costano 0 MP.*</li>\n<li>*Gli incantesimi costano Punti Mana pari al loro livello (es. incantesimo di 1° livello = 1 MP, incantesimo di 2° livello = 2 MP, ecc.).*</li>\n<hr>\n<p>*Quando scegli questa classe, selezioni una **Caratteristica mentale** a tua scelta tra **Intelligenza, Saggezza o Carisma**, che rappresenta il modo in cui disciplini e incanali la tua magia difensiva.</p>\n<p>La tua **Costituzione** rimane il fulcro della tua resistenza magica, frutto di allenamento fisico, forza di volontà e tenacia sovrumana, mentre la tua Caratteristica da Incantatore scelta determina il controllo, la forma e l’intento dei tuoi incantesimi.*</p>\n<li>**CD Tiro Salvezza Incantesimo:** 8 + Bonus di Competenza + Modificatore di **Costituzione**</li>\n<li>**Bonus al Tiro per Colpire Incantesimo:** Bonus di Competenza + Modificatore della tua **Caratteristica da Incantatore scelta**</li>"
+    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Magia</h3>\n<p>*A partire dal 1° livello, possiedi un’abilità magica innata oppure hai appreso la magia tramite un addestramento intensivo. Scegli una Magia. Questa scelta ti conferisce capacità ai livelli 1°, 3°, 6°, 11° e 18°. Anche se multiclasse, inizi sempre e comunque con una sola magia.*</p>\n<p>**Punti Mana (MP):** *I tuoi Punti Mana massimi sono pari al tuo livello da Mago Difensore. Recuperi tutti i Punti Mana spesi dopo un riposo lungo.*</p>\n<li>**Lancio degli Incantesimi:** *Accedi agli incantesimi man mano che sali di livello, seguendo la progressione:*</li>\n<li>**Livello 1:** Trucchetti</li>\n<li>**Livello 3:** Incantesimi di 1° livello</li>\n<li>**Livello 7:** Incantesimi di 2° livello</li>\n<li>**Livello 9:** Incantesimi di 3° livello</li>\n<li>**Livello 13:** Incantesimi di 4° livello</li>\n<li>**Livello 17:** Incantesimi di 5° livello</li>\n<li>**Acquisizione di Incantesimi:** *Ottieni un nuovo incantesimo ogni due livelli: 1, 3, 5, 7, 9, 11, 13, 15, 17 e 19.*</li>\n<li>*Puoi apprendere fino a un massimo di 6 trucchetti.*</li>\n<li>*Puoi apprendere fino a 4 incantesimi per ciascun livello.*</li>\n<hr>\n<li>*I trucchetti costano 0 MP.*</li>\n<li>*Gli incantesimi costano Punti Mana pari al loro livello (es. incantesimo di 1° livello = 1 MP, incantesimo di 2° livello = 2 MP, ecc.).*</li>\n<hr>\n<p>*Quando scegli questa classe, selezioni una **Caratteristica mentale** a tua scelta tra **Intelligenza, Saggezza o Carisma**, che rappresenta il modo in cui disciplini e incanali la tua magia difensiva.</p>\n<p>La tua **Costituzione** rimane il fulcro della tua resistenza magica, frutto di allenamento fisico, forza di volontà e tenacia sovrumana, mentre la tua Caratteristica da Incantatore scelta determina il controllo, la forma e l’intento dei tuoi incantesimi.*</p>\n<li>**CD Tiro Salvezza Incantesimo:** 8 + Bonus di Competenza + Modificatore di **Costituzione**</li>\n<li>**Bonus al Tiro per Colpire Incantesimo:** Bonus di Competenza + Modificatore della tua **Caratteristica da Incantatore scelta**</li>",
+    "_id": "44f522253736f5e7",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Difensore",
+      "identifier": "magia"
+    }
   },
   {
     "name": "Pelle Indotta dal Mana",
-    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Pelle Indotta dal Mana</h3>\n<p>*A partire dal 1° livello, il tuo corpo si adatta a combattere e a subire danni mantenendo uno strato naturale di mana sulla pelle.*</p>\n<li>*Questo conferisce Riduzione del Danno 1.*</li>\n<li>*La Riduzione del Danno aumenta con i livelli:*</li>\n<li>5° livello → 2</li>\n<li>10° livello → 3</li>\n<li>15° livello → 4</li>\n<li>20° livello → 5</li>"
+    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Pelle Indotta dal Mana</h3>\n<p>*A partire dal 1° livello, il tuo corpo si adatta a combattere e a subire danni mantenendo uno strato naturale di mana sulla pelle.*</p>\n<li>*Questo conferisce Riduzione del Danno 1.*</li>\n<li>*La Riduzione del Danno aumenta con i livelli:*</li>\n<li>5° livello → 2</li>\n<li>10° livello → 3</li>\n<li>15° livello → 4</li>\n<li>20° livello → 5</li>",
+    "_id": "6092b16c50e7c0ed",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Difensore",
+      "identifier": "pelle-indotta-dal-mana"
+    }
   },
   {
     "name": "Resilienza del Baluardo",
-    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Resilienza del Baluardo</h3>\n<p>*A partire dal 2° livello, il tuo corpo è temprato per resistere ai colpi. Guadagni i seguenti benefici:*</p>\n<li>*Grazie ai continui scontri con la morte e alla tua indole impavida, hai vantaggio ai tiri salvezza contro incantesimi o effetti che ti affascinano o intimoriscono.*</li>"
+    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Resilienza del Baluardo</h3>\n<p>*A partire dal 2° livello, il tuo corpo è temprato per resistere ai colpi. Guadagni i seguenti benefici:*</p>\n<li>*Grazie ai continui scontri con la morte e alla tua indole impavida, hai vantaggio ai tiri salvezza contro incantesimi o effetti che ti affascinano o intimoriscono.*</li>",
+    "_id": "cd2fd4ff54982322",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Difensore",
+      "identifier": "resilienza-del-baluardo"
+    }
   },
   {
     "name": "Ritorsione del Baluardo",
-    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Ritorsione del Baluardo</h3>\n<p>*A partire dal 3° livello, quando una creatura manca un attacco corpo a corpo contro di te, puoi usare la tua Reazione e spendere 1 Punto Mana per effettuare un attacco corpo a corpo contro quella creatura.*</p>"
+    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Ritorsione del Baluardo</h3>\n<p>*A partire dal 3° livello, quando una creatura manca un attacco corpo a corpo contro di te, puoi usare la tua Reazione e spendere 1 Punto Mana per effettuare un attacco corpo a corpo contro quella creatura.*</p>",
+    "_id": "98b4a8cec6dd38d7",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Difensore",
+      "identifier": "ritorsione-del-baluardo"
+    }
   },
   {
     "name": "Incremento dei Punteggi di Caratteristica:",
-    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Incremento dei Punteggi di Caratteristica:</h3>\n<p>*Quando raggiungi i livelli 4, 8, 12, 16 e 19, puoi aumentare una caratteristica a scelta di 2, oppure due caratteristiche a scelta di 1.*</p>\n<li>Come di consueto, non puoi aumentare una caratteristica oltre 20 usando questa capacità.</li>\n<li>In alternativa, puoi rinunciare al miglioramento per ottenere un Talento.</li>"
+    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Incremento dei Punteggi di Caratteristica:</h3>\n<p>*Quando raggiungi i livelli 4, 8, 12, 16 e 19, puoi aumentare una caratteristica a scelta di 2, oppure due caratteristiche a scelta di 1.*</p>\n<li>Come di consueto, non puoi aumentare una caratteristica oltre 20 usando questa capacità.</li>\n<li>In alternativa, puoi rinunciare al miglioramento per ottenere un Talento.</li>",
+    "_id": "ff71e8ef27941188",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Difensore",
+      "identifier": "incremento-dei-punteggi-di-caratteristica"
+    }
   },
   {
     "name": "Attacco Extra",
-    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Attacco Extra</h3>\n<p>*Dal 5° livello, quando compi l’azione Attacco, puoi attaccare due volte invece di una sola.*</p>"
+    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Attacco Extra</h3>\n<p>*Dal 5° livello, quando compi l’azione Attacco, puoi attaccare due volte invece di una sola.*</p>",
+    "_id": "18699146b9367862",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Difensore",
+      "identifier": "attacco-extra"
+    }
   },
   {
     "name": "Provocazione",
-    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Provocazione</h3>\n<p>*Dal 6° livello, puoi spendere Punti Mana per potenziare la tua voce e provocare i nemici.*</p>\n<li>*Come azione, puoi spendere X Punti Mana per provocare un nemico entro 18 metri per ogni Punto Mana speso.*</li>\n<li>*La creatura provocata deve effettuare un tiro salvezza su Saggezza contro la tua CD incantesimo.*</li>\n<li>*Se fallisce, diventa “Aggrato”: può attaccare solo te nel suo turno. Se non può, non può usare l’azione Attacco.*</li>\n<li>*L’effetto termina alla fine del turno successivo della creatura.*</li>"
+    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Provocazione</h3>\n<p>*Dal 6° livello, puoi spendere Punti Mana per potenziare la tua voce e provocare i nemici.*</p>\n<li>*Come azione, puoi spendere X Punti Mana per provocare un nemico entro 18 metri per ogni Punto Mana speso.*</li>\n<li>*La creatura provocata deve effettuare un tiro salvezza su Saggezza contro la tua CD incantesimo.*</li>\n<li>*Se fallisce, diventa “Aggrato”: può attaccare solo te nel suo turno. Se non può, non può usare l’azione Attacco.*</li>\n<li>*L’effetto termina alla fine del turno successivo della creatura.*</li>",
+    "_id": "7357a86868dab8d0",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Difensore",
+      "identifier": "provocazione"
+    }
   },
   {
     "name": "Maestro dello Scudo",
-    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Maestro dello Scudo</h3>\n<p>*Dal 7° livello, puoi spendere 1 Punto Mana quando effettui un tiro salvezza su Destrezza o Forza.*</p>\n<li>*Quando lo fai, aggiungi il bonus AC del tuo scudo al tiro salvezza contro incantesimi o effetti dannosi che ti prendono di mira singolarmente.*</li>"
+    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Maestro dello Scudo</h3>\n<p>*Dal 7° livello, puoi spendere 1 Punto Mana quando effettui un tiro salvezza su Destrezza o Forza.*</p>\n<li>*Quando lo fai, aggiungi il bonus AC del tuo scudo al tiro salvezza contro incantesimi o effetti dannosi che ti prendono di mira singolarmente.*</li>",
+    "_id": "35da82291d628676",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Difensore",
+      "identifier": "maestro-dello-scudo"
+    }
   },
   {
     "name": "Baluardo Adamantino",
-    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Baluardo Adamantino</h3>\n<p>*Dal 10° livello, i colpi che hai sopportato ti hanno fortificato oltre i limiti naturali. Il tuo massimo di Costituzione aumenta a 22.*</p>"
+    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Baluardo Adamantino</h3>\n<p>*Dal 10° livello, i colpi che hai sopportato ti hanno fortificato oltre i limiti naturali. Il tuo massimo di Costituzione aumenta a 22.*</p>",
+    "_id": "e86069471627680a",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Difensore",
+      "identifier": "baluardo-adamantino"
+    }
   },
   {
     "name": "Posizione Inamovibile",
-    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Posizione Inamovibile</h3>\n<p>*Dal 13° livello, puoi entrare in posizione inamovibile.*</p>\n<li>*Come azione bonus, puoi radicarti al suolo.*</li>\n<li>*Mentre sei in questa posizione:*</li>\n<li>*Velocità di movimento = 0*</li>\n<li>*Non puoi essere messo a terra*</li>\n<li>*Non puoi essere spostato da alcun effetto, anche in caso di fallimento di un tiro salvezza*</li>\n<li>*AC +2*</li>\n<li>*La posizione dura un numero di turni pari al tuo bonus di competenza.*</li>\n<li>*Dopo la fine della posizione, puoi riattivarla in qualsiasi momento.*</li>\n<li>*Puoi usare questa capacità due volte per riposo lungo.*</li>"
+    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Posizione Inamovibile</h3>\n<p>*Dal 13° livello, puoi entrare in posizione inamovibile.*</p>\n<li>*Come azione bonus, puoi radicarti al suolo.*</li>\n<li>*Mentre sei in questa posizione:*</li>\n<li>*Velocità di movimento = 0*</li>\n<li>*Non puoi essere messo a terra*</li>\n<li>*Non puoi essere spostato da alcun effetto, anche in caso di fallimento di un tiro salvezza*</li>\n<li>*AC +2*</li>\n<li>*La posizione dura un numero di turni pari al tuo bonus di competenza.*</li>\n<li>*Dopo la fine della posizione, puoi riattivarla in qualsiasi momento.*</li>\n<li>*Puoi usare questa capacità due volte per riposo lungo.*</li>",
+    "_id": "d9c3f2a97a7971e7",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Difensore",
+      "identifier": "posizione-inamovibile"
+    }
   },
   {
     "name": "Posizione Difensiva",
-    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Posizione Difensiva</h3>\n<p>*Dal 14° livello, quando una creatura entro 3 metri da te viene colpita da un attacco, puoi usare la tua Reazione per scambiare posizione con quella creatura, diventando tu il bersaglio dell’attacco al suo posto.*</p>\n<li>*Puoi usare questa capacità un numero di volte pari al tuo modificatore di Costituzione (minimo una volta).*</li>\n<li>*Recuperi tutti gli usi spesi al termine di un riposo lungo.*</li>"
+    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Posizione Difensiva</h3>\n<p>*Dal 14° livello, quando una creatura entro 3 metri da te viene colpita da un attacco, puoi usare la tua Reazione per scambiare posizione con quella creatura, diventando tu il bersaglio dell’attacco al suo posto.*</p>\n<li>*Puoi usare questa capacità un numero di volte pari al tuo modificatore di Costituzione (minimo una volta).*</li>\n<li>*Recuperi tutti gli usi spesi al termine di un riposo lungo.*</li>",
+    "_id": "5b1870b5d42f0044",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Difensore",
+      "identifier": "posizione-difensiva"
+    }
   },
   {
     "name": "Posizione Inamovibile Potenziata",
-    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Posizione Inamovibile Potenziata</h3>\n<p>*Dal 17° livello, la tua Posizione Inamovibile ora ti concede resistenza a un tipo di danno.*</p>\n<li>*Quando ottieni questa capacità, scegli uno dei seguenti tipi di danno: contundente, perforante, tagliente, fuoco, freddo o veleno.*</li>\n<li>*Mentre sei nella tua Posizione Inamovibile, hai resistenza al tipo di danno scelto.*</li>"
+    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Posizione Inamovibile Potenziata</h3>\n<p>*Dal 17° livello, la tua Posizione Inamovibile ora ti concede resistenza a un tipo di danno.*</p>\n<li>*Quando ottieni questa capacità, scegli uno dei seguenti tipi di danno: contundente, perforante, tagliente, fuoco, freddo o veleno.*</li>\n<li>*Mentre sei nella tua Posizione Inamovibile, hai resistenza al tipo di danno scelto.*</li>",
+    "_id": "99acb9b7b71c8b35",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Difensore",
+      "identifier": "posizione-inamovibile-potenziata"
+    }
   },
   {
     "name": "Corpo di Guerriero",
-    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Corpo di Guerriero</h3>\n<p>*Dal 18° livello, puoi spendere Punti Mana per potenziare il tuo corpo. Come azione, puoi spendere 6 Punti Mana per diventare l’incarnazione di un guerriero.*</p>\n<li>*Il tuo corpo si rinforza e il mana scorre nelle tue vene, indurendo pelle e carne.*</li>\n<li>*Per i 5 turni successivi, la tua Riduzione del Danno aumenta di 4.*</li>\n<li>*Puoi usare questa capacità una volta per riposo lungo.*</li>"
+    "description": "<p><em>Classe: Mago Difensore</em></p>\n<h3>Corpo di Guerriero</h3>\n<p>*Dal 18° livello, puoi spendere Punti Mana per potenziare il tuo corpo. Come azione, puoi spendere 6 Punti Mana per diventare l’incarnazione di un guerriero.*</p>\n<li>*Il tuo corpo si rinforza e il mana scorre nelle tue vene, indurendo pelle e carne.*</li>\n<li>*Per i 5 turni successivi, la tua Riduzione del Danno aumenta di 4.*</li>\n<li>*Puoi usare questa capacità una volta per riposo lungo.*</li>",
+    "_id": "045e5243b461902e",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Difensore",
+      "identifier": "corpo-di-guerriero"
+    }
   },
   {
     "name": "Magia nata o insegnata:",
-    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Magia nata o insegnata:</h3>\n<p>*A partire dal 1° livello, possiedi un’abilità magica innata oppure hai appreso la magia tramite un addestramento intensivo. Scegli una Magia. Questa scelta ti conferisce capacità ai livelli 1°, 3°, 6°, 11° e 18°. Anche se multiclasse, inizi sempre e comunque con una sola magia.*</p>\n<p>**Punti Mana (MP):** *I tuoi Punti Mana massimi sono pari al tuo livello da **Mago Furtivo**. Recuperi tutti i Punti Mana spesi dopo un riposo lungo.*</p>\n<li>**Lancio degli Incantesimi:** *Accedi agli incantesimi man mano che sali di livello, seguendo la progressione:*</li>\n<li>**Livello 1:** Trucchetti</li>\n<li>**Livello 3:** Incantesimi di 1° livello</li>\n<li>**Livello 7:** Incantesimi di 2° livello</li>\n<li>**Livello 9:** Incantesimi di 3° livello</li>\n<li>**Livello 13:** Incantesimi di 4° livello</li>\n<li>**Livello 17:** Incantesimi di 5° livello</li>\n<li>**Acquisizione di Incantesimi:** *Ottieni un nuovo incantesimo ogni due livelli: 1, 3, 5, 7, 9, 11, 13, 15, 17 e 19.*</li>\n<li>*Puoi apprendere fino a un massimo di 6 trucchetti.*</li>\n<li>*Puoi apprendere fino a 4 incantesimi per ciascun livello di incantesimo.*</li>\n<hr>\n<li>*I trucchetti costano 0 MP.*</li>\n<li>*Gli incantesimi costano Punti Mana pari al loro livello (es. incantesimo di 1° livello = 1 MP, incantesimo di 2° livello = 2 MP, ecc.).*</li>\n<hr>\n<p>*Quando scegli questa classe, selezioni una **Caratteristica mentale** a tua scelta tra **Intelligenza, Saggezza o Carisma**. Questa diventa la tua caratteristica per il lancio degli incantesimi e per le abilità del **Mago Furtivo**, riflettendo il modo unico in cui canalizzi la magia: studio e calcolo freddo, istinto e percezione, oppure fascino e inganno.</p>\n<p>Combini questa mente affilata con furtività, tempismo e precisione letale, intrecciando la magia con le ombre per colpire in modo silenzioso e micidiale.*</p>\n<li>**CD Tiro Salvezza Incantesimo:** 8 + Bonus di Competenza + Modificatore di **Destrezza**</li>\n<li>**Bonus al Tiro per Colpire Incantesimo:** Bonus di Competenza + Modificatore della tua **Caratteristica da Incantatore scelta**</li>"
+    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Magia nata o insegnata:</h3>\n<p>*A partire dal 1° livello, possiedi un’abilità magica innata oppure hai appreso la magia tramite un addestramento intensivo. Scegli una Magia. Questa scelta ti conferisce capacità ai livelli 1°, 3°, 6°, 11° e 18°. Anche se multiclasse, inizi sempre e comunque con una sola magia.*</p>\n<p>**Punti Mana (MP):** *I tuoi Punti Mana massimi sono pari al tuo livello da **Mago Furtivo**. Recuperi tutti i Punti Mana spesi dopo un riposo lungo.*</p>\n<li>**Lancio degli Incantesimi:** *Accedi agli incantesimi man mano che sali di livello, seguendo la progressione:*</li>\n<li>**Livello 1:** Trucchetti</li>\n<li>**Livello 3:** Incantesimi di 1° livello</li>\n<li>**Livello 7:** Incantesimi di 2° livello</li>\n<li>**Livello 9:** Incantesimi di 3° livello</li>\n<li>**Livello 13:** Incantesimi di 4° livello</li>\n<li>**Livello 17:** Incantesimi di 5° livello</li>\n<li>**Acquisizione di Incantesimi:** *Ottieni un nuovo incantesimo ogni due livelli: 1, 3, 5, 7, 9, 11, 13, 15, 17 e 19.*</li>\n<li>*Puoi apprendere fino a un massimo di 6 trucchetti.*</li>\n<li>*Puoi apprendere fino a 4 incantesimi per ciascun livello di incantesimo.*</li>\n<hr>\n<li>*I trucchetti costano 0 MP.*</li>\n<li>*Gli incantesimi costano Punti Mana pari al loro livello (es. incantesimo di 1° livello = 1 MP, incantesimo di 2° livello = 2 MP, ecc.).*</li>\n<hr>\n<p>*Quando scegli questa classe, selezioni una **Caratteristica mentale** a tua scelta tra **Intelligenza, Saggezza o Carisma**. Questa diventa la tua caratteristica per il lancio degli incantesimi e per le abilità del **Mago Furtivo**, riflettendo il modo unico in cui canalizzi la magia: studio e calcolo freddo, istinto e percezione, oppure fascino e inganno.</p>\n<p>Combini questa mente affilata con furtività, tempismo e precisione letale, intrecciando la magia con le ombre per colpire in modo silenzioso e micidiale.*</p>\n<li>**CD Tiro Salvezza Incantesimo:** 8 + Bonus di Competenza + Modificatore di **Destrezza**</li>\n<li>**Bonus al Tiro per Colpire Incantesimo:** Bonus di Competenza + Modificatore della tua **Caratteristica da Incantatore scelta**</li>",
+    "_id": "969606bd0fd1a371",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Furtivo",
+      "identifier": "magia-nata-o-insegnata"
+    }
   },
   {
     "name": "Maestria",
-    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h4>Maestria</h4>\n<p>*Al 1° livello, scegli due competenze nelle abilità, oppure una competenza nelle abilità e la competenza con gli Arnesi da Scasso. Il tuo bonus di competenza è raddoppiato per qualsiasi prova di caratteristica che utilizzi una delle competenze scelte.*</p>\n<p>*Al 6° livello, puoi scegliere altre due competenze (abilità o Arnesi da Scasso) per ottenere nuovamente questo beneficio.*</p>"
+    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h4>Maestria</h4>\n<p>*Al 1° livello, scegli due competenze nelle abilità, oppure una competenza nelle abilità e la competenza con gli Arnesi da Scasso. Il tuo bonus di competenza è raddoppiato per qualsiasi prova di caratteristica che utilizzi una delle competenze scelte.*</p>\n<p>*Al 6° livello, puoi scegliere altre due competenze (abilità o Arnesi da Scasso) per ottenere nuovamente questo beneficio.*</p>",
+    "_id": "63a51aef4a3514cc",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Furtivo",
+      "identifier": "maestria"
+    }
   },
   {
     "name": "Attacco Furtivo",
-    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Attacco Furtivo</h3>\n<p>*A partire dal 1° livello, sai come colpire con precisione letale sfruttando la distrazione del nemico. Una volta per turno, puoi infliggere 1d6 danni extra a una creatura che colpisci con un attacco se hai vantaggio sul tiro per colpire. L’attacco deve utilizzare un’arma con Finezza, un attacco con arma a distanza oppure un attacco con incantesimo che utilizzi il tuo Modificatore Magico e che non abbia Area di Effetto.*</p>\n<br>\n<p>**Quando utilizzato con gli incantesimi, Attacco Furtivo aggiunge solo metà dei dadi di Attacco Furtivo, arrotondata per eccesso.**</p>\n<br>\n<p>*Non hai bisogno di vantaggio sul tiro per colpire se un altro nemico del bersaglio si trova entro 1,5 metri da esso, tale nemico non è incapacitato e tu non hai svantaggio sul tiro per colpire.*</p>\n<br>\n<p>*L’ammontare dei danni extra aumenta man mano che sali di livello in questa classe, come indicato nella colonna Attacco Furtivo della tabella del Mago Furtivo.*</p>"
+    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Attacco Furtivo</h3>\n<p>*A partire dal 1° livello, sai come colpire con precisione letale sfruttando la distrazione del nemico. Una volta per turno, puoi infliggere 1d6 danni extra a una creatura che colpisci con un attacco se hai vantaggio sul tiro per colpire. L’attacco deve utilizzare un’arma con Finezza, un attacco con arma a distanza oppure un attacco con incantesimo che utilizzi il tuo Modificatore Magico e che non abbia Area di Effetto.*</p>\n<br>\n<p>**Quando utilizzato con gli incantesimi, Attacco Furtivo aggiunge solo metà dei dadi di Attacco Furtivo, arrotondata per eccesso.**</p>\n<br>\n<p>*Non hai bisogno di vantaggio sul tiro per colpire se un altro nemico del bersaglio si trova entro 1,5 metri da esso, tale nemico non è incapacitato e tu non hai svantaggio sul tiro per colpire.*</p>\n<br>\n<p>*L’ammontare dei danni extra aumenta man mano che sali di livello in questa classe, come indicato nella colonna Attacco Furtivo della tabella del Mago Furtivo.*</p>",
+    "_id": "f77e1002d74adb99",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Furtivo",
+      "identifier": "attacco-furtivo"
+    }
   },
   {
     "name": "Azione Scaltra",
-    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Azione Scaltra</h3>\n<p>*Come azione bonus, puoi utilizzare Azione Scaltra. Puoi Nasconderti come azione bonus gratuitamente. In alternativa, spendendo 1 MP come azione bonus, puoi Disimpegnarti oppure utilizzare Scivolare Attraverso.*</p>\n<li>**Scivolare Attraverso:** puoi tentare di muoverti attraverso lo spazio occupato da un nemico. Effettua una prova di Acrobazia con CD pari a 5 + il livello o GS della creatura. Puoi Scivolare Attraverso utilizzando Scalare, Volare, Nuotare o un’altra forma di movimento verso uno spazio libero adiacente alla creatura. Con un successo, attraversi lo spazio del nemico senza spendere movimento e ottieni vantaggio al tuo prossimo attacco contro quella creatura. In caso di fallimento, attraversi comunque lo spazio della creatura, ma non ottieni vantaggio.</li>"
+    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Azione Scaltra</h3>\n<p>*Come azione bonus, puoi utilizzare Azione Scaltra. Puoi Nasconderti come azione bonus gratuitamente. In alternativa, spendendo 1 MP come azione bonus, puoi Disimpegnarti oppure utilizzare Scivolare Attraverso.*</p>\n<li>**Scivolare Attraverso:** puoi tentare di muoverti attraverso lo spazio occupato da un nemico. Effettua una prova di Acrobazia con CD pari a 5 + il livello o GS della creatura. Puoi Scivolare Attraverso utilizzando Scalare, Volare, Nuotare o un’altra forma di movimento verso uno spazio libero adiacente alla creatura. Con un successo, attraversi lo spazio del nemico senza spendere movimento e ottieni vantaggio al tuo prossimo attacco contro quella creatura. In caso di fallimento, attraversi comunque lo spazio della creatura, ma non ottieni vantaggio.</li>",
+    "_id": "0a686a8aafb508fd",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Furtivo",
+      "identifier": "azione-scaltra"
+    }
   },
   {
     "name": "Incantesimi Silenziosi",
-    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Incantesimi Silenziosi</h3>\n<p>*A partire dal 3° livello, puoi applicare l’effetto di Incantesimo Subdolo alle tue capacità magiche un numero di volte al giorno pari al tuo Modificatore di Mana + il tuo Bonus di Competenza. Questa funzionalità si ricarica con un riposo lungo.*</p>"
+    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Incantesimi Silenziosi</h3>\n<p>*A partire dal 3° livello, puoi applicare l’effetto di Incantesimo Subdolo alle tue capacità magiche un numero di volte al giorno pari al tuo Modificatore di Mana + il tuo Bonus di Competenza. Questa funzionalità si ricarica con un riposo lungo.*</p>",
+    "_id": "1fdfc3b6adb20ba8",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Furtivo",
+      "identifier": "incantesimi-silenziosi"
+    }
   },
   {
     "name": "Miglioramento del punteggio di caratteristica",
-    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Miglioramento del punteggio di caratteristica</h3>\n<p>Quando raggiungi il 4° livello, e di nuovo all’8°, 12°, 16° e 19° livello, puoi aumentare un punteggio di caratteristica a tua scelta di 2, oppure aumentare due punteggi di caratteristica a tua scelta di 1 ciascuno. Come di norma, non puoi aumentare un punteggio di caratteristica oltre 20 utilizzando questo privilegio.</p>\n<p>OPPURE puoi rinunciare al miglioramento dei punteggi di caratteristica per ottenere un Talento.</p>"
+    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Miglioramento del punteggio di caratteristica</h3>\n<p>Quando raggiungi il 4° livello, e di nuovo all’8°, 12°, 16° e 19° livello, puoi aumentare un punteggio di caratteristica a tua scelta di 2, oppure aumentare due punteggi di caratteristica a tua scelta di 1 ciascuno. Come di norma, non puoi aumentare un punteggio di caratteristica oltre 20 utilizzando questo privilegio.</p>\n<p>OPPURE puoi rinunciare al miglioramento dei punteggi di caratteristica per ottenere un Talento.</p>",
+    "_id": "1b3be0317b478a66",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Furtivo",
+      "identifier": "miglioramento-del-punteggio-di-caratteristica"
+    }
   },
   {
     "name": "Schivata Prodigiosa",
-    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Schivata Prodigiosa</h3>\n<p>*A partire dal 5° livello, quando una creatura che puoi vedere ti colpisce con un attacco, puoi usare la tua reazione per dimezzare i danni subiti da quell’attacco.*</p>"
+    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Schivata Prodigiosa</h3>\n<p>*A partire dal 5° livello, quando una creatura che puoi vedere ti colpisce con un attacco, puoi usare la tua reazione per dimezzare i danni subiti da quell’attacco.*</p>",
+    "_id": "5630397c9fea3f2d",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Furtivo",
+      "identifier": "schivata-prodigiosa"
+    }
   },
   {
     "name": "Familiarità Magica",
-    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Familiarità Magica</h3>\n<p>*Al 6° livello, ottieni il trucchetto Mano Magica e altri due trucchetti a tua scelta. Ottieni un ulteriore trucchetto a tua scelta al 10° livello.*</p>"
+    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Familiarità Magica</h3>\n<p>*Al 6° livello, ottieni il trucchetto Mano Magica e altri due trucchetti a tua scelta. Ottieni un ulteriore trucchetto a tua scelta al 10° livello.*</p>",
+    "_id": "b895363b13f654df",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Furtivo",
+      "identifier": "familiarita-magica"
+    }
   },
   {
     "name": "Elusione",
-    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Elusione</h3>\n<p>*A partire dal 7° livello, quando sei soggetto a un effetto magico ad Area di Effetto che ti permette di effettuare un tiro salvezza su Destrezza per subire solo metà dei danni, non subisci alcun danno se superi il tiro salvezza e subisci solo metà dei danni se lo fallisci.*</p>"
+    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Elusione</h3>\n<p>*A partire dal 7° livello, quando sei soggetto a un effetto magico ad Area di Effetto che ti permette di effettuare un tiro salvezza su Destrezza per subire solo metà dei danni, non subisci alcun danno se superi il tiro salvezza e subisci solo metà dei danni se lo fallisci.*</p>",
+    "_id": "9224a49e96706c01",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Furtivo",
+      "identifier": "elusione"
+    }
   },
   {
     "name": "Innesco Accecante",
-    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Innesco Accecante</h3>\n<p>*Al 9° livello, quando utilizzi Attacco Furtivo, puoi anche infliggere la condizione Accecato al bersaglio fino alla fine del suo prossimo turno. Puoi usare questa capacità un numero di volte pari al tuo Bonus di Competenza. Questa funzionalità si ricarica con un riposo lungo.*</p>"
+    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Innesco Accecante</h3>\n<p>*Al 9° livello, quando utilizzi Attacco Furtivo, puoi anche infliggere la condizione Accecato al bersaglio fino alla fine del suo prossimo turno. Puoi usare questa capacità un numero di volte pari al tuo Bonus di Competenza. Questa funzionalità si ricarica con un riposo lungo.*</p>",
+    "_id": "a6b5dc59d078e81c",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Furtivo",
+      "identifier": "innesco-accecante"
+    }
   },
   {
     "name": "Dote Affidabile",
-    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Dote Affidabile</h3>\n<p>*All’11° livello, hai affinato le tue abilità fino a renderle quasi perfette. Ogni volta che effettui una prova di caratteristica a cui puoi aggiungere il tuo bonus di competenza, tratti qualsiasi risultato del d20 pari a 9 o inferiore come se fosse 10.*</p>"
+    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Dote Affidabile</h3>\n<p>*All’11° livello, hai affinato le tue abilità fino a renderle quasi perfette. Ogni volta che effettui una prova di caratteristica a cui puoi aggiungere il tuo bonus di competenza, tratti qualsiasi risultato del d20 pari a 9 o inferiore come se fosse 10.*</p>",
+    "_id": "b4c5c856e1ce7f42",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Furtivo",
+      "identifier": "dote-affidabile"
+    }
   },
   {
     "name": "Innesco Silenziante",
-    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Innesco Silenziante</h3>\n<p>*Al 13° livello, quando usi la capacità Attacco Furtivo, puoi scegliere di spendere 2 MP; quando lo fai, puoi infliggere Silenziato fino alla fine del turno successivo del tuo bersaglio. Puoi usare questa capacità un numero di volte pari a 1/4 del tuo livello da Mago Furtivo, arrotondato per eccesso. Questa funzionalità si ricarica con un riposo lungo.*</p>"
+    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Innesco Silenziante</h3>\n<p>*Al 13° livello, quando usi la capacità Attacco Furtivo, puoi scegliere di spendere 2 MP; quando lo fai, puoi infliggere Silenziato fino alla fine del turno successivo del tuo bersaglio. Puoi usare questa capacità un numero di volte pari a 1/4 del tuo livello da Mago Furtivo, arrotondato per eccesso. Questa funzionalità si ricarica con un riposo lungo.*</p>",
+    "_id": "aecdf617ee8adc10",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Furtivo",
+      "identifier": "innesco-silenziante"
+    }
   },
   {
     "name": "Percezione Cieca",
-    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Percezione Cieca</h3>\n<p>*A partire dal 14° livello, ottieni Vista Cieca con un raggio di 9 metri. Entro tale raggio, puoi vedere efficacemente qualsiasi cosa non sia completamente coperta, anche se sei accecato o al buio. Inoltre, puoi individuare una creatura invisibile entro questo raggio, a meno che la creatura non si nasconda con successo da te.*</p>"
+    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Percezione Cieca</h3>\n<p>*A partire dal 14° livello, ottieni Vista Cieca con un raggio di 9 metri. Entro tale raggio, puoi vedere efficacemente qualsiasi cosa non sia completamente coperta, anche se sei accecato o al buio. Inoltre, puoi individuare una creatura invisibile entro questo raggio, a meno che la creatura non si nasconda con successo da te.*</p>",
+    "_id": "bbc91a7d46d96627",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Furtivo",
+      "identifier": "percezione-cieca"
+    }
   },
   {
     "name": "Mente Sfuggente",
-    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Mente Sfuggente</h3>\n<p>*Al 15° livello, hai acquisito una maggiore forza mentale. Ottieni competenza nei tiri salvezza su Saggezza.*</p>"
+    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Mente Sfuggente</h3>\n<p>*Al 15° livello, hai acquisito una maggiore forza mentale. Ottieni competenza nei tiri salvezza su Saggezza.*</p>",
+    "_id": "adf6fd47ffab015a",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Furtivo",
+      "identifier": "mente-sfuggente"
+    }
   },
   {
     "name": "Inafferrabile",
-    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Inafferrabile</h3>\n<p>*Al 18° livello, sei così evasivo che gli attaccanti raramente hanno la meglio su di te. Nessun tiro per colpire ha vantaggio contro di te mentre non sei Incapacitato.*</p>"
+    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Inafferrabile</h3>\n<p>*Al 18° livello, sei così evasivo che gli attaccanti raramente hanno la meglio su di te. Nessun tiro per colpire ha vantaggio contro di te mentre non sei Incapacitato.*</p>",
+    "_id": "e40ec7bd882cbcbc",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Furtivo",
+      "identifier": "inafferrabile"
+    }
   },
   {
     "name": "Colpo di Fortuna",
-    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Colpo di Fortuna</h3>\n<p>*Al 20° livello, possiedi un’abilità straordinaria nel riuscire quando serve. Se un tuo attacco manca un bersaglio entro portata, puoi trasformare il fallimento in un successo. In alternativa, se fallisci una prova di caratteristica, puoi considerare il tiro del d20 come un 20. Una volta utilizzata questa capacità, non puoi usarla di nuovo fino a quando non completi un riposo breve o lungo.*</p>"
+    "description": "<p><em>Classe: Mago Furtivo</em></p>\n<h3>Colpo di Fortuna</h3>\n<p>*Al 20° livello, possiedi un’abilità straordinaria nel riuscire quando serve. Se un tuo attacco manca un bersaglio entro portata, puoi trasformare il fallimento in un successo. In alternativa, se fallisci una prova di caratteristica, puoi considerare il tiro del d20 come un 20. Una volta utilizzata questa capacità, non puoi usarla di nuovo fino a quando non completi un riposo breve o lungo.*</p>",
+    "_id": "37a8b9390cea8dd1",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Furtivo",
+      "identifier": "colpo-di-fortuna"
+    }
   },
   {
     "name": "Magia nata o insegnata:",
-    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Magia nata o insegnata:</h3>\n<p>*A partire dal 1° livello, possiedi un’abilità magica innata oppure hai appreso la magia tramite un addestramento intensivo. Scegli una Magia. Questa scelta ti conferisce capacità ai livelli 1°, 3°, 6°, 11° e 18°. Anche se multiclasse, inizi sempre e comunque con una sola magia.*</p>\n<p>**Punti Mana (MP):** *I tuoi Punti Mana massimi sono pari al tuo livello da Mago di Strada + il tuo modificatore di Carisma. Recuperi tutti i Punti Mana spesi dopo un riposo lungo.*</p>\n<hr>\n<p>**Lancio degli Incantesimi:** *Accedi agli incantesimi man mano che sali di livello, seguendo la progressione:*</p>\n<li>**Livello 1:** Trucchetti</li>\n<li>**Livello 2:** Incantesimi di 1° livello</li>\n<li>**Livello 4:** Incantesimi di 2° livello</li>\n<li>**Livello 8:** Incantesimi di 3° livello</li>\n<li>**Livello 10:** Incantesimi di 4° livello</li>\n<li>**Livello 12:** Incantesimi di 5° livello</li>\n<li>**Livello 14:** Incantesimi di 6° livello</li>\n<li>**Livello 16:** Incantesimi di 7° livello</li>\n<hr>\n<p>**Acquisizione di Incantesimi:** *Ottieni un nuovo incantesimo ogni volta che sali di livello.*</p>\n<hr>\n<li>*Puoi apprendere fino a un massimo di 6 trucchetti.*</li>\n<li>*Puoi apprendere fino a 4 incantesimi per ciascun livello.*</li>\n<hr>\n<li>*I trucchetti costano 0 MP.*</li>\n<li>*Gli incantesimi costano Punti Mana pari al loro livello (es. incantesimo di 1° livello = 1 MP, incantesimo di 2° livello = 2 MP, ecc.).*</li>\n<hr>\n<p>*Il Carisma è la tua caratteristica per il lancio degli incantesimi, poiché canalizzi la magia attraverso forza di personalità, abilità nello spettacolo e performance coinvolgenti. La tua magia è tanto spettacolare e teatrale quanto potente. Intrecci gli incantesimi con stile, usando il tuo fascino naturale per piegare la trama magica alla tua volontà.*</p>\n<li>CD Tiro Salvezza Incantesimo: 8 + Bonus di Competenza + Modificatore di Carisma</li>\n<li>Bonus al Tiro per Colpire Incantesimo: Bonus di Competenza + Modificatore di Carisma</li>"
+    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Magia nata o insegnata:</h3>\n<p>*A partire dal 1° livello, possiedi un’abilità magica innata oppure hai appreso la magia tramite un addestramento intensivo. Scegli una Magia. Questa scelta ti conferisce capacità ai livelli 1°, 3°, 6°, 11° e 18°. Anche se multiclasse, inizi sempre e comunque con una sola magia.*</p>\n<p>**Punti Mana (MP):** *I tuoi Punti Mana massimi sono pari al tuo livello da Mago di Strada + il tuo modificatore di Carisma. Recuperi tutti i Punti Mana spesi dopo un riposo lungo.*</p>\n<hr>\n<p>**Lancio degli Incantesimi:** *Accedi agli incantesimi man mano che sali di livello, seguendo la progressione:*</p>\n<li>**Livello 1:** Trucchetti</li>\n<li>**Livello 2:** Incantesimi di 1° livello</li>\n<li>**Livello 4:** Incantesimi di 2° livello</li>\n<li>**Livello 8:** Incantesimi di 3° livello</li>\n<li>**Livello 10:** Incantesimi di 4° livello</li>\n<li>**Livello 12:** Incantesimi di 5° livello</li>\n<li>**Livello 14:** Incantesimi di 6° livello</li>\n<li>**Livello 16:** Incantesimi di 7° livello</li>\n<hr>\n<p>**Acquisizione di Incantesimi:** *Ottieni un nuovo incantesimo ogni volta che sali di livello.*</p>\n<hr>\n<li>*Puoi apprendere fino a un massimo di 6 trucchetti.*</li>\n<li>*Puoi apprendere fino a 4 incantesimi per ciascun livello.*</li>\n<hr>\n<li>*I trucchetti costano 0 MP.*</li>\n<li>*Gli incantesimi costano Punti Mana pari al loro livello (es. incantesimo di 1° livello = 1 MP, incantesimo di 2° livello = 2 MP, ecc.).*</li>\n<hr>\n<p>*Il Carisma è la tua caratteristica per il lancio degli incantesimi, poiché canalizzi la magia attraverso forza di personalità, abilità nello spettacolo e performance coinvolgenti. La tua magia è tanto spettacolare e teatrale quanto potente. Intrecci gli incantesimi con stile, usando il tuo fascino naturale per piegare la trama magica alla tua volontà.*</p>\n<li>CD Tiro Salvezza Incantesimo: 8 + Bonus di Competenza + Modificatore di Carisma</li>\n<li>Bonus al Tiro per Colpire Incantesimo: Bonus di Competenza + Modificatore di Carisma</li>",
+    "_id": "f8938e3e44f282b4",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Strada",
+      "identifier": "magia-nata-o-insegnata"
+    }
   },
   {
     "name": "Performance Magica",
-    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Performance Magica</h3>\n<p>*Al 1° livello, la tua magia è strettamente intrecciata con la tua espressione artistica. Puoi canalizzare i tuoi incantesimi attraverso canto, danza o l’uso di uno strumento musicale: scegli uno strumento magico o \"Danza\" e seleziona il tuo stile di danza (Break Dance, Balletto, ecc.). Scegli uno di questi come tuo mezzo preferito di performance, e ottieni i seguenti benefici:*</p>\n<li>**Miglioramento del Lancio:** Quando lanci un incantesimo usando il tuo mezzo di performance scelto, ottieni un bonus di +1 al tiro per colpire o al CD del tiro salvezza sul primo incantesimo di ogni incontro di combattimento.</li>\n<li>**Maestria nella Performance:** Ottieni competenza nell’abilità Esibizione. Se sei già competente, ottieni invece maestria nell’Esibizione.</li>"
+    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Performance Magica</h3>\n<p>*Al 1° livello, la tua magia è strettamente intrecciata con la tua espressione artistica. Puoi canalizzare i tuoi incantesimi attraverso canto, danza o l’uso di uno strumento musicale: scegli uno strumento magico o \"Danza\" e seleziona il tuo stile di danza (Break Dance, Balletto, ecc.). Scegli uno di questi come tuo mezzo preferito di performance, e ottieni i seguenti benefici:*</p>\n<li>**Miglioramento del Lancio:** Quando lanci un incantesimo usando il tuo mezzo di performance scelto, ottieni un bonus di +1 al tiro per colpire o al CD del tiro salvezza sul primo incantesimo di ogni incontro di combattimento.</li>\n<li>**Maestria nella Performance:** Ottieni competenza nell’abilità Esibizione. Se sei già competente, ottieni invece maestria nell’Esibizione.</li>",
+    "_id": "afdc74fa7e940670",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Strada",
+      "identifier": "performance-magica"
+    }
   },
   {
     "name": "Miglioramento della Performance",
-    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Miglioramento della Performance</h3>\n<p>*Al 2° livello, il tuo stile di performance magica ti concede abilità aggiuntive:*</p>\n<li>**Canto della Rapidità** (se hai scelto Canto): Quando suoni il tuo strumento come parte della performance, puoi spendere 1 Punto Mana per trasformare un'azione che compi in un'azione bonus. Puoi usare questa capacità un numero di volte pari al tuo modificatore di Carisma (minimo 1), e recuperi tutti gli usi spesi dopo un riposo lungo. Al 6° livello questo diventa Modificatore di Carisma + Bonus di Competenza in uso.</li>\n<li>**Danza della Grazia** (se hai scelto Danza): Ogni volta che lanci un incantesimo di Illusione o Incantamento, puoi muoverti fino a metà della tua velocità senza provocare attacchi di opportunità. All’8° livello questo diventa tutta la tua velocità.</li>"
+    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Miglioramento della Performance</h3>\n<p>*Al 2° livello, il tuo stile di performance magica ti concede abilità aggiuntive:*</p>\n<li>**Canto della Rapidità** (se hai scelto Canto): Quando suoni il tuo strumento come parte della performance, puoi spendere 1 Punto Mana per trasformare un'azione che compi in un'azione bonus. Puoi usare questa capacità un numero di volte pari al tuo modificatore di Carisma (minimo 1), e recuperi tutti gli usi spesi dopo un riposo lungo. Al 6° livello questo diventa Modificatore di Carisma + Bonus di Competenza in uso.</li>\n<li>**Danza della Grazia** (se hai scelto Danza): Ogni volta che lanci un incantesimo di Illusione o Incantamento, puoi muoverti fino a metà della tua velocità senza provocare attacchi di opportunità. All’8° livello questo diventa tutta la tua velocità.</li>",
+    "_id": "4e9833b04a9de857",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Strada",
+      "identifier": "miglioramento-della-performance"
+    }
   },
   {
     "name": "Miglioramento del punteggio di caratteristica",
-    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Miglioramento del punteggio di caratteristica</h3>\n<p>*Quando raggiungi il 4° livello, e di nuovo all'8°, 12°, 16° e 19° livello, puoi aumentare un punteggio di caratteristica a tua scelta di 2, oppure puoi aumentare due punteggi di caratteristica a tua scelta di 1. Come di norma, non puoi aumentare un punteggio di caratteristica oltre 20 utilizzando questo privilegio. OPPURE puoi rinunciare al miglioramento del punteggio di caratteristica per acquisire una Impresa.*</p>"
+    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Miglioramento del punteggio di caratteristica</h3>\n<p>*Quando raggiungi il 4° livello, e di nuovo all'8°, 12°, 16° e 19° livello, puoi aumentare un punteggio di caratteristica a tua scelta di 2, oppure puoi aumentare due punteggi di caratteristica a tua scelta di 1. Come di norma, non puoi aumentare un punteggio di caratteristica oltre 20 utilizzando questo privilegio. OPPURE puoi rinunciare al miglioramento del punteggio di caratteristica per acquisire una Impresa.*</p>",
+    "_id": "0380bac773793745",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Strada",
+      "identifier": "miglioramento-del-punteggio-di-caratteristica"
+    }
   },
   {
     "name": "Maestria della Performance",
-    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Maestria della Performance</h3>\n<p>*Al 5° livello, la tua padronanza della magia performativa si approfondisce, permettendoti di potenziare ulteriormente le tue capacità. Scegli uno dei seguenti miglioramenti in base al mezzo di performance scelto:*</p>\n<p>**Miglioramenti del Canto:**</p>\n<li>**Melodia Risonante:** Quando lanci un incantesimo che infligge danni, puoi spendere 2 Punti Mana aggiuntivi per far \"rimbalzare\" l’incantesimo, colpendo un’altra creatura a scelta entro 6 metri dal bersaglio originale. La seconda creatura subisce metà dei danni inflitti al bersaglio originale.</li>\n<li>**Ballata Potenziante:** Quando lanci un incantesimo che richiede un tiro per colpire, puoi spendere 2 Punti Mana aggiuntivi per ottenere un bonus di +1 al tiro per colpire.</li>\n<li>**Scudo Armonico:** Quando lanci un incantesimo che richiede un tiro salvezza, puoi spendere 1 Punto Mana aggiuntivo per concedere a tutti gli alleati entro 9 metri un bonus di +2 ai tiri salvezza contro quell’incantesimo. In alternativa, puoi spendere 1 Punto Mana per escludere un singolo alleato dall’effetto dell’incantesimo, ma non puoi applicare entrambi gli effetti sullo stesso incantesimo.</li>\n<p>**Miglioramenti della Danza:**</p>\n<li>**Fiammata Accecante:** Quando usi Danza della Grazia per muoverti, puoi spendere 2 Punti Mana aggiuntivi per creare una serie di movimenti che impone svantaggio ai tiri per colpire contro di te fino all’inizio del tuo prossimo turno.</li>\n<li>**Derviscio Turbinante:** Quando usi Danza della Grazia per muoverti, puoi spendere 2 Punti Mana aggiuntivi per effettuare un attacco con incantesimo in mischia contro una creatura entro 1,5 metri da te. Se colpisci, il bersaglio subisce 1d4 danni da Forza aggiuntivi ed è spinto indietro di 6 metri.</li>\n<li>**Distrazione Illusoria:** Quando usi Danza della Grazia per muoverti, puoi spendere 1 Punto Mana aggiuntivo per creare un’immagine illusoria di te stesso. L’immagine rimane nello spazio precedente per 1 turno e può essere bersaglio di attacchi, ma ha CA 10 + modificatore di Destrezza e 1 + Bonus di Competenza punti ferita. Se l’intelligenza della creatura è inferiore a 10, attacca automaticamente l’illusione; altrimenti deve superare una prova di Intuizione (CD Tiro Salvezza Incantesimo), in caso di fallimento pensa che l’illusione sia te, altrimenti nota la tua vera posizione.</li>"
+    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Maestria della Performance</h3>\n<p>*Al 5° livello, la tua padronanza della magia performativa si approfondisce, permettendoti di potenziare ulteriormente le tue capacità. Scegli uno dei seguenti miglioramenti in base al mezzo di performance scelto:*</p>\n<p>**Miglioramenti del Canto:**</p>\n<li>**Melodia Risonante:** Quando lanci un incantesimo che infligge danni, puoi spendere 2 Punti Mana aggiuntivi per far \"rimbalzare\" l’incantesimo, colpendo un’altra creatura a scelta entro 6 metri dal bersaglio originale. La seconda creatura subisce metà dei danni inflitti al bersaglio originale.</li>\n<li>**Ballata Potenziante:** Quando lanci un incantesimo che richiede un tiro per colpire, puoi spendere 2 Punti Mana aggiuntivi per ottenere un bonus di +1 al tiro per colpire.</li>\n<li>**Scudo Armonico:** Quando lanci un incantesimo che richiede un tiro salvezza, puoi spendere 1 Punto Mana aggiuntivo per concedere a tutti gli alleati entro 9 metri un bonus di +2 ai tiri salvezza contro quell’incantesimo. In alternativa, puoi spendere 1 Punto Mana per escludere un singolo alleato dall’effetto dell’incantesimo, ma non puoi applicare entrambi gli effetti sullo stesso incantesimo.</li>\n<p>**Miglioramenti della Danza:**</p>\n<li>**Fiammata Accecante:** Quando usi Danza della Grazia per muoverti, puoi spendere 2 Punti Mana aggiuntivi per creare una serie di movimenti che impone svantaggio ai tiri per colpire contro di te fino all’inizio del tuo prossimo turno.</li>\n<li>**Derviscio Turbinante:** Quando usi Danza della Grazia per muoverti, puoi spendere 2 Punti Mana aggiuntivi per effettuare un attacco con incantesimo in mischia contro una creatura entro 1,5 metri da te. Se colpisci, il bersaglio subisce 1d4 danni da Forza aggiuntivi ed è spinto indietro di 6 metri.</li>\n<li>**Distrazione Illusoria:** Quando usi Danza della Grazia per muoverti, puoi spendere 1 Punto Mana aggiuntivo per creare un’immagine illusoria di te stesso. L’immagine rimane nello spazio precedente per 1 turno e può essere bersaglio di attacchi, ma ha CA 10 + modificatore di Destrezza e 1 + Bonus di Competenza punti ferita. Se l’intelligenza della creatura è inferiore a 10, attacca automaticamente l’illusione; altrimenti deve superare una prova di Intuizione (CD Tiro Salvezza Incantesimo), in caso di fallimento pensa che l’illusione sia te, altrimenti nota la tua vera posizione.</li>",
+    "_id": "372f65b152fe334c",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Strada",
+      "identifier": "maestria-della-performance"
+    }
   },
   {
     "name": "Spettacolo Mozzafiato",
-    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Spettacolo Mozzafiato</h3>\n<p>*Al 7° livello, le tue performance diventano leggendarie, catturando il pubblico e piegando la realtà alla tua volontà. Come azione, puoi spendere 5 Punti Mana per creare uno Spettacolo Mozzafiato. Scegli uno dei seguenti effetti:*</p>\n<li>**Esibizione Abbagliante:** Libera una performance ipnotizzante di luce, suono e illusione. Ogni creatura entro 18 metri da te deve superare un tiro salvezza su Saggezza contro il tuo CD Tiro Salvezza Incantesimo o rimanere stordita finché non riesce a un tiro salvezza su Saggezza all’inizio del proprio turno.</li>\n<li>**Favore della Fortuna:** Intrecci un incantesimo di fortuna nella tua performance. Quando usi la capacità Danza della Grazia, la capacità Canto della Rapidità, o superi una prova di Performance per ballo o canto, scegli fino a un numero di creature pari al tuo Bonus di Competenza entro 9 metri che possono vederti o sentirti. Per la prossima ora, sono fortunati grazie alla tua performance. Per i successivi 2 turni di combattimento all’interno di questa ora, aggiungono 1d4 a tutti i loro tiri di dado d20.</li>\n<li>**Crescendo Elementale** (6 Punti Mana): Canalizzi il potere grezzo degli elementi nella tua performance, creando uno spettacolo magico spettacolare. Scegli un tipo di danno: acido, freddo, fuoco, fulmine o tuono in base alla tua magia scelta. Crei una sfera con raggio di 9 metri centrata su di te. Ogni creatura nell’area deve effettuare un tiro salvezza su Destrezza contro il tuo CD Tiro Salvezza Incantesimo, subendo 4d6 danni del tipo scelto in caso di fallimento, o la metà se riesce. Chi termina il proprio turno in questa area deve rifare il tiro salvezza subendo 2d4 danni dello stesso tipo. Il raggio termina alla fine del tuo prossimo turno.</li>"
+    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Spettacolo Mozzafiato</h3>\n<p>*Al 7° livello, le tue performance diventano leggendarie, catturando il pubblico e piegando la realtà alla tua volontà. Come azione, puoi spendere 5 Punti Mana per creare uno Spettacolo Mozzafiato. Scegli uno dei seguenti effetti:*</p>\n<li>**Esibizione Abbagliante:** Libera una performance ipnotizzante di luce, suono e illusione. Ogni creatura entro 18 metri da te deve superare un tiro salvezza su Saggezza contro il tuo CD Tiro Salvezza Incantesimo o rimanere stordita finché non riesce a un tiro salvezza su Saggezza all’inizio del proprio turno.</li>\n<li>**Favore della Fortuna:** Intrecci un incantesimo di fortuna nella tua performance. Quando usi la capacità Danza della Grazia, la capacità Canto della Rapidità, o superi una prova di Performance per ballo o canto, scegli fino a un numero di creature pari al tuo Bonus di Competenza entro 9 metri che possono vederti o sentirti. Per la prossima ora, sono fortunati grazie alla tua performance. Per i successivi 2 turni di combattimento all’interno di questa ora, aggiungono 1d4 a tutti i loro tiri di dado d20.</li>\n<li>**Crescendo Elementale** (6 Punti Mana): Canalizzi il potere grezzo degli elementi nella tua performance, creando uno spettacolo magico spettacolare. Scegli un tipo di danno: acido, freddo, fuoco, fulmine o tuono in base alla tua magia scelta. Crei una sfera con raggio di 9 metri centrata su di te. Ogni creatura nell’area deve effettuare un tiro salvezza su Destrezza contro il tuo CD Tiro Salvezza Incantesimo, subendo 4d6 danni del tipo scelto in caso di fallimento, o la metà se riesce. Chi termina il proprio turno in questa area deve rifare il tiro salvezza subendo 2d4 danni dello stesso tipo. Il raggio termina alla fine del tuo prossimo turno.</li>",
+    "_id": "eacfb2eb931fd59f",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Strada",
+      "identifier": "spettacolo-mozzafiato"
+    }
   },
   {
     "name": "Performance Ispirante",
-    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Performance Ispirante</h3>\n<p>*Al 10° livello, le tue performance raggiungono un livello in grado di ispirare e motivare chi ti circonda. Una volta per riposo lungo, come azione, puoi esibirti per i tuoi alleati, rafforzando il loro spirito e preparandoli alle sfide future. Scegli fino a cinque creature entro 9 metri da te. Per le prossime 8 ore, ciascun bersaglio riceve uno dei seguenti benefici:*</p>\n<li>**Morale Rinforzato:** Il bersaglio ottiene Punti Ferita Temporanei pari a 1d10 + modificatore di Carisma.</li>\n<li>**Nervi d’Acciaio:** Il bersaglio ha vantaggio ai tiri salvezza contro spavento o incantamento.</li>\n<li>**Concentrazione Migliorata:** Il bersaglio ha vantaggio alle prove di concentrazione.</li>\n<li>**Spirito Instancabile:** Il bersaglio ha vantaggio ai tiri salvezza su Costituzione contro l’esaurimento.</li>"
+    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Performance Ispirante</h3>\n<p>*Al 10° livello, le tue performance raggiungono un livello in grado di ispirare e motivare chi ti circonda. Una volta per riposo lungo, come azione, puoi esibirti per i tuoi alleati, rafforzando il loro spirito e preparandoli alle sfide future. Scegli fino a cinque creature entro 9 metri da te. Per le prossime 8 ore, ciascun bersaglio riceve uno dei seguenti benefici:*</p>\n<li>**Morale Rinforzato:** Il bersaglio ottiene Punti Ferita Temporanei pari a 1d10 + modificatore di Carisma.</li>\n<li>**Nervi d’Acciaio:** Il bersaglio ha vantaggio ai tiri salvezza contro spavento o incantamento.</li>\n<li>**Concentrazione Migliorata:** Il bersaglio ha vantaggio alle prove di concentrazione.</li>\n<li>**Spirito Instancabile:** Il bersaglio ha vantaggio ai tiri salvezza su Costituzione contro l’esaurimento.</li>",
+    "_id": "afe0456d6ad8c968",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Strada",
+      "identifier": "performance-ispirante"
+    }
   },
   {
     "name": "Riarmo Musicale",
-    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Riarmo Musicale</h3>\n<p>*Al 13° livello, la tua padronanza della magia performativa ti permette di integrare perfettamente il tuo mezzo scelto nel combattimento. Scegli uno dei seguenti miglioramenti in base al tuo stile di performance preferito:*</p>\n<li>**Strumentazione Virtuosa (Canto):** Il tuo strumento musicale si trasforma in un’arma con cui sei competente. La trasformazione è puramente estetica, ma lo strumento mantiene le sue proprietà magiche e può essere usato per lanciare incantesimi con un bonus aggiuntivo di +1 ai tiri per colpire o ai CD dei tiri salvezza. Se lo strumento viene distrutto, si riformerà dopo un riposo lungo.</li>\n<li>**Danza Armata (Danza):** I tuoi movimenti aggraziati diventano una danza letale di lame. Quando impugni un’arma mentre usi Danza della Grazia, puoi considerare l’attacco con l’arma come un incantesimo ai fini delle capacità Magia Performativa e Maestria della Performance. Inoltre, puoi usare la tua azione bonus per effettuare un colpo disarmato dopo un attacco con arma in mischia. Qualsiasi arma utilizzata infligge anche un Dado Danno aggiuntivo.</li>"
+    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Riarmo Musicale</h3>\n<p>*Al 13° livello, la tua padronanza della magia performativa ti permette di integrare perfettamente il tuo mezzo scelto nel combattimento. Scegli uno dei seguenti miglioramenti in base al tuo stile di performance preferito:*</p>\n<li>**Strumentazione Virtuosa (Canto):** Il tuo strumento musicale si trasforma in un’arma con cui sei competente. La trasformazione è puramente estetica, ma lo strumento mantiene le sue proprietà magiche e può essere usato per lanciare incantesimi con un bonus aggiuntivo di +1 ai tiri per colpire o ai CD dei tiri salvezza. Se lo strumento viene distrutto, si riformerà dopo un riposo lungo.</li>\n<li>**Danza Armata (Danza):** I tuoi movimenti aggraziati diventano una danza letale di lame. Quando impugni un’arma mentre usi Danza della Grazia, puoi considerare l’attacco con l’arma come un incantesimo ai fini delle capacità Magia Performativa e Maestria della Performance. Inoltre, puoi usare la tua azione bonus per effettuare un colpo disarmato dopo un attacco con arma in mischia. Qualsiasi arma utilizzata infligge anche un Dado Danno aggiuntivo.</li>",
+    "_id": "0a3f8b356948b3c6",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Strada",
+      "identifier": "riarmo-musicale"
+    }
   },
   {
     "name": "Maestria della Performance Potenziata",
-    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Maestria della Performance Potenziata</h3>\n<p>*Al 15° livello, la tua padronanza della magia performativa raggiunge un culmine, permettendoti di potenziare ulteriormente la tua capacità scelta di Maestria della Performance. Inoltre, al 18° livello puoi scegliere una seconda Maestria della Performance.*</p>\n<li>**Miglioramenti per il Canto:**</li>\n<li>**Melodia Risonante:** L’incantesimo risonante ora colpisce due creature aggiuntive invece di una, ciascuna entro 6 metri dalla creatura precedente. La terza creatura subisce metà dei danni della seconda, che subisce metà dei danni della creatura originale.</li>\n<li>**Ballata Potenziante:** Il bonus al tiro per colpire aumenta a +2.</li>\n<li>**Scudo Armonico:** Il bonus ai tiri salvezza degli alleati aumenta a +3, oppure puoi scegliere due alleati che superano automaticamente i loro tiri salvezza.</li>\n<li>**Miglioramenti per la Danza:**</li>\n<li>**Furia Accecante:** Lo svantaggio sui tiri per colpire contro di te ora si applica anche alle creature entro 3 metri da te.</li>\n<li>**Derviscio Turbinante:** Il danno da forza aumenta a 2d8 e la distanza del respingimento aumenta a 9 metri.</li>\n<li>**Distrazione Illusoria:** Ora puoi creare due doppi illusori invece di uno. Ogni doppio ha CA 12 + modificatore di Destrezza e Punti Ferita pari a 5 + bonus di competenza. Se l’intelligenza della creatura è inferiore a 10, attacca automaticamente il doppio; altrimenti deve superare una prova di Intuizione, se fallisce (CD Tiro Salvezza Incantesimo) crederà che l’illusione sei tu, se riesce noterà il vero te.</li>"
+    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Maestria della Performance Potenziata</h3>\n<p>*Al 15° livello, la tua padronanza della magia performativa raggiunge un culmine, permettendoti di potenziare ulteriormente la tua capacità scelta di Maestria della Performance. Inoltre, al 18° livello puoi scegliere una seconda Maestria della Performance.*</p>\n<li>**Miglioramenti per il Canto:**</li>\n<li>**Melodia Risonante:** L’incantesimo risonante ora colpisce due creature aggiuntive invece di una, ciascuna entro 6 metri dalla creatura precedente. La terza creatura subisce metà dei danni della seconda, che subisce metà dei danni della creatura originale.</li>\n<li>**Ballata Potenziante:** Il bonus al tiro per colpire aumenta a +2.</li>\n<li>**Scudo Armonico:** Il bonus ai tiri salvezza degli alleati aumenta a +3, oppure puoi scegliere due alleati che superano automaticamente i loro tiri salvezza.</li>\n<li>**Miglioramenti per la Danza:**</li>\n<li>**Furia Accecante:** Lo svantaggio sui tiri per colpire contro di te ora si applica anche alle creature entro 3 metri da te.</li>\n<li>**Derviscio Turbinante:** Il danno da forza aumenta a 2d8 e la distanza del respingimento aumenta a 9 metri.</li>\n<li>**Distrazione Illusoria:** Ora puoi creare due doppi illusori invece di uno. Ogni doppio ha CA 12 + modificatore di Destrezza e Punti Ferita pari a 5 + bonus di competenza. Se l’intelligenza della creatura è inferiore a 10, attacca automaticamente il doppio; altrimenti deve superare una prova di Intuizione, se fallisce (CD Tiro Salvezza Incantesimo) crederà che l’illusione sei tu, se riesce noterà il vero te.</li>",
+    "_id": "a32607777aba5705",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Strada",
+      "identifier": "maestria-della-performance-potenziata"
+    }
   },
   {
     "name": "Performance Leggendaria",
-    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Performance Leggendaria</h3>\n<p>*A partire dal 18° livello, la tua padronanza della performance e della magia ha raggiunto il suo apice, permettendoti di canalizzare un potere incredibile attraverso il tuo mezzo scelto. Come azione, puoi spendere tutti i tuoi Punti Mana rimanenti per scatenare una Performance Leggendaria.*</p>\n<li>**Canto della Distruzione (se hai scelto Canto):** La tua musica diventa un canale di energia magica pura. Scegli un tipo di danno: acido, freddo, fuoco, fulmine, tuono o forza. Tutte le creature entro 18 metri da te subiscono 1d10 danni del tipo scelto per ogni Punto Mana speso. Sei immune a questo danno.</li>\n<li>**Danza dell’Effimero (se hai scelto Danza):** I tuoi movimenti diventano un lampo di velocità e grazia impossibili. Diventi invisibile e ottieni velocità di volo pari alla tua velocità di movimento per un numero di turni pari ai Punti Mana spesi. Tutti gli attacchi mentre sei invisibile infliggono un ulteriore 1d10 danni da forza.</li>"
+    "description": "<p><em>Classe: Mago di Strada</em></p>\n<h3>Performance Leggendaria</h3>\n<p>*A partire dal 18° livello, la tua padronanza della performance e della magia ha raggiunto il suo apice, permettendoti di canalizzare un potere incredibile attraverso il tuo mezzo scelto. Come azione, puoi spendere tutti i tuoi Punti Mana rimanenti per scatenare una Performance Leggendaria.*</p>\n<li>**Canto della Distruzione (se hai scelto Canto):** La tua musica diventa un canale di energia magica pura. Scegli un tipo di danno: acido, freddo, fuoco, fulmine, tuono o forza. Tutte le creature entro 18 metri da te subiscono 1d10 danni del tipo scelto per ogni Punto Mana speso. Sei immune a questo danno.</li>\n<li>**Danza dell’Effimero (se hai scelto Danza):** I tuoi movimenti diventano un lampo di velocità e grazia impossibili. Diventi invisibile e ottieni velocità di volo pari alla tua velocità di movimento per un numero di turni pari ai Punti Mana spesi. Tutti gli attacchi mentre sei invisibile infliggono un ulteriore 1d10 danni da forza.</li>",
+    "_id": "2a3e9a6f6b27b108",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Strada",
+      "identifier": "performance-leggendaria"
+    }
   },
   {
     "name": "Magia nata o insegnata:",
-    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Magia nata o insegnata:</h3>\n<p>*A partire dal 1° livello, possiedi un’abilità magica innata oppure hai appreso la magia tramite un addestramento intensivo. Scegli una Magia. Questa scelta ti conferisce capacità ai livelli 1°, 3°, 6°, 11° e 18°. Anche se multiclasse, inizi sempre e comunque con una sola magia.*</p>\n<p>**Punti Mana (MP):** I tuoi Punti Mana massimi sono pari al tuo livello da Mago di Supporto. Recuperi tutti i Punti Mana spesi dopo un riposo lungo.</p>\n<hr>\n<p>**Lancio degli Incantesimi:** Accedi agli incantesimi man mano che sali di livello, seguendo la progressione:</p>\n<li>**Livello 1:** Trucchetti e incantesimi di 1° livello</li>\n<li>**Livello 3:** Incantesimi di 2° livello</li>\n<li>**Livello 5:** Incantesimi di 3° livello</li>\n<li>**Livello 7:** Incantesimi di 4° livello</li>\n<li>**Livello 9:** Incantesimi di 5° livello</li>\n<li>**Livello 11:** Incantesimi di 6° livello</li>\n<li>**Livello 13:** Incantesimi di 7° livello</li>\n<li>**Livello 16:** Incantesimi di 8° livello</li>\n<hr>\n<p>**Acquisizione di Incantesimi:** Ottieni un nuovo incantesimo di qualsiasi livello che puoi lanciare ogni volta che sali di livello in questa classe.</p>\n<hr>\n<li>Puoi apprendere fino a un massimo di 6 trucchetti.</li>\n<li>Puoi apprendere fino a 4 incantesimi per ciascun livello.</li>\n<hr>\n<li>I trucchetti costano 0 MP.</li>\n<li>Gli incantesimi costano Punti Mana pari al loro livello (es. incantesimo di 1° livello = 1 MP, incantesimo di 2° livello = 2 MP, ecc.).</li>\n<hr>\n<p>*Quando ottieni questa classe, scegli una caratteristica mentale tra **Intelligenza, Saggezza o Carisma**.</p>\n<p>La caratteristica scelta rappresenta il tuo approccio al supporto magico ed è indicata come **Caratteristica da Incantatore** del **Mago di Supporto**.*</p>\n<hr>\n<p>*Usi la Caratteristica da Incantatore quando un incantesimo fa riferimento al modificatore del tiro per colpire con l’incantesimo, riflettendo la tua comprensione del corpo, della mente e del flusso vitale.*</p>\n<p>*Usi la Destrezza per determinare la CD del tiro salvezza degli incantesimi, grazie alla tua rapidità di intervento e precisione nei momenti critici.*</p>\n<li>**CD Tiro Salvezza Incantesimo:** 8 + Bonus di Competenza + Modificatore di Destrezza</li>\n<li>**Bonus al Tiro per Colpire Incantesimo:** Bonus di Competenza + Modificatore della Caratteristica da Incantatore</li>"
+    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Magia nata o insegnata:</h3>\n<p>*A partire dal 1° livello, possiedi un’abilità magica innata oppure hai appreso la magia tramite un addestramento intensivo. Scegli una Magia. Questa scelta ti conferisce capacità ai livelli 1°, 3°, 6°, 11° e 18°. Anche se multiclasse, inizi sempre e comunque con una sola magia.*</p>\n<p>**Punti Mana (MP):** I tuoi Punti Mana massimi sono pari al tuo livello da Mago di Supporto. Recuperi tutti i Punti Mana spesi dopo un riposo lungo.</p>\n<hr>\n<p>**Lancio degli Incantesimi:** Accedi agli incantesimi man mano che sali di livello, seguendo la progressione:</p>\n<li>**Livello 1:** Trucchetti e incantesimi di 1° livello</li>\n<li>**Livello 3:** Incantesimi di 2° livello</li>\n<li>**Livello 5:** Incantesimi di 3° livello</li>\n<li>**Livello 7:** Incantesimi di 4° livello</li>\n<li>**Livello 9:** Incantesimi di 5° livello</li>\n<li>**Livello 11:** Incantesimi di 6° livello</li>\n<li>**Livello 13:** Incantesimi di 7° livello</li>\n<li>**Livello 16:** Incantesimi di 8° livello</li>\n<hr>\n<p>**Acquisizione di Incantesimi:** Ottieni un nuovo incantesimo di qualsiasi livello che puoi lanciare ogni volta che sali di livello in questa classe.</p>\n<hr>\n<li>Puoi apprendere fino a un massimo di 6 trucchetti.</li>\n<li>Puoi apprendere fino a 4 incantesimi per ciascun livello.</li>\n<hr>\n<li>I trucchetti costano 0 MP.</li>\n<li>Gli incantesimi costano Punti Mana pari al loro livello (es. incantesimo di 1° livello = 1 MP, incantesimo di 2° livello = 2 MP, ecc.).</li>\n<hr>\n<p>*Quando ottieni questa classe, scegli una caratteristica mentale tra **Intelligenza, Saggezza o Carisma**.</p>\n<p>La caratteristica scelta rappresenta il tuo approccio al supporto magico ed è indicata come **Caratteristica da Incantatore** del **Mago di Supporto**.*</p>\n<hr>\n<p>*Usi la Caratteristica da Incantatore quando un incantesimo fa riferimento al modificatore del tiro per colpire con l’incantesimo, riflettendo la tua comprensione del corpo, della mente e del flusso vitale.*</p>\n<p>*Usi la Destrezza per determinare la CD del tiro salvezza degli incantesimi, grazie alla tua rapidità di intervento e precisione nei momenti critici.*</p>\n<li>**CD Tiro Salvezza Incantesimo:** 8 + Bonus di Competenza + Modificatore di Destrezza</li>\n<li>**Bonus al Tiro per Colpire Incantesimo:** Bonus di Competenza + Modificatore della Caratteristica da Incantatore</li>",
+    "_id": "d3aa8210f518c171",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Supporto",
+      "identifier": "magia-nata-o-insegnata"
+    }
   },
   {
     "name": "Determinazione Inestinguibile",
-    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Determinazione Inestinguibile</h3>\n<p>*A partire dal 1° livello, puoi ispirare gli altri con parole commoventi o con la tua voce incantevole. Per farlo, usi un'azione bonus nel tuo turno per scegliere una creatura diversa da te entro 18 metri che possa sentirti. Quella creatura ottiene un dado di Determinazione Inestinguibile, un d6.*</p>\n<br>\n<p>*Una volta entro i successivi 10 minuti, la creatura può tirare il dado e aggiungere il risultato a una prova di caratteristica, a un tiro per colpire o a un tiro salvezza che effettua. La creatura può decidere di usare il dado di Determinazione Inestinguibile dopo aver tirato il d20, ma deve decidere prima che il DM annunci se il tiro ha successo o meno. Una volta utilizzato, il dado viene perso. Una creatura può avere al massimo un dado di Determinazione Inestinguibile alla volta.*</p>\n<li>Puoi usare questa capacità un numero di volte pari al tuo modificatore di Saggezza (minimo una volta). Recuperi gli usi spesi al termine di un riposo lungo.*</li>\n<hr>\n<p>**Il dado di Determinazione Inestinguibile cambia man mano che sali di livello in questa classe: d8 al 5° livello, d10 al 10° livello e d12 al 15° livello.**</p>"
+    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Determinazione Inestinguibile</h3>\n<p>*A partire dal 1° livello, puoi ispirare gli altri con parole commoventi o con la tua voce incantevole. Per farlo, usi un'azione bonus nel tuo turno per scegliere una creatura diversa da te entro 18 metri che possa sentirti. Quella creatura ottiene un dado di Determinazione Inestinguibile, un d6.*</p>\n<br>\n<p>*Una volta entro i successivi 10 minuti, la creatura può tirare il dado e aggiungere il risultato a una prova di caratteristica, a un tiro per colpire o a un tiro salvezza che effettua. La creatura può decidere di usare il dado di Determinazione Inestinguibile dopo aver tirato il d20, ma deve decidere prima che il DM annunci se il tiro ha successo o meno. Una volta utilizzato, il dado viene perso. Una creatura può avere al massimo un dado di Determinazione Inestinguibile alla volta.*</p>\n<li>Puoi usare questa capacità un numero di volte pari al tuo modificatore di Saggezza (minimo una volta). Recuperi gli usi spesi al termine di un riposo lungo.*</li>\n<hr>\n<p>**Il dado di Determinazione Inestinguibile cambia man mano che sali di livello in questa classe: d8 al 5° livello, d10 al 10° livello e d12 al 15° livello.**</p>",
+    "_id": "79b4c57645e640d2",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Supporto",
+      "identifier": "determinazione-inestinguibile"
+    }
   },
   {
     "name": "Armonia Protettiva",
-    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Armonia Protettiva</h3>\n<p>*A partire dal 2° livello, la tua voce diventa un’armonia in grado di diffondersi tra i tuoi alleati. Come azione bonus, puoi spendere 3 Punti Mana o usare un dado di Determinazione Inestinguibile. Poi scegli un alleato entro 18 metri. Un’aura verde di pura mana si forma intorno a lui, emanando una sfera di 3 metri di raggio.*</p>\n<br>\n<p>*L’alleato scelto e qualsiasi altro alleato all’interno della sfera guadagnano un numero di punti ferita temporanei pari al risultato di un tiro del tuo dado di Determinazione Inestinguibile + il tuo modificatore di Saggezza. Questi punti ferita temporanei durano 1 minuto o fino a esaurimento e non si accumulano.*</p>"
+    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Armonia Protettiva</h3>\n<p>*A partire dal 2° livello, la tua voce diventa un’armonia in grado di diffondersi tra i tuoi alleati. Come azione bonus, puoi spendere 3 Punti Mana o usare un dado di Determinazione Inestinguibile. Poi scegli un alleato entro 18 metri. Un’aura verde di pura mana si forma intorno a lui, emanando una sfera di 3 metri di raggio.*</p>\n<br>\n<p>*L’alleato scelto e qualsiasi altro alleato all’interno della sfera guadagnano un numero di punti ferita temporanei pari al risultato di un tiro del tuo dado di Determinazione Inestinguibile + il tuo modificatore di Saggezza. Questi punti ferita temporanei durano 1 minuto o fino a esaurimento e non si accumulano.*</p>",
+    "_id": "68533838c9b42fea",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Supporto",
+      "identifier": "armonia-protettiva"
+    }
   },
   {
     "name": "Maestria",
-    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Maestria</h3>\n<p>*A partire dal 3° livello, scegli due delle tue competenze in abilità. Il tuo bonus di competenza viene raddoppiato per qualsiasi prova di caratteristica che utilizzi una di queste competenze.*</p>\n<li>*Al 10° livello puoi sceglierne altre due per ottenere lo stesso beneficio.*</li>"
+    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Maestria</h3>\n<p>*A partire dal 3° livello, scegli due delle tue competenze in abilità. Il tuo bonus di competenza viene raddoppiato per qualsiasi prova di caratteristica che utilizzi una di queste competenze.*</p>\n<li>*Al 10° livello puoi sceglierne altre due per ottenere lo stesso beneficio.*</li>",
+    "_id": "f97328ba39bc2089",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Supporto",
+      "identifier": "maestria"
+    }
   },
   {
     "name": "Crescendo Difensivo",
-    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Crescendo Difensivo</h3>\n<p>*A partire dal 5° livello, ottieni accesso a Crescendo Difensivo. Come azione o reazione, puoi spendere 3 Punti Mana per creare una barriera scintillante di mana blu intorno a te o a un alleato entro 9 metri. Questa barriera emana una sfera di 3 metri di raggio e dura fino a 1 minuto, richiedendo concentrazione come se stessi lanciando un incantesimo.*</p>\n<p>*Gli alleati all’interno della barriera ottengono un bonus di +2 alla CA. Come reazione, puoi usare questa capacità quando un alleato entro 9 metri sta per effettuare un tiro salvezza, spendendo 3 Punti Mana per concedergli un +2 al tiro.*</p>\n<li>**La barriera ha punti ferita temporanei pari al modificatore di Saggezza × bonus di competenza. Se i punti ferita temporanei della barriera raggiungono 0 o perdi concentrazione, la barriera si rompe e il bonus alla CA viene perso. Gli alleati possono muoversi liberamente dentro e fuori dalla barriera, beneficiando del bonus solo mentre si trovano nell’area.**</li>"
+    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Crescendo Difensivo</h3>\n<p>*A partire dal 5° livello, ottieni accesso a Crescendo Difensivo. Come azione o reazione, puoi spendere 3 Punti Mana per creare una barriera scintillante di mana blu intorno a te o a un alleato entro 9 metri. Questa barriera emana una sfera di 3 metri di raggio e dura fino a 1 minuto, richiedendo concentrazione come se stessi lanciando un incantesimo.*</p>\n<p>*Gli alleati all’interno della barriera ottengono un bonus di +2 alla CA. Come reazione, puoi usare questa capacità quando un alleato entro 9 metri sta per effettuare un tiro salvezza, spendendo 3 Punti Mana per concedergli un +2 al tiro.*</p>\n<li>**La barriera ha punti ferita temporanei pari al modificatore di Saggezza × bonus di competenza. Se i punti ferita temporanei della barriera raggiungono 0 o perdi concentrazione, la barriera si rompe e il bonus alla CA viene perso. Gli alleati possono muoversi liberamente dentro e fuori dalla barriera, beneficiando del bonus solo mentre si trovano nell’area.**</li>",
+    "_id": "2213efa1343def2e",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Supporto",
+      "identifier": "crescendo-difensivo"
+    }
   },
   {
     "name": "Fonte di Determinazione",
-    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Fonte di Determinazione</h3>\n<p>*A partire dal 6° livello, la tua Determinazione Inestinguibile può ora essere recuperata durante un riposo breve o lungo. Inoltre, il raggio della tua Armonia Protettiva aumenta a 4,5 metri.*</p>\n<p>*Puoi anche spendere 3 Punti Mana per recuperare un dado di Determinazione Inestinguibile, una volta per riposo lungo.*</p>"
+    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Fonte di Determinazione</h3>\n<p>*A partire dal 6° livello, la tua Determinazione Inestinguibile può ora essere recuperata durante un riposo breve o lungo. Inoltre, il raggio della tua Armonia Protettiva aumenta a 4,5 metri.*</p>\n<p>*Puoi anche spendere 3 Punti Mana per recuperare un dado di Determinazione Inestinguibile, una volta per riposo lungo.*</p>",
+    "_id": "4796de7230e44d82",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Supporto",
+      "identifier": "fonte-di-determinazione"
+    }
   },
   {
     "name": "Risonanza",
-    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Risonanza</h3>\n<p>*A partire dall’11° livello, impari a tessere la tua magia attraverso i tuoi alleati, facendo risuonare un singolo incantesimo su più bersagli. Quando lanci un incantesimo con gittata “Tocco” che prende di mira una sola creatura, puoi spendere Punti Mana pari al livello dell’incantesimo per bersagliare un’altra creatura entro 9 metri dal bersaglio originale. Ora puoi anche usare due dadi di Determinazione Inestinguibile per una singola azione, spendendo Punti Mana e dadi per entrambi.*</p>"
+    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Risonanza</h3>\n<p>*A partire dall’11° livello, impari a tessere la tua magia attraverso i tuoi alleati, facendo risuonare un singolo incantesimo su più bersagli. Quando lanci un incantesimo con gittata “Tocco” che prende di mira una sola creatura, puoi spendere Punti Mana pari al livello dell’incantesimo per bersagliare un’altra creatura entro 9 metri dal bersaglio originale. Ora puoi anche usare due dadi di Determinazione Inestinguibile per una singola azione, spendendo Punti Mana e dadi per entrambi.*</p>",
+    "_id": "95891d4d7906ccc8",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Supporto",
+      "identifier": "risonanza"
+    }
   },
   {
     "name": "Purificazione Armonica",
-    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Purificazione Armonica</h3>\n<p>*A partire dal 14° livello, puoi usare la tua padronanza dell’armonia per lenire e purificare le afflizioni fisiche e magiche dei tuoi alleati. Come azione, puoi spendere 3 Punti Mana per scegliere una creatura che puoi vedere entro 18 metri e rimuovere una condizione su di essa. Questa abilità non può rimuovere la condizione di Esaurimento.*</p>\n<li>**In alternativa, puoi usare un’azione bonus per eseguire la stessa purificazione al costo di 6 Punti Mana.**</li>\n<hr>\n<p>*A partire dal 18° livello, il costo in Punti Mana per usare questa abilità si riduce di 1.*</p>"
+    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Purificazione Armonica</h3>\n<p>*A partire dal 14° livello, puoi usare la tua padronanza dell’armonia per lenire e purificare le afflizioni fisiche e magiche dei tuoi alleati. Come azione, puoi spendere 3 Punti Mana per scegliere una creatura che puoi vedere entro 18 metri e rimuovere una condizione su di essa. Questa abilità non può rimuovere la condizione di Esaurimento.*</p>\n<li>**In alternativa, puoi usare un’azione bonus per eseguire la stessa purificazione al costo di 6 Punti Mana.**</li>\n<hr>\n<p>*A partire dal 18° livello, il costo in Punti Mana per usare questa abilità si riduce di 1.*</p>",
+    "_id": "d9c0e1b2b7b591d6",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Supporto",
+      "identifier": "purificazione-armonica"
+    }
   },
   {
     "name": "Cadenza Concertata",
-    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Cadenza Concertata</h3>\n<p>*Infine, al 20° livello, ottieni Cadenza Concertata. A questo livello, puoi ispirare un gruppo di alleati contemporaneamente. Quando usi Determinazione Inestinguibile, puoi scegliere fino a tre creature invece di una sola.*</p>\n<p>*Il costo in Punti Mana per usare Armonia Protettiva e Crescendo Difensivo si riduce di 1 (minimo 1).*</p>"
+    "description": "<p><em>Classe: Mago di Supporto</em></p>\n<h3>Cadenza Concertata</h3>\n<p>*Infine, al 20° livello, ottieni Cadenza Concertata. A questo livello, puoi ispirare un gruppo di alleati contemporaneamente. Quando usi Determinazione Inestinguibile, puoi scegliere fino a tre creature invece di una sola.*</p>\n<p>*Il costo in Punti Mana per usare Armonia Protettiva e Crescendo Difensivo si riduce di 1 (minimo 1).*</p>",
+    "_id": "6adf9581145f435e",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago di Supporto",
+      "identifier": "cadenza-concertata"
+    }
   },
   {
     "name": "Magia nata o insegnata:",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Magia nata o insegnata:</h3>\n<p>*A partire dal 1° livello, possiedi un’abilità magica innata oppure hai appreso la magia tramite un addestramento intensivo. Scegli una Magia. Questa scelta ti conferisce capacità ai livelli 1°, 3°, 6°, 11° e 18°. Anche se multiclasse, inizi sempre e comunque con una sola magia.*</p>\n<p>**Punti Mana (MP):** I tuoi Punti Mana massimi sono pari al tuo **livello da Mago Tattico × 2 + il tuo modificatore di caratteristica rilevante**. Recuperi tutti i Punti Mana spesi dopo un riposo lungo.</p>\n<hr>\n<p>**Lancio degli Incantesimi:** Accedi agli incantesimi man mano che sali di livello, seguendo la progressione:</p>\n<li>**Livello 1:** Trucchetti e incantesimi di 1° livello</li>\n<li>**Livello 3:** Incantesimi di 2° livello</li>\n<li>**Livello 5:** Incantesimi di 3° livello</li>\n<li>**Livello 7:** Incantesimi di 4° livello</li>\n<li>**Livello 9:** Incantesimi di 5° livello</li>\n<li>**Livello 11:** Incantesimi di 6° livello</li>\n<li>**Livello 13:** Incantesimi di 7° livello</li>\n<li>**Livello 15:** Incantesimi di 8° livello</li>\n<li>**Livello 17:** Incantesimi di 9° livello</li>\n<hr>\n<p>**Acquisizione di Incantesimi:** Ottieni un nuovo incantesimo di qualsiasi livello che puoi lanciare ogni volta che sali di livello in questa classe.</p>\n<hr>\n<li>Puoi apprendere fino a un massimo di 6 trucchetti.</li>\n<li>Puoi apprendere fino a 4 incantesimi per ciascun livello.</li>\n<hr>\n<li>I trucchetti costano 0 MP.</li>\n<li>Gli incantesimi costano Punti Mana pari al loro livello (es. incantesimo di 1° livello = 1 MP, incantesimo di 2° livello = 2 MP, ecc.).</li>\n<hr>\n<p>*Quando ottieni questa classe, scegli una caratteristica mentale tra **Intelligenza, Saggezza o Carisma**. La caratteristica scelta rappresenta il tuo approccio strategico alla magia ed è indicata come **Caratteristica da Incantatore** del **Mago Tattico**.*</p>\n<hr>\n<p>*Usi la Caratteristica da Incantatore per analizzare, dirigere e colpire con precisione la Trama magica, secondo il tuo stile tattico personale.*</p>\n<p>*Usi la Saggezza per determinare la CD dei tuoi incantesimi, grazie alla tua capacità di leggere il campo di battaglia e anticipare le mosse dei nemici.*</p>\n<li>**CD Tiro Salvezza Incantesimo:** 8 + Bonus di Competenza + Modificatore di Saggezza</li>\n<li>**Bonus al Tiro per Colpire Incantesimo:** Bonus di Competenza + Modificatore della Caratteristica da Incantatore</li>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Magia nata o insegnata:</h3>\n<p>*A partire dal 1° livello, possiedi un’abilità magica innata oppure hai appreso la magia tramite un addestramento intensivo. Scegli una Magia. Questa scelta ti conferisce capacità ai livelli 1°, 3°, 6°, 11° e 18°. Anche se multiclasse, inizi sempre e comunque con una sola magia.*</p>\n<p>**Punti Mana (MP):** I tuoi Punti Mana massimi sono pari al tuo **livello da Mago Tattico × 2 + il tuo modificatore di caratteristica rilevante**. Recuperi tutti i Punti Mana spesi dopo un riposo lungo.</p>\n<hr>\n<p>**Lancio degli Incantesimi:** Accedi agli incantesimi man mano che sali di livello, seguendo la progressione:</p>\n<li>**Livello 1:** Trucchetti e incantesimi di 1° livello</li>\n<li>**Livello 3:** Incantesimi di 2° livello</li>\n<li>**Livello 5:** Incantesimi di 3° livello</li>\n<li>**Livello 7:** Incantesimi di 4° livello</li>\n<li>**Livello 9:** Incantesimi di 5° livello</li>\n<li>**Livello 11:** Incantesimi di 6° livello</li>\n<li>**Livello 13:** Incantesimi di 7° livello</li>\n<li>**Livello 15:** Incantesimi di 8° livello</li>\n<li>**Livello 17:** Incantesimi di 9° livello</li>\n<hr>\n<p>**Acquisizione di Incantesimi:** Ottieni un nuovo incantesimo di qualsiasi livello che puoi lanciare ogni volta che sali di livello in questa classe.</p>\n<hr>\n<li>Puoi apprendere fino a un massimo di 6 trucchetti.</li>\n<li>Puoi apprendere fino a 4 incantesimi per ciascun livello.</li>\n<hr>\n<li>I trucchetti costano 0 MP.</li>\n<li>Gli incantesimi costano Punti Mana pari al loro livello (es. incantesimo di 1° livello = 1 MP, incantesimo di 2° livello = 2 MP, ecc.).</li>\n<hr>\n<p>*Quando ottieni questa classe, scegli una caratteristica mentale tra **Intelligenza, Saggezza o Carisma**. La caratteristica scelta rappresenta il tuo approccio strategico alla magia ed è indicata come **Caratteristica da Incantatore** del **Mago Tattico**.*</p>\n<hr>\n<p>*Usi la Caratteristica da Incantatore per analizzare, dirigere e colpire con precisione la Trama magica, secondo il tuo stile tattico personale.*</p>\n<p>*Usi la Saggezza per determinare la CD dei tuoi incantesimi, grazie alla tua capacità di leggere il campo di battaglia e anticipare le mosse dei nemici.*</p>\n<li>**CD Tiro Salvezza Incantesimo:** 8 + Bonus di Competenza + Modificatore di Saggezza</li>\n<li>**Bonus al Tiro per Colpire Incantesimo:** Bonus di Competenza + Modificatore della Caratteristica da Incantatore</li>",
+    "_id": "0518708471de3af2",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "magia-nata-o-insegnata"
+    }
   },
   {
     "name": "Mente Tattica",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Mente Tattica</h3>\n<p>*A partire dal 1° livello, il tuo intelletto acuto e la tua abilità strategica ti permettono di anticipare le mosse dei tuoi avversari e reagire con precisione calcolata. Puoi utilizzare il tuo modificatore di **Intelligenza** al posto del modificatore di **Destrezza** per determinare l’Iniziativa.*</p>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Mente Tattica</h3>\n<p>*A partire dal 1° livello, il tuo intelletto acuto e la tua abilità strategica ti permettono di anticipare le mosse dei tuoi avversari e reagire con precisione calcolata. Puoi utilizzare il tuo modificatore di **Intelligenza** al posto del modificatore di **Destrezza** per determinare l’Iniziativa.*</p>",
+    "_id": "36cff07643fa2707",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "mente-tattica"
+    }
   },
   {
     "name": "Analisi degli Incantesimi",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Analisi degli Incantesimi</h3>\n<p>*A partire dal 2° livello, la tua capacità di analizzare e comprendere i modelli magici dei tuoi avversari cresce, fino a diventare qualcosa che puoi attivare a comando.*</p>\n<p>*Come azione, spendendo **3 MP**, puoi concentrare la tua attenzione su una singola creatura che puoi vedere entro **18 metri**. Il bersaglio rimane analizzato per **1 minuto**, a meno che non venga ridotto a 0 punti ferita. Se un bersaglio viene ridotto a 0 punti ferita, puoi usare un’**azione bonus** in un tuo turno successivo per selezionare una nuova creatura.*</p>\n<p>*Per la durata dell’Analisi degli Incantesimi, ottieni i seguenti benefici contro quella creatura. Se l’analisi termina dopo aver completato l’intero minuto, gli effetti ottenuti **persistono sul bersaglio fino alla fine dello scontro**:*</p>\n<li>**Round 2:** ottieni un bonus di **+1 ai tiri per colpire** contro il bersaglio.</li>\n<li>**Round 5:** la **CA del bersaglio è ridotta di 2** contro i tuoi attacchi.</li>\n<li>**Round 10:** ottieni **vantaggio ai tiri per colpire e ai tiri salvezza** contro il bersaglio.</li>\n<p>*Puoi usare questa capacità un numero di volte pari al tuo **modificatore di Intelligenza** (minimo una volta). Recuperi tutti gli usi spesi al termine di un riposo lungo.*</p>\n<p>**Dal 10° livello**, il tempo necessario per ottenere ciascun beneficio viene ridotto:</p>\n<li>**Round 1:** ottieni un bonus di **+1 ai tiri per colpire** contro il bersaglio.</li>\n<li>**Round 3:** la **CA del bersaglio è ridotta di 2** contro i tuoi attacchi.</li>\n<li>**Round 6:** ottieni **vantaggio ai tiri per colpire e ai tiri salvezza** contro il bersaglio.</li>\n<li>**Round 10:** apprendi i **Punti Mana rimanenti**, i **Punti Ferita rimanenti** e tutte le **Immunità, Resistenze e Vulnerabilità** del bersaglio.</li>\n<hr>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Analisi degli Incantesimi</h3>\n<p>*A partire dal 2° livello, la tua capacità di analizzare e comprendere i modelli magici dei tuoi avversari cresce, fino a diventare qualcosa che puoi attivare a comando.*</p>\n<p>*Come azione, spendendo **3 MP**, puoi concentrare la tua attenzione su una singola creatura che puoi vedere entro **18 metri**. Il bersaglio rimane analizzato per **1 minuto**, a meno che non venga ridotto a 0 punti ferita. Se un bersaglio viene ridotto a 0 punti ferita, puoi usare un’**azione bonus** in un tuo turno successivo per selezionare una nuova creatura.*</p>\n<p>*Per la durata dell’Analisi degli Incantesimi, ottieni i seguenti benefici contro quella creatura. Se l’analisi termina dopo aver completato l’intero minuto, gli effetti ottenuti **persistono sul bersaglio fino alla fine dello scontro**:*</p>\n<li>**Round 2:** ottieni un bonus di **+1 ai tiri per colpire** contro il bersaglio.</li>\n<li>**Round 5:** la **CA del bersaglio è ridotta di 2** contro i tuoi attacchi.</li>\n<li>**Round 10:** ottieni **vantaggio ai tiri per colpire e ai tiri salvezza** contro il bersaglio.</li>\n<p>*Puoi usare questa capacità un numero di volte pari al tuo **modificatore di Intelligenza** (minimo una volta). Recuperi tutti gli usi spesi al termine di un riposo lungo.*</p>\n<p>**Dal 10° livello**, il tempo necessario per ottenere ciascun beneficio viene ridotto:</p>\n<li>**Round 1:** ottieni un bonus di **+1 ai tiri per colpire** contro il bersaglio.</li>\n<li>**Round 3:** la **CA del bersaglio è ridotta di 2** contro i tuoi attacchi.</li>\n<li>**Round 6:** ottieni **vantaggio ai tiri per colpire e ai tiri salvezza** contro il bersaglio.</li>\n<li>**Round 10:** apprendi i **Punti Mana rimanenti**, i **Punti Ferita rimanenti** e tutte le **Immunità, Resistenze e Vulnerabilità** del bersaglio.</li>\n<hr>",
+    "_id": "825a68585bfb57c2",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "analisi-degli-incantesimi"
+    }
   },
   {
     "name": "Lancio Rapido",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Lancio Rapido</h3>\n<p>*A partire dal 3° livello, la tua mente tattica ti permette di scatenare rapidamente i tuoi incantesimi nel pieno della battaglia.*</p>\n<p>*Puoi spendere **2 MP** per cambiare il tempo di lancio di un incantesimo da **1 azione a 1 azione bonus**.*</p>\n<p>*Puoi usare questa capacità un numero di volte pari al tuo **bonus di competenza**, e recuperi tutti gli usi spesi al termine di un riposo lungo.*</p>\n<hr>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Lancio Rapido</h3>\n<p>*A partire dal 3° livello, la tua mente tattica ti permette di scatenare rapidamente i tuoi incantesimi nel pieno della battaglia.*</p>\n<p>*Puoi spendere **2 MP** per cambiare il tempo di lancio di un incantesimo da **1 azione a 1 azione bonus**.*</p>\n<p>*Puoi usare questa capacità un numero di volte pari al tuo **bonus di competenza**, e recuperi tutti gli usi spesi al termine di un riposo lungo.*</p>\n<hr>",
+    "_id": "a5c458ddfd0284b1",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "lancio-rapido"
+    }
   },
   {
     "name": "Miglioramento del Punteggio di Caratteristica",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Miglioramento del Punteggio di Caratteristica</h3>\n<p>*Quando raggiungi il 4° livello, e di nuovo all’8°, 12°, 16° e 19° livello, puoi aumentare un punteggio di caratteristica a tua scelta di 2, oppure aumentare due punteggi di caratteristica a tua scelta di 1. Come di norma, non puoi aumentare un punteggio di caratteristica oltre 20 utilizzando questo privilegio.*</p>\n<p>**In alternativa**, puoi rinunciare al miglioramento del punteggio di caratteristica per ottenere un **Talento**.</p>\n<hr>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Miglioramento del Punteggio di Caratteristica</h3>\n<p>*Quando raggiungi il 4° livello, e di nuovo all’8°, 12°, 16° e 19° livello, puoi aumentare un punteggio di caratteristica a tua scelta di 2, oppure aumentare due punteggi di caratteristica a tua scelta di 1. Come di norma, non puoi aumentare un punteggio di caratteristica oltre 20 utilizzando questo privilegio.*</p>\n<p>**In alternativa**, puoi rinunciare al miglioramento del punteggio di caratteristica per ottenere un **Talento**.</p>\n<hr>",
+    "_id": "5d693818a8efd082",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "miglioramento-del-punteggio-di-caratteristica"
+    }
   },
   {
     "name": "Competenza Tattica",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Competenza Tattica</h3>\n<p>*A partire dal 4° livello, la tua brillantezza tattica ti consente di ideare ed eseguire strategie complesse anche nel caos della battaglia.*</p>\n<br>\n<p>*Ottieni accesso a un repertorio di **Piani Tattici**, ognuno con effetti unici che possono essere attivati spendendo Punti Mana. A meno che non sia indicato diversamente, l’attivazione di un Piano Tattico richiede un’**azione**. Apprendi **un Piano Tattico** a tua scelta tra quelli disponibili. Ne apprendi un altro al* ***6°****,* ***12°*** *e* ***18° livello****.* *Puoi avere **un solo Piano Tattico attivo alla volta**, a meno che la descrizione di un piano non indichi diversamente.*</p>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Competenza Tattica</h3>\n<p>*A partire dal 4° livello, la tua brillantezza tattica ti consente di ideare ed eseguire strategie complesse anche nel caos della battaglia.*</p>\n<br>\n<p>*Ottieni accesso a un repertorio di **Piani Tattici**, ognuno con effetti unici che possono essere attivati spendendo Punti Mana. A meno che non sia indicato diversamente, l’attivazione di un Piano Tattico richiede un’**azione**. Apprendi **un Piano Tattico** a tua scelta tra quelli disponibili. Ne apprendi un altro al* ***6°****,* ***12°*** *e* ***18° livello****.* *Puoi avere **un solo Piano Tattico attivo alla volta**, a meno che la descrizione di un piano non indichi diversamente.*</p>",
+    "_id": "9e5520e5c887a0f1",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "competenza-tattica"
+    }
   },
   {
     "name": "Conservazione del Mana",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Conservazione del Mana</h3>\n<p>*A partire dal 6° livello, il tuo approccio tattico alla magia ti consente di conservare e rigenerare le tue riserve di mana.*</p>\n<p>*Una volta per riposo lungo, puoi recuperare un numero di **Punti Mana pari al tuo livello da Mago Tattico**. Puoi scegliere se recuperare tutti i Punti Mana in una sola volta oppure dividerli in più utilizzi:*</p>\n<li>recuperandone **metà per volta** in due usi distinti,</li>\n<li>oppure suddividendoli in **più utilizzi minori**, a tua scelta.</li>\n<hr>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Conservazione del Mana</h3>\n<p>*A partire dal 6° livello, il tuo approccio tattico alla magia ti consente di conservare e rigenerare le tue riserve di mana.*</p>\n<p>*Una volta per riposo lungo, puoi recuperare un numero di **Punti Mana pari al tuo livello da Mago Tattico**. Puoi scegliere se recuperare tutti i Punti Mana in una sola volta oppure dividerli in più utilizzi:*</p>\n<li>recuperandone **metà per volta** in due usi distinti,</li>\n<li>oppure suddividendoli in **più utilizzi minori**, a tua scelta.</li>\n<hr>",
+    "_id": "5a6000816747fa1d",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "conservazione-del-mana"
+    }
   },
   {
     "name": "Maestria degli Incantesimi",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Maestria degli Incantesimi</h3>\n<p>*A partire dal 9° livello, la tua comprensione tattica della magia ti permette di padroneggiare un singolo incantesimo, spingendolo oltre i suoi limiti normali.*</p>\n<p>*Scegli **un incantesimo di 2° livello o inferiore**, oppure **una capacità di Magia Appresa** di **3° livello o inferiore**.*</p>\n<p>*Al **13° livello** scegli un altro incantesimo o capacità.</p>\n<p>Al **17° livello**, puoi scegliere un **incantesimo di 4° livello** oppure una **capacità di Magia Appresa di 6° livello o inferiore**.*</p>\n<p>*L’incantesimo o la capacità scelta ottiene i seguenti benefici:*</p>\n<li>**Lancio Gratuito:** puoi lanciare l’incantesimo scelto **una volta per riposo lungo** senza spendere slot o Punti Mana.</li>\n<li>**Mira Perfetta:** l’incantesimo o la capacità ottiene un **bonus +1 ai tiri per colpire**.</li>\n<li>**Potenziamento dei Trucchetti (solo trucchetti):** se l’incantesimo scelto è un trucchetto, puoi **aggiungere il tuo modificatore da incantatore ai tiri per i danni**.</li>\n<hr>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Maestria degli Incantesimi</h3>\n<p>*A partire dal 9° livello, la tua comprensione tattica della magia ti permette di padroneggiare un singolo incantesimo, spingendolo oltre i suoi limiti normali.*</p>\n<p>*Scegli **un incantesimo di 2° livello o inferiore**, oppure **una capacità di Magia Appresa** di **3° livello o inferiore**.*</p>\n<p>*Al **13° livello** scegli un altro incantesimo o capacità.</p>\n<p>Al **17° livello**, puoi scegliere un **incantesimo di 4° livello** oppure una **capacità di Magia Appresa di 6° livello o inferiore**.*</p>\n<p>*L’incantesimo o la capacità scelta ottiene i seguenti benefici:*</p>\n<li>**Lancio Gratuito:** puoi lanciare l’incantesimo scelto **una volta per riposo lungo** senza spendere slot o Punti Mana.</li>\n<li>**Mira Perfetta:** l’incantesimo o la capacità ottiene un **bonus +1 ai tiri per colpire**.</li>\n<li>**Potenziamento dei Trucchetti (solo trucchetti):** se l’incantesimo scelto è un trucchetto, puoi **aggiungere il tuo modificatore da incantatore ai tiri per i danni**.</li>\n<hr>",
+    "_id": "ea33776549dbb858",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "maestria-degli-incantesimi"
+    }
   },
   {
     "name": "Maestria Arcana",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Maestria Arcana</h3>\n<p>*A partire dal 10° livello, il tuo acume tattico e la tua potenza magica si fondono, concedendoti un controllo eccezionale del campo di battaglia.*</p>\n<p>Ottieni i seguenti benefici:</p>\n<li>**Iniziativa Strategica:** quando viene tirata l’iniziativa, puoi **attivare uno dei tuoi Piani Tattici come parte del tiro di iniziativa**, anche se normalmente richiederebbe un’azione.</li>\n<li>**Pianificazione Gratuita:** se scegli di non attivare un Piano Tattico durante l’iniziativa, puoi **attivare gratuitamente** nel tuo primo turno **un Piano Tattico che costi 3 MP o meno**.</li>\n<li>**Intuito Sociale:** negli incontri sociali, ottieni un **bonus +2 alle prove di Carisma (Persuasione) e Carisma (Inganno)**.</li>\n<p>Inoltre, **qualsiasi alleato entro 9 metri** da te che possa vederti o sentirti **ottiene lo stesso bonus**, mentre le tue osservazioni guidano le loro interazioni.</p>\n<hr>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Maestria Arcana</h3>\n<p>*A partire dal 10° livello, il tuo acume tattico e la tua potenza magica si fondono, concedendoti un controllo eccezionale del campo di battaglia.*</p>\n<p>Ottieni i seguenti benefici:</p>\n<li>**Iniziativa Strategica:** quando viene tirata l’iniziativa, puoi **attivare uno dei tuoi Piani Tattici come parte del tiro di iniziativa**, anche se normalmente richiederebbe un’azione.</li>\n<li>**Pianificazione Gratuita:** se scegli di non attivare un Piano Tattico durante l’iniziativa, puoi **attivare gratuitamente** nel tuo primo turno **un Piano Tattico che costi 3 MP o meno**.</li>\n<li>**Intuito Sociale:** negli incontri sociali, ottieni un **bonus +2 alle prove di Carisma (Persuasione) e Carisma (Inganno)**.</li>\n<p>Inoltre, **qualsiasi alleato entro 9 metri** da te che possa vederti o sentirti **ottiene lo stesso bonus**, mentre le tue osservazioni guidano le loro interazioni.</p>\n<hr>",
+    "_id": "21c30b262ca2d67d",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "maestria-arcana"
+    }
   },
   {
     "name": "Maestro Tattico",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Maestro Tattico</h3>\n<p>*A partire dal 14° livello, la tua maestria tattica raggiunge l’apice, permettendoti di orchestrare strategie complesse con precisione senza pari.*</p>\n<p>Ottieni i seguenti benefici:</p>\n<li>**Pianificazione Doppia:** puoi mantenere **due Piani Tattici attivi contemporaneamente**, purché non sia esplicitamente vietato dalla descrizione di un piano.</li>\n<li>**Costo di Mana Ridotto:** il **costo in Punti Mana di tutti i tuoi Piani Tattici è ridotto di 1** (minimo 1).</li>\n<hr>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Maestro Tattico</h3>\n<p>*A partire dal 14° livello, la tua maestria tattica raggiunge l’apice, permettendoti di orchestrare strategie complesse con precisione senza pari.*</p>\n<p>Ottieni i seguenti benefici:</p>\n<li>**Pianificazione Doppia:** puoi mantenere **due Piani Tattici attivi contemporaneamente**, purché non sia esplicitamente vietato dalla descrizione di un piano.</li>\n<li>**Costo di Mana Ridotto:** il **costo in Punti Mana di tutti i tuoi Piani Tattici è ridotto di 1** (minimo 1).</li>\n<hr>",
+    "_id": "aee07364b062da7f",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "maestro-tattico"
+    }
   },
   {
     "name": "Genio Tattico",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Genio Tattico</h3>\n<p>*Al 20° livello, ascendi al vertice della magia tattica, diventando un vero maestro del controllo e della strategia sul campo di battaglia.*</p>\n<p>Ottieni i seguenti benefici:</p>\n<li>**Pianificazione Rapida:** puoi ora **attivare qualsiasi Piano Tattico come azione bonus** invece che come azione.</li>\n<li>**Analisi Universale:** **tutti gli alleati entro 18 metri** da te che possano vederti o sentirti **ottengono i benefici della tua capacità Analisi degli Incantesimi** contro qualsiasi creatura che stai analizzando o hai già analizzato, poiché le tue intuizioni diventano parte integrante del loro modo di combattere.</li>\n<h1>Piani tattici</h1>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Genio Tattico</h3>\n<p>*Al 20° livello, ascendi al vertice della magia tattica, diventando un vero maestro del controllo e della strategia sul campo di battaglia.*</p>\n<p>Ottieni i seguenti benefici:</p>\n<li>**Pianificazione Rapida:** puoi ora **attivare qualsiasi Piano Tattico come azione bonus** invece che come azione.</li>\n<li>**Analisi Universale:** **tutti gli alleati entro 18 metri** da te che possano vederti o sentirti **ottengono i benefici della tua capacità Analisi degli Incantesimi** contro qualsiasi creatura che stai analizzando o hai già analizzato, poiché le tue intuizioni diventano parte integrante del loro modo di combattere.</li>\n<h1>Piani tattici</h1>",
+    "_id": "32c94d5705054117",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "genio-tattico"
+    }
   },
   {
     "name": "Sfrutta i punti deboli:",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Sfrutta i punti deboli:</h3>\n<p>*Dopo aver utilizzato l'Analisi degli Incantesimi su una creatura, puoi attivare questo piano spendendo 3 punti mana. Per la restante durata dell'Analisi degli Incantesimi, ottieni i seguenti benefici aggiuntivi contro il bersaglio:*</p>\n<li>**Round 3:** Il bersaglio ha svantaggio ai tiri salvezza contro i tuoi incantesimi.</li>\n<li>**Round 6:** Il bersaglio ottiene un dado “Debolezza”; ogni volta che vuoi puoi forzarlo a ripetere un attacco usando il dado Debolezza.</li>\n<li>**Round 10:** Puoi usare la tua azione per condividere la tua analisi con gli alleati. Fino alla fine del tuo turno successivo, tutti gli alleati entro 9 metri che puoi vedere o sentire ottengono vantaggio ai tiri per colpire contro il bersaglio.</li>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Sfrutta i punti deboli:</h3>\n<p>*Dopo aver utilizzato l'Analisi degli Incantesimi su una creatura, puoi attivare questo piano spendendo 3 punti mana. Per la restante durata dell'Analisi degli Incantesimi, ottieni i seguenti benefici aggiuntivi contro il bersaglio:*</p>\n<li>**Round 3:** Il bersaglio ha svantaggio ai tiri salvezza contro i tuoi incantesimi.</li>\n<li>**Round 6:** Il bersaglio ottiene un dado “Debolezza”; ogni volta che vuoi puoi forzarlo a ripetere un attacco usando il dado Debolezza.</li>\n<li>**Round 10:** Puoi usare la tua azione per condividere la tua analisi con gli alleati. Fino alla fine del tuo turno successivo, tutti gli alleati entro 9 metri che puoi vedere o sentire ottengono vantaggio ai tiri per colpire contro il bersaglio.</li>",
+    "_id": "f6f578f8abe554b2",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "sfrutta-i-punti-deboli"
+    }
   },
   {
     "name": "Occhio vigile:",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Occhio vigile:</h3>\n<p>*Puoi spendere 2 punti mana per attivare questo piano. Per 1 ora, ottieni i seguenti benefici, utilizzabili con un altro piano:*</p>\n<li>**Consapevolezza migliorata:** ottieni +5 ai punteggi passivi di Percezione e Investigazione.</li>\n<li>**Visione condivisa:** scegli un alleato entro 9 metri. Puoi vedere attraverso i suoi occhi e sentire attraverso le sue orecchie per la durata del piano.</li>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Occhio vigile:</h3>\n<p>*Puoi spendere 2 punti mana per attivare questo piano. Per 1 ora, ottieni i seguenti benefici, utilizzabili con un altro piano:*</p>\n<li>**Consapevolezza migliorata:** ottieni +5 ai punteggi passivi di Percezione e Investigazione.</li>\n<li>**Visione condivisa:** scegli un alleato entro 9 metri. Puoi vedere attraverso i suoi occhi e sentire attraverso le sue orecchie per la durata del piano.</li>",
+    "_id": "9ac6df3f0a47bb48",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "occhio-vigile"
+    }
   },
   {
     "name": "Movimenti tattici:",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Movimenti tattici:</h3>\n<p>*Per il minuto successivo, tu e tutti gli alleati che possono vederti o sentirti potete usare la vostra azione di movimento completa senza provocare attacchi di opportunità. Inoltre, tutti coloro che seguono questo piano ottengono +5 velocità di movimento.*</p>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Movimenti tattici:</h3>\n<p>*Per il minuto successivo, tu e tutti gli alleati che possono vederti o sentirti potete usare la vostra azione di movimento completa senza provocare attacchi di opportunità. Inoltre, tutti coloro che seguono questo piano ottengono +5 velocità di movimento.*</p>",
+    "_id": "de7384a859b022e3",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "movimenti-tattici"
+    }
   },
   {
     "name": "Osservazione acuta:",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Osservazione acuta:</h3>\n<p>*Puoi spendere 1 punto mana per attivare questo piano. Nel tuo turno successivo, dopo aver attivato l'Analisi degli Incantesimi, apprendi immediatamente le seguenti informazioni sul bersaglio:*</p>\n<li>Il punteggio di caratteristica più alto (Forza, Destrezza, Costituzione, Intelligenza, Saggezza o Carisma).</li>\n<li>Almeno un tipo di magia che il bersaglio sta usando o ha usato.</li>\n<li>Se il bersaglio possiede più tipi di magia, apprendi un tipo aggiuntivo per ogni 5 livelli nella classe.</li>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Osservazione acuta:</h3>\n<p>*Puoi spendere 1 punto mana per attivare questo piano. Nel tuo turno successivo, dopo aver attivato l'Analisi degli Incantesimi, apprendi immediatamente le seguenti informazioni sul bersaglio:*</p>\n<li>Il punteggio di caratteristica più alto (Forza, Destrezza, Costituzione, Intelligenza, Saggezza o Carisma).</li>\n<li>Almeno un tipo di magia che il bersaglio sta usando o ha usato.</li>\n<li>Se il bersaglio possiede più tipi di magia, apprendi un tipo aggiuntivo per ogni 5 livelli nella classe.</li>",
+    "_id": "12f6395f8ea8a3de",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "osservazione-acuta"
+    }
   },
   {
     "name": "Coordinamento strategico:",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Coordinamento strategico:</h3>\n<p>**Prerequisiti: Osservazione acuta**</p>\n<hr>\n<p>*Mentre Osservazione Acuta è attiva, puoi spendere 1 punto mana aggiuntivo per attivare questo piano. Come azione bonus, scegli un alleato entro 18 metri che puoi vedere o sentire. Comunichi informazioni tattiche, concedendogli un’azione aggiuntiva nel suo turno. L’alleato può usare l’azione per: Attaccare, Lanciare un incantesimo, Schivare, Scattare, Disimpegnarsi, Aiutare o Nascondersi.*</p>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Coordinamento strategico:</h3>\n<p>**Prerequisiti: Osservazione acuta**</p>\n<hr>\n<p>*Mentre Osservazione Acuta è attiva, puoi spendere 1 punto mana aggiuntivo per attivare questo piano. Come azione bonus, scegli un alleato entro 18 metri che puoi vedere o sentire. Comunichi informazioni tattiche, concedendogli un’azione aggiuntiva nel suo turno. L’alleato può usare l’azione per: Attaccare, Lanciare un incantesimo, Schivare, Scattare, Disimpegnarsi, Aiutare o Nascondersi.*</p>",
+    "_id": "10b2aeb3573cd6ff",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "coordinamento-strategico"
+    }
   },
   {
     "name": "Sinergia arcana:",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Sinergia arcana:</h3>\n<p>*Dopo aver utilizzato l'Analisi degli Incantesimi su una creatura, puoi attivare questo piano spendendo 2 punti mana. Per la durata dell’Analisi degli Incantesimi, ottieni i seguenti vantaggi:*</p>\n<li>**Attacchi potenziati:** aggiungi il tuo modificatore di Magia ai danni dei tuoi incantesimi contro il bersaglio.</li>\n<li>**Approfondimenti condivisi:** come azione bonus, spendi 2 punti mana aggiuntivi. Scegli un alleato entro 18 metri che puoi vedere o sentire. L’alleato ottiene tutti i benefici dell’Analisi degli Incantesimi contro il bersaglio per la sua durata.</li>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Sinergia arcana:</h3>\n<p>*Dopo aver utilizzato l'Analisi degli Incantesimi su una creatura, puoi attivare questo piano spendendo 2 punti mana. Per la durata dell’Analisi degli Incantesimi, ottieni i seguenti vantaggi:*</p>\n<li>**Attacchi potenziati:** aggiungi il tuo modificatore di Magia ai danni dei tuoi incantesimi contro il bersaglio.</li>\n<li>**Approfondimenti condivisi:** come azione bonus, spendi 2 punti mana aggiuntivi. Scegli un alleato entro 18 metri che puoi vedere o sentire. L’alleato ottiene tutti i benefici dell’Analisi degli Incantesimi contro il bersaglio per la sua durata.</li>",
+    "_id": "81d3a0951ddabae6",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "sinergia-arcana"
+    }
   },
   {
     "name": "Assalto Calcolato:",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Assalto Calcolato:</h3>\n<p>*Puoi spendere 2 punti mana per attivare questo piano. Scegli una creatura che puoi vedere entro 18 metri. La prossima volta che quella creatura effettua un tiro salvezza prima della fine del tuo prossimo turno, lo esegue con svantaggio.*</p>\n<p>*Al 9° livello, questo piano ottiene un effetto aggiuntivo:*</p>\n<li>**Debolezza Esposta:** *Quando attivi questo piano, puoi spendere 2 punti mana aggiuntivi. La prossima volta che la creatura scelta effettua un tiro salvezza o un tiro per colpire entro la fine del tuo prossimo turno, deve tirare 1d4 e sottrarre il risultato dal tiro sul d20.*</li>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Assalto Calcolato:</h3>\n<p>*Puoi spendere 2 punti mana per attivare questo piano. Scegli una creatura che puoi vedere entro 18 metri. La prossima volta che quella creatura effettua un tiro salvezza prima della fine del tuo prossimo turno, lo esegue con svantaggio.*</p>\n<p>*Al 9° livello, questo piano ottiene un effetto aggiuntivo:*</p>\n<li>**Debolezza Esposta:** *Quando attivi questo piano, puoi spendere 2 punti mana aggiuntivi. La prossima volta che la creatura scelta effettua un tiro salvezza o un tiro per colpire entro la fine del tuo prossimo turno, deve tirare 1d4 e sottrarre il risultato dal tiro sul d20.*</li>",
+    "_id": "4db8faaeeb229be2",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "assalto-calcolato"
+    }
   },
   {
     "name": "Diversione Tattica:",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Diversione Tattica:</h3>\n<p>**Prerequisiti: Assalto Calcolato**</p>\n<p>*Come reazione, quando un nemico entro 18 metri prende di mira un alleato con un attacco, puoi spendere 2 punti mana per diventare il bersaglio dell’attaccante. Tutti i tiri per colpire contro creature diverse da te fino all’inizio del tuo prossimo turno subiscono svantaggio.*</p>\n<p>*Al 14° livello, questo piano ottiene un effetto aggiuntivo:*</p>\n<li>**Impeto di Mana:** *Come reazione, quando colpisci con successo una creatura o quando una creatura ti colpisce, puoi infondere la tua mana nella loro carne. La creatura deve superare un tiro salvezza di Saggezza contro la tua CD Incantesimo. Se fallisce, perde la propria reazione fino all’inizio del suo prossimo turno.*</li>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Diversione Tattica:</h3>\n<p>**Prerequisiti: Assalto Calcolato**</p>\n<p>*Come reazione, quando un nemico entro 18 metri prende di mira un alleato con un attacco, puoi spendere 2 punti mana per diventare il bersaglio dell’attaccante. Tutti i tiri per colpire contro creature diverse da te fino all’inizio del tuo prossimo turno subiscono svantaggio.*</p>\n<p>*Al 14° livello, questo piano ottiene un effetto aggiuntivo:*</p>\n<li>**Impeto di Mana:** *Come reazione, quando colpisci con successo una creatura o quando una creatura ti colpisce, puoi infondere la tua mana nella loro carne. La creatura deve superare un tiro salvezza di Saggezza contro la tua CD Incantesimo. Se fallisce, perde la propria reazione fino all’inizio del suo prossimo turno.*</li>",
+    "_id": "d180e5296f2c7dad",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "diversione-tattica"
+    }
   },
   {
     "name": "Precognizione:",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Precognizione:</h3>\n<p>*Puoi spendere 3 punti mana per attivare questo piano. Per i prossimi 10 minuti ottieni i seguenti benefici:*</p>\n<li>**Profezia:** *ottieni competenza in Percezione e Intuizione. Se sei già competente in una di queste abilità, ottieni esperto in quella competenza.*</li>\n<li>**Immunità alle sorprese:** *tu e tutti gli alleati entro 9 metri che puoi vedere o sentire non potete essere sorpresi.*</li>\n<hr>\n<p>*Al 6° livello, questo piano ottiene un effetto aggiuntivo:*</p>\n<li>**Vantaggio Temporale:** *Una volta prima della fine della durata del piano, puoi usare la tua reazione alla fine del tuo turno per prendere immediatamente un altro turno. Non puoi usare questa funzione di nuovo fino a un riposo lungo.*</li>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Precognizione:</h3>\n<p>*Puoi spendere 3 punti mana per attivare questo piano. Per i prossimi 10 minuti ottieni i seguenti benefici:*</p>\n<li>**Profezia:** *ottieni competenza in Percezione e Intuizione. Se sei già competente in una di queste abilità, ottieni esperto in quella competenza.*</li>\n<li>**Immunità alle sorprese:** *tu e tutti gli alleati entro 9 metri che puoi vedere o sentire non potete essere sorpresi.*</li>\n<hr>\n<p>*Al 6° livello, questo piano ottiene un effetto aggiuntivo:*</p>\n<li>**Vantaggio Temporale:** *Una volta prima della fine della durata del piano, puoi usare la tua reazione alla fine del tuo turno per prendere immediatamente un altro turno. Non puoi usare questa funzione di nuovo fino a un riposo lungo.*</li>",
+    "_id": "bddbe682c54dc77c",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "precognizione"
+    }
   },
   {
     "name": "Interruzione Tattica:",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Interruzione Tattica:</h3>\n<p>*Puoi spendere 2 punti mana per attivare questo piano. Per i successivi 2 turni, tutti i nemici entro 18 metri da te o dai tuoi alleati subiscono svantaggio ai tiri per colpire.*</p>\n<li>**Interruzione Potenziata (4 MP):** *spendendo 2 punti mana aggiuntivi (totale 4), tu e tutti gli alleati entro 18 metri ottengono vantaggio ai tiri per colpire per la stessa durata.*</li>\n<p>*Puoi usare questo piano un numero di volte pari al tuo bonus di competenza per riposo lungo.*</p>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Interruzione Tattica:</h3>\n<p>*Puoi spendere 2 punti mana per attivare questo piano. Per i successivi 2 turni, tutti i nemici entro 18 metri da te o dai tuoi alleati subiscono svantaggio ai tiri per colpire.*</p>\n<li>**Interruzione Potenziata (4 MP):** *spendendo 2 punti mana aggiuntivi (totale 4), tu e tutti gli alleati entro 18 metri ottengono vantaggio ai tiri per colpire per la stessa durata.*</li>\n<p>*Puoi usare questo piano un numero di volte pari al tuo bonus di competenza per riposo lungo.*</p>",
+    "_id": "35536cc0b9f3a0ae",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "interruzione-tattica"
+    }
   },
   {
     "name": "Via di Fuga:",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Via di Fuga:</h3>\n<p>*Puoi spendere 2 punti mana per attivare questo piano. Per il minuto successivo, gli alleati entro 30 metri da te ottengono i seguenti benefici quando si allontanano da una creatura ostile:*</p>\n<li>**Movimento Aumentato:** *guadagnano 9 metri aggiuntivi di movimento.*</li>\n<li>**Nessun Attacco di Opportunità:** *gli attacchi di opportunità contro di loro subiscono svantaggio.*</li>\n<li>**Via di Fuga Potenziata (5 MP):** *spendendo 3 punti mana aggiuntivi (totale 5), gli alleati possono anche usare l’azione Scatto come azione bonus.*</li>\n<p>*La durata di questo piano è limitata al numero di utilizzi pari al tuo bonus di competenza.*</p>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Via di Fuga:</h3>\n<p>*Puoi spendere 2 punti mana per attivare questo piano. Per il minuto successivo, gli alleati entro 30 metri da te ottengono i seguenti benefici quando si allontanano da una creatura ostile:*</p>\n<li>**Movimento Aumentato:** *guadagnano 9 metri aggiuntivi di movimento.*</li>\n<li>**Nessun Attacco di Opportunità:** *gli attacchi di opportunità contro di loro subiscono svantaggio.*</li>\n<li>**Via di Fuga Potenziata (5 MP):** *spendendo 3 punti mana aggiuntivi (totale 5), gli alleati possono anche usare l’azione Scatto come azione bonus.*</li>\n<p>*La durata di questo piano è limitata al numero di utilizzi pari al tuo bonus di competenza.*</p>",
+    "_id": "483006a079e3b2a1",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "via-di-fuga"
+    }
   },
   {
     "name": "Cautela:",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Cautela:</h3>\n<p>*Puoi spendere 1 punto mana per attivare questo piano. Per i prossimi turni pari al tuo bonus di competenza, tutti gli attacchi che colpiscono creature entro 9 metri da te devono tirare il danno due volte, prendendo il risultato più basso.*</p>\n<li>**Mitigazione del Danno (Opzionale):** Quando attivi questo piano, puoi spendere punti mana aggiuntivi fino al tuo bonus di competenza. Per ogni punto mana speso, riduci di 1 il dado danno di tutti gli attacchi che colpiscono creature entro 9 metri da te. La riduzione dura la stessa durata del piano.</li>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Cautela:</h3>\n<p>*Puoi spendere 1 punto mana per attivare questo piano. Per i prossimi turni pari al tuo bonus di competenza, tutti gli attacchi che colpiscono creature entro 9 metri da te devono tirare il danno due volte, prendendo il risultato più basso.*</p>\n<li>**Mitigazione del Danno (Opzionale):** Quando attivi questo piano, puoi spendere punti mana aggiuntivi fino al tuo bonus di competenza. Per ogni punto mana speso, riduci di 1 il dado danno di tutti gli attacchi che colpiscono creature entro 9 metri da te. La riduzione dura la stessa durata del piano.</li>",
+    "_id": "38fd4f870cc3b707",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "cautela"
+    }
   },
   {
     "name": "Offensiva Focalizzata:",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Offensiva Focalizzata:</h3>\n<p>*Spendendo 3 punti mana, tutte le creature ostili entro 18 metri da te subiscono un malus di -1d4 ai tiri per colpire contro le creature alleate con te. Questo effetto dura per un numero di turni pari al tuo bonus di competenza.*</p>\n<li>**Focalizzazione Potenziata (5 MP):** Per 3 punti mana aggiuntivi (totale 5), puoi scegliere due alleati entro 18 metri. Questi alleati ottengono un bonus di +1d4 ai tiri per colpire contro le creature ostili entro 18 metri da te, per la stessa durata dell’effetto base, terminando quando l’effetto base finisce.</li>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Offensiva Focalizzata:</h3>\n<p>*Spendendo 3 punti mana, tutte le creature ostili entro 18 metri da te subiscono un malus di -1d4 ai tiri per colpire contro le creature alleate con te. Questo effetto dura per un numero di turni pari al tuo bonus di competenza.*</p>\n<li>**Focalizzazione Potenziata (5 MP):** Per 3 punti mana aggiuntivi (totale 5), puoi scegliere due alleati entro 18 metri. Questi alleati ottengono un bonus di +1d4 ai tiri per colpire contro le creature ostili entro 18 metri da te, per la stessa durata dell’effetto base, terminando quando l’effetto base finisce.</li>",
+    "_id": "81b3d8ddd3f4b030",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "offensiva-focalizzata"
+    }
   },
   {
     "name": "Efficienza del Mana:",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Efficienza del Mana:</h3>\n<p>*Spendendo 2 punti mana, per il minuto successivo, ogni volta che tu o un alleato entro 9 metri da te lanci un incantesimo che infligge danni, puoi usare una reazione per ridurre il costo in mana dell’incantesimo di 1. Questa riduzione non può portare il costo dell’incantesimo al di sotto di 1.*</p>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Efficienza del Mana:</h3>\n<p>*Spendendo 2 punti mana, per il minuto successivo, ogni volta che tu o un alleato entro 9 metri da te lanci un incantesimo che infligge danni, puoi usare una reazione per ridurre il costo in mana dell’incantesimo di 1. Questa riduzione non può portare il costo dell’incantesimo al di sotto di 1.*</p>",
+    "_id": "bdc01c09f1e912f6",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "efficienza-del-mana"
+    }
   },
   {
     "name": "Ritirata Calcolata:",
-    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Ritirata Calcolata:</h3>\n<p>*Per 2 punti mana, come azione bonus, puoi designare una zona sicura entro 18 metri da te, con raggio di 4,5 metri. Per i successivi 5 turni, gli alleati possono teletrasportarsi come azione bonus in qualsiasi spazio libero all’interno della zona sicura, purché possano vederla. Il teletrasporto ha una spiegazione “flavor” basata su sigilli magici che trasportano gli alleati.*</p>"
+    "description": "<p><em>Classe: Mago Tattico</em></p>\n<h3>Ritirata Calcolata:</h3>\n<p>*Per 2 punti mana, come azione bonus, puoi designare una zona sicura entro 18 metri da te, con raggio di 4,5 metri. Per i successivi 5 turni, gli alleati possono teletrasportarsi come azione bonus in qualsiasi spazio libero all’interno della zona sicura, purché possano vederla. Il teletrasporto ha una spiegazione “flavor” basata su sigilli magici che trasportano gli alleati.*</p>",
+    "_id": "9764e872c914ea74",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Mago Tattico",
+      "identifier": "ritirata-calcolata"
+    }
   },
   {
     "name": "Magia nata o insegnata:",
-    "description": "<p><em>Classe: Guerriero</em></p>\n<h3>Magia nata o insegnata:</h3>\n<p>*A partire dal 1° livello, possiedi un’abilità magica innata oppure hai appreso la magia tramite un addestramento intensivo. Scegli una Magia. Questa scelta ti conferisce capacità ai livelli 1°, 3°, 6°, 11° e 18°. Anche se multiclasse, inizi sempre e comunque con una sola magia.*</p>\n<p>**Punti Mana (MP):** I tuoi Punti Mana massimi sono pari al tuo livello da Guerriero. Recuperi tutti i Punti Mana spesi dopo un riposo lungo.</p>\n<hr>\n<p>**Lancio degli Incantesimi:** Accedi agli incantesimi man mano che sali di livello, seguendo la progressione:</p>\n<li>**Livello 1:** Trucchetti</li>\n<li>**Livello 3:** Incantesimi di 1° livello</li>\n<li>**Livello 7:** Incantesimi di 2° livello</li>\n<li>**Livello 9:** Incantesimi di 3° livello</li>\n<li>**Livello 13:** Incantesimi di 4° livello</li>\n<li>**Livello 17:** Incantesimi di 5° livello</li>\n<hr>\n<p>**Acquisizione di Incantesimi:** Ottieni un nuovo incantesimo ogni due livelli (1, 3, 5, 7, 9, 11, 13, 15, 17, 19).</p>\n<hr>\n<li>Puoi apprendere fino a un massimo di 6 trucchetti.</li>\n<li>Puoi apprendere fino a 4 incantesimi per ciascun livello.</li>\n<hr>\n<li>I trucchetti costano 0 MP.</li>\n<li>Gli incantesimi costano Punti Mana pari al loro livello (es. incantesimo di 1° livello = 1 MP, incantesimo di 2° livello = 2 MP, ecc.).</li>\n<hr>\n<p>Quando ottieni questa classe, scegli una caratteristica mentale tra **Intelligenza, Saggezza o Carisma**.</p>\n<p>La caratteristica scelta rappresenta il modo in cui il tuo Guerriero comprende e canalizza la magia ed è indicata come **Caratteristica da Incantatore**.</p>\n<hr>\n<p>*Usi la Caratteristica da Incantatore per ricordare, percepire o imporre le formule magiche, a seconda della scelta effettuata.*</p>\n<p>*Usi la Costituzione per determinare l’efficacia e la stabilità dei tuoi incantesimi, riflettendo la capacità del tuo corpo di sopportare e canalizzare il mana.*</p>\n<li>**CD Tiro Salvezza Incantesimo:** 8 + Bonus di Competenza + Modificatore di Costituzione</li>\n<li>**Bonus al Tiro per Colpire Incantesimo:** Bonus di Competenza + Modificatore della Caratteristica da Incantatore</li>"
+    "description": "<p><em>Classe: Guerriero</em></p>\n<h3>Magia nata o insegnata:</h3>\n<p>*A partire dal 1° livello, possiedi un’abilità magica innata oppure hai appreso la magia tramite un addestramento intensivo. Scegli una Magia. Questa scelta ti conferisce capacità ai livelli 1°, 3°, 6°, 11° e 18°. Anche se multiclasse, inizi sempre e comunque con una sola magia.*</p>\n<p>**Punti Mana (MP):** I tuoi Punti Mana massimi sono pari al tuo livello da Guerriero. Recuperi tutti i Punti Mana spesi dopo un riposo lungo.</p>\n<hr>\n<p>**Lancio degli Incantesimi:** Accedi agli incantesimi man mano che sali di livello, seguendo la progressione:</p>\n<li>**Livello 1:** Trucchetti</li>\n<li>**Livello 3:** Incantesimi di 1° livello</li>\n<li>**Livello 7:** Incantesimi di 2° livello</li>\n<li>**Livello 9:** Incantesimi di 3° livello</li>\n<li>**Livello 13:** Incantesimi di 4° livello</li>\n<li>**Livello 17:** Incantesimi di 5° livello</li>\n<hr>\n<p>**Acquisizione di Incantesimi:** Ottieni un nuovo incantesimo ogni due livelli (1, 3, 5, 7, 9, 11, 13, 15, 17, 19).</p>\n<hr>\n<li>Puoi apprendere fino a un massimo di 6 trucchetti.</li>\n<li>Puoi apprendere fino a 4 incantesimi per ciascun livello.</li>\n<hr>\n<li>I trucchetti costano 0 MP.</li>\n<li>Gli incantesimi costano Punti Mana pari al loro livello (es. incantesimo di 1° livello = 1 MP, incantesimo di 2° livello = 2 MP, ecc.).</li>\n<hr>\n<p>Quando ottieni questa classe, scegli una caratteristica mentale tra **Intelligenza, Saggezza o Carisma**.</p>\n<p>La caratteristica scelta rappresenta il modo in cui il tuo Guerriero comprende e canalizza la magia ed è indicata come **Caratteristica da Incantatore**.</p>\n<hr>\n<p>*Usi la Caratteristica da Incantatore per ricordare, percepire o imporre le formule magiche, a seconda della scelta effettuata.*</p>\n<p>*Usi la Costituzione per determinare l’efficacia e la stabilità dei tuoi incantesimi, riflettendo la capacità del tuo corpo di sopportare e canalizzare il mana.*</p>\n<li>**CD Tiro Salvezza Incantesimo:** 8 + Bonus di Competenza + Modificatore di Costituzione</li>\n<li>**Bonus al Tiro per Colpire Incantesimo:** Bonus di Competenza + Modificatore della Caratteristica da Incantatore</li>",
+    "_id": "5bdbca7f96e7d7bf",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Guerriero",
+      "identifier": "magia-nata-o-insegnata"
+    }
   },
   {
     "name": "Abilità in combattimento",
-    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Abilità in combattimento</h4>\n<p>*Al 1° livello, la tua esperienza in battaglia ti ha concesso padronanza negli stili di combattimento che usano colpi senz’armi e armi da guerriero, ossia armi corpo a corpo senza la proprietà a due mani, e armi improvvisate.*</p>\n<p>*Puoi tirare un d6 al posto del danno normale del tuo colpo senz’armi o arma da guerriero. Questo dado cambia man mano che aumentano i livelli da guerriero, come indicato nella tabella dei Guerrieri.*</p>\n<p>*Puoi usare Destrezza o Forza al posto di qualsiasi Attacco con Arma Corpo a Corpo.*</p>\n<br>\n<p>*Quando usi l’azione Attacco con un colpo senz’armi o un’arma da guerriero, puoi fare un colpo senz’armi aggiuntivo come azione bonus.*</p>"
+    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Abilità in combattimento</h4>\n<p>*Al 1° livello, la tua esperienza in battaglia ti ha concesso padronanza negli stili di combattimento che usano colpi senz’armi e armi da guerriero, ossia armi corpo a corpo senza la proprietà a due mani, e armi improvvisate.*</p>\n<p>*Puoi tirare un d6 al posto del danno normale del tuo colpo senz’armi o arma da guerriero. Questo dado cambia man mano che aumentano i livelli da guerriero, come indicato nella tabella dei Guerrieri.*</p>\n<p>*Puoi usare Destrezza o Forza al posto di qualsiasi Attacco con Arma Corpo a Corpo.*</p>\n<br>\n<p>*Quando usi l’azione Attacco con un colpo senz’armi o un’arma da guerriero, puoi fare un colpo senz’armi aggiuntivo come azione bonus.*</p>",
+    "_id": "c5842d0087665e0f",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Guerriero",
+      "identifier": "abilita-in-combattimento"
+    }
   },
   {
     "name": "Difesa senza armatura",
-    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Difesa senza armatura</h4>\n<p>*Mentre non indossi armatura e non stai usando uno scudo, la tua Classe Armatura è pari a 10 + il tuo modificatore di Destrezza + il tuo modificatore di Costituzione.*</p>"
+    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Difesa senza armatura</h4>\n<p>*Mentre non indossi armatura e non stai usando uno scudo, la tua Classe Armatura è pari a 10 + il tuo modificatore di Destrezza + il tuo modificatore di Costituzione.*</p>",
+    "_id": "05b177bde0b4aadf",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Guerriero",
+      "identifier": "difesa-senza-armatura"
+    }
   },
   {
     "name": "Flusso di Mana",
-    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Flusso di Mana</h4>\n<p>*Al 2° livello, il tuo addestramento nelle arti marziali ti ha insegnato a canalizzare il mana nei tuoi attacchi, potenziandone la forza e l’efficacia.*</p>\n<p>*Puoi ora apprendere uno Stile di Combattimento dal Capitolo 11. Al 10° livello puoi apprendere un secondo Stile di Combattimento.*</p>"
+    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Flusso di Mana</h4>\n<p>*Al 2° livello, il tuo addestramento nelle arti marziali ti ha insegnato a canalizzare il mana nei tuoi attacchi, potenziandone la forza e l’efficacia.*</p>\n<p>*Puoi ora apprendere uno Stile di Combattimento dal Capitolo 11. Al 10° livello puoi apprendere un secondo Stile di Combattimento.*</p>",
+    "_id": "f8b9e5a9f1ba00ca",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Guerriero",
+      "identifier": "flusso-di-mana"
+    }
   },
   {
     "name": "Miglioramento delle Caratteristiche",
-    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Miglioramento delle Caratteristiche</h4>\n<p>*Al 4°, 8°, 12°, 16° e 19° livello puoi aumentare una caratteristica a tua scelta di 2, oppure due caratteristiche a tua scelta di 1. Non puoi superare 20 con questo aumento. In alternativa, puoi rinunciare all’aumento per scegliere un Talento.*</p>"
+    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Miglioramento delle Caratteristiche</h4>\n<p>*Al 4°, 8°, 12°, 16° e 19° livello puoi aumentare una caratteristica a tua scelta di 2, oppure due caratteristiche a tua scelta di 1. Non puoi superare 20 con questo aumento. In alternativa, puoi rinunciare all’aumento per scegliere un Talento.*</p>",
+    "_id": "cc6632899dd996a6",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Guerriero",
+      "identifier": "miglioramento-delle-caratteristiche"
+    }
   },
   {
     "name": "Maestria con le armi",
-    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Maestria con le armi</h4>\n<p>*Al 4° livello, il tuo addestramento marziale e l’abilità magica si combinano per migliorare i tuoi attacchi con le armi.*</p>\n<li>**Arma Infusa di Mana:** *Come azione bonus, puoi spendere 1 punto mana per infondere un’arma o un colpo senz’armi che stai impugnando con energia magica. Per 1 minuto, puoi usare il modificatore della tua caratteristica da incantatore per tutti i tiri per colpire e danno effettuati con quell’arma. Puoi terminare l’effetto in anticipo durante il tuo turno. L’arma infligge un dado aggiuntivo di danno.*</li>\n<li>**Specializzazione con l’Arma:** *Scegli un tipo di arma con cui sei competente (anche Colpi Senz’Armi). Ottieni un bonus di +1 ai tiri per colpire con quelle armi, che aumenta a +2 al 11° livello e +3 al 17° livello.*</li>"
+    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Maestria con le armi</h4>\n<p>*Al 4° livello, il tuo addestramento marziale e l’abilità magica si combinano per migliorare i tuoi attacchi con le armi.*</p>\n<li>**Arma Infusa di Mana:** *Come azione bonus, puoi spendere 1 punto mana per infondere un’arma o un colpo senz’armi che stai impugnando con energia magica. Per 1 minuto, puoi usare il modificatore della tua caratteristica da incantatore per tutti i tiri per colpire e danno effettuati con quell’arma. Puoi terminare l’effetto in anticipo durante il tuo turno. L’arma infligge un dado aggiuntivo di danno.*</li>\n<li>**Specializzazione con l’Arma:** *Scegli un tipo di arma con cui sei competente (anche Colpi Senz’Armi). Ottieni un bonus di +1 ai tiri per colpire con quelle armi, che aumenta a +2 al 11° livello e +3 al 17° livello.*</li>",
+    "_id": "8822a042c91b305a",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Guerriero",
+      "identifier": "maestria-con-le-armi"
+    }
   },
   {
     "name": "Attacco Extra",
-    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Attacco Extra</h4>\n<p>*Al 5° livello, puoi attaccare due volte invece di una quando usi l’azione Attacco. Al 12° livello questo aumenta a tre attacchi.*</p>"
+    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Attacco Extra</h4>\n<p>*Al 5° livello, puoi attaccare due volte invece di una quando usi l’azione Attacco. Al 12° livello questo aumenta a tre attacchi.*</p>",
+    "_id": "4df727af9a1336fa",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Guerriero",
+      "identifier": "attacco-extra"
+    }
   },
   {
     "name": "Spirito Indomito",
-    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Spirito Indomito</h4>\n<p>*Al 9° livello, la tua determinazione a superare le avversità rafforza la tua volontà:*</p>\n<li>**Resistenza Inarrestabile:** *Quando scendi a 0 PF ma non muori, puoi invece rimanere a 1 PF. Puoi usare questa caratteristica una volta per riposo lungo.*</li>\n<li>**Focus Inalterabile:** *Vantaggio ai tiri salvezza contro ammaliamento e paura.*</li>\n<li>**Secondo Fiato:** *Come azione bonus, puoi recuperare PF pari a 1d10 + livello da Guerriero. Puoi usare questa caratteristica un numero di volte pari al modificatore di Costituzione (minimo 1) e recuperi gli usi spesi dopo un riposo lungo.*</li>\n<p><!-- Use --offset to shift the mask away from page center (can use cm instead of %)</p>\n<p>Use --rotation to set rotation angle in degrees. --></p>"
+    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Spirito Indomito</h4>\n<p>*Al 9° livello, la tua determinazione a superare le avversità rafforza la tua volontà:*</p>\n<li>**Resistenza Inarrestabile:** *Quando scendi a 0 PF ma non muori, puoi invece rimanere a 1 PF. Puoi usare questa caratteristica una volta per riposo lungo.*</li>\n<li>**Focus Inalterabile:** *Vantaggio ai tiri salvezza contro ammaliamento e paura.*</li>\n<li>**Secondo Fiato:** *Come azione bonus, puoi recuperare PF pari a 1d10 + livello da Guerriero. Puoi usare questa caratteristica un numero di volte pari al modificatore di Costituzione (minimo 1) e recuperi gli usi spesi dopo un riposo lungo.*</li>\n<p><!-- Use --offset to shift the mask away from page center (can use cm instead of %)</p>\n<p>Use --rotation to set rotation angle in degrees. --></p>",
+    "_id": "a870d50230d0d85b",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Guerriero",
+      "identifier": "spirito-indomito"
+    }
   },
   {
     "name": "Maestria nel Combattimento Migliorata",
-    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Maestria nel Combattimento Migliorata</h4>\n<p>*Al 10° livello, le tue abilità marziali raggiungono nuovi vertici, fondendo senza soluzione di continuità arti marziali e potere magico.*</p>\n<p>*Ottieni i seguenti benefici:*</p>\n<li>**Colpi Infusi di Mana Potenziati:** *Quando usi un’arma infusa di mana o colpi senz’armi, puoi aumentare di un dado il dado di danno.*</li>\n<li>**Passi Elusivi:** *Puoi usare la tua reazione spendendo 2 MP quando una creatura ti manca con un attacco in mischia per muoverti fino a metà della tua velocità senza provocare attacchi di opportunità. Inoltre, puoi effettuare un colpo senz’armi contro l’attaccante come parte di questa reazione. Questo colpo senz’armi non beneficia della caratteristica Attacco Extra.*</li>\n<li>**Versatilità con le Armi:** *Durante un attacco, puoi estrarre e/o riporre un’arma. Se possiedi il talento Maestro delle Armi Doppie o quando ottieni la caratteristica Maestria con Armi Doppie, puoi farlo con due armi contemporaneamente.*</li>"
+    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Maestria nel Combattimento Migliorata</h4>\n<p>*Al 10° livello, le tue abilità marziali raggiungono nuovi vertici, fondendo senza soluzione di continuità arti marziali e potere magico.*</p>\n<p>*Ottieni i seguenti benefici:*</p>\n<li>**Colpi Infusi di Mana Potenziati:** *Quando usi un’arma infusa di mana o colpi senz’armi, puoi aumentare di un dado il dado di danno.*</li>\n<li>**Passi Elusivi:** *Puoi usare la tua reazione spendendo 2 MP quando una creatura ti manca con un attacco in mischia per muoverti fino a metà della tua velocità senza provocare attacchi di opportunità. Inoltre, puoi effettuare un colpo senz’armi contro l’attaccante come parte di questa reazione. Questo colpo senz’armi non beneficia della caratteristica Attacco Extra.*</li>\n<li>**Versatilità con le Armi:** *Durante un attacco, puoi estrarre e/o riporre un’arma. Se possiedi il talento Maestro delle Armi Doppie o quando ottieni la caratteristica Maestria con Armi Doppie, puoi farlo con due armi contemporaneamente.*</li>",
+    "_id": "4b32a675f87a28a5",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Guerriero",
+      "identifier": "maestria-nel-combattimento-migliorata"
+    }
   },
   {
     "name": "Sinergia con le Armi",
-    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Sinergia con le Armi</h4>\n<p>*La tua maestria nel combattimento ti permette di scatenare una raffica incessante di attacchi.*</p>\n<li>**Potenziare Attacco:** *A partire dal 14° livello, quando colpisci una creatura con un’arma o un colpo senz’armi, puoi spendere 2 MP per potenziare il tuo prossimo attacco con quell’arma. L’attacco potenziato infligge un dado aggiuntivo di danno del tipo dell’arma (es. se l’arma fa 2d12 tagliente, infliggerà un dado aggiuntivo 1d12 tagliente). Questo può essere combinato con il Colpo Infuso di Mana.*</li>"
+    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Sinergia con le Armi</h4>\n<p>*La tua maestria nel combattimento ti permette di scatenare una raffica incessante di attacchi.*</p>\n<li>**Potenziare Attacco:** *A partire dal 14° livello, quando colpisci una creatura con un’arma o un colpo senz’armi, puoi spendere 2 MP per potenziare il tuo prossimo attacco con quell’arma. L’attacco potenziato infligge un dado aggiuntivo di danno del tipo dell’arma (es. se l’arma fa 2d12 tagliente, infliggerà un dado aggiuntivo 1d12 tagliente). Questo può essere combinato con il Colpo Infuso di Mana.*</li>",
+    "_id": "02a32ca6e71853b0",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Guerriero",
+      "identifier": "sinergia-con-le-armi"
+    }
   },
   {
     "name": "Maestria nel Critico",
-    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Maestria nel Critico</h4>\n<p>*Al 17° livello, la tua precisione e potenza culminano in colpi critici devastanti.*</p>\n<li>**Critico Potenziato:** *Quando ottieni un colpo critico con un’arma, puoi tirare due dadi aggiuntivi di danno dell’arma invece di uno.*</li>\n<li>**Colpi Precisi:** *Il range di critico si riduce di 1*</li>\n<li>**Colpi Frantumanti:** *Quando colpisci una creatura con un attacco, puoi spendere 2 MP per tentare di disarmarla. La creatura deve superare un tiro salvezza di Forza contro il tuo CD Incantesimo. In caso di fallimento, l’arma cade entro 1,5 metri da essa. Puoi inoltre spendere 4 MP per tentare di distruggere l’arma colpita. Può essere usata solo su armi magiche Non Comuni o inferiori (Rare dal 18° livello, dal 19° livello puoi inoltre distruggere armi magiche Molto Rare nel periodo di 1h e Leggendarie nel periodo di 24h). Il tiro salvezza rimane lo stesso.*</li>"
+    "description": "<p><em>Classe: Guerriero</em></p>\n<h4>Maestria nel Critico</h4>\n<p>*Al 17° livello, la tua precisione e potenza culminano in colpi critici devastanti.*</p>\n<li>**Critico Potenziato:** *Quando ottieni un colpo critico con un’arma, puoi tirare due dadi aggiuntivi di danno dell’arma invece di uno.*</li>\n<li>**Colpi Precisi:** *Il range di critico si riduce di 1*</li>\n<li>**Colpi Frantumanti:** *Quando colpisci una creatura con un attacco, puoi spendere 2 MP per tentare di disarmarla. La creatura deve superare un tiro salvezza di Forza contro il tuo CD Incantesimo. In caso di fallimento, l’arma cade entro 1,5 metri da essa. Puoi inoltre spendere 4 MP per tentare di distruggere l’arma colpita. Può essere usata solo su armi magiche Non Comuni o inferiori (Rare dal 18° livello, dal 19° livello puoi inoltre distruggere armi magiche Molto Rare nel periodo di 1h e Leggendarie nel periodo di 24h). Il tiro salvezza rimane lo stesso.*</li>",
+    "_id": "05c0d1be123ba16e",
+    "system": {
+      "type": {
+        "value": "class",
+        "subtype": ""
+      },
+      "requirements": "Guerriero",
+      "identifier": "maestria-nel-critico"
+    }
   }
 ]

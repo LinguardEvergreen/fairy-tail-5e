@@ -817,7 +817,10 @@ const RACE_CONFIG = {
     skills: { grants: ["skills:his"] },
     featureLevels: {
       0: ["Jack Of All", "Controllo magico"]
-    }
+    },
+    talentChoices: [
+      { level: 0, title: "Jack Of All", hint: "Inizi con un Talento extra a tua scelta.", count: 1 }
+    ]
   },
   "Exceed": {
     movement: { walk: 12, units: "m" },
@@ -870,7 +873,10 @@ const RACE_CONFIG = {
     skills: { grants: [] },
     featureLevels: {
       0: ["Talento", "Resistenza Demoniaca", "Trasformazione demoniaca"]
-    }
+    },
+    talentChoices: [
+      { level: 0, title: "Talento", hint: "Ottieni un talento a tua scelta dal capitolo Talenti.", count: 1 }
+    ]
   },
   "Dragon Slayer": {
     movement: { walk: 9, units: "m" },
@@ -1004,6 +1010,30 @@ function buildAdvancement(raceName, config, featureItems) {
     }
   }
 
+  // 5. ItemChoice for talent grants (race features that let player choose a talent)
+  if (config.talentChoices) {
+    for (const tc of config.talentChoices) {
+      adv.push({
+        _id: stableId(`adv:${raceName}:talent:${tc.level}:${tc.title}`),
+        type: "ItemChoice",
+        level: tc.level,
+        title: tc.title,
+        hint: tc.hint || "",
+        icon: null,
+        classRestriction: null,
+        configuration: {
+          choices: { [String(tc.level)]: { count: tc.count, replacement: false } },
+          allowDrops: true,
+          type: "feat",
+          pool: [],
+          restriction: {},
+          spell: null
+        },
+        value: { added: {}, replaced: {} }
+      });
+    }
+  }
+
   return adv;
 }
 
@@ -1073,6 +1103,149 @@ function enrichRazze() {
   console.log(`  ✓ feature-razze.json: enriched ${features.length} items with metadata`);
 }
 
+// ── ENRICHMENT: Classi + Feature Classi ────────────────────────────────────
+
+const CLASS_CONFIG = {
+  "Mago Combattente": {
+    identifier: "mago-combattente",
+    asiLevels: [4, 8, 12, 16, 19],
+    asiFeatureKeyword: "Incremento dei Punteggi",
+    asiTitle: "Incremento dei Punteggi di Caratteristica"
+  },
+  "Mago Difensore": {
+    identifier: "mago-difensore",
+    asiLevels: [4, 8, 12, 16, 19],
+    asiFeatureKeyword: "Incremento dei Punteggi",
+    asiTitle: "Incremento dei Punteggi di Caratteristica"
+  },
+  "Mago Furtivo": {
+    identifier: "mago-furtivo",
+    asiLevels: [4, 8, 12, 16, 19],
+    asiFeatureKeyword: "Miglioramento del punteggio",
+    asiTitle: "Miglioramento del punteggio di caratteristica"
+  },
+  "Mago di Strada": {
+    identifier: "mago-di-strada",
+    asiLevels: [4, 8, 12, 16, 19],
+    asiFeatureKeyword: "Miglioramento del punteggio",
+    asiTitle: "Miglioramento del punteggio di caratteristica"
+  },
+  "Mago di Supporto": {
+    identifier: "mago-di-supporto",
+    asiLevels: [4, 8, 12, 16, 19],
+    asiFeatureKeyword: "Miglioramento",
+    asiTitle: "Miglioramento Punteggio Caratteristica"
+  },
+  "Mago Tattico": {
+    identifier: "mago-tattico",
+    asiLevels: [4, 8, 12, 16, 19],
+    asiFeatureKeyword: "Miglioramento del Punteggio",
+    asiTitle: "Miglioramento del Punteggio di Caratteristica"
+  },
+  "Guerriero": {
+    identifier: "guerriero",
+    asiLevels: [4, 8, 12, 16, 19],
+    asiFeatureKeyword: "Miglioramento delle Caratteristiche",
+    asiTitle: "Miglioramento delle Caratteristiche"
+  }
+};
+
+/** Post-process: enrich classi and feature-classi with mechanical data */
+function enrichClassi() {
+  const classiPath = path.join(SRC_DIR, "classi.json");
+  const featPath = path.join(SRC_DIR, "feature-classi.json");
+
+  const classi = JSON.parse(fs.readFileSync(classiPath, "utf-8"));
+  const features = JSON.parse(fs.readFileSync(featPath, "utf-8"));
+
+  // Assign stable IDs and metadata to all class features
+  for (const f of features) {
+    const cls = f.description.match(/Classe: ([^<]+)/)?.[1] || "";
+    f._id = stableId(`feature-classi:${cls}:${f.name}`);
+    f.system = {
+      type: { value: "class", subtype: "" },
+      requirements: cls,
+      identifier: toKebab(f.name)
+    };
+  }
+
+  // Enrich classes
+  for (const c of classi) {
+    const config = CLASS_CONFIG[c.name];
+    if (!config) {
+      console.warn(`  ⚠ No config for class: ${c.name}`);
+      continue;
+    }
+
+    c._id = stableId(`classi:${c.name}`);
+    const advancement = [];
+
+    // Find the ASI feature item for this class
+    const asiFeature = features.find(
+      f => f.name.toLowerCase().includes(config.asiFeatureKeyword.toLowerCase()) &&
+      f.description.includes(`Classe: ${c.name}`)
+    );
+
+    // Add ASI advancement at each ASI level
+    for (const level of config.asiLevels) {
+      // ItemGrant for the ASI feature description
+      if (asiFeature) {
+        advancement.push({
+          _id: stableId(`adv:${c.name}:asi-grant:${level}`),
+          type: "ItemGrant",
+          level: level,
+          title: config.asiTitle,
+          hint: "",
+          icon: null,
+          classRestriction: null,
+          configuration: {
+            items: [{ uuid: `Compendium.${MODULE_ID}.ft5e-feature-classi.${asiFeature._id}` }],
+            optional: false,
+            spell: null
+          },
+          value: {}
+        });
+      }
+
+      // AbilityScoreImprovement (mechanical: +2 to one stat, or +1 to two, or a feat)
+      advancement.push({
+        _id: stableId(`adv:${c.name}:asi:${level}`),
+        type: "AbilityScoreImprovement",
+        level: level,
+        title: config.asiTitle,
+        hint: "Puoi aumentare una caratteristica di 2 o due caratteristiche di 1. In alternativa, puoi scegliere un Talento.",
+        icon: null,
+        classRestriction: null,
+        configuration: {
+          points: 2,
+          fixed: { str: 0, dex: 0, con: 0, int: 0, wis: 0, cha: 0 },
+          cap: 2,
+          locked: []
+        },
+        value: {}
+      });
+    }
+
+    c.system = {
+      identifier: config.identifier,
+      source: {
+        custom: "Fairy Tail 5e",
+        book: "Fairy Tail",
+        page: "",
+        license: "",
+        rules: "2014"
+      },
+      advancement: advancement
+    };
+  }
+
+  // Write back
+  fs.writeFileSync(classiPath, JSON.stringify(classi, null, 2), "utf-8");
+  console.log(`  ✓ classi.json: enriched ${classi.length} items with ASI advancement`);
+  fs.writeFileSync(featPath, JSON.stringify(features, null, 2), "utf-8");
+  console.log(`  ✓ feature-classi.json: enriched ${features.length} items with metadata`);
+}
+
 // ── Main ────────────────────────────────────────────────────────────────────
 console.log("Generating JSON data files from Homebrewery source...\n");
 console.log(`Source: ${SOURCE_FILE}`);
@@ -1090,7 +1263,8 @@ extractFeatureRazze();
 extractFeatureClassi();
 extractFeatureMagie();
 
-console.log("\nEnriching race data...");
+console.log("\nEnriching data...");
 enrichRazze();
+enrichClassi();
 
 console.log("\nAll JSON files generated in src/");
