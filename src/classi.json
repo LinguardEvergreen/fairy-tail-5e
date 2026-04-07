@@ -47,10 +47,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "saves:int",
-              "saves:con"
-            ]
+            "chosen": []
           }
         },
         {
@@ -70,9 +67,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "weapon:sim"
-            ]
+            "chosen": []
           }
         },
         {
@@ -503,10 +498,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "saves:str",
-              "saves:con"
-            ]
+            "chosen": []
           }
         },
         {
@@ -529,12 +521,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "armor:lgt",
-              "armor:med",
-              "armor:hvy",
-              "armor:shl"
-            ]
+            "chosen": []
           }
         },
         {
@@ -555,10 +542,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "weapon:sim",
-              "weapon:mar"
-            ]
+            "chosen": []
           }
         },
         {
@@ -1065,10 +1049,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "saves:dex",
-              "saves:int"
-            ]
+            "chosen": []
           }
         },
         {
@@ -1088,9 +1069,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "armor:lgt"
-            ]
+            "chosen": []
           }
         },
         {
@@ -1110,9 +1089,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "weapon:sim"
-            ]
+            "chosen": []
           }
         },
         {
@@ -1665,10 +1642,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "saves:dex",
-              "saves:cha"
-            ]
+            "chosen": []
           }
         },
         {
@@ -1688,9 +1662,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "armor:lgt"
-            ]
+            "chosen": []
           }
         },
         {
@@ -1710,9 +1682,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "weapon:sim"
-            ]
+            "chosen": []
           }
         },
         {
@@ -2162,10 +2132,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "saves:dex",
-              "saves:wis"
-            ]
+            "chosen": []
           }
         },
         {
@@ -2185,9 +2152,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "armor:lgt"
-            ]
+            "chosen": []
           }
         },
         {
@@ -2207,9 +2172,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "weapon:sim"
-            ]
+            "chosen": []
           }
         },
         {
@@ -2242,9 +2205,7 @@
             ]
           },
           "value": {
-            "chosen": [
-              "skills:med"
-            ]
+            "chosen": []
           }
         },
         {
@@ -2569,10 +2530,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "saves:int",
-              "saves:con"
-            ]
+            "chosen": []
           }
         },
         {
@@ -2592,9 +2550,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "armor:lgt"
-            ]
+            "chosen": []
           }
         },
         {
@@ -2614,9 +2570,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "weapon:sim"
-            ]
+            "chosen": []
           }
         },
         {
@@ -3283,11 +3237,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "saves:str",
-              "saves:dex",
-              "saves:con"
-            ]
+            "chosen": []
           }
         },
         {
@@ -3310,12 +3260,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "armor:lgt",
-              "armor:med",
-              "armor:hvy",
-              "armor:shl"
-            ]
+            "chosen": []
           }
         },
         {
@@ -3336,10 +3281,7 @@
             "choices": []
           },
           "value": {
-            "chosen": [
-              "weapon:sim",
-              "weapon:mar"
-            ]
+            "chosen": []
           }
         },
         {

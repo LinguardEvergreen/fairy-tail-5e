@@ -134,7 +134,530 @@
             },
             "allowDrops": true,
             "type": "feat",
-            "pool": [],
+            "pool": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.b57142852039a037"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.4c5b22367b890ad2"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.c2bd39b3590f02af"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.d3bc56baa2223274"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.b012dd363ffb48ce"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.54396d580bd06728"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.1ba3606d6b0bd5a3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.07b8c3e79baf03fc"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8e5780679e27a134"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.c4530bd81b18ad18"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.67fc57af816a6d49"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.bad2b04a043f8a4b"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.9b0bd210c5e3da80"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.342a667fbe05d7cd"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.be4f7c7d9867d5b7"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.39db75ac3c2236c5"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8d1f2069a8aaaf25"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f404b7681080db39"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.aade0ff61505c2d1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f19ef197d01872ee"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.a05d666977770947"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.c2b893fedf53cae4"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.fb9a2e67d6f12a69"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.a207a1441ffa611e"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.70fcd41316b960fa"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.461b6a93f240c71c"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.47b89a3fb64af801"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.687f074ff51e4ab3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.d410d7b04deb57d1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.5fed0befe000feab"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.c0a443e51be52bbf"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.0d4a55dd0d4049a1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.a6c3f4a5ba090748"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f6d965cb9c161e67"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.327ea67c8d3e94ba"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.baf501112100dc01"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.b2130456e9c5aa92"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.9bf93c1d491b2e29"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.6610940d540e8f75"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.3935c73a3e9df459"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.89c1cd2fe317a3ee"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.6e777472b65ce06f"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.3f0731d63097e017"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.1205b98f982b5141"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.e5c93f06d34c8e8f"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.b2d28b8c0bab898d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.605080f66854cc7d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.99b7aa2978c297ad"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.3eb72d04739b9aac"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.04ba5b01e88a2a36"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.4f355d0ae11c3ebf"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.0ea4d8de7dea1e23"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.6f6b457746fb3aa9"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.c1555bbcbf461a43"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.d78973a35af4953a"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8d2484843de10cfb"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.fa2d10a86f9b494e"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.64cdec8f2abc1007"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.30d1b3cfecf5a609"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.03a97eadae4494ef"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.4490e84d3360cdf3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.49852fd8daf65f28"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.ad78b103fc75a5fb"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.20e1f36331f9dbec"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.25d179dd25c14531"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.dcb54b38bc47748b"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.7ec45dd87ae1d038"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.e726faf30e8e73c8"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.41ae5bac6ffdbf2d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.6087491e47841856"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.e0172b3352fb669d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.d880520a32a8e854"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.646f168d1407cec3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.564108b495a7d914"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.54d5952b47f79658"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.26f6df9224b6cbc0"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.36eb18933b8dbbce"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.064e31401878176e"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.57caadf3020ea685"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.5c6450085a72c55e"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f2af141bf6883eb6"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.4da588056ce0837a"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8ddb08fbc43be4f8"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.9e9a971ea625f46d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.aaa386b27622d92f"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.d45acea8ec2b0db6"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.33ab1067e3ff48f1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.842aa75494dd9099"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.ec8f7d1f625aff04"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.69348375be02bba9"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8385564b313129ac"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.a950377c506e70f1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.898941d6a396fa29"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.83d6114930522dc7"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.75d9d95b454378db"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.fcc98a0f9eb63c38"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.abaf99426bbe74b9"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.1ad8c03f72fa9403"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.56f0833ae7c40f71"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.0d81b23fe4f76629"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.b0be3f0b0e2913d8"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.eebe2d52a6d31db3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.049e1da0caa8a1a0"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.77c36be1715d205c"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.97eef43c542dbc3b"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.b48c09349a6f1c58"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.9814bcc1d4ea7a96"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.6fda30e70b27062d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8a984f9fb4c88bd9"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.e22f812683cceb81"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.13903afb5f5ea938"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.ca1c0d918e3c8d61"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.1fbf2adc09817ba3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.b742e4cd4d772a60"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.5bb6886574fdc5df"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.2a55d852c886a2a9"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.86084c03751b6e21"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.a89cdb14630a12fb"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.a2437af273dc0da3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.df0e9cab96845d62"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f4875e2caa528885"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.eae65bdec28d8d93"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.9b6cd05986cf2096"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.85663cf967c28d3d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.a672a40736ac372d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.5c03c85229934491"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.353226e2788c94bc"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.43a6d53efb67a976"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.299a19a3913beedd"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.364dd9e7ff337485"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.fe696098a5245fc6"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.688ea6242d29258a"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f7be52c8127ebaa5"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f4c8f0935e609c2a"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.b5b9582e1fdfbd2f"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8a063e848698a5fa"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.9e33894e2e3d9331"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f8bdf2af366f1816"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.7f1652da1a6824f1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.ccb023d960e96c3a"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.591900dcc56a2414"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.caeffd8b879ef29a"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.026e86c6b82a43a7"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.c4d4c4d748e14a3e"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.5dae3141d5aeda04"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.17c24c33ca4bde4d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.08c9b5c05d67ae1e"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.aa97627899128837"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.2ce7d18eeab268f2"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.1037eab795663b80"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.d56ce59d5191acd6"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.fe4fbee95d86007b"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.2e69f86b9b3bc5bd"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.2db2b99634a34c80"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f09954dbce9e351f"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.aa8dc7d3ee270b04"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.974e24ed2e1ab4e6"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8b41b5f00f507b1a"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.e67314fa34bb065b"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.44912184742a0728"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.5b4f56c87912e9ab"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.0848ba0e78269b82"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.dab7ef3bc54e67f9"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.c424b90a06331978"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.687b3e1f0596685f"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.07d1dd0953cdd684"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.cba1031f5bfb80f1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.32d6df96d4adbbae"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.e372b123bc5e6a3d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.e2c8169b9e4225b5"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8957d5b3ab3202f3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.208711c1a256a7c1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f13d110cd2c64623"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.aa20a67f50108e42"
+              }
+            ],
             "restriction": {},
             "spell": null
           },
@@ -751,7 +1274,530 @@
             },
             "allowDrops": true,
             "type": "feat",
-            "pool": [],
+            "pool": [
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.b57142852039a037"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.4c5b22367b890ad2"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.c2bd39b3590f02af"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.d3bc56baa2223274"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.b012dd363ffb48ce"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.54396d580bd06728"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.1ba3606d6b0bd5a3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.07b8c3e79baf03fc"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8e5780679e27a134"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.c4530bd81b18ad18"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.67fc57af816a6d49"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.bad2b04a043f8a4b"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.9b0bd210c5e3da80"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.342a667fbe05d7cd"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.be4f7c7d9867d5b7"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.39db75ac3c2236c5"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8d1f2069a8aaaf25"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f404b7681080db39"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.aade0ff61505c2d1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f19ef197d01872ee"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.a05d666977770947"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.c2b893fedf53cae4"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.fb9a2e67d6f12a69"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.a207a1441ffa611e"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.70fcd41316b960fa"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.461b6a93f240c71c"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.47b89a3fb64af801"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.687f074ff51e4ab3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.d410d7b04deb57d1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.5fed0befe000feab"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.c0a443e51be52bbf"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.0d4a55dd0d4049a1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.a6c3f4a5ba090748"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f6d965cb9c161e67"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.327ea67c8d3e94ba"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.baf501112100dc01"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.b2130456e9c5aa92"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.9bf93c1d491b2e29"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.6610940d540e8f75"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.3935c73a3e9df459"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.89c1cd2fe317a3ee"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.6e777472b65ce06f"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.3f0731d63097e017"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.1205b98f982b5141"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.e5c93f06d34c8e8f"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.b2d28b8c0bab898d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.605080f66854cc7d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.99b7aa2978c297ad"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.3eb72d04739b9aac"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.04ba5b01e88a2a36"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.4f355d0ae11c3ebf"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.0ea4d8de7dea1e23"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.6f6b457746fb3aa9"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.c1555bbcbf461a43"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.d78973a35af4953a"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8d2484843de10cfb"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.fa2d10a86f9b494e"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.64cdec8f2abc1007"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.30d1b3cfecf5a609"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.03a97eadae4494ef"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.4490e84d3360cdf3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.49852fd8daf65f28"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.ad78b103fc75a5fb"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.20e1f36331f9dbec"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.25d179dd25c14531"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.dcb54b38bc47748b"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.7ec45dd87ae1d038"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.e726faf30e8e73c8"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.41ae5bac6ffdbf2d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.6087491e47841856"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.e0172b3352fb669d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.d880520a32a8e854"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.646f168d1407cec3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.564108b495a7d914"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.54d5952b47f79658"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.26f6df9224b6cbc0"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.36eb18933b8dbbce"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.064e31401878176e"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.57caadf3020ea685"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.5c6450085a72c55e"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f2af141bf6883eb6"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.4da588056ce0837a"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8ddb08fbc43be4f8"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.9e9a971ea625f46d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.aaa386b27622d92f"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.d45acea8ec2b0db6"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.33ab1067e3ff48f1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.842aa75494dd9099"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.ec8f7d1f625aff04"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.69348375be02bba9"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8385564b313129ac"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.a950377c506e70f1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.898941d6a396fa29"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.83d6114930522dc7"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.75d9d95b454378db"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.fcc98a0f9eb63c38"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.abaf99426bbe74b9"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.1ad8c03f72fa9403"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.56f0833ae7c40f71"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.0d81b23fe4f76629"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.b0be3f0b0e2913d8"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.eebe2d52a6d31db3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.049e1da0caa8a1a0"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.77c36be1715d205c"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.97eef43c542dbc3b"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.b48c09349a6f1c58"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.9814bcc1d4ea7a96"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.6fda30e70b27062d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8a984f9fb4c88bd9"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.e22f812683cceb81"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.13903afb5f5ea938"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.ca1c0d918e3c8d61"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.1fbf2adc09817ba3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.b742e4cd4d772a60"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.5bb6886574fdc5df"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.2a55d852c886a2a9"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.86084c03751b6e21"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.a89cdb14630a12fb"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.a2437af273dc0da3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.df0e9cab96845d62"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f4875e2caa528885"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.eae65bdec28d8d93"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.9b6cd05986cf2096"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.85663cf967c28d3d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.a672a40736ac372d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.5c03c85229934491"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.353226e2788c94bc"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.43a6d53efb67a976"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.299a19a3913beedd"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.364dd9e7ff337485"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.fe696098a5245fc6"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.688ea6242d29258a"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f7be52c8127ebaa5"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f4c8f0935e609c2a"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.b5b9582e1fdfbd2f"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8a063e848698a5fa"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.9e33894e2e3d9331"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f8bdf2af366f1816"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.7f1652da1a6824f1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.ccb023d960e96c3a"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.591900dcc56a2414"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.caeffd8b879ef29a"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.026e86c6b82a43a7"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.c4d4c4d748e14a3e"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.5dae3141d5aeda04"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.17c24c33ca4bde4d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.08c9b5c05d67ae1e"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.aa97627899128837"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.2ce7d18eeab268f2"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.1037eab795663b80"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.d56ce59d5191acd6"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.fe4fbee95d86007b"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.2e69f86b9b3bc5bd"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.2db2b99634a34c80"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f09954dbce9e351f"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.aa8dc7d3ee270b04"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.974e24ed2e1ab4e6"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8b41b5f00f507b1a"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.e67314fa34bb065b"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.44912184742a0728"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.5b4f56c87912e9ab"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.0848ba0e78269b82"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.dab7ef3bc54e67f9"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.c424b90a06331978"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.687b3e1f0596685f"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.07d1dd0953cdd684"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.cba1031f5bfb80f1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.32d6df96d4adbbae"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.e372b123bc5e6a3d"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.e2c8169b9e4225b5"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.8957d5b3ab3202f3"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.208711c1a256a7c1"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.f13d110cd2c64623"
+              },
+              {
+                "uuid": "Compendium.fairy-tail-5e.ft5e-talenti.aa20a67f50108e42"
+              }
+            ],
             "restriction": {},
             "spell": null
           },

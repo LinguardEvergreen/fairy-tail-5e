@@ -1106,7 +1106,7 @@ const RACE_CONFIG = {
 };
 
 /** Build the advancement array for a race */
-function buildAdvancement(raceName, config, featureItems) {
+function buildAdvancement(raceName, config, featureItems, talentPool) {
   const adv = [];
   const PACK = `ft5e-feature-razze`;
 
@@ -1217,7 +1217,7 @@ function buildAdvancement(raceName, config, featureItems) {
           choices: { [String(tc.level)]: { count: tc.count, replacement: false } },
           allowDrops: true,
           type: "feat",
-          pool: [],
+          pool: talentPool || [],
           restriction: {},
           spell: null
         },
@@ -1230,7 +1230,7 @@ function buildAdvancement(raceName, config, featureItems) {
 }
 
 /** Post-process: enrich razze and feature-razze with mechanical data */
-function enrichRazze() {
+function enrichRazze(talentPool) {
   const razzePath = path.join(SRC_DIR, "razze.json");
   const featPath = path.join(SRC_DIR, "feature-razze.json");
 
@@ -1284,7 +1284,7 @@ function enrichRazze() {
         special: ""
       },
       type: { value: "humanoid", subtype: "", custom: "" },
-      advancement: buildAdvancement(r.name, config, features)
+      advancement: buildAdvancement(r.name, config, features, talentPool)
     };
   }
 
@@ -1551,7 +1551,7 @@ function enrichClassi() {
           grants,
           choices: []
         },
-        value: { chosen: grants }
+        value: { chosen: [] }
       });
     }
 
@@ -1572,7 +1572,7 @@ function enrichClassi() {
           grants,
           choices: []
         },
-        value: { chosen: grants }
+        value: { chosen: [] }
       });
     }
 
@@ -1593,7 +1593,7 @@ function enrichClassi() {
           grants,
           choices: []
         },
-        value: { chosen: grants }
+        value: { chosen: [] }
       });
     }
 
@@ -1621,7 +1621,7 @@ function enrichClassi() {
           grants: fixedGrants,
           choices
         },
-        value: { chosen: fixedGrants }
+        value: { chosen: [] }
       });
     }
 
@@ -2481,12 +2481,21 @@ extractFeatureClassi();
 extractFeatureMagie();
 
 console.log("\nEnriching data...");
-enrichRazze();
+// Enrich talenti first so we have stable IDs for the talent pool
+enrichTalenti();
+
+// Build talent pool UUIDs for race talent choices (Jack Of All, etc.)
+const talentiData = JSON.parse(fs.readFileSync(path.join(SRC_DIR, "talenti.json"), "utf-8"));
+const talentPool = talentiData
+  .filter(t => t._id)
+  .map(t => ({ uuid: `Compendium.${MODULE_ID}.ft5e-talenti.${t._id}` }));
+console.log(`  ✓ Talent pool: ${talentPool.length} feats available for race choices`);
+
+enrichRazze(talentPool);
 enrichClassi();
 const enrichedSpells = enrichIncantesimi();
 enrichMagie(enrichedSpells);
 enrichBackground();
-enrichTalenti();
 enrichEquipaggiamento();
 enrichStiliCombattimento();
 
