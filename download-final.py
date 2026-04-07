@@ -59,6 +59,23 @@ SOURCES = {
     # Wiki (confirmed RGBA)
     "freed": "https://static.wikia.nocookie.net/five-world-war/images/3/38/Freed1.png/revision/latest?cb=20180117174824",
     "levy": "https://static.wikia.nocookie.net/vsbattles/images/e/ed/New_X791_Levy.png/revision/latest?cb=20200704090812",
+
+    # === NEW: Guerriero (Kagura Mikazuchi) - DeviantArt wixmp ===
+    "kagura": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6233922d-753c-4152-9afe-3b82ce990681/d87dt56-3fe139c7-4247-4a12-9b09-d65ed9e01a71.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi82MjMzOTIyZC03NTNjLTQxNTItOWFmZS0zYjgyY2U5OTA2ODEvZDg3ZHQ1Ni0zZmUxMzljNy00MjQ3LTRhMTItOWIwOS1kNjVlZDllMDFhNzEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.RXjwHYFndzFUA8X8eDerGkXKW59kvJ_rO-QMtZXCwjA",
+
+    # === NEW: Razze replacement images ===
+    # Devil Slayer: Gray in Devil Slayer form (Top-Strongest Wiki)
+    "gray-devil-slayer": "https://static.wikia.nocookie.net/topstrongest/images/7/7c/GrayDevilSlayerRender.png/revision/latest?cb=20210702091954",
+    # Dragon Slayer: Natsu in Dragon Force (DeviantArt wixmp)
+    "natsu-dragon-force": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/973c01c1-c4e4-45ee-bf9d-9b6fc849fae3/d7d84da-468d2898-5f5a-472f-b7a6-c839fc0aab89.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi85NzNjMDFjMS1jNGU0LTQ1ZWUtYmY5ZC05YjZmYzg0OWZhZTMvZDdkODRkYS00NjhkMjg5OC01ZjVhLTQ3MmYtYjdhNi1jODM5ZmMwYWFiODkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bKqYqnaHAx_LuQ35TAqUM9mDPHwMynBW7bkmYfARIrw",
+    # Ibrido Demone Galuna: demon (pngimg.com)
+    "demone-galuna": "https://pngimg.com/uploads/demon/demon_PNG17.png",
+    # Ibrido Gatto: Millianna (DeviantArt wixmp)
+    "millianna": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6233922d-753c-4152-9afe-3b82ce990681/d89c6zv-1c33bc34-2d5e-4799-8177-b1c3e9c2f5ea.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiIvZi82MjMzOTIyZC03NTNjLTQxNTItOWFmZS0zYjgyY2U5OTA2ODEvZDg5YzZ6di0xYzMzYmMzNC0yZDVlLTQ3OTktODE3Ny1iMWMzZTljMmY1ZWEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.Qa0GfSNg9XnSNSTGcRdWTerHIgwbO0hdxf-wtvn0qio",
+    # Ibrido Lucertola: lizard (pngimg.com)
+    "lucertola": "https://pngimg.com/d/lizard_PNG37.png",
+    # Ibrido Lupo: werewolf (pngimg.com)
+    "lupo": "https://pngimg.com/d/werewolf_PNG13.png",
 }
 
 # ── Target mapping ──
@@ -72,15 +89,15 @@ TARGETS = [
     ("sabbia", "magie", "sabbia"), ("creazione", "magie", "creazione"),
     ("armi-da-fuoco", "magie", "armi-da-fuoco"), ("cambio-stock", "magie", "cambio-stock"),
     # Classi (7)
-    ("natsu", "classi", "mago-combattente"), ("erza", "classi", "guerriero"),
+    ("natsu", "classi", "mago-combattente"), ("kagura", "classi", "guerriero"),
     ("gajeel", "classi", "mago-di-strada"), ("wendy", "classi", "mago-di-supporto"),
     ("erza", "classi", "mago-difensore"), ("mystogan", "classi", "mago-furtivo"),
     ("mavis", "classi", "mago-tattico"),
     # Razze (8)
-    ("natsu", "razze", "dragon-slayer"), ("gray", "razze", "devil-slayer"),
-    ("happy", "razze", "exceed"), ("mirajane", "razze", "ibrido-demone-galuna"),
-    ("carla", "razze", "ibrido-gatto"), ("pantherlily", "razze", "ibrido-lucertola"),
-    ("elfman", "razze", "ibrido-lupo"), ("lucy", "razze", "umani"),
+    ("natsu-dragon-force", "razze", "dragon-slayer"), ("gray-devil-slayer", "razze", "devil-slayer"),
+    ("happy", "razze", "exceed"), ("demone-galuna", "razze", "ibrido-demone-galuna"),
+    ("millianna", "razze", "ibrido-gatto"), ("lucertola", "razze", "ibrido-lucertola"),
+    ("lupo", "razze", "ibrido-lupo"), ("lucy", "razze", "umani"),
     # Background (7)
     ("logo", "background", "mago-gilda"), ("gildarts", "background", "mago-errante"),
     ("laxus", "background", "mago-combattimento"), ("levy", "background", "studioso"),
