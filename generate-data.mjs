@@ -1781,6 +1781,135 @@ function parseLevelFromName(name) {
   return 1; // Default: level 1 feature
 }
 
+// ── Italian Mechanics Parser ─────────────────────────────────────────────
+
+/**
+ * Parse Italian descriptions and extract mechanical data for dnd5e items.
+ * Returns an object with activation, mpCost, damage, save, actionType, range, target.
+ */
+function parseItalianMechanics(desc) {
+  const result = {
+    activation: { type: null, cost: 1 },
+    mpCost: null,
+    damage: null,
+    save: { ability: null, scaling: "spell" },
+    actionType: null,
+    range: null,
+    target: null
+  };
+
+  if (!desc) return result;
+
+  // ── Activation ──
+  if (/come reazione/i.test(desc)) {
+    result.activation.type = "reaction";
+  } else if (/(?:come )?azione bonus/i.test(desc)) {
+    result.activation.type = "bonus";
+  } else if (/come (?:un[''']?)?azione/i.test(desc)) {
+    result.activation.type = "action";
+  }
+
+  // ── MP Cost ──
+  const mpPatterns = [
+    /[Cc]osto di mana:\s*::?\s*(\d+)\s*(?:MP|PM)/i,
+    /spend(?:i|ere)\s+(\d+)\s+punti mana/i,
+    /(\d+)\s*(?:PM|MP)/i,
+    /(\d+)\s+punti mana/i,
+    /(\d+)\s+[Mm]ana/i
+  ];
+  for (const pat of mpPatterns) {
+    const m = desc.match(pat);
+    if (m) { result.mpCost = parseInt(m[1]); break; }
+  }
+
+  // ── Damage ──
+  const damageTypeMap = {
+    fuoco: "fire", fulmine: "lightning", freddo: "cold",
+    necrotici: "necrotic", necrotico: "necrotic",
+    radiosi: "radiant", radioso: "radiant",
+    contundenti: "bludgeoning", contundente: "bludgeoning",
+    perforanti: "piercing", perforante: "piercing",
+    taglienti: "slashing", tagliente: "slashing",
+    forza: "force",
+    psichici: "psychic", psichico: "psychic",
+    veleno: "poison",
+    tuono: "thunder",
+    acido: "acid"
+  };
+  const dmgTypeKeys = Object.keys(damageTypeMap).join("|");
+  const dmgRegex = new RegExp(`(\\d+d\\d+(?:\\s*\\+\\s*\\d+)?)\\s+(?:danni\\s+(?:da\\s+)?)?(?:di\\s+)?(${dmgTypeKeys})`, "gi");
+  const parts = [];
+  let dmgMatch;
+  while ((dmgMatch = dmgRegex.exec(desc)) !== null) {
+    const formula = dmgMatch[1].replace(/\s+/g, "");
+    const itType = dmgMatch[2].toLowerCase();
+    const enType = damageTypeMap[itType] || "";
+    parts.push([formula, enType]);
+  }
+  // Also try pattern: XdY danni (without type)
+  if (!parts.length) {
+    const simpleDmg = desc.match(/(\d+d\d+(?:\s*\+\s*\d+)?)\s+danni/i);
+    if (simpleDmg) {
+      parts.push([simpleDmg[1].replace(/\s+/g, ""), ""]);
+    }
+  }
+  if (parts.length) {
+    result.damage = { parts };
+  }
+
+  // ── Save ──
+  const saveMap = {
+    "destrezza": "dex", "forza": "str", "costituzione": "con",
+    "intelligenza": "int", "saggezza": "wis", "carisma": "cha"
+  };
+  const saveMatch = desc.match(/(?:tiro salvezza|TS)\s+su\s+(Destrezza|Forza|Costituzione|Intelligenza|Saggezza|Carisma)/i);
+  if (saveMatch) {
+    result.save.ability = saveMap[saveMatch[1].toLowerCase()] || null;
+  }
+
+  // ── Action Type ──
+  if (/attacco con incantesimo a distanza|tiro per colpire con incantesimo a distanza/i.test(desc)) {
+    result.actionType = "rsak";
+  } else if (/attacco con incantesimo in mischia|tiro per colpire con incantesimo/i.test(desc)) {
+    result.actionType = "msak";
+  } else if (result.save.ability) {
+    result.actionType = "save";
+  } else if (/recupera|guarisci|cura/i.test(desc)) {
+    result.actionType = "heal";
+  } else if (result.damage) {
+    result.actionType = "util";
+  } else {
+    result.actionType = "util";
+  }
+
+  // ── Range ──
+  const rangeMatch = desc.match(/(?:entro|raggio di)\s+(\d+(?:[,]\d+)?)\s*metri/i);
+  if (rangeMatch) {
+    const val = parseFloat(rangeMatch[1].replace(",", "."));
+    result.range = { value: val, units: "m" };
+  }
+
+  // ── Target ──
+  const coneMatch = desc.match(/cono di\s+(\d+(?:[,]\d+)?)\s*metri/i);
+  const sphereMatch = desc.match(/sfera di\s+(\d+(?:[,]\d+)?)\s*metri/i);
+  const lineMatch = desc.match(/linea di\s+(\d+(?:[,]\d+)?)\s*metri/i);
+  const cubeMatch = desc.match(/cubo di\s+(\d+(?:[,]\d+)?)\s*metri/i);
+
+  if (coneMatch) {
+    result.target = { value: parseFloat(coneMatch[1].replace(",", ".")), type: "cone", units: "m" };
+  } else if (sphereMatch) {
+    result.target = { value: parseFloat(sphereMatch[1].replace(",", ".")), type: "sphere", units: "m" };
+  } else if (lineMatch) {
+    result.target = { value: parseFloat(lineMatch[1].replace(",", ".")), type: "line", units: "m" };
+  } else if (cubeMatch) {
+    result.target = { value: parseFloat(cubeMatch[1].replace(",", ".")), type: "cube", units: "m" };
+  } else if (/una creatura|bersaglio/i.test(desc)) {
+    result.target = { value: 1, type: "creature", units: "" };
+  }
+
+  return result;
+}
+
 // ── ENRICHMENT: Incantesimi ───────────────────────────────────────────────
 
 /** Post-process: enrich incantesimi with dnd5e mechanical data */
@@ -1836,6 +1965,15 @@ function enrichIncantesimi() {
         supply: 0
       }
     };
+
+    // Parse damage/save/actionType from description
+    const desc = (s.description || "").replace(/<[^>]*>/g, "").replace(/\*\*/g, "").replace(/\*/g, "");
+    const mechanics = parseItalianMechanics(desc);
+
+    if (mechanics.damage) s.system.damage = mechanics.damage;
+    if (mechanics.save?.ability) s.system.save = { ability: mechanics.save.ability, dc: null, scaling: "spell" };
+    if (mechanics.actionType) s.system.actionType = mechanics.actionType;
+    if (mechanics.target) s.system.target = { value: mechanics.target.value, type: mechanics.target.type, units: mechanics.target.units || "m" };
   }
 
   // Write back (keep _magia for enrichMagie to use, remove _meta)
@@ -1886,11 +2024,41 @@ function enrichMagie(spells) {
   for (const f of features) {
     const mag = f.description.match(/Magia: ([^<]+)/)?.[1] || "";
     f._id = stableId(`feature-magie:${mag}:${f.name}`);
+
+    const desc = (f.description || "").replace(/<[^>]*>/g, "").replace(/\*\*/g, "").replace(/\*/g, "");
+    const mechanics = parseItalianMechanics(desc);
+
     f.system = {
       type: { value: "class", subtype: "" },
       requirements: mag,
-      identifier: toKebab(f.name)
+      identifier: toKebab(f.name),
+      source: { custom: "", book: "Fairy Tail", page: "", license: "", rules: "2014" }
     };
+
+    // Apply parsed mechanics
+    if (mechanics.activation?.type) {
+      f.system.activation = mechanics.activation;
+    }
+    if (mechanics.damage) {
+      f.system.damage = mechanics.damage;
+      f.system.damage.versatile = "";
+    }
+    if (mechanics.save?.ability) {
+      f.system.save = { ability: mechanics.save.ability, dc: null, scaling: "spell" };
+    }
+    if (mechanics.actionType) {
+      f.system.actionType = mechanics.actionType;
+    }
+    if (mechanics.target) {
+      f.system.target = { value: mechanics.target.value, type: mechanics.target.type, units: "m" };
+    }
+    if (mechanics.range) {
+      f.system.range = { value: mechanics.range.value, long: null, units: mechanics.range.units || "m" };
+    }
+    if (mechanics.mpCost) {
+      if (!f.flags) f.flags = {};
+      f.flags["fairy-tail-5e"] = { mpCost: mechanics.mpCost };
+    }
   }
 
   // Enrich magie (subclasses)
@@ -1899,6 +2067,7 @@ function enrichMagie(spells) {
 
   for (const m of magie) {
     m._id = stableId(`magie:${m.name}`);
+    m.type = "subclass";
 
     // ── Features ──
     const magFeatures = features.filter(

@@ -349,6 +349,79 @@ async function promptSpellcastingAbility(classItem) {
   });
 }
 
+/**
+ * Prompt the player to choose a Magia (subclass) for their FT5e class.
+ */
+async function promptMagiaSelection(classItem, actor) {
+  const className = classItem.name;
+  const classIdentifier = classItem.system?.identifier;
+
+  // Fetch all magie from the compendium
+  const pack = game.packs.get("fairy-tail-5e.ft5e-magie");
+  if (!pack) {
+    console.warn("Fairy Tail 5e | Magie compendium not found");
+    return;
+  }
+
+  const index = await pack.getIndex();
+  const magieList = Array.from(index.values());
+
+  if (!magieList.length) return;
+
+  // Build radio buttons for each magia
+  const options = magieList.map((m, i) => {
+    const checked = i === 0 ? "checked" : "";
+    return `<label style="display:block; padding:4px 0;"><input type="radio" name="ft5e-magia" value="${m._id}" ${checked}> ${m.name}</label>`;
+  }).join("");
+
+  const content = `
+    <p>Scegli la <strong>Magia</strong> per <strong>${className}</strong>:</p>
+    <p><em>La Magia determina i tuoi incantesimi e le tue abilit\u00e0 magiche uniche.</em></p>
+    <div style="max-height:300px; overflow-y:auto; margin-top:8px; padding:4px;">
+      ${options}
+    </div>`;
+
+  return new Promise((resolve) => {
+    new Dialog({
+      title: `${className} \u2014 Scegli la tua Magia`,
+      content,
+      buttons: {
+        ok: {
+          label: "Conferma",
+          icon: '<i class="fas fa-check"></i>',
+          callback: async (html) => {
+            const chosenId = html.find('input[name="ft5e-magia"]:checked').val();
+            if (!chosenId) { resolve(null); return; }
+
+            try {
+              // Fetch the full magia document from compendium
+              const magiaDoc = await pack.getDocument(chosenId);
+              if (!magiaDoc) { resolve(null); return; }
+
+              // Create item data, overriding classIdentifier to match this class
+              const magiaData = magiaDoc.toObject();
+              magiaData.system.classIdentifier = classIdentifier;
+
+              // Remove _id so FoundryVTT generates a new one
+              delete magiaData._id;
+
+              // Add to actor
+              const created = await actor.createEmbeddedDocuments("Item", [magiaData]);
+              ui.notifications.info(`${actor.name} ha scelto ${magiaDoc.name}!`);
+              resolve(created[0]);
+            } catch (err) {
+              console.error("Fairy Tail 5e | Error adding magia:", err);
+              resolve(null);
+            }
+          }
+        }
+      },
+      default: "ok",
+      close: () => resolve(null)
+    }, { width: 400 }).render(true);
+  });
+}
+
 /* -------------------------------------------------- */
 /*  Hooks — Init & Settings                           */
 /* -------------------------------------------------- */
@@ -671,6 +744,9 @@ Hooks.on("createItem", async (item, options, userId) => {
   if (!item.system?.spellcasting?.ability) {
     await promptSpellcastingAbility(item);
   }
+
+  // Prompt to choose a Magia (subclass)
+  await promptMagiaSelection(item, actor);
 
   if (!isEnabled()) return;
 

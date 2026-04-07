@@ -16,6 +16,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "reaction",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "force"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 1
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
@@ -37,6 +71,44 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "bludgeoning"
+          ],
+          [
+            "1d6",
+            "necrotic"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
@@ -58,6 +130,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "force"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
@@ -79,6 +180,29 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d10",
+            "force"
+          ],
+          [
+            "3d8",
+            "slashing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 4
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
@@ -100,6 +224,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d8",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
@@ -121,6 +279,12 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
@@ -142,6 +306,26 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 1.5,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 5
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
@@ -163,6 +347,39 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d8",
+            "force"
+          ],
+          [
+            "4d8",
+            "slashing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
@@ -184,6 +401,48 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d6",
+            "bludgeoning"
+          ],
+          [
+            "3d6",
+            "necrotic"
+          ],
+          [
+            "3d6",
+            "necrotic"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 10
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
@@ -205,6 +464,60 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d4",
+            "piercing"
+          ],
+          [
+            "2d6",
+            "fire"
+          ],
+          [
+            "1d4",
+            "slashing"
+          ],
+          [
+            "1d8",
+            "bludgeoning"
+          ],
+          [
+            "1d6",
+            "cold"
+          ],
+          [
+            "2d6",
+            "cold"
+          ],
+          [
+            "1d4",
+            "lightning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1.5,
+        "type": "cube",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
@@ -226,6 +539,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            ""
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
@@ -247,6 +594,56 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "cold"
+          ],
+          [
+            "1d4",
+            "fire"
+          ],
+          [
+            "1d6",
+            "fire"
+          ],
+          [
+            "6d8",
+            "slashing"
+          ],
+          [
+            "4d6",
+            "lightning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 3,
+        "type": "sphere",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 10
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
@@ -268,6 +665,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "10d12",
+            "force"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "heal",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
@@ -289,6 +715,56 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "fire"
+          ],
+          [
+            "4d6",
+            "lightning"
+          ],
+          [
+            "4d8",
+            "bludgeoning"
+          ],
+          [
+            "8d6",
+            "fire"
+          ],
+          [
+            "4d6",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
@@ -310,7 +786,8 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -331,6 +808,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 4
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
@@ -352,6 +839,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
@@ -373,6 +870,52 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "20d6",
+            "force"
+          ],
+          [
+            "20d10",
+            "necrotic"
+          ],
+          [
+            "10d10",
+            "lightning"
+          ],
+          [
+            "8d6",
+            "radiant"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "wis",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 6,
+        "type": "sphere",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 10
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
@@ -394,6 +937,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -415,6 +992,21 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -436,6 +1028,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 4
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -457,6 +1059,25 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -478,6 +1099,30 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d10",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "range": {
+        "value": 4.5,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -499,6 +1144,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d10",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "target": {
+        "value": 3,
+        "type": "line",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -520,6 +1194,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "10d12",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 10
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -541,6 +1244,26 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 8
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -562,6 +1285,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 8
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -583,6 +1316,56 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d8",
+            "piercing"
+          ],
+          [
+            "1d8+3",
+            "slashing"
+          ],
+          [
+            "5d10",
+            "fire"
+          ],
+          [
+            "16d10",
+            "piercing"
+          ],
+          [
+            "8d10",
+            "slashing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 4.5,
+        "type": "cone",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -604,6 +1387,39 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "fire"
+          ],
+          [
+            "1d6",
+            "fire"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -625,6 +1441,22 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 4
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -646,6 +1478,21 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util",
+      "range": {
+        "value": 1.5,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -667,6 +1514,22 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 3,
+        "long": null,
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -688,6 +1551,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d6",
+            "fire"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 9,
+        "type": "cone",
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -709,6 +1601,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "reaction",
+        "cost": 1
+      },
+      "actionType": "heal"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 1
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -730,6 +1632,44 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "fire"
+          ],
+          [
+            "4d4",
+            "fire"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -751,6 +1691,30 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "fire"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "range": {
+        "value": 3,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -772,6 +1736,44 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "8d6",
+            "fire"
+          ],
+          [
+            "2d4",
+            "fire"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 36,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 4
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -793,6 +1795,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "fire"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "heal",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 4
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -814,6 +1845,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "12d8",
+            "fire"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 8
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -835,6 +1895,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "5d8",
+            "fire"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 36,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 8
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -856,7 +1945,21 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "fire"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -877,6 +1980,44 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "10d10",
+            "fire"
+          ],
+          [
+            "10d10",
+            "radiant"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 30,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 10
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -898,6 +2039,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "force"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "wis",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -919,6 +2094,21 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util",
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -940,6 +2130,31 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "psychic"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "wis",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -961,6 +2176,21 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -982,6 +2212,21 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "actionType": "util",
+      "range": {
+        "value": 6,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -1003,6 +2248,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "6d8",
+            "force"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 3,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 6
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -1024,6 +2298,21 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "force"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -1045,6 +2334,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 6
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -1066,6 +2365,31 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "save": {
+        "ability": "wis",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -1087,6 +2411,30 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "force"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 6
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -1108,6 +2456,26 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 36,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 8
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -1129,6 +2497,12 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -1150,6 +2524,60 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4+1",
+            "force"
+          ],
+          [
+            "1d12",
+            "fire"
+          ],
+          [
+            "1d6",
+            "lightning"
+          ],
+          [
+            "1d8",
+            "cold"
+          ],
+          [
+            "1d10",
+            "acid"
+          ],
+          [
+            "1d6",
+            "acid"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 1.5,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
@@ -1171,6 +2599,38 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "piercing"
+          ],
+          [
+            "2d6",
+            "fire"
+          ],
+          [
+            "1d6",
+            "fire"
+          ],
+          [
+            "2d8",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
@@ -1192,6 +2652,39 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d10",
+            "force"
+          ],
+          [
+            "3d6",
+            "force"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 3,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 10
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
@@ -1213,6 +2706,44 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d8",
+            "lightning"
+          ],
+          [
+            "3d6",
+            "lightning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 1.5,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 4
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
@@ -1234,6 +2765,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "6d8",
+            "slashing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 9,
+        "type": "cone",
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 5
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
@@ -1255,7 +2815,8 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -1276,6 +2837,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "force"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
@@ -1297,6 +2887,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "5d10",
+            "force"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 9,
+        "type": "cone",
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 4
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
@@ -1318,6 +2937,39 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d8",
+            "fire"
+          ],
+          [
+            "2d8",
+            "force"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 3,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 8
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
@@ -1339,6 +2991,44 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "12d12",
+            "radiant"
+          ],
+          [
+            "8d8",
+            "radiant"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 6,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 10
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
@@ -1360,6 +3050,44 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "force"
+          ],
+          [
+            "4d8",
+            "radiant"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 36,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -1381,6 +3109,12 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -1402,6 +3136,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d6",
+            "force"
+          ],
+          [
+            "8d6",
+            "radiant"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 4.5,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 1
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -1423,6 +3191,38 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d6",
+            "force"
+          ],
+          [
+            "6d6",
+            "force"
+          ],
+          [
+            "2d6",
+            "radiant"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "range": {
+        "value": 3,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 8
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -1444,6 +3244,44 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "6d8",
+            "radiant"
+          ],
+          [
+            "10d8",
+            "radiant"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 36,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 4
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -1465,6 +3303,52 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d10",
+            "fire"
+          ],
+          [
+            "3d10",
+            "bludgeoning"
+          ],
+          [
+            "6d10",
+            "fire"
+          ],
+          [
+            "6d10",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 9,
+        "type": "sphere",
+        "units": "m"
+      },
+      "range": {
+        "value": 36,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 4
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -1486,6 +3370,44 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d10",
+            "force"
+          ],
+          [
+            "6d10",
+            "force"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 36,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 6
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -1507,6 +3429,30 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "10d10",
+            "radiant"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 8
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -1528,6 +3474,39 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "radiant"
+          ],
+          [
+            "4d8",
+            "radiant"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 36,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 10
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -1549,6 +3528,39 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d10",
+            "radiant"
+          ],
+          [
+            "6d10",
+            "radiant"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 36,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 10
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -1570,6 +3582,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -1591,6 +3613,17 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "actionType": "msak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 1
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -1612,6 +3645,22 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 36,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 1
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -1633,6 +3682,25 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "lightning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 1
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -1654,6 +3722,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d4",
+            "lightning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -1675,6 +3772,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d8",
+            "lightning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -1696,6 +3827,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "heal"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -1717,6 +3858,26 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -1738,6 +3899,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 1
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -1759,6 +3930,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "8d8",
+            "lightning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 36,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 4
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -1780,6 +3985,30 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "5d12",
+            "lightning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "msak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 5
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -1801,6 +4030,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "10d6",
+            "lightning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 36,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 5
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -1822,6 +4085,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "lightning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 3,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 4
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -1843,6 +4135,30 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "damage": {
+        "parts": [
+          [
+            "8d4",
+            "lightning"
+          ],
+          [
+            "1d4",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 8
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -1864,6 +4180,30 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "lightning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 8
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -1885,6 +4225,56 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "thunder"
+          ],
+          [
+            "1d6",
+            "acid"
+          ],
+          [
+            "5d6",
+            "lightning"
+          ],
+          [
+            "2d6",
+            "bludgeoning"
+          ],
+          [
+            "1d6",
+            "cold"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 108,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 10
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -1906,6 +4296,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 1
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
@@ -1927,7 +4327,12 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -1948,7 +4353,8 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -1969,7 +4375,8 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -1990,6 +4397,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 1
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
@@ -2011,6 +4428,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 1
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
@@ -2032,7 +4459,8 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -2053,7 +4481,17 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "8d6",
+            ""
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -2074,6 +4512,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
@@ -2095,6 +4543,21 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
@@ -2116,6 +4579,25 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d10",
+            ""
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 10
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
@@ -2137,6 +4619,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 1
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
@@ -2158,7 +4650,12 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -2179,6 +4676,12 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
@@ -2200,6 +4703,12 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
@@ -2221,6 +4730,21 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            ""
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
@@ -2242,6 +4766,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
@@ -2263,6 +4797,25 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            ""
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 1
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
@@ -2284,6 +4837,21 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "force"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 4
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
@@ -2305,6 +4873,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "reaction",
+        "cost": 1
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 6
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
@@ -2326,6 +4904,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d12",
+            "force"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "wis",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 8
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
@@ -2347,7 +4959,12 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "activation": {
+        "type": "reaction",
+        "cost": 1
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -2368,6 +4985,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "reaction",
+        "cost": 1
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 10
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
@@ -2389,6 +5016,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 1
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
@@ -2410,6 +5071,26 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 36,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
@@ -2431,6 +5112,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d8",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 9,
+        "type": "line",
+        "units": "m"
+      },
+      "range": {
+        "value": 4.5,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 4
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
@@ -2452,6 +5167,43 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "force"
+          ],
+          [
+            "2d6",
+            "piercing"
+          ],
+          [
+            "1d4",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "msak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 5
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
@@ -2473,6 +5225,39 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "6d8",
+            "piercing"
+          ],
+          [
+            "1d4",
+            "piercing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 32,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
@@ -2494,6 +5279,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 8
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
@@ -2515,6 +5310,44 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "6d10",
+            "bludgeoning"
+          ],
+          [
+            "3d6",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 9,
+        "type": "line",
+        "units": "m"
+      },
+      "range": {
+        "value": 3,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 6
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
@@ -2536,6 +5369,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "8d10",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "range": {
+        "value": 6,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 6
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
@@ -2557,6 +5419,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "5d10",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 10
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
@@ -2578,6 +5469,30 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "12d12",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "range": {
+        "value": 36,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 10
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
@@ -2599,6 +5514,43 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "reaction",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "thunder"
+          ],
+          [
+            "2d8",
+            "cold"
+          ],
+          [
+            "2d8",
+            "slashing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 3,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -2620,6 +5572,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "fire"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 3,
+        "type": "cone",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -2641,6 +5627,34 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "reaction",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d6",
+            "fire"
+          ],
+          [
+            "1d6",
+            "fire"
+          ]
+        ],
+        "versatile": ""
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 4
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -2662,6 +5676,36 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d6",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "wis",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 1
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -2683,6 +5727,21 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -2704,7 +5763,12 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
@@ -2725,6 +5789,56 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "damage": {
+        "parts": [
+          [
+            "10d12",
+            "fire"
+          ],
+          [
+            "1d10",
+            "fire"
+          ],
+          [
+            "8d10",
+            "bludgeoning"
+          ],
+          [
+            "4d6",
+            "bludgeoning"
+          ],
+          [
+            "8d8",
+            "radiant"
+          ],
+          [
+            "8d8",
+            "slashing"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 9,
+        "type": "cone",
+        "units": "m"
+      },
+      "range": {
+        "value": 36,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 6
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -2746,6 +5860,12 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 4
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -2767,7 +5887,8 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
@@ -2788,6 +5909,43 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d10",
+            "thunder"
+          ],
+          [
+            "2d10",
+            "cold"
+          ],
+          [
+            "2d10",
+            "fire"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "range": {
+        "value": 24,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 8
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -2809,6 +5967,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
@@ -2830,6 +5998,17 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 1.5,
+        "long": null,
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
@@ -2851,6 +6030,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util"
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
@@ -2872,6 +6061,12 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
@@ -2893,6 +6088,12 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
@@ -2914,7 +6115,8 @@
         "page": "",
         "license": "",
         "rules": "2014"
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -2935,6 +6137,21 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 6
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
@@ -2956,6 +6173,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
@@ -2977,6 +6204,16 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
@@ -2998,6 +6235,21 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "actionType": "util",
+      "range": {
+        "value": 36,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 10
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
@@ -3019,6 +6271,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "reaction",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
@@ -3040,6 +6326,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "reaction",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "cold"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
@@ -3061,6 +6381,44 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "reaction",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d6",
+            "slashing"
+          ],
+          [
+            "3d8",
+            "cold"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 4.5,
+        "type": "cone",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 2
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
@@ -3082,6 +6440,48 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "bludgeoning"
+          ],
+          [
+            "1d6",
+            "cold"
+          ],
+          [
+            "2d6",
+            "cold"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 6,
+        "type": "cone",
+        "units": "m"
+      },
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 3
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
@@ -3103,6 +6503,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "5d8",
+            "bludgeoning"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 5
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
@@ -3124,6 +6558,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "10d8",
+            "cold"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "range": {
+        "value": 6,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 6
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
@@ -3145,6 +6608,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "bonus",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "10d8",
+            "cold"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 9,
+        "type": "line",
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 6
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
@@ -3166,6 +6658,35 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "activation": {
+        "type": "action",
+        "cost": 1
+      },
+      "damage": {
+        "parts": [
+          [
+            "16d8",
+            "cold"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "range": {
+        "value": 9,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 10
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
@@ -3187,6 +6708,40 @@
         "page": "",
         "license": "",
         "rules": "2014"
+      },
+      "damage": {
+        "parts": [
+          [
+            "12d6",
+            "cold"
+          ],
+          [
+            "10d8",
+            "cold"
+          ]
+        ],
+        "versatile": ""
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 18,
+        "type": "cone",
+        "units": "m"
+      },
+      "range": {
+        "value": 18,
+        "long": null,
+        "units": "m"
+      }
+    },
+    "flags": {
+      "fairy-tail-5e": {
+        "mpCost": 8
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"

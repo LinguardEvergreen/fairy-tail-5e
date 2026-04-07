@@ -41,6 +41,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "force"
+          ]
+        ]
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
@@ -87,6 +101,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
@@ -133,6 +153,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "slashing"
+          ]
+        ]
+      },
+      "actionType": "msak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
@@ -179,7 +213,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -225,7 +260,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -271,6 +307,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
@@ -317,7 +372,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -363,7 +419,13 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -409,6 +471,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
@@ -455,6 +523,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d10",
+            "slashing"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
@@ -501,7 +588,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "5d8",
+            "slashing"
+          ],
+          [
+            "1d8",
+            "slashing"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
   },
@@ -547,6 +652,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "force"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/spazio-aereo.webp"
@@ -593,7 +717,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d10",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -639,7 +777,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -685,6 +824,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "piercing"
+          ]
+        ]
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
@@ -731,6 +884,17 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
@@ -777,7 +941,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -823,7 +988,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "force"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -869,7 +1048,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -915,6 +1095,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d4",
+            "piercing"
+          ]
+        ]
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
@@ -961,7 +1155,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -1007,6 +1202,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d6",
+            "slashing"
+          ]
+        ]
+      },
+      "actionType": "util",
+      "target": {
+        "value": 9,
+        "type": "cone",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
@@ -1053,6 +1262,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
@@ -1099,7 +1314,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "5d8",
+            "slashing"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
   },
@@ -1145,6 +1374,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "radiant"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "cha",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/carte.webp"
@@ -1191,6 +1439,24 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "8d6",
+            "force"
+          ],
+          [
+            "10d8",
+            "radiant"
+          ]
+        ]
+      },
+      "actionType": "heal",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -1237,6 +1503,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -1283,6 +1563,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -1329,6 +1628,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d10",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -1375,6 +1693,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -1421,6 +1753,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 9,
+        "type": "line",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -1467,6 +1818,17 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -1513,6 +1875,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d8",
+            "piercing"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 9,
+        "type": "cone",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -1559,7 +1940,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
@@ -1605,6 +1995,29 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d10",
+            "bludgeoning"
+          ],
+          [
+            "2d4",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -1651,6 +2064,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d8",
+            "piercing"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 3,
+        "type": "sphere",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
@@ -1697,7 +2129,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d8",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
@@ -1743,7 +2189,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d10+4",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/terra.webp"
   },
@@ -1789,7 +2244,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d10",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -1835,7 +2304,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d4",
+            "fire"
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -1881,6 +2359,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d10",
+            "fire"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 4.5,
+        "type": "cone",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -1927,7 +2424,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "fire"
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -1973,7 +2479,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "fire"
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -2019,7 +2534,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "fire"
+          ],
+          [
+            "1d4",
+            "fire"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -2065,6 +2598,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d6",
+            "fire"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -2111,6 +2663,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "fire"
+          ]
+        ]
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -2157,7 +2723,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d8",
+            "fire"
+          ],
+          [
+            "1d8",
+            "fire"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -2203,7 +2787,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d8",
+            "fire"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -2249,7 +2847,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d4",
+            "fire"
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -2295,7 +2902,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "6d8",
+            "fire"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
   },
@@ -2341,6 +2962,33 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d8",
+            "fire"
+          ],
+          [
+            "4d8",
+            "fire"
+          ],
+          [
+            "2d8",
+            "fire"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fuoco.webp"
@@ -2387,7 +3035,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "8d8",
+            "fire"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -2433,6 +3095,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -2479,6 +3155,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "force"
+          ]
+        ]
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -2525,7 +3215,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -2571,7 +3275,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -2617,6 +3322,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -2663,7 +3387,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d8",
+            "slashing"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -2709,6 +3447,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -2755,7 +3499,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -2801,6 +3554,17 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "save": {
+        "ability": "int",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -2847,6 +3611,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -2893,6 +3663,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d6",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
@@ -2939,7 +3728,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8+4",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/ingranaggi.webp"
   },
@@ -2985,7 +3783,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d10+5",
+            "bludgeoning"
+          ],
+          [
+            "3d6",
+            "fire"
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -3031,6 +3842,17 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 4.5,
+        "type": "cone",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
@@ -3077,7 +3899,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -3123,6 +3946,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "fire"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
@@ -3169,7 +4011,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -3215,6 +4058,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "piercing"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
@@ -3261,7 +4123,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -3307,6 +4170,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
@@ -3353,7 +4222,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d8",
+            "piercing"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -3399,7 +4282,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -3445,6 +4329,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
@@ -3491,7 +4381,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "5d8",
+            "piercing"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
   },
@@ -3537,6 +4441,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "6d10",
+            "piercing"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/armi-da-fuoco.webp"
@@ -3583,7 +4506,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "8d8",
+            "force"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
@@ -3629,6 +4566,33 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "radiant"
+          ],
+          [
+            "3d8",
+            "radiant"
+          ],
+          [
+            "5d8",
+            "radiant"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 9,
+        "type": "cone",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -3675,6 +4639,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -3721,6 +4691,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -3767,6 +4743,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "force"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 3,
+        "type": "sphere",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -3813,6 +4808,28 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "radiant"
+          ],
+          [
+            "1d8",
+            "fire"
+          ],
+          [
+            "1d8",
+            "radiant"
+          ]
+        ]
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -3859,7 +4876,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
@@ -3905,7 +4923,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
@@ -3951,6 +4970,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d8",
+            "radiant"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 9,
+        "type": "cone",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -3997,6 +5035,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "radiant"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -4043,6 +5100,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "6d6",
+            "force"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 9,
+        "type": "cone",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
@@ -4089,7 +5165,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d8",
+            "radiant"
+          ],
+          [
+            "2d8",
+            "fire"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
@@ -4135,7 +5229,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "psychic"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "wis",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/corpo-celeste.webp"
   },
@@ -4181,7 +5289,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "6d8",
+            "radiant"
+          ],
+          [
+            "3d8",
+            "fire"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -4227,6 +5353,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d10",
+            "lightning"
+          ]
+        ]
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -4273,6 +5413,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "lightning"
+          ]
+        ]
+      },
+      "actionType": "msak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -4319,7 +5473,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -4365,7 +5520,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -4411,6 +5567,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -4457,7 +5619,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
   },
@@ -4503,6 +5666,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -4549,6 +5718,24 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "lightning"
+          ],
+          [
+            "1d6",
+            "lightning"
+          ]
+        ]
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/fulmine.webp"
@@ -4595,6 +5782,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d10",
+            "lightning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
@@ -4641,6 +5847,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d10",
+            ""
+          ]
+        ]
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
@@ -4687,7 +5907,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            ""
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -4733,6 +5962,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d8",
+            ""
+          ]
+        ]
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
@@ -4779,6 +6022,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d8",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
@@ -4825,6 +6087,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "msak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
@@ -4871,6 +6139,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 6,
+        "type": "cube",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
@@ -4917,6 +6191,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            ""
+          ]
+        ]
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
@@ -4963,7 +6256,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d12",
+            ""
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/creazione.webp"
   },
@@ -5009,6 +6311,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
@@ -5055,7 +6363,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "force"
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -5101,7 +6418,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "force"
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -5147,7 +6473,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -5193,7 +6520,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -5239,7 +6567,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -5285,7 +6614,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/cambio-stock.webp"
   },
@@ -5331,7 +6661,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            ""
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -5377,7 +6716,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "heal"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -5423,7 +6763,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -5469,6 +6810,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d8",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
@@ -5515,7 +6875,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -5561,6 +6922,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "slashing"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "msak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
@@ -5607,6 +6987,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
@@ -5653,7 +7039,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -5699,7 +7099,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "slashing"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "con",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -5745,6 +7159,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
@@ -5791,6 +7211,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d6",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 9,
+        "type": "line",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
@@ -5837,6 +7276,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d8",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
@@ -5883,7 +7341,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "slashing"
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/sabbia.webp"
   },
@@ -5929,6 +7396,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d8",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -5975,6 +7461,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -6021,6 +7513,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "force"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -6067,7 +7578,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
@@ -6113,6 +7625,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -6159,6 +7677,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d10",
+            "force"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -6205,6 +7742,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -6251,6 +7794,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "msak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -6297,6 +7846,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            ""
+          ]
+        ]
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -6343,6 +7906,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -6389,6 +7958,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "5d8",
+            "acid"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -6435,6 +8023,17 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
@@ -6481,7 +8080,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d8",
+            "force"
+          ],
+          [
+            "2d8",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/solid-script.webp"
   },
@@ -6527,6 +8144,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "8d10",
+            "force"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
@@ -6573,7 +8209,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            "slashing"
+          ],
+          [
+            "1d4",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -6619,7 +8268,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -6665,6 +8315,33 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "slashing"
+          ],
+          [
+            "2d8",
+            "fire"
+          ],
+          [
+            "2d6",
+            "necrotic"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "msak",
+      "target": {
+        "value": 4.5,
+        "type": "cone",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
@@ -6711,6 +8388,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
@@ -6757,6 +8440,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d6",
+            ""
+          ]
+        ]
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
@@ -6803,7 +8500,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            ""
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -6849,7 +8555,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -6895,6 +8602,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "slashing"
+          ]
+        ]
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
@@ -6941,6 +8662,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "heal",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
@@ -6987,7 +8714,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -7033,6 +8761,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
@@ -7079,7 +8813,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            ""
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/take-over.webp"
   },
@@ -7125,7 +8868,16 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d8",
+            ""
+          ]
+        ]
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
@@ -7171,7 +8923,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
@@ -7217,6 +8970,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "1d4",
+            "cold"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
@@ -7263,6 +9035,20 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d4",
+            "cold"
+          ]
+        ]
+      },
+      "actionType": "util",
+      "target": {
+        "value": 9,
+        "type": "line",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
@@ -7309,7 +9095,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "heal"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
@@ -7355,6 +9142,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d8",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
@@ -7401,7 +9207,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
@@ -7447,6 +9254,24 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "4d4",
+            "cold"
+          ],
+          [
+            "2d4",
+            "cold"
+          ]
+        ]
+      },
+      "actionType": "rsak",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
@@ -7493,7 +9318,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "2d6",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
@@ -7539,6 +9378,12 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "actionType": "util",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
@@ -7585,7 +9430,8 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "actionType": "util"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
@@ -7631,6 +9477,25 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
+      },
+      "damage": {
+        "parts": [
+          [
+            "3d8",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save",
+      "target": {
+        "value": 1,
+        "type": "creature",
+        "units": "m"
       }
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
@@ -7677,7 +9542,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "5d10",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "dex",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   },
@@ -7723,7 +9602,21 @@
         "consumed": false,
         "cost": 0,
         "supply": 0
-      }
+      },
+      "damage": {
+        "parts": [
+          [
+            "6d10",
+            "bludgeoning"
+          ]
+        ]
+      },
+      "save": {
+        "ability": "str",
+        "dc": null,
+        "scaling": "spell"
+      },
+      "actionType": "save"
     },
     "img": "modules/fairy-tail-5e/assets/images/magie/acqua.webp"
   }
