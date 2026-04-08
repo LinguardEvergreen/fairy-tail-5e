@@ -80,9 +80,33 @@ async function loadMagieAndFeatures() {
 }
 
 /**
- * Finalize: decrement token, log, notify chat.
+ * Finalize: decrement token, add feature to actor, log, notify chat.
  */
 async function finalizeGrowthSpend(actor, tokens, choiceLabel, details) {
+  // Add the chosen feature item to the actor
+  if (details.featureId) {
+    try {
+      const featurePack = game.packs.get(`${MODULE_ID}.ft5e-feature-magie`);
+      if (featurePack) {
+        const sourceDoc = await featurePack.getDocument(details.featureId);
+        if (sourceDoc) {
+          const itemData = sourceDoc.toObject();
+          // Mark it as a growth token acquisition
+          itemData.flags = itemData.flags || {};
+          itemData.flags[MODULE_ID] = {
+            ...(itemData.flags[MODULE_ID] || {}),
+            growthToken: true,
+            source: "fairy-tail-5e"
+          };
+          await actor.createEmbeddedDocuments("Item", [itemData]);
+        }
+      }
+    } catch (err) {
+      console.error(`${MODULE_ID} | Error adding feature to actor:`, err);
+      ui.notifications.error("Errore nell'aggiungere la feature al personaggio.");
+    }
+  }
+
   await setGrowthTokens(actor, tokens - 1);
   await addGrowthLog(actor, {
     label: choiceLabel,
@@ -115,7 +139,7 @@ function openFeatureSelectDialog(actor, tokens, magiaName, features, choiceConte
   let rowsHtml = magiaFeatures.map(f => `
     <div class="ft5e-gd-option">
       <label class="ft5e-gd-option-label">
-        <input type="radio" name="feature-choice" value="${f.name}" />
+        <input type="radio" name="feature-choice" value="${f.id}" data-name="${f.name}" />
         <img src="${f.img}" width="24" height="24" style="border-radius:4px; margin-right:4px;" />
         <strong>${f.name}</strong>
       </label>
@@ -141,16 +165,19 @@ function openFeatureSelectDialog(actor, tokens, magiaName, features, choiceConte
         icon: '<i class="fas fa-check"></i>',
         label: "Conferma",
         callback: async (html) => {
-          const featureName = html.find('input[name="feature-choice"]:checked').val();
-          if (!featureName) {
+          const selectedRadio = html.find('input[name="feature-choice"]:checked');
+          if (!selectedRadio.length) {
             ui.notifications.warn("Seleziona una feature!");
             return;
           }
+          const featureId = selectedRadio.val();
+          const featureName = selectedRadio.data("name");
           const notes = html.find('.ft5e-gd-notes-input').val() || "";
           await finalizeGrowthSpend(actor, tokens, choiceContext.label, {
             choice: choiceContext.id,
             magia: magiaName,
             feature: featureName,
+            featureId,
             notes
           });
         }
