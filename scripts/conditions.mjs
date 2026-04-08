@@ -85,19 +85,23 @@ const FT5E_CONDITIONS = {
 /* -------------------------------------------------- */
 
 Hooks.once("init", () => {
-  // Register each custom condition into the dnd5e condition types
-  for (const [id, data] of Object.entries(FT5E_CONDITIONS)) {
-    const entry = {
-      label: data.label,
-      icon: data.icon,
-      pseudo: false
-    };
-    if (data.levels) entry.levels = data.levels;
-
-    CONFIG.DND5E.conditionTypes[id] = entry;
+  try {
+    // Register each custom condition into the dnd5e condition types
+    if (CONFIG.DND5E?.conditionTypes) {
+      for (const [id, data] of Object.entries(FT5E_CONDITIONS)) {
+        const entry = {
+          label: data.label,
+          icon: data.icon,
+          pseudo: false
+        };
+        if (data.levels) entry.levels = data.levels;
+        CONFIG.DND5E.conditionTypes[id] = entry;
+      }
+      console.log(`${MODULE_ID} | Registered ${Object.keys(FT5E_CONDITIONS).length} custom conditions`);
+    }
+  } catch (err) {
+    console.error(`${MODULE_ID} | Error registering conditions:`, err);
   }
-
-  console.log(`${MODULE_ID} | Registered ${Object.keys(FT5E_CONDITIONS).length} custom conditions`);
 });
 
 /* -------------------------------------------------- */
@@ -105,11 +109,14 @@ Hooks.once("init", () => {
 /* -------------------------------------------------- */
 
 Hooks.once("ready", () => {
-  // Enrich condition references in the rule tooltips
-  for (const [id, data] of Object.entries(FT5E_CONDITIONS)) {
-    const effect = CONFIG.statusEffects.find(e => e.id === id);
-    if (effect && data.description) {
-      effect.description = data.description;
+  try {
+    for (const [id, data] of Object.entries(FT5E_CONDITIONS)) {
+      const effect = CONFIG.statusEffects?.find(e => e.id === id);
+      if (effect && data.description) {
+        effect.description = data.description;
+      }
     }
+  } catch (err) {
+    console.error(`${MODULE_ID} | Error enriching condition descriptions:`, err);
   }
 });

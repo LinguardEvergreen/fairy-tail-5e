@@ -294,27 +294,31 @@ async function openGrowthDialog(actor) {
 /* -------------------------------------------------- */
 
 function injectRelazioniUI(app, html, data) {
-  const actor = app.actor ?? app.document;
-  if (!actor || actor.type !== "character") return;
+  try {
+    const actor = app.actor ?? app.document;
+    if (!actor || actor.type !== "character") return;
 
-  const jqHtml = html instanceof jQuery ? html : $(html);
+    const jqHtml = html instanceof jQuery ? html : $(html);
 
-  // Find biography tab content area (dnd5e v5 ActorSheet2)
-  let bioTab = jqHtml.find('.tab[data-tab="biography"]');
-  if (!bioTab.length) {
-    bioTab = jqHtml.find('.tab[data-tab="biography"] .editor, .biography');
-  }
-  if (!bioTab.length) return;
+    // Avoid duplicate injection
+    if (jqHtml.find(".ft5e-relazioni-section").length) return;
 
-  // Get all PC actors except self
-  const allPCs = game.actors.filter(a =>
-    a.type === "character" && a.id !== actor.id
-  );
+    // Find biography tab content area (dnd5e v5 ActorSheet2)
+    let bioTab = jqHtml.find('.tab[data-tab="biography"]');
+    if (!bioTab.length) {
+      bioTab = jqHtml.find('.tab[data-tab="biography"] .editor, .biography');
+    }
+    if (!bioTab.length) return;
 
-  const relazioni = getRelazioni(actor);
-  const growthTokens = getGrowthTokens(actor);
-  const isGM = game.user.isGM;
-  const isOwner = actor.isOwner;
+    // Get all PC actors except self
+    const allPCs = game.actors?.filter(a =>
+      a.type === "character" && a.id !== actor.id
+    ) || [];
+
+    const relazioni = getRelazioni(actor);
+    const growthTokens = getGrowthTokens(actor);
+    const isGM = game.user.isGM;
+    const isOwner = actor.isOwner;
 
   // Build relationship rows
   let relazioniRows = "";
@@ -405,6 +409,10 @@ function injectRelazioniUI(app, html, data) {
     ev.preventDefault();
     openGrowthDialog(actor);
   });
+
+  } catch (err) {
+    console.error(`${MODULE_ID} | Error injecting relazioni UI:`, err);
+  }
 }
 
 /* -------------------------------------------------- */
