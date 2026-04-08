@@ -1,402 +1,423 @@
 /* ================================================================= */
 /*  Fairy Tail 5e — UI Theme System                                 */
-/*  5 character themes: Natsu, Gray, Erza, Lucy, Laxus              */
-/*  All rules use !important to override dnd5e system styles         */
+/*  Fantasy-styled interface inspired by the Fairy Tail guild        */
 /* ================================================================= */
 
-/* ── NATSU — Rosso fuoco, arancione, nero ── */
+/* ── NATSU ── */
 body[data-ft5e-theme="natsu"] {
   --ft5e-primary: #e74c3c;
-  --ft5e-primary-dark: #c0392b;
+  --ft5e-primary-rgb: 231, 76, 60;
+  --ft5e-primary-dark: #a82315;
   --ft5e-primary-light: #ff6b4a;
   --ft5e-accent: #f39c12;
-  --ft5e-accent-dark: #e67e22;
-  --ft5e-bg-dark: #1a0e0e;
-  --ft5e-bg-mid: #2a1515;
-  --ft5e-bg-light: #3a2020;
-  --ft5e-bg-surface: #452828;
-  --ft5e-text: #f5e6e0;
-  --ft5e-text-muted: #c0a8a0;
-  --ft5e-border: #6b2a2a;
-  --ft5e-border-light: #4a1e1e;
-  --ft5e-glow: rgba(231, 76, 60, 0.7);
-  --ft5e-glow-soft: rgba(231, 76, 60, 0.3);
-  --ft5e-gradient: linear-gradient(135deg, #e74c3c, #f39c12);
-  --ft5e-gradient-subtle: linear-gradient(135deg, rgba(231, 76, 60, 0.2), rgba(243, 156, 18, 0.12));
-  --ft5e-sidebar-bg: #1a0e0e;
-  --ft5e-header-bg: #2a1515;
-  --ft5e-input-bg: #301818;
+  --ft5e-accent-rgb: 243, 156, 18;
+  --ft5e-bg-1: #120808;
+  --ft5e-bg-2: #1e0e0e;
+  --ft5e-bg-3: #2a1515;
+  --ft5e-bg-4: #381e1e;
+  --ft5e-text: #f0ddd5;
+  --ft5e-text-dim: #a08878;
+  --ft5e-border: #5a2020;
+  --ft5e-border-glow: rgba(231, 76, 60, 0.5);
+  --ft5e-glow: rgba(231, 76, 60, 0.6);
+  --ft5e-btn-gradient: linear-gradient(180deg, #3a1818 0%, #2a1010 100%);
+  --ft5e-btn-border: linear-gradient(180deg, #e74c3c, #a82315);
+  --ft5e-header-line: linear-gradient(90deg, transparent, #e74c3c, transparent);
 }
 
-/* ── GRAY — Blu ghiaccio, bianco, azzurro scuro ── */
+/* ── GRAY ── */
 body[data-ft5e-theme="gray"] {
   --ft5e-primary: #3498db;
-  --ft5e-primary-dark: #2471a3;
+  --ft5e-primary-rgb: 52, 152, 219;
+  --ft5e-primary-dark: #1a6ba3;
   --ft5e-primary-light: #5dade2;
   --ft5e-accent: #a8d8ea;
-  --ft5e-accent-dark: #7fb3d3;
-  --ft5e-bg-dark: #0a141e;
-  --ft5e-bg-mid: #122535;
-  --ft5e-bg-light: #1a3248;
-  --ft5e-bg-surface: #1e3a52;
-  --ft5e-text: #e0ecf5;
-  --ft5e-text-muted: #a0bcd0;
-  --ft5e-border: #1e4a6e;
-  --ft5e-border-light: #163858;
-  --ft5e-glow: rgba(52, 152, 219, 0.7);
-  --ft5e-glow-soft: rgba(52, 152, 219, 0.3);
-  --ft5e-gradient: linear-gradient(135deg, #2471a3, #5dade2);
-  --ft5e-gradient-subtle: linear-gradient(135deg, rgba(52, 152, 219, 0.2), rgba(168, 216, 234, 0.12));
-  --ft5e-sidebar-bg: #0a141e;
-  --ft5e-header-bg: #122535;
-  --ft5e-input-bg: #152a3e;
+  --ft5e-accent-rgb: 168, 216, 234;
+  --ft5e-bg-1: #060d14;
+  --ft5e-bg-2: #0c1a28;
+  --ft5e-bg-3: #142838;
+  --ft5e-bg-4: #1c3548;
+  --ft5e-text: #d5e8f5;
+  --ft5e-text-dim: #7898b0;
+  --ft5e-border: #1a3858;
+  --ft5e-border-glow: rgba(52, 152, 219, 0.5);
+  --ft5e-glow: rgba(52, 152, 219, 0.6);
+  --ft5e-btn-gradient: linear-gradient(180deg, #122535 0%, #0c1a28 100%);
+  --ft5e-btn-border: linear-gradient(180deg, #3498db, #1a6ba3);
+  --ft5e-header-line: linear-gradient(90deg, transparent, #3498db, transparent);
 }
 
-/* ── ERZA — Rosso scarlatto, argento, blu acciaio ── */
+/* ── ERZA ── */
 body[data-ft5e-theme="erza"] {
   --ft5e-primary: #c0392b;
-  --ft5e-primary-dark: #96281b;
+  --ft5e-primary-rgb: 192, 57, 43;
+  --ft5e-primary-dark: #7a1a10;
   --ft5e-primary-light: #e04838;
-  --ft5e-accent: #bdc3c7;
-  --ft5e-accent-dark: #95a5a6;
-  --ft5e-bg-dark: #12121a;
-  --ft5e-bg-mid: #1e1e28;
-  --ft5e-bg-light: #2a2a36;
-  --ft5e-bg-surface: #32323e;
-  --ft5e-text: #eceff1;
-  --ft5e-text-muted: #b0b8c0;
-  --ft5e-border: #4a2a2a;
-  --ft5e-border-light: #382222;
-  --ft5e-glow: rgba(192, 57, 43, 0.7);
-  --ft5e-glow-soft: rgba(192, 57, 43, 0.3);
-  --ft5e-gradient: linear-gradient(135deg, #96281b, #bdc3c7);
-  --ft5e-gradient-subtle: linear-gradient(135deg, rgba(192, 57, 43, 0.2), rgba(189, 195, 199, 0.1));
-  --ft5e-sidebar-bg: #12121a;
-  --ft5e-header-bg: #1e1e28;
-  --ft5e-input-bg: #252530;
+  --ft5e-accent: #c0c8d0;
+  --ft5e-accent-rgb: 192, 200, 208;
+  --ft5e-bg-1: #0c0c10;
+  --ft5e-bg-2: #14141c;
+  --ft5e-bg-3: #1e1e28;
+  --ft5e-bg-4: #282834;
+  --ft5e-text: #e0e4e8;
+  --ft5e-text-dim: #8890a0;
+  --ft5e-border: #3a2228;
+  --ft5e-border-glow: rgba(192, 57, 43, 0.5);
+  --ft5e-glow: rgba(192, 57, 43, 0.6);
+  --ft5e-btn-gradient: linear-gradient(180deg, #1e1820 0%, #141018 100%);
+  --ft5e-btn-border: linear-gradient(180deg, #c0392b, #7a1a10);
+  --ft5e-header-line: linear-gradient(90deg, transparent, #c0392b, transparent);
 }
 
-/* ── LUCY — Oro, rosa, bianco crema ── */
+/* ── LUCY ── */
 body[data-ft5e-theme="lucy"] {
   --ft5e-primary: #d4a017;
-  --ft5e-primary-dark: #b8860b;
-  --ft5e-primary-light: #f0c040;
+  --ft5e-primary-rgb: 212, 160, 23;
+  --ft5e-primary-dark: #8a6a0a;
+  --ft5e-primary-light: #f0c840;
   --ft5e-accent: #e8a0b0;
-  --ft5e-accent-dark: #d48090;
-  --ft5e-bg-dark: #181208;
-  --ft5e-bg-mid: #282014;
-  --ft5e-bg-light: #382c1e;
-  --ft5e-bg-surface: #443424;
-  --ft5e-text: #f5f0e0;
-  --ft5e-text-muted: #c8b898;
-  --ft5e-border: #5a4420;
-  --ft5e-border-light: #443418;
-  --ft5e-glow: rgba(212, 160, 23, 0.7);
-  --ft5e-glow-soft: rgba(212, 160, 23, 0.3);
-  --ft5e-gradient: linear-gradient(135deg, #b8860b, #f0c040);
-  --ft5e-gradient-subtle: linear-gradient(135deg, rgba(212, 160, 23, 0.2), rgba(232, 160, 176, 0.12));
-  --ft5e-sidebar-bg: #181208;
-  --ft5e-header-bg: #282014;
-  --ft5e-input-bg: #302818;
+  --ft5e-accent-rgb: 232, 160, 176;
+  --ft5e-bg-1: #100c04;
+  --ft5e-bg-2: #1c1608;
+  --ft5e-bg-3: #282010;
+  --ft5e-bg-4: #342a18;
+  --ft5e-text: #f0e8d0;
+  --ft5e-text-dim: #a89868;
+  --ft5e-border: #4a3810;
+  --ft5e-border-glow: rgba(212, 160, 23, 0.5);
+  --ft5e-glow: rgba(212, 160, 23, 0.6);
+  --ft5e-btn-gradient: linear-gradient(180deg, #2a2010 0%, #1c1608 100%);
+  --ft5e-btn-border: linear-gradient(180deg, #d4a017, #8a6a0a);
+  --ft5e-header-line: linear-gradient(90deg, transparent, #d4a017, transparent);
 }
 
-/* ── LAXUS — Giallo elettrico, viola scuro, nero ── */
+/* ── LAXUS ── */
 body[data-ft5e-theme="laxus"] {
   --ft5e-primary: #f1c40f;
-  --ft5e-primary-dark: #d4ac0d;
+  --ft5e-primary-rgb: 241, 196, 15;
+  --ft5e-primary-dark: #9a7d08;
   --ft5e-primary-light: #f9e154;
   --ft5e-accent: #8e44ad;
-  --ft5e-accent-dark: #6c3483;
-  --ft5e-bg-dark: #0c0c14;
-  --ft5e-bg-mid: #181824;
-  --ft5e-bg-light: #242434;
-  --ft5e-bg-surface: #2c2c3e;
-  --ft5e-text: #f0edd8;
-  --ft5e-text-muted: #b8b098;
-  --ft5e-border: #3a2a5a;
-  --ft5e-border-light: #2a1e44;
-  --ft5e-glow: rgba(241, 196, 15, 0.7);
-  --ft5e-glow-soft: rgba(241, 196, 15, 0.3);
-  --ft5e-gradient: linear-gradient(135deg, #8e44ad, #f1c40f);
-  --ft5e-gradient-subtle: linear-gradient(135deg, rgba(142, 68, 173, 0.2), rgba(241, 196, 15, 0.12));
-  --ft5e-sidebar-bg: #0c0c14;
-  --ft5e-header-bg: #181824;
-  --ft5e-input-bg: #202030;
+  --ft5e-accent-rgb: 142, 68, 173;
+  --ft5e-bg-1: #08080e;
+  --ft5e-bg-2: #10101c;
+  --ft5e-bg-3: #1a1a2a;
+  --ft5e-bg-4: #242436;
+  --ft5e-text: #ece8d0;
+  --ft5e-text-dim: #988880;
+  --ft5e-border: #2a2044;
+  --ft5e-border-glow: rgba(241, 196, 15, 0.4);
+  --ft5e-glow: rgba(241, 196, 15, 0.6);
+  --ft5e-btn-gradient: linear-gradient(180deg, #1c1830 0%, #121020 100%);
+  --ft5e-btn-border: linear-gradient(180deg, #f1c40f, #8e44ad);
+  --ft5e-header-line: linear-gradient(90deg, transparent, #f1c40f, transparent);
 }
 
 /* ================================================================= */
-/*  SIDEBAR — complete restyle                                       */
+/*  SIDEBAR — Fantasy guild board style                              */
 /* ================================================================= */
 
 body[data-ft5e-theme] #sidebar {
-  background: var(--ft5e-sidebar-bg) !important;
-  border-left: 3px solid var(--ft5e-border) !important;
-  box-shadow: -4px 0 20px rgba(0, 0, 0, 0.5) !important;
+  background: var(--ft5e-bg-1) !important;
+  border-left: none !important;
+  box-shadow: -3px 0 20px rgba(0,0,0,0.7), inset 1px 0 0 var(--ft5e-border) !important;
 }
 
-/* Sidebar branding injected by JS */
-.ft5e-sidebar-brand {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 10px 12px 8px;
-  border-bottom: 2px solid var(--ft5e-border);
-  background: var(--ft5e-header-bg);
+/* Guild mark watermark in sidebar */
+body[data-ft5e-theme] #sidebar::before {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 60px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: 180px !important;
+  height: 180px !important;
+  background: url("../assets/images/ui/fairy-tail-guild-logo.webp") center/contain no-repeat !important;
+  opacity: 0.04 !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
 }
 
-.ft5e-sidebar-logo {
-  width: 32px;
-  height: 32px;
-  filter: drop-shadow(0 0 6px var(--ft5e-glow));
-  animation: ft5e-logo-pulse 3s ease-in-out infinite alternate;
-}
-
-.ft5e-sidebar-title {
-  font-size: 14px;
-  font-weight: 900;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--ft5e-primary) !important;
-  text-shadow: 0 0 8px var(--ft5e-glow-soft);
-}
-
-@keyframes ft5e-logo-pulse {
-  0% { filter: drop-shadow(0 0 4px var(--ft5e-glow-soft)); transform: scale(1); }
-  100% { filter: drop-shadow(0 0 10px var(--ft5e-glow)); transform: scale(1.05); }
-}
-
-/* Sidebar tabs */
+/* Sidebar tabs row */
 body[data-ft5e-theme] #sidebar #sidebar-tabs {
-  background: var(--ft5e-bg-mid) !important;
-  border-bottom: 2px solid var(--ft5e-border) !important;
+  background: var(--ft5e-bg-2) !important;
+  border-bottom: 1px solid var(--ft5e-border) !important;
+  padding: 2px 0 !important;
 }
 
 body[data-ft5e-theme] #sidebar #sidebar-tabs > .item {
-  color: var(--ft5e-text-muted) !important;
-  transition: all 0.25s ease !important;
+  color: var(--ft5e-text-dim) !important;
+  transition: all 0.3s ease !important;
+  border-bottom: 2px solid transparent !important;
+  position: relative !important;
 }
 
 body[data-ft5e-theme] #sidebar #sidebar-tabs > .item:hover {
   color: var(--ft5e-primary-light) !important;
-  text-shadow: 0 0 10px var(--ft5e-glow) !important;
+  text-shadow: 0 0 12px var(--ft5e-glow) !important;
 }
 
 body[data-ft5e-theme] #sidebar #sidebar-tabs > .item.active {
   color: var(--ft5e-primary) !important;
-  text-shadow: 0 0 8px var(--ft5e-glow) !important;
-  border-bottom: 3px solid var(--ft5e-primary) !important;
+  text-shadow: 0 0 10px var(--ft5e-glow) !important;
+  border-bottom-color: var(--ft5e-primary) !important;
 }
 
-/* Sidebar tab content */
+/* Sidebar tab panels */
 body[data-ft5e-theme] #sidebar .sidebar-tab {
-  background: var(--ft5e-bg-dark) !important;
+  background: transparent !important;
   color: var(--ft5e-text) !important;
 }
 
-body[data-ft5e-theme] #sidebar .sidebar-tab .directory-header {
-  background: var(--ft5e-header-bg) !important;
+/* Section headers in sidebar (like "Game Settings", "Help and Documentation") */
+body[data-ft5e-theme] #sidebar h2,
+body[data-ft5e-theme] #sidebar h3,
+body[data-ft5e-theme] #sidebar .sidebar-tab h2,
+body[data-ft5e-theme] #sidebar .sidebar-tab h3 {
+  color: var(--ft5e-primary) !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.5px !important;
+  font-size: 11px !important;
+  text-align: center !important;
+  position: relative !important;
+  padding: 8px 0 !important;
+}
+
+/* Decorative lines around section headers */
+body[data-ft5e-theme] #sidebar h2::before,
+body[data-ft5e-theme] #sidebar h3::before,
+body[data-ft5e-theme] #sidebar .sidebar-tab h2::before,
+body[data-ft5e-theme] #sidebar .sidebar-tab h3::before {
+  content: "" !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 10% !important;
+  width: 80% !important;
+  height: 1px !important;
+  background: var(--ft5e-header-line) !important;
+}
+
+/* Directory headers */
+body[data-ft5e-theme] #sidebar .directory-header {
+  background: var(--ft5e-bg-2) !important;
   border-bottom: 1px solid var(--ft5e-border) !important;
   color: var(--ft5e-text) !important;
 }
 
-body[data-ft5e-theme] #sidebar .sidebar-tab h2,
-body[data-ft5e-theme] #sidebar .sidebar-tab h3 {
-  color: var(--ft5e-primary-light) !important;
+/* ── Sidebar buttons — styled as guild buttons ── */
+
+body[data-ft5e-theme] #sidebar button,
+body[data-ft5e-theme] #sidebar .sidebar-tab button,
+body[data-ft5e-theme] #settings button {
+  background: var(--ft5e-btn-gradient) !important;
+  color: var(--ft5e-primary) !important;
+  border: 1px solid var(--ft5e-border) !important;
+  border-radius: 20px !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  letter-spacing: 0.5px !important;
+  padding: 6px 16px !important;
+  margin: 3px 6px !important;
+  transition: all 0.3s ease !important;
+  text-shadow: 0 0 4px rgba(var(--ft5e-primary-rgb), 0.3) !important;
+  box-shadow: 0 0 0 1px rgba(var(--ft5e-primary-rgb), 0.15), inset 0 1px 0 rgba(255,255,255,0.03) !important;
+  position: relative !important;
+  overflow: hidden !important;
 }
 
-/* Directory items */
+body[data-ft5e-theme] #sidebar button:hover,
+body[data-ft5e-theme] #sidebar .sidebar-tab button:hover,
+body[data-ft5e-theme] #settings button:hover {
+  background: var(--ft5e-bg-4) !important;
+  color: var(--ft5e-primary-light) !important;
+  border-color: var(--ft5e-primary) !important;
+  box-shadow: 0 0 15px rgba(var(--ft5e-primary-rgb), 0.3), 0 0 0 1px var(--ft5e-primary), inset 0 1px 0 rgba(255,255,255,0.05) !important;
+  text-shadow: 0 0 8px var(--ft5e-glow) !important;
+  transform: translateY(-1px) !important;
+}
+
+body[data-ft5e-theme] #sidebar button i,
+body[data-ft5e-theme] #settings button i {
+  color: var(--ft5e-primary) !important;
+  margin-right: 4px !important;
+}
+
+/* Directory items / entries */
 body[data-ft5e-theme] #sidebar .directory-list .directory-item,
-body[data-ft5e-theme] #sidebar .directory-list .entity,
-body[data-ft5e-theme] #sidebar .directory-list .document {
-  background: var(--ft5e-bg-mid) !important;
-  border: 1px solid var(--ft5e-border-light) !important;
+body[data-ft5e-theme] #sidebar .directory-list .document,
+body[data-ft5e-theme] #sidebar .directory-list .entity {
+  background: var(--ft5e-bg-2) !important;
+  border: 1px solid var(--ft5e-border) !important;
+  border-left: 3px solid rgba(var(--ft5e-primary-rgb), 0.4) !important;
   color: var(--ft5e-text) !important;
-  margin: 2px 4px !important;
+  margin: 3px 4px !important;
   border-radius: 4px !important;
   transition: all 0.2s ease !important;
 }
 
 body[data-ft5e-theme] #sidebar .directory-list .directory-item:hover,
-body[data-ft5e-theme] #sidebar .directory-list .entity:hover,
-body[data-ft5e-theme] #sidebar .directory-list .document:hover {
-  background: var(--ft5e-bg-light) !important;
-  border-color: var(--ft5e-primary) !important;
-  box-shadow: 0 0 8px var(--ft5e-glow-soft) !important;
+body[data-ft5e-theme] #sidebar .directory-list .document:hover,
+body[data-ft5e-theme] #sidebar .directory-list .entity:hover {
+  background: var(--ft5e-bg-3) !important;
+  border-left-color: var(--ft5e-primary) !important;
+  box-shadow: 0 0 10px rgba(var(--ft5e-primary-rgb), 0.15) !important;
 }
 
 /* ================================================================= */
-/*  CHAT — complete restyle                                          */
+/*  CHAT — Guild message board                                       */
 /* ================================================================= */
 
 body[data-ft5e-theme] #chat-log {
-  background: var(--ft5e-bg-dark) !important;
+  background: var(--ft5e-bg-1) !important;
 }
 
 body[data-ft5e-theme] #chat-log .chat-message,
 body[data-ft5e-theme] #chat-log .message {
-  background: var(--ft5e-bg-mid) !important;
-  border: 1px solid var(--ft5e-border-light) !important;
-  border-left: 3px solid var(--ft5e-primary) !important;
+  background: var(--ft5e-bg-2) !important;
+  border: 1px solid var(--ft5e-border) !important;
+  border-left: 3px solid rgba(var(--ft5e-primary-rgb), 0.5) !important;
   color: var(--ft5e-text) !important;
-  border-radius: 4px !important;
-  margin: 4px !important;
+  border-radius: 6px !important;
+  margin: 4px 6px !important;
 }
 
 body[data-ft5e-theme] #chat-log .chat-message:hover,
 body[data-ft5e-theme] #chat-log .message:hover {
-  border-left-color: var(--ft5e-primary-light) !important;
-  box-shadow: 0 0 6px var(--ft5e-glow-soft) !important;
+  border-left-color: var(--ft5e-primary) !important;
+  box-shadow: 0 0 8px rgba(var(--ft5e-primary-rgb), 0.15) !important;
 }
 
-body[data-ft5e-theme] #chat-log .message-header,
-body[data-ft5e-theme] #chat-log .chat-message .message-header {
+body[data-ft5e-theme] #chat-log .message-header {
   color: var(--ft5e-primary-light) !important;
 }
 
-body[data-ft5e-theme] #chat-log .message-content,
-body[data-ft5e-theme] #chat-log .chat-message .message-content {
+body[data-ft5e-theme] #chat-log .message-content {
   color: var(--ft5e-text) !important;
 }
 
 /* Chat input */
 body[data-ft5e-theme] #chat-form {
-  background: var(--ft5e-bg-mid) !important;
-  border-top: 2px solid var(--ft5e-border) !important;
+  background: var(--ft5e-bg-2) !important;
+  border-top: 1px solid var(--ft5e-border) !important;
 }
 
 body[data-ft5e-theme] #chat-message {
-  background: var(--ft5e-input-bg) !important;
+  background: var(--ft5e-bg-3) !important;
   border: 2px solid var(--ft5e-border) !important;
   color: var(--ft5e-text) !important;
-  border-radius: 6px !important;
+  border-radius: 20px !important;
 }
 
 body[data-ft5e-theme] #chat-message:focus {
   border-color: var(--ft5e-primary) !important;
-  box-shadow: 0 0 10px var(--ft5e-glow) !important;
+  box-shadow: 0 0 12px rgba(var(--ft5e-primary-rgb), 0.3) !important;
 }
 
-/* ── dnd5e chat cards ── */
+/* dnd5e chat cards */
 body[data-ft5e-theme] .dnd5e2.chat-card,
 body[data-ft5e-theme] .chat-message .dnd5e2 {
-  background: var(--ft5e-bg-light) !important;
+  background: var(--ft5e-bg-3) !important;
   color: var(--ft5e-text) !important;
 }
 
 body[data-ft5e-theme] .dnd5e2.chat-card .card-header,
 body[data-ft5e-theme] .chat-message .dnd5e2 .card-header {
-  background: var(--ft5e-header-bg) !important;
+  background: var(--ft5e-bg-4) !important;
   color: var(--ft5e-primary-light) !important;
   border-bottom: 1px solid var(--ft5e-border) !important;
 }
 
-body[data-ft5e-theme] .dnd5e2.chat-card .card-buttons button,
-body[data-ft5e-theme] .chat-message .dnd5e2 button {
-  background: var(--ft5e-bg-surface) !important;
-  border: 1px solid var(--ft5e-border) !important;
-  color: var(--ft5e-text) !important;
-}
-
-body[data-ft5e-theme] .dnd5e2.chat-card .card-buttons button:hover,
-body[data-ft5e-theme] .chat-message .dnd5e2 button:hover {
-  background: var(--ft5e-primary-dark) !important;
-  border-color: var(--ft5e-primary) !important;
-  color: #fff !important;
-  box-shadow: 0 0 8px var(--ft5e-glow-soft) !important;
-}
-
 /* ================================================================= */
-/*  HOTBAR / MACRO BAR                                               */
+/*  HOTBAR                                                           */
 /* ================================================================= */
 
 body[data-ft5e-theme] #hotbar {
-  background: var(--ft5e-bg-dark) !important;
-  border: 2px solid var(--ft5e-border) !important;
-  border-radius: 8px !important;
-  box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.5) !important;
+  background: var(--ft5e-bg-1) !important;
+  border: 1px solid var(--ft5e-border) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 -2px 20px rgba(0,0,0,0.6), 0 0 0 1px rgba(var(--ft5e-primary-rgb), 0.1) !important;
+  overflow: hidden !important;
 }
 
 body[data-ft5e-theme] #hotbar #macro-list {
-  background: var(--ft5e-bg-mid) !important;
+  background: var(--ft5e-bg-2) !important;
 }
 
 body[data-ft5e-theme] #hotbar .macro {
-  border: 1px solid var(--ft5e-border-light) !important;
-  background: var(--ft5e-bg-light) !important;
-  transition: all 0.2s ease !important;
+  border: 1px solid var(--ft5e-border) !important;
+  background: var(--ft5e-bg-3) !important;
+  transition: all 0.25s ease !important;
 }
 
 body[data-ft5e-theme] #hotbar .macro:hover {
   border-color: var(--ft5e-primary) !important;
-  box-shadow: 0 0 12px var(--ft5e-glow) !important;
-  transform: translateY(-2px);
-}
-
-body[data-ft5e-theme] #hotbar .bar-controls {
-  background: var(--ft5e-bg-dark) !important;
-  color: var(--ft5e-text-muted) !important;
+  box-shadow: 0 0 14px var(--ft5e-glow) !important;
+  transform: translateY(-3px) !important;
 }
 
 body[data-ft5e-theme] #hotbar .macro .macro-key {
   color: var(--ft5e-primary) !important;
-  text-shadow: 0 0 4px var(--ft5e-glow-soft) !important;
+  font-weight: 700 !important;
+  text-shadow: 0 0 6px rgba(var(--ft5e-primary-rgb), 0.4) !important;
+}
+
+body[data-ft5e-theme] #hotbar .bar-controls {
+  background: var(--ft5e-bg-1) !important;
+  color: var(--ft5e-text-dim) !important;
 }
 
 /* ================================================================= */
-/*  NAVIGATION / SCENE TABS                                          */
+/*  NAVIGATION                                                       */
 /* ================================================================= */
 
 body[data-ft5e-theme] #navigation {
-  background: var(--ft5e-bg-dark) !important;
-  border-bottom: 3px solid var(--ft5e-border) !important;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5) !important;
+  background: var(--ft5e-bg-1) !important;
+  border-bottom: 1px solid var(--ft5e-border) !important;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.5) !important;
 }
 
 body[data-ft5e-theme] #navigation #scene-list .scene.nav-item {
-  background: var(--ft5e-bg-mid) !important;
-  border: 1px solid var(--ft5e-border-light) !important;
+  background: var(--ft5e-bg-2) !important;
+  border: 1px solid var(--ft5e-border) !important;
   color: var(--ft5e-text) !important;
+  border-radius: 16px !important;
+  transition: all 0.2s ease !important;
 }
 
 body[data-ft5e-theme] #navigation #scene-list .scene.nav-item:hover {
-  background: var(--ft5e-bg-light) !important;
+  background: var(--ft5e-bg-3) !important;
   border-color: var(--ft5e-primary) !important;
-  box-shadow: 0 0 8px var(--ft5e-glow-soft) !important;
+  box-shadow: 0 0 10px rgba(var(--ft5e-primary-rgb), 0.2) !important;
 }
 
 body[data-ft5e-theme] #navigation #scene-list .scene.nav-item.active {
-  background: var(--ft5e-bg-surface) !important;
+  background: var(--ft5e-bg-4) !important;
   border-color: var(--ft5e-primary) !important;
   color: var(--ft5e-primary-light) !important;
-  box-shadow: 0 0 12px var(--ft5e-glow-soft) !important;
-}
-
-body[data-ft5e-theme] #navigation .nav-toggle {
-  background: var(--ft5e-bg-dark) !important;
-  color: var(--ft5e-text-muted) !important;
+  box-shadow: 0 0 14px rgba(var(--ft5e-primary-rgb), 0.3) !important;
 }
 
 /* ================================================================= */
-/*  CONTROLS / TOOL SIDEBAR                                          */
+/*  CONTROLS                                                         */
 /* ================================================================= */
 
 body[data-ft5e-theme] #controls {
-  background: var(--ft5e-bg-dark) !important;
-  border-right: 2px solid var(--ft5e-border-light) !important;
+  background: var(--ft5e-bg-1) !important;
+  border-right: 1px solid var(--ft5e-border) !important;
 }
 
 body[data-ft5e-theme] #controls .scene-control,
 body[data-ft5e-theme] #controls .control-tool {
-  color: var(--ft5e-text-muted) !important;
-  transition: all 0.25s ease !important;
+  color: var(--ft5e-text-dim) !important;
+  transition: all 0.3s ease !important;
 }
 
 body[data-ft5e-theme] #controls .scene-control:hover,
 body[data-ft5e-theme] #controls .control-tool:hover {
   color: var(--ft5e-primary-light) !important;
-  text-shadow: 0 0 10px var(--ft5e-glow) !important;
-  transform: scale(1.15);
+  text-shadow: 0 0 14px var(--ft5e-glow) !important;
+  transform: scale(1.2) !important;
 }
 
 body[data-ft5e-theme] #controls .scene-control.active,
@@ -406,87 +427,136 @@ body[data-ft5e-theme] #controls .control-tool.active {
 }
 
 /* ================================================================= */
-/*  PLAYERS PANEL                                                    */
+/*  PLAYERS                                                          */
 /* ================================================================= */
 
 body[data-ft5e-theme] #players {
-  background: var(--ft5e-bg-dark) !important;
-  border: 2px solid var(--ft5e-border-light) !important;
-  border-radius: 6px !important;
+  background: var(--ft5e-bg-1) !important;
+  border: 1px solid var(--ft5e-border) !important;
+  border-radius: 8px !important;
   color: var(--ft5e-text) !important;
 }
 
 body[data-ft5e-theme] #players h3 {
   color: var(--ft5e-primary) !important;
-  border-bottom: 1px solid var(--ft5e-border) !important;
-}
-
-body[data-ft5e-theme] #players .player-name {
-  color: var(--ft5e-text) !important;
 }
 
 /* ================================================================= */
-/*  APPLICATION WINDOWS / DIALOGS                                    */
+/*  PAUSE — centered guild logo, no rotation                         */
+/* ================================================================= */
+
+body[data-ft5e-theme] #pause {
+  background: rgba(0, 0, 0, 0.55) !important;
+}
+
+/* The pause banner/bar */
+body[data-ft5e-theme] #pause > figure,
+body[data-ft5e-theme] #pause > div {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: linear-gradient(180deg, rgba(var(--ft5e-primary-rgb), 0.15) 0%, var(--ft5e-bg-1) 30%, var(--ft5e-bg-1) 70%, rgba(var(--ft5e-primary-rgb), 0.15) 100%) !important;
+  border-top: 2px solid rgba(var(--ft5e-primary-rgb), 0.5) !important;
+  border-bottom: 2px solid rgba(var(--ft5e-primary-rgb), 0.5) !important;
+  box-shadow: 0 0 40px rgba(0,0,0,0.6), 0 0 20px rgba(var(--ft5e-primary-rgb), 0.15) !important;
+  padding: 20px 0 !important;
+  width: 100% !important;
+}
+
+body[data-ft5e-theme] #pause img,
+body[data-ft5e-theme] #pause .ft5e-pause-logo {
+  width: 120px !important;
+  height: 120px !important;
+  max-width: none !important;
+  max-height: none !important;
+  display: block !important;
+  margin: 0 auto !important;
+  animation: ft5e-pause-glow 3s ease-in-out infinite alternate !important;
+  /* NO rotation */
+  transform: none !important;
+}
+
+body[data-ft5e-theme] #pause figcaption,
+body[data-ft5e-theme] #pause h3,
+body[data-ft5e-theme] #pause span {
+  color: var(--ft5e-primary-light) !important;
+  text-shadow: 0 0 20px var(--ft5e-glow), 0 0 40px rgba(var(--ft5e-primary-rgb), 0.3) !important;
+  font-weight: 800 !important;
+  font-size: 1.4em !important;
+  letter-spacing: 6px !important;
+  text-transform: uppercase !important;
+  margin-top: 8px !important;
+}
+
+@keyframes ft5e-pause-glow {
+  0% { filter: drop-shadow(0 0 10px rgba(var(--ft5e-primary-rgb), 0.4)) drop-shadow(0 0 25px rgba(var(--ft5e-primary-rgb), 0.2)); }
+  100% { filter: drop-shadow(0 0 18px rgba(var(--ft5e-primary-rgb), 0.7)) drop-shadow(0 0 40px rgba(var(--ft5e-primary-rgb), 0.35)); }
+}
+
+/* ================================================================= */
+/*  APPLICATION WINDOWS                                              */
 /* ================================================================= */
 
 body[data-ft5e-theme] .app .window-header,
 body[data-ft5e-theme] .application .window-header {
-  background: var(--ft5e-header-bg) !important;
-  border-bottom: 3px solid var(--ft5e-border) !important;
+  background: var(--ft5e-bg-2) !important;
+  border-bottom: 2px solid var(--ft5e-border) !important;
   color: var(--ft5e-text) !important;
 }
 
 body[data-ft5e-theme] .app .window-header .window-title,
 body[data-ft5e-theme] .application .window-header .window-title {
   color: var(--ft5e-primary-light) !important;
-  text-shadow: 0 0 4px var(--ft5e-glow-soft) !important;
+  text-shadow: 0 0 6px rgba(var(--ft5e-primary-rgb), 0.3) !important;
   font-weight: 700 !important;
+  letter-spacing: 0.5px !important;
 }
 
 body[data-ft5e-theme] .app .window-header .header-button,
 body[data-ft5e-theme] .application .window-header .header-button {
-  color: var(--ft5e-text-muted) !important;
+  color: var(--ft5e-text-dim) !important;
 }
 
 body[data-ft5e-theme] .app .window-header .header-button:hover,
 body[data-ft5e-theme] .application .window-header .header-button:hover {
   color: var(--ft5e-primary) !important;
-  text-shadow: 0 0 6px var(--ft5e-glow) !important;
+  text-shadow: 0 0 8px var(--ft5e-glow) !important;
 }
 
 body[data-ft5e-theme] .app .window-content,
 body[data-ft5e-theme] .application .window-content {
-  background: var(--ft5e-bg-mid) !important;
+  background: var(--ft5e-bg-2) !important;
   color: var(--ft5e-text) !important;
 }
 
 /* Dialog buttons */
 body[data-ft5e-theme] .dialog .dialog-buttons button {
-  background: var(--ft5e-bg-surface) !important;
-  border: 2px solid var(--ft5e-border) !important;
-  color: var(--ft5e-text) !important;
-  border-radius: 6px !important;
+  background: var(--ft5e-btn-gradient) !important;
+  border: 1px solid var(--ft5e-border) !important;
+  color: var(--ft5e-primary) !important;
+  border-radius: 20px !important;
   font-weight: 600 !important;
-  transition: all 0.25s ease !important;
+  transition: all 0.3s ease !important;
+  padding: 6px 20px !important;
 }
 
 body[data-ft5e-theme] .dialog .dialog-buttons button:hover {
-  background: var(--ft5e-primary-dark) !important;
   border-color: var(--ft5e-primary) !important;
-  color: #fff !important;
-  box-shadow: 0 0 12px var(--ft5e-glow) !important;
-  transform: translateY(-1px);
+  color: var(--ft5e-primary-light) !important;
+  box-shadow: 0 0 14px rgba(var(--ft5e-primary-rgb), 0.3) !important;
+  text-shadow: 0 0 6px var(--ft5e-glow) !important;
 }
 
 body[data-ft5e-theme] .dialog .dialog-buttons button.default {
-  background: var(--ft5e-primary-dark) !important;
+  background: rgba(var(--ft5e-primary-rgb), 0.15) !important;
   border-color: var(--ft5e-primary) !important;
-  color: #fff !important;
-  box-shadow: 0 0 8px var(--ft5e-glow-soft) !important;
+  color: var(--ft5e-primary-light) !important;
+  box-shadow: 0 0 8px rgba(var(--ft5e-primary-rgb), 0.2) !important;
 }
 
 /* ================================================================= */
-/*  FORM INPUTS — global override                                    */
+/*  FORM INPUTS                                                      */
 /* ================================================================= */
 
 body[data-ft5e-theme] input[type="text"],
@@ -495,7 +565,7 @@ body[data-ft5e-theme] input[type="search"],
 body[data-ft5e-theme] input[type="password"],
 body[data-ft5e-theme] textarea,
 body[data-ft5e-theme] select {
-  background: var(--ft5e-input-bg) !important;
+  background: var(--ft5e-bg-3) !important;
   border: 1px solid var(--ft5e-border) !important;
   color: var(--ft5e-text) !important;
   border-radius: 4px !important;
@@ -505,107 +575,24 @@ body[data-ft5e-theme] input:focus,
 body[data-ft5e-theme] textarea:focus,
 body[data-ft5e-theme] select:focus {
   border-color: var(--ft5e-primary) !important;
-  box-shadow: 0 0 8px var(--ft5e-glow) !important;
+  box-shadow: 0 0 10px rgba(var(--ft5e-primary-rgb), 0.3) !important;
   outline: none !important;
 }
 
 /* ================================================================= */
-/*  GENERIC TABS                                                     */
+/*  D&D 5e ACTOR / ITEM SHEETS                                      */
 /* ================================================================= */
 
-body[data-ft5e-theme] .tabs .item,
-body[data-ft5e-theme] .sheet-tabs .item {
-  color: var(--ft5e-text-muted) !important;
-  transition: all 0.2s ease !important;
-}
-
-body[data-ft5e-theme] .tabs .item:hover,
-body[data-ft5e-theme] .sheet-tabs .item:hover {
-  color: var(--ft5e-primary-light) !important;
-  text-shadow: 0 0 6px var(--ft5e-glow-soft) !important;
-}
-
-body[data-ft5e-theme] .tabs .item.active,
-body[data-ft5e-theme] .sheet-tabs .item.active {
-  color: var(--ft5e-primary) !important;
-  text-shadow: 0 0 8px var(--ft5e-glow-soft) !important;
-}
-
-/* ================================================================= */
-/*  SCROLLBAR                                                        */
-/* ================================================================= */
-
-body[data-ft5e-theme] ::-webkit-scrollbar {
-  width: 8px !important;
-  height: 8px !important;
-}
-
-body[data-ft5e-theme] ::-webkit-scrollbar-track {
-  background: var(--ft5e-bg-dark) !important;
-}
-
-body[data-ft5e-theme] ::-webkit-scrollbar-thumb {
-  background: var(--ft5e-border) !important;
-  border-radius: 4px !important;
-}
-
-body[data-ft5e-theme] ::-webkit-scrollbar-thumb:hover {
-  background: var(--ft5e-primary) !important;
-}
-
-/* ================================================================= */
-/*  PAUSE LOGO — Fairy Tail guild symbol                             */
-/* ================================================================= */
-
-body[data-ft5e-theme] #pause {
-  background: rgba(0, 0, 0, 0.65) !important;
-}
-
-body[data-ft5e-theme] #pause img,
-body[data-ft5e-theme] #pause figure img,
-body[data-ft5e-theme] #pause .ft5e-pause-logo {
-  width: 150px !important;
-  height: 150px !important;
-  max-width: none !important;
-  max-height: none !important;
-  filter: drop-shadow(0 0 20px var(--ft5e-glow)) drop-shadow(0 0 40px var(--ft5e-glow)) !important;
-  animation: ft5e-pause-spin 8s linear infinite !important;
-}
-
-body[data-ft5e-theme] #pause figcaption,
-body[data-ft5e-theme] #pause h3,
-body[data-ft5e-theme] #pause span {
-  color: var(--ft5e-primary-light) !important;
-  text-shadow: 0 0 15px var(--ft5e-glow), 0 0 30px var(--ft5e-glow-soft), 0 2px 4px rgba(0, 0, 0, 0.9) !important;
-  font-weight: 800 !important;
-  font-size: 1.5em !important;
-  letter-spacing: 4px !important;
-  text-transform: uppercase !important;
-}
-
-@keyframes ft5e-pause-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-/* ================================================================= */
-/*  D&D 5e ACTOR SHEET — aggressive overrides                        */
-/* ================================================================= */
-
-/* Window & content */
 body[data-ft5e-theme] .dnd5e2.sheet .window-content,
-body[data-ft5e-theme] .dnd5e.sheet .window-content,
-body[data-ft5e-theme] .dnd5e2.sheet.actor .window-content,
-body[data-ft5e-theme] .dnd5e.sheet.actor .window-content {
-  background: var(--ft5e-bg-mid) !important;
+body[data-ft5e-theme] .dnd5e.sheet .window-content {
+  background: var(--ft5e-bg-2) !important;
   color: var(--ft5e-text) !important;
 }
 
-/* Sheet header */
 body[data-ft5e-theme] .dnd5e2.sheet .sheet-header,
 body[data-ft5e-theme] .dnd5e.sheet .sheet-header {
-  background: var(--ft5e-header-bg) !important;
-  border-bottom: 3px solid var(--ft5e-border) !important;
+  background: var(--ft5e-bg-3) !important;
+  border-bottom: 2px solid var(--ft5e-border) !important;
   color: var(--ft5e-text) !important;
 }
 
@@ -614,148 +601,158 @@ body[data-ft5e-theme] .dnd5e.sheet .sheet-header input {
   color: var(--ft5e-primary-light) !important;
 }
 
-/* Sheet body & tabs */
 body[data-ft5e-theme] .dnd5e2.sheet .sheet-body,
 body[data-ft5e-theme] .dnd5e.sheet .sheet-body {
-  background: var(--ft5e-bg-mid) !important;
+  background: var(--ft5e-bg-2) !important;
   color: var(--ft5e-text) !important;
 }
 
 body[data-ft5e-theme] .dnd5e2.sheet .sheet-body .tab,
 body[data-ft5e-theme] .dnd5e.sheet .sheet-body .tab {
-  background: var(--ft5e-bg-mid) !important;
+  background: var(--ft5e-bg-2) !important;
 }
 
-/* Sheet tabs */
+/* Tabs */
 body[data-ft5e-theme] .dnd5e2.sheet .sheet-tabs .item,
-body[data-ft5e-theme] .dnd5e.sheet .sheet-tabs .item {
-  color: var(--ft5e-text-muted) !important;
-  border-bottom: 3px solid transparent !important;
-  transition: all 0.2s ease !important;
+body[data-ft5e-theme] .dnd5e.sheet .sheet-tabs .item,
+body[data-ft5e-theme] .tabs .item,
+body[data-ft5e-theme] .sheet-tabs .item {
+  color: var(--ft5e-text-dim) !important;
+  border-bottom: 2px solid transparent !important;
+  transition: all 0.25s ease !important;
 }
 
 body[data-ft5e-theme] .dnd5e2.sheet .sheet-tabs .item:hover,
-body[data-ft5e-theme] .dnd5e.sheet .sheet-tabs .item:hover {
+body[data-ft5e-theme] .dnd5e.sheet .sheet-tabs .item:hover,
+body[data-ft5e-theme] .tabs .item:hover,
+body[data-ft5e-theme] .sheet-tabs .item:hover {
   color: var(--ft5e-primary-light) !important;
+  text-shadow: 0 0 8px rgba(var(--ft5e-primary-rgb), 0.4) !important;
 }
 
 body[data-ft5e-theme] .dnd5e2.sheet .sheet-tabs .item.active,
-body[data-ft5e-theme] .dnd5e.sheet .sheet-tabs .item.active {
+body[data-ft5e-theme] .dnd5e.sheet .sheet-tabs .item.active,
+body[data-ft5e-theme] .tabs .item.active,
+body[data-ft5e-theme] .sheet-tabs .item.active {
   color: var(--ft5e-primary) !important;
   border-bottom-color: var(--ft5e-primary) !important;
-  text-shadow: 0 0 6px var(--ft5e-glow-soft) !important;
+  text-shadow: 0 0 8px rgba(var(--ft5e-primary-rgb), 0.4) !important;
 }
 
 /* Item lists */
 body[data-ft5e-theme] .dnd5e2.sheet .items-list .item,
 body[data-ft5e-theme] .dnd5e.sheet .items-list .item {
-  border-bottom: 1px solid var(--ft5e-border-light) !important;
+  border-bottom: 1px solid var(--ft5e-border) !important;
   color: var(--ft5e-text) !important;
-  transition: background 0.2s ease !important;
 }
 
 body[data-ft5e-theme] .dnd5e2.sheet .items-list .item:hover,
 body[data-ft5e-theme] .dnd5e.sheet .items-list .item:hover {
-  background: var(--ft5e-bg-light) !important;
+  background: var(--ft5e-bg-3) !important;
 }
 
 body[data-ft5e-theme] .dnd5e2.sheet .items-list .items-header,
 body[data-ft5e-theme] .dnd5e.sheet .items-list .items-header {
-  background: var(--ft5e-bg-surface) !important;
-  border-bottom: 2px solid var(--ft5e-border) !important;
+  background: var(--ft5e-bg-4) !important;
   color: var(--ft5e-primary) !important;
+  border-bottom: 2px solid var(--ft5e-border) !important;
 }
 
 /* Ability scores */
 body[data-ft5e-theme] .dnd5e2.sheet .ability-scores .ability,
 body[data-ft5e-theme] .dnd5e.sheet .ability-scores .ability {
-  background: var(--ft5e-bg-light) !important;
+  background: var(--ft5e-bg-3) !important;
   border: 2px solid var(--ft5e-border) !important;
   color: var(--ft5e-text) !important;
-  border-radius: 8px !important;
-  transition: all 0.2s ease !important;
+  border-radius: 10px !important;
+  transition: all 0.25s ease !important;
 }
 
 body[data-ft5e-theme] .dnd5e2.sheet .ability-scores .ability:hover,
 body[data-ft5e-theme] .dnd5e.sheet .ability-scores .ability:hover {
   border-color: var(--ft5e-primary) !important;
-  box-shadow: 0 0 12px var(--ft5e-glow) !important;
+  box-shadow: 0 0 14px rgba(var(--ft5e-primary-rgb), 0.3) !important;
 }
 
-/* Proficiency, saving throws, skills */
-body[data-ft5e-theme] .dnd5e2.sheet .ability-scores .ability .ability-modifiers,
-body[data-ft5e-theme] .dnd5e.sheet .ability-scores .ability .ability-modifiers {
-  color: var(--ft5e-primary-light) !important;
-}
-
-/* HP bar area */
-body[data-ft5e-theme] .dnd5e2.sheet .meter.hit-points .progress,
-body[data-ft5e-theme] .dnd5e.sheet .meter.hit-points .progress {
-  background: var(--ft5e-primary-dark) !important;
-}
-
-/* Pill/tag badges */
+/* Pills, tags, badges */
 body[data-ft5e-theme] .dnd5e2.sheet .pill-lg,
 body[data-ft5e-theme] .dnd5e2.sheet .tag {
-  background: var(--ft5e-bg-surface) !important;
+  background: var(--ft5e-bg-4) !important;
   border: 1px solid var(--ft5e-border) !important;
   color: var(--ft5e-text) !important;
+  border-radius: 12px !important;
 }
 
-/* Item sheet */
-body[data-ft5e-theme] .dnd5e2.sheet.item .window-content,
-body[data-ft5e-theme] .dnd5e.sheet.item .window-content {
-  background: var(--ft5e-bg-mid) !important;
-  color: var(--ft5e-text) !important;
-}
-
-/* Sections, panels, cards within sheets */
-body[data-ft5e-theme] .dnd5e2.sheet .card,
-body[data-ft5e-theme] .dnd5e2.sheet .pills-group,
-body[data-ft5e-theme] .dnd5e2.sheet section.card-content {
-  background: var(--ft5e-bg-light) !important;
-  border: 1px solid var(--ft5e-border-light) !important;
-  color: var(--ft5e-text) !important;
-}
-
-/* Buttons inside sheets */
+/* Buttons in sheets */
 body[data-ft5e-theme] .dnd5e2.sheet button,
 body[data-ft5e-theme] .dnd5e.sheet button {
-  background: var(--ft5e-bg-surface) !important;
+  background: var(--ft5e-btn-gradient) !important;
   border: 1px solid var(--ft5e-border) !important;
-  color: var(--ft5e-text) !important;
-  transition: all 0.2s ease !important;
+  color: var(--ft5e-primary) !important;
+  border-radius: 16px !important;
+  transition: all 0.25s ease !important;
 }
 
 body[data-ft5e-theme] .dnd5e2.sheet button:hover,
 body[data-ft5e-theme] .dnd5e.sheet button:hover {
-  background: var(--ft5e-primary-dark) !important;
   border-color: var(--ft5e-primary) !important;
-  color: #fff !important;
-  box-shadow: 0 0 8px var(--ft5e-glow-soft) !important;
+  color: var(--ft5e-primary-light) !important;
+  box-shadow: 0 0 10px rgba(var(--ft5e-primary-rgb), 0.25) !important;
 }
 
-/* Links in sheets */
+/* Cards and sections */
+body[data-ft5e-theme] .dnd5e2.sheet .card,
+body[data-ft5e-theme] .dnd5e2.sheet section.card-content {
+  background: var(--ft5e-bg-3) !important;
+  border: 1px solid var(--ft5e-border) !important;
+  color: var(--ft5e-text) !important;
+  border-radius: 8px !important;
+}
+
+/* Links */
 body[data-ft5e-theme] .dnd5e2.sheet a,
 body[data-ft5e-theme] .dnd5e.sheet a {
   color: var(--ft5e-primary-light) !important;
 }
 
-body[data-ft5e-theme] .dnd5e2.sheet a:hover,
-body[data-ft5e-theme] .dnd5e.sheet a:hover {
-  color: var(--ft5e-accent) !important;
-  text-shadow: 0 0 4px var(--ft5e-glow-soft) !important;
-}
-
-/* Labels, descriptions */
+/* Labels */
 body[data-ft5e-theme] .dnd5e2.sheet label,
 body[data-ft5e-theme] .dnd5e.sheet label {
-  color: var(--ft5e-text-muted) !important;
+  color: var(--ft5e-text-dim) !important;
 }
 
-body[data-ft5e-theme] .dnd5e2.sheet .description,
-body[data-ft5e-theme] .dnd5e2.sheet .editor-content {
+/* Editor */
+body[data-ft5e-theme] .editor .ProseMirror,
+body[data-ft5e-theme] .editor .editor-content {
+  background: var(--ft5e-bg-3) !important;
   color: var(--ft5e-text) !important;
+}
+
+body[data-ft5e-theme] .editor .editor-menu {
+  background: var(--ft5e-bg-4) !important;
+  border-bottom: 1px solid var(--ft5e-border) !important;
+}
+
+/* ================================================================= */
+/*  SCROLLBAR                                                        */
+/* ================================================================= */
+
+body[data-ft5e-theme] ::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+body[data-ft5e-theme] ::-webkit-scrollbar-track {
+  background: var(--ft5e-bg-1) !important;
+}
+
+body[data-ft5e-theme] ::-webkit-scrollbar-thumb {
+  background: var(--ft5e-border) !important;
+  border-radius: 3px !important;
+}
+
+body[data-ft5e-theme] ::-webkit-scrollbar-thumb:hover {
+  background: var(--ft5e-primary) !important;
 }
 
 /* ================================================================= */
@@ -763,10 +760,10 @@ body[data-ft5e-theme] .dnd5e2.sheet .editor-content {
 /* ================================================================= */
 
 body[data-ft5e-theme] #notifications .notification {
-  background: var(--ft5e-bg-dark) !important;
+  background: var(--ft5e-bg-1) !important;
   border: 1px solid var(--ft5e-border) !important;
   color: var(--ft5e-text) !important;
-  border-radius: 6px !important;
+  border-radius: 20px !important;
 }
 
 body[data-ft5e-theme] #notifications .notification.info {
@@ -782,15 +779,16 @@ body[data-ft5e-theme] #notifications .notification.error {
 }
 
 /* ================================================================= */
-/*  CONTEXT MENUS                                                    */
+/*  CONTEXT MENU                                                     */
 /* ================================================================= */
 
 body[data-ft5e-theme] #context-menu,
 body[data-ft5e-theme] .context-menu {
-  background: var(--ft5e-bg-dark) !important;
-  border: 2px solid var(--ft5e-border) !important;
-  border-radius: 6px !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6) !important;
+  background: var(--ft5e-bg-1) !important;
+  border: 1px solid var(--ft5e-border) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.7) !important;
+  overflow: hidden !important;
 }
 
 body[data-ft5e-theme] #context-menu li,
@@ -801,29 +799,22 @@ body[data-ft5e-theme] .context-menu li {
 
 body[data-ft5e-theme] #context-menu li:hover,
 body[data-ft5e-theme] .context-menu li:hover {
-  background: var(--ft5e-bg-light) !important;
+  background: rgba(var(--ft5e-primary-rgb), 0.15) !important;
   color: var(--ft5e-primary-light) !important;
 }
 
 /* ================================================================= */
-/*  COMPENDIUM / SETTINGS                                            */
+/*  SETTINGS / FILEPICKER                                            */
 /* ================================================================= */
-
-body[data-ft5e-theme] .compendium-sidebar .directory-item {
-  background: var(--ft5e-bg-light) !important;
-  border: 1px solid var(--ft5e-border-light) !important;
-  color: var(--ft5e-text) !important;
-}
-
-body[data-ft5e-theme] .compendium-sidebar .directory-item:hover {
-  background: var(--ft5e-bg-surface) !important;
-  border-color: var(--ft5e-primary) !important;
-}
 
 body[data-ft5e-theme] #client-settings,
 body[data-ft5e-theme] .settings-sidebar {
-  background: var(--ft5e-bg-mid) !important;
+  background: var(--ft5e-bg-2) !important;
   color: var(--ft5e-text) !important;
+}
+
+body[data-ft5e-theme] .filepicker .window-content {
+  background: var(--ft5e-bg-2) !important;
 }
 
 /* ================================================================= */
@@ -832,36 +823,8 @@ body[data-ft5e-theme] .settings-sidebar {
 
 body[data-ft5e-theme] .tooltip,
 body[data-ft5e-theme] [data-tooltip]::after {
-  background: var(--ft5e-bg-dark) !important;
+  background: var(--ft5e-bg-1) !important;
   border: 1px solid var(--ft5e-border) !important;
   color: var(--ft5e-text) !important;
-  border-radius: 4px !important;
-}
-
-/* ================================================================= */
-/*  PROSEMIRROR / EDITOR                                             */
-/* ================================================================= */
-
-body[data-ft5e-theme] .editor .ProseMirror,
-body[data-ft5e-theme] .editor .editor-content {
-  background: var(--ft5e-bg-light) !important;
-  color: var(--ft5e-text) !important;
-}
-
-body[data-ft5e-theme] .editor .editor-menu {
-  background: var(--ft5e-bg-surface) !important;
-  border-bottom: 1px solid var(--ft5e-border) !important;
-}
-
-/* ================================================================= */
-/*  FILEPICKER                                                       */
-/* ================================================================= */
-
-body[data-ft5e-theme] .filepicker .window-content {
-  background: var(--ft5e-bg-mid) !important;
-}
-
-body[data-ft5e-theme] .filepicker .directory {
-  background: var(--ft5e-bg-light) !important;
-  color: var(--ft5e-text) !important;
+  border-radius: 6px !important;
 }
