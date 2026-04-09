@@ -123,20 +123,6 @@ body[data-ft5e-theme] #sidebar {
   box-shadow: -3px 0 20px rgba(0,0,0,0.7), inset 1px 0 0 var(--ft5e-border) !important;
 }
 
-/* Guild mark watermark in sidebar */
-body[data-ft5e-theme] #sidebar::before {
-  content: "" !important;
-  position: absolute !important;
-  bottom: 60px !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  width: 180px !important;
-  height: 180px !important;
-  background: url("../assets/images/ui/fairy-tail-guild-logo.webp") center/contain no-repeat !important;
-  opacity: 0.04 !important;
-  pointer-events: none !important;
-  z-index: 0 !important;
-}
 
 /* Sidebar tabs row */
 body[data-ft5e-theme] #sidebar #sidebar-tabs {
@@ -209,7 +195,11 @@ body[data-ft5e-theme] #sidebar .directory-header {
 
 body[data-ft5e-theme] #sidebar button,
 body[data-ft5e-theme] #sidebar .sidebar-tab button,
-body[data-ft5e-theme] #settings button {
+body[data-ft5e-theme] #sidebar a.button,
+body[data-ft5e-theme] #sidebar a[href],
+body[data-ft5e-theme] #settings button,
+body[data-ft5e-theme] #settings a.button,
+body[data-ft5e-theme] #settings a[href] {
   background: var(--ft5e-btn-gradient) !important;
   color: var(--ft5e-primary) !important;
   border: 1px solid var(--ft5e-border) !important;
@@ -228,7 +218,11 @@ body[data-ft5e-theme] #settings button {
 
 body[data-ft5e-theme] #sidebar button:hover,
 body[data-ft5e-theme] #sidebar .sidebar-tab button:hover,
-body[data-ft5e-theme] #settings button:hover {
+body[data-ft5e-theme] #sidebar a.button:hover,
+body[data-ft5e-theme] #sidebar a[href]:hover,
+body[data-ft5e-theme] #settings button:hover,
+body[data-ft5e-theme] #settings a.button:hover,
+body[data-ft5e-theme] #settings a[href]:hover {
   background: var(--ft5e-bg-4) !important;
   color: var(--ft5e-primary-light) !important;
   border-color: var(--ft5e-primary) !important;
@@ -238,7 +232,9 @@ body[data-ft5e-theme] #settings button:hover {
 }
 
 body[data-ft5e-theme] #sidebar button i,
-body[data-ft5e-theme] #settings button i {
+body[data-ft5e-theme] #sidebar a[href] i,
+body[data-ft5e-theme] #settings button i,
+body[data-ft5e-theme] #settings a[href] i {
   color: var(--ft5e-primary) !important;
   margin-right: 4px !important;
 }
