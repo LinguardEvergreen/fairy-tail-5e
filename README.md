@@ -132,8 +132,8 @@ I file JSON generati si trovano in `src/`, i compendium LevelDB compilati in `pa
 ## Crediti
 
 - **Modulo FoundryVTT**: [LinguardEvergreen](https://github.com/LinguardEvergreen)
-- **Manuale Fairy Tail 5e**: ErtBash e il team di FinnATC
-- **Fairy Tail**: opera di Hiro Mashima
+- **Manuale Fairy Tail 5e**: Il team di FinnATC
+- **Fairy Tail**: Opera di Hiro Mashima
 - **D&D 5e**: Wizards of the Coast
 
 ## Licenza
