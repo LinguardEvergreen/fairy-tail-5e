@@ -16,7 +16,7 @@
 
 ## Panoramica
 
-`fairy-tail-5e` è un modulo per FoundryVTT che porta l'intero contenuto del manuale homebrew **Fairy Tail 5e** (di ErtBash e FinnATC) nel sistema D&D 5e.
+`fairy-tail-5e` è un modulo per FoundryVTT che porta l'intero contenuto del manuale homebrew **Fairy Tail 5e** (FinnATC) nel sistema D&D 5e.
 
 Include:
 
