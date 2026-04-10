@@ -79,17 +79,14 @@ function stylePlayersPanel(themeId) {
   ps.setProperty("padding", "8px 10px", "important");
   ps.setProperty("box-shadow", `0 2px 16px rgba(0,0,0,0.6), inset 0 1px 0 ${c.shadow}`, "important");
   ps.setProperty("color", c.text, "important");
-  ps.setProperty("overflow", "hidden", "important");
+  ps.setProperty("min-width", "fit-content", "important");
 
-  // Style inner sections — transparent bg + fit inside container
+  // Style inner sections — transparent so container is one unified box
   for (const id of ["players-inactive", "players-active"]) {
     const el = document.getElementById(id);
     if (el) {
       el.style.setProperty("background", "transparent", "important");
       el.style.setProperty("color", c.text, "important");
-      el.style.setProperty("width", "100%", "important");
-      el.style.setProperty("max-width", "100%", "important");
-      el.style.setProperty("box-sizing", "border-box", "important");
     }
   }
 
