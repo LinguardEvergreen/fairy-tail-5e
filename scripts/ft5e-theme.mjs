@@ -29,65 +29,106 @@ function applyTheme(themeId) {
 }
 
 /* -------------------------------------------------- */
-/*  Inject unlayered CSS overrides                    */
-/*  FoundryVTT v13 loads module CSS inside            */
-/*  @layer(modules) which loses to core layers.       */
-/*  Critical overrides must be injected as unlayered. */
+/*  Theme color palettes (hardcoded for inline use)   */
 /* -------------------------------------------------- */
 
-function injectUnlayeredCSS() {
-  if (document.getElementById("ft5e-unlayered-css")) return;
-  const style = document.createElement("style");
-  style.id = "ft5e-unlayered-css";
-  style.textContent = `
-    /* Players panel */
-    body[data-ft5e-theme] #players {
-      --background-color: transparent !important;
-      background: var(--ft5e-bg-2) !important;
-      border: 1px solid var(--ft5e-border) !important;
-      border-radius: 8px !important;
-      padding: 8px 10px !important;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.6), inset 0 1px 0 rgba(var(--ft5e-primary-rgb),0.1) !important;
+const THEME_COLORS = {
+  natsu: {
+    bg: "#1e0e0e", border: "#5a2020", text: "#f0ddd5", textDim: "#a08878",
+    primary: "#e74c3c", primaryLight: "#ff6b4a", accent: "#f39c12",
+    primaryRgb: "231,76,60", shadow: "rgba(231,76,60,0.1)"
+  },
+  gray: {
+    bg: "#0c1a28", border: "#1a3858", text: "#d5e8f5", textDim: "#7898b0",
+    primary: "#3498db", primaryLight: "#5dade2", accent: "#a8d8ea",
+    primaryRgb: "52,152,219", shadow: "rgba(52,152,219,0.1)"
+  },
+  erza: {
+    bg: "#14141c", border: "#3a2228", text: "#e0e4e8", textDim: "#8890a0",
+    primary: "#c0392b", primaryLight: "#e04838", accent: "#c0c8d0",
+    primaryRgb: "192,57,43", shadow: "rgba(192,57,43,0.1)"
+  },
+  lucy: {
+    bg: "#1c1608", border: "#4a3810", text: "#f0e8d0", textDim: "#a89868",
+    primary: "#d4a017", primaryLight: "#f0c840", accent: "#e8a0b0",
+    primaryRgb: "212,160,23", shadow: "rgba(212,160,23,0.1)"
+  },
+  laxus: {
+    bg: "#100818", border: "#3a2058", text: "#e8e0f0", textDim: "#9880b0",
+    primary: "#f1c40f", primaryLight: "#f9e154", accent: "#8e44ad",
+    primaryRgb: "241,196,15", shadow: "rgba(241,196,15,0.1)"
+  }
+};
+
+/* -------------------------------------------------- */
+/*  Style Players Panel via inline styles             */
+/*  FoundryVTT v13 @layer(modules) prevents CSS       */
+/*  overrides — inline styles bypass all layers.      */
+/* -------------------------------------------------- */
+
+function stylePlayersPanel(themeId) {
+  const panel = document.getElementById("players");
+  if (!panel) return;
+  const c = THEME_COLORS[themeId] || THEME_COLORS.natsu;
+
+  // Style the container
+  const ps = panel.style;
+  ps.setProperty("background", c.bg, "important");
+  ps.setProperty("border", `1px solid ${c.border}`, "important");
+  ps.setProperty("border-radius", "8px", "important");
+  ps.setProperty("padding", "8px 10px", "important");
+  ps.setProperty("box-shadow", `0 2px 16px rgba(0,0,0,0.6), inset 0 1px 0 ${c.shadow}`, "important");
+  ps.setProperty("color", c.text, "important");
+
+  // Style inner sections
+  for (const id of ["players-inactive", "players-active"]) {
+    const el = document.getElementById(id);
+    if (el) {
+      el.style.setProperty("background", "transparent", "important");
+      el.style.setProperty("color", c.text, "important");
     }
-    body[data-ft5e-theme] #players #players-inactive,
-    body[data-ft5e-theme] #players #players-active {
-      background: transparent !important;
+  }
+
+  // Style player rows
+  panel.querySelectorAll("li.player").forEach(li => {
+    li.style.setProperty("padding", "3px 6px", "important");
+    li.style.setProperty("border-radius", "4px", "important");
+    li.style.setProperty("color", c.text, "important");
+    // Active players get primary-light color
+    const nameEl = li.querySelector(".player-name");
+    if (nameEl) {
+      if (li.classList.contains("gm")) {
+        nameEl.style.setProperty("color", c.accent, "important");
+      } else if (li.classList.contains("active")) {
+        nameEl.style.setProperty("color", c.primaryLight, "important");
+      } else {
+        nameEl.style.setProperty("color", c.textDim, "important");
+      }
     }
-    body[data-ft5e-theme] #players,
-    body[data-ft5e-theme] #players * {
-      color: var(--ft5e-text) !important;
-    }
-    body[data-ft5e-theme] #players li.player {
-      padding: 3px 6px !important;
-      border-radius: 4px !important;
-      transition: background 0.2s ease !important;
-    }
-    body[data-ft5e-theme] #players li.player:hover {
-      background: rgba(var(--ft5e-primary-rgb), 0.1) !important;
-    }
-    body[data-ft5e-theme] #players li.player.active .player-name {
-      color: var(--ft5e-primary-light) !important;
-    }
-    body[data-ft5e-theme] #players li.player.gm .player-name {
-      color: var(--ft5e-accent) !important;
-    }
-    body[data-ft5e-theme] #players h3 {
-      color: var(--ft5e-primary) !important;
-      font-size: 11px !important;
-      letter-spacing: 1px !important;
-      text-transform: uppercase !important;
-      border-bottom: 1px solid var(--ft5e-border) !important;
-      padding-bottom: 4px !important;
-      margin-bottom: 4px !important;
-    }
-    body[data-ft5e-theme] #players #players-expand {
-      color: var(--ft5e-text-dim) !important;
-    }
-    body[data-ft5e-theme] #players #players-expand:hover {
-      color: var(--ft5e-primary) !important;
-    }
-  `;
-  document.head.appendChild(style);
+  });
+
+  // Style expand button
+  const expand = document.getElementById("players-expand");
+  if (expand) expand.style.setProperty("color", c.textDim, "important");
+
+  // Style latency/fps text
+  panel.querySelectorAll("span, small").forEach(el => {
+    el.style.setProperty("color", c.textDim, "important");
+  });
+}
+
+function setupPlayersObserver(themeId) {
+  const apply = () => stylePlayersPanel(themeId);
+  Hooks.on("renderPlayerList", () => setTimeout(apply, 100));
+  const panel = document.getElementById("players");
+  if (panel) {
+    const obs = new MutationObserver(apply);
+    obs.observe(panel, { childList: true, subtree: true });
+  }
+  // Initial apply + delayed retries
+  apply();
+  setTimeout(apply, 500);
+  setTimeout(apply, 1500);
 }
 
 /* -------------------------------------------------- */
@@ -138,17 +179,17 @@ Hooks.once("init", () => {
     choices: Object.fromEntries(
       Object.entries(THEMES).map(([k, v]) => [k, `${v.label} \u2014 ${v.desc}`])
     ),
-    onChange: (value) => applyTheme(value)
+    onChange: (value) => { applyTheme(value); stylePlayersPanel(value); }
   });
 
   const currentTheme = game.settings.get(MODULE_ID, "uiTheme") ?? "natsu";
   applyTheme(currentTheme);
-  injectUnlayeredCSS();
   setupPauseObserver();
 });
 
 Hooks.once("ready", () => {
   const currentTheme = game.settings.get(MODULE_ID, "uiTheme") ?? "natsu";
   applyTheme(currentTheme);
+  setupPlayersObserver(currentTheme);
   forcePauseLogo();
 });
