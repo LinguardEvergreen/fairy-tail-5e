@@ -29,6 +29,68 @@ function applyTheme(themeId) {
 }
 
 /* -------------------------------------------------- */
+/*  Inject unlayered CSS overrides                    */
+/*  FoundryVTT v13 loads module CSS inside            */
+/*  @layer(modules) which loses to core layers.       */
+/*  Critical overrides must be injected as unlayered. */
+/* -------------------------------------------------- */
+
+function injectUnlayeredCSS() {
+  if (document.getElementById("ft5e-unlayered-css")) return;
+  const style = document.createElement("style");
+  style.id = "ft5e-unlayered-css";
+  style.textContent = `
+    /* Players panel */
+    body[data-ft5e-theme] #players {
+      --background-color: transparent !important;
+      background: var(--ft5e-bg-2) !important;
+      border: 1px solid var(--ft5e-border) !important;
+      border-radius: 8px !important;
+      padding: 8px 10px !important;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.6), inset 0 1px 0 rgba(var(--ft5e-primary-rgb),0.1) !important;
+    }
+    body[data-ft5e-theme] #players #players-inactive,
+    body[data-ft5e-theme] #players #players-active {
+      background: transparent !important;
+    }
+    body[data-ft5e-theme] #players,
+    body[data-ft5e-theme] #players * {
+      color: var(--ft5e-text) !important;
+    }
+    body[data-ft5e-theme] #players li.player {
+      padding: 3px 6px !important;
+      border-radius: 4px !important;
+      transition: background 0.2s ease !important;
+    }
+    body[data-ft5e-theme] #players li.player:hover {
+      background: rgba(var(--ft5e-primary-rgb), 0.1) !important;
+    }
+    body[data-ft5e-theme] #players li.player.active .player-name {
+      color: var(--ft5e-primary-light) !important;
+    }
+    body[data-ft5e-theme] #players li.player.gm .player-name {
+      color: var(--ft5e-accent) !important;
+    }
+    body[data-ft5e-theme] #players h3 {
+      color: var(--ft5e-primary) !important;
+      font-size: 11px !important;
+      letter-spacing: 1px !important;
+      text-transform: uppercase !important;
+      border-bottom: 1px solid var(--ft5e-border) !important;
+      padding-bottom: 4px !important;
+      margin-bottom: 4px !important;
+    }
+    body[data-ft5e-theme] #players #players-expand {
+      color: var(--ft5e-text-dim) !important;
+    }
+    body[data-ft5e-theme] #players #players-expand:hover {
+      color: var(--ft5e-primary) !important;
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+/* -------------------------------------------------- */
 /*  Pause Logo Override                               */
 /* -------------------------------------------------- */
 
@@ -81,6 +143,7 @@ Hooks.once("init", () => {
 
   const currentTheme = game.settings.get(MODULE_ID, "uiTheme") ?? "natsu";
   applyTheme(currentTheme);
+  injectUnlayeredCSS();
   setupPauseObserver();
 });
 

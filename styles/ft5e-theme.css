@@ -418,14 +418,19 @@ body[data-ft5e-theme] #controls .control-tool.active {
 /*  PLAYERS                                                          */
 /* ================================================================= */
 
-aside#players[data-ft5e-theme],
 body[data-ft5e-theme] aside#players,
 body[data-ft5e-theme] #players {
-  background: var(--ft5e-bg-1) !important;
+  --background-color: transparent !important;
+  background: var(--ft5e-bg-2) !important;
   border: 1px solid var(--ft5e-border) !important;
   border-radius: 8px !important;
-  padding: 6px 10px !important;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.5) !important;
+  padding: 8px 10px !important;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.6), inset 0 1px 0 rgba(var(--ft5e-primary-rgb),0.1) !important;
+}
+
+body[data-ft5e-theme] #players #players-inactive,
+body[data-ft5e-theme] #players #players-active {
+  background: transparent !important;
 }
 
 body[data-ft5e-theme] #players,
@@ -437,6 +442,24 @@ body[data-ft5e-theme] #players-inactive * {
   color: var(--ft5e-text) !important;
 }
 
+body[data-ft5e-theme] #players li.player {
+  padding: 3px 6px !important;
+  border-radius: 4px !important;
+  transition: background 0.2s ease !important;
+}
+
+body[data-ft5e-theme] #players li.player:hover {
+  background: rgba(var(--ft5e-primary-rgb), 0.1) !important;
+}
+
+body[data-ft5e-theme] #players li.player.active .player-name {
+  color: var(--ft5e-primary-light) !important;
+}
+
+body[data-ft5e-theme] #players li.player.gm .player-name {
+  color: var(--ft5e-accent) !important;
+}
+
 body[data-ft5e-theme] #players h3 {
   color: var(--ft5e-primary) !important;
   font-size: 11px !important;
@@ -445,6 +468,14 @@ body[data-ft5e-theme] #players h3 {
   border-bottom: 1px solid var(--ft5e-border) !important;
   padding-bottom: 4px !important;
   margin-bottom: 4px !important;
+}
+
+body[data-ft5e-theme] #players #players-expand {
+  color: var(--ft5e-text-dim) !important;
+}
+
+body[data-ft5e-theme] #players #players-expand:hover {
+  color: var(--ft5e-primary) !important;
 }
 
 /* dnd5e system inline links (NOTES · ISSUES · WIKI · DISCORD) in ul.links */
