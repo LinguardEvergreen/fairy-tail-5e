@@ -195,12 +195,9 @@ body[data-ft5e-theme] #sidebar .directory-header {
 
 body[data-ft5e-theme] #sidebar button,
 body[data-ft5e-theme] #sidebar .sidebar-tab button,
-body[data-ft5e-theme] #sidebar a.button,
-body[data-ft5e-theme] #sidebar .game-settings a[href],
-body[data-ft5e-theme] #sidebar .help-and-documentation a[href],
-body[data-ft5e-theme] #sidebar .game-access a[href],
+body[data-ft5e-theme] #sidebar a[href],
 body[data-ft5e-theme] #settings button,
-body[data-ft5e-theme] #settings a.button {
+body[data-ft5e-theme] #settings a[href] {
   background: var(--ft5e-btn-gradient) !important;
   color: var(--ft5e-primary) !important;
   border: 1px solid var(--ft5e-border) !important;
@@ -219,12 +216,9 @@ body[data-ft5e-theme] #settings a.button {
 
 body[data-ft5e-theme] #sidebar button:hover,
 body[data-ft5e-theme] #sidebar .sidebar-tab button:hover,
-body[data-ft5e-theme] #sidebar a.button:hover,
-body[data-ft5e-theme] #sidebar .game-settings a[href]:hover,
-body[data-ft5e-theme] #sidebar .help-and-documentation a[href]:hover,
-body[data-ft5e-theme] #sidebar .game-access a[href]:hover,
+body[data-ft5e-theme] #sidebar a[href]:hover,
 body[data-ft5e-theme] #settings button:hover,
-body[data-ft5e-theme] #settings a.button:hover {
+body[data-ft5e-theme] #settings a[href]:hover {
   background: var(--ft5e-bg-4) !important;
   color: var(--ft5e-primary-light) !important;
   border-color: var(--ft5e-primary) !important;
@@ -426,16 +420,23 @@ body[data-ft5e-theme] #controls .control-tool.active {
 /*  PLAYERS                                                          */
 /* ================================================================= */
 
-body[data-ft5e-theme] #players {
+body[data-ft5e-theme] #players,
+body[data-ft5e-theme] #player-list {
   background: var(--ft5e-bg-1) !important;
   border: 1px solid var(--ft5e-border) !important;
   border-radius: 8px !important;
   color: var(--ft5e-text) !important;
-  padding: 6px 8px !important;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.4) !important;
+  padding: 6px 10px !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.5) !important;
 }
 
-body[data-ft5e-theme] #players h3 {
+body[data-ft5e-theme] #players *,
+body[data-ft5e-theme] #player-list * {
+  color: var(--ft5e-text) !important;
+}
+
+body[data-ft5e-theme] #players h3,
+body[data-ft5e-theme] #player-list h3 {
   color: var(--ft5e-primary) !important;
   font-size: 11px !important;
   letter-spacing: 1px !important;
@@ -445,55 +446,42 @@ body[data-ft5e-theme] #players h3 {
   margin-bottom: 4px !important;
 }
 
-body[data-ft5e-theme] #players .player {
+body[data-ft5e-theme] #players .player-name,
+body[data-ft5e-theme] #player-list .player-name {
   color: var(--ft5e-text) !important;
 }
 
-body[data-ft5e-theme] #players .player-name {
-  color: var(--ft5e-text) !important;
-}
-
-body[data-ft5e-theme] #players .player-active .player-name {
+body[data-ft5e-theme] #players .player-active .player-name,
+body[data-ft5e-theme] #player-list .player-active .player-name {
   color: var(--ft5e-primary-light) !important;
   text-shadow: 0 0 4px rgba(var(--ft5e-primary-rgb), 0.3) !important;
 }
 
-/* dnd5e system inline links (NOTES · ISSUES · WIKI · DISCORD) — keep them as small inline links */
+/* dnd5e system inline links (NOTES · ISSUES · WIKI · DISCORD) — keep as small inline links */
+body[data-ft5e-theme] #sidebar a[href*="github.com/foundryvtt/dnd5e"],
+body[data-ft5e-theme] #sidebar a[href*="foundryvtt.com/packages/dnd5e"],
+body[data-ft5e-theme] #sidebar a[href*="discord.gg"],
+body[data-ft5e-theme] #sidebar a[href*="foundryvtt.wiki"],
+body[data-ft5e-theme] #sidebar a[target="_blank"][href*="github"],
 body[data-ft5e-theme] #sidebar .system-info a,
-body[data-ft5e-theme] #sidebar .system a,
-body[data-ft5e-theme] #sidebar .links a,
-body[data-ft5e-theme] #sidebar a[href*="foundryvtt.com"],
-body[data-ft5e-theme] #sidebar a[href*="github.com/foundryvtt"],
-body[data-ft5e-theme] #sidebar a[href*="discord"] {
-  background: none !important;
-  border: none !important;
-  border-radius: 0 !important;
-  padding: 0 2px !important;
-  margin: 0 !important;
-  box-shadow: none !important;
-  font-size: inherit !important;
-  font-weight: inherit !important;
-  letter-spacing: inherit !important;
-  display: inline !important;
+body[data-ft5e-theme] #sidebar .system a {
+  all: unset !important;
   color: var(--ft5e-primary) !important;
-  text-shadow: none !important;
-  overflow: visible !important;
-  position: static !important;
-  transform: none !important;
+  cursor: pointer !important;
+  display: inline !important;
+  font-size: 10px !important;
+  text-decoration: none !important;
 }
 
+body[data-ft5e-theme] #sidebar a[href*="github.com/foundryvtt/dnd5e"]:hover,
+body[data-ft5e-theme] #sidebar a[href*="foundryvtt.com/packages/dnd5e"]:hover,
+body[data-ft5e-theme] #sidebar a[href*="discord.gg"]:hover,
+body[data-ft5e-theme] #sidebar a[href*="foundryvtt.wiki"]:hover,
+body[data-ft5e-theme] #sidebar a[target="_blank"][href*="github"]:hover,
 body[data-ft5e-theme] #sidebar .system-info a:hover,
-body[data-ft5e-theme] #sidebar .system a:hover,
-body[data-ft5e-theme] #sidebar .links a:hover,
-body[data-ft5e-theme] #sidebar a[href*="foundryvtt.com"]:hover,
-body[data-ft5e-theme] #sidebar a[href*="github.com/foundryvtt"]:hover,
-body[data-ft5e-theme] #sidebar a[href*="discord"]:hover {
+body[data-ft5e-theme] #sidebar .system a:hover {
   color: var(--ft5e-primary-light) !important;
   text-shadow: 0 0 4px var(--ft5e-glow) !important;
-  background: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  transform: none !important;
 }
 
 /* ================================================================= */
