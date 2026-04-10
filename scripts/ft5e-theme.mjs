@@ -71,7 +71,7 @@ function stylePlayersPanel(themeId) {
   if (!panel) return;
   const c = THEME_COLORS[themeId] || THEME_COLORS.natsu;
 
-  // Style the container
+  // Use setProperty to add styles WITHOUT removing existing layout properties
   const ps = panel.style;
   ps.setProperty("background", c.bg, "important");
   ps.setProperty("border", `1px solid ${c.border}`, "important");
@@ -79,13 +79,17 @@ function stylePlayersPanel(themeId) {
   ps.setProperty("padding", "8px 10px", "important");
   ps.setProperty("box-shadow", `0 2px 16px rgba(0,0,0,0.6), inset 0 1px 0 ${c.shadow}`, "important");
   ps.setProperty("color", c.text, "important");
+  ps.setProperty("overflow", "hidden", "important");
 
-  // Style inner sections
+  // Style inner sections — transparent bg + fit inside container
   for (const id of ["players-inactive", "players-active"]) {
     const el = document.getElementById(id);
     if (el) {
       el.style.setProperty("background", "transparent", "important");
       el.style.setProperty("color", c.text, "important");
+      el.style.setProperty("width", "100%", "important");
+      el.style.setProperty("max-width", "100%", "important");
+      el.style.setProperty("box-sizing", "border-box", "important");
     }
   }
 
@@ -94,7 +98,6 @@ function stylePlayersPanel(themeId) {
     li.style.setProperty("padding", "3px 6px", "important");
     li.style.setProperty("border-radius", "4px", "important");
     li.style.setProperty("color", c.text, "important");
-    // Active players get primary-light color
     const nameEl = li.querySelector(".player-name");
     if (nameEl) {
       if (li.classList.contains("gm")) {
@@ -111,24 +114,17 @@ function stylePlayersPanel(themeId) {
   const expand = document.getElementById("players-expand");
   if (expand) expand.style.setProperty("color", c.textDim, "important");
 
-  // Style latency/fps text
-  panel.querySelectorAll("span, small").forEach(el => {
-    el.style.setProperty("color", c.textDim, "important");
-  });
+  console.log("FT5e | Panel styled OK, width:", window.getComputedStyle(panel).width);
 }
 
 function setupPlayersObserver(themeId) {
+  // Only use hooks - NO MutationObserver to avoid infinite loops
   const apply = () => stylePlayersPanel(themeId);
   Hooks.on("renderPlayerList", () => setTimeout(apply, 100));
-  const panel = document.getElementById("players");
-  if (panel) {
-    const obs = new MutationObserver(apply);
-    obs.observe(panel, { childList: true, subtree: true });
-  }
   // Initial apply + delayed retries
   apply();
-  setTimeout(apply, 500);
-  setTimeout(apply, 1500);
+  setTimeout(apply, 1000);
+  setTimeout(apply, 3000);
 }
 
 /* -------------------------------------------------- */
@@ -189,6 +185,7 @@ Hooks.once("init", () => {
 
 Hooks.once("ready", () => {
   const currentTheme = game.settings.get(MODULE_ID, "uiTheme") ?? "natsu";
+  console.log("FT5e | ready hook, theme:", currentTheme);
   applyTheme(currentTheme);
   setupPlayersObserver(currentTheme);
   forcePauseLogo();
