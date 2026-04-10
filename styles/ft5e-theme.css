@@ -196,10 +196,11 @@ body[data-ft5e-theme] #sidebar .directory-header {
 body[data-ft5e-theme] #sidebar button,
 body[data-ft5e-theme] #sidebar .sidebar-tab button,
 body[data-ft5e-theme] #sidebar a.button,
-body[data-ft5e-theme] #sidebar a[href],
+body[data-ft5e-theme] #sidebar .game-settings a[href],
+body[data-ft5e-theme] #sidebar .help-and-documentation a[href],
+body[data-ft5e-theme] #sidebar .game-access a[href],
 body[data-ft5e-theme] #settings button,
-body[data-ft5e-theme] #settings a.button,
-body[data-ft5e-theme] #settings a[href] {
+body[data-ft5e-theme] #settings a.button {
   background: var(--ft5e-btn-gradient) !important;
   color: var(--ft5e-primary) !important;
   border: 1px solid var(--ft5e-border) !important;
@@ -219,10 +220,11 @@ body[data-ft5e-theme] #settings a[href] {
 body[data-ft5e-theme] #sidebar button:hover,
 body[data-ft5e-theme] #sidebar .sidebar-tab button:hover,
 body[data-ft5e-theme] #sidebar a.button:hover,
-body[data-ft5e-theme] #sidebar a[href]:hover,
+body[data-ft5e-theme] #sidebar .game-settings a[href]:hover,
+body[data-ft5e-theme] #sidebar .help-and-documentation a[href]:hover,
+body[data-ft5e-theme] #sidebar .game-access a[href]:hover,
 body[data-ft5e-theme] #settings button:hover,
-body[data-ft5e-theme] #settings a.button:hover,
-body[data-ft5e-theme] #settings a[href]:hover {
+body[data-ft5e-theme] #settings a.button:hover {
   background: var(--ft5e-bg-4) !important;
   color: var(--ft5e-primary-light) !important;
   border-color: var(--ft5e-primary) !important;
@@ -232,9 +234,7 @@ body[data-ft5e-theme] #settings a[href]:hover {
 }
 
 body[data-ft5e-theme] #sidebar button i,
-body[data-ft5e-theme] #sidebar a[href] i,
-body[data-ft5e-theme] #settings button i,
-body[data-ft5e-theme] #settings a[href] i {
+body[data-ft5e-theme] #settings button i {
   color: var(--ft5e-primary) !important;
   margin-right: 4px !important;
 }
@@ -431,10 +431,69 @@ body[data-ft5e-theme] #players {
   border: 1px solid var(--ft5e-border) !important;
   border-radius: 8px !important;
   color: var(--ft5e-text) !important;
+  padding: 6px 8px !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.4) !important;
 }
 
 body[data-ft5e-theme] #players h3 {
   color: var(--ft5e-primary) !important;
+  font-size: 11px !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  border-bottom: 1px solid var(--ft5e-border) !important;
+  padding-bottom: 4px !important;
+  margin-bottom: 4px !important;
+}
+
+body[data-ft5e-theme] #players .player {
+  color: var(--ft5e-text) !important;
+}
+
+body[data-ft5e-theme] #players .player-name {
+  color: var(--ft5e-text) !important;
+}
+
+body[data-ft5e-theme] #players .player-active .player-name {
+  color: var(--ft5e-primary-light) !important;
+  text-shadow: 0 0 4px rgba(var(--ft5e-primary-rgb), 0.3) !important;
+}
+
+/* dnd5e system inline links (NOTES · ISSUES · WIKI · DISCORD) — keep them as small inline links */
+body[data-ft5e-theme] #sidebar .system-info a,
+body[data-ft5e-theme] #sidebar .system a,
+body[data-ft5e-theme] #sidebar .links a,
+body[data-ft5e-theme] #sidebar a[href*="foundryvtt.com"],
+body[data-ft5e-theme] #sidebar a[href*="github.com/foundryvtt"],
+body[data-ft5e-theme] #sidebar a[href*="discord"] {
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 2px !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  letter-spacing: inherit !important;
+  display: inline !important;
+  color: var(--ft5e-primary) !important;
+  text-shadow: none !important;
+  overflow: visible !important;
+  position: static !important;
+  transform: none !important;
+}
+
+body[data-ft5e-theme] #sidebar .system-info a:hover,
+body[data-ft5e-theme] #sidebar .system a:hover,
+body[data-ft5e-theme] #sidebar .links a:hover,
+body[data-ft5e-theme] #sidebar a[href*="foundryvtt.com"]:hover,
+body[data-ft5e-theme] #sidebar a[href*="github.com/foundryvtt"]:hover,
+body[data-ft5e-theme] #sidebar a[href*="discord"]:hover {
+  color: var(--ft5e-primary-light) !important;
+  text-shadow: 0 0 4px var(--ft5e-glow) !important;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  transform: none !important;
 }
 
 /* ================================================================= */
