@@ -28,7 +28,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/equipment.svg"
+    "img": "icons/equipment/chest/breastplate-banded-leather-brown.webp"
   },
   {
     "name": "Armatura di cuoio",
@@ -59,7 +59,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/equipment.svg"
+    "img": "icons/equipment/chest/breastplate-collared-leather-brown.webp"
   },
   {
     "name": "Armatura di cuoio borchiato",
@@ -90,7 +90,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/equipment.svg"
+    "img": "icons/equipment/chest/breastplate-banded-leather-purple.webp"
   },
   {
     "name": "Armatura in pelle",
@@ -121,7 +121,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/equipment.svg"
+    "img": "icons/equipment/chest/breastplate-banded-simple-leather-brown.webp"
   },
   {
     "name": "Giaco di Maglia",
@@ -152,7 +152,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/equipment.svg"
+    "img": "icons/equipment/chest/breastplate-banded-steel.webp"
   },
   {
     "name": "Corazza di Scaglie",
@@ -183,7 +183,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/equipment.svg"
+    "img": "icons/equipment/chest/breastplate-scale-grey.webp"
   },
   {
     "name": "Corazza di Piastre",
@@ -214,7 +214,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/equipment.svg"
+    "img": "icons/equipment/chest/breastplate-cuirass-steel-grey.webp"
   },
   {
     "name": "Mezza Armatura",
@@ -245,7 +245,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/equipment.svg"
+    "img": "icons/equipment/chest/breastplate-layered-gilded-black.webp"
   },
   {
     "name": "Corazza di Anelli",
@@ -276,7 +276,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/equipment.svg"
+    "img": "icons/equipment/chest/breastplate-collared-steel-grey.webp"
   },
   {
     "name": "Cotta di maglia",
@@ -307,7 +307,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/equipment.svg"
+    "img": "icons/equipment/chest/breastplate-banded-steel-grey.webp"
   },
   {
     "name": "Corazza a strisce",
@@ -338,7 +338,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/equipment.svg"
+    "img": "icons/equipment/chest/breastplate-banded-steel-studded.webp"
   },
   {
     "name": "Armatura Completa",
@@ -369,7 +369,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/equipment.svg"
+    "img": "icons/equipment/chest/breastplate-helmet-metal.webp"
   },
   {
     "name": "Scudo",
@@ -400,7 +400,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/equipment.svg"
+    "img": "icons/equipment/shield/heater-steel-grey.webp"
   },
   {
     "name": "Ascia",
@@ -443,7 +443,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/axes/axe-broad-worn.webp"
   },
   {
     "name": "Bastone ferrato",
@@ -485,7 +485,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/staves/staff-simple.webp"
   },
   {
     "name": "Clava",
@@ -527,7 +527,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/clubs/club-simple-stone.webp"
   },
   {
     "name": "Falcetto",
@@ -569,7 +569,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/sickles/sickle-curved.webp"
   },
   {
     "name": "Giavellotto",
@@ -611,7 +611,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/polearms/spear-simple-engraved.webp"
   },
   {
     "name": "Lancia",
@@ -654,7 +654,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/polearms/spear-flared-steel.webp"
   },
   {
     "name": "Martello leggero",
@@ -697,7 +697,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/hammers/shorthammer-simple-iron-black.webp"
   },
   {
     "name": "Mazza",
@@ -737,7 +737,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/maces/mace-flanged-steel.webp"
   },
   {
     "name": "Pugnale",
@@ -781,7 +781,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/daggers/dagger-black.webp"
   },
   {
     "name": "Alabarda",
@@ -825,7 +825,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/polearms/halberd-crescent-steel.webp"
   },
   {
     "name": "Ascia Bipenne",
@@ -868,7 +868,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/axes/axe-double-engraved.webp"
   },
   {
     "name": "Ascia da battaglia",
@@ -910,7 +910,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/axes/axe-battle-broad-stone.webp"
   },
   {
     "name": "Falcione",
@@ -954,7 +954,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/polearms/glaive-simple.webp"
   },
   {
     "name": "Frusta",
@@ -997,7 +997,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/misc/whip-red-yellow.webp"
   },
   {
     "name": "Lancia da Cavaliere",
@@ -1039,7 +1039,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/polearms/spear-flared-gold.webp"
   },
   {
     "name": "Maglio",
@@ -1082,7 +1082,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/hammers/hammer-double-engraved.webp"
   },
   {
     "name": "Martello da guerra",
@@ -1124,7 +1124,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/hammers/hammer-war-spiked.webp"
   },
   {
     "name": "Mazzafrusto",
@@ -1164,7 +1164,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/maces/flail-ball-grey.webp"
   },
   {
     "name": "Morning Star",
@@ -1204,7 +1204,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/maces/mace-round-spiked-grey.webp"
   },
   {
     "name": "Picca",
@@ -1248,7 +1248,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/polearms/pike-flared-brown.webp"
   },
   {
     "name": "Piccone da guerra",
@@ -1288,7 +1288,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/hammers/hammer-war-spiked-simple.webp"
   },
   {
     "name": "Scimitarra",
@@ -1331,7 +1331,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/swords/scimitar-guard.webp"
   },
   {
     "name": "Spada corta",
@@ -1374,7 +1374,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/swords/shortsword-guard.webp"
   },
   {
     "name": "Spada lunga",
@@ -1416,7 +1416,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/swords/greatsword-crossguard-steel.webp"
   },
   {
     "name": "Spadone",
@@ -1459,7 +1459,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/swords/greatsword-crossguard-barbed.webp"
   },
   {
     "name": "Stocco",
@@ -1501,7 +1501,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/swords/shortsword-winged.webp"
   },
   {
     "name": "Tridente",
@@ -1544,7 +1544,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/polearms/trident-curved-steel.webp"
   },
   {
     "name": "Arco corto",
@@ -1587,7 +1587,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/bows/shortbow-recurve-leather.webp"
   },
   {
     "name": "Balestra leggera",
@@ -1631,7 +1631,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/crossbows/crossbow-simple-brown.webp"
   },
   {
     "name": "Dardo",
@@ -1674,7 +1674,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/thrown/dagger-simple.webp"
   },
   {
     "name": "Fionda",
@@ -1716,7 +1716,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/slings/slingshot-wood.webp"
   },
   {
     "name": "Arco lungo",
@@ -1760,7 +1760,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/bows/longbow-recurve-leather-brown.webp"
   },
   {
     "name": "Balestra a mano",
@@ -1804,7 +1804,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/crossbows/handcrossbow-black.webp"
   },
   {
     "name": "Balestra pesante",
@@ -1849,7 +1849,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/crossbows/crossbow-heavy-black.webp"
   },
   {
     "name": "Rete",
@@ -1886,7 +1886,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/thrown/bolas-stone.webp"
   },
   {
     "name": "Archibugio",
@@ -1931,7 +1931,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/guns/gun-blunderbuss-steel.webp"
   },
   {
     "name": "Pistola",
@@ -1974,7 +1974,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/guns/gun-pistol-flintlock.webp"
   },
   {
     "name": "Rivoltella",
@@ -2017,7 +2017,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/guns/gun-worn-steel.webp"
   },
   {
     "name": "DMR",
@@ -2062,7 +2062,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/guns/rifle-fluted.webp"
   },
   {
     "name": "Fucile a canne mozze",
@@ -2103,7 +2103,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/guns/gun-double-barrel.webp"
   },
   {
     "name": "Fucile a pompa",
@@ -2144,7 +2144,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/guns/rifle-bayonet.webp"
   },
   {
     "name": "Fucile d'Assalto",
@@ -2188,7 +2188,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/guns/rifle-brown.webp"
   },
   {
     "name": "Fucile da cecchino Bolt Action",
@@ -2234,7 +2234,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/guns/rifle-fluted.webp"
   },
   {
     "name": "Fucile da cecchino (semi)",
@@ -2279,7 +2279,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/guns/rifle-white.webp"
   },
   {
     "name": "Fucile semi-automatico",
@@ -2319,7 +2319,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/guns/rifle-white.webp"
   },
   {
     "name": "Mitraglietta",
@@ -2362,7 +2362,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/weapon.svg"
+    "img": "icons/weapons/guns/gun-topbarrel.webp"
   },
   {
     "name": "Cartuccia a palla",
@@ -2386,7 +2386,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/consumable.svg"
+    "img": "icons/weapons/ammunition/shot-round-lead.webp"
   },
   {
     "name": "Cartuccia sfondaporte",
@@ -2410,7 +2410,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/consumable.svg"
+    "img": "icons/weapons/ammunition/shot-round-silver.webp"
   },
   {
     "name": "Pallini",
@@ -2434,7 +2434,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/consumable.svg"
+    "img": "icons/weapons/ammunition/bullets-cartridge-shell-gray.webp"
   },
   {
     "name": "Pallettoni",
@@ -2458,7 +2458,7 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/consumable.svg"
+    "img": "icons/weapons/ammunition/shot-round-brown.webp"
   },
   {
     "name": "Respiro del Drago",
@@ -2482,6 +2482,6 @@
         "book": "Fairy Tail"
       }
     },
-    "img": "systems/dnd5e/icons/svg/items/consumable.svg"
+    "img": "icons/weapons/ammunition/bullet-ice-blue.webp"
   }
 ]
