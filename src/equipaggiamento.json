@@ -14,21 +14,27 @@
         "magicalBonus": 0
       },
       "strength": null,
-      "stealth": true,
+      "properties": [
+        "stealthDisadvantage"
+      ],
+      "proficient": null,
+      "equipped": false,
+      "quantity": 1,
       "weight": {
         "value": 4,
         "units": "kg"
       },
       "price": {
         "value": 500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/equipment/chest/breastplate-banded-leather-brown.webp"
+    "img": "icons/equipment/chest/breastplate-banded-leather-brown.webp",
+    "type": "equipment"
   },
   {
     "name": "Armatura di cuoio",
@@ -45,21 +51,25 @@
         "magicalBonus": 0
       },
       "strength": null,
-      "stealth": false,
+      "properties": [],
+      "proficient": null,
+      "equipped": false,
+      "quantity": 1,
       "weight": {
         "value": 5,
         "units": "kg"
       },
       "price": {
         "value": 1000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/equipment/chest/breastplate-collared-leather-brown.webp"
+    "img": "icons/equipment/chest/breastplate-collared-leather-brown.webp",
+    "type": "equipment"
   },
   {
     "name": "Armatura di cuoio borchiato",
@@ -76,21 +86,25 @@
         "magicalBonus": 0
       },
       "strength": null,
-      "stealth": false,
+      "properties": [],
+      "proficient": null,
+      "equipped": false,
+      "quantity": 1,
       "weight": {
         "value": 6.5,
         "units": "kg"
       },
       "price": {
         "value": 4500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/equipment/chest/breastplate-banded-leather-purple.webp"
+    "img": "icons/equipment/chest/breastplate-banded-leather-purple.webp",
+    "type": "equipment"
   },
   {
     "name": "Armatura in pelle",
@@ -107,21 +121,25 @@
         "magicalBonus": 0
       },
       "strength": null,
-      "stealth": false,
+      "properties": [],
+      "proficient": null,
+      "equipped": false,
+      "quantity": 1,
       "weight": {
         "value": 6,
         "units": "kg"
       },
       "price": {
         "value": 1000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/equipment/chest/breastplate-banded-simple-leather-brown.webp"
+    "img": "icons/equipment/chest/breastplate-banded-simple-leather-brown.webp",
+    "type": "equipment"
   },
   {
     "name": "Giaco di Maglia",
@@ -138,21 +156,25 @@
         "magicalBonus": 0
       },
       "strength": null,
-      "stealth": false,
+      "properties": [],
+      "proficient": null,
+      "equipped": false,
+      "quantity": 1,
       "weight": {
         "value": 10,
         "units": "kg"
       },
       "price": {
         "value": 5000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/equipment/chest/breastplate-banded-steel.webp"
+    "img": "icons/equipment/chest/breastplate-banded-steel.webp",
+    "type": "equipment"
   },
   {
     "name": "Corazza di Scaglie",
@@ -169,21 +191,27 @@
         "magicalBonus": 0
       },
       "strength": null,
-      "stealth": true,
+      "properties": [
+        "stealthDisadvantage"
+      ],
+      "proficient": null,
+      "equipped": false,
+      "quantity": 1,
       "weight": {
         "value": 22.5,
         "units": "kg"
       },
       "price": {
         "value": 5000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/equipment/chest/breastplate-scale-grey.webp"
+    "img": "icons/equipment/chest/breastplate-scale-grey.webp",
+    "type": "equipment"
   },
   {
     "name": "Corazza di Piastre",
@@ -200,21 +228,25 @@
         "magicalBonus": 0
       },
       "strength": null,
-      "stealth": false,
+      "properties": [],
+      "proficient": null,
+      "equipped": false,
+      "quantity": 1,
       "weight": {
         "value": 10,
         "units": "kg"
       },
       "price": {
         "value": 4000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/equipment/chest/breastplate-cuirass-steel-grey.webp"
+    "img": "icons/equipment/chest/breastplate-cuirass-steel-grey.webp",
+    "type": "equipment"
   },
   {
     "name": "Mezza Armatura",
@@ -231,21 +263,27 @@
         "magicalBonus": 0
       },
       "strength": null,
-      "stealth": true,
+      "properties": [
+        "stealthDisadvantage"
+      ],
+      "proficient": null,
+      "equipped": false,
+      "quantity": 1,
       "weight": {
         "value": 20,
         "units": "kg"
       },
       "price": {
         "value": 7500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/equipment/chest/breastplate-layered-gilded-black.webp"
+    "img": "icons/equipment/chest/breastplate-layered-gilded-black.webp",
+    "type": "equipment"
   },
   {
     "name": "Corazza di Anelli",
@@ -262,21 +300,27 @@
         "magicalBonus": 0
       },
       "strength": null,
-      "stealth": true,
+      "properties": [
+        "stealthDisadvantage"
+      ],
+      "proficient": null,
+      "equipped": false,
+      "quantity": 1,
       "weight": {
         "value": 20,
         "units": "kg"
       },
       "price": {
         "value": 3000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/equipment/chest/breastplate-collared-steel-grey.webp"
+    "img": "icons/equipment/chest/breastplate-collared-steel-grey.webp",
+    "type": "equipment"
   },
   {
     "name": "Cotta di maglia",
@@ -293,21 +337,27 @@
         "magicalBonus": 0
       },
       "strength": 13,
-      "stealth": true,
+      "properties": [
+        "stealthDisadvantage"
+      ],
+      "proficient": null,
+      "equipped": false,
+      "quantity": 1,
       "weight": {
         "value": 27.5,
         "units": "kg"
       },
       "price": {
         "value": 7500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/equipment/chest/breastplate-banded-steel-grey.webp"
+    "img": "icons/equipment/chest/breastplate-banded-steel-grey.webp",
+    "type": "equipment"
   },
   {
     "name": "Corazza a strisce",
@@ -324,21 +374,27 @@
         "magicalBonus": 0
       },
       "strength": 15,
-      "stealth": true,
+      "properties": [
+        "stealthDisadvantage"
+      ],
+      "proficient": null,
+      "equipped": false,
+      "quantity": 1,
       "weight": {
         "value": 30,
         "units": "kg"
       },
       "price": {
         "value": 20000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/equipment/chest/breastplate-banded-steel-studded.webp"
+    "img": "icons/equipment/chest/breastplate-banded-steel-studded.webp",
+    "type": "equipment"
   },
   {
     "name": "Armatura Completa",
@@ -355,21 +411,27 @@
         "magicalBonus": 0
       },
       "strength": 15,
-      "stealth": true,
+      "properties": [
+        "stealthDisadvantage"
+      ],
+      "proficient": null,
+      "equipped": false,
+      "quantity": 1,
       "weight": {
         "value": 32.5,
         "units": "kg"
       },
       "price": {
         "value": 150000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/equipment/chest/breastplate-helmet-metal.webp"
+    "img": "icons/equipment/chest/breastplate-helmet-metal.webp",
+    "type": "equipment"
   },
   {
     "name": "Scudo",
@@ -386,21 +448,25 @@
         "magicalBonus": 0
       },
       "strength": null,
-      "stealth": false,
+      "properties": [],
+      "proficient": null,
+      "equipped": false,
+      "quantity": 1,
       "weight": {
         "value": 3,
         "units": "kg"
       },
       "price": {
         "value": 1000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/equipment/shield/heater-steel-grey.webp"
+    "img": "icons/equipment/shield/heater-steel-grey.webp",
+    "type": "equipment"
   },
   {
     "name": "Ascia",
@@ -412,17 +478,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d6",
+        "base": {
+          "number": 1,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
             "slashing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 6,
         "long": 18,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -431,19 +524,90 @@
       },
       "price": {
         "value": 500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "lgt",
         "thr"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/axes/axe-broad-worn.webp"
+    "img": "icons/weapons/axes/axe-broad-worn.webp",
+    "type": "weapon"
   },
   {
     "name": "Bastone ferrato",
@@ -455,17 +619,46 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d6",
+        "base": {
+          "number": 1,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
             "bludgeoning"
-          ]
-        ],
-        "versatile": "1d8"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": 1,
+          "denomination": 8,
+          "bonus": "",
+          "types": [
+            "bludgeoning"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -474,18 +667,89 @@
       },
       "price": {
         "value": 200,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "ver"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/staves/staff-simple.webp"
+    "img": "icons/weapons/staves/staff-simple.webp",
+    "type": "weapon"
   },
   {
     "name": "Clava",
@@ -497,17 +761,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d4",
+        "base": {
+          "number": 1,
+          "denomination": 4,
+          "bonus": "",
+          "types": [
             "bludgeoning"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -516,18 +807,89 @@
       },
       "price": {
         "value": 1000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "lgt"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/clubs/club-simple-stone.webp"
+    "img": "icons/weapons/clubs/club-simple-stone.webp",
+    "type": "weapon"
   },
   {
     "name": "Falcetto",
@@ -539,17 +901,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d4",
+        "base": {
+          "number": 1,
+          "denomination": 4,
+          "bonus": "",
+          "types": [
             "slashing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -558,18 +947,89 @@
       },
       "price": {
         "value": 500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "lgt"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/sickles/sickle-curved.webp"
+    "img": "icons/weapons/sickles/sickle-curved.webp",
+    "type": "weapon"
   },
   {
     "name": "Giavellotto",
@@ -581,17 +1041,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d6",
+        "base": {
+          "number": 1,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 9,
         "long": 36,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -600,18 +1087,89 @@
       },
       "price": {
         "value": 1500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "thr"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/polearms/spear-simple-engraved.webp"
+    "img": "icons/weapons/polearms/spear-simple-engraved.webp",
+    "type": "weapon"
   },
   {
     "name": "Lancia",
@@ -623,17 +1181,46 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d6",
+        "base": {
+          "number": 1,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": "1d8"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": 1,
+          "denomination": 8,
+          "bonus": "",
+          "types": [
+            "piercing"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 6,
         "long": 18,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -642,19 +1229,90 @@
       },
       "price": {
         "value": 500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "thr",
         "ver"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/polearms/spear-flared-steel.webp"
+    "img": "icons/weapons/polearms/spear-flared-steel.webp",
+    "type": "weapon"
   },
   {
     "name": "Martello leggero",
@@ -666,17 +1324,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d4",
+        "base": {
+          "number": 1,
+          "denomination": 4,
+          "bonus": "",
+          "types": [
             "bludgeoning"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 6,
         "long": 18,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -685,19 +1370,90 @@
       },
       "price": {
         "value": 1000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "lgt",
         "thr"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/hammers/shorthammer-simple-iron-black.webp"
+    "img": "icons/weapons/hammers/shorthammer-simple-iron-black.webp",
+    "type": "weapon"
   },
   {
     "name": "Mazza",
@@ -709,17 +1465,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d6",
+        "base": {
+          "number": 1,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
             "bludgeoning"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -728,16 +1511,87 @@
       },
       "price": {
         "value": 1000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/maces/mace-flanged-steel.webp"
+    "img": "icons/weapons/maces/mace-flanged-steel.webp",
+    "type": "weapon"
   },
   {
     "name": "Pugnale",
@@ -749,17 +1603,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d4",
+        "base": {
+          "number": 1,
+          "denomination": 4,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 6,
         "long": 18,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -768,20 +1649,91 @@
       },
       "price": {
         "value": 1000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "fin",
         "lgt",
         "thr"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/daggers/dagger-black.webp"
+    "img": "icons/weapons/daggers/dagger-black.webp",
+    "type": "weapon"
   },
   {
     "name": "Alabarda",
@@ -793,17 +1745,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d10",
+        "base": {
+          "number": 1,
+          "denomination": 10,
+          "bonus": "",
+          "types": [
             "slashing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -812,20 +1791,91 @@
       },
       "price": {
         "value": 2500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "hvy",
         "rch",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/polearms/halberd-crescent-steel.webp"
+    "img": "icons/weapons/polearms/halberd-crescent-steel.webp",
+    "type": "weapon"
   },
   {
     "name": "Ascia Bipenne",
@@ -837,17 +1887,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d12",
+        "base": {
+          "number": 1,
+          "denomination": 12,
+          "bonus": "",
+          "types": [
             "slashing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -856,19 +1933,90 @@
       },
       "price": {
         "value": 2500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "hvy",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/axes/axe-double-engraved.webp"
+    "img": "icons/weapons/axes/axe-double-engraved.webp",
+    "type": "weapon"
   },
   {
     "name": "Ascia da battaglia",
@@ -880,17 +2028,46 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d8",
+        "base": {
+          "number": 1,
+          "denomination": 8,
+          "bonus": "",
+          "types": [
             "slashing"
-          ]
-        ],
-        "versatile": "1d10"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": 1,
+          "denomination": 10,
+          "bonus": "",
+          "types": [
+            "slashing"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -899,18 +2076,89 @@
       },
       "price": {
         "value": 1000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "ver"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/axes/axe-battle-broad-stone.webp"
+    "img": "icons/weapons/axes/axe-battle-broad-stone.webp",
+    "type": "weapon"
   },
   {
     "name": "Falcione",
@@ -922,17 +2170,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d10",
+        "base": {
+          "number": 1,
+          "denomination": 10,
+          "bonus": "",
+          "types": [
             "slashing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -941,20 +2216,91 @@
       },
       "price": {
         "value": 2000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "hvy",
         "rch",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/polearms/glaive-simple.webp"
+    "img": "icons/weapons/polearms/glaive-simple.webp",
+    "type": "weapon"
   },
   {
     "name": "Frusta",
@@ -966,17 +2312,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d4",
+        "base": {
+          "number": 1,
+          "denomination": 4,
+          "bonus": "",
+          "types": [
             "slashing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -985,19 +2358,90 @@
       },
       "price": {
         "value": 2000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "fin",
         "rch"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/misc/whip-red-yellow.webp"
+    "img": "icons/weapons/misc/whip-red-yellow.webp",
+    "type": "weapon"
   },
   {
     "name": "Lancia da Cavaliere",
@@ -1009,17 +2453,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d12",
+        "base": {
+          "number": 1,
+          "denomination": 12,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1028,18 +2499,89 @@
       },
       "price": {
         "value": 1000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "rch"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/polearms/spear-flared-gold.webp"
+    "img": "icons/weapons/polearms/spear-flared-gold.webp",
+    "type": "weapon"
   },
   {
     "name": "Maglio",
@@ -1051,17 +2593,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "2d6",
+        "base": {
+          "number": 2,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
             "bludgeoning"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1070,19 +2639,90 @@
       },
       "price": {
         "value": 1000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "hvy",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/hammers/hammer-double-engraved.webp"
+    "img": "icons/weapons/hammers/hammer-double-engraved.webp",
+    "type": "weapon"
   },
   {
     "name": "Martello da guerra",
@@ -1094,17 +2734,46 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d8",
+        "base": {
+          "number": 1,
+          "denomination": 8,
+          "bonus": "",
+          "types": [
             "bludgeoning"
-          ]
-        ],
-        "versatile": "1d10"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": 1,
+          "denomination": 10,
+          "bonus": "",
+          "types": [
+            "bludgeoning"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1113,18 +2782,89 @@
       },
       "price": {
         "value": 1500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "ver"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/hammers/hammer-war-spiked.webp"
+    "img": "icons/weapons/hammers/hammer-war-spiked.webp",
+    "type": "weapon"
   },
   {
     "name": "Mazzafrusto",
@@ -1136,17 +2876,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d8",
+        "base": {
+          "number": 1,
+          "denomination": 8,
+          "bonus": "",
+          "types": [
             "bludgeoning"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1155,16 +2922,87 @@
       },
       "price": {
         "value": 1000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/maces/flail-ball-grey.webp"
+    "img": "icons/weapons/maces/flail-ball-grey.webp",
+    "type": "weapon"
   },
   {
     "name": "Morning Star",
@@ -1176,17 +3014,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d8",
+        "base": {
+          "number": 1,
+          "denomination": 8,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1195,16 +3060,87 @@
       },
       "price": {
         "value": 1500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/maces/mace-round-spiked-grey.webp"
+    "img": "icons/weapons/maces/mace-round-spiked-grey.webp",
+    "type": "weapon"
   },
   {
     "name": "Picca",
@@ -1216,17 +3152,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d10",
+        "base": {
+          "number": 1,
+          "denomination": 10,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1235,20 +3198,91 @@
       },
       "price": {
         "value": 500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "hvy",
         "rch",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/polearms/pike-flared-brown.webp"
+    "img": "icons/weapons/polearms/pike-flared-brown.webp",
+    "type": "weapon"
   },
   {
     "name": "Piccone da guerra",
@@ -1260,17 +3294,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d8",
+        "base": {
+          "number": 1,
+          "denomination": 8,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1279,16 +3340,87 @@
       },
       "price": {
         "value": 1500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/hammers/hammer-war-spiked-simple.webp"
+    "img": "icons/weapons/hammers/hammer-war-spiked-simple.webp",
+    "type": "weapon"
   },
   {
     "name": "Scimitarra",
@@ -1300,17 +3432,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d6",
+        "base": {
+          "number": 1,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
             "slashing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1319,19 +3478,90 @@
       },
       "price": {
         "value": 2000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "fin",
         "lgt"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/swords/scimitar-guard.webp"
+    "img": "icons/weapons/swords/scimitar-guard.webp",
+    "type": "weapon"
   },
   {
     "name": "Spada corta",
@@ -1343,17 +3573,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d6",
+        "base": {
+          "number": 1,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1362,19 +3619,90 @@
       },
       "price": {
         "value": 1500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "fin",
         "lgt"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/swords/shortsword-guard.webp"
+    "img": "icons/weapons/swords/shortsword-guard.webp",
+    "type": "weapon"
   },
   {
     "name": "Spada lunga",
@@ -1386,17 +3714,46 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d8",
+        "base": {
+          "number": 1,
+          "denomination": 8,
+          "bonus": "",
+          "types": [
             "slashing"
-          ]
-        ],
-        "versatile": "1d10"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": 1,
+          "denomination": 10,
+          "bonus": "",
+          "types": [
+            "slashing"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1405,18 +3762,89 @@
       },
       "price": {
         "value": 1500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "ver"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/swords/greatsword-crossguard-steel.webp"
+    "img": "icons/weapons/swords/greatsword-crossguard-steel.webp",
+    "type": "weapon"
   },
   {
     "name": "Spadone",
@@ -1428,17 +3856,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "2d6",
+        "base": {
+          "number": 2,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
             "slashing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1447,19 +3902,90 @@
       },
       "price": {
         "value": 5000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "hvy",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/swords/greatsword-crossguard-barbed.webp"
+    "img": "icons/weapons/swords/greatsword-crossguard-barbed.webp",
+    "type": "weapon"
   },
   {
     "name": "Stocco",
@@ -1471,17 +3997,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d8",
+        "base": {
+          "number": 1,
+          "denomination": 8,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": null,
         "long": null,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1490,18 +4043,89 @@
       },
       "price": {
         "value": 2500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "fin"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/swords/shortsword-winged.webp"
+    "img": "icons/weapons/swords/shortsword-winged.webp",
+    "type": "weapon"
   },
   {
     "name": "Tridente",
@@ -1513,17 +4137,46 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d6",
+        "base": {
+          "number": 1,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": "1d8"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": 1,
+          "denomination": 8,
+          "bonus": "",
+          "types": [
+            "piercing"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 6,
         "long": 18,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1532,19 +4185,90 @@
       },
       "price": {
         "value": 5000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "thr",
         "ver"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "melee",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/polearms/trident-curved-steel.webp"
+    "img": "icons/weapons/polearms/trident-curved-steel.webp",
+    "type": "weapon"
   },
   {
     "name": "Arco corto",
@@ -1556,17 +4280,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d6",
+        "base": {
+          "number": 1,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 24,
         "long": 96,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1575,19 +4326,90 @@
       },
       "price": {
         "value": 2500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/bows/shortbow-recurve-leather.webp"
+    "img": "icons/weapons/bows/shortbow-recurve-leather.webp",
+    "type": "weapon"
   },
   {
     "name": "Balestra leggera",
@@ -1599,17 +4421,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d8",
+        "base": {
+          "number": 1,
+          "denomination": 8,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 24,
         "long": 96,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1618,20 +4467,91 @@
       },
       "price": {
         "value": 2500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm",
         "lod",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/crossbows/crossbow-simple-brown.webp"
+    "img": "icons/weapons/crossbows/crossbow-simple-brown.webp",
+    "type": "weapon"
   },
   {
     "name": "Dardo",
@@ -1643,17 +4563,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d4",
+        "base": {
+          "number": 1,
+          "denomination": 4,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 6,
         "long": 18,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1662,19 +4609,90 @@
       },
       "price": {
         "value": 100,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "fin",
         "thr"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/thrown/dagger-simple.webp"
+    "img": "icons/weapons/thrown/dagger-simple.webp",
+    "type": "weapon"
   },
   {
     "name": "Fionda",
@@ -1686,17 +4704,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d4",
+        "base": {
+          "number": 1,
+          "denomination": 4,
+          "bonus": "",
+          "types": [
             "bludgeoning"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 9,
         "long": 36,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1705,18 +4750,89 @@
       },
       "price": {
         "value": 500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/slings/slingshot-wood.webp"
+    "img": "icons/weapons/slings/slingshot-wood.webp",
+    "type": "weapon"
   },
   {
     "name": "Arco lungo",
@@ -1728,17 +4844,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d10",
+        "base": {
+          "number": 1,
+          "denomination": 10,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 45,
         "long": 180,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1747,20 +4890,91 @@
       },
       "price": {
         "value": 5000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm",
         "hvy",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/bows/longbow-recurve-leather-brown.webp"
+    "img": "icons/weapons/bows/longbow-recurve-leather-brown.webp",
+    "type": "weapon"
   },
   {
     "name": "Balestra a mano",
@@ -1772,17 +4986,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d6",
+        "base": {
+          "number": 1,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 9,
         "long": 36,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1791,20 +5032,91 @@
       },
       "price": {
         "value": 7500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm",
         "lgt",
         "lod"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/crossbows/handcrossbow-black.webp"
+    "img": "icons/weapons/crossbows/handcrossbow-black.webp",
+    "type": "weapon"
   },
   {
     "name": "Balestra pesante",
@@ -1816,17 +5128,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d10",
+        "base": {
+          "number": 1,
+          "denomination": 10,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 30,
         "long": 120,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1835,7 +5174,7 @@
       },
       "price": {
         "value": 5000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm",
@@ -1843,13 +5182,84 @@
         "lod",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/crossbows/crossbow-heavy-black.webp"
+    "img": "icons/weapons/crossbows/crossbow-heavy-black.webp",
+    "type": "weapon"
   },
   {
     "name": "Rete",
@@ -1861,12 +5271,42 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [],
-        "versatile": ""
+        "base": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 1.5,
         "long": 4.5,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1875,18 +5315,89 @@
       },
       "price": {
         "value": 100,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "thr"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/thrown/bolas-stone.webp"
+    "img": "icons/weapons/thrown/bolas-stone.webp",
+    "type": "weapon"
   },
   {
     "name": "Archibugio",
@@ -1898,17 +5409,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "2d6",
+        "base": {
+          "number": 2,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
             "bludgeoning"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 6,
         "long": 9,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1917,7 +5455,7 @@
       },
       "price": {
         "value": 5000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm",
@@ -1925,13 +5463,84 @@
         "fir",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/guns/gun-blunderbuss-steel.webp"
+    "img": "icons/weapons/guns/gun-blunderbuss-steel.webp",
+    "type": "weapon"
   },
   {
     "name": "Pistola",
@@ -1943,17 +5552,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d8",
+        "base": {
+          "number": 1,
+          "denomination": 8,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 15,
         "long": 45,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -1962,19 +5598,90 @@
       },
       "price": {
         "value": 2500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm",
         "fir"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/guns/gun-pistol-flintlock.webp"
+    "img": "icons/weapons/guns/gun-pistol-flintlock.webp",
+    "type": "weapon"
   },
   {
     "name": "Rivoltella",
@@ -1986,17 +5693,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d10",
+        "base": {
+          "number": 1,
+          "denomination": 10,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 12,
         "long": 36,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -2005,19 +5739,90 @@
       },
       "price": {
         "value": 2500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm",
         "fir"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/guns/gun-worn-steel.webp"
+    "img": "icons/weapons/guns/gun-worn-steel.webp",
+    "type": "weapon"
   },
   {
     "name": "DMR",
@@ -2029,17 +5834,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d12",
+        "base": {
+          "number": 1,
+          "denomination": 12,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 45,
         "long": 180,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -2048,7 +5880,7 @@
       },
       "price": {
         "value": 10000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm",
@@ -2056,13 +5888,84 @@
         "fir",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/guns/rifle-fluted.webp"
+    "img": "icons/weapons/guns/rifle-fluted.webp",
+    "type": "weapon"
   },
   {
     "name": "Fucile a canne mozze",
@@ -2074,12 +5977,42 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [],
-        "versatile": ""
+        "base": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 9,
         "long": 36,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -2088,7 +6021,7 @@
       },
       "price": {
         "value": 2500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm",
@@ -2097,13 +6030,84 @@
         "fir",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/guns/gun-double-barrel.webp"
+    "img": "icons/weapons/guns/gun-double-barrel.webp",
+    "type": "weapon"
   },
   {
     "name": "Fucile a pompa",
@@ -2115,12 +6119,42 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [],
-        "versatile": ""
+        "base": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 9,
         "long": 36,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -2129,7 +6163,7 @@
       },
       "price": {
         "value": 5000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm",
@@ -2138,13 +6172,84 @@
         "fir",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/guns/rifle-bayonet.webp"
+    "img": "icons/weapons/guns/rifle-bayonet.webp",
+    "type": "weapon"
   },
   {
     "name": "Fucile d'Assalto",
@@ -2156,17 +6261,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "2d4",
+        "base": {
+          "number": 2,
+          "denomination": 4,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 27,
         "long": 60,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -2175,20 +6307,91 @@
       },
       "price": {
         "value": 7500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm",
         "fir",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/guns/rifle-brown.webp"
+    "img": "icons/weapons/guns/rifle-brown.webp",
+    "type": "weapon"
   },
   {
     "name": "Fucile da cecchino Bolt Action",
@@ -2200,17 +6403,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "2d6",
+        "base": {
+          "number": 2,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 90,
         "long": 360,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -2219,7 +6449,7 @@
       },
       "price": {
         "value": 12500,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm",
@@ -2228,13 +6458,84 @@
         "fir",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/guns/rifle-fluted.webp"
+    "img": "icons/weapons/guns/rifle-fluted.webp",
+    "type": "weapon"
   },
   {
     "name": "Fucile da cecchino (semi)",
@@ -2246,17 +6547,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "2d6",
+        "base": {
+          "number": 2,
+          "denomination": 6,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 90,
         "long": 360,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -2265,7 +6593,7 @@
       },
       "price": {
         "value": 15000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm",
@@ -2273,13 +6601,84 @@
         "fir",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/guns/rifle-white.webp"
+    "img": "icons/weapons/guns/rifle-white.webp",
+    "type": "weapon"
   },
   {
     "name": "Fucile semi-automatico",
@@ -2291,12 +6690,42 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [],
-        "versatile": ""
+        "base": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 9,
         "long": 36,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -2305,7 +6734,7 @@
       },
       "price": {
         "value": 10000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm",
@@ -2313,13 +6742,84 @@
         "fir",
         "two"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/guns/rifle-white.webp"
+    "img": "icons/weapons/guns/rifle-white.webp",
+    "type": "weapon"
   },
   {
     "name": "Mitraglietta",
@@ -2331,17 +6831,44 @@
         "baseItem": ""
       },
       "damage": {
-        "parts": [
-          [
-            "1d8",
+        "base": {
+          "number": 1,
+          "denomination": 8,
+          "bonus": "",
+          "types": [
             "piercing"
-          ]
-        ],
-        "versatile": ""
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        },
+        "versatile": {
+          "number": null,
+          "denomination": null,
+          "bonus": "",
+          "types": [],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
       },
+      "magicalBonus": null,
       "range": {
         "value": 15,
         "long": 45,
+        "reach": null,
         "units": "m"
       },
       "weight": {
@@ -2350,19 +6877,90 @@
       },
       "price": {
         "value": 5000,
-        "denomination": ""
+        "denomination": "gp"
       },
       "properties": [
         "amm",
         "fir"
       ],
-      "proficient": true,
+      "proficient": null,
+      "mastery": "",
+      "ammunition": {
+        "type": ""
+      },
+      "armor": {
+        "value": null
+      },
+      "attack": {
+        "ability": "",
+        "bonus": "",
+        "flat": false
+      },
+      "equipped": false,
+      "quantity": 1,
       "source": {
         "custom": "",
         "book": "Fairy Tail"
+      },
+      "activities": {
+        "dnd5eactivity000": {
+          "_id": "dnd5eactivity000",
+          "type": "attack",
+          "sort": 0,
+          "activation": {
+            "type": "action",
+            "value": null,
+            "override": false
+          },
+          "attack": {
+            "ability": "",
+            "bonus": "",
+            "critical": {
+              "threshold": null
+            },
+            "flat": false,
+            "type": {
+              "value": "ranged",
+              "classification": "weapon"
+            }
+          },
+          "damage": {
+            "critical": {
+              "bonus": ""
+            },
+            "includeBase": true,
+            "parts": []
+          },
+          "consumption": {
+            "targets": [],
+            "scaling": {
+              "allowed": false,
+              "max": ""
+            },
+            "spellSlot": true
+          },
+          "duration": {
+            "units": "inst",
+            "concentration": false,
+            "override": false
+          },
+          "range": {
+            "override": false
+          },
+          "target": {
+            "override": false,
+            "prompt": true
+          },
+          "uses": {
+            "spent": 0,
+            "recovery": []
+          },
+          "effects": []
+        }
       }
     },
-    "img": "icons/weapons/guns/gun-topbarrel.webp"
+    "img": "icons/weapons/guns/gun-topbarrel.webp",
+    "type": "weapon"
   },
   {
     "name": "Cartuccia a palla",
@@ -2371,7 +6969,15 @@
     "system": {
       "type": {
         "value": "ammo",
-        "baseItem": ""
+        "subtype": "firearmBullet"
+      },
+      "properties": [],
+      "quantity": 1,
+      "uses": {
+        "spent": 0,
+        "max": "",
+        "recovery": [],
+        "autoDestroy": true
       },
       "weight": {
         "value": 0.05,
@@ -2379,14 +6985,15 @@
       },
       "price": {
         "value": 100,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/weapons/ammunition/shot-round-lead.webp"
+    "img": "icons/weapons/ammunition/shot-round-lead.webp",
+    "type": "consumable"
   },
   {
     "name": "Cartuccia sfondaporte",
@@ -2395,7 +7002,15 @@
     "system": {
       "type": {
         "value": "ammo",
-        "baseItem": ""
+        "subtype": "firearmBullet"
+      },
+      "properties": [],
+      "quantity": 1,
+      "uses": {
+        "spent": 0,
+        "max": "",
+        "recovery": [],
+        "autoDestroy": true
       },
       "weight": {
         "value": 0.05,
@@ -2403,14 +7018,15 @@
       },
       "price": {
         "value": 200,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/weapons/ammunition/shot-round-silver.webp"
+    "img": "icons/weapons/ammunition/shot-round-silver.webp",
+    "type": "consumable"
   },
   {
     "name": "Pallini",
@@ -2419,7 +7035,15 @@
     "system": {
       "type": {
         "value": "ammo",
-        "baseItem": ""
+        "subtype": "firearmBullet"
+      },
+      "properties": [],
+      "quantity": 1,
+      "uses": {
+        "spent": 0,
+        "max": "",
+        "recovery": [],
+        "autoDestroy": true
       },
       "weight": {
         "value": 0.05,
@@ -2427,14 +7051,15 @@
       },
       "price": {
         "value": 100,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/weapons/ammunition/bullets-cartridge-shell-gray.webp"
+    "img": "icons/weapons/ammunition/bullets-cartridge-shell-gray.webp",
+    "type": "consumable"
   },
   {
     "name": "Pallettoni",
@@ -2443,7 +7068,15 @@
     "system": {
       "type": {
         "value": "ammo",
-        "baseItem": ""
+        "subtype": "firearmBullet"
+      },
+      "properties": [],
+      "quantity": 1,
+      "uses": {
+        "spent": 0,
+        "max": "",
+        "recovery": [],
+        "autoDestroy": true
       },
       "weight": {
         "value": 0.05,
@@ -2451,14 +7084,15 @@
       },
       "price": {
         "value": 200,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/weapons/ammunition/shot-round-brown.webp"
+    "img": "icons/weapons/ammunition/shot-round-brown.webp",
+    "type": "consumable"
   },
   {
     "name": "Respiro del Drago",
@@ -2467,7 +7101,15 @@
     "system": {
       "type": {
         "value": "ammo",
-        "baseItem": ""
+        "subtype": "firearmBullet"
+      },
+      "properties": [],
+      "quantity": 1,
+      "uses": {
+        "spent": 0,
+        "max": "",
+        "recovery": [],
+        "autoDestroy": true
       },
       "weight": {
         "value": 0.05,
@@ -2475,13 +7117,14 @@
       },
       "price": {
         "value": 300,
-        "denomination": ""
+        "denomination": "gp"
       },
       "source": {
         "custom": "",
         "book": "Fairy Tail"
       }
     },
-    "img": "icons/weapons/ammunition/bullet-ice-blue.webp"
+    "img": "icons/weapons/ammunition/bullet-ice-blue.webp",
+    "type": "consumable"
   }
 ]

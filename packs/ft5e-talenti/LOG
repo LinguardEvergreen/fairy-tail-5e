@@ -1,1 +1,15 @@
-2026/04/15-22:48:52.804 1840 Delete type=3 #1
+2026/07/07-07:59:19.474 2ddc Recovering log #3
+2026/07/07-07:59:19.475 2ddc Level-0 table #5: started
+2026/07/07-07:59:19.481 2ddc Level-0 table #5: 146529 bytes OK
+2026/07/07-07:59:19.498 2ddc Delete type=0 #3
+2026/07/07-07:59:19.499 2ddc Delete type=3 #2
+2026/07/07-07:59:19.503 2304 Level-0 table #8: started
+2026/07/07-07:59:19.503 2304 Level-0 table #8: 0 bytes OK
+2026/07/07-07:59:19.512 2304 Delete type=0 #6
+2026/07/07-07:59:19.512 2304 Manual compaction at level-0 from '!' @ 72057594037927935 : 1 .. '\xef\xbf\xbf' @ 0 : 0; will stop at '!items!fe696098a5245fc6' @ 131 : 1
+2026/07/07-07:59:19.512 2304 Compacting 1@0 + 0@1 files
+2026/07/07-07:59:19.519 2304 Generated table #9@0: 174 keys, 146529 bytes
+2026/07/07-07:59:19.519 2304 Compacted 1@0 + 0@1 files => 146529 bytes
+2026/07/07-07:59:19.528 2304 compacted to: files[ 0 1 0 0 0 0 0 ]
+2026/07/07-07:59:19.528 2304 Delete type=2 #5
+2026/07/07-07:59:19.528 2304 Manual compaction at level-0 from '!items!fe696098a5245fc6' @ 131 : 1 .. '\xef\xbf\xbf' @ 0 : 0; will stop at (end)

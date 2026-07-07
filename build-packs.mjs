@@ -62,7 +62,8 @@ async function buildPack({ pack, src, type }) {
     const doc = {
       _id: id,
       name: item.name,
-      type: type,
+      // per-item type (e.g. weapon/consumable in the equipment pack) wins over the pack default
+      type: item.type || type,
       img: item.img || "icons/svg/item-bag.svg",
       system: { ...(item.system || {}) },
       effects: item.effects || [],
@@ -95,6 +96,16 @@ async function buildPack({ pack, src, type }) {
   }
 
   await db.close();
+
+  // Second pass: reopen and compact so the data is flushed from the write-ahead
+  // log (*.log) into .ldb SST files with a consistent manifest. Without this the
+  // pack's data lives only in the WAL and a freshly cloned/copied pack reads as
+  // empty (LevelDB discards an unrecovered WAL on open).
+  const db2 = new ClassicLevel(packDir, { keyEncoding: "utf8", valueEncoding: "json" });
+  await db2.open();
+  await db2.compactRange("!", "￿");
+  await db2.close();
+
   console.log(`  ✓ ${pack} done.`);
 }
 

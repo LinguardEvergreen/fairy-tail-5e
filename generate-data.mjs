@@ -10,12 +10,14 @@ import path from "path";
 import { createHash } from "crypto";
 
 const MODULE_ID = "fairy-tail-5e";
-const SOURCE_FILE = process.argv[2] || "D:/D&D/Fairy Tail/Homebrewery/Manuale Homebrewery Fairy Tail_it - VS FINAL.txt";
+const EQUIP_ONLY = process.argv.includes("--equip-only");
+const SOURCE_FILE = process.argv.find((a, i) => i >= 2 && !a.startsWith("--")) || "D:/D&D/Fairy Tail/Homebrewery/Manuale Homebrewery Fairy Tail_it - VS FINAL.txt";
 const SRC_DIR = path.resolve("src");
 
 if (!fs.existsSync(SRC_DIR)) fs.mkdirSync(SRC_DIR, { recursive: true });
 
-const raw = fs.readFileSync(SOURCE_FILE, "utf-8");
+// --equip-only re-enriches src/equipaggiamento.json in place, no manual source needed
+const raw = EQUIP_ONLY ? "" : fs.readFileSync(SOURCE_FILE, "utf-8");
 const lines = raw.split("\n");
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
@@ -3382,6 +3384,19 @@ const EQUIP_DATA = {
   "Respiro del Drago":     { ammo: true, weight: 0.05, cost: 300 },
 };
 
+/** Build a dnd5e 5.x damage part (system.damage.base / versatile) from "NdX" + type */
+function weaponDamagePart(dmg, dmgType) {
+  const m = dmg ? dmg.match(/(\d+)d(\d+)/) : null;
+  return {
+    number: m ? parseInt(m[1]) : null,
+    denomination: m ? parseInt(m[2]) : null,
+    bonus: "",
+    types: dmgType ? [dmgType] : [],
+    custom: { enabled: false, formula: "" },
+    scaling: { mode: "", number: null, formula: "" }
+  };
+}
+
 function enrichEquipaggiamento() {
   const eqPath = path.join(SRC_DIR, "equipaggiamento.json");
   const items = JSON.parse(fs.readFileSync(eqPath, "utf-8"));
@@ -3391,12 +3406,14 @@ function enrichEquipaggiamento() {
     item._id = stableId(`equipaggiamento:${item.name}`);
     const data = EQUIP_DATA[item.name];
     if (!data) {
+      item.type = "loot";
       item.system = { source: { custom: "", book: "Fairy Tail" } };
       continue;
     }
     enriched++;
 
     if (data.armor) {
+      item.type = "equipment";
       item.system = {
         type: { value: data.armor === "shield" ? "shield" : data.armor, baseItem: "" },
         armor: {
@@ -3405,31 +3422,73 @@ function enrichEquipaggiamento() {
           magicalBonus: 0
         },
         strength: data.str || null,
-        stealth: data.stealth || false,
+        properties: data.stealth ? ["stealthDisadvantage"] : [],
+        proficient: null,
+        equipped: false,
+        quantity: 1,
         weight: { value: data.weight, units: "kg" },
-        price: { value: data.cost, denomination: "" },
+        price: { value: data.cost, denomination: "gp" },
         source: { custom: "", book: "Fairy Tail" }
       };
     } else if (data.weapon) {
-      const dmgParts = data.dmg ? data.dmg.match(/(\d+)d(\d+)/) : null;
+      const isRanged = data.weapon.endsWith("R");
+      item.type = "weapon";
       item.system = {
         type: { value: data.weapon, baseItem: "" },
         damage: {
-          parts: data.dmg ? [[data.dmg, data.dmgType]] : [],
-          versatile: data.props.includes("ver") ? data.dmg.replace(/d(\d+)/, (m,n) => `d${parseInt(n)+2}`) : ""
+          base: weaponDamagePart(data.dmg, data.dmgType),
+          versatile: data.props.includes("ver") && data.dmg
+            ? weaponDamagePart(data.dmg.replace(/d(\d+)/, (m, n) => `d${parseInt(n) + 2}`), data.dmgType)
+            : weaponDamagePart(null, null)
         },
-        range: data.range ? { value: data.range[0], long: data.range[1], units: "m" } : { value: null, long: null, units: "m" },
+        magicalBonus: null,
+        range: data.range
+          ? { value: data.range[0], long: data.range[1], reach: null, units: "m" }
+          : { value: null, long: null, reach: null, units: "m" },
         weight: { value: data.weight, units: "kg" },
-        price: { value: data.cost, denomination: "" },
+        price: { value: data.cost, denomination: "gp" },
         properties: data.props,
-        proficient: true,
-        source: { custom: "", book: "Fairy Tail" }
+        proficient: null,
+        mastery: "",
+        ammunition: { type: "" },
+        armor: { value: null },
+        attack: { ability: "", bonus: "", flat: false },
+        equipped: false,
+        quantity: 1,
+        source: { custom: "", book: "Fairy Tail" },
+        // Attack activity: without it the weapon has no usable attack in dnd5e 4+
+        activities: {
+          dnd5eactivity000: {
+            _id: "dnd5eactivity000",
+            type: "attack",
+            sort: 0,
+            activation: { type: "action", value: null, override: false },
+            attack: {
+              ability: "",
+              bonus: "",
+              critical: { threshold: null },
+              flat: false,
+              type: { value: isRanged ? "ranged" : "melee", classification: "weapon" }
+            },
+            damage: { critical: { bonus: "" }, includeBase: true, parts: [] },
+            consumption: { targets: [], scaling: { allowed: false, max: "" }, spellSlot: true },
+            duration: { units: "inst", concentration: false, override: false },
+            range: { override: false },
+            target: { override: false, prompt: true },
+            uses: { spent: 0, recovery: [] },
+            effects: []
+          }
+        }
       };
     } else if (data.ammo) {
+      item.type = "consumable";
       item.system = {
-        type: { value: "ammo", baseItem: "" },
+        type: { value: "ammo", subtype: "firearmBullet" },
+        properties: [],
+        quantity: 1,
+        uses: { spent: 0, max: "", recovery: [], autoDestroy: true },
         weight: { value: data.weight, units: "kg" },
-        price: { value: data.cost, denomination: "" },
+        price: { value: data.cost, denomination: "gp" },
         source: { custom: "", book: "Fairy Tail" }
       };
     }
@@ -3658,6 +3717,12 @@ function assignImages() {
 }
 
 // ── Main ────────────────────────────────────────────────────────────────────
+if (EQUIP_ONLY) {
+  console.log("Re-enriching src/equipaggiamento.json only...\n");
+  enrichEquipaggiamento();
+  process.exit(0);
+}
+
 console.log("Generating JSON data files from Homebrewery source...\n");
 console.log(`Source: ${SOURCE_FILE}`);
 console.log(`Total lines: ${lines.length}\n`);
@@ -3689,5 +3754,9 @@ enrichStiliCombattimento();
 
 console.log("\nAssigning images...");
 assignImages();
+
+console.log("\nCleaning descriptions...");
+const { cleanAllSrc } = await import("./clean-descriptions.mjs");
+cleanAllSrc();
 
 console.log("\nAll JSON files generated in src/");

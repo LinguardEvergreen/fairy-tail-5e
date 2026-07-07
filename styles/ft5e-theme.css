@@ -751,6 +751,31 @@ body[data-ft5e-theme] .dnd5e.sheet button:hover {
   box-shadow: 0 0 10px rgba(var(--ft5e-primary-rgb), 0.25) !important;
 }
 
+/* Icon-only buttons (item controls, unbuttons, filigree buttons) must stay
+   plain: the pill styling above squeezes and misaligns them */
+body[data-ft5e-theme] .dnd5e2.sheet button.unbutton,
+body[data-ft5e-theme] .dnd5e.sheet button.unbutton,
+body[data-ft5e-theme] .dnd5e2.sheet .item-controls button,
+body[data-ft5e-theme] .dnd5e.sheet .item-controls button,
+body[data-ft5e-theme] .dnd5e2.sheet .item-controls a,
+body[data-ft5e-theme] .dnd5e.sheet .item-controls a {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+body[data-ft5e-theme] .dnd5e2.sheet button.unbutton:hover,
+body[data-ft5e-theme] .dnd5e.sheet button.unbutton:hover,
+body[data-ft5e-theme] .dnd5e2.sheet .item-controls button:hover,
+body[data-ft5e-theme] .dnd5e.sheet .item-controls button:hover {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: var(--ft5e-primary-light) !important;
+}
+
 /* Cards and sections */
 body[data-ft5e-theme] .dnd5e2.sheet .card,
 body[data-ft5e-theme] .dnd5e2.sheet section.card-content {

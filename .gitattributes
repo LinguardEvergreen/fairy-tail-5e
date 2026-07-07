@@ -1,0 +1,13 @@
+# LevelDB compendium packs are binary — never apply CRLF/EOL conversion or git
+# corrupts them and cloned packs become unreadable (empty compendiums).
+packs/** binary
+*.ldb binary
+MANIFEST-* binary
+CURRENT binary
+LOCK binary
+
+# Source data and code keep normalized LF endings
+*.json text eol=lf
+*.mjs text eol=lf
+*.css text eol=lf
+*.md text eol=lf
