@@ -776,11 +776,24 @@ body[data-ft5e-theme] .dnd5e.sheet .item-controls button:hover {
   color: var(--ft5e-primary-light) !important;
 }
 
-/* Breathing room: keep the row controls off the right edge and spaced apart */
-body[data-ft5e-theme] .dnd5e2.sheet .item-controls,
-body[data-ft5e-theme] .dnd5e.sheet .item-controls {
-  gap: 8px !important;
-  padding-right: 12px !important;
+/* Row controls: the ⋮ menu and the expand toggle are absolutely positioned by
+   dnd5e inside the container's 38px right padding — the generic padding reset
+   above must not strip theirs, and the whole cluster gets nudged left/spread
+   out for breathing room */
+body[data-ft5e-theme] .dnd5e2.sheet .items-section .item-controls [data-context-menu],
+body[data-ft5e-theme] .dnd5e2.sheet .items-section .items-header .item-controls [data-context-menu] {
+  padding: 0 14px 0 5px !important;
+}
+
+body[data-ft5e-theme] .dnd5e2.sheet .items-section .item-controls [data-toggle-description],
+body[data-ft5e-theme] .dnd5e2.sheet .items-section .items-header .item-controls [data-toggle-description] {
+  right: 28px !important;
+  padding: 0 !important;
+}
+
+body[data-ft5e-theme] .dnd5e2.sheet .items-section .item-controls,
+body[data-ft5e-theme] .dnd5e2.sheet .items-section .items-header .item-controls {
+  gap: 6px !important;
 }
 
 /* Cards and sections */
