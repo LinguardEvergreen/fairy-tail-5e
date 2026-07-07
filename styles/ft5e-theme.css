@@ -776,6 +776,13 @@ body[data-ft5e-theme] .dnd5e.sheet .item-controls button:hover {
   color: var(--ft5e-primary-light) !important;
 }
 
+/* Breathing room: keep the row controls off the right edge and spaced apart */
+body[data-ft5e-theme] .dnd5e2.sheet .item-controls,
+body[data-ft5e-theme] .dnd5e.sheet .item-controls {
+  gap: 8px !important;
+  padding-right: 12px !important;
+}
+
 /* Cards and sections */
 body[data-ft5e-theme] .dnd5e2.sheet .card,
 body[data-ft5e-theme] .dnd5e2.sheet section.card-content {
