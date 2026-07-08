@@ -949,10 +949,15 @@ body[data-ft5e-theme] .dnd5e2.sheet.actor.character {
 
 /* Box e superfici della scheda (skills, card filigree, righe tabella, pill,
    tag) usano le variabili chiare di dnd5e: le rimappiamo sui colori tema */
+/* Targhette ability score: SVG custom con sfondo e bordo nei colori del tema */
+body[data-ft5e-theme="natsu"] .dnd5e2.sheet.actor { --dnd5e-ability-tab: url("../assets/images/ui/ability-tab-natsu.svg"); }
+body[data-ft5e-theme="gray"]  .dnd5e2.sheet.actor { --dnd5e-ability-tab: url("../assets/images/ui/ability-tab-gray.svg"); }
+body[data-ft5e-theme="erza"]  .dnd5e2.sheet.actor { --dnd5e-ability-tab: url("../assets/images/ui/ability-tab-erza.svg"); }
+body[data-ft5e-theme="lucy"]  .dnd5e2.sheet.actor { --dnd5e-ability-tab: url("../assets/images/ui/ability-tab-lucy.svg"); }
+body[data-ft5e-theme="laxus"] .dnd5e2.sheet.actor { --dnd5e-ability-tab: url("../assets/images/ui/ability-tab-laxus.svg"); }
+
 body[data-ft5e-theme] .dnd5e2.sheet.actor,
 body[data-ft5e-theme] .dnd5e2.sheet.item {
-  /* targhette ability score: variante scura fornita da dnd5e */
-  --dnd5e-ability-tab: url("../../../systems/dnd5e/ui/ability-score-tab-dark.svg");
   /* tutto ciò che dnd5e disegna in oro (pip competenza, bordi, numeri,
      titoli di sezione) passa al colore primario del tema */
   --dnd5e-color-gold: var(--ft5e-primary);
