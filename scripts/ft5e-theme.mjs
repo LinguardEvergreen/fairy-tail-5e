@@ -34,29 +34,29 @@ function applyTheme(themeId) {
 
 const THEME_COLORS = {
   natsu: {
-    bg: "#1e0e0e", border: "#5a2020", text: "#f0ddd5", textDim: "#a08878",
-    primary: "#e74c3c", primaryLight: "#ff6b4a", accent: "#f39c12",
-    primaryRgb: "231,76,60", shadow: "rgba(231,76,60,0.1)"
+    bg: "#1e0e0c", border: "#6a3018", text: "#f0ddd5", textDim: "#b08a70",
+    primary: "#e74c3c", primaryLight: "#ff7a45", accent: "#f39c12",
+    primaryRgb: "231,76,60", shadow: "rgba(243,156,18,0.12)"
   },
   gray: {
-    bg: "#0c1a28", border: "#1a3858", text: "#d5e8f5", textDim: "#7898b0",
-    primary: "#3498db", primaryLight: "#5dade2", accent: "#a8d8ea",
-    primaryRgb: "52,152,219", shadow: "rgba(52,152,219,0.1)"
+    bg: "#0c1c2c", border: "#23507a", text: "#d9ecf7", textDim: "#82a6be",
+    primary: "#3498db", primaryLight: "#6fc4e8", accent: "#d9f0fa",
+    primaryRgb: "52,152,219", shadow: "rgba(217,240,250,0.10)"
   },
   erza: {
-    bg: "#14141c", border: "#3a2228", text: "#e0e4e8", textDim: "#8890a0",
-    primary: "#c0392b", primaryLight: "#e04838", accent: "#c0c8d0",
-    primaryRgb: "192,57,43", shadow: "rgba(192,57,43,0.1)"
+    bg: "#151a24", border: "#3c4a60", text: "#e2e7ee", textDim: "#8c98ac",
+    primary: "#c0392b", primaryLight: "#e85c48", accent: "#b8c6d8",
+    primaryRgb: "192,57,43", shadow: "rgba(184,198,216,0.10)"
   },
   lucy: {
-    bg: "#1c1608", border: "#4a3810", text: "#f0e8d0", textDim: "#a89868",
-    primary: "#d4a017", primaryLight: "#f0c840", accent: "#e8a0b0",
-    primaryRgb: "212,160,23", shadow: "rgba(212,160,23,0.1)"
+    bg: "#1e170c", border: "#5c4520", text: "#f4ead2", textDim: "#b29c72",
+    primary: "#d4a017", primaryLight: "#f0c840", accent: "#ee9ab0",
+    primaryRgb: "212,160,23", shadow: "rgba(238,154,176,0.10)"
   },
   laxus: {
-    bg: "#100818", border: "#3a2058", text: "#e8e0f0", textDim: "#9880b0",
-    primary: "#f1c40f", primaryLight: "#f9e154", accent: "#8e44ad",
-    primaryRgb: "241,196,15", shadow: "rgba(241,196,15,0.1)"
+    bg: "#141022", border: "#45306e", text: "#ece8d4", textDim: "#9d8cb4",
+    primary: "#f1c40f", primaryLight: "#f9e154", accent: "#a55ec9",
+    primaryRgb: "241,196,15", shadow: "rgba(165,94,201,0.12)"
   }
 };
 

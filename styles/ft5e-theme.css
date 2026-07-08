@@ -3,114 +3,114 @@
 /*  Fantasy-styled interface inspired by the Fairy Tail guild        */
 /* ================================================================= */
 
-/* ── NATSU ── */
+/* ── NATSU — rosso fuoco ravvivato da braci arancio-oro ── */
 body[data-ft5e-theme="natsu"] {
   --ft5e-primary: #e74c3c;
   --ft5e-primary-rgb: 231, 76, 60;
   --ft5e-primary-dark: #a82315;
-  --ft5e-primary-light: #ff6b4a;
+  --ft5e-primary-light: #ff7a45;
   --ft5e-accent: #f39c12;
   --ft5e-accent-rgb: 243, 156, 18;
   --ft5e-bg-1: #120808;
-  --ft5e-bg-2: #1e0e0e;
-  --ft5e-bg-3: #2a1515;
-  --ft5e-bg-4: #381e1e;
+  --ft5e-bg-2: #1e0e0c;
+  --ft5e-bg-3: #2c1712;
+  --ft5e-bg-4: #3d2415;
   --ft5e-text: #f0ddd5;
-  --ft5e-text-dim: #a08878;
-  --ft5e-border: #5a2020;
-  --ft5e-border-glow: rgba(231, 76, 60, 0.5);
+  --ft5e-text-dim: #b08a70;
+  --ft5e-border: #6a3018;
+  --ft5e-border-glow: rgba(243, 156, 18, 0.45);
   --ft5e-glow: rgba(231, 76, 60, 0.6);
-  --ft5e-btn-gradient: linear-gradient(180deg, #3a1818 0%, #2a1010 100%);
-  --ft5e-btn-border: linear-gradient(180deg, #e74c3c, #a82315);
-  --ft5e-header-line: linear-gradient(90deg, transparent, #e74c3c, transparent);
+  --ft5e-btn-gradient: linear-gradient(180deg, #3d2012 0%, #2a1010 100%);
+  --ft5e-btn-border: linear-gradient(180deg, #e74c3c, #f39c12);
+  --ft5e-header-line: linear-gradient(90deg, transparent, #e74c3c 35%, #f39c12 65%, transparent);
 }
 
-/* ── GRAY ── */
+/* ── GRAY — blu ghiaccio con riflessi bianco-argento e ciano ── */
 body[data-ft5e-theme="gray"] {
   --ft5e-primary: #3498db;
   --ft5e-primary-rgb: 52, 152, 219;
   --ft5e-primary-dark: #1a6ba3;
-  --ft5e-primary-light: #5dade2;
-  --ft5e-accent: #a8d8ea;
-  --ft5e-accent-rgb: 168, 216, 234;
-  --ft5e-bg-1: #060d14;
-  --ft5e-bg-2: #0c1a28;
-  --ft5e-bg-3: #142838;
-  --ft5e-bg-4: #1c3548;
-  --ft5e-text: #d5e8f5;
-  --ft5e-text-dim: #7898b0;
-  --ft5e-border: #1a3858;
-  --ft5e-border-glow: rgba(52, 152, 219, 0.5);
+  --ft5e-primary-light: #6fc4e8;
+  --ft5e-accent: #d9f0fa;
+  --ft5e-accent-rgb: 217, 240, 250;
+  --ft5e-bg-1: #070e16;
+  --ft5e-bg-2: #0c1c2c;
+  --ft5e-bg-3: #142d40;
+  --ft5e-bg-4: #1d3f56;
+  --ft5e-text: #d9ecf7;
+  --ft5e-text-dim: #82a6be;
+  --ft5e-border: #23507a;
+  --ft5e-border-glow: rgba(217, 240, 250, 0.4);
   --ft5e-glow: rgba(52, 152, 219, 0.6);
-  --ft5e-btn-gradient: linear-gradient(180deg, #122535 0%, #0c1a28 100%);
-  --ft5e-btn-border: linear-gradient(180deg, #3498db, #1a6ba3);
-  --ft5e-header-line: linear-gradient(90deg, transparent, #3498db, transparent);
+  --ft5e-btn-gradient: linear-gradient(180deg, #14293c 0%, #0c1a28 100%);
+  --ft5e-btn-border: linear-gradient(180deg, #3498db, #a8d8ea);
+  --ft5e-header-line: linear-gradient(90deg, transparent, #3498db 35%, #d9f0fa 65%, transparent);
 }
 
-/* ── ERZA ── */
+/* ── ERZA — scarlatto su acciaio blu, riflessi d'argento dell'armatura ── */
 body[data-ft5e-theme="erza"] {
   --ft5e-primary: #c0392b;
   --ft5e-primary-rgb: 192, 57, 43;
   --ft5e-primary-dark: #7a1a10;
-  --ft5e-primary-light: #e04838;
-  --ft5e-accent: #c0c8d0;
-  --ft5e-accent-rgb: 192, 200, 208;
-  --ft5e-bg-1: #0c0c10;
-  --ft5e-bg-2: #14141c;
-  --ft5e-bg-3: #1e1e28;
-  --ft5e-bg-4: #282834;
-  --ft5e-text: #e0e4e8;
-  --ft5e-text-dim: #8890a0;
-  --ft5e-border: #3a2228;
-  --ft5e-border-glow: rgba(192, 57, 43, 0.5);
+  --ft5e-primary-light: #e85c48;
+  --ft5e-accent: #b8c6d8;
+  --ft5e-accent-rgb: 184, 198, 216;
+  --ft5e-bg-1: #0c0e14;
+  --ft5e-bg-2: #151a24;
+  --ft5e-bg-3: #202836;
+  --ft5e-bg-4: #2b3648;
+  --ft5e-text: #e2e7ee;
+  --ft5e-text-dim: #8c98ac;
+  --ft5e-border: #3c4a60;
+  --ft5e-border-glow: rgba(184, 198, 216, 0.4);
   --ft5e-glow: rgba(192, 57, 43, 0.6);
-  --ft5e-btn-gradient: linear-gradient(180deg, #1e1820 0%, #141018 100%);
-  --ft5e-btn-border: linear-gradient(180deg, #c0392b, #7a1a10);
-  --ft5e-header-line: linear-gradient(90deg, transparent, #c0392b, transparent);
+  --ft5e-btn-gradient: linear-gradient(180deg, #222b3a 0%, #151a24 100%);
+  --ft5e-btn-border: linear-gradient(180deg, #c0392b, #b8c6d8);
+  --ft5e-header-line: linear-gradient(90deg, transparent, #c0392b 35%, #b8c6d8 65%, transparent);
 }
 
-/* ── LUCY ── */
+/* ── LUCY — oro celestiale con tocchi rosa e crema ── */
 body[data-ft5e-theme="lucy"] {
   --ft5e-primary: #d4a017;
   --ft5e-primary-rgb: 212, 160, 23;
   --ft5e-primary-dark: #8a6a0a;
   --ft5e-primary-light: #f0c840;
-  --ft5e-accent: #e8a0b0;
-  --ft5e-accent-rgb: 232, 160, 176;
-  --ft5e-bg-1: #100c04;
-  --ft5e-bg-2: #1c1608;
-  --ft5e-bg-3: #282010;
-  --ft5e-bg-4: #342a18;
-  --ft5e-text: #f0e8d0;
-  --ft5e-text-dim: #a89868;
-  --ft5e-border: #4a3810;
-  --ft5e-border-glow: rgba(212, 160, 23, 0.5);
+  --ft5e-accent: #ee9ab0;
+  --ft5e-accent-rgb: 238, 154, 176;
+  --ft5e-bg-1: #120d06;
+  --ft5e-bg-2: #1e170c;
+  --ft5e-bg-3: #2c2214;
+  --ft5e-bg-4: #3b2e1d;
+  --ft5e-text: #f4ead2;
+  --ft5e-text-dim: #b29c72;
+  --ft5e-border: #5c4520;
+  --ft5e-border-glow: rgba(238, 154, 176, 0.4);
   --ft5e-glow: rgba(212, 160, 23, 0.6);
-  --ft5e-btn-gradient: linear-gradient(180deg, #2a2010 0%, #1c1608 100%);
-  --ft5e-btn-border: linear-gradient(180deg, #d4a017, #8a6a0a);
-  --ft5e-header-line: linear-gradient(90deg, transparent, #d4a017, transparent);
+  --ft5e-btn-gradient: linear-gradient(180deg, #302512 0%, #1e170c 100%);
+  --ft5e-btn-border: linear-gradient(180deg, #d4a017, #ee9ab0);
+  --ft5e-header-line: linear-gradient(90deg, transparent, #d4a017 35%, #ee9ab0 65%, transparent);
 }
 
-/* ── LAXUS ── */
+/* ── LAXUS — giallo elettrico su tempesta viola ── */
 body[data-ft5e-theme="laxus"] {
   --ft5e-primary: #f1c40f;
   --ft5e-primary-rgb: 241, 196, 15;
   --ft5e-primary-dark: #9a7d08;
   --ft5e-primary-light: #f9e154;
-  --ft5e-accent: #8e44ad;
-  --ft5e-accent-rgb: 142, 68, 173;
-  --ft5e-bg-1: #08080e;
-  --ft5e-bg-2: #10101c;
-  --ft5e-bg-3: #1a1a2a;
-  --ft5e-bg-4: #242436;
-  --ft5e-text: #ece8d0;
-  --ft5e-text-dim: #988880;
-  --ft5e-border: #2a2044;
-  --ft5e-border-glow: rgba(241, 196, 15, 0.4);
+  --ft5e-accent: #a55ec9;
+  --ft5e-accent-rgb: 165, 94, 201;
+  --ft5e-bg-1: #0a0812;
+  --ft5e-bg-2: #141022;
+  --ft5e-bg-3: #1f1834;
+  --ft5e-bg-4: #2c2248;
+  --ft5e-text: #ece8d4;
+  --ft5e-text-dim: #9d8cb4;
+  --ft5e-border: #45306e;
+  --ft5e-border-glow: rgba(165, 94, 201, 0.45);
   --ft5e-glow: rgba(241, 196, 15, 0.6);
-  --ft5e-btn-gradient: linear-gradient(180deg, #1c1830 0%, #121020 100%);
-  --ft5e-btn-border: linear-gradient(180deg, #f1c40f, #8e44ad);
-  --ft5e-header-line: linear-gradient(90deg, transparent, #f1c40f, transparent);
+  --ft5e-btn-gradient: linear-gradient(180deg, #241c40 0%, #141022 100%);
+  --ft5e-btn-border: linear-gradient(180deg, #f1c40f, #a55ec9);
+  --ft5e-header-line: linear-gradient(90deg, transparent, #f1c40f 35%, #a55ec9 65%, transparent);
 }
 
 /* ================================================================= */
@@ -923,4 +923,24 @@ body[data-ft5e-theme] [data-tooltip]::after {
   border: 1px solid var(--ft5e-border) !important;
   color: var(--ft5e-text) !important;
   border-radius: 6px !important;
+}
+
+/* ================================================================= */
+/*  CHARACTER SHEET — Fairy Tail guild banner                        */
+/* ================================================================= */
+
+/* Il corpo scheda perde la texture pergamena di dnd5e in favore di uno
+   sfondo scuro uniforme nei colori del tema */
+body[data-ft5e-theme] .dnd5e2.sheet.actor.character {
+  --dnd5e-character-body-image: linear-gradient(180deg, var(--ft5e-bg-2) 0%, var(--ft5e-bg-1) 100%);
+}
+
+/* Header: banner con il logo della gilda al centro su gradiente tema */
+body[data-ft5e-theme] .dnd5e2.sheet.actor.character .sheet-header {
+  background:
+    url("../assets/images/ui/fairy-tail-guild-logo.webp") no-repeat center / auto 82%,
+    linear-gradient(90deg, rgba(var(--ft5e-primary-rgb), 0.30) 0%, rgba(0, 0, 0, 0.25) 45%, rgba(var(--ft5e-accent-rgb), 0.18) 100%),
+    linear-gradient(180deg, var(--ft5e-bg-4) 0%, var(--ft5e-bg-1) 100%) !important;
+  border-bottom: 2px solid var(--ft5e-border) !important;
+  box-shadow: inset 0 -12px 24px rgba(0, 0, 0, 0.45) !important;
 }
