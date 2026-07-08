@@ -80,8 +80,8 @@
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   font-size: 1em;
   font-weight: 700;
-  width: 3ch;
-  field-sizing: content;
+  /* width impostata inline in base alle cifre (mana-points.mjs) */
+  width: 1.4ch;
   text-align: left;
   padding: 0;
   margin: 0;

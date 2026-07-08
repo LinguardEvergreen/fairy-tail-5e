@@ -721,7 +721,7 @@ function injectManaTracker(app, html, data) {
       <div class="ft5e-mana-bar-container">
         <div class="ft5e-mana-bar" style="width: ${pct}%; background: linear-gradient(90deg, ${color}, ${_lighten(color, 30)});"></div>
         <span class="ft5e-mana-text">
-          <input type="number" class="ft5e-mana-input" value="${mana.value}" min="0" max="${mana.max}" data-dtype="Number" />
+          <input type="number" class="ft5e-mana-input" style="width: ${String(mana.value).length + 0.4}ch" value="${mana.value}" min="0" max="${mana.max}" data-dtype="Number" />
           / ${mana.max}
         </span>
       </div>
