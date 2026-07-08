@@ -950,6 +950,8 @@ body[data-ft5e-theme] .dnd5e2.sheet.actor.character {
 /* Box e superfici della scheda (skills, card filigree, righe tabella, pill,
    tag) usano le variabili chiare di dnd5e: le rimappiamo sui colori tema */
 body[data-ft5e-theme] .dnd5e2.sheet.actor {
+  /* targhette ability score: variante scura fornita da dnd5e */
+  --dnd5e-ability-tab: url("../../../systems/dnd5e/ui/ability-score-tab-dark.svg");
   --dnd5e-color-card: var(--ft5e-bg-3);
   --dnd5e-background-card: var(--ft5e-bg-3);
   --filigree-background-color: var(--ft5e-bg-3);
