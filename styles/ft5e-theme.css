@@ -939,10 +939,39 @@ body[data-ft5e-theme] [data-tooltip]::after {
 /*  CHARACTER SHEET — Fairy Tail guild banner                        */
 /* ================================================================= */
 
-/* Il corpo scheda perde la texture pergamena di dnd5e in favore di uno
-   sfondo scuro uniforme nei colori del tema */
+/* Il corpo scheda perde la texture pergamena di dnd5e: stesso gradiente
+   primario→accent del banner ma molto più tenue, su fondo scuro tema */
 body[data-ft5e-theme] .dnd5e2.sheet.actor.character {
-  --dnd5e-character-body-image: linear-gradient(180deg, var(--ft5e-bg-2) 0%, var(--ft5e-bg-1) 100%);
+  --dnd5e-character-body-image:
+    linear-gradient(90deg, rgba(var(--ft5e-primary-rgb), 0.12) 0%, rgba(0, 0, 0, 0) 45%, rgba(var(--ft5e-accent-rgb), 0.08) 100%),
+    linear-gradient(180deg, var(--ft5e-bg-2) 0%, var(--ft5e-bg-1) 100%);
+}
+
+/* Box e superfici della scheda (skills, card filigree, righe tabella, pill,
+   tag) usano le variabili chiare di dnd5e: le rimappiamo sui colori tema */
+body[data-ft5e-theme] .dnd5e2.sheet.actor {
+  --dnd5e-color-card: var(--ft5e-bg-3);
+  --dnd5e-background-card: var(--ft5e-bg-3);
+  --filigree-background-color: var(--ft5e-bg-3);
+  --separated-list-item-background-color: var(--ft5e-bg-3);
+  --dnd5e-color-table-row-odd: var(--ft5e-bg-4);
+  --table-background-color: var(--ft5e-bg-3);
+  --multi-select-tag-background: var(--ft5e-bg-4);
+  --dnd5e-color-parchment: var(--ft5e-bg-2);
+  --pill-background-color: var(--ft5e-bg-4);
+  --pill-background-blend-mode: normal;
+  --dnd5e-block-background: var(--ft5e-bg-3);
+  --dnd5e-quote-background: var(--ft5e-bg-3);
+  --color-hover-bg: var(--ft5e-bg-4);
+  /* il testo pensato per fondi chiari diventa chiaro sui nuovi fondi scuri */
+  --color-text-dark-primary: var(--ft5e-text);
+  --color-text-dark-secondary: var(--ft5e-text-dim);
+  --color-text-dark-1: var(--ft5e-text);
+  --color-text-dark-3: var(--ft5e-text);
+  --color-text-dark-4: var(--ft5e-text);
+  --color-text-dark-5: var(--ft5e-text-dim);
+  --color-text-dark-6: var(--ft5e-text-dim);
+  --color-text-dark-inactive: var(--ft5e-text-dim);
 }
 
 /* Header: banner con il logo della gilda al centro su gradiente tema */
