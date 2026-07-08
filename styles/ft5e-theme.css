@@ -938,7 +938,7 @@ body[data-ft5e-theme] .dnd5e2.sheet.actor.character {
 /* Header: banner con il logo della gilda al centro su gradiente tema */
 body[data-ft5e-theme] .dnd5e2.sheet.actor.character .sheet-header {
   background:
-    url("../assets/images/ui/fairy-tail-guild-logo.webp") no-repeat center / auto 82%,
+    url("../assets/images/ui/fairy-tail-guild-logo.webp") no-repeat center 78% / auto 82%,
     linear-gradient(90deg, rgba(var(--ft5e-primary-rgb), 0.30) 0%, rgba(0, 0, 0, 0.25) 45%, rgba(var(--ft5e-accent-rgb), 0.18) 100%),
     linear-gradient(180deg, var(--ft5e-bg-4) 0%, var(--ft5e-bg-1) 100%) !important;
   border-bottom: 2px solid var(--ft5e-border) !important;
