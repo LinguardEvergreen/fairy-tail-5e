@@ -700,6 +700,29 @@ body[data-ft5e-theme] .sheet-tabs .item.active {
   text-shadow: 0 0 8px rgba(var(--ft5e-primary-rgb), 0.4) !important;
 }
 
+/* Gold-button di dnd5e (Short/Long Rest, ecc.): quadrati scuri in cui
+   l'icona deve restare ben visibile nel colore chiaro del tema */
+body[data-ft5e-theme] .dnd5e2 .gold-button,
+body[data-ft5e-theme] .dnd5e2.sheet button.gold-button {
+  background: var(--ft5e-bg-1) !important;
+  color: var(--ft5e-primary-light) !important;
+  border: none !important;
+  border-radius: 4px !important;
+}
+
+body[data-ft5e-theme] .dnd5e2 .gold-button i {
+  color: inherit !important;
+}
+
+body[data-ft5e-theme] .dnd5e2 .gold-button::after {
+  border-color: rgba(var(--ft5e-primary-rgb), 0.6) !important;
+}
+
+body[data-ft5e-theme] .dnd5e2 .gold-button:not(:disabled):is(:hover, :focus) {
+  color: var(--ft5e-accent) !important;
+  box-shadow: 0 0 8px rgba(var(--ft5e-primary-rgb), 0.5) !important;
+}
+
 /* Tab verticali delle schede dnd5e2: la tab attiva/hover ha lo sfondo nel
    colore primario, quindi icona e testo devono essere scuri per contrasto */
 body[data-ft5e-theme] .dnd5e2.vertical-tabs nav.tabs > .item.active,
