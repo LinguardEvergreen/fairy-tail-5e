@@ -724,31 +724,9 @@ body[data-ft5e-theme] .dnd5e2.sheet.actor .sheet-header-buttons button.gold-butt
   border-color: rgba(0, 0, 0, 0.35) !important;
 }
 
-/* Il glifo Font Awesome di questi pulsanti non renderizza (larghezza 0) e la
-   mask SVG non viene dipinta in alcuni client: l'icona è un'immagine SVG di
-   sfondo (data URI percent-encoded, colore scuro fisso) — massima compatibilità */
-body[data-ft5e-theme] .dnd5e2.sheet.actor .sheet-header-buttons button i {
-  display: block !important;
-  width: 15px !important;
-  height: 15px !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  -webkit-mask: none !important;
-  mask: none !important;
-  background-color: transparent !important;
-  background-repeat: no-repeat !important;
-  background-position: center !important;
-  background-size: contain !important;
-}
-
-/* Short rest: tazza — Long rest: luna crescente */
-body[data-ft5e-theme] .dnd5e2.sheet.actor .sheet-header-buttons button.short-rest i {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3E%3Cpath%20fill='%23101010'%20d='M3%207h13v8.5A4.5%204.5%200%200%201%2011.5%2020h-4A4.5%204.5%200%200%201%203%2015.5V7zm15%202h1.5A3.5%203.5%200%200%201%2023%2012.5%203.5%203.5%200%200%201%2019.5%2016H18v-2.2h1.5a1.3%201.3%200%200%200%200-2.6H18V9z'/%3E%3C/svg%3E") !important;
-}
-
-body[data-ft5e-theme] .dnd5e2.sheet.actor .sheet-header-buttons button.long-rest i {
-  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%3E%3Cpath%20fill='%23101010'%20d='M21.2%2014.9A9.5%209.5%200%200%201%209.1%202.8%209.5%209.5%200%201%200%2021.2%2014.9z'/%3E%3C/svg%3E") !important;
-}
+/* Le icone Font Awesome native di questi pulsanti funzionano: erano coperte
+   dallo pseudo-elemento ::after scurito dalla vecchia regola tooltip
+   ([data-tooltip]::after) — corretta nella sezione TOOLTIPS */
 
 /* Gold-button di dnd5e (Short/Long Rest, ecc.): quadrati scuri in cui
    l'icona deve restare ben visibile nel colore chiaro del tema */
@@ -1010,8 +988,13 @@ body[data-ft5e-theme] .filepicker .window-content {
 /*  TOOLTIPS                                                         */
 /* ================================================================= */
 
+/* Solo il vero elemento tooltip di Foundry (#tooltip / .locked-tooltip):
+   NON usare [data-tooltip]::after — colpirebbe lo pseudo-elemento di ogni
+   elemento con quell'attributo (es. i pulsanti Short/Long Rest, che ne
+   uscivano coperti da un riquadro scuro) */
 body[data-ft5e-theme] .tooltip,
-body[data-ft5e-theme] [data-tooltip]::after {
+body[data-ft5e-theme] #tooltip,
+body[data-ft5e-theme] .locked-tooltip {
   background: var(--ft5e-bg-1) !important;
   border: 1px solid var(--ft5e-border) !important;
   color: var(--ft5e-text) !important;
