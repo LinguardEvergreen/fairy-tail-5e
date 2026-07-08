@@ -949,15 +949,42 @@ body[data-ft5e-theme] .dnd5e2.sheet.actor.character {
 
 /* Box e superfici della scheda (skills, card filigree, righe tabella, pill,
    tag) usano le variabili chiare di dnd5e: le rimappiamo sui colori tema */
-/* Targhette ability score: SVG custom con sfondo e bordo nei colori del tema */
-body[data-ft5e-theme="natsu"] .dnd5e2.sheet.actor { --dnd5e-ability-tab: url("../assets/images/ui/ability-tab-natsu.svg"); }
-body[data-ft5e-theme="gray"]  .dnd5e2.sheet.actor { --dnd5e-ability-tab: url("../assets/images/ui/ability-tab-gray.svg"); }
-body[data-ft5e-theme="erza"]  .dnd5e2.sheet.actor { --dnd5e-ability-tab: url("../assets/images/ui/ability-tab-erza.svg"); }
-body[data-ft5e-theme="lucy"]  .dnd5e2.sheet.actor { --dnd5e-ability-tab: url("../assets/images/ui/ability-tab-lucy.svg"); }
-body[data-ft5e-theme="laxus"] .dnd5e2.sheet.actor { --dnd5e-ability-tab: url("../assets/images/ui/ability-tab-laxus.svg"); }
+/* Targhette ability score: SVG custom con sfondo e bordo nei colori del tema.
+   Override diretto del ::before (con !important) perché il tema dark di dnd5e
+   ridefinisce --dnd5e-ability-tab con specificità maggiore */
+body[data-ft5e-theme="natsu"] .dnd5e2.sheet.actor .ability-scores .ability-score::before {
+  background: transparent url("../assets/images/ui/ability-tab-natsu.svg") no-repeat top center / contain !important;
+}
+body[data-ft5e-theme="gray"] .dnd5e2.sheet.actor .ability-scores .ability-score::before {
+  background: transparent url("../assets/images/ui/ability-tab-gray.svg") no-repeat top center / contain !important;
+}
+body[data-ft5e-theme="erza"] .dnd5e2.sheet.actor .ability-scores .ability-score::before {
+  background: transparent url("../assets/images/ui/ability-tab-erza.svg") no-repeat top center / contain !important;
+}
+body[data-ft5e-theme="lucy"] .dnd5e2.sheet.actor .ability-scores .ability-score::before {
+  background: transparent url("../assets/images/ui/ability-tab-lucy.svg") no-repeat top center / contain !important;
+}
+body[data-ft5e-theme="laxus"] .dnd5e2.sheet.actor .ability-scores .ability-score::before {
+  background: transparent url("../assets/images/ui/ability-tab-laxus.svg") no-repeat top center / contain !important;
+}
 
+/* I selettori includono le varianti .themed.theme-dark: il tema dark di dnd5e
+   ridefinisce queste variabili con specificità maggiore del semplice antenato */
 body[data-ft5e-theme] .dnd5e2.sheet.actor,
-body[data-ft5e-theme] .dnd5e2.sheet.item {
+body[data-ft5e-theme] .dnd5e2.sheet.item,
+body[data-ft5e-theme] .themed.theme-dark.dnd5e2.sheet.actor,
+body[data-ft5e-theme] .themed.theme-dark.dnd5e2.sheet.item,
+body[data-ft5e-theme] .themed.theme-dark .dnd5e2.sheet.actor,
+body[data-ft5e-theme] .themed.theme-dark .dnd5e2.sheet.item {
+  /* palette grigio-azzurra del dark theme dnd5e → toni del tema attivo */
+  --dnd5e-color-blue-gray-1: var(--ft5e-bg-2);
+  --dnd5e-color-blue-gray-2: var(--ft5e-bg-3);
+  --dnd5e-color-blue-gray-3: var(--ft5e-border);
+  --filigree-border-color: rgba(var(--ft5e-primary-rgb), 0.55);
+  --dnd5e-background-alt-1: var(--ft5e-bg-4);
+  --dnd5e-background-alt-2: var(--ft5e-bg-3);
+  --dnd5e-background-parchment: var(--ft5e-bg-2);
+  --dnd5e-gold-icon-background: var(--ft5e-bg-4);
   /* tutto ciò che dnd5e disegna in oro (pip competenza, bordi, numeri,
      titoli di sezione) passa al colore primario del tema */
   --dnd5e-color-gold: var(--ft5e-primary);
