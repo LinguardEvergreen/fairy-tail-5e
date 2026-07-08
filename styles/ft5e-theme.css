@@ -707,13 +707,28 @@ body[data-ft5e-theme] .dnd5e2.sheet.actor.character:not(.minimized) .window-cont
   background: none !important;
 }
 
-/* Icone dei pulsanti nell'header scheda (Short/Long Rest): forziamo font,
-   colore e visibilità del glifo Font Awesome */
+/* Pulsanti Short/Long Rest nell'header: stesso look della tab attiva
+   laterale — riquadro pieno nel colore primario con icona scura */
+body[data-ft5e-theme] .dnd5e2.sheet.actor .sheet-header-buttons button.gold-button {
+  background: var(--ft5e-primary) !important;
+  color: var(--ft5e-bg-1) !important;
+}
+
+body[data-ft5e-theme] .dnd5e2.sheet.actor .sheet-header-buttons button.gold-button:not(:disabled):is(:hover, :focus) {
+  background: var(--ft5e-primary-light) !important;
+  color: var(--ft5e-bg-1) !important;
+  box-shadow: 0 0 8px rgba(var(--ft5e-primary-rgb), 0.6) !important;
+}
+
+body[data-ft5e-theme] .dnd5e2.sheet.actor .sheet-header-buttons button.gold-button::after {
+  border-color: rgba(0, 0, 0, 0.35) !important;
+}
+
 body[data-ft5e-theme] .dnd5e2.sheet.actor .sheet-header-buttons button i {
   font-family: "Font Awesome 6 Pro", "Font Awesome 6 Free", FontAwesome !important;
   font-weight: 900 !important;
   font-style: normal !important;
-  color: var(--ft5e-primary-light) !important;
+  color: var(--ft5e-bg-1) !important;
   font-size: 13px !important;
   display: inline-block !important;
   visibility: visible !important;
