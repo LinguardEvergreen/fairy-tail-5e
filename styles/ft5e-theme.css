@@ -627,6 +627,16 @@ body[data-ft5e-theme] textarea:focus,
 body[data-ft5e-theme] select:focus {
   border-color: var(--ft5e-primary) !important;
   box-shadow: 0 0 10px rgba(var(--ft5e-primary-rgb), 0.3) !important;
+}
+
+/* L'input dentro la barra mana deve restare trasparente, o spezza la barra */
+body[data-ft5e-theme] input.ft5e-mana-input,
+body[data-ft5e-theme] input.ft5e-mana-input[type="number"],
+body[data-ft5e-theme] input.ft5e-mana-input:focus {
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
   outline: none !important;
 }
 
