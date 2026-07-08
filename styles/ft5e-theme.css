@@ -700,6 +700,16 @@ body[data-ft5e-theme] .sheet-tabs .item.active {
   text-shadow: 0 0 8px rgba(var(--ft5e-primary-rgb), 0.4) !important;
 }
 
+/* Tab verticali delle schede dnd5e2: la tab attiva/hover ha lo sfondo nel
+   colore primario, quindi icona e testo devono essere scuri per contrasto */
+body[data-ft5e-theme] .dnd5e2.vertical-tabs nav.tabs > .item.active,
+body[data-ft5e-theme] .dnd5e2.vertical-tabs nav.tabs > .item:hover {
+  color: var(--ft5e-bg-1) !important;
+  --icon-fill: var(--ft5e-bg-1);
+  text-shadow: none !important;
+  border-bottom-color: transparent !important;
+}
+
 /* Item lists */
 body[data-ft5e-theme] .dnd5e2.sheet .items-list .item,
 body[data-ft5e-theme] .dnd5e.sheet .items-list .item {
