@@ -700,6 +700,26 @@ body[data-ft5e-theme] .sheet-tabs .item.active {
   text-shadow: 0 0 8px rgba(var(--ft5e-primary-rgb), 0.4) !important;
 }
 
+/* L'artwork di sfondo della scheda dnd5e (window-content::before) traspare
+   dietro l'header/corpo: lo disattiviamo, il tema ha già il suo gradiente */
+body[data-ft5e-theme] .dnd5e2.sheet.actor.character:not(.minimized) .window-content::before {
+  content: none !important;
+  background: none !important;
+}
+
+/* Icone dei pulsanti nell'header scheda (Short/Long Rest): forziamo font,
+   colore e visibilità del glifo Font Awesome */
+body[data-ft5e-theme] .dnd5e2.sheet.actor .sheet-header-buttons button i {
+  font-family: "Font Awesome 6 Pro", "Font Awesome 6 Free", FontAwesome !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+  color: var(--ft5e-primary-light) !important;
+  font-size: 13px !important;
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
 /* Gold-button di dnd5e (Short/Long Rest, ecc.): quadrati scuri in cui
    l'icona deve restare ben visibile nel colore chiaro del tema */
 body[data-ft5e-theme] .dnd5e2 .gold-button,
