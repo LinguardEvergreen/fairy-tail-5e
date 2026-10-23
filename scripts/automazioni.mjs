@@ -52,7 +52,7 @@ Hooks.once("socketlib.ready", () => {
 Hooks.once("ready", async () => {
   const mod = game.modules.get(MODULE_ID);
   mod.api = Object.assign(mod.api ?? {}, {
-    condizioni: { aggiungiBruciato, rimuoviBruciato, aggiungiCelestia, impostaCelestia, fineTurno }
+    condizioni: { aggiungiBruciato, rimuoviBruciato, spegniFiamme, aggiungiCelestia, impostaCelestia, fineTurno }
   });
   if (game.user === game.users.activeGM) await sbloccaMacroFT5E();
 });
@@ -271,6 +271,118 @@ async function rimuoviBruciato(attore, segni = Infinity) {
   if (!effetto) return;
   const attuali = Number(effetto.getFlag(MODULE_ID, "segni") ?? 1);
   await impostaBruciato(attore, Math.max(0, attuali - segni), effetto);
+}
+
+/* ---- Azione bonus "Spegnere le fiamme" ---- */
+
+const FLAG_SPEGNI = "spegniFiamme";
+const ID_ATTIVITA_SPEGNI = "ft5eSpegniFiamme";
+
+function datiAzioneSpegni() {
+  return {
+    name: "Spegnere le fiamme",
+    type: "feat",
+    img: "icons/magic/water/water-drop-swirl-blue.webp",
+    system: {
+      description: {
+        value: `<p>Con un'<strong>Azione Bonus</strong> provi a spegnere le fiamme e a rimuovere i segni di <strong>Bruciato</strong> (CD 10 + numero di segni):</p>
+          <ul>
+            <li><strong>Resilienza:</strong> tiro salvezza su Costituzione. Se lo superi rimuovi un numero di segni pari al tuo modificatore di Costituzione (minimo 1).</li>
+            <li><strong>Destrezza:</strong> prova di Destrezza. Se la superi rimuovi un numero di segni pari a metà del tuo modificatore di Destrezza, per difetto (minimo 1).</li>
+          </ul>`
+      },
+      activities: {
+        [ID_ATTIVITA_SPEGNI]: {
+          _id: ID_ATTIVITA_SPEGNI,
+          type: "utility",
+          name: "Spegnere le fiamme",
+          activation: { type: "bonus", value: 1 }
+        }
+      }
+    },
+    flags: { [MODULE_ID]: { [FLAG_SPEGNI]: true } }
+  };
+}
+
+/* L'azione compare nella scheda finche' la creatura brucia. Lavora solo il client
+   che ha creato o tolto Bruciato: ha gia' i permessi su quell'attore. */
+Hooks.on("createActiveEffect", async (effetto, opzioni, userId) => {
+  try {
+    if (userId !== game.user.id || !effetto.statuses?.has(BRUCIATO)) return;
+    const attore = effetto.parent;
+    if (!(attore instanceof Actor)) return;
+    if (attore.items.some(i => i.getFlag(MODULE_ID, FLAG_SPEGNI))) return;
+    await attore.createEmbeddedDocuments("Item", [datiAzioneSpegni()]);
+  } catch (err) {
+    console.warn(`${MODULE_ID} | Azione "Spegnere le fiamme" non aggiunta:`, err);
+  }
+});
+
+Hooks.on("deleteActiveEffect", async (effetto, opzioni, userId) => {
+  try {
+    if (userId !== game.user.id || !effetto.statuses?.has(BRUCIATO)) return;
+    const attore = effetto.parent;
+    if (!(attore instanceof Actor) || trovaEffetto(attore, BRUCIATO)) return;
+    const azioni = attore.items.filter(i => i.getFlag(MODULE_ID, FLAG_SPEGNI)).map(i => i.id);
+    if (azioni.length) await attore.deleteEmbeddedDocuments("Item", azioni);
+  } catch (err) {
+    console.warn(`${MODULE_ID} | Azione "Spegnere le fiamme" non rimossa:`, err);
+  }
+});
+
+Hooks.on("dnd5e.postUseActivity", async activity => {
+  try {
+    if (!activity?.item?.getFlag?.(MODULE_ID, FLAG_SPEGNI)) return;
+    await spegniFiamme(activity.actor);
+  } catch (err) {
+    console.warn(`${MODULE_ID} | Spegnere le fiamme non riuscito:`, err);
+  }
+});
+
+async function spegniFiamme(attore) {
+  const effetto = attore ? trovaEffetto(attore, BRUCIATO) : null;
+  if (!effetto) {
+    ui.notifications.info(`${attore?.name ?? "La creatura"} non sta bruciando.`);
+    return;
+  }
+  const segni = Math.max(1, Number(effetto.getFlag(MODULE_ID, "segni") ?? 1));
+  const cd = 10 + segni;
+  const caratteristiche = attore.system.abilities ?? {};
+  const viaCostituzione = Math.max(1, caratteristiche.con?.mod ?? 0);
+  const viaDestrezza = Math.max(1, Math.floor((caratteristiche.dex?.mod ?? 0) / 2));
+
+  const scelta = await foundry.applications.api.DialogV2.wait({
+    window: { title: "Spegnere le fiamme" },
+    content: `<p><strong>${attore.name}</strong> ha <strong>${segni}</strong> ${segni === 1 ? "segno" : "segni"} di Bruciato: CD <strong>${cd}</strong>.</p><p>Come provi a spegnere le fiamme?</p>`,
+    buttons: [
+      { action: "con", label: `TS Costituzione (rimuove ${viaCostituzione})`, icon: "fas fa-shield-heart", default: true },
+      { action: "dex", label: `Prova di Destrezza (rimuove ${viaDestrezza})`, icon: "fas fa-person-running" }
+    ],
+    rejectClose: false
+  });
+  if (scelta !== "con" && scelta !== "dex") return;
+
+  const tiri = scelta === "con"
+    ? await attore.rollSavingThrow({ ability: "con", target: cd })
+    : await attore.rollAbilityCheck({ ability: "dex", target: cd });
+  const tiro = Array.isArray(tiri) ? tiri[0] : tiri;
+  if (!tiro) return;
+
+  let esito;
+  if (tiro.total >= cd) {
+    const tolti = Math.min(segni, scelta === "con" ? viaCostituzione : viaDestrezza);
+    await rimuoviBruciato(attore, tolti);
+    const restanti = segni - tolti;
+    esito = restanti > 0
+      ? `spegne ${tolti} ${tolti === 1 ? "segno" : "segni"} di Bruciato, ne ${restanti === 1 ? "resta" : "restano"} ${restanti}`
+      : "spegne tutte le fiamme";
+  } else {
+    esito = "non riesce a spegnere le fiamme";
+  }
+  ChatMessage.create({
+    content: `<div class="ft5e-mana-chat"><i class="fas fa-fire-extinguisher"></i> <strong>${attore.name}</strong> ${esito} (${tiro.total} contro CD ${cd}).</div>`,
+    speaker: ChatMessage.getSpeaker({ actor: attore })
+  });
 }
 
 /* ---- Celestia ---- */
