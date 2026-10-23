@@ -1,8 +1,8 @@
 /**
  * Fairy Tail 5e — Custom Conditions
  *
- * Registers 5 custom conditions as FoundryVTT status effects
- * on the token HUD. Does NOT touch CONFIG.DND5E.conditionTypes
+ * Registers 5 custom conditions as status effects on the token HUD.
+ * Does NOT touch CONFIG.DND5E.conditionTypes
  * (which expects class instances with getLabel() in dnd5e v5.3.0).
  *
  * - Silenziato (Silenced)
@@ -14,9 +14,16 @@
 
 const MODULE_ID = "fairy-tail-5e";
 
+/*
+ * dnd5e rebuilds CONFIG.statusEffects from CONFIG.DND5E.statusEffects in its
+ * "setup" hook, so entries pushed straight into CONFIG.statusEffects are lost.
+ * The ids must stay alphanumeric: dnd5e derives each effect _id from them
+ * (staticID("dnd5e" + id)), and a hyphen makes that _id invalid.
+ * automazioni.mjs relies on these same ids.
+ */
 const FT5E_CONDITIONS = [
   {
-    id: "ft5e-silenziato",
+    id: "ft5eSilenziato",
     name: "Silenziato",
     icon: "icons/svg/mute.svg",
     description:
@@ -28,24 +35,24 @@ const FT5E_CONDITIONS = [
       </ul>`
   },
   {
-    id: "ft5e-bruciato",
+    id: "ft5eBruciato",
     name: "Bruciato",
     icon: "icons/svg/fire.svg",
     description:
       `<p><strong>Applicazione:</strong> Quando una creatura viene colpita da un attacco di <strong>fuoco</strong>, ottiene un numero di segni di <strong>Bruciato</strong> pari alla metà del danno da fuoco subito (arrotondato per eccesso).</p>
       <p>Il numero massimo di segni è pari al <strong>modificatore da incantatore + bonus di competenza</strong> dell'attaccante.</p>
       <p>Alla fine del suo turno, una creatura Bruciata subisce <strong>1d4 danni da fuoco</strong> per ogni segno di Bruciato.</p>
-      <p><strong>Rimuovere Bruciato:</strong> Azione Bonus — Tiro salvezza su Costituzione o prova di Destrezza (CD 10 + numero di segni).</p>`
+      <p><strong>Rimuovere Bruciato:</strong> con un'Azione Bonus, tiro salvezza su Costituzione o prova di Destrezza (CD 10 + numero di segni).</p>`
   },
   {
-    id: "ft5e-rallentato",
+    id: "ft5eRallentato",
     name: "Rallentato",
     icon: "icons/svg/downgrade.svg",
     description:
       `<p>Una creatura con la condizione <strong>Rallentato</strong> considera tutti i movimenti come <strong>terreno difficile</strong> fino al termine della condizione, che avviene alla fine del suo turno successivo.</p>`
   },
   {
-    id: "ft5e-celestia",
+    id: "ft5eCelestia",
     name: "Celestia",
     icon: "icons/svg/sun.svg",
     description:
@@ -59,7 +66,7 @@ const FT5E_CONDITIONS = [
       <p>Dura 1 minuto. TS a fine turno per terminare.</p>`
   },
   {
-    id: "ft5e-occhio-del-ciclone",
+    id: "ft5eOcchioCiclone",
     name: "Occhio del Ciclone",
     icon: "icons/svg/windmill.svg",
     description:
@@ -79,12 +86,11 @@ const FT5E_CONDITIONS = [
 Hooks.once("init", () => {
   try {
     for (const cond of FT5E_CONDITIONS) {
-      CONFIG.statusEffects.push({
-        id: cond.id,
+      CONFIG.DND5E.statusEffects[cond.id] = {
         name: cond.name,
-        icon: cond.icon,
-        _id: cond.id  // used as effect ID on tokens
-      });
+        img: cond.icon,
+        description: cond.description
+      };
     }
     console.log(`${MODULE_ID} | Registered ${FT5E_CONDITIONS.length} custom status effects`);
   } catch (err) {

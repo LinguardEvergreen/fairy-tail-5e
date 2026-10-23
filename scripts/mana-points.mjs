@@ -1238,3 +1238,351 @@ Hooks.once("ready", () => {
   }
   console.log("Fairy Tail 5e | Mana Points system ready.");
 });
+
+/* ================================================== */
+/*  FT5E DEMON POINTS — Demonizzazione (Devil Slayer) */
+/*  Aggiunto il 18/07/2026 — tracker DP automatico    */
+/*  Backup pre-patch: mana-points.backup-20260718.txt */
+/* ================================================== */
+
+const DP_FLAG = "demonPoints";
+const DP_THRESHOLDS = [10,20,30,40,50,60,70,80,90,100,200,300,400,500,600,700,800,900,1000];
+const DP_BUFFS = {10:"+3 m velocità di movimento",20:"Ti alzi da prono usando solo 1,5 m",30:"+1 a tutti i tiri per colpire",40:"+1 CA",50:"Resistenza ai danni da maledizioni/demoni",60:"Vantaggio ai TS su Saggezza",70:"Vedi nell'oscurità (anche magica) fino a 36 m",80:"+mod SAG danni da Forza con la magia Devil Slayer",90:"Critico +1 vs demoni, dado danno +1 categoria",100:"+1 CA",200:"Leggi qualsiasi scrittura demoniaca/angelica",300:"Critico +1 vs demoni, dado danno +1 categoria",400:"Immunità ad Ammaliato e Spaventato",500:"Incosciente solo a PF negativi pari a livello×2",600:"Critico +1 vs demoni, dado danno +1 categoria",700:"Immunità a maledizioni e magia demoniaca",800:"Allineamento LM — dado danno +2 categorie",900:"Allineamento CM — danno sempre massimizzato",1000:"⚠️ DIVENTA UN DEMONE (il PG diventa PNG)"};
+
+function dpIsDevilSlayer(actor) {
+  return actor?.type === "character" && actor.items.some(i => i.type === "race" && /devil\s*slayer/i.test(i.name));
+}
+function dpGet(actor) { return Number(actor.getFlag(MODULE_ID, DP_FLAG) ?? 0); }
+async function dpSet(actor, v) { return actor.setFlag(MODULE_ID, DP_FLAG, Math.max(0, Math.min(1000, Math.round(v)))); }
+function dpTier(dp) { let t = 0; for (const th of DP_THRESHOLDS) if (dp >= th) t = th; return t; }
+
+function dpAnnounce(actor, oldDp, newDp, reason) {
+  const ot = dpTier(oldDp), nt = dpTier(newDp);
+  if (ot === nt) return;
+  let extra = "";
+  if (nt > ot) {
+    const items = DP_THRESHOLDS.filter(t => t > ot && t <= nt).map(t => `<li><strong>${t} DP:</strong> ${DP_BUFFS[t]}</li>`).join("");
+    extra = `<p><strong>Nuovi effetti attivi:</strong></p><ul>${items}</ul>`;
+  } else {
+    extra = `<p>Soglia scesa a <strong>${nt || "nessuna"}</strong>.</p>`;
+  }
+  ChatMessage.create({content: `<div class="ft5e-mana-chat" style="border-left:3px solid #a11;padding-left:6px"><i class="fas fa-fire-flame-curved" style="color:#a11"></i> <strong>${actor.name}</strong> — Demonizzazione: ${oldDp} → <strong>${newDp} DP</strong> <em>(${reason})</em>${extra}</div>`, speaker: ChatMessage.getSpeaker({actor})});
+}
+
+// Accumulo automatico: 10 DP per ogni MP speso
+Hooks.on("preUpdateActor", (actor, changes, options, userId) => {
+  const nv = foundry.utils.getProperty(changes, `flags.${MODULE_ID}.manaPoints.value`);
+  if (nv === undefined || !dpIsDevilSlayer(actor)) return;
+  const ov = Number(foundry.utils.getProperty(actor, `flags.${MODULE_ID}.manaPoints.value`) ?? 0);
+  const spent = ov - Number(nv);
+  if (spent > 0) options.ft5eManaSpent = spent;
+});
+Hooks.on("updateActor", async (actor, changes, options, userId) => {
+  if (!options.ft5eManaSpent || game.user.id !== userId) return;
+  if (!dpIsDevilSlayer(actor)) return;
+  const gain = options.ft5eManaSpent * 10;
+  const old = dpGet(actor);
+  const nv = Math.min(1000, old + gain);
+  if (nv === old) return;
+  await dpSet(actor, nv);
+  dpAnnounce(actor, old, nv, `+${gain} DP per ${options.ft5eManaSpent} MP spesi`);
+});
+
+// Guadagno di fine turno in combattimento (in base alla soglia raggiunta)
+Hooks.on("combatTurnChange", async (combat, prior, current) => {
+  if (game.user !== game.users.activeGM) return;
+  const c = combat.combatants.get(prior?.combatantId);
+  const actor = c?.actor;
+  if (!actor || !dpIsDevilSlayer(actor)) return;
+  const dp = dpGet(actor);
+  if (dp < 10 || dp >= 1000) return;
+  const gain = dpTier(dp) / 10;
+  const nv = Math.min(1000, dp + gain);
+  await dpSet(actor, nv);
+  dpAnnounce(actor, dp, nv, `+${gain} DP a fine turno`);
+});
+
+// Tracker sulla scheda (sotto i Punti Mana)
+function injectDemonTracker(app, html) {
+  if (!isEnabled()) return;
+  const actor = app.actor ?? app.document;
+  if (!actor || !dpIsDevilSlayer(actor)) return;
+  const jq = html instanceof jQuery ? html : $(html);
+  if (jq.find(".ft5e-demon-tracker").length) return;
+  const dp = dpGet(actor);
+  const pct = Math.round(dp / 1000 * 100);
+  const tier = dpTier(dp);
+  const tip = DP_THRESHOLDS.map(t => `${dp >= t ? "✔" : "✖"} ${t}: ${DP_BUFFS[t]}`).join("&#10;");
+  const el = $(`<div class="ft5e-mana-tracker ft5e-demon-tracker" data-actor-id="${actor.id}" title="${tip}">
+    <label class="ft5e-mana-label"><i class="fas fa-fire-flame-curved" style="color:#b22"></i> Punti Demoniaci${tier ? ` <span style="color:#b22">(soglia ${tier})</span>` : ""}</label>
+    <div class="ft5e-mana-bar-container">
+      <div class="ft5e-mana-bar" style="width:${pct}%;background:linear-gradient(90deg,#5a0202,#cc2222)"></div>
+      <span class="ft5e-mana-text"><input type="number" class="ft5e-demon-input" style="width:${String(dp).length + 0.4}ch" value="${dp}" min="0" max="1000" data-dtype="Number"/> / 1000</span>
+    </div>
+  </div>`);
+  const sidebar = jq.find(".sidebar .stats");
+  if (sidebar.length) sidebar.append(el);
+  else jq.find(".header-details .attributes, .sheet-header .attributes").after(el);
+  el.find(".ft5e-demon-input").on("change", async (ev) => {
+    const v = parseInt(ev.currentTarget.value);
+    if (isNaN(v)) return;
+    const old = dpGet(actor);
+    const nv = Math.max(0, Math.min(1000, v));
+    await dpSet(actor, nv);
+    dpAnnounce(actor, old, nv, "modifica manuale");
+  });
+}
+Hooks.on("renderActorSheet", injectDemonTracker);
+Hooks.on("renderActorSheet5eCharacter2", injectDemonTracker);
+Hooks.on("renderActorSheetV2", injectDemonTracker);
+Hooks.on("renderActorSheet5eCharacter", injectDemonTracker);
+
+/* ================================================== */
+/*  FT5E PUSH — Spinta automatica dei token           */
+/*  Aggiunto il 19/07/2026. Backup: mana-points.backup-prepush.txt */
+/*  Usato da tecniche/capacità che spingono il bersaglio. */
+/* ================================================== */
+
+let _ft5eSocket = null;
+
+Hooks.once("socketlib.ready", () => {
+  try {
+    _ft5eSocket = socketlib.registerModule(MODULE_ID);
+    _ft5eSocket.register("pushToken", _ft5ePushGM);
+  } catch (err) {
+    console.warn("Fairy Tail 5e | socketlib non disponibile per la spinta:", err);
+  }
+});
+
+/**
+ * Sposta un token in linea retta allontanandolo dalla sorgente.
+ * Eseguita SEMPRE lato GM (via socketlib) così funziona anche se a colpire è un giocatore.
+ */
+async function _ft5ePushGM(sorgenteUuid, bersaglioUuid, metri) {
+  const srcDoc = await fromUuid(sorgenteUuid);
+  const tgtDoc = await fromUuid(bersaglioUuid);
+  if (!srcDoc || !tgtDoc) return { ok: false, motivo: "token non trovato" };
+
+  const src = srcDoc.object, tgt = tgtDoc.object;
+  if (!src || !tgt) return { ok: false, motivo: "token non sulla scena" };
+
+  const grid = canvas.grid;
+  const da = { x: src.center.x, y: src.center.y };
+  const a = { x: tgt.center.x, y: tgt.center.y };
+
+  let dx = a.x - da.x, dy = a.y - da.y;
+  const len = Math.hypot(dx, dy);
+  if (len === 0) return { ok: false, motivo: "token sovrapposti" };
+  dx /= len; dy /= len;
+
+  const px = (metri / grid.distance) * grid.size;
+  let dest = { x: a.x + dx * px, y: a.y + dy * px };
+
+  // Si ferma contro i muri
+  try {
+    const backend = CONFIG.Canvas.polygonBackends.move;
+    const urto = backend.testCollision(a, dest, { type: "move", mode: "closest" });
+    if (urto) {
+      // arretra di mezza casella per non incastrarsi nel muro
+      const d = Math.hypot(urto.x - a.x, urto.y - a.y) - grid.size * 0.5;
+      dest = d > 0 ? { x: a.x + dx * d, y: a.y + dy * d } : { x: a.x, y: a.y };
+    }
+  } catch (err) { /* nessun controllo muri disponibile: prosegue */ }
+
+  // da centro a angolo alto-sinistra
+  let nx = dest.x - (tgt.w ?? tgtDoc.width * grid.size) / 2;
+  let ny = dest.y - (tgt.h ?? tgtDoc.height * grid.size) / 2;
+
+  // allinea alla griglia se possibile
+  try {
+    if (grid.type !== CONST.GRID_TYPES.GRIDLESS && grid.getSnappedPoint) {
+      const snap = grid.getSnappedPoint({ x: nx, y: ny }, { mode: CONST.GRID_SNAPPING_MODES.TOP_LEFT_CORNER });
+      if (Number.isFinite(snap?.x)) { nx = snap.x; ny = snap.y; }
+    }
+  } catch (err) { /* lascia la posizione libera */ }
+
+  // Foundry v13: gli update diretti di x/y vengono annullati dal sistema di movimento.
+  // "displace" e' l'azione corretta per il movimento forzato (spinte, tiri, respingimenti).
+  try {
+    await tgtDoc.move({ x: nx, y: ny, action: "displace" }, { animate: true });
+  } catch (err) {
+    console.warn("Fairy Tail 5e | move() non disponibile, fallback su update():", err);
+    await tgtDoc.update({ x: nx, y: ny }, { animate: true });
+  }
+  const percorsi = Math.hypot(nx + (tgt.w ?? 0) / 2 - a.x, ny + (tgt.h ?? 0) / 2 - a.y);
+  return { ok: true, metri: Math.round((percorsi / grid.size) * grid.distance * 10) / 10 };
+}
+
+/**
+ * API pubblica: instrada la spinta al GM se serve.
+ */
+async function ft5ePush(sorgenteUuid, bersaglioUuid, metri = 4.5) {
+  if (game.user.isGM) return _ft5ePushGM(sorgenteUuid, bersaglioUuid, metri);
+  if (_ft5eSocket) return _ft5eSocket.executeAsGM("pushToken", sorgenteUuid, bersaglioUuid, metri);
+  ui.notifications.warn("Spinta non applicata: nessun GM connesso.");
+  return { ok: false, motivo: "nessun GM" };
+}
+
+Hooks.once("ready", () => {
+  const mod = game.modules.get(MODULE_ID);
+  if (mod?.api) mod.api.push = ft5ePush;
+});
+
+/* ================================================== */
+/*  FT5E MOVE TO TEMPLATE — spostamento sul punto      */
+/*  d'impatto (es. Cometa del Drago Celeste).          */
+/*  Aggiunto il 19/07/2026.                            */
+/*  Attivo sugli item con flag                         */
+/*  "fairy-tail-5e.moveToTemplate": true               */
+/* ================================================== */
+
+Hooks.on("dnd5e.createActivityTemplate", async (templates, activity) => {
+  try {
+    if (!isEnabled()) return;
+    const item = activity?.item;
+    if (!item?.getFlag?.(MODULE_ID, "moveToTemplate")) return;
+    const actor = activity.actor;
+    const tokDoc = actor?.getActiveTokens?.()[0]?.document;
+    if (!tokDoc) return;
+    const tpl = Array.isArray(templates) ? templates[0] : templates;
+    if (!tpl) return;
+
+    // il template viene piazzato dopo: aspetta che abbia coordinate valide
+    await new Promise(r => setTimeout(r, 250));
+    const doc = tpl.document ?? tpl;
+    if (!Number.isFinite(doc?.x) || !Number.isFinite(doc?.y)) return;
+
+    const grid = canvas.grid;
+    const tok = tokDoc.object;
+    const larghezza = tok?.w ?? (tokDoc.width * grid.size);
+    const altezza = tok?.h ?? (tokDoc.height * grid.size);
+    let nx = doc.x - larghezza / 2;
+    let ny = doc.y - altezza / 2;
+    try {
+      if (grid.type !== CONST.GRID_TYPES.GRIDLESS && grid.getSnappedPoint) {
+        const s = grid.getSnappedPoint({ x: nx, y: ny }, { mode: CONST.GRID_SNAPPING_MODES.TOP_LEFT_CORNER });
+        if (Number.isFinite(s?.x)) { nx = s.x; ny = s.y; }
+      }
+    } catch (err) { /* posizione libera */ }
+
+    const px = tokDoc.x, py = tokDoc.y;
+    if (nx === px && ny === py) return;
+
+    // "displace": movimento speciale concesso dalla tecnica, non consuma il movimento normale.
+    // Se il centro e' occupato (di solito c'e' il bersaglio), ripiega sulla casella libera piu' vicina.
+    const candidati = [{ x: nx, y: ny }];
+    for (let anello = 1; anello <= 2; anello++) {
+      for (let dx = -anello; dx <= anello; dx++) {
+        for (let dy = -anello; dy <= anello; dy++) {
+          if (Math.max(Math.abs(dx), Math.abs(dy)) !== anello) continue;
+          candidati.push({ x: nx + dx * grid.size, y: ny + dy * grid.size });
+        }
+      }
+    }
+    let atterrata = false;
+    for (const c of candidati) {
+      if (c.x === px && c.y === py) { atterrata = true; nx = c.x; ny = c.y; break; }
+      const ok = await tokDoc.move({ x: c.x, y: c.y, action: "displace" }, { animate: true });
+      if (ok !== false) { nx = c.x; ny = c.y; atterrata = true; break; }
+    }
+    if (!atterrata) {
+      ui.notifications.warn(`${actor.name}: nessuno spazio libero sul punto d'impatto, spostala a mano.`);
+      return;
+    }
+
+    const metri = Math.round(Math.hypot(nx - px, ny - py) / grid.size * grid.distance * 10) / 10;
+    ChatMessage.create({
+      content: `<div class="ft5e-mana-chat"><i class="fas fa-meteor"></i> <strong>${actor.name}</strong> piomba sul punto d'impatto (${metri} m).</div>`,
+      speaker: ChatMessage.getSpeaker({ actor })
+    });
+  } catch (err) {
+    console.warn("Fairy Tail 5e | moveToTemplate non riuscito:", err);
+  }
+});
+
+/* ================================================== */
+/*  FT5E SELF BUFF — applica da soli i buff personali  */
+/*  Aggiunto il 19/09/2026.                            */
+/*  Gli Active Effect di un'activity si applicano ai   */
+/*  BERSAGLI: per i buff su se stessi il giocatore     */
+/*  doveva bersagliarsi a mano. Questo hook li applica */
+/*  automaticamente al lanciatore.                     */
+/*                                                     */
+/*  Condizioni (tutte necessarie, per sicurezza):      */
+/*   - gittata "self"                                  */
+/*   - NESSUN template (cosi' coni e linee come        */
+/*     "Luce Accecante" restano esclusi: colpiscono    */
+/*     i nemici, non il lanciatore)                    */
+/*   - target.affects.type === "self" (opt-in esplicito)*/
+/* ================================================== */
+
+function _ft5eIsSelfBuff(activity) {
+  if (activity?.range?.units !== "self") return false;
+  const tgt = activity?.target;
+  if (tgt?.template?.type) return false;          // ha un'area: non e' un buff personale
+  if (tgt?.affects?.type !== "self") return false; // opt-in
+  return true;
+}
+
+/**
+ * midi-qol con l'applicazione automatica degli effetti attiva applica gia' da solo
+ * gli effetti delle activity "su se stesso" al lanciatore: se li applicassimo anche
+ * noi il personaggio se li ritroverebbe due volte.
+ */
+function _ft5eMidiApplicaEffetti() {
+  if (!game.modules.get("midi-qol")?.active) return false;
+  try {
+    const modo = game.settings.get("midi-qol", "ConfigSettings")?.autoItemEffects ?? "off";
+    return modo !== "off";
+  } catch (err) {
+    return false;
+  }
+}
+
+Hooks.on("dnd5e.postUseActivity", async (activity, usageConfig, results) => {
+  try {
+    if (!isEnabled()) return;
+    if (!_ft5eIsSelfBuff(activity)) return;
+    if (_ft5eMidiApplicaEffetti()) return;
+    const actor = activity.actor;
+    if (!actor?.isOwner) return;
+
+    // Un solo client deve applicare, altrimenti con piu' GM/proprietari connessi
+    // l'effetto viene creato in duplicato. Responsabile: il giocatore proprietario
+    // se e' collegato, altrimenti il GM attivo.
+    const proprietario = game.users.players.find(u => u.active && actor.testUserPermission(u, "OWNER"));
+    const responsabile = proprietario ?? game.users.activeGM;
+    if (responsabile && game.user.id !== responsabile.id) return;
+
+    const effetti = activity.applicableEffects ?? [];
+    if (!effetti.length) return;
+
+    const applicati = [];
+    for (const eff of effetti) {
+      // se c'e' gia', lo rinnova (rimette la durata a nuovo)
+      const esistente = actor.effects.find(e => e.origin === eff.uuid);
+      if (esistente) await esistente.delete();
+      const dati = eff.toObject();
+      delete dati._id;
+      dati.origin = eff.uuid;
+      dati.transfer = false;
+      dati.disabled = false;
+      await actor.createEmbeddedDocuments("ActiveEffect", [dati]);
+      applicati.push(eff.name);
+      // rete di sicurezza contro i doppioni
+      const doppioni = actor.effects.filter(e => e.origin === eff.uuid);
+      if (doppioni.length > 1) {
+        await actor.deleteEmbeddedDocuments("ActiveEffect", doppioni.slice(1).map(e => e.id));
+      }
+    }
+    if (applicati.length) {
+      ChatMessage.create({
+        content: `<div class="ft5e-mana-chat"><i class="fas fa-sparkles"></i> <strong>${actor.name}</strong> — effetto attivo: ${applicati.join(", ")}</div>`,
+        speaker: ChatMessage.getSpeaker({ actor }),
+        whisper: ChatMessage.getWhisperRecipients("GM").map(u => u.id).concat(game.user.id)
+      });
+    }
+  } catch (err) {
+    console.warn("Fairy Tail 5e | applicazione buff personale non riuscita:", err);
+  }
+});
