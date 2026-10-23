@@ -2,8 +2,9 @@
  * Fairy Tail 5e — Automazioni
  *
  * - Permessi delle macro "FT5E ..." per i giocatori
- * - Bruciato automatico su chi subisce danni da fuoco (capitolo Condizioni)
- * - Celestia automatica con la magia del Corpo Celeste
+ * - Bruciato automatico su chi subisce danni da fuoco (capitolo Condizioni),
+ *   piu' i gradi extra indicati da alcuni incantesimi
+ * - Celestia automatica dai talenti Maledizione Celeste e Guida di Orione
  * - Effetti di fine turno: danni da Bruciato, scadenza della Celestia
  *
  * Le modifiche ai bersagli le esegue UN solo client, il GM attivo (via socketlib
@@ -22,7 +23,6 @@ const SOCKET_HANDLER = "applicaCondizioni";
 const idStato = id => `dnd5e${id}`.padEnd(16, "0").substring(0, 16);
 
 let socket = null;
-const corpoCelesteIds = new Set();
 const usiGestiti = new Map();
 
 /* -------------------------------------------------- */
@@ -32,25 +32,11 @@ const usiGestiti = new Map();
 Hooks.once("init", () => {
   game.settings.register(MODULE_ID, "automazioneCondizioni", {
     name: "Condizioni automatiche (Bruciato e Celestia)",
-    hint: "Applica da sola Bruciato a chi subisce danni da fuoco e Celestia a chi viene colpito dalla magia del Corpo Celeste, e gestisce i loro effetti a fine turno.",
+    hint: "Applica da sola Bruciato a chi subisce danni da fuoco e Celestia quando la infliggono i talenti Maledizione Celeste e Guida di Orione, e gestisce i loro effetti a fine turno.",
     scope: "world",
     config: true,
     type: Boolean,
     default: true
-  });
-
-  game.settings.register(MODULE_ID, "celestiaModalita", {
-    name: "Celestia: quando applicarla",
-    hint: "Il manuale la fa infliggere solo dai talenti Maledizione Celeste e Guida di Orione. In alternativa puoi farla applicare a ogni colpo della magia del Corpo Celeste.",
-    scope: "world",
-    config: true,
-    type: String,
-    default: "magia",
-    choices: {
-      magia: "A ogni colpo della magia del Corpo Celeste",
-      talenti: "Solo con i talenti (regole del manuale)",
-      off: "Mai, solo a mano"
-    }
   });
 });
 
@@ -68,7 +54,6 @@ Hooks.once("ready", async () => {
   mod.api = Object.assign(mod.api ?? {}, {
     condizioni: { aggiungiBruciato, rimuoviBruciato, aggiungiCelestia, impostaCelestia, fineTurno }
   });
-  await caricaCorpoCeleste();
   if (game.user === game.users.activeGM) await sbloccaMacroFT5E();
 });
 
@@ -90,46 +75,51 @@ async function sbloccaMacroFT5E() {
 }
 
 /* -------------------------------------------------- */
-/*  Riconoscimento della magia del Corpo Celeste      */
+/*  Chi infligge Celestia                             */
 /* -------------------------------------------------- */
 
-/** Raccoglie gli ID di compendio di tutto cio' che la sottoclasse concede. */
-async function caricaCorpoCeleste() {
-  try {
-    const pack = game.packs.get(`${MODULE_ID}.ft5e-magie`);
-    if (!pack) return;
-    const voce = (await pack.getIndex()).find(e => e.name === "Magia del Corpo Celeste");
-    if (!voce) return;
-    const magia = await pack.getDocument(voce._id);
-    for (const avanzamento of Object.values(magia.toObject().system?.advancement ?? {})) {
-      const conf = avanzamento.configuration ?? {};
-      for (const voceItem of [...(conf.items ?? []), ...(conf.pool ?? [])]) {
-        const uuid = typeof voceItem === "string" ? voceItem : voceItem?.uuid;
-        if (uuid) corpoCelesteIds.add(uuid.split(".").pop());
-      }
-    }
-  } catch (err) {
-    console.warn(`${MODULE_ID} | Impossibile leggere la Magia del Corpo Celeste:`, err);
-  }
-}
-
-function eMagiaCorpoCeleste(item) {
-  if (/corpo celeste/i.test(item?.system?.requirements ?? "")) return true;
-  const fonte = item?._stats?.compendiumSource ?? item?.flags?.core?.sourceId ?? "";
-  return !!fonte && corpoCelesteIds.has(fonte.split(".").pop());
-}
-
+/**
+ * Per il manuale la Celestia la infliggono solo due talenti:
+ * - Maledizione Celeste: le capacita' Potenziamento Celestiale e Raccolta Celeste
+ *   (le capacita' della sottoclasse Magia del Corpo Celeste);
+ * - Guida di Orione: la capacita' Orione.
+ * Il costo di 1 MP di "Lancio Maledetto" (uso senza frammento) resta manuale.
+ */
 function infliggeCelestia(attore, item, activity) {
-  const modo = game.settings.get(MODULE_ID, "celestiaModalita");
-  if (modo === "off") return false;
   // solo usi offensivi: un buff della stessa magia non deve maledire l'alleato
   if (!["attack", "save", "damage"].includes(activity?.type)) return false;
-  if (modo === "magia") return eMagiaCorpoCeleste(item);
-
   const haTalento = regola => attore.items.some(i => i.type === "feat" && regola.test(i.name));
   if (haTalento(/maledizione celeste/i) && /corpo celeste/i.test(item?.system?.requirements ?? "")) return true;
   if (haTalento(/guida di orione/i) && /orion/i.test(`${item?.name} ${activity?.name}`)) return true;
   return false;
+}
+
+/* -------------------------------------------------- */
+/*  Gradi di Bruciato indicati dagli incantesimi      */
+/* -------------------------------------------------- */
+
+/**
+ * Questi incantesimi indicano dei gradi di Bruciato: si aggiungono ai segni
+ * dati dal danno da fuoco, non li sostituiscono.
+ * colpito = attacco andato a segno, fallito / superato = esito del tiro salvezza.
+ */
+const BRUCIATO_EXTRA = {
+  "braci": { colpito: 1 },
+  "eruzione": { fallito: 1 },
+  "streaming palla di fuoco": { fallito: 1 },
+  "colonna di fuoco": { fallito: 1 },
+  "striature di fiamme": { fallito: 2 },
+  "tempesta di fuoco": { fallito: 2, superato: 1 },
+  "nova solare": { fallito: 3 },
+  "tiro d'attacco aereo": { fallito: 1 }
+};
+
+function gradiExtraBruciato(item, activity, salvato) {
+  const nome = (item?.name ?? "").toLowerCase().replace(/[’`]/g, "'").trim();
+  const extra = BRUCIATO_EXTRA[nome];
+  if (!extra) return 0;
+  if (activity?.type === "save") return (salvato ? extra.superato : extra.fallito) ?? 0;
+  return extra.colpito ?? extra.fallito ?? 0;
 }
 
 /* -------------------------------------------------- */
@@ -158,17 +148,19 @@ function raccogliCondizioni(workflow) {
   const bersagli = new Map();
   const voce = (tokenUuid, actorUuid) => {
     const chiave = tokenUuid ?? actorUuid;
-    if (!bersagli.has(chiave)) bersagli.set(chiave, { tokenUuid: tokenUuid ?? null, actorUuid: actorUuid ?? null, fuoco: 0, celestia: 0 });
+    if (!bersagli.has(chiave)) bersagli.set(chiave, { tokenUuid: tokenUuid ?? null, actorUuid: actorUuid ?? null, segni: 0, celestia: 0 });
     return bersagli.get(chiave);
   };
 
-  // damageDetail riporta il danno per tipo gia' ridotto da resistenze e immunita'
+  // damageDetail riporta il danno per tipo gia' ridotto da resistenze e immunita':
+  // chi non subisce danni da fuoco (es. immune) non brucia, neanche coi gradi extra
   for (const d of workflow.damageList ?? []) {
     if (d.wasHit === false || eLanciatore(d.targetUuid, d.actorUuid)) continue;
     const fuoco = (d.damageDetail ?? [])
       .filter(x => x.type === "fire")
       .reduce((somma, x) => somma + Math.max(0, Number(x.value) || 0), 0);
-    if (fuoco > 0) voce(d.targetUuid, d.actorUuid).fuoco += fuoco;
+    if (fuoco <= 0) continue;
+    voce(d.targetUuid, d.actorUuid).segni += Math.ceil(fuoco / 2) + gradiExtraBruciato(item, workflow.activity, d.saved);
   }
 
   if (infliggeCelestia(attore, item, workflow.activity)) {
@@ -180,7 +172,7 @@ function raccogliCondizioni(workflow) {
     }
   }
 
-  const lista = [...bersagli.values()].filter(b => b.fuoco > 0 || b.celestia > 0);
+  const lista = [...bersagli.values()].filter(b => b.segni > 0 || b.celestia > 0);
   if (!lista.length) return null;
   return {
     // la carta in chat e' unica per ogni uso: chiave anti doppia applicazione
@@ -221,8 +213,8 @@ async function applicaCondizioniGM(dati) {
     const tokenDoc = b.tokenUuid ? await fromUuid(b.tokenUuid) : null;
     const attore = tokenDoc?.actor ?? (b.actorUuid ? await fromUuid(b.actorUuid) : null);
     if (!attore) continue;
-    if (b.fuoco > 0) {
-      const esito = await aggiungiBruciato(attore, Math.ceil(b.fuoco / 2), dati.capBruciato);
+    if (b.segni > 0) {
+      const esito = await aggiungiBruciato(attore, b.segni, dati.capBruciato);
       if (esito) righe.push(`<i class="fas fa-fire"></i> <strong>${attore.name}</strong>: Bruciato ${esito.prima} → <strong>${esito.dopo}</strong> ${esito.dopo === 1 ? "segno" : "segni"}`);
     }
     if (b.celestia > 0) {

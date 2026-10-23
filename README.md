@@ -34,7 +34,7 @@ Include:
 | Compendium | 12 pack: razze, classi, magie, background, talenti, equipaggiamento, incantesimi, stili di combattimento, feature razze/classi/magie, regole combattimento |
 | Mana Points | Barra MP nella scheda attore, calcolo automatico basato su livello e classe, costo MP per incantesimo |
 | Condizioni | 5 status effect custom registrati nel sistema con icone dedicate |
-| Automazioni (midi-qol) | Bruciato applicato a chi subisce danni da fuoco (metà del danno, max mod. incantatore + competenza) con 1d4 per segno a fine turno; Celestia a gradi con la magia del Corpo Celeste (modalità configurabile: a ogni colpo o solo con i talenti del manuale) |
+| Automazioni (midi-qol) | Bruciato applicato a chi subisce danni da fuoco (metà del danno più i gradi indicati dall'incantesimo, max mod. incantatore + competenza) con 1d4 per segno a fine turno; Celestia a gradi dai talenti Maledizione Celeste e Guida di Orione |
 | Relazioni | Tracker Punti di Relazione tra PG, badge automatici per Attacchi Combo (4+) e Unison Raid (6+) |
 | Growth Token | Token assegnabili dal GM, dialogo multi-step per scegliere nuova magia o raffinare quella esistente, feature aggiunta automaticamente alla scheda |
 | UI Temi | 5 temi per personaggio (Natsu, Gray, Erza, Lucy, Laxus), skin completa sidebar/chat/schede/hotbar, logo pausa gilda |
